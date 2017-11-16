@@ -216,7 +216,7 @@ class Message
      * @param int $index Index where segment is inserted
      * @return Segment
      */
-    public function getSegmentByIndex(int $index)
+    public function getSegmentByIndex(int $index): ?Segment
     {
         if ($index >= count($this->segments)) {
             return null;
@@ -358,7 +358,7 @@ class Message
      * @param int $index Index for segment to get
      * @return string|null String representation of segment
      */
-    public function getSegmentAsString(int $index)
+    public function getSegmentAsString(int $index): ?string
     {
         $seg = $this->getSegmentByIndex($index);
 
