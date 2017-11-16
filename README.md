@@ -5,7 +5,7 @@ This is a PHP-based HL7 Parsing, Generation and Sending library, inspired from t
 ## Installation
 
 ```bash
-composer require aranyasen/hl7:"dev-master"
+composer require aranyasen/hl7
 ```
 
 ## Usage
