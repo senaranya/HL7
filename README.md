@@ -2,6 +2,12 @@
 
 This is a PHP-based HL7 Parsing, Generation and Sending library, inspired from the famous Perl Net-HL7 package.
 
+## Installation
+
+```bash
+composer require aranyasen/hl7:"dev-master"
+```
+
 ## Usage
 ### Parsing messages
 ```php
