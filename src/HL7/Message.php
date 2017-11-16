@@ -358,7 +358,7 @@ class Message
      * @param int $index Index for segment to get
      * @return string|null String representation of segment
      */
-    public function getSegmentAsString(int $index): ?string
+    public function getSegmentAsString(int $index)
     {
         $seg = $this->getSegmentByIndex($index);
 
