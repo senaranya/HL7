@@ -4,4 +4,4 @@ install:
 php:
   - '7.0'
   - '7.1'
-script: phpunit tests/
+script: vendor/bin/phpunit tests/
