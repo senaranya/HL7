@@ -2,8 +2,6 @@ language: php
 install:
   - composer install
 php:
-  - '5.4'
-  - '5.6'
   - '7.0'
   - '7.1'
 script: phpunit tests/
