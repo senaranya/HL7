@@ -31,7 +31,19 @@ $msg->setSegment($pid, 1); // Message is now: "MSH|^~\&|||||20171116140058|||201
 ```
 
 ### Send messages
-// TODO
+```php
+$ip = '127.0.0.1'; // An IP
+$port = '12001'; // And Port where a HL7 listener is listening
+$message = new Message($hl7String); // Create a Message object from your HL7 string 
+$connection = new Connection($ip, $port); // Create a Socket and get ready to send message 
+$response = $connection->send($message); // Send to the listener, and get a response back
+echo $reponse->toString(true); // Prints ACK from the listener 
+```
 
 ## APIs
 // TODO
+
+### Enhancements planned
+* Getter methods to read specific data - getOutsidePID(), getProcedureCode() etc.
+* Data Validation
+* Search by regex and return segment/field/index
