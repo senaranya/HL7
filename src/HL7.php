@@ -7,7 +7,7 @@ use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Segments\MSH;
 
 /**
- * The Net_HL7 class is a factory class for HL7 messages.
+ * The HL7 class is a factory class for HL7 messages.
  *
  * The factory class provides the convenience of changing several defaults for HL7 messaging globally, like separators,
  * etc. Note that some default settings use characters that have special meaning in PHP, like the HL7 escape character.
@@ -42,6 +42,7 @@ class HL7
      *
      * @param string|null Text representation of an HL7 message
      * @return Message
+     * @throws \Exception
      * @throws \InvalidArgumentException
      */
     public function createMessage(string $msgStr = null): Message
@@ -50,7 +51,7 @@ class HL7
     }
 
     /**
-     * Create a new Net_HL7_Segments_MSH segment, using the global HL7 variables as defaults.
+     * Create a new MSH segment, using the global HL7 variables as defaults.
      * @return MSH
      * @throws \InvalidArgumentException
      */
@@ -77,14 +78,13 @@ class HL7
 
 
     /**
-     * Set the subcomponent separator to be used by the factory. Should
-     * be a single character. Default: &
+     * Set the subcomponent separator to be used by the factory. Should be a single character. Default: &
      *
      * @param string $value Subcomponent separator char.
      * @return boolean true if value has been set.
      * @throws \InvalidArgumentException
      */
-    public function setSubcomponentSeparator(string $value)
+    public function setSubcomponentSeparator(string $value): bool
     {
         if (\strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
@@ -101,7 +101,7 @@ class HL7
      * @return boolean true if value has been set.
      * @throws \InvalidArgumentException
      */
-    public function setRepetitionSeparator(string $value)
+    public function setRepetitionSeparator(string $value): bool
     {
         if (\strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
@@ -118,7 +118,7 @@ class HL7
      * @return boolean true if value has been set.
      * @throws \InvalidArgumentException
      */
-    public function setFieldSeparator(string $value)
+    public function setFieldSeparator(string $value): bool
     {
         if (\strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
@@ -135,7 +135,7 @@ class HL7
      * @return boolean true if value has been set.
      * @throws \InvalidArgumentException
      */
-    public function setSegmentSeparator(string $value)
+    public function setSegmentSeparator(string $value): bool
     {
         if (\strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
@@ -161,12 +161,12 @@ class HL7
     }
 
     /**
-     * Set the HL7 version to be used by the factory.
+     * Set the HL7 version to be used by the factory. Default 2.3
      *
      * @param string HL7 version character.
      * @return boolean true if value has been set.
      */
-    public function setHL7Version(string $value)
+    public function setHL7Version(string $value): bool
     {
         return $this->setGlobal('HL7_VERSION', $value);
     }
@@ -177,7 +177,7 @@ class HL7
      * @param string NULL string.
      * @return boolean true if value has been set.
      */
-    public function setNull($value)
+    public function setNull($value): bool
     {
         return $this->setGlobal('NULL', $value);
     }

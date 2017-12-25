@@ -21,6 +21,7 @@ class ACK extends Message
      *
      * @param Message|null $req
      * @param MSH|null $reqMsh
+     * @throws \Exception
      * @throws \InvalidArgumentException
      */
     public function __construct(Message $req = null, MSH $reqMsh = null)
@@ -80,7 +81,7 @@ class ACK extends Message
      * @return boolean
      * @access public
      */
-    public function setAckCode(string $code, string $msg = null)
+    public function setAckCode(string $code, string $msg = null): bool
     {
         $mode = 'A';
 
@@ -90,7 +91,7 @@ class ACK extends Message
             $mode = 'C';
         }
 
-        if (strlen($code) === 1) {
+        if (\strlen($code) === 1) {
             $code = "$mode$code";
         }
 
@@ -106,9 +107,8 @@ class ACK extends Message
     }
 
     /**
-     * Set the error message for the acknowledgement. This will also set the
-     * error code to either AE or CE, depending on the mode of the incoming
-     * message.
+     * Set the error message for the acknowledgement. This will also set the error code to either AE or CE, depending
+     * on the mode of the incoming message.
      *
      * @param string $msg Error message
      * @access public
@@ -118,4 +118,3 @@ class ACK extends Message
         $this->setAckCode('E', $msg);
     }
 }
-

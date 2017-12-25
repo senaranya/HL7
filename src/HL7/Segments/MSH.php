@@ -21,6 +21,7 @@ use Aranyasen\HL7\Segment;
  * message.  The MSH segment also contains the default settings for field 2, COMPONENT_SEPARATOR, REPETITION_SEPARATOR,
  * ESCAPE_CHARACTER and SUBCOMPONENT_SEPARATOR. These fields default to ^, ~, \ and & respectively.
  *
+ * Reference: https://corepointhealth.com/resource-center/hl7-resources/hl7-msh-message-header
  */
 class MSH extends Segment
 {
@@ -42,7 +43,7 @@ class MSH extends Segment
         // Only fill default fields if no fields array is given
         //
         if (!isset($fields)) {
-            if (!is_array($hl7Globals)) {
+            if (!\is_array($hl7Globals)) {
                 $this->setField(1, '|');
                 $this->setField(2, '^~\\&');
                 $this->setField(7, strftime('%Y%m%d%H%M%S'));
@@ -100,8 +101,153 @@ class MSH extends Segment
         return parent::setField($index, $value);
     }
 
-    public function getMessageId()
+    // -------------------- Setter Methods ------------------------------
+
+    public function setSendingApplication($value, int $position = 3)
     {
-        // return $this->getField(2);
+        return $this->setField($position, $value);
+    }
+
+    public function setSendingFacility($value, int $position = 4)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setReceivingApplication($value, int $position = 5)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setReceivingFacility($value, int $position = 6)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setDateTimeOfMessage($value, int $position = 7)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setSecurity($value, int $position = 8)
+    {
+        return $this->setField($position, $value);
+    }
+
+    /**
+     * 'ORM' / 'ORU' etc.
+     * @param string $value
+     * @param int $position
+     * @return bool
+     */
+    public function setMessageType($value, int $position = 9): bool
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setMessageControlId($value, int $position = 10)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setProcessingId($value, int $position = 11)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setVersionId($value, int $position = 12)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setSequenceNumber($value, int $position = 13)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setContinuationPointer($value, int $position = 14)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setAcceptAcknowledgementType($value, int $position = 15)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setApplicationAcknowledgementType($value, int $position = 16)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setCountryCode($value, int $position = 17)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setCharacterSet($value, int $position = 18)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setPrincipalLanguage($value, int $position = 19)
+    {
+        return $this->setField($position, $value);
+    }
+
+    // -------------------- Getter Methods ------------------------------
+
+    public function getSendingApplication(int $position = 3)
+    {
+        return $this->getField($position);
+    }
+
+    public function getSendingFacility(int $position = 4)
+    {
+        return $this->getField($position);
+    }
+
+    public function getReceivingApplication(int $position = 5)
+    {
+        return $this->getField($position);
+    }
+
+    public function getReceivingFacility(int $position = 6)
+    {
+        return $this->getField($position);
+    }
+
+    public function getDateTimeOfMessage(int $position = 7)
+    {
+        return \DateTime::createFromFormat('YmdHis', $this->getField($position));
+    }
+
+    /**
+     * ORM / ORU etc.
+     * @param int $position
+     * @return string
+     */
+    public function getMessageType(int $position = 9): string
+    {
+        return (string) $this->getField($position);
+    }
+
+    public function getMessageControlId(int $position = 10)
+    {
+        return $this->getField($position);
+    }
+
+    public function getProcessingId(int $position = 11)
+    {
+        return $this->getField($position);
+    }
+
+    /**
+     * Get HL7 version, e.g. 2.1, 2.3, 3.0 etc.
+     * @param int $position
+     * @return array|null|string
+     */
+    public function getVersionId(int $position = 12)
+    {
+        return $this->getField($position);
     }
 }

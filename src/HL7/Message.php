@@ -12,7 +12,7 @@ use InvalidArgumentException;
  * When adding segments, note that the segment index starts at 0, so to get the first segment, do
  * <code>$msg->getSegmentByIndex(0)</code>.
  *
- * The segment separator defaults to \015. To change this, set the global variable $_Net_HL7_SEGMENT_SEPARATOR.
+ * The segment separator defaults to \015. To change this, set the global variable $SEGMENT_SEPARATOR.
  *
  * @author     Aranya Sen
  */
@@ -87,18 +87,11 @@ class Message
             $segments = preg_split("/[\n\r" . $this->segmentSeparator . ']/', $msgStr, -1, PREG_SPLIT_NO_EMPTY);
 
             // The first segment should be the control segment
-            //
             preg_match('/^([A-Z0-9]{3})(.)(.)(.)(.)(.)(.)/', $segments[0], $matches);
-            $hdr = $matches[1];
-            $fieldSep = $matches[2];
-            $compSep = $matches[3];
-            $repSep = $matches[4];
-            $esc = $matches[5];
-            $subCompSep = $matches[6];
-            $fieldSepCtrl = $matches[7];
+
+            [$dummy, $hdr, $fieldSep, $compSep, $repSep, $esc, $subCompSep, $fieldSepCtrl] = $matches;
 
             // Check whether field separator is repeated after 4 control characters
-            //
             if ($fieldSep !== $fieldSepCtrl) {
                 throw new Exception('Not a valid message: field separator invalid', E_USER_ERROR);
             }
@@ -132,10 +125,10 @@ class Message
                         $subComps = preg_split("/\\" . $this->subcomponentSeparator . '/', $comps[$k]);
 
                         // Make it a ref or just the value
-                        (count($subComps) === 1) ? ($comps[$k] = $subComps[0]) : ($comps[$k] = $subComps);
+                        (\count($subComps) === 1) ? ($comps[$k] = $subComps[0]) : ($comps[$k] = $subComps);
                     }
 
-                    (count($comps) === 1) ? ($fields[$j] = $comps[0]) : ($fields[$j] = $comps);
+                    (\count($comps) === 1) ? ($fields[$j] = $comps[0]) : ($fields[$j] = $comps);
                 }
 
                 $seg = null;
@@ -168,7 +161,7 @@ class Message
      */
     public function addSegment(Segment $segment): bool
     {
-        if (count($this->segments) === 0) {
+        if (\count($this->segments) === 0) {
             $this->resetCtrl($segment);
         }
 
@@ -186,16 +179,16 @@ class Message
      */
     public function insertSegment(Segment $segment, $index = null): void
     {
-        if ($index > count($this->segments)) {
+        if ($index > \count($this->segments)) {
             throw new InvalidArgumentException("Index out of range. Index: $index, Total segments: " .
-                count($this->segments));
+                \count($this->segments));
         }
 
         if ($index === 0) {
             $this->resetCtrl($segment);
             array_unshift($this->segments, $segment);
         }
-        elseif ($index === count($this->segments)) {
+        elseif ($index === \count($this->segments)) {
             $this->segments[] = $segment;
         }
         else {
@@ -218,7 +211,7 @@ class Message
      */
     public function getSegmentByIndex(int $index): ?Segment
     {
-        if ($index >= count($this->segments)) {
+        if ($index >= \count($this->segments)) {
             return null;
         }
 
@@ -256,7 +249,7 @@ class Message
      */
     public function removeSegmentByIndex(int $index): bool
     {
-        if ($index < count($this->segments)) {
+        if ($index < \count($this->segments)) {
             array_splice($this->segments, $index, 1);
         }
 
@@ -276,7 +269,7 @@ class Message
      */
     public function setSegment(Segment $segment, int $index): bool
     {
-        if ((!isset($index)) || $index > count($this->segments)) {
+        if (!isset($index) || $index > \count($this->segments)) {
             throw new InvalidArgumentException('Index out of range');
         }
 
@@ -401,7 +394,7 @@ class Message
                     ? ($fieldString .= implode($this->subcomponentSeparator, $field[$i]))
                     : ($fieldString .= $field[$i]);
 
-                if ($i < (count($field) - 1)) {
+                if ($i < (\count($field) - 1)) {
                     $fieldString .= $this->componentSeparator;
                 }
             }
@@ -432,7 +425,7 @@ class Message
                         ? ($segStr .= implode($this->subcomponentSeparator, $field[$i]))
                         : ($segStr .= $field[$i]);
 
-                    if ($i < (count($field) - 1)) {
+                    if ($i < (\count($field) - 1)) {
                         $segStr .= $this->componentSeparator;
                     }
                 }

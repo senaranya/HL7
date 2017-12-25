@@ -41,9 +41,11 @@ echo $reponse->toString(true); // Prints ACK from the listener
 ```
 
 ## APIs
-// TODO
+// TODO (Generate from docblocks)
 
 ### Enhancements planned
 * Getter methods to read specific data - getOutsidePID(), getProcedureCode() etc.
 * Data Validation
 * Search by regex and return segment/field/index
+
+// TODO: Add tests for MSH class, Add tests for Communication class

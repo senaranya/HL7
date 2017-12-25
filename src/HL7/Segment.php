@@ -32,7 +32,7 @@ class Segment
     {
         // Is the name 3 upper case characters?
         if ((!$name) || (\strlen($name) !== 3) || (strtoupper($name) !== $name)) {
-            throw new InvalidArgumentException('Name should be 3 characters, uppercase');
+            throw new InvalidArgumentException('Name should be 3 characters and in uppercase');
         }
 
         $this->fields = [];
@@ -47,20 +47,22 @@ class Segment
     }
 
     /**
-     * Set the field specified by index to value, and return some true value if the operation succeeded. Indices start
-     * at 1, to stay with the HL7 standard. Trying to set the value at index 0 has no effect. The value may also be a
-     * reference to an array (that may itself contain arrays) to support composed fields (and sub-components).
+     * Set the field specified by index to value. Indices start at 1, to stay with the HL7 standard. Trying to set the
+     * value at index 0 has no effect. The value may also be a reference to an array (that may itself contain arrays)
+     * to support composite fields (and sub-components).
      *
-     * To set a field to the HL7 null value, instead of omitting a field, can
-     * be achieved with the _Net_HL7_NULL type, like:
+     * Examples:
      * <code>
-     *   $segment->setField(8, $_Net_HL7_NULL);
+     *   $segment->setField(18, 'abcd'); // Sets 18th field to abcd
+     *   $segment->setField(8, 'ab^cd'); // Sets 8th field to ab^cd
+     *   $segment->setField(10, ['John', 'Doe']); // Sets 10th field to John^Doe
+     *   $segment->setField(12); // Sets 12th field to '' (empty string)
      * </code>
-     * This will render the field as the double quote ("").
+     *
      * If values are not provided at all, the method will just return.
      *
      * @param int $index Index to set
-     * @param string $value Value for field
+     * @param string|array $value Value for field
      * @return boolean
      */
     public function setField(int $index, $value = ''): bool
@@ -70,7 +72,7 @@ class Segment
         }
 
         // Fill in the blanks...
-        for ($i = count($this->fields); $i < $index; $i++) {
+        for ($i = \count($this->fields); $i < $index; $i++) {
             $this->fields[$i] = '';
         }
 
@@ -80,12 +82,10 @@ class Segment
     }
 
     /**
-     * Get the field at index. If the field is a composed field, you might
-     * ask for the result to be an array like so:
-     * <code>
-     * $subfields = $seg->getField(9)
-     * </code>
-     * otherwise the thing returned will be a reference to an array.
+     * Get the field at index. If the field is a composite field, it returns an array
+     * ```php
+     * $field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.
+     * ```
      *
      * @param int $index Index of field
      * @return null|string|array The value of the field
@@ -103,23 +103,21 @@ class Segment
      */
     public function size(): int
     {
-        return count($this->fields) - 1;
+        return \count($this->fields) - 1;
     }
 
     /**
-     * Get the fields in the specified range, or all if nothing specified. If
-     * only the 'from' value is provided, all fields from this index till the
-     * end of the segment will be returned.
+     * Get the fields in the specified range, or all if nothing specified. If only the 'from' value is provided, all
+     * fields from this index till the end of the segment will be returned.
      *
      * @param int $from Start range at this index
      * @param int|null $to Stop range at this index
      * @return array List of fields
-     * @access public
      */
     public function getFields(int $from = 0, int $to = null): array
     {
         if (!$to) {
-            $to = count($this->fields);
+            $to = \count($this->fields);
         }
         return \array_slice($this->fields, $from, $to - $from + 1);
     }
