@@ -38,8 +38,8 @@ class MessageTest extends TestCase
         $msg = new Message("MSH|^~\\&|1|\rPID|||xxx|\r");
         $seg0 = $msg->getSegmentByIndex(0);
 
-        $this->assertSame('MSH|^~\\&|1|\nPID|||xxx|\n', $msg->toString(), 'String representation of message');
-        $this->assertSame("MSH|^~\\&|1|\nPID|||xxx|\n", $msg->toString(true), 'Pretty print representation of message');
+        $this->assertSame('MSH|^~\\&|1|\nPID|1||xxx|\n', $msg->toString(), 'String representation of message');
+        $this->assertSame("MSH|^~\\&|1|\nPID|1||xxx|\n", $msg->toString(true), 'Pretty print representation of message');
         $this->assertSame("^~\\&", $seg0->getField(2), 'Encoding characters (MSH(2))');
 
         # Constructor with components and sub-components
@@ -56,7 +56,7 @@ class MessageTest extends TestCase
         $msg = new Message("MSH*^~\\&*1\rPID***xxx\r");
 
         $this->assertSame(
-            'MSH*^~\&*1*\nPID***xxx*\n', $msg->toString(),
+            'MSH*^~\&*1*\nPID*3**xxx*\n', $msg->toString(),
             'String representation of message with * as field separator'
         );
 
