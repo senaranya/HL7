@@ -10,17 +10,19 @@ use Aranyasen\HL7\Segment;
  */
 class DG1 extends Segment
 {
+    /**
+     * Index of this segment. Incremented for every new segment of this class created
+     * @var int
+     */
+    protected static $setId = 1;
+
     public function __construct(array $fields = null)
     {
         parent::__construct('DG1', $fields);
+        $this->setID($this::$setId++);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function setIDDG1($value, int $position = 1)
+    public function setID(int $value, int $position = 1)
     {
         return $this->setField($position, $value);
     }

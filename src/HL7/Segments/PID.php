@@ -9,9 +9,21 @@ use Aranyasen\HL7\Segment;
  */
 class PID extends Segment
 {
+    /**
+     * Index of this segment. Incremented for every new segment of this class created
+     * @var int
+     */
+    protected static $setId = 1;
+
     public function __construct(array $fields = null)
     {
         parent::__construct('PID', $fields);
+        $this->setID($this::$setId++);
+    }
+
+    public function setID(int $value, int $position = 1)
+    {
+        return $this->setField($position, $value);
     }
 
     public function setPatientID($value, int $position = 2)

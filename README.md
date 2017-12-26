@@ -17,17 +17,24 @@ $pid = $msg->getSegmentByIndex(1);
 echo $pid->getField(3); // prints 'abcd'
 echo $msg->toString(true); // Prints entire HL7 string
 ```
-### Creating messages
 
+### Creating messages
 ```php
 // Create an empty Message object, and populate MSH and PID segments... 
 $msg = new Message();
 $msh = new MSH();
 $msg->addSegment($msh); // Message is: "MSH|^~\&|||||20171116140058|||2017111614005840157||2.3|\n"
 
-$pid = new Segment('PID');
-$pid->setField(1, 'abcd');
-$msg->setSegment($pid, 1); // Message is now: "MSH|^~\&|||||20171116140058|||2017111614005840157||2.3|\nPID|abcd|\n"
+// Create any custom segment
+$abc = new Segment('ABC');
+$abc->setField(1, 'xyz');
+$msg->setSegment($abc, 1); // Message is now: "MSH|^~\&|||||20171116140058|||2017111614005840157||2.3|\nABC|xyz|\n"
+
+// Create a defined segment (To know which segments are defined in this package, look into Segments/ directory)
+// Advantages of defined segments over custom ones (shown above) are 1) Helpful setter methods, 2) Auto-incrementing segment index 
+$pid = new PID(); // Automatically creates PID segment, and adds segment index at PID.1
+$pid->setPatientName([$lastname, $firstname, $middlename, $suffix]); // Use a setter method to add patient's name at standard position (PID.5)
+$pid->setField('abcd', 5); // Apart from standard setter methods, you can manually set a value at any position too
 ```
 
 ### Send messages
@@ -43,9 +50,9 @@ echo $reponse->toString(true); // Prints ACK from the listener
 ## APIs
 // TODO (Generate from docblocks)
 
-### Enhancements planned
-* Getter methods to read specific data - getOutsidePID(), getProcedureCode() etc.
+### TODOs
+* Segregate unit tests into separate methods
+* Add tests for MSH, Communication, defined segments
 * Data Validation
 * Search by regex and return segment/field/index
-
-// TODO: Add tests for MSH class, Add tests for Communication class
+* Define more segments

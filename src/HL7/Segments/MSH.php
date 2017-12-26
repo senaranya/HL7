@@ -35,6 +35,7 @@ class MSH extends Segment
      * @param null|array $fields
      * @param null|array $hl7Globals
      * @throws \InvalidArgumentException
+     * @throws \Exception
      */
     public function __construct(array $fields = null, array $hl7Globals = null)
     {
@@ -64,7 +65,6 @@ class MSH extends Segment
                 $this->setField(7, strftime('%Y%m%d%H%M%S'));
 
                 // Set ID field
-                //
                 $this->setField(10, $this->getField(7) . random_int(10000, 99999));
                 $this->setField(12, $hl7Globals['HL7_VERSION']);
             }
