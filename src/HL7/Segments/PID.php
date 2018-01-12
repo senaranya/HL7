@@ -184,4 +184,158 @@ class PID extends Segment
         return $this->setField($position, $value);
     }
 
+    public function getID(int $position = 1)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPatientID(int $position = 2)
+    {
+        return $this->getField($position);
+    }
+
+    /**
+     * Patient ID (Internal ID)
+     * @param int $position
+     * @return array|null|string
+     */
+    public function getPatientIdentifierList(int $position = 3)
+    {
+        return $this->getField($position);
+    }
+
+    public function getAlternatePatientID(int $position = 4)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPatientName(int $position = 5)
+    {
+        return $this->getField($position);
+    }
+
+    public function getMothersMaidenName(int $position = 6)
+    {
+        return $this->getField($position);
+    }
+
+    public function getDateTimeOfBirth(int $position = 7)
+    {
+        return $this->getField($position);
+    }
+
+    public function getSex(int $position = 8)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPatientAlias(int $position = 9)
+    {
+        return $this->getField($position);
+    }
+
+    public function getRace(int $position = 10)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPatientAddress(int $position = 11)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCountryCode(int $position = 12)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPhoneNumberHome(int $position = 13)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPhoneNumberBusiness(int $position = 14)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPrimaryLanguage(int $position = 15)
+    {
+        return $this->getField($position);
+    }
+
+    public function getMaritalStatus(int $position = 16)
+    {
+        return $this->getField($position);
+    }
+
+    public function getReligion(int $position = 17)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPatientAccountNumber(int $position = 18)
+    {
+        return $this->getField($position);
+    }
+
+    public function getSSNNumber(int $position = 19)
+    {
+        return $this->getField($position);
+    }
+
+    public function getDriversLicenseNumber(int $position = 20)
+    {
+        return $this->getField($position);
+    }
+
+    public function getMothersIdentifier(int $position = 21)
+    {
+        return $this->getField($position);
+    }
+
+    public function getEthnicGroup(int $position = 22)
+    {
+        return $this->getField($position);
+    }
+
+    public function getBirthPlace(int $position = 23)
+    {
+        return $this->getField($position);
+    }
+
+    public function getMultipleBirthIndicator(int $position = 24)
+    {
+        return $this->getField($position);
+    }
+
+    public function getBirthOrder(int $position = 25)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCitizenship(int $position = 26)
+    {
+        return $this->getField($position);
+    }
+
+    public function getVeteransMilitaryStatus(int $position = 27)
+    {
+        return $this->getField($position);
+    }
+
+    public function getNationality(int $position = 28)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPatientDeathDateAndTime( int $position = 29)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPatientDeathIndicator(int $position = 30)
+    {
+        return $this->getField($position);
+    }
 }

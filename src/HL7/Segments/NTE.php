@@ -27,33 +27,38 @@ class NTE extends Segment
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function sourceOfComment($value, int $position = 2)
+    public function setSourceOfComment($value, int $position = 2)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function comment($value, int $position = 3)
+    public function setComment($value, int $position = 3)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function commentType($value, int $position = 4)
+    public function setCommentType($value, int $position = 4)
     {
         return $this->setField($position, $value);
+    }
+
+    public function getID(int $position = 1)
+    {
+        return $this->getField($position);
+    }
+
+    public function getSourceOfComment(int $position = 2)
+    {
+        return $this->getField($position);
+    }
+
+    public function getComment(int $position = 3)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCommentType(int $position = 4)
+    {
+        return $this->getField($position);
     }
 }

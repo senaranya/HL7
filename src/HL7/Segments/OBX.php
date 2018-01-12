@@ -27,163 +27,168 @@ class OBX extends Segment
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function valueType($value, int $position = 2)
+    public function setValueType($value, int $position = 2)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function observationIdentifier($value, int $position = 3)
+    public function setObservationIdentifier($value, int $position = 3)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function observationSubId($value, int $position = 4)
+    public function setObservationSubId($value, int $position = 4)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function observationValue($value, int $position = 5)
+    public function setObservationValue($value, int $position = 5)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function units($value, int $position = 6)
+    public function setUnits($value, int $position = 6)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function referenceRange($value, int $position = 7)
+    public function setReferenceRange($value, int $position = 7)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function abnormalFlags($value, int $position = 8)
+    public function setAbnormalFlags($value, int $position = 8)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function probability($value, int $position = 9)
+    public function setProbability($value, int $position = 9)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function natureOfAbnormalTest($value, int $position = 10)
+    public function setNatureOfAbnormalTest($value, int $position = 10)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function observeResultStatus($value, int $position = 11)
+    public function setObserveResultStatus($value, int $position = 11)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function dataLastObsNormalValues($value, int $position = 12)
+    public function setDataLastObsNormalValues($value, int $position = 12)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function userDefinedAccessChecks($value, int $position = 13)
+    public function setUserDefinedAccessChecks($value, int $position = 13)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function dateTimeOfTheObservation($value, int $position = 14)
+    public function setDateTimeOfTheObservation($value, int $position = 14)
     {
            return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function producersId($value, int $position = 15)
+    public function setProducersId($value, int $position = 15)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function responsibleObserver($value, int $position = 16)
+    public function setResponsibleObserver($value, int $position = 16)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function observationMethod($value, int $position = 17)
+    public function setObservationMethod($value, int $position = 17)
     {
         return $this->setField($position, $value);
+    }
+
+    public function getID(int $position = 1)
+    {
+        return $this->getField($position);
+    }
+
+    public function getValueType(int $position = 2)
+    {
+        return $this->getField($position);
+    }
+
+    public function getObservationIdentifier(int $position = 3)
+    {
+        return $this->getField($position);
+    }
+
+    public function getObservationSubId(int $position = 4)
+    {
+        return $this->getField($position);
+    }
+
+    public function getObservationValue(int $position = 5)
+    {
+        return $this->getField($position);
+    }
+
+    public function getUnits(int $position = 6)
+    {
+        return $this->getField($position);
+    }
+
+    public function getReferenceRange(int $position = 7)
+    {
+        return $this->getField($position);
+    }
+
+    public function getAbnormalFlags(int $position = 8)
+    {
+        return $this->getField($position);
+    }
+
+    public function getProbability(int $position = 9)
+    {
+        return $this->getField($position);
+    }
+
+    public function getNatureOfAbnormalTest(int $position = 10)
+    {
+        return $this->getField($position);
+    }
+
+    public function getObserveResultStatus(int $position = 11)
+    {
+        return $this->getField($position);
+    }
+
+    public function getDataLastObsNormalValues(int $position = 12)
+    {
+        return $this->getField($position);
+    }
+
+    public function getUserDefinedAccessChecks(int $position = 13)
+    {
+        return $this->getField($position);
+    }
+
+    public function getDateTimeOfTheObservation(int $position = 14)
+    {
+        return $this->getField($position);
+    }
+
+    public function getProducersId(int $position = 15)
+    {
+        return $this->getField($position);
+    }
+
+    public function getResponsibleObserver(int $position = 16)
+    {
+        return $this->getField($position);
+    }
+
+    public function getObservationMethod(int $position = 17)
+    {
+        return $this->getField($position);
     }
 }

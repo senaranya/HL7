@@ -56,7 +56,7 @@ class Segment
      *   $segment->setField(18, 'abcd'); // Sets 18th field to abcd
      *   $segment->setField(8, 'ab^cd'); // Sets 8th field to ab^cd
      *   $segment->setField(10, ['John', 'Doe']); // Sets 10th field to John^Doe
-     *   $segment->setField(12); // Sets 12th field to '' (empty string)
+     *   $segment->setField(12, ['']); // Sets 12th field to ''
      * </code>
      *
      * If values are not provided at all, the method will just return.

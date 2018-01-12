@@ -27,243 +27,248 @@ class IN3 extends Segment
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function certificationNumber($value, int $position = 2)
+    public function setCertificationNumber($value, int $position = 2)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function certifiedBy($value, int $position = 3)
+    public function setCertifiedBy($value, int $position = 3)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function certificationRequired($value, int $position = 4)
+    public function setCertificationRequired($value, int $position = 4)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function penalty($value, int $position = 5)
+    public function setPenalty($value, int $position = 5)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function certificationDateTime($value, int $position = 6)
+    public function setCertificationDateTime($value, int $position = 6)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function certificationModifyDateTime($value, int $position = 7)
+    public function setCertificationModifyDateTime($value, int $position = 7)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function operator($value, int $position = 8)
+    public function setOperator($value, int $position = 8)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function certificationBeginDate($value, int $position = 9)
+    public function setCertificationBeginDate($value, int $position = 9)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function certificationEndDate($value, int $position = 10)
+    public function setCertificationEndDate($value, int $position = 10)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function days($value, int $position = 11)
+    public function setDays($value, int $position = 11)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function nonConcurCodeDescription($value, int $position = 12)
+    public function setNonConcurCodeDescription($value, int $position = 12)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function nonConcurEffectiveDateTime($value, int $position = 13)
+    public function setNonConcurEffectiveDateTime($value, int $position = 13)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function physicianReviewer($value, int $position = 14)
+    public function setPhysicianReviewer($value, int $position = 14)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function certificationContact($value, int $position = 15)
+    public function setCertificationContact($value, int $position = 15)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function certificationContactPhoneNumber($value, int $position = 16)
+    public function setCertificationContactPhoneNumber($value, int $position = 16)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function appealReason($value, int $position = 17)
+    public function setAppealReason($value, int $position = 17)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function certificationAgency($value, int $position = 18)
+    public function setCertificationAgency($value, int $position = 18)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function certificationAgencyPhoneNumber($value, int $position = 19)
+    public function setCertificationAgencyPhoneNumber($value, int $position = 19)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function preCertificationRequirement($value, int $position = 20)
+    public function setPreCertificationRequirement($value, int $position = 20)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function caseManager($value, int $position = 21)
+    public function setCaseManager($value, int $position = 21)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function secondOpinionDate($value, int $position = 22)
+    public function setSecondOpinionDate($value, int $position = 22)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function secondOpinionStatus($value, int $position = 23)
+    public function setSecondOpinionStatus($value, int $position = 23)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function secondOpinionDocumentationReceived($value, int $position = 24)
+    public function setSecondOpinionDocumentationReceived($value, int $position = 24)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function secondOpinionPhysician($value, int $position = 25)
+    public function setSecondOpinionPhysician($value, int $position = 25)
     {
         return $this->setField($position, $value);
+    }
+
+    public function getID(int $position = 1)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCertificationNumber(int $position = 2)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCertifiedBy(int $position = 3)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCertificationRequired(int $position = 4)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPenalty(int $position = 5)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCertificationDateTime(int $position = 6)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCertificationModifyDateTime(int $position = 7)
+    {
+        return $this->getField($position);
+    }
+
+    public function getOperator(int $position = 8)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCertificationBeginDate(int $position = 9)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCertificationEndDate(int $position = 10)
+    {
+        return $this->getField($position);
+    }
+
+    public function getDays(int $position = 11)
+    {
+        return $this->getField($position);
+    }
+
+    public function getNonConcurCodeDescription(int $position = 12)
+    {
+        return $this->getField($position);
+    }
+
+    public function getNonConcurEffectiveDateTime(int $position = 13)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPhysicianReviewer(int $position = 14)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCertificationContact(int $position = 15)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCertificationContactPhoneNumber(int $position = 16)
+    {
+        return $this->getField($position);
+    }
+
+    public function getAppealReason(int $position = 17)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCertificationAgency(int $position = 18)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCertificationAgencyPhoneNumber(int $position = 19)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPreCertificationRequirement(int $position = 20)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCaseManager(int $position = 21)
+    {
+        return $this->getField($position);
+    }
+
+    public function getSecondOpinionDate(int $position = 22)
+    {
+        return $this->getField($position);
+    }
+
+    public function getSecondOpinionStatus(int $position = 23)
+    {
+        return $this->getField($position);
+    }
+
+    public function getSecondOpinionDocumentationReceived(int $position = 24)
+    {
+        return $this->getField($position);
+    }
+
+    public function getSecondOpinionPhysician(int $position = 25)
+    {
+        return $this->getField($position);
     }
 }

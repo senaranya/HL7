@@ -218,7 +218,7 @@ class MSH extends Segment
 
     public function getDateTimeOfMessage(int $position = 7)
     {
-        return \DateTime::createFromFormat('YmdHis', $this->getField($position));
+        return $this->getField($position);
     }
 
     /**

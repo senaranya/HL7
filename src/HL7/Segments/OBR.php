@@ -27,424 +27,428 @@ class OBR extends Segment
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function placerOrderNumber($value, int $position = 2)
+    public function setPlacerOrderNumber($value, int $position = 2)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function fillerOrderNumber($value, int $position = 3)
+    public function setFillerOrderNumber($value, int $position = 3)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function universalServiceID($value, int $position = 4)
+    public function setUniversalServiceID($value, int $position = 4)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function priority($value, int $position = 5)
+    public function setPriority($value, int $position = 5)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function requestedDatetime($value, int $position = 6)
+    public function setRequestedDatetime($value, int $position = 6)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function observationDateTime($value, int $position = 7)
+    public function setObservationDateTime($value, int $position = 7)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function observationEndDateTime($value, int $position = 8)
+    public function setObservationEndDateTime($value, int $position = 8)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function collectionVolume($value, int $position = 9)
+    public function setCollectionVolume($value, int $position = 9)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function collectorIdentifier($value, int $position = 10)
+    public function setCollectorIdentifier($value, int $position = 10)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function specimenActionCode($value, int $position = 11)
+    public function setSpecimenActionCode($value, int $position = 11)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function dangerCode($value, int $position = 12)
+    public function setDangerCode($value, int $position = 12)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function relevantClinicalInfo($value, int $position = 13)
+    public function setRelevantClinicalInfo($value, int $position = 13)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function specimenReceivedDateTime($value, int $position = 14)
+    public function setSpecimenReceivedDateTime($value, int $position = 14)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function specimenSource($value, int $position = 15)
+    public function setSpecimenSource($value, int $position = 15)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function orderingProvider($value, int $position = 16)
+    public function setOrderingProvider($value, int $position = 16)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function orderCallbackPhoneNumber($value, int $position = 17)
+    public function setOrderCallbackPhoneNumber($value, int $position = 17)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function placerfield1($value, int $position = 18)
+    public function setPlacerfield1($value, int $position = 18)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function placerfield2($value, int $position = 19)
+    public function setPlacerfield2($value, int $position = 19)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function fillerField1($value, int $position = 20)
+    public function setFillerField1($value, int $position = 20)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function fillerField2($value, int $position = 21)
+    public function setFillerField2($value, int $position = 21)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function resultsRptStatusChngDateTime($value, int $position = 22)
+    public function setResultsRptStatusChngDateTime($value, int $position = 22)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function chargetoPractice($value, int $position = 23)
+    public function setChargetoPractice($value, int $position = 23)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function diagnosticServSectID($value, int $position = 24)
+    public function setDiagnosticServSectID($value, int $position = 24)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function resultStatus($value, int $position = 25)
+    public function setResultStatus($value, int $position = 25)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function parentResult($value, int $position = 26)
+    public function setParentResult($value, int $position = 26)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function quantityTiming($value, int $position = 27)
+    public function setQuantityTiming($value, int $position = 27)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function resultCopiesTo($value, int $position = 28)
+    public function setResultCopiesTo($value, int $position = 28)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function parent($value, int $position = 29)
+    public function setParent($value, int $position = 29)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function transportationMode($value, int $position = 30)
+    public function setTransportationMode($value, int $position = 30)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function reasonforStudy($value, int $position = 31)
+    public function setReasonforStudy($value, int $position = 31)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function principalResultInterpreter($value, int $position = 32)
+    public function setPrincipalResultInterpreter($value, int $position = 32)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function assistantResultInterpreter($value, int $position = 33)
+    public function setAssistantResultInterpreter($value, int $position = 33)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function technician($value, int $position = 34)
+    public function setTechnician($value, int $position = 34)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function transcriptionist($value, int $position = 35)
+    public function setTranscriptionist($value, int $position = 35)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function scheduledDateTime($value, int $position = 36)
+    public function setScheduledDateTime($value, int $position = 36)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function numberofSampleContainers($value, int $position = 37)
+    public function setNumberofSampleContainers($value, int $position = 37)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function transportLogisticsofCollectedSample($value, int $position = 38)
+    public function setTransportLogisticsofCollectedSample($value, int $position = 38)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function collectorsComment($value, int $position = 39)
+    public function setCollectorsComment($value, int $position = 39)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function transportArrangementResponsibility($value, int $position = 40)
+    public function setTransportArrangementResponsibility($value, int $position = 40)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function transportArranged($value, int $position = 41)
+    public function setTransportArranged($value, int $position = 41)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function escortRequired($value, int $position = 42)
+    public function setEscortRequired($value, int $position = 42)
     {
         return $this->setField($position, $value);
     }
 
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function plannedPatientTransportComment($value, int $position = 43)
+    public function setPlannedPatientTransportComment($value, int $position = 43)
     {
         return $this->setField($position, $value);
     }
 
+    public function getID(int $position = 1)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPlacerOrderNumber(int $position = 2)
+    {
+        return $this->getField($position);
+    }
+
+    public function getFillerOrderNumber(int $position = 3)
+    {
+        return $this->getField($position);
+    }
+
+    public function getUniversalServiceID(int $position = 4)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPriority(int $position = 5)
+    {
+        return $this->getField($position);
+    }
+
+    public function getRequestedDatetime(int $position = 6)
+    {
+        return $this->getField($position);
+    }
+
+    public function getObservationDateTime(int $position = 7)
+    {
+        return $this->getField($position);
+    }
+
+    public function getObservationEndDateTime(int $position = 8)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCollectionVolume(int $position = 9)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCollectorIdentifier(int $position = 10)
+    {
+        return $this->getField($position);
+    }
+
+    public function getSpecimenActionCode(int $position = 11)
+    {
+        return $this->getField($position);
+    }
+
+    public function getDangerCode(int $position = 12)
+    {
+        return $this->getField($position);
+    }
+
+    public function getRelevantClinicalInfo(int $position = 13)
+    {
+        return $this->getField($position);
+    }
+
+    public function getSpecimenReceivedDateTime(int $position = 14)
+    {
+        return $this->getField($position);
+    }
+
+    public function getSpecimenSource(int $position = 15)
+    {
+        return $this->getField($position);
+    }
+
+    public function getOrderingProvider(int $position = 16)
+    {
+        return $this->getField($position);
+    }
+
+    public function getOrderCallbackPhoneNumber(int $position = 17)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPlacerfield1(int $position = 18)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPlacerfield2(int $position = 19)
+    {
+        return $this->getField($position);
+    }
+
+    public function getFillerField1(int $position = 20)
+    {
+        return $this->getField($position);
+    }
+
+    public function getFillerField2(int $position = 21)
+    {
+        return $this->getField($position);
+    }
+
+    public function getResultsRptStatusChngDateTime(int $position = 22)
+    {
+        return $this->getField($position);
+    }
+
+    public function getChargetoPractice(int $position = 23)
+    {
+        return $this->getField($position);
+    }
+
+    public function getDiagnosticServSectID(int $position = 24)
+    {
+        return $this->getField($position);
+    }
+
+    public function getResultStatus(int $position = 25)
+    {
+        return $this->getField($position);
+    }
+
+    public function getParentResult(int $position = 26)
+    {
+        return $this->getField($position);
+    }
+
+    public function getQuantityTiming(int $position = 27)
+    {
+        return $this->getField($position);
+    }
+
+    public function getResultCopiesTo(int $position = 28)
+    {
+        return $this->getField($position);
+    }
+
+    public function getParent(int $position = 29)
+    {
+        return $this->getField($position);
+    }
+
+    public function getTransportationMode(int $position = 30)
+    {
+        return $this->getField($position);
+    }
+
+    public function getReasonforStudy(int $position = 31)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPrincipalResultInterpreter(int $position = 32)
+    {
+        return $this->getField($position);
+    }
+
+    public function getAssistantResultInterpreter(int $position = 33)
+    {
+        return $this->getField($position);
+    }
+
+    public function getTechnician(int $position = 34)
+    {
+        return $this->getField($position);
+    }
+
+    public function getTranscriptionist(int $position = 35)
+    {
+        return $this->getField($position);
+    }
+
+    public function getScheduledDateTime(int $position = 36)
+    {
+        return $this->getField($position);
+    }
+
+    public function getNumberofSampleContainers(int $position = 37)
+    {
+        return $this->getField($position);
+    }
+
+    public function getTransportLogisticsofCollectedSample(int $position = 38)
+    {
+        return $this->getField($position);
+    }
+
+    public function getCollectorsComment(int $position = 39)
+    {
+        return $this->getField($position);
+    }
+
+    public function getTransportArrangementResponsibility(int $position = 40)
+    {
+        return $this->getField($position);
+    }
+
+    public function getTransportArranged(int $position = 41)
+    {
+        return $this->getField($position);
+    }
+
+    public function getEscortRequired(int $position = 42)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPlannedPatientTransportComment(int $position = 43)
+    {
+        return $this->getField($position);
+    }
 }
