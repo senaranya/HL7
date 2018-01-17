@@ -141,6 +141,21 @@ class MSH extends Segment
      */
     public function setMessageType($value, int $position = 9): bool
     {
+        $typeField = $this->getField($position);
+        if (is_array($typeField) && !empty($typeField[1])) {
+            $value = [$value, $typeField[1]];
+        }
+        return $this->setField($position, $value);
+    }
+
+    public function setTriggerEvent($value, int $position = 9): bool
+    {
+        $typeField = $this->getField($position);
+        if (is_array($typeField) && !empty($typeField[0])) {
+            $value = [$typeField[0], $value];
+        } else {
+            $value = [$typeField, $value];
+        }
         return $this->setField($position, $value);
     }
 
@@ -226,9 +241,22 @@ class MSH extends Segment
      * @param int $position
      * @return string
      */
-    public function getMessageType(int $position = 9): string
+    public function getMessageType(int $position = 9) : string
     {
-        return (string) $this->getField($position);
+        $typeField = $this->getField($position);
+        if (!empty($typeField) && is_array($typeField)) {
+            return (string) $typeField[0];
+        }
+        return (string) $typeField;
+    }
+
+    public function getTriggerEvent(int $position = 9): string
+    {
+        $triggerField = $this->getField($position);
+        if (!empty($triggerField[1]) && is_array($triggerField)) {
+            return $triggerField[1];
+        }
+        return false;
     }
 
     public function getMessageControlId(int $position = 10)
