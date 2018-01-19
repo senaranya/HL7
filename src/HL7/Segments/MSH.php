@@ -134,13 +134,64 @@ class MSH extends Segment
     }
 
     /**
-     * 'ORM' / 'ORU' etc.
+     *
+     * Sets message type to MSH segment.
+     *
+     * If trigger event is already set, then it is preserved
+     *
+     * Example:
+     *
+     * If field value is ORU^R01 and you call
+     *
+     * ```
+     * $msh->setMessageType('ORM');
+     * ```
+     *
+     * Then the new field value will be ORM^R01.
+     * If it was empty then the new value will be just ORM.
+     *
      * @param string $value
      * @param int $position
      * @return bool
      */
     public function setMessageType($value, int $position = 9): bool
     {
+        $typeField = $this->getField($position);
+        if (is_array($typeField) && !empty($typeField[1])) {
+            $value = [$value, $typeField[1]];
+        }
+        return $this->setField($position, $value);
+    }
+
+    /**
+     *
+     * Sets trigger event to MSH segment.
+     *
+     * If meessage type is already set, then it is preserved
+     *
+     * Example:
+     *
+     * If field value is ORU^R01 and you call
+     *
+     * ```
+     * $msh->setTriggerEvent('R30');
+     * ```
+     *
+     * Then the new field value will be ORU^R30.
+     * If trigger event was not set then it will set the new value.
+     *
+     * @param string $value
+     * @param int $position
+     * @return bool
+     */
+    public function setTriggerEvent($value, int $position = 9): bool
+    {
+        $typeField = $this->getField($position);
+        if (is_array($typeField) && !empty($typeField[0])) {
+            $value = [$typeField[0], $value];
+        } else {
+            $value = [$typeField, $value];
+        }
         return $this->setField($position, $value);
     }
 
@@ -226,9 +277,22 @@ class MSH extends Segment
      * @param int $position
      * @return string
      */
-    public function getMessageType(int $position = 9): string
+    public function getMessageType(int $position = 9) : string
     {
-        return (string) $this->getField($position);
+        $typeField = $this->getField($position);
+        if (!empty($typeField) && is_array($typeField)) {
+            return (string) $typeField[0];
+        }
+        return (string) $typeField;
+    }
+
+    public function getTriggerEvent(int $position = 9): string
+    {
+        $triggerField = $this->getField($position);
+        if (!empty($triggerField[1]) && is_array($triggerField)) {
+            return $triggerField[1];
+        }
+        return false;
     }
 
     public function getMessageControlId(int $position = 10)
