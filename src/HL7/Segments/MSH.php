@@ -134,7 +134,22 @@ class MSH extends Segment
     }
 
     /**
-     * 'ORM' / 'ORU' etc.
+     *
+     * Sets message type to MSH segment.
+     *
+     * If trigger event is already set, then it is preserved
+     *
+     * Example:
+     *
+     * If field value is ORU^R01 and you call
+     *
+     * ```
+     * $msh->setMessageType('ORM');
+     * ```
+     *
+     * Then the new field value will be ORM^R01.
+     * If it was empty then the new value will be just ORM.
+     *
      * @param string $value
      * @param int $position
      * @return bool
@@ -148,6 +163,27 @@ class MSH extends Segment
         return $this->setField($position, $value);
     }
 
+    /**
+     *
+     * Sets trigger event to MSH segment.
+     *
+     * If meessage type is already set, then it is preserved
+     *
+     * Example:
+     *
+     * If field value is ORU^R01 and you call
+     *
+     * ```
+     * $msh->setTriggerEvent('R30');
+     * ```
+     *
+     * Then the new field value will be ORU^R30.
+     * If trigger event was not set then it will set the new value.
+     *
+     * @param string $value
+     * @param int $position
+     * @return bool
+     */
     public function setTriggerEvent($value, int $position = 9): bool
     {
         $typeField = $this->getField($position);
