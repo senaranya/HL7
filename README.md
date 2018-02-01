@@ -7,7 +7,7 @@
 
 ## Introduction
 
-This is a PHP-based HL7 Parsing, Generation and Sending library, inspired from the famous Perl Net-HL7 package.
+A PHP-based HL7 v2.x Parsing, Generation and Sending library, inspired from the famous Perl Net-HL7 package.
 
 ## Installation
 
@@ -16,7 +16,7 @@ composer require aranyasen/hl7
 ```
 
 ## Usage
-### Parsing messages
+### Parsing
 ```php
 // Create a Message object from a HL7 string
 $msg = new Message("MSH|^~\\&|1|\rPID|||abcd|\r"); // Either \n or \r can be used as segment endings
@@ -25,7 +25,7 @@ echo $pid->getField(3); // prints 'abcd'
 echo $msg->toString(true); // Prints entire HL7 string
 ```
 
-### Creating messages
+### Creating new messages
 ```php
 // Create an empty Message object, and populate MSH and PID segments... 
 $msg = new Message();
@@ -45,7 +45,7 @@ $pid->setPatientName([$lastname, $firstname, $middlename, $suffix]); // Use a se
 $pid->setField('abcd', 5); // Apart from standard setter methods, you can manually set a value at any position too
 ```
 
-### Send messages
+### Send messages to remote listeners
 ```php
 $ip = '127.0.0.1'; // An IP
 $port = '12001'; // And Port where a HL7 listener is listening
@@ -56,7 +56,7 @@ echo $reponse->toString(true); // Prints ACK from the listener
 ```
 
 ## APIs
-// TODO (Generate from docblocks)
+Visit [docs\README](docs/README.md) for details on available APIs
 
 ### TODOs
 * Data Validation
