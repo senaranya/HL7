@@ -1,5 +1,6 @@
 <?php
 
+use Aranyasen\HL7;
 use Aranyasen\HL7\Segments\PV1;
 use Aranyasen\HL7\Segments\ORC;
 use Aranyasen\HL7\Segments\OBX;
@@ -16,7 +17,7 @@ use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Connection;
 
 return (object)[
-    'rootNamespace' => 'Aranyasen',
+    'rootNamespace' => HL7::class,
     'destDirectory' => 'docs',
     'format' => 'github',
     'classes' => [

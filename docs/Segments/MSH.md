@@ -1,31 +1,14 @@
 # Aranyasen\HL7\Segments\MSH  
 
-# MyClass Documentation
-
-Describes _how to use_ the class with some examples:
-```
-// Create new instance
-$obj = new MyClass();
-```
-HTML tags are properly escaped:
-```
-&lt;html&gt;&lt;div&gt;&lt;/div&gt;&lt;/html&gt;
-```
-Steps:
-* Step 1
-* Step 2
-* Step 3
-
-**Note:** &lt;i&gt;Some important note.&lt;/i&gt;
 MSH (message header) segment class
 
 Usage:
-<code>
+```php
 $seg = new MSH();
 
 $seg->setField(9, "ADT^A24");
 echo $seg->getField(1);
-</code>
+```
 
 The MSH is an implementation of the Segment class. The MSH segment is a bit different from other segments, in that
 the first field is the field separator after the segment name. Other fields thus start counting from 2! The setting

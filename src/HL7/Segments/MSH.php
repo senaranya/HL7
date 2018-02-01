@@ -8,12 +8,12 @@ use Aranyasen\HL7\Segment;
  * MSH (message header) segment class
  *
  * Usage:
- * <code>
+ * ```php
  * $seg = new MSH();
  *
  * $seg->setField(9, "ADT^A24");
  * echo $seg->getField(1);
- * </code>
+ * ```
  *
  * The MSH is an implementation of the Segment class. The MSH segment is a bit different from other segments, in that
  * the first field is the field separator after the segment name. Other fields thus start counting from 2! The setting
