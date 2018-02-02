@@ -10,7 +10,7 @@ use InvalidArgumentException;
  *
  * In general one needn't create an instance of the Message class directly, but use the HL7 factory class to create one.
  * When adding segments, note that the segment index starts at 0, so to get the first segment, do
- * <code>$msg->getSegmentByIndex(0)</code>.
+ * ```php $msg->getSegmentByIndex(0) ```
  *
  * The segment separator defaults to \015. To change this, set the global variable $SEGMENT_SEPARATOR.
  *
@@ -408,7 +408,6 @@ class Message
 
     /**
      * Convert Segment object to string
-     * TODO: This method should ideally be in Segment class as toString()
      * @param $seg
      * @return string
      */

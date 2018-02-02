@@ -52,20 +52,11 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|__construct|Create a segment. A segment may be created with just a name or a name and an array of field
-values. The segment name should be a standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and
-upper case. If an array is given, all fields will be filled from that array. Note that for composed fields and
-sub-components, the array may hold sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same
-way, since we can't distinguish between composed fields and repeated fields.|
-|getField|Get the field at index. If the field is a composite field, it returns an array
-```php
-$field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.|
-|getFields|Get the fields in the specified range, or all if nothing specified. If only the 'from' value is provided, all
-fields from this index till the end of the segment will be returned.|
+|__construct|Create a segment.|
+|getField|Get the field at index.|
+|getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
-|setField|Set the field specified by index to value. Indices start at 1, to stay with the HL7 standard. Trying to set the
-value at index 0 has no effect. The value may also be a reference to an array (that may itself contain arrays)
-to support composite fields (and sub-components).|
+|setField|Set the field specified by index to value.|
 |size|Get the number of fields for this segment, not including the name|
 
 
@@ -88,7 +79,9 @@ public getAbnormalFlags (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getDataLastObsNormalValues  
@@ -109,7 +102,9 @@ public getDataLastObsNormalValues (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getDateTimeOfTheObservation  
@@ -130,7 +125,9 @@ public getDateTimeOfTheObservation (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getID  
@@ -151,7 +148,9 @@ public getID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getNatureOfAbnormalTest  
@@ -172,7 +171,9 @@ public getNatureOfAbnormalTest (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getObservationIdentifier  
@@ -193,7 +194,9 @@ public getObservationIdentifier (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getObservationMethod  
@@ -214,7 +217,9 @@ public getObservationMethod (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getObservationSubId  
@@ -235,7 +240,9 @@ public getObservationSubId (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getObservationValue  
@@ -256,7 +263,9 @@ public getObservationValue (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getObserveResultStatus  
@@ -277,7 +286,9 @@ public getObserveResultStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getProbability  
@@ -298,7 +309,9 @@ public getProbability (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getProducersId  
@@ -319,7 +332,9 @@ public getProducersId (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getReferenceRange  
@@ -340,7 +355,9 @@ public getReferenceRange (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getResponsibleObserver  
@@ -361,7 +378,9 @@ public getResponsibleObserver (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getUnits  
@@ -382,7 +401,9 @@ public getUnits (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getUserDefinedAccessChecks  
@@ -403,7 +424,9 @@ public getUserDefinedAccessChecks (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::getValueType  
@@ -424,7 +447,9 @@ public getValueType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setAbnormalFlags  
@@ -445,7 +470,9 @@ public setAbnormalFlags (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setDataLastObsNormalValues  
@@ -466,7 +493,9 @@ public setDataLastObsNormalValues (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setDateTimeOfTheObservation  
@@ -487,7 +516,9 @@ public setDateTimeOfTheObservation (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setID  
@@ -508,7 +539,9 @@ public setID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setNatureOfAbnormalTest  
@@ -529,7 +562,9 @@ public setNatureOfAbnormalTest (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setObservationIdentifier  
@@ -550,7 +585,9 @@ public setObservationIdentifier (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setObservationMethod  
@@ -571,7 +608,9 @@ public setObservationMethod (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setObservationSubId  
@@ -592,7 +631,9 @@ public setObservationSubId (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setObservationValue  
@@ -613,7 +654,9 @@ public setObservationValue (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setObserveResultStatus  
@@ -634,7 +677,9 @@ public setObserveResultStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setProbability  
@@ -655,7 +700,9 @@ public setProbability (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setProducersId  
@@ -676,7 +723,9 @@ public setProducersId (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setReferenceRange  
@@ -697,7 +746,9 @@ public setReferenceRange (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setResponsibleObserver  
@@ -718,7 +769,9 @@ public setResponsibleObserver (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setUnits  
@@ -739,7 +792,9 @@ public setUnits (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setUserDefinedAccessChecks  
@@ -760,7 +815,9 @@ public setUserDefinedAccessChecks (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBX::setValueType  
@@ -781,5 +838,7 @@ public setValueType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 

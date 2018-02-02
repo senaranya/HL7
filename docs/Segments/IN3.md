@@ -68,20 +68,11 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|__construct|Create a segment. A segment may be created with just a name or a name and an array of field
-values. The segment name should be a standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and
-upper case. If an array is given, all fields will be filled from that array. Note that for composed fields and
-sub-components, the array may hold sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same
-way, since we can't distinguish between composed fields and repeated fields.|
-|getField|Get the field at index. If the field is a composite field, it returns an array
-```php
-$field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.|
-|getFields|Get the fields in the specified range, or all if nothing specified. If only the 'from' value is provided, all
-fields from this index till the end of the segment will be returned.|
+|__construct|Create a segment.|
+|getField|Get the field at index.|
+|getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
-|setField|Set the field specified by index to value. Indices start at 1, to stay with the HL7 standard. Trying to set the
-value at index 0 has no effect. The value may also be a reference to an array (that may itself contain arrays)
-to support composite fields (and sub-components).|
+|setField|Set the field specified by index to value.|
 |size|Get the number of fields for this segment, not including the name|
 
 
@@ -104,7 +95,9 @@ public getAppealReason (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getCaseManager  
@@ -125,7 +118,9 @@ public getCaseManager (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getCertificationAgency  
@@ -146,7 +141,9 @@ public getCertificationAgency (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getCertificationAgencyPhoneNumber  
@@ -167,7 +164,9 @@ public getCertificationAgencyPhoneNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getCertificationBeginDate  
@@ -188,7 +187,9 @@ public getCertificationBeginDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getCertificationContact  
@@ -209,7 +210,9 @@ public getCertificationContact (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getCertificationContactPhoneNumber  
@@ -230,7 +233,9 @@ public getCertificationContactPhoneNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getCertificationDateTime  
@@ -251,7 +256,9 @@ public getCertificationDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getCertificationEndDate  
@@ -272,7 +279,9 @@ public getCertificationEndDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getCertificationModifyDateTime  
@@ -293,7 +302,9 @@ public getCertificationModifyDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getCertificationNumber  
@@ -314,7 +325,9 @@ public getCertificationNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getCertificationRequired  
@@ -335,7 +348,9 @@ public getCertificationRequired (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getCertifiedBy  
@@ -356,7 +371,9 @@ public getCertifiedBy (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getDays  
@@ -377,7 +394,9 @@ public getDays (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getID  
@@ -398,7 +417,9 @@ public getID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getNonConcurCodeDescription  
@@ -419,7 +440,9 @@ public getNonConcurCodeDescription (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getNonConcurEffectiveDateTime  
@@ -440,7 +463,9 @@ public getNonConcurEffectiveDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getOperator  
@@ -461,7 +486,9 @@ public getOperator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getPenalty  
@@ -482,7 +509,9 @@ public getPenalty (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getPhysicianReviewer  
@@ -503,7 +532,9 @@ public getPhysicianReviewer (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getPreCertificationRequirement  
@@ -524,7 +555,9 @@ public getPreCertificationRequirement (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getSecondOpinionDate  
@@ -545,7 +578,9 @@ public getSecondOpinionDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getSecondOpinionDocumentationReceived  
@@ -566,7 +601,9 @@ public getSecondOpinionDocumentationReceived (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getSecondOpinionPhysician  
@@ -587,7 +624,9 @@ public getSecondOpinionPhysician (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::getSecondOpinionStatus  
@@ -608,7 +647,9 @@ public getSecondOpinionStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setAppealReason  
@@ -629,7 +670,9 @@ public setAppealReason (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setCaseManager  
@@ -650,7 +693,9 @@ public setCaseManager (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setCertificationAgency  
@@ -671,7 +716,9 @@ public setCertificationAgency (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setCertificationAgencyPhoneNumber  
@@ -692,7 +739,9 @@ public setCertificationAgencyPhoneNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setCertificationBeginDate  
@@ -713,7 +762,9 @@ public setCertificationBeginDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setCertificationContact  
@@ -734,7 +785,9 @@ public setCertificationContact (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setCertificationContactPhoneNumber  
@@ -755,7 +808,9 @@ public setCertificationContactPhoneNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setCertificationDateTime  
@@ -776,7 +831,9 @@ public setCertificationDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setCertificationEndDate  
@@ -797,7 +854,9 @@ public setCertificationEndDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setCertificationModifyDateTime  
@@ -818,7 +877,9 @@ public setCertificationModifyDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setCertificationNumber  
@@ -839,7 +900,9 @@ public setCertificationNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setCertificationRequired  
@@ -860,7 +923,9 @@ public setCertificationRequired (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setCertifiedBy  
@@ -881,7 +946,9 @@ public setCertifiedBy (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setDays  
@@ -902,7 +969,9 @@ public setDays (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setID  
@@ -923,7 +992,9 @@ public setID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setNonConcurCodeDescription  
@@ -944,7 +1015,9 @@ public setNonConcurCodeDescription (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setNonConcurEffectiveDateTime  
@@ -965,7 +1038,9 @@ public setNonConcurEffectiveDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setOperator  
@@ -986,7 +1061,9 @@ public setOperator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setPenalty  
@@ -1007,7 +1084,9 @@ public setPenalty (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setPhysicianReviewer  
@@ -1028,7 +1107,9 @@ public setPhysicianReviewer (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setPreCertificationRequirement  
@@ -1049,7 +1130,9 @@ public setPreCertificationRequirement (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setSecondOpinionDate  
@@ -1070,7 +1153,9 @@ public setSecondOpinionDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setSecondOpinionDocumentationReceived  
@@ -1091,7 +1176,9 @@ public setSecondOpinionDocumentationReceived (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setSecondOpinionPhysician  
@@ -1112,7 +1199,9 @@ public setSecondOpinionPhysician (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN3::setSecondOpinionStatus  
@@ -1133,5 +1222,7 @@ public setSecondOpinionStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 

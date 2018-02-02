@@ -12,9 +12,9 @@ class ACK extends Message
 
     /**
      * Usage:
-     * <code>
+     * ```php
      * $ack = new ACK($request);
-     * </code>
+     * ```
      *
      * Convenience module implementing an acknowledgement (ACK) message. This can be used in HL7 servers to create an
      * acknowledgement for an incoming message.
@@ -71,10 +71,11 @@ class ACK extends Message
     }
 
     /**
-     * Set the acknowledgement code for the acknowledgement. Code should be one of: A, E, R. Codes can be prepended
-     * with C or A, denoting enhanced or normal acknowledge mode. This denotes: accept, general error and reject
-     * respectively. The ACK module will determine the right answer mode (normal or enhanced) based upon the request,
-     * if not provided. The message provided in $msg will be set in MSA 3.
+     * Set the acknowledgement code for the acknowledgement.
+     *
+     * Code should be one of: A, E, R. Codes can be prepended with C or A, denoting enhanced or normal acknowledge mode.
+     * This denotes: accept, general error and reject respectively. The ACK module will determine the right answer mode
+     * (normal or enhanced) based upon the request, if not provided. The message provided in $msg will be set in MSA 3.
      *
      * @param string $code Code to use in acknowledgement
      * @param string $msg Acknowledgement message
@@ -107,8 +108,9 @@ class ACK extends Message
     }
 
     /**
-     * Set the error message for the acknowledgement. This will also set the error code to either AE or CE, depending
-     * on the mode of the incoming message.
+     * Set the error message for the acknowledgement.
+     *
+     * This will also set the error code to either AE or CE, depending on the mode of the incoming message.
      *
      * @param string $msg Error message
      * @access public

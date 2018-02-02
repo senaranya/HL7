@@ -80,20 +80,11 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|__construct|Create a segment. A segment may be created with just a name or a name and an array of field
-values. The segment name should be a standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and
-upper case. If an array is given, all fields will be filled from that array. Note that for composed fields and
-sub-components, the array may hold sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same
-way, since we can't distinguish between composed fields and repeated fields.|
-|getField|Get the field at index. If the field is a composite field, it returns an array
-```php
-$field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.|
-|getFields|Get the fields in the specified range, or all if nothing specified. If only the 'from' value is provided, all
-fields from this index till the end of the segment will be returned.|
+|__construct|Create a segment.|
+|getField|Get the field at index.|
+|getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
-|setField|Set the field specified by index to value. Indices start at 1, to stay with the HL7 standard. Trying to set the
-value at index 0 has no effect. The value may also be a reference to an array (that may itself contain arrays)
-to support composite fields (and sub-components).|
+|setField|Set the field specified by index to value.|
 |size|Get the number of fields for this segment, not including the name|
 
 
@@ -116,7 +107,9 @@ public getActionBy (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getAdvancedBeneficiaryNoticeCode  
@@ -137,7 +130,9 @@ public getAdvancedBeneficiaryNoticeCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getAdvancedBeneficiaryNoticeOverrideReason  
@@ -158,7 +153,9 @@ public getAdvancedBeneficiaryNoticeOverrideReason (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getCallBackPhoneNumber  
@@ -179,7 +176,9 @@ public getCallBackPhoneNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getConfidentialityCode  
@@ -200,7 +199,9 @@ public getConfidentialityCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getDateTimeofTransaction  
@@ -221,7 +222,9 @@ public getDateTimeofTransaction (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getEnteredBy  
@@ -242,7 +245,9 @@ public getEnteredBy (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getEntererAuthorizationMode  
@@ -263,7 +268,9 @@ public getEntererAuthorizationMode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getEnterersLocation  
@@ -284,7 +291,9 @@ public getEnterersLocation (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getEnteringDevice  
@@ -305,7 +314,9 @@ public getEnteringDevice (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getEnteringOrganization  
@@ -326,7 +337,9 @@ public getEnteringOrganization (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getFillerOrderNumber  
@@ -347,7 +360,9 @@ public getFillerOrderNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getFillersExpectedAvailabilityDateTime  
@@ -368,7 +383,9 @@ public getFillersExpectedAvailabilityDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getOrderControl  
@@ -389,7 +406,9 @@ public getOrderControl (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getOrderControlCodeReason  
@@ -410,7 +429,9 @@ public getOrderControlCodeReason (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getOrderEffectiveDateTime  
@@ -431,7 +452,9 @@ public getOrderEffectiveDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getOrderStatus  
@@ -452,7 +475,9 @@ public getOrderStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getOrderStatusModifier  
@@ -473,7 +498,9 @@ public getOrderStatusModifier (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getOrderType  
@@ -494,7 +521,9 @@ public getOrderType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getOrderingFacilityAddress  
@@ -515,7 +544,9 @@ public getOrderingFacilityAddress (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getOrderingFacilityName  
@@ -536,7 +567,9 @@ public getOrderingFacilityName (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getOrderingFacilityPhoneNumber  
@@ -557,7 +590,9 @@ public getOrderingFacilityPhoneNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getOrderingProvider  
@@ -578,7 +613,9 @@ public getOrderingProvider (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getOrderingProviderAddress  
@@ -599,7 +636,9 @@ public getOrderingProviderAddress (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getParentOrder  
@@ -620,7 +659,9 @@ public getParentOrder (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getParentUniversalServiceIdentifier  
@@ -641,7 +682,9 @@ public getParentUniversalServiceIdentifier (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getPlacerGroupNumber  
@@ -662,7 +705,9 @@ public getPlacerGroupNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getPlacerOrderNumber  
@@ -683,7 +728,9 @@ public getPlacerOrderNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getQuantityTiming  
@@ -704,7 +751,9 @@ public getQuantityTiming (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getResponseFlag  
@@ -725,7 +774,9 @@ public getResponseFlag (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::getVerifiedBy  
@@ -746,7 +797,9 @@ public getVerifiedBy (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setActionBy  
@@ -767,7 +820,9 @@ public setActionBy (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setAdvancedBeneficiaryNoticeCode  
@@ -788,7 +843,9 @@ public setAdvancedBeneficiaryNoticeCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setAdvancedBeneficiaryNoticeOverrideReason  
@@ -809,7 +866,9 @@ public setAdvancedBeneficiaryNoticeOverrideReason (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setCallBackPhoneNumber  
@@ -830,7 +889,9 @@ public setCallBackPhoneNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setConfidentialityCode  
@@ -851,7 +912,9 @@ public setConfidentialityCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setDateTimeofTransaction  
@@ -872,7 +935,9 @@ public setDateTimeofTransaction (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setEnteredBy  
@@ -893,7 +958,9 @@ public setEnteredBy (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setEntererAuthorizationMode  
@@ -914,7 +981,9 @@ public setEntererAuthorizationMode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setEnterersLocation  
@@ -935,7 +1004,9 @@ public setEnterersLocation (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setEnteringDevice  
@@ -956,7 +1027,9 @@ public setEnteringDevice (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setEnteringOrganization  
@@ -977,7 +1050,9 @@ public setEnteringOrganization (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setFillerOrderNumber  
@@ -998,7 +1073,9 @@ public setFillerOrderNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setFillersExpectedAvailabilityDateTime  
@@ -1019,7 +1096,9 @@ public setFillersExpectedAvailabilityDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setOrderControl  
@@ -1040,7 +1119,9 @@ public setOrderControl (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setOrderControlCodeReason  
@@ -1061,7 +1142,9 @@ public setOrderControlCodeReason (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setOrderEffectiveDateTime  
@@ -1082,7 +1165,9 @@ public setOrderEffectiveDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setOrderStatus  
@@ -1103,7 +1188,9 @@ public setOrderStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setOrderStatusModifier  
@@ -1124,7 +1211,9 @@ public setOrderStatusModifier (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setOrderType  
@@ -1145,7 +1234,9 @@ public setOrderType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setOrderingFacilityAddress  
@@ -1166,7 +1257,9 @@ public setOrderingFacilityAddress (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setOrderingFacilityName  
@@ -1187,7 +1280,9 @@ public setOrderingFacilityName (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setOrderingFacilityPhoneNumber  
@@ -1208,7 +1303,9 @@ public setOrderingFacilityPhoneNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setOrderingProvider  
@@ -1229,7 +1326,9 @@ public setOrderingProvider (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setOrderingProviderAddress  
@@ -1250,7 +1349,9 @@ public setOrderingProviderAddress (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setParentOrder  
@@ -1271,7 +1372,9 @@ public setParentOrder (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setParentUniversalServiceIdentifier  
@@ -1292,7 +1395,9 @@ public setParentUniversalServiceIdentifier (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setPlacerGroupNumber  
@@ -1313,7 +1418,9 @@ public setPlacerGroupNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setPlacerOrderNumber  
@@ -1334,7 +1441,9 @@ public setPlacerOrderNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setQuantityTiming  
@@ -1355,7 +1464,9 @@ public setQuantityTiming (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setResponseFlag  
@@ -1376,7 +1487,9 @@ public setResponseFlag (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### ORC::setVerifiedBy  
@@ -1397,5 +1510,7 @@ public setVerifiedBy (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 

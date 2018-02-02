@@ -116,20 +116,11 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|__construct|Create a segment. A segment may be created with just a name or a name and an array of field
-values. The segment name should be a standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and
-upper case. If an array is given, all fields will be filled from that array. Note that for composed fields and
-sub-components, the array may hold sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same
-way, since we can't distinguish between composed fields and repeated fields.|
-|getField|Get the field at index. If the field is a composite field, it returns an array
-```php
-$field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.|
-|getFields|Get the fields in the specified range, or all if nothing specified. If only the 'from' value is provided, all
-fields from this index till the end of the segment will be returned.|
+|__construct|Create a segment.|
+|getField|Get the field at index.|
+|getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
-|setField|Set the field specified by index to value. Indices start at 1, to stay with the HL7 standard. Trying to set the
-value at index 0 has no effect. The value may also be a reference to an array (that may itself contain arrays)
-to support composite fields (and sub-components).|
+|setField|Set the field specified by index to value.|
 |size|Get the number of fields for this segment, not including the name|
 
 
@@ -152,7 +143,9 @@ public getAssignmentOfBenefits (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getAuthorizationInformation  
@@ -173,7 +166,9 @@ public getAuthorizationInformation (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getBillingStatus  
@@ -194,7 +189,9 @@ public getBillingStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getCompanyPlanCode  
@@ -215,7 +212,9 @@ public getCompanyPlanCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getCoordOfBenPriority  
@@ -236,7 +235,9 @@ public getCoordOfBenPriority (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getCoordinationOfBenefits  
@@ -257,7 +258,9 @@ public getCoordinationOfBenefits (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getCoverageType  
@@ -278,7 +281,9 @@ public getCoverageType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getDelayBeforeLRDay  
@@ -299,7 +304,9 @@ public getDelayBeforeLRDay (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getGroupName  
@@ -320,7 +327,9 @@ public getGroupName (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getGroupNumber  
@@ -341,7 +350,9 @@ public getGroupNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getHandicap  
@@ -362,7 +373,9 @@ public getHandicap (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getID  
@@ -383,7 +396,9 @@ public getID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsuranceCoContactPerson  
@@ -404,7 +419,9 @@ public getInsuranceCoContactPerson (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsuranceCoPhoneNumber  
@@ -425,7 +442,9 @@ public getInsuranceCoPhoneNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsuranceCompanyAddress  
@@ -446,7 +465,9 @@ public getInsuranceCompanyAddress (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsuranceCompanyID  
@@ -467,7 +488,9 @@ public getInsuranceCompanyID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsuranceCompanyName  
@@ -488,7 +511,9 @@ public getInsuranceCompanyName (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsurancePlanID  
@@ -509,7 +534,9 @@ public getInsurancePlanID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsuredsAddress  
@@ -530,7 +557,9 @@ public getInsuredsAddress (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsuredsDateOfBirth  
@@ -551,7 +580,9 @@ public getInsuredsDateOfBirth (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsuredsEmployersAddress  
@@ -572,7 +603,9 @@ public getInsuredsEmployersAddress (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsuredsEmploymentStatus  
@@ -593,7 +626,9 @@ public getInsuredsEmploymentStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsuredsGroupEmpID  
@@ -614,7 +649,9 @@ public getInsuredsGroupEmpID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsuredsGroupEmpName  
@@ -635,7 +672,9 @@ public getInsuredsGroupEmpName (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsuredsIDNumber  
@@ -656,7 +695,9 @@ public getInsuredsIDNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsuredsRelationshipToPatient  
@@ -677,7 +718,9 @@ public getInsuredsRelationshipToPatient (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getInsuredsSex  
@@ -698,7 +741,9 @@ public getInsuredsSex (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getLifetimeReserveDays  
@@ -719,7 +764,9 @@ public getLifetimeReserveDays (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getNameOfInsured  
@@ -740,7 +787,9 @@ public getNameOfInsured (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getNoticeOfAdmissionDate  
@@ -761,7 +810,9 @@ public getNoticeOfAdmissionDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getNoticeOfAdmissionFlag  
@@ -782,7 +833,9 @@ public getNoticeOfAdmissionFlag (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getPlanEffectiveDate  
@@ -803,7 +856,9 @@ public getPlanEffectiveDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getPlanExpirationDate  
@@ -824,7 +879,9 @@ public getPlanExpirationDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getPlanType  
@@ -845,7 +902,9 @@ public getPlanType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getPolicyDeductible  
@@ -866,7 +925,9 @@ public getPolicyDeductible (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getPolicyLimitAmount  
@@ -887,7 +948,9 @@ public getPolicyLimitAmount (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getPolicyLimitDays  
@@ -908,7 +971,9 @@ public getPolicyLimitDays (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getPolicyNumber  
@@ -929,7 +994,9 @@ public getPolicyNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getPreAdmitCertPAC  
@@ -950,7 +1017,9 @@ public getPreAdmitCertPAC (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getPriorInsurancePlanID  
@@ -971,7 +1040,9 @@ public getPriorInsurancePlanID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getReleaseInformationCode  
@@ -992,7 +1063,9 @@ public getReleaseInformationCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getReportOfEligibilityDate  
@@ -1013,7 +1086,9 @@ public getReportOfEligibilityDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getReportOfEligibilityFlag  
@@ -1034,7 +1109,9 @@ public getReportOfEligibilityFlag (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getRoomRatePrivate  
@@ -1055,7 +1132,9 @@ public getRoomRatePrivate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getRoomRateSemiPrivate  
@@ -1076,7 +1155,9 @@ public getRoomRateSemiPrivate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getTypeOfAgreementCode  
@@ -1097,7 +1178,9 @@ public getTypeOfAgreementCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getVerificationBy  
@@ -1118,7 +1201,9 @@ public getVerificationBy (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getVerificationDateTime  
@@ -1139,7 +1224,9 @@ public getVerificationDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::getVerificationStatus  
@@ -1160,7 +1247,9 @@ public getVerificationStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setAssignmentOfBenefits  
@@ -1181,7 +1270,9 @@ public setAssignmentOfBenefits (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setAuthorizationInformation  
@@ -1202,7 +1293,9 @@ public setAuthorizationInformation (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setBillingStatus  
@@ -1223,7 +1316,9 @@ public setBillingStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setCompanyPlanCode  
@@ -1244,7 +1339,9 @@ public setCompanyPlanCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setCoordOfBenPriority  
@@ -1265,7 +1362,9 @@ public setCoordOfBenPriority (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setCoordinationOfBenefits  
@@ -1286,7 +1385,9 @@ public setCoordinationOfBenefits (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setCoverageType  
@@ -1307,7 +1408,9 @@ public setCoverageType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setDelayBeforeLRDay  
@@ -1328,7 +1431,9 @@ public setDelayBeforeLRDay (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setGroupName  
@@ -1349,7 +1454,9 @@ public setGroupName (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setGroupNumber  
@@ -1370,7 +1477,9 @@ public setGroupNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setHandicap  
@@ -1391,7 +1500,9 @@ public setHandicap (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setID  
@@ -1412,7 +1523,9 @@ public setID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsuranceCoContactPerson  
@@ -1433,7 +1546,9 @@ public setInsuranceCoContactPerson (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsuranceCoPhoneNumber  
@@ -1454,7 +1569,9 @@ public setInsuranceCoPhoneNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsuranceCompanyAddress  
@@ -1475,7 +1592,9 @@ public setInsuranceCompanyAddress (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsuranceCompanyID  
@@ -1496,7 +1615,9 @@ public setInsuranceCompanyID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsuranceCompanyName  
@@ -1517,7 +1638,9 @@ public setInsuranceCompanyName (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsurancePlanID  
@@ -1538,7 +1661,9 @@ public setInsurancePlanID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsuredsAddress  
@@ -1559,7 +1684,9 @@ public setInsuredsAddress (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsuredsDateOfBirth  
@@ -1580,7 +1707,9 @@ public setInsuredsDateOfBirth (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsuredsEmployersAddress  
@@ -1601,7 +1730,9 @@ public setInsuredsEmployersAddress (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsuredsEmploymentStatus  
@@ -1622,7 +1753,9 @@ public setInsuredsEmploymentStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsuredsGroupEmpID  
@@ -1643,7 +1776,9 @@ public setInsuredsGroupEmpID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsuredsGroupEmpName  
@@ -1664,7 +1799,9 @@ public setInsuredsGroupEmpName (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsuredsIDNumber  
@@ -1685,7 +1822,9 @@ public setInsuredsIDNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsuredsRelationshipToPatient  
@@ -1706,7 +1845,9 @@ public setInsuredsRelationshipToPatient (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setInsuredsSex  
@@ -1727,7 +1868,9 @@ public setInsuredsSex (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setLifetimeReserveDays  
@@ -1748,7 +1891,9 @@ public setLifetimeReserveDays (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setNameOfInsured  
@@ -1769,7 +1914,9 @@ public setNameOfInsured (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setNoticeOfAdmissionDate  
@@ -1790,7 +1937,9 @@ public setNoticeOfAdmissionDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setNoticeOfAdmissionFlag  
@@ -1811,7 +1960,9 @@ public setNoticeOfAdmissionFlag (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setPlanEffectiveDate  
@@ -1832,7 +1983,9 @@ public setPlanEffectiveDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setPlanExpirationDate  
@@ -1853,7 +2006,9 @@ public setPlanExpirationDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setPlanType  
@@ -1874,7 +2029,9 @@ public setPlanType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setPolicyDeductible  
@@ -1895,7 +2052,9 @@ public setPolicyDeductible (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setPolicyLimitAmount  
@@ -1916,7 +2075,9 @@ public setPolicyLimitAmount (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setPolicyLimitDays  
@@ -1937,7 +2098,9 @@ public setPolicyLimitDays (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setPolicyNumber  
@@ -1958,7 +2121,9 @@ public setPolicyNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setPreAdmitCertPAC  
@@ -1979,7 +2144,9 @@ public setPreAdmitCertPAC (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setPriorInsurancePlanID  
@@ -2000,7 +2167,9 @@ public setPriorInsurancePlanID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setReleaseInformationCode  
@@ -2021,7 +2190,9 @@ public setReleaseInformationCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setReportOfEligibilityDate  
@@ -2042,7 +2213,9 @@ public setReportOfEligibilityDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setReportOfEligibilityFlag  
@@ -2063,7 +2236,9 @@ public setReportOfEligibilityFlag (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setRoomRatePrivate  
@@ -2084,7 +2259,9 @@ public setRoomRatePrivate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setRoomRateSemiPrivate  
@@ -2105,7 +2282,9 @@ public setRoomRateSemiPrivate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setTypeOfAgreementCode  
@@ -2126,7 +2305,9 @@ public setTypeOfAgreementCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setVerificationBy  
@@ -2147,7 +2328,9 @@ public setVerificationBy (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setVerificationDateTime  
@@ -2168,7 +2351,9 @@ public setVerificationDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### IN1::setVerificationStatus  
@@ -2189,5 +2374,7 @@ public setVerificationStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 

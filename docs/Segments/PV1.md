@@ -122,20 +122,11 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|__construct|Create a segment. A segment may be created with just a name or a name and an array of field
-values. The segment name should be a standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and
-upper case. If an array is given, all fields will be filled from that array. Note that for composed fields and
-sub-components, the array may hold sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same
-way, since we can't distinguish between composed fields and repeated fields.|
-|getField|Get the field at index. If the field is a composite field, it returns an array
-```php
-$field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.|
-|getFields|Get the fields in the specified range, or all if nothing specified. If only the 'from' value is provided, all
-fields from this index till the end of the segment will be returned.|
+|__construct|Create a segment.|
+|getField|Get the field at index.|
+|getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
-|setField|Set the field specified by index to value. Indices start at 1, to stay with the HL7 standard. Trying to set the
-value at index 0 has no effect. The value may also be a reference to an array (that may itself contain arrays)
-to support composite fields (and sub-components).|
+|setField|Set the field specified by index to value.|
 |size|Get the number of fields for this segment, not including the name|
 
 
@@ -158,7 +149,9 @@ public getAccountStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getAdmissionType  
@@ -179,7 +172,9 @@ public getAdmissionType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getAdmitDateTime  
@@ -200,7 +195,9 @@ public getAdmitDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getAdmitSource  
@@ -221,7 +218,9 @@ public getAdmitSource (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getAdmittingDoctor  
@@ -242,7 +241,9 @@ public getAdmittingDoctor (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getAlternateVisitID  
@@ -263,7 +264,9 @@ public getAlternateVisitID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getAmbulatoryStatus  
@@ -284,7 +287,9 @@ public getAmbulatoryStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getAssignedPatientLocation  
@@ -305,7 +310,9 @@ public getAssignedPatientLocation (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getAttendingDoctor  
@@ -326,7 +333,9 @@ public getAttendingDoctor (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getBadDebtAgencyCode  
@@ -347,7 +356,9 @@ public getBadDebtAgencyCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getBadDebtRecoveryAmount  
@@ -368,7 +379,9 @@ public getBadDebtRecoveryAmount (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getBadDebtTransferAmount  
@@ -389,7 +402,9 @@ public getBadDebtTransferAmount (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getBedStatus  
@@ -410,7 +425,9 @@ public getBedStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getChargePriceIndicator  
@@ -431,7 +448,9 @@ public getChargePriceIndicator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getConsultingDoctor  
@@ -452,7 +471,9 @@ public getConsultingDoctor (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getContractAmount  
@@ -473,7 +494,9 @@ public getContractAmount (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getContractCode  
@@ -494,7 +517,9 @@ public getContractCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getContractEffectiveDate  
@@ -515,7 +540,9 @@ public getContractEffectiveDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getContractPeriod  
@@ -536,7 +563,9 @@ public getContractPeriod (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getCourtesyCode  
@@ -557,7 +586,9 @@ public getCourtesyCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getCreditRating  
@@ -578,7 +609,9 @@ public getCreditRating (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getCurrentPatientBalance  
@@ -599,7 +632,9 @@ public getCurrentPatientBalance (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getDeleteAccountDate  
@@ -620,7 +655,9 @@ public getDeleteAccountDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getDeleteAccountIndicator  
@@ -641,7 +678,9 @@ public getDeleteAccountIndicator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getDietType  
@@ -662,7 +701,9 @@ public getDietType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getDischargeDateTime  
@@ -683,7 +724,9 @@ public getDischargeDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getDischargeDisposition  
@@ -704,7 +747,9 @@ public getDischargeDisposition (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getDischargedToLocation  
@@ -725,7 +770,9 @@ public getDischargedToLocation (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getFinancialClass  
@@ -746,7 +793,9 @@ public getFinancialClass (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getHospitalService  
@@ -767,7 +816,9 @@ public getHospitalService (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getID  
@@ -788,7 +839,9 @@ public getID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getInterestCode  
@@ -809,7 +862,9 @@ public getInterestCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getOtherHealthcareProvider  
@@ -830,7 +885,9 @@ public getOtherHealthcareProvider (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getPatientClass  
@@ -851,7 +908,9 @@ public getPatientClass (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getPatientType  
@@ -872,7 +931,9 @@ public getPatientType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getPendingLocation  
@@ -893,7 +954,9 @@ public getPendingLocation (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getPreAdmitNumber  
@@ -914,7 +977,9 @@ public getPreAdmitNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getPreAdmitTestIndicator  
@@ -935,7 +1000,9 @@ public getPreAdmitTestIndicator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getPriorPatientLocation  
@@ -956,7 +1023,9 @@ public getPriorPatientLocation (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getPriorTemporaryLocation  
@@ -977,7 +1046,9 @@ public getPriorTemporaryLocation (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getReAdmissionIndicator  
@@ -998,7 +1069,9 @@ public getReAdmissionIndicator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getReferringDoctor  
@@ -1019,7 +1092,9 @@ public getReferringDoctor (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getServicingFacility  
@@ -1040,7 +1115,9 @@ public getServicingFacility (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getTemporaryLocation  
@@ -1061,7 +1138,9 @@ public getTemporaryLocation (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getTotalAdjustments  
@@ -1082,7 +1161,9 @@ public getTotalAdjustments (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getTotalCharges  
@@ -1103,7 +1184,9 @@ public getTotalCharges (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getTotalPayments  
@@ -1124,7 +1207,9 @@ public getTotalPayments (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getTransferToBadDebtCode  
@@ -1145,7 +1230,9 @@ public getTransferToBadDebtCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getTransferToBadDebtDate  
@@ -1166,7 +1253,9 @@ public getTransferToBadDebtDate (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getVipIndicator  
@@ -1187,7 +1276,9 @@ public getVipIndicator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getVisitIndicator  
@@ -1208,7 +1299,9 @@ public getVisitIndicator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::getVisitNumber  
@@ -1229,7 +1322,9 @@ public getVisitNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::setAccountStatus  
@@ -1255,6 +1350,7 @@ public setAccountStatus ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setAdmissionType  
@@ -1280,6 +1376,7 @@ public setAdmissionType ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setAdmitDateTime  
@@ -1305,6 +1402,7 @@ public setAdmitDateTime ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setAdmitSource  
@@ -1330,6 +1428,7 @@ public setAdmitSource ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setAdmittingDoctor  
@@ -1355,6 +1454,7 @@ public setAdmittingDoctor ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setAlternateVisitID  
@@ -1380,6 +1480,7 @@ public setAlternateVisitID ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setAmbulatoryStatus  
@@ -1405,6 +1506,7 @@ public setAmbulatoryStatus ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setAssignedPatientLocation  
@@ -1425,7 +1527,9 @@ public setAssignedPatientLocation (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::setAttendingDoctor  
@@ -1451,6 +1555,7 @@ public setAttendingDoctor ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setBadDebtAgencyCode  
@@ -1476,6 +1581,7 @@ public setBadDebtAgencyCode ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setBadDebtRecoveryAmount  
@@ -1501,6 +1607,7 @@ public setBadDebtRecoveryAmount ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setBadDebtTransferAmount  
@@ -1526,6 +1633,7 @@ public setBadDebtTransferAmount ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setBedStatus  
@@ -1551,6 +1659,7 @@ public setBedStatus ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setChargePriceIndicator  
@@ -1576,6 +1685,7 @@ public setChargePriceIndicator ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setConsultingDoctor  
@@ -1601,6 +1711,7 @@ public setConsultingDoctor ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setContractAmount  
@@ -1626,6 +1737,7 @@ public setContractAmount ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setContractCode  
@@ -1651,6 +1763,7 @@ public setContractCode ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setContractEffectiveDate  
@@ -1676,6 +1789,7 @@ public setContractEffectiveDate ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setContractPeriod  
@@ -1701,6 +1815,7 @@ public setContractPeriod ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setCourtesyCode  
@@ -1726,6 +1841,7 @@ public setCourtesyCode ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setCreditRating  
@@ -1751,6 +1867,7 @@ public setCreditRating ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setCurrentPatientBalance  
@@ -1776,6 +1893,7 @@ public setCurrentPatientBalance ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setDeleteAccountDate  
@@ -1801,6 +1919,7 @@ public setDeleteAccountDate ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setDeleteAccountIndicator  
@@ -1826,6 +1945,7 @@ public setDeleteAccountIndicator ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setDietType  
@@ -1851,6 +1971,7 @@ public setDietType ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setDischargeDateTime  
@@ -1876,6 +1997,7 @@ public setDischargeDateTime ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setDischargeDisposition  
@@ -1901,6 +2023,7 @@ public setDischargeDisposition ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setDischargedToLocation  
@@ -1926,6 +2049,7 @@ public setDischargedToLocation ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setFinancialClass  
@@ -1951,6 +2075,7 @@ public setFinancialClass ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setHospitalService  
@@ -1976,6 +2101,7 @@ public setHospitalService ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setID  
@@ -1996,7 +2122,9 @@ public setID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::setInterestCode  
@@ -2022,6 +2150,7 @@ public setInterestCode ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setOtherHealthcareProvider  
@@ -2047,6 +2176,7 @@ public setOtherHealthcareProvider ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setPatientClass  
@@ -2067,7 +2197,9 @@ public setPatientClass (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PV1::setPatientType  
@@ -2093,6 +2225,7 @@ public setPatientType ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setPendingLocation  
@@ -2118,6 +2251,7 @@ public setPendingLocation ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setPreAdmitNumber  
@@ -2143,6 +2277,7 @@ public setPreAdmitNumber ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setPreAdmitTestIndicator  
@@ -2168,6 +2303,7 @@ public setPreAdmitTestIndicator ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setPriorPatientLocation  
@@ -2193,6 +2329,7 @@ public setPriorPatientLocation ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setPriorTemporaryLocation  
@@ -2218,6 +2355,7 @@ public setPriorTemporaryLocation ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setReAdmissionIndicator  
@@ -2243,6 +2381,7 @@ public setReAdmissionIndicator ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setReferringDoctor  
@@ -2268,6 +2407,7 @@ public setReferringDoctor ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setServicingFacility  
@@ -2293,6 +2433,7 @@ public setServicingFacility ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setTemporaryLocation  
@@ -2318,6 +2459,7 @@ public setTemporaryLocation ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setTotalAdjustments  
@@ -2343,6 +2485,7 @@ public setTotalAdjustments ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setTotalCharges  
@@ -2368,6 +2511,7 @@ public setTotalCharges ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setTotalPayments  
@@ -2393,6 +2537,7 @@ public setTotalPayments ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setTransferToBadDebtCode  
@@ -2418,6 +2563,7 @@ public setTransferToBadDebtCode ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setTransferToBadDebtDate  
@@ -2443,6 +2589,7 @@ public setTransferToBadDebtDate ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setVipIndicator  
@@ -2468,6 +2615,7 @@ public setVipIndicator ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setVisitIndicator  
@@ -2493,6 +2641,7 @@ public setVisitIndicator ( $value, int $position)
 
 
 
+<hr />
 
 
 ### PV1::setVisitNumber  
@@ -2518,4 +2667,5 @@ public setVisitNumber ( $value, int $position)
 
 
 
+<hr />
 

@@ -12,12 +12,8 @@ Aranyasen\HL7\Message
 
 | Name | Description |
 |------|-------------|
-|[setAckCode](#acksetackcode)|Set the acknowledgement code for the acknowledgement. Code should be one of: A, E, R. Codes can be prepended
-with C or A, denoting enhanced or normal acknowledge mode. This denotes: accept, general error and reject
-respectively. The ACK module will determine the right answer mode (normal or enhanced) based upon the request,
-if not provided. The message provided in $msg will be set in MSA 3.|
-|[setErrorMessage](#ackseterrormessage)|Set the error message for the acknowledgement. This will also set the error code to either AE or CE, depending
-on the mode of the incoming message.|
+|[setAckCode](#acksetackcode)|Set the acknowledgement code for the acknowledgement.|
+|[setErrorMessage](#ackseterrormessage)|Set the error message for the acknowledgement.|
 
 ## Inherited methods
 
@@ -32,8 +28,7 @@ on the mode of the incoming message.|
 |getSegmentsByName|Return an array of all segments with the given name|
 |insertSegment|Insert a segment.|
 |removeSegmentByIndex|Remove the segment indexed by $index.|
-|segmentToString|Convert Segment object to string
-TODO: This method should ideally be in Segment class as toString()|
+|segmentToString|Convert Segment object to string|
 |setSegment|Set the segment on index.|
 |toString|Return a string representation of this message.|
 
@@ -47,12 +42,11 @@ TODO: This method should ideally be in Segment class as toString()|
 public setAckCode (string $code, string $msg)
 ```
 
-Set the acknowledgement code for the acknowledgement. Code should be one of: A, E, R. Codes can be prepended
-with C or A, denoting enhanced or normal acknowledge mode. This denotes: accept, general error and reject
-respectively. The ACK module will determine the right answer mode (normal or enhanced) based upon the request,
-if not provided. The message provided in $msg will be set in MSA 3. 
+Set the acknowledgement code for the acknowledgement. 
 
- 
+Code should be one of: A, E, R. Codes can be prepended with C or A, denoting enhanced or normal acknowledge mode.  
+This denotes: accept, general error and reject respectively. The ACK module will determine the right answer mode  
+(normal or enhanced) based upon the request, if not provided. The message provided in $msg will be set in MSA 3. 
 
 **Parameters**
 
@@ -67,6 +61,7 @@ if not provided. The message provided in $msg will be set in MSA 3.
 
 
 
+<hr />
 
 
 ### ACK::setErrorMessage  
@@ -77,10 +72,9 @@ if not provided. The message provided in $msg will be set in MSA 3.
 public setErrorMessage (string $msg)
 ```
 
-Set the error message for the acknowledgement. This will also set the error code to either AE or CE, depending
-on the mode of the incoming message. 
+Set the error message for the acknowledgement. 
 
- 
+This will also set the error code to either AE or CE, depending on the mode of the incoming message. 
 
 **Parameters**
 
@@ -89,5 +83,7 @@ on the mode of the incoming message.
 
 **Return Values**
 
+`void`
 
+<hr />
 

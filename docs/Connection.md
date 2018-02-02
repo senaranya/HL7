@@ -1,18 +1,15 @@
 # Aranyasen\HL7\Connection  
 
 Usage:
-<code>
-
+```php
 $connection = new Connection('127.0.0.1', 5002);
-
 $req = new Message();
+// .
 
-... set some request attributes
-
+.. set some request attributes
 $response = $connection->send($req);
-
 $response->toString(); // Read ACK message from remote
-</code>
+```
 
 The Connection object represents the tcp connection to the HL7 message broker. The Connection has only one public
 method (apart from the constructor), send(). The 'send' method takes a Message object as argument, and also
@@ -37,8 +34,7 @@ End of message signal for HL7 server. Defaults to \034\015.
 
 | Name | Description |
 |------|-------------|
-|[__construct](#connection__construct)|Creates a connection to a HL7 server, or returns undef when a
-connection could not be established.are:|
+|[__construct](#connection__construct)|Creates a connection to a HL7 server, or throws exception when a connection could not be established.|
 |[__destruct](#connection__destruct)||
 |[send](#connectionsend)|Sends a Message object over this connection.|
 
@@ -53,8 +49,7 @@ connection could not be established.are:|
 public __construct (string $host, string $port)
 ```
 
-Creates a connection to a HL7 server, or returns undef when a
-connection could not be established.are: 
+Creates a connection to a HL7 server, or throws exception when a connection could not be established. 
 
  
 
@@ -67,7 +62,9 @@ connection could not be established.are:
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### Connection::__destruct  
@@ -88,7 +85,9 @@ public __destruct (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### Connection::send  
@@ -115,4 +114,5 @@ Sends a Message object over this connection.
 
 
 
+<hr />
 

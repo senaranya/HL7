@@ -56,20 +56,11 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|__construct|Create a segment. A segment may be created with just a name or a name and an array of field
-values. The segment name should be a standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and
-upper case. If an array is given, all fields will be filled from that array. Note that for composed fields and
-sub-components, the array may hold sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same
-way, since we can't distinguish between composed fields and repeated fields.|
-|getField|Get the field at index. If the field is a composite field, it returns an array
-```php
-$field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.|
-|getFields|Get the fields in the specified range, or all if nothing specified. If only the 'from' value is provided, all
-fields from this index till the end of the segment will be returned.|
+|__construct|Create a segment.|
+|getField|Get the field at index.|
+|getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
-|setField|Set the field specified by index to value. Indices start at 1, to stay with the HL7 standard. Trying to set the
-value at index 0 has no effect. The value may also be a reference to an array (that may itself contain arrays)
-to support composite fields (and sub-components).|
+|setField|Set the field specified by index to value.|
 |size|Get the number of fields for this segment, not including the name|
 
 
@@ -92,7 +83,9 @@ public getAttestationDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getConfidentialIndicator  
@@ -113,7 +106,9 @@ public getConfidentialIndicator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getDRGApprovalIndicator  
@@ -134,7 +129,9 @@ public getDRGApprovalIndicator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getDRGGrouperReviewCode  
@@ -155,7 +152,9 @@ public getDRGGrouperReviewCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getDiagnosingClinician  
@@ -176,7 +175,9 @@ public getDiagnosingClinician (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getDiagnosisClassification  
@@ -197,7 +198,9 @@ public getDiagnosisClassification (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getDiagnosisCodeDG1  
@@ -218,7 +221,9 @@ public getDiagnosisCodeDG1 (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getDiagnosisCodingMethod  
@@ -239,7 +244,9 @@ public getDiagnosisCodingMethod (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getDiagnosisDateTime  
@@ -260,7 +267,9 @@ public getDiagnosisDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getDiagnosisDescription  
@@ -281,7 +290,9 @@ public getDiagnosisDescription (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getDiagnosisPriority  
@@ -302,7 +313,9 @@ public getDiagnosisPriority (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getDiagnosisType  
@@ -323,7 +336,9 @@ public getDiagnosisType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getDiagnosticRelatedGroup  
@@ -344,7 +359,9 @@ public getDiagnosticRelatedGroup (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getGrouperVersionAndType  
@@ -365,7 +382,9 @@ public getGrouperVersionAndType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getID  
@@ -386,7 +405,9 @@ public getID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getMajorDiagnosticCategory  
@@ -407,7 +428,9 @@ public getMajorDiagnosticCategory (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getOutlierCost  
@@ -428,7 +451,9 @@ public getOutlierCost (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getOutlierDays  
@@ -449,7 +474,9 @@ public getOutlierDays (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::getOutlierType  
@@ -470,7 +497,9 @@ public getOutlierType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setAttestationDateTime  
@@ -491,7 +520,9 @@ public setAttestationDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setConfidentialIndicator  
@@ -512,7 +543,9 @@ public setConfidentialIndicator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setDRGApprovalIndicator  
@@ -533,7 +566,9 @@ public setDRGApprovalIndicator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setDRGGrouperReviewCode  
@@ -554,7 +589,9 @@ public setDRGGrouperReviewCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setDiagnosingClinician  
@@ -575,7 +612,9 @@ public setDiagnosingClinician (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setDiagnosisClassification  
@@ -596,7 +635,9 @@ public setDiagnosisClassification (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setDiagnosisCodeDG1  
@@ -617,7 +658,9 @@ public setDiagnosisCodeDG1 (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setDiagnosisCodingMethod  
@@ -638,7 +681,9 @@ public setDiagnosisCodingMethod (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setDiagnosisDateTime  
@@ -659,7 +704,9 @@ public setDiagnosisDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setDiagnosisDescription  
@@ -680,7 +727,9 @@ public setDiagnosisDescription (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setDiagnosisPriority  
@@ -701,7 +750,9 @@ public setDiagnosisPriority (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setDiagnosisType  
@@ -722,7 +773,9 @@ public setDiagnosisType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setDiagnosticRelatedGroup  
@@ -743,7 +796,9 @@ public setDiagnosticRelatedGroup (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setGrouperVersionAndType  
@@ -764,7 +819,9 @@ public setGrouperVersionAndType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setID  
@@ -785,7 +842,9 @@ public setID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setMajorDiagnosticCategory  
@@ -806,7 +865,9 @@ public setMajorDiagnosticCategory (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setOutlierCost  
@@ -827,7 +888,9 @@ public setOutlierCost (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setOutlierDays  
@@ -848,7 +911,9 @@ public setOutlierDays (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### DG1::setOutlierType  
@@ -869,5 +934,7 @@ public setOutlierType (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 

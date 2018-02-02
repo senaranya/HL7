@@ -10,20 +10,11 @@
 
 | Name | Description |
 |------|-------------|
-|[__construct](#segment__construct)|Create a segment. A segment may be created with just a name or a name and an array of field
-values. The segment name should be a standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and
-upper case. If an array is given, all fields will be filled from that array. Note that for composed fields and
-sub-components, the array may hold sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same
-way, since we can't distinguish between composed fields and repeated fields.|
-|[getField](#segmentgetfield)|Get the field at index. If the field is a composite field, it returns an array
-```php
-$field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.|
-|[getFields](#segmentgetfields)|Get the fields in the specified range, or all if nothing specified. If only the 'from' value is provided, all
-fields from this index till the end of the segment will be returned.|
+|[__construct](#segment__construct)|Create a segment.|
+|[getField](#segmentgetfield)|Get the field at index.|
+|[getFields](#segmentgetfields)|Get fields from a segment|
 |[getName](#segmentgetname)|Get the name of the segment. This is basically the value at index 0|
-|[setField](#segmentsetfield)|Set the field specified by index to value. Indices start at 1, to stay with the HL7 standard. Trying to set the
-value at index 0 has no effect. The value may also be a reference to an array (that may itself contain arrays)
-to support composite fields (and sub-components).|
+|[setField](#segmentsetfield)|Set the field specified by index to value.|
 |[size](#segmentsize)|Get the number of fields for this segment, not including the name|
 
 
@@ -37,19 +28,21 @@ to support composite fields (and sub-components).|
 public __construct (string $name, array|null $fields)
 ```
 
-Create a segment. A segment may be created with just a name or a name and an array of field
-values. The segment name should be a standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and
-upper case. If an array is given, all fields will be filled from that array. Note that for composed fields and
-sub-components, the array may hold sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same
-way, since we can't distinguish between composed fields and repeated fields. 
+Create a segment. 
 
-Example: <code>  
+A segment may be created with just a name or a name and an array of field  
+values. The segment name should be a standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and  
+upper case. If an array is given, all fields will be filled from that array. Note that for composed fields and  
+sub-components, the array may hold sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same  
+way, since we can't distinguish between composed fields and repeated fields.  
   
+Example:  
+```php  
 $seg = new Segment("PID");  
   
 $seg->setField(3, "12345678");  
 echo $seg->getField(1);  
-</code> 
+``` 
 
 **Parameters**
 
@@ -60,7 +53,9 @@ echo $seg->getField(1);
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### Segment::getField  
@@ -71,10 +66,12 @@ echo $seg->getField(1);
 public getField (int $index)
 ```
 
-Get the field at index. If the field is a composite field, it returns an array
-```php
-$field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is. 
+Get the field at index. 
 
+If the field is a composite field, it returns an array  
+Example:  
+```php  
+$field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.  
 ``` 
 
 **Parameters**
@@ -86,9 +83,9 @@ $field = $seg->getField(9); // Returns a string/null/array depending on what the
 
 `null|string|array`
 
-> The value of the field  
+> The value of the field
 
-
+<hr />
 
 
 ### Segment::getFields  
@@ -99,10 +96,10 @@ $field = $seg->getField(9); // Returns a string/null/array depending on what the
 public getFields (int $from, int|null $to)
 ```
 
-Get the fields in the specified range, or all if nothing specified. If only the 'from' value is provided, all
-fields from this index till the end of the segment will be returned. 
+Get fields from a segment 
 
- 
+Get the fields in the specified range, or all if nothing specified. If only the 'from' value is provided, all  
+fields from this index till the end of the segment will be returned. 
 
 **Parameters**
 
@@ -115,9 +112,9 @@ fields from this index till the end of the segment will be returned.
 
 `array`
 
-> List of fields  
+> List of fields
 
-
+<hr />
 
 
 ### Segment::getName  
@@ -140,9 +137,9 @@ Get the name of the segment. This is basically the value at index 0
 
 `mixed`
 
-> Name of segment  
+> Name of segment
 
-
+<hr />
 
 
 ### Segment::setField  
@@ -153,17 +150,19 @@ Get the name of the segment. This is basically the value at index 0
 public setField (int $index, string|array $value)
 ```
 
-Set the field specified by index to value. Indices start at 1, to stay with the HL7 standard. Trying to set the
-value at index 0 has no effect. The value may also be a reference to an array (that may itself contain arrays)
-to support composite fields (and sub-components). 
+Set the field specified by index to value. 
 
+Indices start at 1, to stay with the HL7 standard. Trying to set the  
+value at index 0 has no effect. The value may also be a reference to an array (that may itself contain arrays)  
+to support composite fields (and sub-components).  
+  
 Examples:  
-<code>  
-  $segment->setField(18, 'abcd'); // Sets 18th field to abcd  
-  $segment->setField(8, 'ab^cd'); // Sets 8th field to ab^cd  
-  $segment->setField(10, ['John', 'Doe']); // Sets 10th field to John^Doe  
-  $segment->setField(12, ['']); // Sets 12th field to ''  
-</code>  
+```php  
+$segment->setField(18, 'abcd'); // Sets 18th field to abcd  
+$segment->setField(8, 'ab^cd'); // Sets 8th field to ab^cd  
+$segment->setField(10, ['John', 'Doe']); // Sets 10th field to John^Doe  
+$segment->setField(12, ['']); // Sets 12th field to ''  
+```  
   
 If values are not provided at all, the method will just return. 
 
@@ -180,6 +179,7 @@ If values are not provided at all, the method will just return.
 
 
 
+<hr />
 
 
 ### Segment::size  
@@ -202,7 +202,7 @@ Get the number of fields for this segment, not including the name
 
 `int`
 
-> number of fields  
+> number of fields
 
-
+<hr />
 

@@ -4,7 +4,7 @@ Class specifying the HL7 message, both request and response.
 
 In general one needn't create an instance of the Message class directly, but use the HL7 factory class to create one.
 When adding segments, note that the segment index starts at 0, so to get the first segment, do
-<code>$msg->getSegmentByIndex(0)</code>.
+```php $msg->getSegmentByIndex(0) ```
 
 The segment separator defaults to \015. To change this, set the global variable $SEGMENT_SEPARATOR.  
 
@@ -25,8 +25,7 @@ The segment separator defaults to \015. To change this, set the global variable 
 |[getSegmentsByName](#messagegetsegmentsbyname)|Return an array of all segments with the given name|
 |[insertSegment](#messageinsertsegment)|Insert a segment.|
 |[removeSegmentByIndex](#messageremovesegmentbyindex)|Remove the segment indexed by $index.|
-|[segmentToString](#messagesegmenttostring)|Convert Segment object to string
-TODO: This method should ideally be in Segment class as toString()|
+|[segmentToString](#messagesegmenttostring)|Convert Segment object to string|
 |[setSegment](#messagesetsegment)|Set the segment on index.|
 |[toString](#messagetostring)|Return a string representation of this message.|
 
@@ -62,7 +61,9 @@ If the message couldn't be created, for example due to a erroneous HL7 message s
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### Message::addSegment  
@@ -87,6 +88,7 @@ Append a segment to the end of the message
 
 
 
+<hr />
 
 
 ### Message::getSegmentAsString  
@@ -110,9 +112,9 @@ Get the segment identified by index as string, using the messages separators.
 
 `string|null`
 
-> String representation of segment  
+> String representation of segment
 
-
+<hr />
 
 
 ### Message::getSegmentByIndex  
@@ -138,6 +140,7 @@ Note: Segment count within the message starts at 0.
 
 
 
+<hr />
 
 
 ### Message::getSegmentFieldAsString  
@@ -163,9 +166,9 @@ Returns empty string if field is not set.
 
 `mixed`
 
-> String representation of field  
+> String representation of field
 
-
+<hr />
 
 
 ### Message::getSegments  
@@ -188,9 +191,9 @@ Return an array containing all segments in the right order.
 
 `array`
 
-> List of all segments  
+> List of all segments
 
-
+<hr />
 
 
 ### Message::getSegmentsByName  
@@ -214,9 +217,9 @@ Return an array of all segments with the given name
 
 `array`
 
-> List of segments identified by name  
+> List of segments identified by name
 
-
+<hr />
 
 
 ### Message::insertSegment  
@@ -239,7 +242,9 @@ Insert a segment.
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### Message::removeSegmentByIndex  
@@ -266,6 +271,7 @@ after this one will be moved one index up.
 
 
 
+<hr />
 
 
 ### Message::segmentToString  
@@ -276,8 +282,7 @@ after this one will be moved one index up.
 public segmentToString ( $seg)
 ```
 
-Convert Segment object to string
-TODO: This method should ideally be in Segment class as toString() 
+Convert Segment object to string 
 
  
 
@@ -291,6 +296,7 @@ TODO: This method should ideally be in Segment class as toString()
 
 
 
+<hr />
 
 
 ### Message::setSegment  
@@ -318,6 +324,7 @@ control characters and hl7 version, based on MSH(1), MSH(2) and MSH(12).
 
 
 
+<hr />
 
 
 ### Message::toString  
@@ -342,7 +349,7 @@ argument as some true value. This will not use the default segment separator, bu
 
 `mixed`
 
-> String representation of HL7 message  
+> String representation of HL7 message
 
-
+<hr />
 

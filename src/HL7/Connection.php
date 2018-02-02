@@ -4,18 +4,13 @@ namespace Aranyasen\HL7;
 
 /**
  * Usage:
- * <code>
- *
+ * ```php
  * $connection = new Connection('127.0.0.1', 5002);
- *
  * $req = new Message();
- *
- * ... set some request attributes
- *
+ * // ... set some request attributes
  * $response = $connection->send($req);
- *
  * $response->toString(); // Read ACK message from remote
- * </code>
+ * ```
  *
  * The Connection object represents the tcp connection to the HL7 message broker. The Connection has only one public
  * method (apart from the constructor), send(). The 'send' method takes a Message object as argument, and also
@@ -40,8 +35,7 @@ class Connection
     protected $MESSAGE_SUFFIX;
 
     /**
-     * Creates a connection to a HL7 server, or returns undef when a
-     * connection could not be established.are:
+     * Creates a connection to a HL7 server, or throws exception when a connection could not be established.
      *
      * @param string $host Host to connect to
      * @param string $port Port to connect to

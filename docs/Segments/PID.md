@@ -77,20 +77,11 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|__construct|Create a segment. A segment may be created with just a name or a name and an array of field
-values. The segment name should be a standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and
-upper case. If an array is given, all fields will be filled from that array. Note that for composed fields and
-sub-components, the array may hold sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same
-way, since we can't distinguish between composed fields and repeated fields.|
-|getField|Get the field at index. If the field is a composite field, it returns an array
-```php
-$field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.|
-|getFields|Get the fields in the specified range, or all if nothing specified. If only the 'from' value is provided, all
-fields from this index till the end of the segment will be returned.|
+|__construct|Create a segment.|
+|getField|Get the field at index.|
+|getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
-|setField|Set the field specified by index to value. Indices start at 1, to stay with the HL7 standard. Trying to set the
-value at index 0 has no effect. The value may also be a reference to an array (that may itself contain arrays)
-to support composite fields (and sub-components).|
+|setField|Set the field specified by index to value.|
 |size|Get the number of fields for this segment, not including the name|
 
 
@@ -113,7 +104,9 @@ public getAlternatePatientID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getBirthOrder  
@@ -134,7 +127,9 @@ public getBirthOrder (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getBirthPlace  
@@ -155,7 +150,9 @@ public getBirthPlace (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getCitizenship  
@@ -176,7 +173,9 @@ public getCitizenship (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getCountryCode  
@@ -197,7 +196,9 @@ public getCountryCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getDateTimeOfBirth  
@@ -218,7 +219,9 @@ public getDateTimeOfBirth (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getDriversLicenseNumber  
@@ -239,7 +242,9 @@ public getDriversLicenseNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getEthnicGroup  
@@ -260,7 +265,9 @@ public getEthnicGroup (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getID  
@@ -281,7 +288,9 @@ public getID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getMaritalStatus  
@@ -302,7 +311,9 @@ public getMaritalStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getMothersIdentifier  
@@ -323,7 +334,9 @@ public getMothersIdentifier (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getMothersMaidenName  
@@ -344,7 +357,9 @@ public getMothersMaidenName (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getMultipleBirthIndicator  
@@ -365,7 +380,9 @@ public getMultipleBirthIndicator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getNationality  
@@ -386,7 +403,9 @@ public getNationality (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getPatientAccountNumber  
@@ -407,7 +426,9 @@ public getPatientAccountNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getPatientAddress  
@@ -428,7 +449,9 @@ public getPatientAddress (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getPatientAlias  
@@ -449,7 +472,9 @@ public getPatientAlias (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getPatientDeathDateAndTime  
@@ -470,7 +495,9 @@ public getPatientDeathDateAndTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getPatientDeathIndicator  
@@ -491,7 +518,9 @@ public getPatientDeathIndicator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getPatientID  
@@ -512,7 +541,9 @@ public getPatientID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getPatientIdentifierList  
@@ -537,6 +568,7 @@ Patient ID (Internal ID)
 
 
 
+<hr />
 
 
 ### PID::getPatientName  
@@ -557,7 +589,9 @@ public getPatientName (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getPhoneNumberBusiness  
@@ -578,7 +612,9 @@ public getPhoneNumberBusiness (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getPhoneNumberHome  
@@ -599,7 +635,9 @@ public getPhoneNumberHome (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getPrimaryLanguage  
@@ -620,7 +658,9 @@ public getPrimaryLanguage (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getRace  
@@ -641,7 +681,9 @@ public getRace (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getReligion  
@@ -662,7 +704,9 @@ public getReligion (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getSSNNumber  
@@ -683,7 +727,9 @@ public getSSNNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getSex  
@@ -704,7 +750,9 @@ public getSex (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::getVeteransMilitaryStatus  
@@ -725,7 +773,9 @@ public getVeteransMilitaryStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setAlternatePatientID  
@@ -746,7 +796,9 @@ public setAlternatePatientID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setBirthOrder  
@@ -767,7 +819,9 @@ public setBirthOrder (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setBirthPlace  
@@ -788,7 +842,9 @@ public setBirthPlace (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setCitizenship  
@@ -809,7 +865,9 @@ public setCitizenship (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setCountryCode  
@@ -830,7 +888,9 @@ public setCountryCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setDateTimeOfBirth  
@@ -851,7 +911,9 @@ public setDateTimeOfBirth (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setDriversLicenseNumber  
@@ -872,7 +934,9 @@ public setDriversLicenseNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setEthnicGroup  
@@ -893,7 +957,9 @@ public setEthnicGroup (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setID  
@@ -914,7 +980,9 @@ public setID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setMaritalStatus  
@@ -935,7 +1003,9 @@ public setMaritalStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setMothersIdentifier  
@@ -956,7 +1026,9 @@ public setMothersIdentifier (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setMothersMaidenName  
@@ -977,7 +1049,9 @@ public setMothersMaidenName (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setMultipleBirthIndicator  
@@ -998,7 +1072,9 @@ public setMultipleBirthIndicator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setNationality  
@@ -1019,7 +1095,9 @@ public setNationality (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setPatientAccountNumber  
@@ -1040,7 +1118,9 @@ public setPatientAccountNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setPatientAddress  
@@ -1061,7 +1141,9 @@ public setPatientAddress (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setPatientAlias  
@@ -1082,7 +1164,9 @@ public setPatientAlias (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setPatientDeathDateAndTime  
@@ -1103,7 +1187,9 @@ public setPatientDeathDateAndTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setPatientDeathIndicator  
@@ -1124,7 +1210,9 @@ public setPatientDeathIndicator (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setPatientID  
@@ -1145,7 +1233,9 @@ public setPatientID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setPatientIdentifierList  
@@ -1171,6 +1261,7 @@ Patient ID (Internal ID)
 
 
 
+<hr />
 
 
 ### PID::setPatientName  
@@ -1191,7 +1282,9 @@ public setPatientName (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setPhoneNumberBusiness  
@@ -1212,7 +1305,9 @@ public setPhoneNumberBusiness (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setPhoneNumberHome  
@@ -1233,7 +1328,9 @@ public setPhoneNumberHome (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setPrimaryLanguage  
@@ -1254,7 +1351,9 @@ public setPrimaryLanguage (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setRace  
@@ -1275,7 +1374,9 @@ public setRace (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setReligion  
@@ -1296,7 +1397,9 @@ public setReligion (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setSSNNumber  
@@ -1317,7 +1420,9 @@ public setSSNNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setSex  
@@ -1338,7 +1443,9 @@ public setSex (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### PID::setVeteransMilitaryStatus  
@@ -1359,5 +1466,7 @@ public setVeteransMilitaryStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 

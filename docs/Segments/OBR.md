@@ -104,20 +104,11 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|__construct|Create a segment. A segment may be created with just a name or a name and an array of field
-values. The segment name should be a standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and
-upper case. If an array is given, all fields will be filled from that array. Note that for composed fields and
-sub-components, the array may hold sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same
-way, since we can't distinguish between composed fields and repeated fields.|
-|getField|Get the field at index. If the field is a composite field, it returns an array
-```php
-$field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.|
-|getFields|Get the fields in the specified range, or all if nothing specified. If only the 'from' value is provided, all
-fields from this index till the end of the segment will be returned.|
+|__construct|Create a segment.|
+|getField|Get the field at index.|
+|getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
-|setField|Set the field specified by index to value. Indices start at 1, to stay with the HL7 standard. Trying to set the
-value at index 0 has no effect. The value may also be a reference to an array (that may itself contain arrays)
-to support composite fields (and sub-components).|
+|setField|Set the field specified by index to value.|
 |size|Get the number of fields for this segment, not including the name|
 
 
@@ -140,7 +131,9 @@ public getAssistantResultInterpreter (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getChargetoPractice  
@@ -161,7 +154,9 @@ public getChargetoPractice (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getCollectionVolume  
@@ -182,7 +177,9 @@ public getCollectionVolume (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getCollectorIdentifier  
@@ -203,7 +200,9 @@ public getCollectorIdentifier (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getCollectorsComment  
@@ -224,7 +223,9 @@ public getCollectorsComment (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getDangerCode  
@@ -245,7 +246,9 @@ public getDangerCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getDiagnosticServSectID  
@@ -266,7 +269,9 @@ public getDiagnosticServSectID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getEscortRequired  
@@ -287,7 +292,9 @@ public getEscortRequired (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getFillerField1  
@@ -308,7 +315,9 @@ public getFillerField1 (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getFillerField2  
@@ -329,7 +338,9 @@ public getFillerField2 (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getFillerOrderNumber  
@@ -350,7 +361,9 @@ public getFillerOrderNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getID  
@@ -371,7 +384,9 @@ public getID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getNumberofSampleContainers  
@@ -392,7 +407,9 @@ public getNumberofSampleContainers (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getObservationDateTime  
@@ -413,7 +430,9 @@ public getObservationDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getObservationEndDateTime  
@@ -434,7 +453,9 @@ public getObservationEndDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getOrderCallbackPhoneNumber  
@@ -455,7 +476,9 @@ public getOrderCallbackPhoneNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getOrderingProvider  
@@ -476,7 +499,9 @@ public getOrderingProvider (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getParent  
@@ -497,7 +522,9 @@ public getParent (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getParentResult  
@@ -518,7 +545,9 @@ public getParentResult (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getPlacerOrderNumber  
@@ -539,7 +568,9 @@ public getPlacerOrderNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getPlacerfield1  
@@ -560,7 +591,9 @@ public getPlacerfield1 (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getPlacerfield2  
@@ -581,7 +614,9 @@ public getPlacerfield2 (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getPlannedPatientTransportComment  
@@ -602,7 +637,9 @@ public getPlannedPatientTransportComment (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getPrincipalResultInterpreter  
@@ -623,7 +660,9 @@ public getPrincipalResultInterpreter (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getPriority  
@@ -644,7 +683,9 @@ public getPriority (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getQuantityTiming  
@@ -665,7 +706,9 @@ public getQuantityTiming (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getReasonforStudy  
@@ -686,7 +729,9 @@ public getReasonforStudy (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getRelevantClinicalInfo  
@@ -707,7 +752,9 @@ public getRelevantClinicalInfo (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getRequestedDatetime  
@@ -728,7 +775,9 @@ public getRequestedDatetime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getResultCopiesTo  
@@ -749,7 +798,9 @@ public getResultCopiesTo (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getResultStatus  
@@ -770,7 +821,9 @@ public getResultStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getResultsRptStatusChngDateTime  
@@ -791,7 +844,9 @@ public getResultsRptStatusChngDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getScheduledDateTime  
@@ -812,7 +867,9 @@ public getScheduledDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getSpecimenActionCode  
@@ -833,7 +890,9 @@ public getSpecimenActionCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getSpecimenReceivedDateTime  
@@ -854,7 +913,9 @@ public getSpecimenReceivedDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getSpecimenSource  
@@ -875,7 +936,9 @@ public getSpecimenSource (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getTechnician  
@@ -896,7 +959,9 @@ public getTechnician (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getTranscriptionist  
@@ -917,7 +982,9 @@ public getTranscriptionist (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getTransportArranged  
@@ -938,7 +1005,9 @@ public getTransportArranged (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getTransportArrangementResponsibility  
@@ -959,7 +1028,9 @@ public getTransportArrangementResponsibility (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getTransportLogisticsofCollectedSample  
@@ -980,7 +1051,9 @@ public getTransportLogisticsofCollectedSample (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getTransportationMode  
@@ -1001,7 +1074,9 @@ public getTransportationMode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::getUniversalServiceID  
@@ -1022,7 +1097,9 @@ public getUniversalServiceID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setAssistantResultInterpreter  
@@ -1043,7 +1120,9 @@ public setAssistantResultInterpreter (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setChargetoPractice  
@@ -1064,7 +1143,9 @@ public setChargetoPractice (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setCollectionVolume  
@@ -1085,7 +1166,9 @@ public setCollectionVolume (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setCollectorIdentifier  
@@ -1106,7 +1189,9 @@ public setCollectorIdentifier (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setCollectorsComment  
@@ -1127,7 +1212,9 @@ public setCollectorsComment (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setDangerCode  
@@ -1148,7 +1235,9 @@ public setDangerCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setDiagnosticServSectID  
@@ -1169,7 +1258,9 @@ public setDiagnosticServSectID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setEscortRequired  
@@ -1190,7 +1281,9 @@ public setEscortRequired (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setFillerField1  
@@ -1211,7 +1304,9 @@ public setFillerField1 (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setFillerField2  
@@ -1232,7 +1327,9 @@ public setFillerField2 (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setFillerOrderNumber  
@@ -1253,7 +1350,9 @@ public setFillerOrderNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setID  
@@ -1274,7 +1373,9 @@ public setID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setNumberofSampleContainers  
@@ -1295,7 +1396,9 @@ public setNumberofSampleContainers (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setObservationDateTime  
@@ -1316,7 +1419,9 @@ public setObservationDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setObservationEndDateTime  
@@ -1337,7 +1442,9 @@ public setObservationEndDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setOrderCallbackPhoneNumber  
@@ -1358,7 +1465,9 @@ public setOrderCallbackPhoneNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setOrderingProvider  
@@ -1379,7 +1488,9 @@ public setOrderingProvider (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setParent  
@@ -1400,7 +1511,9 @@ public setParent (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setParentResult  
@@ -1421,7 +1534,9 @@ public setParentResult (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setPlacerOrderNumber  
@@ -1442,7 +1557,9 @@ public setPlacerOrderNumber (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setPlacerfield1  
@@ -1463,7 +1580,9 @@ public setPlacerfield1 (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setPlacerfield2  
@@ -1484,7 +1603,9 @@ public setPlacerfield2 (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setPlannedPatientTransportComment  
@@ -1505,7 +1626,9 @@ public setPlannedPatientTransportComment (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setPrincipalResultInterpreter  
@@ -1526,7 +1649,9 @@ public setPrincipalResultInterpreter (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setPriority  
@@ -1547,7 +1672,9 @@ public setPriority (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setQuantityTiming  
@@ -1568,7 +1695,9 @@ public setQuantityTiming (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setReasonforStudy  
@@ -1589,7 +1718,9 @@ public setReasonforStudy (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setRelevantClinicalInfo  
@@ -1610,7 +1741,9 @@ public setRelevantClinicalInfo (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setRequestedDatetime  
@@ -1631,7 +1764,9 @@ public setRequestedDatetime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setResultCopiesTo  
@@ -1652,7 +1787,9 @@ public setResultCopiesTo (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setResultStatus  
@@ -1673,7 +1810,9 @@ public setResultStatus (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setResultsRptStatusChngDateTime  
@@ -1694,7 +1833,9 @@ public setResultsRptStatusChngDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setScheduledDateTime  
@@ -1715,7 +1856,9 @@ public setScheduledDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setSpecimenActionCode  
@@ -1736,7 +1879,9 @@ public setSpecimenActionCode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setSpecimenReceivedDateTime  
@@ -1757,7 +1902,9 @@ public setSpecimenReceivedDateTime (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setSpecimenSource  
@@ -1778,7 +1925,9 @@ public setSpecimenSource (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setTechnician  
@@ -1799,7 +1948,9 @@ public setTechnician (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setTranscriptionist  
@@ -1820,7 +1971,9 @@ public setTranscriptionist (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setTransportArranged  
@@ -1841,7 +1994,9 @@ public setTransportArranged (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setTransportArrangementResponsibility  
@@ -1862,7 +2017,9 @@ public setTransportArrangementResponsibility (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setTransportLogisticsofCollectedSample  
@@ -1883,7 +2040,9 @@ public setTransportLogisticsofCollectedSample (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setTransportationMode  
@@ -1904,7 +2063,9 @@ public setTransportationMode (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
 
 ### OBR::setUniversalServiceID  
@@ -1925,5 +2086,7 @@ public setUniversalServiceID (void)
 
 **Return Values**
 
+`void`
 
+<hr />
 
