@@ -58,6 +58,16 @@ echo $reponse->toString(true); // Prints ACK from the listener
 ## APIs
 Visit [docs\README](docs/README.md) for details on available APIs
 
+All segment level getter/setter APIs can be used in two ways - 
+* If a position index isn't provided as argument (1st argument for getters, 2nd for setters), a standard index is used.  
+`$pid->setPatientName('John Doe')` -> Set patient name at position 5 as per HL7 v2.3 [standard](https://corepointhealth.com/resource-center/hl7-resources/hl7-pid-segment)  
+`$pid->getPatientAddress()` -> Get patient address from standard 11th position
+
+
+* To use a custom position index, provide it in the argument:  
+`$pid->setPatientName('John Doe', 6)` -> Set patient name at 6th position in PID segment  
+`$pid->getPatientAddress(12)` -> Get patient address from 12th position  
+
 ### TODOs
 * Data Validation
 * Search by regex and return segment/field/index

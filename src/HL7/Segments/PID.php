@@ -6,6 +6,7 @@ use Aranyasen\HL7\Segment;
 
 /**
  * PID segment class
+ * Reference: https://corepointhealth.com/resource-center/hl7-resources/hl7-pid-segment
  */
 class PID extends Segment
 {
