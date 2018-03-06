@@ -1,6 +1,9 @@
 <?php
+declare(strict_types=1);
 
 namespace Aranyasen\HL7;
+
+use Aranyasen\Exceptions\HL7ConnectionException;
 
 /**
  * Usage:
@@ -39,7 +42,7 @@ class Connection
      *
      * @param string $host Host to connect to
      * @param string $port Port to connect to
-     * @throws \RuntimeException
+     * @throws HL7ConnectionException
      */
     public function __construct(string $host, string $port)
     {
@@ -51,18 +54,20 @@ class Connection
     /**
      * @param string $host
      * @param string $port
-     * @throws \RuntimeException
+     * @throws HL7ConnectionException
      */
     protected function setSocket(string $host, string $port)
     {
         // Create socket
         $socket = socket_create(AF_INET, SOCK_STREAM, 0);
         if (!$socket) {
-            throw new \RuntimeException('Failed to create socket. reason: ' . socket_strerror(socket_last_error()));
+            throw new HL7ConnectionException('Failed to create socket. reason: ' .
+                socket_strerror(socket_last_error()));
         }
         $result = socket_connect($socket, $host, $port);
         if (!$result) {
-            throw new \RuntimeException("Failed to connect to server ($host:$port). reason: " . socket_strerror(socket_last_error()));
+            throw new HL7ConnectionException("Failed to connect to server ($host:$port). reason: " .
+                socket_strerror(socket_last_error()));
         }
         $this->socket = $socket;
     }
@@ -112,7 +117,8 @@ class Connection
     {
         try {
             socket_close($this->socket);
-        } catch(\Exception $e) {
+        }
+        catch (\Exception $e) {
             echo 'Failed to close socket: ' . socket_strerror(socket_last_error()) . PHP_EOL;
         }
     }

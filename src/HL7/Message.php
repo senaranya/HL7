@@ -2,6 +2,7 @@
 
 namespace Aranyasen\HL7;
 
+use Aranyasen\Exceptions\HL7Exception;
 use Exception;
 use InvalidArgumentException;
 
@@ -50,37 +51,28 @@ class Message
      * If the message couldn't be created, for example due to a erroneous HL7 message string, an error is raised.
      * @param string $msgStr
      * @param array $hl7Globals
-     * @throws \Exception
-     * @throws \InvalidArgumentException
+     * @throws HL7Exception
      */
     public function __construct(string $msgStr = null, array $hl7Globals = null)
     {
-        //Array holding the segments
+        // Array holding the segments
         $this->segments = [];
 
         // Control characters and other HL7 properties
-        //
-        !empty($hl7Globals['SEGMENT_SEPARATOR']) ?
-            $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] :
-            $this->segmentSeparator = '\n';
-        !empty($hl7Globals['FIELD_SEPARATOR']) ?
-            $this->fieldSeparator = $hl7Globals['FIELD_SEPARATOR'] :
-            $this->fieldSeparator = '|';
-        !empty($hl7Globals['COMPONENT_SEPARATOR']) ?
-            $this->componentSeparator = $hl7Globals['COMPONENT_SEPARATOR'] :
-            $this->componentSeparator = '^';
-        !empty($hl7Globals['SUBCOMPONENT_SEPARATOR']) ?
-            $this->subcomponentSeparator = $hl7Globals['SUBCOMPONENT_SEPARATOR'] :
-            $this->subcomponentSeparator = '&';
-        !empty($hl7Globals['REPETITION_SEPARATOR']) ?
-            $this->repetitionSeparator = $hl7Globals['REPETITION_SEPARATOR'] :
-            $this->repetitionSeparator = '~';
-        !empty($hl7Globals['ESCAPE_CHAR']) ?
-            $this->escapeChar = $hl7Globals['ESCAPE_CHAR'] :
-            $this->escapeChar = '\\';
-        !empty($hl7Globals['HL7_VERSION']) ?
-            $this->hl7Version = $hl7Globals['HL7_VERSION'] :
-            $this->hl7Version = '2.3';
+        !empty($hl7Globals['SEGMENT_SEPARATOR'])
+            ? $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] : $this->segmentSeparator = '\n';
+        !empty($hl7Globals['FIELD_SEPARATOR'])
+            ? $this->fieldSeparator = $hl7Globals['FIELD_SEPARATOR'] : $this->fieldSeparator = '|';
+        !empty($hl7Globals['COMPONENT_SEPARATOR'])
+            ? $this->componentSeparator = $hl7Globals['COMPONENT_SEPARATOR'] : $this->componentSeparator = '^';
+        !empty($hl7Globals['SUBCOMPONENT_SEPARATOR'])
+            ? $this->subcomponentSeparator = $hl7Globals['SUBCOMPONENT_SEPARATOR'] : $this->subcomponentSeparator = '&';
+        !empty($hl7Globals['REPETITION_SEPARATOR'])
+            ? $this->repetitionSeparator = $hl7Globals['REPETITION_SEPARATOR'] : $this->repetitionSeparator = '~';
+        !empty($hl7Globals['ESCAPE_CHAR'])
+            ? $this->escapeChar = $hl7Globals['ESCAPE_CHAR'] : $this->escapeChar = '\\';
+        !empty($hl7Globals['HL7_VERSION'])
+            ? $this->hl7Version = $hl7Globals['HL7_VERSION'] : $this->hl7Version = '2.3';
 
         // If an HL7 string is given to the constructor, parse it.
         if ($msgStr) {
@@ -93,7 +85,7 @@ class Message
 
             // Check whether field separator is repeated after 4 control characters
             if ($fieldSep !== $fieldSepCtrl) {
-                throw new Exception('Not a valid message: field separator invalid', E_USER_ERROR);
+                throw new HL7Exception('Not a valid message: field separator invalid', E_USER_ERROR);
             }
 
             // Set field separator based on control segment
@@ -136,7 +128,7 @@ class Message
                 // If a class exists for the segment under segments/, (e.g., MSH)
                 $className = "Aranyasen\\HL7\\Segments\\$name";
                 if (class_exists($className)) {
-                    $name === 'MSH' ? array_unshift($fields, $this->fieldSeparator) :null; # First field for MSH is '|'
+                    $name === 'MSH' ? array_unshift($fields, $this->fieldSeparator) : null; # First field for MSH is '|'
                     $seg = new $className($fields);
                 }
                 else {
@@ -195,7 +187,7 @@ class Message
             $this->segments =
                 array_merge(
                     \array_slice($this->segments, 0, $index),
-                    array($segment),
+                    [$segment],
                     \array_slice($this->segments, $index)
                 );
         }
