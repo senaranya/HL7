@@ -50,10 +50,11 @@ class Message
      *
      * If the message couldn't be created, for example due to a erroneous HL7 message string, an error is raised.
      * @param string $msgStr
-     * @param array $hl7Globals
+     * @param array $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
+     * @param bool $keepEmptySubFields Set this to true to retain empty sub fields
      * @throws HL7Exception
      */
-    public function __construct(string $msgStr = null, array $hl7Globals = null)
+    public function __construct(string $msgStr = null, array $hl7Globals = null, bool $keepEmptySubFields = false)
     {
         // Array holding the segments
         $this->segments = [];
@@ -98,20 +99,19 @@ class Message
             $this->repetitionSeparator   = $repSep;
 
             // Do all segments
-            //
             foreach ($segments as $i => $iValue) {
                 $fields = preg_split("/\\" . $this->fieldSeparator . '/', $segments[$i]);
                 $name = array_shift($fields);
 
                 // Now decompose fields if necessary, into arrays
-                //
                 foreach ($fields as $j => $jValue) {
                     // Skip control field
                     if ($i === 0 && $j === 0) {
                         continue;
                     }
 
-                    $comps = preg_split("/\\" . $this->componentSeparator .'/', $fields[$j], -1, PREG_SPLIT_NO_EMPTY);
+                    $preg_flags = $keepEmptySubFields ? 0 : PREG_SPLIT_NO_EMPTY;
+                    $comps = preg_split("/\\" . $this->componentSeparator .'/', $fields[$j], -1, $preg_flags);
 
                     foreach ($comps as $k => $kValue) {
                         $subComps = preg_split("/\\" . $this->subcomponentSeparator . '/', $comps[$k]);

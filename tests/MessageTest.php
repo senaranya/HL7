@@ -9,6 +9,15 @@ use InvalidArgumentException;
 
 class MessageTest extends TestCase
 {
+    /** @test */
+    public function subfields_can_be_retained_when_required()
+    {
+        $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", null, true);
+        $pv1 = $msg->getSegmentByIndex(1);
+        $fields = $pv1->getField(3);
+        $this->assertArraySubset(['', 'AAAA1', '', '', 'BB'], $fields);
+    }
+
     public function test()
     {
         # Simple constructor

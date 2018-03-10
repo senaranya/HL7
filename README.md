@@ -43,6 +43,11 @@ $msg->setSegment($abc, 1); // Message is now: "MSH|^~\&|||||20171116140058|||201
 $pid = new PID(); // Automatically creates PID segment, and adds segment index at PID.1
 $pid->setPatientName([$lastname, $firstname, $middlename, $suffix]); // Use a setter method to add patient's name at standard position (PID.5)
 $pid->setField('abcd', 5); // Apart from standard setter methods, you can manually set a value at any position too
+
+// Create a segment with empty sub-fields retained
+$msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", null, true); // Third argument 'true' forces to keep all sub fields
+$pv1 = $msg->getSegmentByIndex(1);
+$fields = $pv1->getField(3); // $fields is ['', 'AAAA1', '', '', 'BB']
 ```
 
 ### Send messages to remote listeners
