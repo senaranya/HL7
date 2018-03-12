@@ -13,7 +13,7 @@ class ACK extends Message
     /**
      * Usage:
      * ```php
-     * $ack = new ACK($request);
+     * $ack = new ACK($requestMessage);
      * ```
      *
      * Convenience module implementing an acknowledgement (ACK) message. This can be used in HL7 servers to create an
@@ -108,7 +108,7 @@ class ACK extends Message
     }
 
     /**
-     * Set the error message for the acknowledgement.
+     * Set the error message for acknowledgement.
      *
      * This will also set the error code to either AE or CE, depending on the mode of the incoming message.
      *

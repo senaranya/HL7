@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace Aranyasen\HL7\tests;
 
@@ -11,10 +12,7 @@ class ConnectionTest extends TestCase
 {
     public function test()
     {
-        // Stop here and mark this test as incomplete.
-        $this->markTestIncomplete(
-            'This test has not been implemented yet.'
-        );
+        $this->markTestIncomplete();
 
         $msg  = new Message();
         $msg->addSegment(new MSH());
