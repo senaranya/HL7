@@ -41,10 +41,9 @@ class Connection
      * Creates a connection to a HL7 server, or throws exception when a connection could not be established.
      *
      * @param string $host Host to connect to
-     * @param string $port Port to connect to
-     * @throws HL7ConnectionException
+     * @param int $port Port to connect to
      */
-    public function __construct(string $host, string $port)
+    public function __construct(string $host, int $port)
     {
         $this->setSocket($host, $port);
         $this->MESSAGE_PREFIX = "\013";
@@ -53,10 +52,10 @@ class Connection
 
     /**
      * @param string $host
-     * @param string $port
+     * @param int $port
      * @throws HL7ConnectionException
      */
-    protected function setSocket(string $host, string $port)
+    protected function setSocket(string $host, int $port)
     {
         // Create socket
         $socket = socket_create(AF_INET, SOCK_STREAM, 0);
@@ -84,7 +83,7 @@ class Connection
      */
     public function send(Message $req, string $responseCharEncoding = 'UTF-8'): Message
     {
-        $hl7Msg = $req->toString();
+        $hl7Msg = $req->toString(true);
 
         $message = $this->MESSAGE_PREFIX . $hl7Msg . $this->MESSAGE_SUFFIX;
 
