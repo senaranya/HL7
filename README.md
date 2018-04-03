@@ -48,6 +48,9 @@ $pid->setField('abcd', 5); // Apart from standard setter methods, you can manual
 $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", null, true); // Third argument 'true' forces to keep all sub fields
 $pv1 = $msg->getSegmentByIndex(1);
 $fields = $pv1->getField(3); // $fields is ['', 'AAAA1', '', '', 'BB']
+
+// Specify custom values for separators, HL7 version etc.
+$msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", ['SEGMENT_SEPARATOR' => '\r\n', 'HL7_VERSION' => '2.3']);
 ```
 
 ### Send messages to remote listeners

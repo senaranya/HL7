@@ -60,11 +60,21 @@ class MessageTest extends TestCase
     }
 
     /** @test */
+    public function control_characters_can_be_customized_using_second_argument()
+    {
+        $msg = new Message("MSH|^~\\&|1|\nABC|||xxx|\n", ['SEGMENT_SEPARATOR' => '\r\n']);
+        $this->assertSame('MSH|^~\\&|1|\r\nABC|||xxx|\r\n', $msg->toString(), 'Custom line-endings');
+        $this->assertSame("MSH|^~\\&|1|\r\nABC|||xxx|\r\n", $msg->toString(true),
+            'toString() respects custom line-endings');
+    }
+
+    /** @test */
     public function message_can_be_converted_to_string()
     {
         $msg = new Message("MSH|^~\\&|1|\rABC|||xxx|\r");
         $this->assertSame('MSH|^~\\&|1|\nABC|||xxx|\n', $msg->toString(), 'String representation of message');
-        $this->assertSame("MSH|^~\\&|1|\nABC|||xxx|\n", $msg->toString(true), 'Pretty print representation of message');
+        $this->assertSame("MSH|^~\\&|1|\nABC|||xxx|\n", $msg->toString(true),
+            'Pretty print representation of message');
     }
 
     /** @test */

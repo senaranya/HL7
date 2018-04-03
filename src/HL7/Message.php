@@ -60,20 +60,13 @@ class Message
         $this->segments = [];
 
         // Control characters and other HL7 properties
-        !empty($hl7Globals['SEGMENT_SEPARATOR'])
-            ? $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] : $this->segmentSeparator = '\n';
-        !empty($hl7Globals['FIELD_SEPARATOR'])
-            ? $this->fieldSeparator = $hl7Globals['FIELD_SEPARATOR'] : $this->fieldSeparator = '|';
-        !empty($hl7Globals['COMPONENT_SEPARATOR'])
-            ? $this->componentSeparator = $hl7Globals['COMPONENT_SEPARATOR'] : $this->componentSeparator = '^';
-        !empty($hl7Globals['SUBCOMPONENT_SEPARATOR'])
-            ? $this->subcomponentSeparator = $hl7Globals['SUBCOMPONENT_SEPARATOR'] : $this->subcomponentSeparator = '&';
-        !empty($hl7Globals['REPETITION_SEPARATOR'])
-            ? $this->repetitionSeparator = $hl7Globals['REPETITION_SEPARATOR'] : $this->repetitionSeparator = '~';
-        !empty($hl7Globals['ESCAPE_CHAR'])
-            ? $this->escapeChar = $hl7Globals['ESCAPE_CHAR'] : $this->escapeChar = '\\';
-        !empty($hl7Globals['HL7_VERSION'])
-            ? $this->hl7Version = $hl7Globals['HL7_VERSION'] : $this->hl7Version = '2.3';
+        $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] ?? '\n';
+        $this->fieldSeparator = $hl7Globals['FIELD_SEPARATOR'] ?? '|';
+        $this->componentSeparator = $hl7Globals['COMPONENT_SEPARATOR'] ?? '^';
+        $this->subcomponentSeparator = $hl7Globals['SUBCOMPONENT_SEPARATOR'] ?? '&';
+        $this->repetitionSeparator = $hl7Globals['REPETITION_SEPARATOR'] ?? '~';
+        $this->escapeChar = $hl7Globals['ESCAPE_CHAR'] ?? '\\';
+        $this->hl7Version = $hl7Globals['HL7_VERSION'] ?? '2.3';
 
         // If an HL7 string is given to the constructor, parse it.
         if ($msgStr) {
@@ -331,7 +324,9 @@ class Message
 
         foreach ($this->segments as $segment) {
             $message .= $this->segmentToString($segment);
-            $message .= $pretty ? "\n" : $this->segmentSeparator;
+            $message .= $pretty
+                ? str_replace(['\r', '\n'], ["\r", "\n"], $this->segmentSeparator)
+                : $this->segmentSeparator;
         }
 
         return $message;
