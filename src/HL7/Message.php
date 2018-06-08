@@ -73,7 +73,9 @@ class Message
             $segments = preg_split("/[\n\r" . $this->segmentSeparator . ']/', $msgStr, -1, PREG_SPLIT_NO_EMPTY);
 
             // The first segment should be the control segment
-            preg_match('/^([A-Z0-9]{3})(.)(.)(.)(.)(.)(.)/', $segments[0], $matches);
+            if (!preg_match('/^([A-Z0-9]{3})(.)(.)(.)(.)(.)(.)/', $segments[0], $matches)) {
+                throw new HL7Exception('Not a valid message: invalid control segment', E_USER_ERROR);
+            }
 
             [$dummy, $hdr, $fieldSep, $compSep, $repSep, $esc, $subCompSep, $fieldSepCtrl] = $matches;
 
