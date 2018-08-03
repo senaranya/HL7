@@ -223,4 +223,14 @@ class MessageTest extends TestCase
         $this->assertSame('1', $msg->getSegmentFieldAsString(0, 3), 'MSH(3) as string');
         $this->assertSame('a^b1&b2^c', $msg->getSegmentFieldAsString(1, 2), 'XXX(2) as string');
     }
+
+    /**
+     * @test
+     * @expectedException Aranyasen\Exceptions\HL7Exception
+     * @expectedExceptionMessage Not a valid message: invalid control segment
+     */
+    public function an_exception_will_be_throw_in_invalid_string()
+    {
+        $msg = new Message("I'm an invalid message");
+    }
 }
