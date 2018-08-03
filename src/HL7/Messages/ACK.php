@@ -4,6 +4,7 @@ namespace Aranyasen\HL7\Messages;
 
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Segment;
+use Aranyasen\HL7\Segments\MSA;
 use Aranyasen\HL7\Segments\MSH;
 
 class ACK extends Message
@@ -42,17 +43,17 @@ class ACK extends Message
             $msh = new MSH();
         }
 
-        $msa = new Segment('MSA');
+        $msa = new MSA();
 
         // Determine acknowledge mode: normal or enhanced
         //
         if ($req && ($msh->getField(15) || $msh->getField(16))) {
             $this->ACK_TYPE = 'E';
-            $msa->setField(1, 'CA');
+            $msa->setAcknowledgementCode('CA');
         }
         else {
             $this->ACK_TYPE = 'N';
-            $msa->setField(1, 'AA');
+            $msa->setAcknowledgementCode('AA');
         }
 
         $this->addSegment($msh);
@@ -62,11 +63,11 @@ class ACK extends Message
 
         // Construct an ACK based on the request
         if ($req && $reqMsh) {
-            $msh->setField(3, $reqMsh->getField(5));
-            $msh->setField(4, $reqMsh->getField(6));
-            $msh->setField(5, $reqMsh->getField(3));
-            $msh->setField(6, $reqMsh->getField(4));
-            $msa->setField(2, $reqMsh->getField(10));
+            $msh->setField(3, $reqMsh->getReceivingApplication());
+            $msh->setField(4, $reqMsh->getReceivingFacility());
+            $msh->setField(5, $reqMsh->getSendingApplication());
+            $msh->setField(6, $reqMsh->getSendingFacility());
+            $msa->setMessageControlID($reqMsh->getMessageControlId());
         }
     }
 

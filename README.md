@@ -62,6 +62,24 @@ $connection = new Connection($ip, $port); // Create a Socket and get ready to se
 $response = $connection->send($message); // Send to the listener, and get a response back
 echo $reponse->toString(true); // Prints ACK from the listener 
 ```
+### ACK
+Handle ACK message returned from a remote HL7 listener... 
+```php
+$ack = (new Connection($ip, $port))->send($message); // Send a HL7 to remote listener
+$returnString = $ack->toString(true);
+if (strpos($returnString, 'MSH') === false) {
+    echo "Failed to send HL7 to 'IP' => $ip, 'Port' => $port";
+}
+$msa = $ack->getSegmentsByName('MSA')[0];
+$ackCode = $msa->getAcknowledgementCode();
+if ($ackCode[1] === 'A') {
+    echo "Recieved ACK from remote\n";
+}
+else {
+    echo "Recieved NACK from remote\n";
+    echo "Error text: " . $msa->getTextMessage()
+}
+```
 
 ## APIs
 Visit [docs\README](docs/README.md) for details on available APIs
