@@ -203,7 +203,7 @@ class HL7
      *
      * @param bool $keepEmptySubFields
      */
-    protected function setKeepEmptySubFields($keepEmptySubFields = false)
+    public function setKeepEmptySubFields($keepEmptySubFields = false)
     {
         $this->keepEmptySubFields = $keepEmptySubFields;
     }
