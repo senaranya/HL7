@@ -1,6 +1,6 @@
 <?php
 
-namespace Aptvision;
+namespace Aranyasen;
 
 use InvalidArgumentException;
 use Aranyasen\HL7\Message;
