@@ -1,5 +1,4 @@
 <?php
-declare(strict_types=1);
 
 namespace Aranyasen\HL7;
 
@@ -43,7 +42,7 @@ class Connection
      * @param string $host Host to connect to
      * @param int $port Port to connect to
      */
-    public function __construct(string $host, int $port)
+    public function __construct(string $host, $port)
     {
         $this->setSocket($host, $port);
         $this->MESSAGE_PREFIX = "\013";
@@ -55,7 +54,7 @@ class Connection
      * @param int $port
      * @throws HL7ConnectionException
      */
-    protected function setSocket(string $host, int $port)
+    protected function setSocket(string $host, $port)
     {
         // Create socket
         $socket = socket_create(AF_INET, SOCK_STREAM, 0);
@@ -81,7 +80,7 @@ class Connection
      * @throws \Exception
      * @throws \InvalidArgumentException
      */
-    public function send(Message $req, string $responseCharEncoding = 'UTF-8'): Message
+    public function send(Message $req, $responseCharEncoding = 'UTF-8')
     {
         $hl7Msg = $req->toString(true);
 

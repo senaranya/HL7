@@ -1,5 +1,5 @@
 <?php
-declare(strict_types=1);
+
 
 namespace Aranyasen\HL7\tests;
 

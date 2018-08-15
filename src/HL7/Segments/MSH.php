@@ -79,12 +79,12 @@ class MSH extends Segment
      * if the value has length 1; setting the field on index 2 will change the values of COMPONENT_SEPARATOR,
      * REPETITION_SEPARATOR, ESCAPE_CHARACTER and SUBCOMPONENT_SEPARATOR for the message, if the string is of length 4.
      *
-     * @param int $index Index of field
+     * @param $index Index of field
      * @param string $value
      * @return bool
      * @access public
      */
-    public function setField(int $index, $value = ''): bool
+    public function setField($index, $value = '')
     {
         if ($index === 1) {
             if (\strlen($value) !== 1) {
@@ -103,32 +103,32 @@ class MSH extends Segment
 
     // -------------------- Setter Methods ------------------------------
 
-    public function setSendingApplication($value, int $position = 3)
+    public function setSendingApplication($value, $position = 3)
     {
         return $this->setField($position, $value);
     }
 
-    public function setSendingFacility($value, int $position = 4)
+    public function setSendingFacility($value, $position = 4)
     {
         return $this->setField($position, $value);
     }
 
-    public function setReceivingApplication($value, int $position = 5)
+    public function setReceivingApplication($value, $position = 5)
     {
         return $this->setField($position, $value);
     }
 
-    public function setReceivingFacility($value, int $position = 6)
+    public function setReceivingFacility($value, $position = 6)
     {
         return $this->setField($position, $value);
     }
 
-    public function setDateTimeOfMessage($value, int $position = 7)
+    public function setDateTimeOfMessage($value, $position = 7)
     {
         return $this->setField($position, $value);
     }
 
-    public function setSecurity($value, int $position = 8)
+    public function setSecurity($value, $position = 8)
     {
         return $this->setField($position, $value);
     }
@@ -151,10 +151,10 @@ class MSH extends Segment
      * If it was empty then the new value will be just ORM.
      *
      * @param string $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setMessageType($value, int $position = 9): bool
+    public function setMessageType($value, $position = 9)
     {
         $typeField = $this->getField($position);
         if (is_array($typeField) && !empty($typeField[1])) {
@@ -181,10 +181,10 @@ class MSH extends Segment
      * If trigger event was not set then it will set the new value.
      *
      * @param string $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setTriggerEvent($value, int $position = 9): bool
+    public function setTriggerEvent($value, $position = 9)
     {
         $typeField = $this->getField($position);
         if (is_array($typeField) && !empty($typeField[0])) {
@@ -195,89 +195,89 @@ class MSH extends Segment
         return $this->setField($position, $value);
     }
 
-    public function setMessageControlId($value, int $position = 10)
+    public function setMessageControlId($value, $position = 10)
     {
         return $this->setField($position, $value);
     }
 
-    public function setProcessingId($value, int $position = 11)
+    public function setProcessingId($value, $position = 11)
     {
         return $this->setField($position, $value);
     }
 
-    public function setVersionId($value, int $position = 12)
+    public function setVersionId($value, $position = 12)
     {
         return $this->setField($position, $value);
     }
 
-    public function setSequenceNumber($value, int $position = 13)
+    public function setSequenceNumber($value, $position = 13)
     {
         return $this->setField($position, $value);
     }
 
-    public function setContinuationPointer($value, int $position = 14)
+    public function setContinuationPointer($value, $position = 14)
     {
         return $this->setField($position, $value);
     }
 
-    public function setAcceptAcknowledgementType($value, int $position = 15)
+    public function setAcceptAcknowledgementType($value, $position = 15)
     {
         return $this->setField($position, $value);
     }
 
-    public function setApplicationAcknowledgementType($value, int $position = 16)
+    public function setApplicationAcknowledgementType($value, $position = 16)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCountryCode($value, int $position = 17)
+    public function setCountryCode($value, $position = 17)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCharacterSet($value, int $position = 18)
+    public function setCharacterSet($value, $position = 18)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPrincipalLanguage($value, int $position = 19)
+    public function setPrincipalLanguage($value, $position = 19)
     {
         return $this->setField($position, $value);
     }
 
     // -------------------- Getter Methods ------------------------------
 
-    public function getSendingApplication(int $position = 3)
+    public function getSendingApplication($position = 3)
     {
         return $this->getField($position);
     }
 
-    public function getSendingFacility(int $position = 4)
+    public function getSendingFacility($position = 4)
     {
         return $this->getField($position);
     }
 
-    public function getReceivingApplication(int $position = 5)
+    public function getReceivingApplication($position = 5)
     {
         return $this->getField($position);
     }
 
-    public function getReceivingFacility(int $position = 6)
+    public function getReceivingFacility($position = 6)
     {
         return $this->getField($position);
     }
 
-    public function getDateTimeOfMessage(int $position = 7)
+    public function getDateTimeOfMessage($position = 7)
     {
         return $this->getField($position);
     }
 
     /**
      * ORM / ORU etc.
-     * @param int $position
+     * @param $position
      * @return string
      */
-    public function getMessageType(int $position = 9) : string
+    public function getMessageType($position = 9)
     {
         $typeField = $this->getField($position);
         if (!empty($typeField) && is_array($typeField)) {
@@ -286,7 +286,7 @@ class MSH extends Segment
         return (string) $typeField;
     }
 
-    public function getTriggerEvent(int $position = 9): string
+    public function getTriggerEvent($position = 9)
     {
         $triggerField = $this->getField($position);
         if (!empty($triggerField[1]) && is_array($triggerField)) {
@@ -295,22 +295,22 @@ class MSH extends Segment
         return false;
     }
 
-    public function getMessageControlId(int $position = 10)
+    public function getMessageControlId($position = 10)
     {
         return $this->getField($position);
     }
 
-    public function getProcessingId(int $position = 11)
+    public function getProcessingId($position = 11)
     {
         return $this->getField($position);
     }
 
     /**
      * Get HL7 version, e.g. 2.1, 2.3, 3.0 etc.
-     * @param int $position
+     * @param $position
      * @return array|null|string
      */
-    public function getVersionId(int $position = 12)
+    public function getVersionId($position = 12)
     {
         return $this->getField($position);
     }

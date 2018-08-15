@@ -45,7 +45,7 @@ class HL7
      * @throws \Exception
      * @throws \InvalidArgumentException
      */
-    public function createMessage(string $msgStr = null): Message
+    public function createMessage($msgStr = null)
     {
         return new Message($msgStr, $this->hl7Globals);
     }
@@ -55,7 +55,7 @@ class HL7
      * @return MSH
      * @throws \InvalidArgumentException
      */
-    public function createMSH(): MSH
+    public function createMSH()
     {
         return new MSH($this->hl7Globals);
     }
@@ -67,7 +67,7 @@ class HL7
      * @return boolean true if value has been set.
      * @throws \InvalidArgumentException
      */
-    public function setComponentSeparator(string $value): bool
+    public function setComponentSeparator($value)
     {
         if (\strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
@@ -84,7 +84,7 @@ class HL7
      * @return boolean true if value has been set.
      * @throws \InvalidArgumentException
      */
-    public function setSubcomponentSeparator(string $value): bool
+    public function setSubcomponentSeparator($value)
     {
         if (\strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
@@ -101,7 +101,7 @@ class HL7
      * @return boolean true if value has been set.
      * @throws \InvalidArgumentException
      */
-    public function setRepetitionSeparator(string $value): bool
+    public function setRepetitionSeparator($value)
     {
         if (\strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
@@ -118,7 +118,7 @@ class HL7
      * @return boolean true if value has been set.
      * @throws \InvalidArgumentException
      */
-    public function setFieldSeparator(string $value): bool
+    public function setFieldSeparator($value)
     {
         if (\strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
@@ -135,7 +135,7 @@ class HL7
      * @return boolean true if value has been set.
      * @throws \InvalidArgumentException
      */
-    public function setSegmentSeparator(string $value): bool
+    public function setSegmentSeparator($value)
     {
         if (\strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
@@ -151,7 +151,7 @@ class HL7
      * @return boolean true if value has been set.
      * @throws \InvalidArgumentException
      */
-    public function setEscapeCharacter(string $value): bool
+    public function setEscapeCharacter($value)
     {
         if (\strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
@@ -166,7 +166,7 @@ class HL7
      * @param string HL7 version character.
      * @return boolean true if value has been set.
      */
-    public function setHL7Version(string $value): bool
+    public function setHL7Version($value)
     {
         return $this->setGlobal('HL7_VERSION', $value);
     }
@@ -177,7 +177,7 @@ class HL7
      * @param string NULL string.
      * @return boolean true if value has been set.
      */
-    public function setNull($value): bool
+    public function setNull($value)
     {
         return $this->setGlobal('NULL', $value);
     }
@@ -200,7 +200,7 @@ class HL7
      * @param string $value
      * @return bool
      */
-    protected function setGlobal(string $name, string $value): bool
+    protected function setGlobal(string $name, string $value)
     {
         $this->hl7Globals[$name] = $value;
         return true;

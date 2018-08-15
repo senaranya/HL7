@@ -30,7 +30,7 @@ class Segment
      * @param array|null $fields Fields for segment
      * @throws \InvalidArgumentException
      */
-    public function __construct(string $name, array $fields = null)
+    public function __construct($name, array $fields = null)
     {
         // Is the name 3 upper case characters?
         if ((!$name) || (\strlen($name) !== 3) || (strtoupper($name) !== $name)) {
@@ -69,7 +69,7 @@ class Segment
      * @param string|array $value Value for field
      * @return boolean
      */
-    public function setField(int $index, $value = ''): bool
+    public function setField($index, $value = '')
     {
         if (!($index && $value)) {
             return false;
@@ -97,9 +97,9 @@ class Segment
      * @param int $index Index of field
      * @return null|string|array The value of the field
      */
-    public function getField(int $index)
+    public function getField($index)
     {
-        return $this->fields[$index] ?? null;
+        return isset($this->fields[$index]) ? $this->fields[$index] :null;
     }
 
     /**
@@ -108,7 +108,7 @@ class Segment
      * @return int number of fields
      * @access public
      */
-    public function size(): int
+    public function size()
     {
         return \count($this->fields) - 1;
     }
@@ -123,7 +123,7 @@ class Segment
      * @param int|null $to Stop range at this index
      * @return array List of fields
      */
-    public function getFields(int $from = 0, int $to = null): array
+    public function getFields($from = 0, $to = null)
     {
         if (!$to) {
             $to = \count($this->fields);
@@ -137,7 +137,7 @@ class Segment
      * @return mixed Name of segment
      * @access public
      */
-    public function getName(): string
+    public function getName()
     {
         return $this->fields[0];
     }

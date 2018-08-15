@@ -22,252 +22,252 @@ class IN3 extends Segment
         $this->setID($this::$setId++);
     }
 
-    public function setID(int $value, int $position = 1)
+    public function setID($value, $position = 1)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCertificationNumber($value, int $position = 2)
+    public function setCertificationNumber($value, $position = 2)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCertifiedBy($value, int $position = 3)
+    public function setCertifiedBy($value, $position = 3)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCertificationRequired($value, int $position = 4)
+    public function setCertificationRequired($value, $position = 4)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPenalty($value, int $position = 5)
+    public function setPenalty($value, $position = 5)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCertificationDateTime($value, int $position = 6)
+    public function setCertificationDateTime($value, $position = 6)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCertificationModifyDateTime($value, int $position = 7)
+    public function setCertificationModifyDateTime($value, $position = 7)
     {
         return $this->setField($position, $value);
     }
 
-    public function setOperator($value, int $position = 8)
+    public function setOperator($value, $position = 8)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCertificationBeginDate($value, int $position = 9)
+    public function setCertificationBeginDate($value, $position = 9)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCertificationEndDate($value, int $position = 10)
+    public function setCertificationEndDate($value, $position = 10)
     {
         return $this->setField($position, $value);
     }
 
-    public function setDays($value, int $position = 11)
+    public function setDays($value, $position = 11)
     {
         return $this->setField($position, $value);
     }
 
-    public function setNonConcurCodeDescription($value, int $position = 12)
+    public function setNonConcurCodeDescription($value, $position = 12)
     {
         return $this->setField($position, $value);
     }
 
-    public function setNonConcurEffectiveDateTime($value, int $position = 13)
+    public function setNonConcurEffectiveDateTime($value, $position = 13)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPhysicianReviewer($value, int $position = 14)
+    public function setPhysicianReviewer($value, $position = 14)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCertificationContact($value, int $position = 15)
+    public function setCertificationContact($value, $position = 15)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCertificationContactPhoneNumber($value, int $position = 16)
+    public function setCertificationContactPhoneNumber($value, $position = 16)
     {
         return $this->setField($position, $value);
     }
 
-    public function setAppealReason($value, int $position = 17)
+    public function setAppealReason($value, $position = 17)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCertificationAgency($value, int $position = 18)
+    public function setCertificationAgency($value, $position = 18)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCertificationAgencyPhoneNumber($value, int $position = 19)
+    public function setCertificationAgencyPhoneNumber($value, $position = 19)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPreCertificationRequirement($value, int $position = 20)
+    public function setPreCertificationRequirement($value, $position = 20)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCaseManager($value, int $position = 21)
+    public function setCaseManager($value, $position = 21)
     {
         return $this->setField($position, $value);
     }
 
-    public function setSecondOpinionDate($value, int $position = 22)
+    public function setSecondOpinionDate($value, $position = 22)
     {
         return $this->setField($position, $value);
     }
 
-    public function setSecondOpinionStatus($value, int $position = 23)
+    public function setSecondOpinionStatus($value, $position = 23)
     {
         return $this->setField($position, $value);
     }
 
-    public function setSecondOpinionDocumentationReceived($value, int $position = 24)
+    public function setSecondOpinionDocumentationReceived($value, $position = 24)
     {
         return $this->setField($position, $value);
     }
 
-    public function setSecondOpinionPhysician($value, int $position = 25)
+    public function setSecondOpinionPhysician($value, $position = 25)
     {
         return $this->setField($position, $value);
     }
 
-    public function getID(int $position = 1)
+    public function getID($position = 1)
     {
         return $this->getField($position);
     }
 
-    public function getCertificationNumber(int $position = 2)
+    public function getCertificationNumber($position = 2)
     {
         return $this->getField($position);
     }
 
-    public function getCertifiedBy(int $position = 3)
+    public function getCertifiedBy($position = 3)
     {
         return $this->getField($position);
     }
 
-    public function getCertificationRequired(int $position = 4)
+    public function getCertificationRequired($position = 4)
     {
         return $this->getField($position);
     }
 
-    public function getPenalty(int $position = 5)
+    public function getPenalty($position = 5)
     {
         return $this->getField($position);
     }
 
-    public function getCertificationDateTime(int $position = 6)
+    public function getCertificationDateTime($position = 6)
     {
         return $this->getField($position);
     }
 
-    public function getCertificationModifyDateTime(int $position = 7)
+    public function getCertificationModifyDateTime($position = 7)
     {
         return $this->getField($position);
     }
 
-    public function getOperator(int $position = 8)
+    public function getOperator($position = 8)
     {
         return $this->getField($position);
     }
 
-    public function getCertificationBeginDate(int $position = 9)
+    public function getCertificationBeginDate($position = 9)
     {
         return $this->getField($position);
     }
 
-    public function getCertificationEndDate(int $position = 10)
+    public function getCertificationEndDate($position = 10)
     {
         return $this->getField($position);
     }
 
-    public function getDays(int $position = 11)
+    public function getDays($position = 11)
     {
         return $this->getField($position);
     }
 
-    public function getNonConcurCodeDescription(int $position = 12)
+    public function getNonConcurCodeDescription($position = 12)
     {
         return $this->getField($position);
     }
 
-    public function getNonConcurEffectiveDateTime(int $position = 13)
+    public function getNonConcurEffectiveDateTime($position = 13)
     {
         return $this->getField($position);
     }
 
-    public function getPhysicianReviewer(int $position = 14)
+    public function getPhysicianReviewer($position = 14)
     {
         return $this->getField($position);
     }
 
-    public function getCertificationContact(int $position = 15)
+    public function getCertificationContact($position = 15)
     {
         return $this->getField($position);
     }
 
-    public function getCertificationContactPhoneNumber(int $position = 16)
+    public function getCertificationContactPhoneNumber($position = 16)
     {
         return $this->getField($position);
     }
 
-    public function getAppealReason(int $position = 17)
+    public function getAppealReason($position = 17)
     {
         return $this->getField($position);
     }
 
-    public function getCertificationAgency(int $position = 18)
+    public function getCertificationAgency($position = 18)
     {
         return $this->getField($position);
     }
 
-    public function getCertificationAgencyPhoneNumber(int $position = 19)
+    public function getCertificationAgencyPhoneNumber($position = 19)
     {
         return $this->getField($position);
     }
 
-    public function getPreCertificationRequirement(int $position = 20)
+    public function getPreCertificationRequirement($position = 20)
     {
         return $this->getField($position);
     }
 
-    public function getCaseManager(int $position = 21)
+    public function getCaseManager($position = 21)
     {
         return $this->getField($position);
     }
 
-    public function getSecondOpinionDate(int $position = 22)
+    public function getSecondOpinionDate($position = 22)
     {
         return $this->getField($position);
     }
 
-    public function getSecondOpinionStatus(int $position = 23)
+    public function getSecondOpinionStatus($position = 23)
     {
         return $this->getField($position);
     }
 
-    public function getSecondOpinionDocumentationReceived(int $position = 24)
+    public function getSecondOpinionDocumentationReceived($position = 24)
     {
         return $this->getField($position);
     }
 
-    public function getSecondOpinionPhysician(int $position = 25)
+    public function getSecondOpinionPhysician($position = 25)
     {
         return $this->getField($position);
     }

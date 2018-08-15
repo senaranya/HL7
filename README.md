@@ -7,6 +7,8 @@
 
 ## Introduction
 
+THIS VERSION IS COMPATIBLE ONLY WITH PHP 5.6
+
 A PHP-based HL7 v2.x Parsing, Generation and Sending library, inspired from the famous Perl Net-HL7 package.
 
 ## Installation

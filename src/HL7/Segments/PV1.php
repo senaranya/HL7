@@ -22,767 +22,767 @@ class PV1 extends Segment
         $this->setID($this::$setId++);
     }
 
-    public function setID(int $value, int $position = 1)
+    public function setID($value, $position = 1)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPatientClass($value, int $position = 2)
+    public function setPatientClass($value, $position = 2)
     {
         return $this->setField($position, $value);
     }
 
-    public function setAssignedPatientLocation($value, int $position = 3)
-    {
-        return $this->setField($position, $value);
-    }
-
-    /**
-     * @param $value
-     * @param int $position
-     * @return bool
-     */
-    public function setAdmissionType($value, int $position = 4)
+    public function setAssignedPatientLocation($value, $position = 3)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setPreAdmitNumber($value, int $position = 5)
+    public function setAdmissionType($value, $position = 4)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setPriorPatientLocation($value, int $position = 6)
+    public function setPreAdmitNumber($value, $position = 5)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setAttendingDoctor($value, int $position = 7)
+    public function setPriorPatientLocation($value, $position = 6)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setReferringDoctor($value, int $position = 8)
+    public function setAttendingDoctor($value, $position = 7)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setConsultingDoctor($value, int $position = 9)
+    public function setReferringDoctor($value, $position = 8)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setHospitalService($value, int $position = 10)
+    public function setConsultingDoctor($value, $position = 9)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setTemporaryLocation($value, int $position = 11)
+    public function setHospitalService($value, $position = 10)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setPreAdmitTestIndicator($value, int $position = 12)
+    public function setTemporaryLocation($value, $position = 11)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setReAdmissionIndicator($value, int $position = 13)
+    public function setPreAdmitTestIndicator($value, $position = 12)
+    {
+        return $this->setField($position, $value);
+    }
+
+    /**
+     * @param $value
+     * @param $position
+     * @return bool
+     */
+    public function setReAdmissionIndicator($value, $position = 13)
         {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setAdmitSource($value, int $position = 14)
+    public function setAdmitSource($value, $position = 14)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setAmbulatoryStatus($value, int $position = 15)
+    public function setAmbulatoryStatus($value, $position = 15)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setVipIndicator($value, int $position = 16)
+    public function setVipIndicator($value, $position = 16)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setAdmittingDoctor($value, int $position = 17)
+    public function setAdmittingDoctor($value, $position = 17)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setPatientType($value, int $position = 18)
+    public function setPatientType($value, $position = 18)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setVisitNumber($value, int $position = 19)
+    public function setVisitNumber($value, $position = 19)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setFinancialClass($value, int $position = 20)
+    public function setFinancialClass($value, $position = 20)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setChargePriceIndicator($value, int $position = 21)
+    public function setChargePriceIndicator($value, $position = 21)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setCourtesyCode($value, int $position = 22)
+    public function setCourtesyCode($value, $position = 22)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setCreditRating($value, int $position = 23)
+    public function setCreditRating($value, $position = 23)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setContractCode($value, int $position = 24)
+    public function setContractCode($value, $position = 24)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setContractEffectiveDate($value, int $position = 25)
+    public function setContractEffectiveDate($value, $position = 25)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setContractAmount($value, int $position = 26)
+    public function setContractAmount($value, $position = 26)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setContractPeriod($value, int $position = 27)
+    public function setContractPeriod($value, $position = 27)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setInterestCode($value, int $position = 28)
+    public function setInterestCode($value, $position = 28)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setTransferToBadDebtCode($value, int $position = 29)
+    public function setTransferToBadDebtCode($value, $position = 29)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setTransferToBadDebtDate($value, int $position = 30)
+    public function setTransferToBadDebtDate($value, $position = 30)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setBadDebtAgencyCode($value, int $position = 31)
+    public function setBadDebtAgencyCode($value, $position = 31)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setBadDebtTransferAmount($value, int $position = 32)
+    public function setBadDebtTransferAmount($value, $position = 32)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setBadDebtRecoveryAmount($value, int $position = 33)
+    public function setBadDebtRecoveryAmount($value, $position = 33)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setDeleteAccountIndicator($value, int $position = 34)
+    public function setDeleteAccountIndicator($value, $position = 34)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setDeleteAccountDate($value, int $position = 35)
+    public function setDeleteAccountDate($value, $position = 35)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setDischargeDisposition($value, int $position = 36)
+    public function setDischargeDisposition($value, $position = 36)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setDischargedToLocation($value, int $position = 37)
+    public function setDischargedToLocation($value, $position = 37)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setDietType($value, int $position = 38)
+    public function setDietType($value, $position = 38)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setServicingFacility($value, int $position = 39)
+    public function setServicingFacility($value, $position = 39)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setBedStatus($value, int $position = 40)
+    public function setBedStatus($value, $position = 40)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setAccountStatus($value, int $position = 41)
+    public function setAccountStatus($value, $position = 41)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setPendingLocation($value, int $position = 42)
+    public function setPendingLocation($value, $position = 42)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setPriorTemporaryLocation($value, int $position = 43)
+    public function setPriorTemporaryLocation($value, $position = 43)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setAdmitDateTime($value, int $position = 44)
+    public function setAdmitDateTime($value, $position = 44)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setDischargeDateTime($value, int $position = 45)
+    public function setDischargeDateTime($value, $position = 45)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setCurrentPatientBalance($value, int $position = 46)
+    public function setCurrentPatientBalance($value, $position = 46)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setTotalCharges($value, int $position = 47)
+    public function setTotalCharges($value, $position = 47)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setTotalAdjustments($value, int $position = 48)
+    public function setTotalAdjustments($value, $position = 48)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setTotalPayments($value, int $position = 49)
+    public function setTotalPayments($value, $position = 49)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setAlternateVisitID($value, int $position = 50)
+    public function setAlternateVisitID($value, $position = 50)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setVisitIndicator($value, int $position = 51)
+    public function setVisitIndicator($value, $position = 51)
     {
         return $this->setField($position, $value);
     }
 
     /**
      * @param $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setOtherHealthcareProvider($value, int $position = 52)
+    public function setOtherHealthcareProvider($value, $position = 52)
     {
         return $this->setField($position, $value);
     }
 
-    public function getID(int $position = 1)
+    public function getID($position = 1)
     {
         return $this->getField($position);
     }
 
-    public function getPatientClass(int $position = 2)
+    public function getPatientClass($position = 2)
     {
         return $this->getField($position);
     }
 
-    public function getAssignedPatientLocation(int $position = 3)
+    public function getAssignedPatientLocation($position = 3)
     {
         return $this->getField($position);
     }
 
-    public function getAdmissionType(int $position = 4)
+    public function getAdmissionType($position = 4)
     {
         return $this->getField($position);
     }
 
-    public function getPreAdmitNumber(int $position = 5)
+    public function getPreAdmitNumber($position = 5)
     {
         return $this->getField($position);
     }
 
-    public function getPriorPatientLocation(int $position = 6)
+    public function getPriorPatientLocation($position = 6)
     {
         return $this->getField($position);
     }
 
-    public function getAttendingDoctor(int $position = 7)
+    public function getAttendingDoctor($position = 7)
     {
         return $this->getField($position);
     }
 
-    public function getReferringDoctor(int $position = 8)
+    public function getReferringDoctor($position = 8)
     {
         return $this->getField($position);
     }
 
-    public function getConsultingDoctor(int $position = 9)
+    public function getConsultingDoctor($position = 9)
     {
         return $this->getField($position);
     }
 
-    public function getHospitalService(int $position = 10)
+    public function getHospitalService($position = 10)
     {
         return $this->getField($position);
     }
 
-    public function getTemporaryLocation(int $position = 11)
+    public function getTemporaryLocation($position = 11)
     {
         return $this->getField($position);
     }
 
-    public function getPreAdmitTestIndicator(int $position = 12)
+    public function getPreAdmitTestIndicator($position = 12)
     {
         return $this->getField($position);
     }
 
-    public function getReAdmissionIndicator(int $position = 13)
+    public function getReAdmissionIndicator($position = 13)
     {
         return $this->getField($position);
     }
 
-    public function getAdmitSource(int $position = 14)
+    public function getAdmitSource($position = 14)
     {
         return $this->getField($position);
     }
 
-    public function getAmbulatoryStatus(int $position = 15)
+    public function getAmbulatoryStatus($position = 15)
     {
         return $this->getField($position);
     }
 
-    public function getVipIndicator(int $position = 16)
+    public function getVipIndicator($position = 16)
     {
         return $this->getField($position);
     }
 
-    public function getAdmittingDoctor(int $position = 17)
+    public function getAdmittingDoctor($position = 17)
     {
         return $this->getField($position);
     }
 
-    public function getPatientType(int $position = 18)
+    public function getPatientType($position = 18)
     {
         return $this->getField($position);
     }
 
-    public function getVisitNumber(int $position = 19)
+    public function getVisitNumber($position = 19)
     {
         return $this->getField($position);
     }
 
-    public function getFinancialClass(int $position = 20)
+    public function getFinancialClass($position = 20)
     {
         return $this->getField($position);
     }
 
-    public function getChargePriceIndicator(int $position = 21)
+    public function getChargePriceIndicator($position = 21)
     {
         return $this->getField($position);
     }
 
-    public function getCourtesyCode(int $position = 22)
+    public function getCourtesyCode($position = 22)
     {
         return $this->getField($position);
     }
 
-    public function getCreditRating(int $position = 23)
+    public function getCreditRating($position = 23)
     {
         return $this->getField($position);
     }
 
-    public function getContractCode(int $position = 24)
+    public function getContractCode($position = 24)
     {
         return $this->getField($position);
     }
 
-    public function getContractEffectiveDate(int $position = 25)
+    public function getContractEffectiveDate($position = 25)
     {
         return $this->getField($position);
     }
 
-    public function getContractAmount(int $position = 26)
+    public function getContractAmount($position = 26)
     {
         return $this->getField($position);
     }
 
-    public function getContractPeriod(int $position = 27)
+    public function getContractPeriod($position = 27)
     {
         return $this->getField($position);
     }
 
-    public function getInterestCode(int $position = 28)
+    public function getInterestCode($position = 28)
     {
         return $this->getField($position);
     }
 
-    public function getTransferToBadDebtCode(int $position = 29)
+    public function getTransferToBadDebtCode($position = 29)
     {
         return $this->getField($position);
     }
 
-    public function getTransferToBadDebtDate(int $position = 30)
+    public function getTransferToBadDebtDate($position = 30)
     {
         return $this->getField($position);
     }
 
-    public function getBadDebtAgencyCode(int $position = 31)
+    public function getBadDebtAgencyCode($position = 31)
     {
         return $this->getField($position);
     }
 
-    public function getBadDebtTransferAmount(int $position = 32)
+    public function getBadDebtTransferAmount($position = 32)
     {
         return $this->getField($position);
     }
 
-    public function getBadDebtRecoveryAmount(int $position = 33)
+    public function getBadDebtRecoveryAmount($position = 33)
     {
         return $this->getField($position);
     }
 
-    public function getDeleteAccountIndicator(int $position = 34)
+    public function getDeleteAccountIndicator($position = 34)
     {
         return $this->getField($position);
     }
 
-    public function getDeleteAccountDate(int $position = 35)
+    public function getDeleteAccountDate($position = 35)
     {
         return $this->getField($position);
     }
 
-    public function getDischargeDisposition(int $position = 36)
+    public function getDischargeDisposition($position = 36)
     {
         return $this->getField($position);
     }
 
-    public function getDischargedToLocation(int $position = 37)
+    public function getDischargedToLocation($position = 37)
     {
         return $this->getField($position);
     }
 
-    public function getDietType(int $position = 38)
+    public function getDietType($position = 38)
     {
         return $this->getField($position);
     }
 
-    public function getServicingFacility(int $position = 39)
+    public function getServicingFacility($position = 39)
     {
         return $this->getField($position);
     }
 
-    public function getBedStatus(int $position = 40)
+    public function getBedStatus($position = 40)
     {
         return $this->getField($position);
     }
 
-    public function getAccountStatus(int $position = 41)
+    public function getAccountStatus($position = 41)
     {
         return $this->getField($position);
     }
 
-    public function getPendingLocation(int $position = 42)
+    public function getPendingLocation($position = 42)
     {
         return $this->getField($position);
     }
 
-    public function getPriorTemporaryLocation(int $position = 43)
+    public function getPriorTemporaryLocation($position = 43)
     {
         return $this->getField($position);
     }
 
-    public function getAdmitDateTime(int $position = 44)
+    public function getAdmitDateTime($position = 44)
     {
         return $this->getField($position);
     }
 
-    public function getDischargeDateTime(int $position = 45)
+    public function getDischargeDateTime($position = 45)
     {
         return $this->getField($position);
     }
 
-    public function getCurrentPatientBalance(int $position = 46)
+    public function getCurrentPatientBalance($position = 46)
     {
         return $this->getField($position);
     }
 
-    public function getTotalCharges(int $position = 47)
+    public function getTotalCharges($position = 47)
     {
         return $this->getField($position);
     }
 
-    public function getTotalAdjustments(int $position = 48)
+    public function getTotalAdjustments($position = 48)
     {
         return $this->getField($position);
     }
 
-    public function getTotalPayments(int $position = 49)
+    public function getTotalPayments($position = 49)
     {
         return $this->getField($position);
     }
 
-    public function getAlternateVisitID(int $position = 50)
+    public function getAlternateVisitID($position = 50)
     {
         return $this->getField($position);
     }
 
-    public function getVisitIndicator(int $position = 51)
+    public function getVisitIndicator($position = 51)
     {
         return $this->getField($position);
     }
 
-    public function getOtherHealthcareProvider(int $position = 52)
+    public function getOtherHealthcareProvider($position = 52)
     {
         return $this->getField($position);
     }

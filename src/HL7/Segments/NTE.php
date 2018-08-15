@@ -22,42 +22,42 @@ class NTE extends Segment
         $this->setID($this::$setId++);
     }
 
-    public function setID(int $value, int $position = 1)
+    public function setID($value, $position = 1)
     {
         return $this->setField($position, $value);
     }
 
-    public function setSourceOfComment($value, int $position = 2)
+    public function setSourceOfComment($value, $position = 2)
     {
         return $this->setField($position, $value);
     }
 
-    public function setComment($value, int $position = 3)
+    public function setComment($value, $position = 3)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCommentType($value, int $position = 4)
+    public function setCommentType($value, $position = 4)
     {
         return $this->setField($position, $value);
     }
 
-    public function getID(int $position = 1)
+    public function getID($position = 1)
     {
         return $this->getField($position);
     }
 
-    public function getSourceOfComment(int $position = 2)
+    public function getSourceOfComment($position = 2)
     {
         return $this->getField($position);
     }
 
-    public function getComment(int $position = 3)
+    public function getComment($position = 3)
     {
         return $this->getField($position);
     }
 
-    public function getCommentType(int $position = 4)
+    public function getCommentType($position = 4)
     {
         return $this->getField($position);
     }

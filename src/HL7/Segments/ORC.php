@@ -15,312 +15,312 @@ class ORC extends Segment
         parent::__construct('ORC', $fields);
     }
 
-    public function setOrderControl($value, int $position = 1)
+    public function setOrderControl($value, $position = 1)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPlacerOrderNumber($value, int $position = 2)
+    public function setPlacerOrderNumber($value, $position = 2)
     {
         return $this->setField($position, $value);
     }
 
-    public function setFillerOrderNumber($value, int $position = 3)
+    public function setFillerOrderNumber($value, $position = 3)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPlacerGroupNumber($value, int $position = 4)
+    public function setPlacerGroupNumber($value, $position = 4)
     {
         return $this->setField($position, $value);
     }
 
-    public function setOrderStatus($value, int $position = 5)
+    public function setOrderStatus($value, $position = 5)
     {
         return $this->setField($position, $value);
     }
 
-    public function setResponseFlag($value, int $position = 6)
+    public function setResponseFlag($value, $position = 6)
     {
         return $this->setField($position, $value);
     }
 
-    public function setQuantityTiming($value, int $position = 7)
+    public function setQuantityTiming($value, $position = 7)
     {
         return $this->setField($position, $value);
     }
 
-    public function setParentOrder($value, int $position = 8)
+    public function setParentOrder($value, $position = 8)
     {
         return $this->setField($position, $value);
     }
 
-    public function setDateTimeofTransaction($value, int $position = 9)
+    public function setDateTimeofTransaction($value, $position = 9)
     {
         return $this->setField($position, $value);
     }
 
-    public function setEnteredBy($value, int $position = 10)
+    public function setEnteredBy($value, $position = 10)
     {
         return $this->setField($position, $value);
     }
 
-    public function setVerifiedBy($value, int $position = 11)
+    public function setVerifiedBy($value, $position = 11)
     {
         return $this->setField($position, $value);
     }
 
-    public function setOrderingProvider($value, int $position = 12)
+    public function setOrderingProvider($value, $position = 12)
     {
         return $this->setField($position, $value);
     }
 
-    public function setEnterersLocation($value, int $position = 13)
+    public function setEnterersLocation($value, $position = 13)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCallBackPhoneNumber($value, int $position = 14)
+    public function setCallBackPhoneNumber($value, $position = 14)
     {
         return $this->setField($position, $value);
     }
 
-    public function setOrderEffectiveDateTime($value, int $position = 15)
+    public function setOrderEffectiveDateTime($value, $position = 15)
     {
         return $this->setField($position, $value);
     }
 
-    public function setOrderControlCodeReason($value, int $position = 16)
+    public function setOrderControlCodeReason($value, $position = 16)
     {
         return $this->setField($position, $value);
     }
 
-    public function setEnteringOrganization($value, int $position = 17)
+    public function setEnteringOrganization($value, $position = 17)
     {
         return $this->setField($position, $value);
     }
 
-    public function setEnteringDevice($value, int $position = 18)
+    public function setEnteringDevice($value, $position = 18)
     {
         return $this->setField($position, $value);
     }
 
-    public function setActionBy($value, int $position = 19)
+    public function setActionBy($value, $position = 19)
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdvancedBeneficiaryNoticeCode($value, int $position = 20)
+    public function setAdvancedBeneficiaryNoticeCode($value, $position = 20)
     {
         return $this->setField($position, $value);
     }
 
-    public function setOrderingFacilityName($value, int $position = 21)
+    public function setOrderingFacilityName($value, $position = 21)
     {
         return $this->setField($position, $value);
     }
 
-    public function setOrderingFacilityAddress($value, int $position = 22)
+    public function setOrderingFacilityAddress($value, $position = 22)
     {
         return $this->setField($position, $value);
     }
 
-    public function setOrderingFacilityPhoneNumber($value, int $position = 23)
+    public function setOrderingFacilityPhoneNumber($value, $position = 23)
     {
         return $this->setField($position, $value);
     }
 
-    public function setOrderingProviderAddress($value, int $position = 24)
+    public function setOrderingProviderAddress($value, $position = 24)
     {
         return $this->setField($position, $value);
     }
 
-    public function setOrderStatusModifier($value, int $position = 25)
+    public function setOrderStatusModifier($value, $position = 25)
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdvancedBeneficiaryNoticeOverrideReason($value, int $position = 26)
+    public function setAdvancedBeneficiaryNoticeOverrideReason($value, $position = 26)
     {
         return $this->setField($position, $value);
     }
 
-    public function setFillersExpectedAvailabilityDateTime($value, int $position = 27)
+    public function setFillersExpectedAvailabilityDateTime($value, $position = 27)
     {
         return $this->setField($position, $value);
     }
 
-    public function setConfidentialityCode($value, int $position = 28)
+    public function setConfidentialityCode($value, $position = 28)
     {
         return $this->setField($position, $value);
     }
 
-    public function setOrderType($value, int $position = 29)
+    public function setOrderType($value, $position = 29)
     {
         return $this->setField($position, $value);
     }
 
-    public function setEntererAuthorizationMode($value, int $position = 30)
+    public function setEntererAuthorizationMode($value, $position = 30)
     {
         return $this->setField($position, $value);
     }
 
-    public function setParentUniversalServiceIdentifier($value, int $position = 31)
+    public function setParentUniversalServiceIdentifier($value, $position = 31)
     {
         return $this->setField($position, $value);
     }
 
-    public function getOrderControl(int $position = 1)
+    public function getOrderControl($position = 1)
     {
         return $this->getField($position);
     }
 
-    public function getPlacerOrderNumber(int $position = 2)
+    public function getPlacerOrderNumber($position = 2)
     {
         return $this->getField($position);
     }
 
-    public function getFillerOrderNumber(int $position = 3)
+    public function getFillerOrderNumber($position = 3)
     {
         return $this->getField($position);
     }
 
-    public function getPlacerGroupNumber(int $position = 4)
+    public function getPlacerGroupNumber($position = 4)
     {
         return $this->getField($position);
     }
 
-    public function getOrderStatus(int $position = 5)
+    public function getOrderStatus($position = 5)
     {
         return $this->getField($position);
     }
 
-    public function getResponseFlag(int $position = 6)
+    public function getResponseFlag($position = 6)
     {
         return $this->getField($position);
     }
 
-    public function getQuantityTiming(int $position = 7)
+    public function getQuantityTiming($position = 7)
     {
         return $this->getField($position);
     }
 
-    public function getParentOrder(int $position = 8)
+    public function getParentOrder($position = 8)
     {
         return $this->getField($position);
     }
 
-    public function getDateTimeofTransaction(int $position = 9)
+    public function getDateTimeofTransaction($position = 9)
     {
         return $this->getField($position);
     }
 
-    public function getEnteredBy(int $position = 10)
+    public function getEnteredBy($position = 10)
     {
         return $this->getField($position);
     }
 
-    public function getVerifiedBy(int $position = 11)
+    public function getVerifiedBy($position = 11)
     {
         return $this->getField($position);
     }
 
-    public function getOrderingProvider(int $position = 12)
+    public function getOrderingProvider($position = 12)
     {
         return $this->getField($position);
     }
 
-    public function getEnterersLocation(int $position = 13)
+    public function getEnterersLocation($position = 13)
     {
         return $this->getField($position);
     }
 
-    public function getCallBackPhoneNumber(int $position = 14)
+    public function getCallBackPhoneNumber($position = 14)
     {
         return $this->getField($position);
     }
 
-    public function getOrderEffectiveDateTime(int $position = 15)
+    public function getOrderEffectiveDateTime($position = 15)
     {
         return $this->getField($position);
     }
 
-    public function getOrderControlCodeReason(int $position = 16)
+    public function getOrderControlCodeReason($position = 16)
     {
         return $this->getField($position);
     }
 
-    public function getEnteringOrganization(int $position = 17)
+    public function getEnteringOrganization($position = 17)
     {
         return $this->getField($position);
     }
 
-    public function getEnteringDevice(int $position = 18)
+    public function getEnteringDevice($position = 18)
     {
         return $this->getField($position);
     }
 
-    public function getActionBy(int $position = 19)
+    public function getActionBy($position = 19)
     {
         return $this->getField($position);
     }
 
-    public function getAdvancedBeneficiaryNoticeCode(int $position = 20)
+    public function getAdvancedBeneficiaryNoticeCode($position = 20)
     {
         return $this->getField($position);
     }
 
-    public function getOrderingFacilityName(int $position = 21)
+    public function getOrderingFacilityName($position = 21)
     {
         return $this->getField($position);
     }
 
-    public function getOrderingFacilityAddress(int $position = 22)
+    public function getOrderingFacilityAddress($position = 22)
     {
         return $this->getField($position);
     }
 
-    public function getOrderingFacilityPhoneNumber(int $position = 23)
+    public function getOrderingFacilityPhoneNumber($position = 23)
     {
         return $this->getField($position);
     }
 
-    public function getOrderingProviderAddress(int $position = 24)
+    public function getOrderingProviderAddress($position = 24)
     {
         return $this->getField($position);
     }
 
-    public function getOrderStatusModifier(int $position = 25)
+    public function getOrderStatusModifier($position = 25)
     {
         return $this->getField($position);
     }
 
-    public function getAdvancedBeneficiaryNoticeOverrideReason(int $position = 26)
+    public function getAdvancedBeneficiaryNoticeOverrideReason($position = 26)
     {
         return $this->getField($position);
     }
 
-    public function getFillersExpectedAvailabilityDateTime(int $position = 27)
+    public function getFillersExpectedAvailabilityDateTime($position = 27)
     {
         return $this->getField($position);
     }
 
-    public function getConfidentialityCode(int $position = 28)
+    public function getConfidentialityCode($position = 28)
     {
         return $this->getField($position);
     }
 
-    public function getOrderType(int $position = 29)
+    public function getOrderType($position = 29)
     {
         return $this->getField($position);
     }
 
-    public function getEntererAuthorizationMode(int $position = 30)
+    public function getEntererAuthorizationMode($position = 30)
     {
         return $this->getField($position);
     }
 
-    public function getParentUniversalServiceIdentifier(int $position = 31)
+    public function getParentUniversalServiceIdentifier($position = 31)
     {
         return $this->getField($position);
     }

@@ -22,12 +22,12 @@ class PID extends Segment
         $this->setID($this::$setId++);
     }
 
-    public function setID(int $value, int $position = 1)
+    public function setID($value, $position = 1)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPatientID($value, int $position = 2)
+    public function setPatientID($value, $position = 2)
     {
         return $this->setField($position, $value);
     }
@@ -35,30 +35,30 @@ class PID extends Segment
     /**
      * Patient ID (Internal ID)
      * @param string $value
-     * @param int $position
+     * @param $position
      * @return bool
      */
-    public function setPatientIdentifierList($value, int $position = 3): bool
+    public function setPatientIdentifierList($value, $position = 3)
     {
         return $this->setField($position, $value);
     }
 
-    public function setAlternatePatientID($value, int $position = 4)
+    public function setAlternatePatientID($value, $position = 4)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPatientName($value, int $position = 5)
+    public function setPatientName($value, $position = 5)
     {
         return $this->setField($position, $value);
     }
 
-    public function setMothersMaidenName($value, int $position = 6)
+    public function setMothersMaidenName($value, $position = 6)
     {
         return $this->setField($position, $value);
     }
 
-    public function setDateTimeOfBirth($value, int $position = 7)
+    public function setDateTimeOfBirth($value, $position = 7)
     {
         // TODO: Validate if $value is of the form %Y%m%d%H%M%S
         //if ($value !== 'F' && $value !== 'M') {
@@ -67,7 +67,7 @@ class PID extends Segment
         return $this->setField($position, $value);
     }
 
-    public function setSex($value, int $position = 8)
+    public function setSex($value, $position = 8)
     {
         if ($value !== 'F' && $value !== 'M') {
             throw new \InvalidArgumentException("Sex should be either 'F' or 'M'. Given: '$value''");
@@ -75,267 +75,267 @@ class PID extends Segment
         return $this->setField($position, $value);
     }
 
-    public function setPatientAlias($value, int $position = 9)
+    public function setPatientAlias($value, $position = 9)
     {
         return $this->setField($position, $value);
     }
 
-    public function setRace($value, int $position = 10)
+    public function setRace($value, $position = 10)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPatientAddress($value, int $position = 11)
+    public function setPatientAddress($value, $position = 11)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCountryCode($value, int $position = 12)
+    public function setCountryCode($value, $position = 12)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPhoneNumberHome($value, int $position = 13)
+    public function setPhoneNumberHome($value, $position = 13)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPhoneNumberBusiness($value, int $position = 14)
+    public function setPhoneNumberBusiness($value, $position = 14)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPrimaryLanguage($value, int $position = 15)
+    public function setPrimaryLanguage($value, $position = 15)
     {
         return $this->setField($position, $value);
     }
 
-    public function setMaritalStatus($value, int $position = 16)
+    public function setMaritalStatus($value, $position = 16)
     {
         return $this->setField($position, $value);
     }
 
-    public function setReligion($value, int $position = 17)
+    public function setReligion($value, $position = 17)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPatientAccountNumber($value, int $position = 18)
+    public function setPatientAccountNumber($value, $position = 18)
     {
         return $this->setField($position, $value);
     }
 
-    public function setSSNNumber($value, int $position = 19)
+    public function setSSNNumber($value, $position = 19)
     {
         return $this->setField($position, $value);
     }
 
-    public function setDriversLicenseNumber($value, int $position = 20)
+    public function setDriversLicenseNumber($value, $position = 20)
     {
         return $this->setField($position, $value);
     }
 
-    public function setMothersIdentifier($value, int $position = 21)
+    public function setMothersIdentifier($value, $position = 21)
     {
         return $this->setField($position, $value);
     }
 
-    public function setEthnicGroup($value, int $position = 22)
+    public function setEthnicGroup($value, $position = 22)
     {
         return $this->setField($position, $value);
     }
 
-    public function setBirthPlace($value, int $position = 23)
+    public function setBirthPlace($value, $position = 23)
     {
         return $this->setField($position, $value);
     }
 
-    public function setMultipleBirthIndicator($value, int $position = 24)
+    public function setMultipleBirthIndicator($value, $position = 24)
     {
         return $this->setField($position, $value);
     }
 
-    public function setBirthOrder($value, int $position = 25)
+    public function setBirthOrder($value, $position = 25)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCitizenship($value, int $position = 26)
+    public function setCitizenship($value, $position = 26)
     {
         return $this->setField($position, $value);
     }
 
-    public function setVeteransMilitaryStatus($value, int $position = 27)
+    public function setVeteransMilitaryStatus($value, $position = 27)
     {
         return $this->setField($position, $value);
     }
 
-    public function setNationality($value, int $position = 28)
+    public function setNationality($value, $position = 28)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPatientDeathDateAndTime($value, int $position = 29)
+    public function setPatientDeathDateAndTime($value, $position = 29)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPatientDeathIndicator($value, int $position = 30)
+    public function setPatientDeathIndicator($value, $position = 30)
     {
         return $this->setField($position, $value);
     }
 
-    public function getID(int $position = 1)
+    public function getID($position = 1)
     {
         return $this->getField($position);
     }
 
-    public function getPatientID(int $position = 2)
+    public function getPatientID($position = 2)
     {
         return $this->getField($position);
     }
 
     /**
      * Patient ID (Internal ID)
-     * @param int $position
+     * @param $position
      * @return array|null|string
      */
-    public function getPatientIdentifierList(int $position = 3)
+    public function getPatientIdentifierList($position = 3)
     {
         return $this->getField($position);
     }
 
-    public function getAlternatePatientID(int $position = 4)
+    public function getAlternatePatientID($position = 4)
     {
         return $this->getField($position);
     }
 
-    public function getPatientName(int $position = 5)
+    public function getPatientName($position = 5)
     {
         return $this->getField($position);
     }
 
-    public function getMothersMaidenName(int $position = 6)
+    public function getMothersMaidenName($position = 6)
     {
         return $this->getField($position);
     }
 
-    public function getDateTimeOfBirth(int $position = 7)
+    public function getDateTimeOfBirth($position = 7)
     {
         return $this->getField($position);
     }
 
-    public function getSex(int $position = 8)
+    public function getSex($position = 8)
     {
         return $this->getField($position);
     }
 
-    public function getPatientAlias(int $position = 9)
+    public function getPatientAlias($position = 9)
     {
         return $this->getField($position);
     }
 
-    public function getRace(int $position = 10)
+    public function getRace($position = 10)
     {
         return $this->getField($position);
     }
 
-    public function getPatientAddress(int $position = 11)
+    public function getPatientAddress($position = 11)
     {
         return $this->getField($position);
     }
 
-    public function getCountryCode(int $position = 12)
+    public function getCountryCode($position = 12)
     {
         return $this->getField($position);
     }
 
-    public function getPhoneNumberHome(int $position = 13)
+    public function getPhoneNumberHome($position = 13)
     {
         return $this->getField($position);
     }
 
-    public function getPhoneNumberBusiness(int $position = 14)
+    public function getPhoneNumberBusiness($position = 14)
     {
         return $this->getField($position);
     }
 
-    public function getPrimaryLanguage(int $position = 15)
+    public function getPrimaryLanguage($position = 15)
     {
         return $this->getField($position);
     }
 
-    public function getMaritalStatus(int $position = 16)
+    public function getMaritalStatus($position = 16)
     {
         return $this->getField($position);
     }
 
-    public function getReligion(int $position = 17)
+    public function getReligion($position = 17)
     {
         return $this->getField($position);
     }
 
-    public function getPatientAccountNumber(int $position = 18)
+    public function getPatientAccountNumber($position = 18)
     {
         return $this->getField($position);
     }
 
-    public function getSSNNumber(int $position = 19)
+    public function getSSNNumber($position = 19)
     {
         return $this->getField($position);
     }
 
-    public function getDriversLicenseNumber(int $position = 20)
+    public function getDriversLicenseNumber($position = 20)
     {
         return $this->getField($position);
     }
 
-    public function getMothersIdentifier(int $position = 21)
+    public function getMothersIdentifier($position = 21)
     {
         return $this->getField($position);
     }
 
-    public function getEthnicGroup(int $position = 22)
+    public function getEthnicGroup($position = 22)
     {
         return $this->getField($position);
     }
 
-    public function getBirthPlace(int $position = 23)
+    public function getBirthPlace($position = 23)
     {
         return $this->getField($position);
     }
 
-    public function getMultipleBirthIndicator(int $position = 24)
+    public function getMultipleBirthIndicator($position = 24)
     {
         return $this->getField($position);
     }
 
-    public function getBirthOrder(int $position = 25)
+    public function getBirthOrder($position = 25)
     {
         return $this->getField($position);
     }
 
-    public function getCitizenship(int $position = 26)
+    public function getCitizenship($position = 26)
     {
         return $this->getField($position);
     }
 
-    public function getVeteransMilitaryStatus(int $position = 27)
+    public function getVeteransMilitaryStatus($position = 27)
     {
         return $this->getField($position);
     }
 
-    public function getNationality(int $position = 28)
+    public function getNationality($position = 28)
     {
         return $this->getField($position);
     }
 
-    public function getPatientDeathDateAndTime( int $position = 29)
+    public function getPatientDeathDateAndTime( $position = 29)
     {
         return $this->getField($position);
     }
 
-    public function getPatientDeathIndicator(int $position = 30)
+    public function getPatientDeathIndicator($position = 30)
     {
         return $this->getField($position);
     }

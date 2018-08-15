@@ -22,432 +22,432 @@ class OBR extends Segment
         $this->setID($this::$setId++);
     }
 
-    public function setID(int $value, int $position = 1)
+    public function setID($value, $position = 1)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPlacerOrderNumber($value, int $position = 2)
+    public function setPlacerOrderNumber($value, $position = 2)
     {
         return $this->setField($position, $value);
     }
 
-    public function setFillerOrderNumber($value, int $position = 3)
+    public function setFillerOrderNumber($value, $position = 3)
     {
         return $this->setField($position, $value);
     }
 
-    public function setUniversalServiceID($value, int $position = 4)
+    public function setUniversalServiceID($value, $position = 4)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPriority($value, int $position = 5)
+    public function setPriority($value, $position = 5)
     {
         return $this->setField($position, $value);
     }
 
-    public function setRequestedDatetime($value, int $position = 6)
+    public function setRequestedDatetime($value, $position = 6)
     {
         return $this->setField($position, $value);
     }
 
-    public function setObservationDateTime($value, int $position = 7)
+    public function setObservationDateTime($value, $position = 7)
     {
         return $this->setField($position, $value);
     }
 
-    public function setObservationEndDateTime($value, int $position = 8)
+    public function setObservationEndDateTime($value, $position = 8)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCollectionVolume($value, int $position = 9)
+    public function setCollectionVolume($value, $position = 9)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCollectorIdentifier($value, int $position = 10)
+    public function setCollectorIdentifier($value, $position = 10)
     {
         return $this->setField($position, $value);
     }
 
-    public function setSpecimenActionCode($value, int $position = 11)
+    public function setSpecimenActionCode($value, $position = 11)
     {
         return $this->setField($position, $value);
     }
 
-    public function setDangerCode($value, int $position = 12)
+    public function setDangerCode($value, $position = 12)
     {
         return $this->setField($position, $value);
     }
 
-    public function setRelevantClinicalInfo($value, int $position = 13)
+    public function setRelevantClinicalInfo($value, $position = 13)
     {
         return $this->setField($position, $value);
     }
 
-    public function setSpecimenReceivedDateTime($value, int $position = 14)
+    public function setSpecimenReceivedDateTime($value, $position = 14)
     {
         return $this->setField($position, $value);
     }
 
-    public function setSpecimenSource($value, int $position = 15)
+    public function setSpecimenSource($value, $position = 15)
     {
         return $this->setField($position, $value);
     }
 
-    public function setOrderingProvider($value, int $position = 16)
+    public function setOrderingProvider($value, $position = 16)
     {
         return $this->setField($position, $value);
     }
 
-    public function setOrderCallbackPhoneNumber($value, int $position = 17)
+    public function setOrderCallbackPhoneNumber($value, $position = 17)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPlacerfield1($value, int $position = 18)
+    public function setPlacerfield1($value, $position = 18)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPlacerfield2($value, int $position = 19)
+    public function setPlacerfield2($value, $position = 19)
     {
         return $this->setField($position, $value);
     }
 
-    public function setFillerField1($value, int $position = 20)
+    public function setFillerField1($value, $position = 20)
     {
         return $this->setField($position, $value);
     }
 
-    public function setFillerField2($value, int $position = 21)
+    public function setFillerField2($value, $position = 21)
     {
         return $this->setField($position, $value);
     }
 
-    public function setResultsRptStatusChngDateTime($value, int $position = 22)
+    public function setResultsRptStatusChngDateTime($value, $position = 22)
     {
         return $this->setField($position, $value);
     }
 
-    public function setChargetoPractice($value, int $position = 23)
+    public function setChargetoPractice($value, $position = 23)
     {
         return $this->setField($position, $value);
     }
 
-    public function setDiagnosticServSectID($value, int $position = 24)
+    public function setDiagnosticServSectID($value, $position = 24)
     {
         return $this->setField($position, $value);
     }
 
-    public function setResultStatus($value, int $position = 25)
+    public function setResultStatus($value, $position = 25)
     {
         return $this->setField($position, $value);
     }
 
-    public function setParentResult($value, int $position = 26)
+    public function setParentResult($value, $position = 26)
     {
         return $this->setField($position, $value);
     }
 
-    public function setQuantityTiming($value, int $position = 27)
+    public function setQuantityTiming($value, $position = 27)
     {
         return $this->setField($position, $value);
     }
 
-    public function setResultCopiesTo($value, int $position = 28)
+    public function setResultCopiesTo($value, $position = 28)
     {
         return $this->setField($position, $value);
     }
 
-    public function setParent($value, int $position = 29)
+    public function setParent($value, $position = 29)
     {
         return $this->setField($position, $value);
     }
 
-    public function setTransportationMode($value, int $position = 30)
+    public function setTransportationMode($value, $position = 30)
     {
         return $this->setField($position, $value);
     }
 
-    public function setReasonforStudy($value, int $position = 31)
+    public function setReasonforStudy($value, $position = 31)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPrincipalResultInterpreter($value, int $position = 32)
+    public function setPrincipalResultInterpreter($value, $position = 32)
     {
         return $this->setField($position, $value);
     }
 
-    public function setAssistantResultInterpreter($value, int $position = 33)
+    public function setAssistantResultInterpreter($value, $position = 33)
     {
         return $this->setField($position, $value);
     }
 
-    public function setTechnician($value, int $position = 34)
+    public function setTechnician($value, $position = 34)
     {
         return $this->setField($position, $value);
     }
 
-    public function setTranscriptionist($value, int $position = 35)
+    public function setTranscriptionist($value, $position = 35)
     {
         return $this->setField($position, $value);
     }
 
-    public function setScheduledDateTime($value, int $position = 36)
+    public function setScheduledDateTime($value, $position = 36)
     {
         return $this->setField($position, $value);
     }
 
-    public function setNumberofSampleContainers($value, int $position = 37)
+    public function setNumberofSampleContainers($value, $position = 37)
     {
         return $this->setField($position, $value);
     }
 
-    public function setTransportLogisticsofCollectedSample($value, int $position = 38)
+    public function setTransportLogisticsofCollectedSample($value, $position = 38)
     {
         return $this->setField($position, $value);
     }
 
-    public function setCollectorsComment($value, int $position = 39)
+    public function setCollectorsComment($value, $position = 39)
     {
         return $this->setField($position, $value);
     }
 
-    public function setTransportArrangementResponsibility($value, int $position = 40)
+    public function setTransportArrangementResponsibility($value, $position = 40)
     {
         return $this->setField($position, $value);
     }
 
-    public function setTransportArranged($value, int $position = 41)
+    public function setTransportArranged($value, $position = 41)
     {
         return $this->setField($position, $value);
     }
 
-    public function setEscortRequired($value, int $position = 42)
+    public function setEscortRequired($value, $position = 42)
     {
         return $this->setField($position, $value);
     }
 
-    public function setPlannedPatientTransportComment($value, int $position = 43)
+    public function setPlannedPatientTransportComment($value, $position = 43)
     {
         return $this->setField($position, $value);
     }
 
-    public function getID(int $position = 1)
+    public function getID($position = 1)
     {
         return $this->getField($position);
     }
 
-    public function getPlacerOrderNumber(int $position = 2)
+    public function getPlacerOrderNumber($position = 2)
     {
         return $this->getField($position);
     }
 
-    public function getFillerOrderNumber(int $position = 3)
+    public function getFillerOrderNumber($position = 3)
     {
         return $this->getField($position);
     }
 
-    public function getUniversalServiceID(int $position = 4)
+    public function getUniversalServiceID($position = 4)
     {
         return $this->getField($position);
     }
 
-    public function getPriority(int $position = 5)
+    public function getPriority($position = 5)
     {
         return $this->getField($position);
     }
 
-    public function getRequestedDatetime(int $position = 6)
+    public function getRequestedDatetime($position = 6)
     {
         return $this->getField($position);
     }
 
-    public function getObservationDateTime(int $position = 7)
+    public function getObservationDateTime($position = 7)
     {
         return $this->getField($position);
     }
 
-    public function getObservationEndDateTime(int $position = 8)
+    public function getObservationEndDateTime($position = 8)
     {
         return $this->getField($position);
     }
 
-    public function getCollectionVolume(int $position = 9)
+    public function getCollectionVolume($position = 9)
     {
         return $this->getField($position);
     }
 
-    public function getCollectorIdentifier(int $position = 10)
+    public function getCollectorIdentifier($position = 10)
     {
         return $this->getField($position);
     }
 
-    public function getSpecimenActionCode(int $position = 11)
+    public function getSpecimenActionCode($position = 11)
     {
         return $this->getField($position);
     }
 
-    public function getDangerCode(int $position = 12)
+    public function getDangerCode($position = 12)
     {
         return $this->getField($position);
     }
 
-    public function getRelevantClinicalInfo(int $position = 13)
+    public function getRelevantClinicalInfo($position = 13)
     {
         return $this->getField($position);
     }
 
-    public function getSpecimenReceivedDateTime(int $position = 14)
+    public function getSpecimenReceivedDateTime($position = 14)
     {
         return $this->getField($position);
     }
 
-    public function getSpecimenSource(int $position = 15)
+    public function getSpecimenSource($position = 15)
     {
         return $this->getField($position);
     }
 
-    public function getOrderingProvider(int $position = 16)
+    public function getOrderingProvider($position = 16)
     {
         return $this->getField($position);
     }
 
-    public function getOrderCallbackPhoneNumber(int $position = 17)
+    public function getOrderCallbackPhoneNumber($position = 17)
     {
         return $this->getField($position);
     }
 
-    public function getPlacerfield1(int $position = 18)
+    public function getPlacerfield1($position = 18)
     {
         return $this->getField($position);
     }
 
-    public function getPlacerfield2(int $position = 19)
+    public function getPlacerfield2($position = 19)
     {
         return $this->getField($position);
     }
 
-    public function getFillerField1(int $position = 20)
+    public function getFillerField1($position = 20)
     {
         return $this->getField($position);
     }
 
-    public function getFillerField2(int $position = 21)
+    public function getFillerField2($position = 21)
     {
         return $this->getField($position);
     }
 
-    public function getResultsRptStatusChngDateTime(int $position = 22)
+    public function getResultsRptStatusChngDateTime($position = 22)
     {
         return $this->getField($position);
     }
 
-    public function getChargetoPractice(int $position = 23)
+    public function getChargetoPractice($position = 23)
     {
         return $this->getField($position);
     }
 
-    public function getDiagnosticServSectID(int $position = 24)
+    public function getDiagnosticServSectID($position = 24)
     {
         return $this->getField($position);
     }
 
-    public function getResultStatus(int $position = 25)
+    public function getResultStatus($position = 25)
     {
         return $this->getField($position);
     }
 
-    public function getParentResult(int $position = 26)
+    public function getParentResult($position = 26)
     {
         return $this->getField($position);
     }
 
-    public function getQuantityTiming(int $position = 27)
+    public function getQuantityTiming($position = 27)
     {
         return $this->getField($position);
     }
 
-    public function getResultCopiesTo(int $position = 28)
+    public function getResultCopiesTo($position = 28)
     {
         return $this->getField($position);
     }
 
-    public function getParent(int $position = 29)
+    public function getParent($position = 29)
     {
         return $this->getField($position);
     }
 
-    public function getTransportationMode(int $position = 30)
+    public function getTransportationMode($position = 30)
     {
         return $this->getField($position);
     }
 
-    public function getReasonforStudy(int $position = 31)
+    public function getReasonforStudy($position = 31)
     {
         return $this->getField($position);
     }
 
-    public function getPrincipalResultInterpreter(int $position = 32)
+    public function getPrincipalResultInterpreter($position = 32)
     {
         return $this->getField($position);
     }
 
-    public function getAssistantResultInterpreter(int $position = 33)
+    public function getAssistantResultInterpreter($position = 33)
     {
         return $this->getField($position);
     }
 
-    public function getTechnician(int $position = 34)
+    public function getTechnician($position = 34)
     {
         return $this->getField($position);
     }
 
-    public function getTranscriptionist(int $position = 35)
+    public function getTranscriptionist($position = 35)
     {
         return $this->getField($position);
     }
 
-    public function getScheduledDateTime(int $position = 36)
+    public function getScheduledDateTime($position = 36)
     {
         return $this->getField($position);
     }
 
-    public function getNumberofSampleContainers(int $position = 37)
+    public function getNumberofSampleContainers($position = 37)
     {
         return $this->getField($position);
     }
 
-    public function getTransportLogisticsofCollectedSample(int $position = 38)
+    public function getTransportLogisticsofCollectedSample($position = 38)
     {
         return $this->getField($position);
     }
 
-    public function getCollectorsComment(int $position = 39)
+    public function getCollectorsComment($position = 39)
     {
         return $this->getField($position);
     }
 
-    public function getTransportArrangementResponsibility(int $position = 40)
+    public function getTransportArrangementResponsibility($position = 40)
     {
         return $this->getField($position);
     }
 
-    public function getTransportArranged(int $position = 41)
+    public function getTransportArranged($position = 41)
     {
         return $this->getField($position);
     }
 
-    public function getEscortRequired(int $position = 42)
+    public function getEscortRequired($position = 42)
     {
         return $this->getField($position);
     }
 
-    public function getPlannedPatientTransportComment(int $position = 43)
+    public function getPlannedPatientTransportComment($position = 43)
     {
         return $this->getField($position);
     }

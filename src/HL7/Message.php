@@ -54,19 +54,19 @@ class Message
      * @param bool $keepEmptySubFields Set this to true to retain empty sub fields
      * @throws HL7Exception
      */
-    public function __construct(string $msgStr = null, array $hl7Globals = null, bool $keepEmptySubFields = false)
+    public function __construct($msgStr = null, $hl7Globals = null, $keepEmptySubFields = false)
     {
         // Array holding the segments
         $this->segments = [];
 
         // Control characters and other HL7 properties
-        $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] ?? '\n';
-        $this->fieldSeparator = $hl7Globals['FIELD_SEPARATOR'] ?? '|';
-        $this->componentSeparator = $hl7Globals['COMPONENT_SEPARATOR'] ?? '^';
-        $this->subcomponentSeparator = $hl7Globals['SUBCOMPONENT_SEPARATOR'] ?? '&';
-        $this->repetitionSeparator = $hl7Globals['REPETITION_SEPARATOR'] ?? '~';
-        $this->escapeChar = $hl7Globals['ESCAPE_CHAR'] ?? '\\';
-        $this->hl7Version = $hl7Globals['HL7_VERSION'] ?? '2.3';
+        $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] ? $hl7Globals['SEGMENT_SEPARATOR'] : '\n';
+        $this->fieldSeparator = $hl7Globals['FIELD_SEPARATOR'] ? $hl7Globals['FIELD_SEPARATOR'] : '|';
+        $this->componentSeparator = $hl7Globals['COMPONENT_SEPARATOR'] ? $hl7Globals['COMPONENT_SEPARATOR'] : '^';
+        $this->subcomponentSeparator = $hl7Globals['SUBCOMPONENT_SEPARATOR'] ? $hl7Globals['SUBCOMPONENT_SEPARATOR'] : '&';
+        $this->repetitionSeparator = $hl7Globals['REPETITION_SEPARATOR'] ? $hl7Globals['REPETITION_SEPARATOR'] : '~';
+        $this->escapeChar = $hl7Globals['ESCAPE_CHAR'] ? $hl7Globals['ESCAPE_CHAR'] : '\\';
+        $this->hl7Version = $hl7Globals['HL7_VERSION'] ? $hl7Globals['HL7_VERSION'] : '2.3';
 
         // If an HL7 string is given to the constructor, parse it.
         if ($msgStr) {
@@ -77,7 +77,7 @@ class Message
                 throw new HL7Exception('Not a valid message: invalid control segment', E_USER_ERROR);
             }
 
-            [$dummy, $hdr, $fieldSep, $compSep, $repSep, $esc, $subCompSep, $fieldSepCtrl] = $matches;
+            list($dummy, $hdr, $fieldSep, $compSep, $repSep, $esc, $subCompSep, $fieldSepCtrl) = $matches;
 
             // Check whether field separator is repeated after 4 control characters
             if ($fieldSep !== $fieldSepCtrl) {
@@ -146,7 +146,7 @@ class Message
      * @return bool
      * @access public
      */
-    public function addSegment(Segment $segment): bool
+    public function addSegment(Segment $segment)
     {
         if (\count($this->segments) === 0) {
             $this->resetCtrl($segment);
@@ -164,7 +164,7 @@ class Message
      * @param null|int $index Index where segment is inserted
      * @throws \InvalidArgumentException
      */
-    public function insertSegment(Segment $segment, $index = null): void
+    public function insertSegment(Segment $segment, $index = null)
     {
         if ($index > \count($this->segments)) {
             throw new InvalidArgumentException("Index out of range. Index: $index, Total segments: " .
@@ -196,7 +196,7 @@ class Message
      * @param int $index Index where segment is inserted
      * @return Segment
      */
-    public function getSegmentByIndex(int $index): ?Segment
+    public function getSegmentByIndex($index)
     {
         if ($index >= \count($this->segments)) {
             return null;
@@ -211,7 +211,7 @@ class Message
      * @param string $name Segment name
      * @return array List of segments identified by name
      */
-    public function getSegmentsByName(string $name): array
+    public function getSegmentsByName(string $name)
     {
         $segmentsByName = [];
 
@@ -234,7 +234,7 @@ class Message
      * @return boolean
      * @access public
      */
-    public function removeSegmentByIndex(int $index): bool
+    public function removeSegmentByIndex($index)
     {
         if ($index < \count($this->segments)) {
             array_splice($this->segments, $index, 1);
@@ -254,7 +254,7 @@ class Message
      * @return boolean
      * @throws \InvalidArgumentException
      */
-    public function setSegment(Segment $segment, int $index): bool
+    public function setSegment(Segment $segment, $index)
     {
         if (!isset($index) || $index > \count($this->segments)) {
             throw new InvalidArgumentException('Index out of range');
@@ -301,7 +301,7 @@ class Message
      *
      * @return array List of all segments
      */
-    public function getSegments(): array
+    public function getSegments()
     {
         return $this->segments;
     }
@@ -316,7 +316,7 @@ class Message
      * @return mixed String representation of HL7 message
      * @access public
      */
-    public function toString(bool $pretty = false)
+    public function toString($pretty = false)
     {
         $message = '';
 
@@ -340,7 +340,7 @@ class Message
      * @param int $index Index for segment to get
      * @return string|null String representation of segment
      */
-    public function getSegmentAsString(int $index): ?string
+    public function getSegmentAsString($index)
     {
         $seg = $this->getSegmentByIndex($index);
 
@@ -361,7 +361,7 @@ class Message
      * @return mixed String representation of field
      * @access public
      */
-    public function getSegmentFieldAsString(int $segmentIndex, int $fieldIndex)
+    public function getSegmentFieldAsString($segmentIndex, $fieldIndex)
     {
         $seg = $this->getSegmentByIndex($segmentIndex);
 
@@ -400,7 +400,7 @@ class Message
      * @param $seg
      * @return string
      */
-    public function segmentToString(Segment $seg): string
+    public function segmentToString(Segment $seg)
     {
         $segmentName = $seg->getName();
         $segStr = $segmentName . $this->fieldSeparator;

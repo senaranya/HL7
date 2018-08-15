@@ -15,64 +15,64 @@ class MSA extends Segment
         parent::__construct('MSA', $fields);
     }
 
-    public function setAcknowledgementCode($value, int $position = 1)
+    public function setAcknowledgementCode($value, $position = 1)
     {
         return $this->setField($position, $value);
     }
 
-    public function setMessageControlID($value, int $position = 2)
+    public function setMessageControlID($value, $position = 2)
     {
         return $this->setField($position, $value);
     }
 
-    public function setTextMessage($value, int $position = 3)
+    public function setTextMessage($value, $position = 3)
     {
         return $this->setField($position, $value);
     }
 
-    public function setExpectedSequenceNumber($value, int $position = 4)
+    public function setExpectedSequenceNumber($value, $position = 4)
     {
         return $this->setField($position, $value);
     }
 
-    public function setDelayedAcknowledgementType($value, int $position = 5)
+    public function setDelayedAcknowledgementType($value, $position = 5)
     {
         return $this->setField($position, $value);
     }
 
-    public function setErrorCondition($value, int $position = 6)
+    public function setErrorCondition($value, $position = 6)
     {
         return $this->setField($position, $value);
     }
 
     // -------------------- Getter Methods ------------------------------
 
-    public function getAcknowledgementCode(int $position = 1)
+    public function getAcknowledgementCode($position = 1)
     {
         return $this->getField($position);
     }
 
-    public function getMessageControlID(int $position = 2)
+    public function getMessageControlID($position = 2)
     {
         return $this->getField($position);
     }
 
-    public function getTextMessage(int $position = 3)
+    public function getTextMessage($position = 3)
     {
         return $this->getField($position);
     }
 
-    public function getExpectedSequenceNumber(int $position = 4)
+    public function getExpectedSequenceNumber($position = 4)
     {
         return $this->getField($position);
     }
 
-    public function getDelayedAcknowledgementType(int $position = 5)
+    public function getDelayedAcknowledgementType($position = 5)
     {
         return $this->getField($position);
     }
 
-    public function getErrorCondition(int $position = 6)
+    public function getErrorCondition($position = 6)
     {
         return $this->getField($position);
     }

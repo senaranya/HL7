@@ -83,7 +83,7 @@ class ACK extends Message
      * @return boolean
      * @access public
      */
-    public function setAckCode(string $code, string $msg = null): bool
+    public function setAckCode(string $code, string $msg = null)
     {
         $mode = 'A';
 
@@ -116,7 +116,7 @@ class ACK extends Message
      * @param string $msg Error message
      * @access public
      */
-    public function setErrorMessage(string $msg): void
+    public function setErrorMessage(string $msg)
     {
         $this->setAckCode('E', $msg);
     }
