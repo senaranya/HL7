@@ -1,5 +1,5 @@
 {
-    "name": "aranyasen/hl7",
+    "name": "aptvision/hl7",
     "description": "HL7 parser, generator and sender.",
     "type": "library",
     "license": "MIT",
