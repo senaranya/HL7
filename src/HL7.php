@@ -22,6 +22,11 @@ class HL7
     protected $hl7Globals;
 
     /**
+     * Tells whether to keep empty subfields
+     */
+    protected $keepEmptySubFields;
+
+    /**
      * Create a new instance of the HL7 factory, and set global
      * defaults.
      */
@@ -35,6 +40,7 @@ class HL7
         $this->hl7Globals['ESCAPE_CHARACTER'] = '\\';
         $this->hl7Globals['SUBCOMPONENT_SEPARATOR'] = '&';
         $this->hl7Globals['HL7_VERSION'] = '2.2';
+        $this->keepEmptySubFields = false;
     }
 
     /**
@@ -47,7 +53,7 @@ class HL7
      */
     public function createMessage($msgStr = null)
     {
-        return new Message($msgStr, $this->hl7Globals);
+        return new Message($msgStr, $this->hl7Globals, $this->keepEmptySubFields);
     }
 
     /**
@@ -190,6 +196,16 @@ class HL7
     public function getNull()
     {
         return $this->hl7Globals['NULL'];
+    }
+
+    /**
+     * Set the configuration variable keepEmptySubFields
+     *
+     * @param bool $keepEmptySubFields
+     */
+    protected function setKeepEmptySubFields($keepEmptySubFields = false)
+    {
+        $this->keepEmptySubFields = $keepEmptySubFields;
     }
 
     /**
