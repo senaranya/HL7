@@ -211,7 +211,7 @@ class Message
      * @param string $name Segment name
      * @return array List of segments identified by name
      */
-    public function getSegmentsByName(string $name)
+    public function getSegmentsByName($name)
     {
         $segmentsByName = [];
 
