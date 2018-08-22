@@ -65,7 +65,7 @@ class Message
         $this->componentSeparator = $hl7Globals['COMPONENT_SEPARATOR'] ? $hl7Globals['COMPONENT_SEPARATOR'] : '^';
         $this->subcomponentSeparator = $hl7Globals['SUBCOMPONENT_SEPARATOR'] ? $hl7Globals['SUBCOMPONENT_SEPARATOR'] : '&';
         $this->repetitionSeparator = $hl7Globals['REPETITION_SEPARATOR'] ? $hl7Globals['REPETITION_SEPARATOR'] : '~';
-        $this->escapeChar = $hl7Globals['ESCAPE_CHAR'] ? $hl7Globals['ESCAPE_CHAR'] : '\\';
+        $this->escapeChar = $hl7Globals['ESCAPE_CHARACTER'] ? $hl7Globals['ESCAPE_CHARACTER'] : '\\';
         $this->hl7Version = $hl7Globals['HL7_VERSION'] ? $hl7Globals['HL7_VERSION'] : '2.3';
 
         // If an HL7 string is given to the constructor, parse it.
