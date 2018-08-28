@@ -71,7 +71,7 @@ class Segment
      */
     public function setField($index, $value = '')
     {
-        if (!($index && $value)) {
+        if (!$index) {
             return false;
         }
 
