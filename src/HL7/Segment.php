@@ -34,7 +34,7 @@ class Segment
     {
         // Is the name 3 upper case characters?
         if ((!$name) || (\strlen($name) !== 3) || (strtoupper($name) !== $name)) {
-            throw new InvalidArgumentException('Name should be 3 characters and in uppercase');
+            throw new InvalidArgumentException("Invalid segmant name: {$name}. Name should be 3 characters and in uppercase");
         }
 
         $this->fields = [];
