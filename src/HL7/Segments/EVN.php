@@ -42,6 +42,11 @@ class EVN extends Segment
         return $this->setField($position, $value);
     }
 
+    public function setID(int $value, int $position = 1)
+    {
+        return $this->setField($position, $value);
+    }
+
     public function setOperatorID($value, int $position = 5)
     {
         return $this->setField($position, $value);
