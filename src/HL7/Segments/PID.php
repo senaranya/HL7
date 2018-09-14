@@ -22,6 +22,11 @@ class PID extends Segment
         $this->setID($this::$setId++);
     }
 
+    public function __destruct()
+    {
+        $this->setID($this::$setId--);
+    }
+
     public function setID(int $value, int $position = 1)
     {
         return $this->setField($position, $value);
@@ -69,8 +74,8 @@ class PID extends Segment
 
     public function setSex($value, int $position = 8)
     {
-        if ($value !== 'F' && $value !== 'M') {
-            throw new \InvalidArgumentException("Sex should be either 'F' or 'M'. Given: '$value''");
+        if ($value !== 'F' && $value !== 'M' && $value !== 'U') {
+            throw new \InvalidArgumentException("Sex should be either 'F', 'M' or 'U'. Given: '$value'");
         }
         return $this->setField($position, $value);
     }

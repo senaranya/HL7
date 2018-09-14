@@ -22,6 +22,11 @@ class OBX extends Segment
         $this->setID($this::$setId++);
     }
 
+    public function __destruct()
+    {
+        $this->setID($this::$setId--);
+    }
+
     public function setID(int $value, int $position = 1)
     {
         return $this->setField($position, $value);
