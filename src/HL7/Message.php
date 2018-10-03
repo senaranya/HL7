@@ -3,7 +3,6 @@
 namespace Aranyasen\HL7;
 
 use Aranyasen\Exceptions\HL7Exception;
-use Exception;
 use InvalidArgumentException;
 
 /**
@@ -28,6 +27,10 @@ class Message
      * local value for segment separator
      */
     protected $segmentSeparator;
+    /**
+     * @var bool Is the bar (|) at the end of each segment required? Default: Yes.
+     */
+    protected $segmentEndingBar;
     protected $fieldSeparator;
     protected $componentSeparator;
     protected $subcomponentSeparator;
@@ -61,6 +64,7 @@ class Message
 
         // Control characters and other HL7 properties
         $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] ?? '\n';
+        $this->segmentEndingBar = $hl7Globals['SEGMENT_ENDING_BAR'] ?? true; // Bar (|) at end of each segment. Default: Present
         $this->fieldSeparator = $hl7Globals['FIELD_SEPARATOR'] ?? '|';
         $this->componentSeparator = $hl7Globals['COMPONENT_SEPARATOR'] ?? '^';
         $this->subcomponentSeparator = $hl7Globals['SUBCOMPONENT_SEPARATOR'] ?? '&';
@@ -325,7 +329,11 @@ class Message
         $this->resetCtrl($msh);
 
         foreach ($this->segments as $segment) {
-            $message .= $this->segmentToString($segment);
+            $segmentString = $this->segmentToString($segment);
+            if (!$this->segmentEndingBar) {
+                $segmentString = preg_replace('/\|$/', '', $segmentString);
+            }
+            $message .= $segmentString;
             $message .= $pretty
                 ? str_replace(['\r', '\n'], ["\r", "\n"], $this->segmentSeparator)
                 : $this->segmentSeparator;

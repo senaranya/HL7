@@ -233,4 +233,14 @@ class MessageTest extends TestCase
     {
         $msg = new Message("I'm an invalid message");
     }
+
+    /** @test */
+    public function segment_ending_bar_can_be_omitted()
+    {
+        $msg = new Message("MSH|^~\\&|1|\nABC|||xxx|\n",  ['SEGMENT_ENDING_BAR' => false]);
+        $this->assertSame("MSH|^~\\&|1\nABC|||xxx\n", $msg->toString(true), 'No ending bar on each segment');
+
+        $msg = new Message("MSH|^~\\&|1|\nABC|||xxx|\n");
+        $this->assertSame("MSH|^~\\&|1|\nABC|||xxx|\n", $msg->toString(true), 'Ending bar retains by default');
+    }
 }
