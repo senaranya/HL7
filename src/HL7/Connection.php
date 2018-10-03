@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Aranyasen\HL7;
 
 use Aranyasen\Exceptions\HL7ConnectionException;
+use Exception;
 
 /**
  * Usage:
@@ -42,33 +43,64 @@ class Connection
      *
      * @param string $host Host to connect to
      * @param int $port Port to connect to
+     * @param int $timeout Connection timeout
+     * @throws HL7ConnectionException
      */
-    public function __construct(string $host, int $port)
+    public function __construct(string $host, int $port, int $timeout = 10)
     {
-        $this->setSocket($host, $port);
+        $this->setSocket($host, $port, $timeout);
         $this->MESSAGE_PREFIX = "\013";
         $this->MESSAGE_SUFFIX = "\034\015";
     }
 
     /**
+     * Create a client-side TCP socket
+     *
      * @param string $host
      * @param int $port
+     * @param int $timeout Connection timeout
      * @throws HL7ConnectionException
      */
-    protected function setSocket(string $host, int $port)
+    protected function setSocket(string $host, int $port, int $timeout = 10)
     {
-        // Create socket
-        $socket = socket_create(AF_INET, SOCK_STREAM, 0);
-        if (!$socket) {
-            throw new HL7ConnectionException('Failed to create socket. reason: ' .
-                socket_strerror(socket_last_error()));
+        $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
+        if (!$socket || !is_resource($socket)) {
+            $this->throwSocketError('Failed to create socket');
         }
-        $result = socket_connect($socket, $host, $port);
+
+        if (!socket_set_option($socket, SOL_SOCKET, SO_SNDTIMEO, ['sec' => $timeout, 'usec' => 0])) {
+            $this->throwSocketError('Unable to set timeout on socket');
+        }
+
+        if (!socket_set_option($socket, SOL_SOCKET, SO_REUSEADDR, 1)) {
+            $this->throwSocketError('Unable to set reuse-address on socket');
+        }
+
+        // Uncomment this if server requires a certain client-side port to be used
+        // if (!socket_bind($socket, "0.0.0.0", $localPort)) {
+        //     $this->throwSocketError('Unable to bind socket');
+        // }
+
+        $result = null;
+        try {
+            $result = socket_connect($socket, $host, $port);
+        } catch (Exception $exception) {
+            $this->throwSocketError("Failed to connect to server ($host:$port)");
+        }
         if (!$result) {
-            throw new HL7ConnectionException("Failed to connect to server ($host:$port). reason: " .
-                socket_strerror(socket_last_error()));
+            $this->throwSocketError("Failed to connect to server ($host:$port)");
         }
+
         $this->socket = $socket;
+    }
+
+    /**
+     * @param string $message
+     * @throws HL7ConnectionException
+     */
+    protected function throwSocketError(string $message): void
+    {
+        throw new HL7ConnectionException($message . ': ' . socket_strerror(socket_last_error()));
     }
 
     /**
@@ -91,7 +123,7 @@ class Connection
 
         $data = null;
 
-        while (($buf = socket_read($this->socket, 1024)) !== false) {
+        while (($buf = socket_read($this->socket, 1024)) !== false) { // Read ACK / NACK from server
             $data .= $buf;
             if (preg_match('/' . $this->MESSAGE_SUFFIX . '$/', $data)) {
                 break;
@@ -117,7 +149,7 @@ class Connection
         try {
             socket_close($this->socket);
         }
-        catch (\Exception $e) {
+        catch (Exception $e) {
             echo 'Failed to close socket: ' . socket_strerror(socket_last_error()) . PHP_EOL;
         }
     }

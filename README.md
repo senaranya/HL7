@@ -63,10 +63,12 @@ $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", ['SEGMENT_SEPARATOR' =>
 ```php
 $ip = '127.0.0.1'; // An IP
 $port = '12001'; // And Port where a HL7 listener is listening
-$message = new Message($hl7String); // Create a Message object from your HL7 string 
-$connection = new Connection($ip, $port); // Create a Socket and get ready to send message 
+$message = new Message($hl7String); // Create a Message object from your HL7 string
+
+// Create a Socket and get ready to send message. Optionally add timeout in seconds as 3rd argument (default: 10 sec)
+$connection = new Connection($ip, $port);
 $response = $connection->send($message); // Send to the listener, and get a response back
-echo $reponse->toString(true); // Prints ACK from the listener 
+echo $reponse->toString(true); // Prints ACK from the listener
 ```
 ### ACK
 Handle ACK message returned from a remote HL7 listener... 
