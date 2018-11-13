@@ -132,6 +132,19 @@ class OBR extends Segment
         return $this->setField($position, $value);
     }
 
+    /**
+     * This field specifies the date/time when the results were reported or status changed. This field is used to
+     * indicate the date and time that the results are composed into a report and released, or that a status, as
+     * defined in ORC-5 order status, is entered or changed. (This is a results field only.) When other applications
+     * (such as office or clinical database applications) query the laboratory application for untransmitted results,
+     * the information in this field may be used to control processing on the communications link. Usually, the
+     * ordering service would want only those results for which the reporting date/time is greater than the date/time
+     * the inquiring application last received results.
+     *
+     * @param $value
+     * @param int $position
+     * @return bool
+     */
     public function setResultsRptStatusChngDateTime($value, int $position = 22)
     {
         return $this->setField($position, $value);

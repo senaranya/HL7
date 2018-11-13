@@ -210,6 +210,20 @@ class Message
     }
 
     /**
+     * @param Segment $segment
+     * @return int|null
+     */
+    public function getSegmentIndex(Segment $segment): ?int
+    {
+        foreach ($this->segments as $ii => $value) {
+            if ($value === $segment) {
+                return $ii;
+            }
+        }
+        return null;
+    }
+
+    /**
      * Return an array of all segments with the given name
      *
      * @param string $name Segment name

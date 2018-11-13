@@ -6,6 +6,7 @@ namespace Aranyasen\HL7\Tests;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Segment;
 use Aranyasen\HL7\Segments\MSH;
+use Aranyasen\HL7\Segments\PID;
 use InvalidArgumentException;
 
 class MessageTest extends TestCase
@@ -242,5 +243,19 @@ class MessageTest extends TestCase
 
         $msg = new Message("MSH|^~\\&|1|\nABC|||xxx|\n");
         $this->assertSame("MSH|^~\\&|1|\nABC|||xxx|\n", $msg->toString(true), 'Ending bar retains by default');
+    }
+
+    /** @test */
+    public function segment_index_can_be_retrieved_from_a_message()
+    {
+        $message = new Message("MSH|^~\\&|1|\n");
+        $pid = new PID();
+        $message->addSegment($pid);
+        $this->assertSame(1, $message->getSegmentIndex($pid));
+
+        $message = new Message("MSH|^~\\&|1|\nABC|||xxx|\n");
+        $pid = new PID();
+        $message->addSegment($pid);
+        $this->assertSame(2, $message->getSegmentIndex($pid));
     }
 }
