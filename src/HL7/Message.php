@@ -3,6 +3,7 @@
 namespace Aranyasen\HL7;
 
 use Aranyasen\Exceptions\HL7Exception;
+use Aranyasen\HL7\Segments\MSH;
 use InvalidArgumentException;
 
 /**
@@ -447,5 +448,43 @@ class Message
         }
 
         return $segStr;
+    }
+
+    /**
+     * Write HL7 to a file
+     *
+     * @param string $filename
+     * @throws HL7Exception
+     */
+    public function toFile(string $filename): void
+    {
+        file_put_contents($filename, $this->toString(true));
+        if (!file_exists($filename)) {
+            throw new HL7Exception("Failed to write HL7 to file '$filename'");
+        }
+    }
+
+    /**
+     * Check if given message is an ORM
+     *
+     * @return bool
+     */
+    public function isOrm(): bool
+    {
+        /** @var MSH $msh */
+        $msh = $this->getSegmentsByName('MSH')[0];
+        return false !== strpos($msh->getMessageType(), 'ORM');
+    }
+
+    /**
+     * Check if given message is an ORM
+     *
+     * @return bool
+     */
+    public function isOru(): bool
+    {
+        /** @var MSH $msh */
+        $msh = $this->getSegmentsByName('MSH')[0];
+        return false !== strpos($msh->getMessageType(), 'ORU');
     }
 }

@@ -90,6 +90,14 @@ else {
 ```
 
 ## APIs
+This package exposes a number of public methods for convenient HL7 handling. Some examples are:
+1) Considering you have a Message object (say, `$msg = new Message(file_get_contents('somefile.hl7'));`)
+```php
+$msg->ToFile('/path/to/some.hl7'); // Write to a file
+$msg->isOru(); // Check if it's an ORU
+$msg->isOrm(); // Check if it's an ORM
+``` 
+
 Visit [docs\README](docs/README.md) for details on available APIs
 
 All segment level getter/setter APIs can be used in two ways - 
