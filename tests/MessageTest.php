@@ -136,6 +136,20 @@ class MessageTest extends TestCase
     }
 
     /** @test */
+    public function segments_can_be_removed_by_name()
+    {
+        $msg = new Message("MSH|^~\\&|1|\nAAA|1||xxx|\nAAA|2||\nBBB|1|\n");
+        $count = $msg->removeSegmentsByName('AAA');
+        $this->assertSame("MSH|^~\\&|1|\nBBB|1|\n", $msg->toString(true), 'Removes consecutive segments');
+        $this->assertEquals(2, $count);
+
+        $msg = new Message("MSH|^~\\&|1|\nAAA|1||xxx|\nBBB|1|\nAAA|2|\n");
+        $count = $msg->removeSegmentsByName('AAA');
+        $this->assertSame("MSH|^~\\&|1|\nBBB|1|\n", $msg->toString(true), 'removes non-consecutive segments');
+        $this->assertEquals(2, $count);
+    }
+    
+    /** @test */
     public function a_new_segment_can_be_inserted_between_two_existing_segments()
     {
         $msg = new Message();
@@ -257,5 +271,17 @@ class MessageTest extends TestCase
         $pid = new PID();
         $message->addSegment($pid);
         $this->assertSame(2, $message->getSegmentIndex($pid));
+    }
+
+    /** @test */
+    public function message_type_can_be_checked()
+    {
+        $msg = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
+        $this->assertTrue($msg->isOrm());
+        $this->assertFalse($msg->isOru());
+
+        $msg = new Message("MSH|^~\&|||||||ORU^O01||P|2.3.1|");
+        $this->assertTrue($msg->isOru());
+        $this->assertFalse($msg->isOrm());
     }
 }

@@ -263,6 +263,22 @@ class Message
     }
 
     /**
+     * Remove given segment
+     *
+     * @param string $segment
+     * @return int Count of segments removed
+     */
+    public function removeSegmentsByName(string $segment): int
+    {
+        $count = 0;
+        foreach ($this->getSegmentsByName($segment) as $segment) {
+            $this->removeSegmentByIndex($this->getSegmentIndex($segment));
+            $count++;
+        }
+        return $count;
+    }
+
+    /**
      * Set the segment on index.
      *
      * If index is out of range, or not provided, do nothing. Setting MSH on index 0 will re-validate field separator,
