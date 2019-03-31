@@ -5,6 +5,8 @@
 <a href="https://packagist.org/packages/aranyasen/hl7"><img src="https://poser.pugx.org/aranyasen/hl7/license" alt="License"></a>
 </p>
 
+**Important: Supported PHP version has been updated to 7.2+. To use this package with 7.0 or 7.1, use previous release [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)**
+
 ## Introduction
 
 A PHP-based HL7 v2.x Parsing, Generation and Sending library, inspired from the famous Perl Net-HL7 package.
