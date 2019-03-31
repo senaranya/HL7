@@ -35,6 +35,7 @@ use Exception;
 class Connection
 {
     protected $socket;
+    protected $timeout;
     protected $MESSAGE_PREFIX;
     protected $MESSAGE_SUFFIX;
 
@@ -51,6 +52,7 @@ class Connection
         $this->setSocket($host, $port, $timeout);
         $this->MESSAGE_PREFIX = "\013";
         $this->MESSAGE_SUFFIX = "\034\015";
+        $this->timeout = $timeout;
     }
 
     /**
@@ -123,10 +125,14 @@ class Connection
 
         $data = null;
 
+        $startTime = time();
         while (($buf = socket_read($this->socket, 1024)) !== false) { // Read ACK / NACK from server
             $data .= $buf;
             if (preg_match('/' . $this->MESSAGE_SUFFIX . '$/', $data)) {
                 break;
+            }
+            if ((time() - $startTime) > $this->timeout) {
+                throw new HL7ConnectionException("Timed out listening for response from server");
             }
         }
 
