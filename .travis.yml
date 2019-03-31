@@ -2,5 +2,5 @@ language: php
 install:
   - composer install
 php:
-  - '7.1'
+  - '7.2'
 script: vendor/bin/phpunit tests/
