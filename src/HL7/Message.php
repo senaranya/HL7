@@ -493,7 +493,7 @@ class Message
     }
 
     /**
-     * Check if given message is an ORM
+     * Check if given message is an ORU
      *
      * @return bool
      */
@@ -502,5 +502,17 @@ class Message
         /** @var MSH $msh */
         $msh = $this->getSegmentsByName('MSH')[0];
         return false !== strpos($msh->getMessageType(), 'ORU');
+    }
+
+    /**
+     * Check if given message is an ADT
+     *
+     * @return bool
+     */
+    public function isAdt(): bool
+    {
+        /** @var MSH $msh */
+        $msh = $this->getSegmentsByName('MSH')[0];
+        return false !== strpos($msh->getMessageType(), 'ADT');
     }
 }
