@@ -6,13 +6,13 @@ use PHPUnit\Framework\TestCase as TC;
 
 abstract class TestCase extends TC
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
         //
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         // Any tearDown should appear before parent::tearDown()
         parent::tearDown();

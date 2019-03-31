@@ -241,11 +241,11 @@ class MessageTest extends TestCase
 
     /**
      * @test
-     * @expectedException Aranyasen\Exceptions\HL7Exception
-     * @expectedExceptionMessage Not a valid message: invalid control segment
      */
     public function an_exception_will_be_throw_in_invalid_string()
     {
+        $this->expectException(\Aranyasen\Exceptions\HL7Exception::class);
+        $this->expectExceptionMessage('Not a valid message: invalid control segment');
         $msg = new Message("I'm an invalid message");
     }
 

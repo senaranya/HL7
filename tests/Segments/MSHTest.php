@@ -10,7 +10,7 @@ class MSHTest extends TestCase
 {
     private $msh;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->msh = new MSH();
     }
