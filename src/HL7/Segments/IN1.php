@@ -27,6 +27,15 @@ class IN1 extends Segment
         $this->setID($this::$setId--);
     }
 
+    /**
+     * Reset index of this segment
+     * @param int $index
+     */
+    public static function resetIndex(int $index = 1): void
+    {
+        self::$setId = $index;
+    }
+
     public function setID(int $value, int $position = 1)
     {
         return $this->setField($position, $value);

@@ -5,6 +5,7 @@ namespace Aranyasen\HL7;
 use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Segments\MSH;
 use InvalidArgumentException;
+use SplFileInfo;
 
 /**
  * Class specifying the HL7 message, both request and response.
@@ -56,9 +57,11 @@ class Message
      * @param string $msgStr
      * @param array $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
      * @param bool $keepEmptySubFields Set this to true to retain empty sub fields
+     * @param bool $resetIndices Reset Indices of each segment to 1.
      * @throws HL7Exception
+     * @throws \ReflectionException
      */
-    public function __construct(string $msgStr = null, array $hl7Globals = null, bool $keepEmptySubFields = false)
+    public function __construct(string $msgStr = null, array $hl7Globals = null, bool $keepEmptySubFields = false, bool $resetIndices = false)
     {
         // Array holding the segments
         $this->segments = [];
@@ -72,6 +75,10 @@ class Message
         $this->repetitionSeparator = $hl7Globals['REPETITION_SEPARATOR'] ?? '~';
         $this->escapeChar = $hl7Globals['ESCAPE_CHAR'] ?? '\\';
         $this->hl7Version = $hl7Globals['HL7_VERSION'] ?? '2.3';
+
+        if ($resetIndices) {
+            $this->resetSegmentIndices();
+        }
 
         // If an HL7 string is given to the constructor, parse it.
         if ($msgStr) {
@@ -514,5 +521,25 @@ class Message
         /** @var MSH $msh */
         $msh = $this->getSegmentsByName('MSH')[0];
         return false !== strpos($msh->getMessageType(), 'ADT');
+    }
+
+    /**
+     * Reset index attribute of each given segment, so when those are added the indices start from 1
+     *
+     * @return void
+     * @throws \ReflectionException
+     */
+    public function resetSegmentIndices(): void
+    {
+        $reflector = new \ReflectionClass($this);
+        $segments = glob(dirname($reflector->getFileName()) . '/Segments/*.php');
+
+        // Go through each available segment class and reset its ID
+        foreach ($segments as $file) { // ['OBR', 'PID', 'OBX', 'IN1'...]
+            $className = "Aranyasen\\HL7\\Segments\\" . pathinfo($file, PATHINFO_FILENAME);
+            if (class_exists($className) && method_exists($className, 'resetIndex')) {
+                $className::resetIndex();
+            }
+        }
     }
 }

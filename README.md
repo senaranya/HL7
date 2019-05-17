@@ -45,8 +45,15 @@ $msg->setSegment($abc, 1); // Message is now: "MSH|^~\&|||||20171116140058|||201
 $pid = new PID(); // Automatically creates PID segment, and adds segment index at PID.1
 $pid->setPatientName([$lastname, $firstname, $middlename, $suffix]); // Use a setter method to add patient's name at standard position (PID.5)
 $pid->setField('abcd', 5); // Apart from standard setter methods, you can manually set a value at any position too
-unset $pid; // Destroy the segment and decrement the id number. Useful when you want to discard a segment.  
-
+unset $pid; // Destroy the segment and decrement the id number. Useful when you want to discard a segment.
+```
+```php
+// Creating multiple message objects may have an unexpected side-effect: segments start with wrong index values (Check tests/MessageTest for explanation)...
+// Use 4th argument as true, or call resetSegmentIndices() on $msg object to reset segment indices to 1
+$msg = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|", null, true, true);
+// ... any segments added here will now start index from 1, as expected.
+```    
+```php
 // Create a segment with empty sub-fields retained
 $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", null, true); // Third argument 'true' forces to keep all sub fields
 $pv1 = $msg->getSegmentByIndex(1);

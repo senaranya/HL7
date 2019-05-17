@@ -284,4 +284,44 @@ class MessageTest extends TestCase
         $this->assertTrue($msg->isOru());
         $this->assertFalse($msg->isOrm());
     }
+
+    /**
+     * The segment classes use static properties to maintain segment-index. This is required as one can add new segments
+     * to a given message object and expect the index to auto-increment. The side-effect to this is, if you create a
+     * second message, adding the same segments will now start indexing from their index in the last message instead of 1!
+     * This happens because static properties are class properties, not object ones, and thus shared across all objects.
+     *
+     * To counter this, use 'true' in the 4th argument while creating a message, or call resetSegmentIndices() explicitly
+     *
+     * This test verifies both.
+     *
+     * @test
+     */
+    public function segment_id_can_be_reset_on_demand(): void
+    {
+        // Create a message with a PID segment
+        $msg1 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
+        $msg1->addSegment(new PID());
+        $this->assertSame("MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|1|\n", $msg1->toString(true), 'PID index in first message is 1');
+
+        // Create another message with a PID segment
+        $msg2 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
+        $msg2->addSegment(new PID());
+        $this->assertSame("MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|2|\n", $msg2->toString(true), 'PID index gets incremented');
+
+        // Create another message with a PID segment, this time 4th argument to message as true
+        $msg3 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|", null, true, true);
+        $msg3->addSegment(new PID());
+        $this->assertSame("MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|1|\n", $msg3->toString(true), 'PID index resets to 1');
+
+        // Create a message with a PID segment
+        $msg4 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
+        $msg4->addSegment(new PID());
+        $this->assertSame("MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|2|\n", $msg4->toString(true), 'PID index gets incremented');
+
+        $msg5 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
+        $msg5->resetSegmentIndices();
+        $msg5->addSegment(new PID());
+        $this->assertSame("MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|1|\n", $msg5->toString(true), 'PID index resets to 1');
+    }
 }
