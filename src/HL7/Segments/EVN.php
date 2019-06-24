@@ -5,63 +5,43 @@ namespace Aranyasen\HL7\Segments;
 use Aranyasen\HL7\Segment;
 
 /**
- * NTE segment class
- * Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-evn-event-type-segment
+ * EVN segment class
+ * Ref: http://hl7-definition.caristix.com:9010/HL7%20v2.3.1/segment/EVN
+ *      https://corepointhealth.com/resource-center/hl7-resources/hl7-evn-event-type-segment
  */
 class EVN extends Segment
 {
-    /**
-     * Index of this segment. Incremented for every new segment of this class created
-     * @var int
-     */
-    protected static $setId = 1;
-
     public function __construct(array $fields = null)
     {
         parent::__construct('EVN', $fields);
-        $this->setID($this::$setId++);
     }
 
-    /**
-     * Reset index of this segment
-     * @param int $index
-     */
-    public static function resetIndex(int $index = 1): void
-    {
-        self::$setId = $index;
-    }
-
-    public function setEventTypeCode($value, int $position = 1)
+    public function setEventTypeCode($value, int $position = 1): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setRecordedDateTime($value, int $position = 2)
+    public function setRecordedDateTime($value, int $position = 2): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setDateTimeEvent($value, int $position = 3)
+    public function setDateTimePlannedEvent($value, int $position = 3): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setEventReasonCode($value, int $position = 4)
+    public function setEventReasonCode($value, int $position = 4): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setID(int $value, int $position = 1)
+    public function setOperatorID($value, int $position = 5): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setOperatorID($value, int $position = 5)
-    {
-        return $this->setField($position, $value);
-    }
-
-    public function setEventOccurred($value, int $position = 6)
+    public function setEventOccurred($value, int $position = 6): bool
     {
         return $this->setField($position, $value);
     }
@@ -76,7 +56,7 @@ class EVN extends Segment
         return $this->getField($position);
     }
 
-    public function getDateTimeEvent(int $position = 3)
+    public function getDateTimePlannedEvent(int $position = 3)
     {
         return $this->getField($position);
     }
@@ -88,11 +68,11 @@ class EVN extends Segment
 
     public function getOperatorID(int $position = 5)
     {
-        return $this->setField($position);
+        return $this->getField($position);
     }
 
     public function getEventOccurred(int $position = 6)
     {
-        return $this->setField($position);
+        return $this->getField($position);
     }
 }
