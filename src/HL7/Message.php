@@ -542,4 +542,15 @@ class Message
             }
         }
     }
+
+    /**
+     * Check if given segment is present in the message object
+     *
+     * @param string $segment
+     * @return bool
+     */
+    public function hasSegment(string $segment): bool
+    {
+        return count($this->getSegmentsByName(strtoupper($segment))) > 0;
+    }
 }

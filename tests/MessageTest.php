@@ -324,4 +324,14 @@ class MessageTest extends TestCase
         $msg5->addSegment(new PID());
         $this->assertSame("MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|1|\n", $msg5->toString(true), 'PID index resets to 1');
     }
+
+    /** @test */
+    public function a_segments_presence_can_be_checked(): void
+    {
+        $msg5 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
+        $this->assertFalse($msg5->hasSegment('PID'));
+
+        $msg5->addSegment(new PID());
+        $this->assertTrue($msg5->hasSegment('PID'));
+    }
 }

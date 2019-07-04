@@ -25,6 +25,9 @@ $msg = new Message("MSH|^~\\&|1|\rPID|||abcd|\r"); // Either \n or \r can be use
 $pid = $msg->getSegmentByIndex(1);
 echo $pid->getField(3); // prints 'abcd'
 echo $msg->toString(true); // Prints entire HL7 string
+
+// Check if a segment is present in the message object
+$msg->hasSegment('PID'); // return true or false based on whether PID is present in the $msg object
 ```
 
 ### Creating new messages
