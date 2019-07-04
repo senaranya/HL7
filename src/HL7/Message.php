@@ -3,9 +3,7 @@
 namespace Aranyasen\HL7;
 
 use Aranyasen\Exceptions\HL7Exception;
-use Aranyasen\HL7\Segments\MSH;
 use InvalidArgumentException;
-use SplFileInfo;
 
 /**
  * Class specifying the HL7 message, both request and response.
@@ -20,6 +18,8 @@ use SplFileInfo;
  */
 class Message
 {
+    use MessageHelpersTrait;
+
     /**
      * Array holding all segments of this message.
      */
@@ -381,67 +381,6 @@ class Message
     }
 
     /**
-     * Get the segment identified by index as string, using the messages separators.
-     *
-     * @param int $index Index for segment to get
-     * @return string|null String representation of segment
-     */
-    public function getSegmentAsString(int $index): ?string
-    {
-        $seg = $this->getSegmentByIndex($index);
-
-        if ($seg === null) {
-            return null;
-        }
-
-        return $this->segmentToString($seg);
-    }
-
-    /**
-     * Get the field identified by $fieldIndex from segment $segmentIndex.
-     *
-     * Returns empty string if field is not set.
-     *
-     * @param int $segmentIndex Index for segment to get
-     * @param int $fieldIndex Index for field to get
-     * @return mixed String representation of field
-     * @access public
-     */
-    public function getSegmentFieldAsString(int $segmentIndex, int $fieldIndex)
-    {
-        $seg = $this->getSegmentByIndex($segmentIndex);
-
-        if ($seg === null) {
-            return null;
-        }
-
-        $field = $seg->getField($fieldIndex);
-
-        if (!$field) {
-            return null;
-        }
-
-        $fieldString = null;
-
-        if (\is_array($field)) {
-            foreach ($field as $i => $iValue) {
-                \is_array($field[$i])
-                    ? ($fieldString .= implode($this->subcomponentSeparator, $field[$i]))
-                    : ($fieldString .= $field[$i]);
-
-                if ($i < (\count($field) - 1)) {
-                    $fieldString .= $this->componentSeparator;
-                }
-            }
-        }
-        else {
-            $fieldString .= $field;
-        }
-
-        return $fieldString;
-    }
-
-    /**
      * Convert Segment object to string
      * @param $seg
      * @return string
@@ -474,56 +413,6 @@ class Message
     }
 
     /**
-     * Write HL7 to a file
-     *
-     * @param string $filename
-     * @throws HL7Exception
-     */
-    public function toFile(string $filename): void
-    {
-        file_put_contents($filename, $this->toString(true));
-        if (!file_exists($filename)) {
-            throw new HL7Exception("Failed to write HL7 to file '$filename'");
-        }
-    }
-
-    /**
-     * Check if given message is an ORM
-     *
-     * @return bool
-     */
-    public function isOrm(): bool
-    {
-        /** @var MSH $msh */
-        $msh = $this->getSegmentsByName('MSH')[0];
-        return false !== strpos($msh->getMessageType(), 'ORM');
-    }
-
-    /**
-     * Check if given message is an ORU
-     *
-     * @return bool
-     */
-    public function isOru(): bool
-    {
-        /** @var MSH $msh */
-        $msh = $this->getSegmentsByName('MSH')[0];
-        return false !== strpos($msh->getMessageType(), 'ORU');
-    }
-
-    /**
-     * Check if given message is an ADT
-     *
-     * @return bool
-     */
-    public function isAdt(): bool
-    {
-        /** @var MSH $msh */
-        $msh = $this->getSegmentsByName('MSH')[0];
-        return false !== strpos($msh->getMessageType(), 'ADT');
-    }
-
-    /**
      * Reset index attribute of each given segment, so when those are added the indices start from 1
      *
      * @return void
@@ -543,14 +432,4 @@ class Message
         }
     }
 
-    /**
-     * Check if given segment is present in the message object
-     *
-     * @param string $segment
-     * @return bool
-     */
-    public function hasSegment(string $segment): bool
-    {
-        return count($this->getSegmentsByName(strtoupper($segment))) > 0;
-    }
 }

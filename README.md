@@ -26,6 +26,9 @@ $pid = $msg->getSegmentByIndex(1);
 echo $pid->getField(3); // prints 'abcd'
 echo $msg->toString(true); // Prints entire HL7 string
 
+// Get the first segment
+$msg->getFirstSegmentInstance('PID'); // Returns the first PID segment. Same as $msg->getSegmentsByName('PID')[0];
+
 // Check if a segment is present in the message object
 $msg->hasSegment('PID'); // return true or false based on whether PID is present in the $msg object
 ```

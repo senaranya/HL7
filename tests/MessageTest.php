@@ -328,10 +328,23 @@ class MessageTest extends TestCase
     /** @test */
     public function a_segments_presence_can_be_checked(): void
     {
-        $msg5 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
-        $this->assertFalse($msg5->hasSegment('PID'));
+        $message = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
+        $this->assertFalse($message->hasSegment('PID'));
 
-        $msg5->addSegment(new PID());
-        $this->assertTrue($msg5->hasSegment('PID'));
+        $message->addSegment(new PID());
+        $this->assertTrue($message->hasSegment('PID'));
+    }
+
+    /** @test */
+    public function first_of_the_given_segment_name_can_be_easily_obtained_using_a_helper_method(): void
+    {
+        $message = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
+        $message->addSegment(new PID());
+        $firstPidSegment = $message->getFirstSegmentInstance('PID');
+        $this->assertNotNull($firstPidSegment);
+        $this->assertIsObject($firstPidSegment);
+        $this->assertInstanceOf(PID::class, $firstPidSegment);
+
+        $this->assertNull($message->getFirstSegmentInstance('XXX'), 'Non existing segment should return null');
     }
 }
