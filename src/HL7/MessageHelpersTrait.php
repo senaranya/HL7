@@ -142,4 +142,29 @@ trait MessageHelpersTrait
         }
         return $this->getSegmentsByName($segment)[0];
     }
+
+    /**
+     * Remove a segment from the message
+     *
+     * @param Segment $segment
+     * @param bool $reIndex After deleting, re-index remaining segments of same name
+     */
+    public function removeSegment(Segment $segment, bool $reIndex = false): void
+    {
+        if(($key = array_search($segment, $this->segments, true)) !== false) {
+            unset($this->segments[$key]);
+        }
+
+        if (!$reIndex) {
+            return;
+        }
+
+        $segments = $this->getSegmentsByName($segment->getName());
+        $index = 1;
+        /** @var Segment $seg */
+        foreach ($segments as $seg) {
+            $seg->setField(1, $index++);
+        }
+    }
+
 }
