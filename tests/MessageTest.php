@@ -8,6 +8,7 @@ use Aranyasen\HL7\Segment;
 use Aranyasen\HL7\Segments\MSH;
 use Aranyasen\HL7\Segments\PID;
 use InvalidArgumentException;
+use DMS\PHPUnitExtensions\ArraySubset\Assert;
 
 class MessageTest extends TestCase
 {
@@ -17,7 +18,7 @@ class MessageTest extends TestCase
         $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", null, true);
         $pv1 = $msg->getSegmentByIndex(1);
         $fields = $pv1->getField(3);
-        $this->assertArraySubset(['', 'AAAA1', '', '', 'BB'], $fields);
+        Assert::assertArraySubset(['', 'AAAA1', '', '', 'BB'], $fields);
     }
 
     /** @test */
@@ -335,6 +336,20 @@ class MessageTest extends TestCase
         $msg5->resetSegmentIndices();
         $msg5->addSegment(new PID());
         $this->assertSame("MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|1|\n", $msg5->toString(true), 'PID index resets to 1');
+    }
+
+    /** @test */
+    public function segment_index_autoincrement_can_be_avoided(): void
+    {
+        $hl7String = "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|1||22^BB|\n";
+
+        $msg = new Message($hl7String, null, true, true);
+        $this->assertSame("MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|2||22^BB|\n",
+            $msg->toString(true), 'without 5th argument as false, each instance is auto-incremented');
+
+        $msg = new Message($hl7String, null, true, true, false);
+        $this->assertSame("MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|1||22^BB|\n",
+            $msg->toString(true));
     }
 
     /** @test */

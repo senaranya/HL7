@@ -6,6 +6,7 @@
 </p>
 
 **Important: Supported PHP version has been updated to 7.2+. To use this package with 7.0 or 7.1, use previous release [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)**
+**Important: Exception message for invalid segment name changed to "Segment name '$name' should be 3 characters and in uppercase"**
 
 ## Introduction
 
@@ -58,6 +59,12 @@ unset $pid; // Destroy the segment and decrement the id number. Useful when you 
 // Use 4th argument as true, or call resetSegmentIndices() on $msg object to reset segment indices to 1
 $msg = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|", null, true, true);
 // ... any segments added here will now start index from 1, as expected.
+```
+```php
+// Sometimes you may want to have exact index values, rather than auto-incrementing for each instance of a segment
+// Use 5th argument as false...
+$hl7String = "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|1||22^BB|\n";
+$msg = new Message($hl7String, null, true, true, false); // $msg contains both OBXs with given indexes in the string
 ```    
 ```php
 // Create a segment with empty sub-fields retained

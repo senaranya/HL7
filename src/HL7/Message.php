@@ -58,10 +58,11 @@ class Message
      * @param array $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
      * @param bool $keepEmptySubFields Set this to true to retain empty sub fields
      * @param bool $resetIndices Reset Indices of each segment to 1.
+     * @param bool $autoIncrementIndices True: auto-increment for each instance of same segment.
      * @throws HL7Exception
      * @throws \ReflectionException
      */
-    public function __construct(string $msgStr = null, array $hl7Globals = null, bool $keepEmptySubFields = false, bool $resetIndices = false)
+    public function __construct(string $msgStr = null, array $hl7Globals = null, bool $keepEmptySubFields = false, bool $resetIndices = false, bool $autoIncrementIndices = true)
     {
         // Array holding the segments
         $this->segments = [];
@@ -135,8 +136,13 @@ class Message
                 // If a class exists for the segment under segments/, (e.g., MSH)
                 $className = "Aranyasen\\HL7\\Segments\\$name";
                 if (class_exists($className)) {
-                    $name === 'MSH' ? array_unshift($fields, $this->fieldSeparator) : null; # First field for MSH is '|'
-                    $seg = new $className($fields);
+                    if ($name === 'MSH') {
+                        array_unshift($fields, $this->fieldSeparator); # First field for MSH is '|'
+                        $seg = new $className($fields);
+                    }
+                    else {
+                        $seg = new $className($fields, $autoIncrementIndices);
+                    }
                 }
                 else {
                     $seg = new Segment($name, $fields);

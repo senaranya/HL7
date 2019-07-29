@@ -16,10 +16,12 @@ class OBX extends Segment
      */
     protected static $setId = 1;
 
-    public function __construct(array $fields = null)
+    public function __construct(array $fields = null, bool $autoIncrementIndices = true)
     {
         parent::__construct('OBX', $fields);
-        $this->setID($this::$setId++);
+        if ($autoIncrementIndices) {
+            $this->setID($this::$setId++);
+        }
     }
 
     public function __destruct()
