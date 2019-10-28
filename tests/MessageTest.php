@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace Aranyasen\HL7\Tests;
 
+use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Segment;
 use Aranyasen\HL7\Segments\MSH;
@@ -75,6 +76,14 @@ class MessageTest extends TestCase
         $this->assertSame('MSH|^~\\&|1|\nABC|||xxx|\n', $msg->toString(), 'String representation of message');
         $this->assertSame("MSH|^~\\&|1|\nABC|||xxx|\n", $msg->toString(true),
             'Pretty print representation of message');
+    }
+
+    /** @test */
+    public function toString_method_throws_exception_when_message_empty(): void
+    {
+        $msg = new Message();
+        $this->expectException(HL7Exception::class);
+        $msg->toString();
     }
 
     /** @test */
@@ -373,5 +382,12 @@ class MessageTest extends TestCase
         $this->assertInstanceOf(PID::class, $firstPidSegment);
 
         $this->assertNull($message->getFirstSegmentInstance('XXX'), 'Non existing segment should return null');
+    }
+
+    /** @test */
+    public function message_can_be_verified_as_empty(): void
+    {
+        $this->assertTrue((new Message())->isEmpty());
+        $this->assertFalse((new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|"))->isEmpty());
     }
 }

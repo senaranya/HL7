@@ -363,15 +363,18 @@ class Message
      * @param boolean $pretty Whether to use \n as separator or default (\r).
      * @return mixed String representation of HL7 message
      * @access public
+     * @throws HL7Exception
      */
     public function toString(bool $pretty = false)
     {
-        $message = '';
+        if (empty($this->segments)) {
+            throw new HL7Exception('Message contains no data. Can not convert to string');
+        }
 
         // Make sure MSH(1) and MSH(2) are ok, even if someone has changed these values
-        $msh = $this->segments[0];
-        $this->resetCtrl($msh);
+        $this->resetCtrl($this->segments[0]);
 
+        $message = '';
         foreach ($this->segments as $segment) {
             $segmentString = $this->segmentToString($segment);
             if (!$this->segmentEndingBar) {

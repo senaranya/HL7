@@ -32,6 +32,10 @@ $msg->getFirstSegmentInstance('PID'); // Returns the first PID segment. Same as 
 
 // Check if a segment is present in the message object
 $msg->hasSegment('PID'); // return true or false based on whether PID is present in the $msg object
+
+// Check if a message is empty
+$msg = new Message();
+$msg->isempty(); // Returns true
 ```
 
 ### Creating new messages

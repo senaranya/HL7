@@ -167,4 +167,13 @@ trait MessageHelpersTrait
         }
     }
 
+    /**
+     * Check if the message has any data
+     *
+     * @return bool
+     */
+    public function isEmpty(): bool
+    {
+        return empty($this->getSegments());
+    }
 }
