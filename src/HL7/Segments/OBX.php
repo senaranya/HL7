@@ -123,6 +123,16 @@ class OBX extends Segment
         return $this->setField($position, $value);
     }
 
+    public function setEquipmentInstanceIdentifier($value, int $position = 18)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setDateTimeOfAnalysis($value, int $position = 19)
+    {
+        return $this->setField($position, $value);
+    }
+
     public function getID(int $position = 1)
     {
         return $this->getField($position);
@@ -207,4 +217,15 @@ class OBX extends Segment
     {
         return $this->getField($position);
     }
+    
+    public function getEquipmentInstanceIdentifier(int $position = 18)
+    {
+        return $this->getField($position);
+    }
+
+    public function getDateTimeOfAnalysis(int $position = 19)
+    {
+        return $this->getField($position);
+    }
+
 }
