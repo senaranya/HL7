@@ -131,7 +131,7 @@ class Message
 
 	                    (\count($comps) === 1) ? ($fields[$j] = $comps[0]) : ($fields[$j] = $comps);
                     } else {
-	                    $repets = preg_split("/\\" . $this->repetitionSeparator . '/', $fields[$j], -1, 0);
+	                    $repets = preg_split("/\\" . $this->repetitionSeparator . '/', $fields[$j], -1, PREG_SPLIT_NO_EMPTY);
 	                    $compsr=[];
 											foreach ($repets as $rr => $rValue) {
 		                    $comps = preg_split("/\\" . $this->componentSeparator . '/', $rValue, -1, $preg_flags);
