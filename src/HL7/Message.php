@@ -119,16 +119,33 @@ class Message
                     }
 
                     $preg_flags = $keepEmptySubFields ? 0 : PREG_SPLIT_NO_EMPTY;
-                    $comps = preg_split("/\\" . $this->componentSeparator .'/', $fields[$j], -1, $preg_flags);
+                    if(stripos($fields[$j],$this->repetitionSeparator)==false) {
+	                    $comps = preg_split("/\\" . $this->componentSeparator . '/', $fields[$j], -1, $preg_flags);
 
-                    foreach ($comps as $k => $kValue) {
-                        $subComps = preg_split("/\\" . $this->subcomponentSeparator . '/', $comps[$k]);
+	                    foreach ($comps as $k => $kValue) {
+		                    $subComps = preg_split("/\\" . $this->subcomponentSeparator . '/', $comps[$k]);
 
-                        // Make it a ref or just the value
-                        (\count($subComps) === 1) ? ($comps[$k] = $subComps[0]) : ($comps[$k] = $subComps);
+		                    // Make it a ref or just the value
+		                    (\count($subComps) === 1) ? ($comps[$k] = $subComps[0]) : ($comps[$k] = $subComps);
+	                    }
+
+	                    (\count($comps) === 1) ? ($fields[$j] = $comps[0]) : ($fields[$j] = $comps);
+                    } else {
+	                    $repets = preg_split("/\\" . $this->repetitionSeparator . '/', $fields[$j], -1, 0);
+	                    $compsr=[];
+											foreach ($repets as $rr => $rValue) {
+		                    $comps = preg_split("/\\" . $this->componentSeparator . '/', $rValue, -1, $preg_flags);
+												foreach ($comps as $k => $kValue) {
+													$subComps = preg_split("/\\" . $this->subcomponentSeparator . '/', $comps[$k]);
+
+													// Make it a ref or just the value
+													(\count($subComps) === 1) ? ($comps[$k] = $subComps[0]) : ($comps[$k] = $subComps);
+												}
+
+												(\count($comps) === 1) ? ($compsr[] = $comps[0]) : ($compsr[] = $comps);
+											}
+											$fields[$j] = $compsr;
                     }
-
-                    (\count($comps) === 1) ? ($fields[$j] = $comps[0]) : ($fields[$j] = $comps);
                 }
 
                 $seg = null;
