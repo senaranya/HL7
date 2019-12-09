@@ -6,7 +6,7 @@ use Aranyasen\HL7\Segment;
 
 /**
  * OBX segment class
- * Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-obx-segment
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/OBX 
  */
 class OBX extends Segment
 {
@@ -123,6 +123,16 @@ class OBX extends Segment
         return $this->setField($position, $value);
     }
 
+    public function setEquipmentInstanceIdentifier($value, int $position = 18)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setDateTimeOfAnalysis($value, int $position = 19)
+    {
+        return $this->setField($position, $value);
+    }
+
     public function getID(int $position = 1)
     {
         return $this->getField($position);
@@ -207,4 +217,15 @@ class OBX extends Segment
     {
         return $this->getField($position);
     }
+    
+    public function getEquipmentInstanceIdentifier(int $position = 18)
+    {
+        return $this->getField($position);
+    }
+
+    public function getDateTimeOfAnalysis(int $position = 19)
+    {
+        return $this->getField($position);
+    }
+
 }

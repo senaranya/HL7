@@ -12,6 +12,8 @@ use Aranyasen\HL7\Segments\IN1;
 use Aranyasen\HL7\Segments\PID;
 use Aranyasen\HL7\Segments\MSH;
 use Aranyasen\HL7\Segments\EVN;
+use Aranyasen\HL7\Segments\EQU;
+use Aranyasen\HL7\Segments\SAC;
 use Aranyasen\HL7\Segment;
 use Aranyasen\HL7\Messages\ACK;
 use Aranyasen\HL7\Message;
@@ -37,5 +39,7 @@ return (object)[
         ORC::class,
         PV1::class,
         EVN::class,
+        EQU::class,
+        SAC::class,
     ],
 ];
