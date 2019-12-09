@@ -74,6 +74,10 @@ class Connection
             $this->throwSocketError('Unable to set timeout on socket');
         }
 
+        if (!socket_set_option($socket, SOL_SOCKET, SO_RCVTIMEO, ['sec' => $timeout, 'usec' => 0])) {
+            $this->throwSocketError('Unable to set timeout on socket');
+        }
+
         if (!socket_set_option($socket, SOL_SOCKET, SO_REUSEADDR, 1)) {
             $this->throwSocketError('Unable to set reuse-address on socket');
         }
@@ -132,8 +136,12 @@ class Connection
                 break;
             }
             if ((time() - $startTime) > $this->timeout) {
-                throw new HL7ConnectionException("Timed out listening for response from server");
+                throw new HL7ConnectionException("Response partially received. Timed out listening for end-of-message from server");
             }
+        }
+
+        if (empty($data)) {
+            throw new HL7ConnectionException("No response received within {$this->timeout} seconds");
         }
 
         // Remove message prefix and suffix
@@ -143,7 +151,7 @@ class Connection
         // set character encoding
         $data = mb_convert_encoding($data, $responseCharEncoding);
 
-        return new Message($data);
+        return new Message($data, null, true, true);
     }
 
     /**

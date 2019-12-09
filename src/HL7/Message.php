@@ -109,50 +109,39 @@ class Message
             // Do all segments
             foreach ($segments as $i => $iValue) {
                 $fields = preg_split("/\\" . $this->fieldSeparator . '/', $segments[$i]);
-                $name = array_shift($fields);
+                $segmentName = array_shift($fields);
 
-                // Now decompose fields if necessary, into arrays
                 foreach ($fields as $j => $jValue) {
                     // Skip control field
                     if ($i === 0 && $j === 0) {
                         continue;
                     }
 
-                    $preg_flags = $keepEmptySubFields ? 0 : PREG_SPLIT_NO_EMPTY;
-                    $comps = preg_split("/\\" . $this->componentSeparator .'/', $fields[$j], -1, $preg_flags);
-
-                    foreach ($comps as $k => $kValue) {
-                        $subComps = preg_split("/\\" . $this->subcomponentSeparator . '/', $comps[$k]);
-
-                        // Make it a ref or just the value
-                        (\count($subComps) === 1) ? ($comps[$k] = $subComps[0]) : ($comps[$k] = $subComps);
-                    }
-
-                    (\count($comps) === 1) ? ($fields[$j] = $comps[0]) : ($fields[$j] = $comps);
+                    $fields[$j] = $this->extractComponentsFromFields($fields[$j], $keepEmptySubFields);
                 }
 
-                $seg = null;
+                $segment = null;
 
                 // If a class exists for the segment under segments/, (e.g., MSH)
-                $className = "Aranyasen\\HL7\\Segments\\$name";
+                $className = "Aranyasen\\HL7\\Segments\\$segmentName";
                 if (class_exists($className)) {
-                    if ($name === 'MSH') {
+                    if ($segmentName === 'MSH') {
                         array_unshift($fields, $this->fieldSeparator); # First field for MSH is '|'
-                        $seg = new $className($fields);
+                        $segment = new $className($fields);
                     }
                     else {
-                        $seg = new $className($fields, $autoIncrementIndices);
+                        $segment = new $className($fields, $autoIncrementIndices);
                     }
                 }
                 else {
-                    $seg = new Segment($name, $fields);
+                    $segment = new Segment($segmentName, $fields);
                 }
 
-                if (!$seg) {
+                if (!$segment) {
                     trigger_error('Segment not created', E_USER_WARNING);
                 }
 
-                $this->addSegment($seg);
+                $this->addSegment($segment);
             }
         }
     }
@@ -439,6 +428,24 @@ class Message
                 $className::resetIndex();
             }
         }
+    }
+
+    /**
+     * @param string $field
+     * @param bool $keepEmptySubFields
+     * @return array|string
+     */
+    private function extractComponentsFromFields(string $field, bool $keepEmptySubFields)
+    {
+        $pregFlags = $keepEmptySubFields ? 0 : PREG_SPLIT_NO_EMPTY;
+        $comps = preg_split("/\\" . $this->componentSeparator . '/', $field, -1, $pregFlags);
+        foreach ($comps as $k => $kValue) {
+            $subComps = preg_split("/\\" . $this->subcomponentSeparator . '/', $comps[$k]);
+            // Make it a ref or just the value
+            (\count($subComps) === 1) ? ($comps[$k] = $subComps[0]) : ($comps[$k] = $subComps);
+        }
+        (\count($comps) === 1) ? ($field = $comps[0]) : ($field = $comps);
+        return $field;
     }
 
 }
