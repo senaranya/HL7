@@ -68,7 +68,7 @@ class Message
         $this->segments = [];
 
         // Control characters and other HL7 properties
-        $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] ?? '\n';
+        $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] ?? "\015";
         $this->segmentEndingBar = $hl7Globals['SEGMENT_ENDING_BAR'] ?? true; // Bar (|) at end of each segment. Default: Present
         $this->fieldSeparator = $hl7Globals['FIELD_SEPARATOR'] ?? '|';
         $this->componentSeparator = $hl7Globals['COMPONENT_SEPARATOR'] ?? '^';

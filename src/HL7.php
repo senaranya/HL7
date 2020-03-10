@@ -27,7 +27,7 @@ class HL7
      */
     public function __construct()
     {
-        $this->hl7Globals['SEGMENT_SEPARATOR'] = '\n';
+        $this->hl7Globals['SEGMENT_SEPARATOR'] = "\015";
         $this->hl7Globals['FIELD_SEPARATOR'] = '|';
         $this->hl7Globals['NULL'] = '""';
         $this->hl7Globals['COMPONENT_SEPARATOR'] = '^';
