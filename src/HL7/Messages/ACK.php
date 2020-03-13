@@ -25,9 +25,9 @@ class ACK extends Message
      * @throws \Exception
      * @throws \InvalidArgumentException
      */
-    public function __construct(Message $req = null, MSH $reqMsh = null)
+    public function __construct(Message $req = null, MSH $reqMsh = null, array $hl7Globals = null)
     {
-        parent::__construct();
+        parent::__construct(null, $hl7Globals);
 
         if ($req) {
             $msh = $req->getSegmentByIndex(0);
