@@ -22,6 +22,7 @@ class ACK extends Message
      *
      * @param Message|null $req
      * @param MSH|null $reqMsh
+     * @param array $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
      * @throws \Exception
      * @throws \InvalidArgumentException
      */
