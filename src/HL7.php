@@ -5,7 +5,6 @@ namespace Aranyasen;
 use InvalidArgumentException;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Segments\MSH;
-use Aranyasen\HL7\Messages\ACK;
 
 /**
  * The HL7 class is a factory class for HL7 messages.
@@ -25,20 +24,17 @@ class HL7
     /**
      * Create a new instance of the HL7 factory, and set global
      * defaults.
-     *
-     * @param array $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
      */
-    public function __construct($hl7Globals = null)
+    public function __construct()
     {
-        $this->$hl7Globals['SEGMENT_SEPARATOR'] = $hl7Globals['SEGMENT_SEPARATOR'] ?? '\n';
-        $this->$hl7Globals['SEGMENT_ENDING_BAR'] = $hl7Globals['SEGMENT_ENDING_BAR'] ?? true;
-        $this->$hl7Globals['FIELD_SEPARATOR'] = $hl7Globals['FIELD_SEPARATOR'] ?? '|';
-        $this->$hl7Globals['NULL'] = $hl7Globals['NULL'] ?? '""';
-        $this->$hl7Globals['COMPONENT_SEPARATOR'] = $hl7Globals['COMPONENT_SEPARATOR'] ?? '^';
-        $this->$hl7Globals['SUBCOMPONENT_SEPARATOR'] = $hl7Globals['SUBCOMPONENT_SEPARATOR'] ?? '&';
-        $this->$hl7Globals['REPETITION_SEPARATOR'] = $hl7Globals['REPETITION_SEPARATOR'] ?? '~';
-        $this->$hl7Globals['ESCAPE_CHAR'] = $hl7Globals['ESCAPE_CHAR'] ?? '\\';
-        $this->$hl7Globals['HL7_VERSION'] = $hl7Globals['HL7_VERSION'] ?? '2.3';
+        $this->hl7Globals['SEGMENT_SEPARATOR'] = "\015";
+        $this->hl7Globals['FIELD_SEPARATOR'] = '|';
+        $this->hl7Globals['NULL'] = '""';
+        $this->hl7Globals['COMPONENT_SEPARATOR'] = '^';
+        $this->hl7Globals['REPETITION_SEPARATOR'] = '~';
+        $this->hl7Globals['ESCAPE_CHARACTER'] = '\\';
+        $this->hl7Globals['SUBCOMPONENT_SEPARATOR'] = '&';
+        $this->hl7Globals['HL7_VERSION'] = '2.2';
     }
 
     /**
@@ -52,19 +48,6 @@ class HL7
     public function createMessage(string $msgStr = null): Message
     {
         return new Message($msgStr, $this->hl7Globals);
-    }
-
-    /**
-     * Create a new ACK Message, using the global HL7 variables as defaults.
-     *
-     * @param string|null Text representation of an HL7 message
-     * @return Message
-     * @throws \Exception
-     * @throws \InvalidArgumentException
-     */
-    public function createACK(string $msgStr = null, MSH $reqMsh = null): Message
-    {
-        return new ACK($msgStr, $reqMsh, $this->hl7Globals);
     }
 
     /**
