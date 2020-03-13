@@ -25,6 +25,8 @@ class HL7
     /**
      * Create a new instance of the HL7 factory, and set global
      * defaults.
+     *
+     * @param array $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
      */
     public function __construct($hl7Globals = null)
     {
