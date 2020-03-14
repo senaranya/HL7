@@ -69,7 +69,10 @@ class MessageTest extends TestCase
             'toString() respects custom line-endings');
     }
 
-    /** @test */
+    /** @test
+     * @throws HL7Exception
+     * @throws \ReflectionException
+     */
     public function message_can_be_converted_to_string(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rABC|||xxx|\r");
@@ -78,7 +81,10 @@ class MessageTest extends TestCase
             'Pretty print representation of message');
     }
 
-    /** @test */
+    /** @test
+     * @throws HL7Exception
+     * @throws \ReflectionException
+     */
     public function toString_method_throws_exception_when_message_empty(): void
     {
         $msg = new Message();
