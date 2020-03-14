@@ -55,7 +55,6 @@ class AckTest extends TestCase
         $ack->setAckCode('CR', 'XX');
         $this->assertSame('XX', $seg1->getField(3), 'Set message and code');
 
-
         $msg = new Message();
         $msg->addSegment(new MSH());
         $msh = $msg->getSegmentByIndex(0);
@@ -76,5 +75,29 @@ class AckTest extends TestCase
         $seg1 = $ack->getSegmentByIndex(1);
         $this->assertSame('Some error', $seg1->getField(3), 'Setting error message');
         $this->assertSame('CE', $seg1->getField(1), 'Code CE after setting message');
+    }
+
+    /** @test
+     * @throws \Aranyasen\Exceptions\HL7Exception
+     * @throws \ReflectionException
+     * @throws \Exception
+     */
+    public function a_MSH_can_be_provided_to_get_the_fields_from(): void
+    {
+        $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|");
+        $msh = new MSH(['MSH', '^~\&', 'HL7 Corp', 'HL7 HQ', 'VISION', 'MISYS', '200404061744', '', ['DFT', 'P03'], 'TC-22222', 'T', '2.3']);
+        $ack = new ACK($msg, $msh);
+        $this->assertSame("MSH|^~\&|VISION|MISYS|HL7 Corp|HL7 HQ|||ACK|\nMSA|AA|TC-22222|\n", $ack->toString(true));
+    }
+
+    /** @test
+     * @throws \Aranyasen\Exceptions\HL7Exception
+     * @throws \ReflectionException
+     */
+    public function globals_can_be_passed_to_constructor(): void
+    {
+        $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|");
+        $ack = new ACK($msg, null, ['HL7_VERSION' => '2.5']);
+        $this->assertSame("MSH|^~\&|1||||||ACK|\nMSA|AA|\n", $ack->toString(true));
     }
 }

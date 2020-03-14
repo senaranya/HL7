@@ -114,8 +114,18 @@ if ($ackCode[1] === 'A') {
 }
 else {
     echo "Recieved NACK from remote\n";
-    echo "Error text: " . $msa->getTextMessage()
+    echo "Error text: " . $msa->getTextMessage();
 }
+```
+Create an ACK response from a given HL7 message:
+```php
+$msg = new Message("MSH|^~\\&|1|\rABC|1||^AAAA1^^^BB|", null, true);
+$ackResponse = new ACK($msg);
+```
+Options can be passed while creating ACK object:
+```php
+$msg = new Message("MSH|^~\\&|1|\rABC|1||^AAAA1^^^BB|", null, true);
+$ackResponse = new ACK($msg, ['SEGMENT_SEPARATOR' => '\r\n', 'HL7_VERSION' => '2.5']);
 ```
 
 ## APIs

@@ -41,34 +41,29 @@ class MSH extends Segment
     {
         parent::__construct('MSH', $fields);
 
-        // Only fill default fields if no fields array is given
-        //
-        if (!isset($fields)) {
-            if (!\is_array($hl7Globals)) {
-                $this->setField(1, '|');
-                $this->setField(2, '^~\\&');
-                $this->setField(7, strftime('%Y%m%d%H%M%S'));
-
-                // Set ID field
-                $this->setField(10, $this->getField(7) . random_int(10000, 99999));
-                $this->setField(12, '2.3');
-            }
-            else {
-                $this->setField(1, $hl7Globals['FIELD_SEPARATOR']);
-                $this->setField(
-                    2,
-                    $hl7Globals['COMPONENT_SEPARATOR'] .
-                    $hl7Globals['REPETITION_SEPARATOR'] .
-                    $hl7Globals['ESCAPE_CHARACTER'] .
-                    $hl7Globals['SUBCOMPONENT_SEPARATOR']
-                );
-                $this->setField(7, strftime('%Y%m%d%H%M%S'));
-
-                // Set ID field
-                $this->setField(10, $this->getField(7) . random_int(10000, 99999));
-                $this->setField(12, $hl7Globals['HL7_VERSION']);
-            }
+        if (isset($fields)) { // We're done if MSH fields were provided
+            return;
         }
+
+        // Fill mandatory fields if no fields array is given
+        if (is_array($hl7Globals)) {
+            $this->setField(1, $hl7Globals['FIELD_SEPARATOR']);
+            $this->setField(
+                2,
+                $hl7Globals['COMPONENT_SEPARATOR'] .
+                $hl7Globals['REPETITION_SEPARATOR'] .
+                $hl7Globals['ESCAPE_CHARACTER'] .
+                $hl7Globals['SUBCOMPONENT_SEPARATOR']
+            );
+            $this->setVersionId($hl7Globals['HL7_VERSION']);
+        }
+        else {
+            $this->setField(1, '|');
+            $this->setField(2, '^~\\&');
+            $this->setVersionId('2.3');
+        }
+        $this->setDateTimeOfMessage(strftime('%Y%m%d%H%M%S'));
+        $this->setMessageControlId($this->getDateTimeOfMessage() . random_int(10000, 99999));
     }
 
     /**
@@ -86,16 +81,12 @@ class MSH extends Segment
      */
     public function setField(int $index, $value = ''): bool
     {
-        if ($index === 1) {
-            if (\strlen($value) !== 1) {
-                return false;
-            }
+        if (($index === 1) && strlen($value) !== 1) {
+            return false;
         }
 
-        if ($index === 2) {
-            if (\strlen($value) !== 4) {
-                return false;
-            }
+        if (($index === 2) && strlen($value) !== 4) {
+            return false;
         }
 
         return parent::setField($index, $value);
