@@ -22,12 +22,13 @@ class ACK extends Message
      *
      * @param Message|null $req
      * @param MSH|null $reqMsh
+     * @param array $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
      * @throws \Exception
      * @throws \InvalidArgumentException
      */
-    public function __construct(Message $req = null, MSH $reqMsh = null)
+    public function __construct(Message $req = null, MSH $reqMsh = null, array $hl7Globals = null)
     {
-        parent::__construct();
+        parent::__construct(null, $hl7Globals);
 
         if ($req) {
             $msh = $req->getSegmentByIndex(0);
