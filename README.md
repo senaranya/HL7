@@ -97,7 +97,7 @@ $message = new Message($hl7String); // Create a Message object from your HL7 str
 // Create a Socket and get ready to send message. Optionally add timeout in seconds as 3rd argument (default: 10 sec)
 $connection = new Connection($ip, $port);
 $response = $connection->send($message); // Send to the listener, and get a response back
-echo $reponse->toString(true); // Prints ACK from the listener
+echo $response->toString(true); // Prints ACK from the listener
 ```
 ### ACK
 Handle ACK message returned from a remote HL7 listener... 
