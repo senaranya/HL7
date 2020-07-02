@@ -132,6 +132,7 @@ class Connection
         $startTime = time();
         while (($buf = socket_read($this->socket, 1024)) !== false) { // Read ACK / NACK from server
             $data .= $buf;
+            $data = preg_replace('/[\x00-\x1f]/', '', $data);
             if (preg_match('/' . $this->MESSAGE_SUFFIX . '$/', $data)) {
                 break;
             }
@@ -151,7 +152,31 @@ class Connection
         // set character encoding
         $data = mb_convert_encoding($data, $responseCharEncoding);
 
+        if (!$this->isMsaSegmentOnANewLine($data)) {
+            $data =  preg_replace('/MSA/', "\nMSA", $data);
+        }
+
         return new Message($data, null, true, true);
+    }
+
+    /**
+     * Check if the MSA segment is on a new line
+     *
+     * @param string $data Response data
+     * @return bool
+     * @access private
+     */
+    private function isMsaSegmentOnANewLine($data): bool
+    {
+        $matches = [];
+
+        preg_match('/(\nMSA)/', $data, $matches);
+
+        if (!empty($matches)) {
+            return true;
+        }
+
+        return false;
     }
 
     /**
