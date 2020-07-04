@@ -96,10 +96,13 @@ trait Hl7ListenerTrait
             socket_close($clientSocket);
 
             if ($totalClientsToConnect > 0 && $clientCount >= $totalClientsToConnect) {
+                echo "dfgdfgdfgd\n";
                 break;
             }
         }
+        echo "\n44444444444444444444\n";
         socket_close($socket);
+        sleep(1);
         exit(0);
     }
 
