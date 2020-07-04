@@ -4,7 +4,9 @@ declare(strict_types=1);
 namespace Aranyasen\HL7;
 
 use Aranyasen\Exceptions\HL7ConnectionException;
+use Aranyasen\Exceptions\HL7Exception;
 use Exception;
+use ReflectionException;
 
 /**
  * Usage:
@@ -63,7 +65,7 @@ class Connection
      * @param int $timeout Connection timeout
      * @throws HL7ConnectionException
      */
-    protected function setSocket(string $host, int $port, int $timeout = 10)
+    protected function setSocket(string $host, int $port, int $timeout = 10): void
     {
         $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
         if (!$socket || !is_resource($socket)) {
@@ -112,20 +114,25 @@ class Connection
     /**
      * Sends a Message object over this connection.
      *
-     * @param Message $req
+     * @param Message $msg
      * @param string $responseCharEncoding The expected character encoding of the response.
-     * @return Message
+     * @param bool $noWait Do no wait for ACK. Helpful for building load testing tools...
+     * @return Message|null
+     * @throws HL7ConnectionException
+     * @throws HL7Exception
+     * @throws ReflectionException
      * @access public
-     * @throws \Exception
-     * @throws \InvalidArgumentException
      */
-    public function send(Message $req, string $responseCharEncoding = 'UTF-8'): Message
+    public function send(Message $msg, string $responseCharEncoding = 'UTF-8', bool $noWait = false): ?Message
     {
-        $hl7Msg = $req->toString(true);
+        $message = $this->MESSAGE_PREFIX . $msg->toString(true) . $this->MESSAGE_SUFFIX; // As per MLLP protocol
+        if (!socket_write($this->socket, $message, strlen($message))) {
+            throw new HL7Exception("Could not send data to server: " . socket_strerror(socket_last_error()));
+        }
 
-        $message = $this->MESSAGE_PREFIX . $hl7Msg . $this->MESSAGE_SUFFIX;
-
-        socket_write($this->socket, $message, \strlen($message)) or die("Could not send data to server\n");
+        if ($noWait) {
+            return null;
+        }
 
         $data = null;
 
@@ -144,7 +151,7 @@ class Connection
             throw new HL7ConnectionException("No response received within {$this->timeout} seconds");
         }
 
-        // Remove message prefix and suffix
+        // Remove message prefix and suffix added by the MLLP server
         $data = preg_replace('/^' . $this->MESSAGE_PREFIX . '/', '', $data);
         $data = preg_replace('/' . $this->MESSAGE_SUFFIX . '$/', '', $data);
 
@@ -152,6 +159,14 @@ class Connection
         $data = mb_convert_encoding($data, $responseCharEncoding);
 
         return new Message($data, null, true, true);
+    }
+
+    /*
+     * Return the socket opened/used by this class
+     */
+    public function getSocket()
+    {
+        return $this->socket;
     }
 
     /**
