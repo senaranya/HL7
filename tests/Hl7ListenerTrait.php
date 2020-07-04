@@ -51,6 +51,10 @@ trait Hl7ListenerTrait
         if (($socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP)) < 0) {
             throw new \RuntimeException('socket_create() failed: reason: ' . socket_strerror(socket_last_error()) . "\n");
         }
+        if (!socket_set_option($socket, SOL_SOCKET, SO_REUSEADDR, 1)) {
+            echo socket_strerror(socket_last_error($socket));
+            exit(-1);
+        }
         if (($ret = socket_bind($socket, "localhost", $port)) < 0) {
             throw new \RuntimeException('socket_bind() failed: reason: ' . socket_strerror($ret) . "\n");
         }
@@ -101,10 +105,8 @@ trait Hl7ListenerTrait
         }
         // socket_set_block($socket);
         // socket_set_option($socket, SOL_SOCKET, SO_LINGER, ['l_onoff' => 1, 'l_linger' => 1]);
-        socket_set_nonblock($socket);
+        // socket_set_nonblock($socket);
         socket_close($socket);
-        echo("sleeping...");
-        sleep(10);
         exit(0); // Child process needs it
     }
 
