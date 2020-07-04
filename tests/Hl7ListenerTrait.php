@@ -92,6 +92,7 @@ trait Hl7ListenerTrait
                 $this->writeToPipe($buffer);
             }
 
+            socket_shutdown($clientSocket);
             socket_close($clientSocket);
 
             if ($totalClientsToConnect > 0 && $clientCount >= $totalClientsToConnect) {
