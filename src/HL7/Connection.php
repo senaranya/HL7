@@ -176,6 +176,7 @@ class Connection
     private function close()
     {
         try {
+            echo "\n888888888888888888888\n";
             socket_close($this->socket);
         }
         catch (Exception $e) {
