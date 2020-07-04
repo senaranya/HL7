@@ -51,10 +51,13 @@ trait Hl7ListenerTrait
         if (($socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP)) < 0) {
             throw new \RuntimeException('socket_create() failed: reason: ' . socket_strerror(socket_last_error()) . "\n");
         }
+
+        // This is to avoid "address already in use" error while doing ->bind()
         if (!socket_set_option($socket, SOL_SOCKET, SO_REUSEADDR, 1)) {
             echo socket_strerror(socket_last_error($socket));
             exit(-1);
         }
+
         if (($ret = socket_bind($socket, "localhost", $port)) < 0) {
             throw new \RuntimeException('socket_bind() failed: reason: ' . socket_strerror($ret) . "\n");
         }
@@ -103,9 +106,6 @@ trait Hl7ListenerTrait
                 break;
             }
         }
-        // socket_set_block($socket);
-        // socket_set_option($socket, SOL_SOCKET, SO_LINGER, ['l_onoff' => 1, 'l_linger' => 1]);
-        // socket_set_nonblock($socket);
         socket_close($socket);
         exit(0); // Child process needs it
     }
@@ -135,5 +135,5 @@ trait Hl7ListenerTrait
         $ack = new ACK($msg);
         return $ack->toString();
     }
-    // TODO: tearDown: unlink($this->>pipe)
+    // TODO: This trait leaves a file pipe1 behind. Clean it up: in tearDown: unlink($this->>pipe)
 }
