@@ -1,92 +1,75 @@
 <?php
 declare(strict_types=1);
 
-namespace Aranyasen\HL7\tests;
+namespace Aranyasen\HL7\Tests;
 
+use Aranyasen\Exceptions\HL7ConnectionException;
+use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Connection;
-use Aranyasen\HL7\Segment;
-use Aranyasen\HL7\Segments\MSH;
+use RuntimeException;
 
 class ConnectionTest extends TestCase
 {
-    public function test()
+    use Hl7ListenerTrait;
+
+    protected $port = 12011;
+
+    /**
+     * @test
+     * @throws HL7ConnectionException
+     * @throws HL7Exception
+     * @throws \ReflectionException
+     */
+    public function a_message_can_be_sent_to_a_hl7_server(): void
     {
-        $this->markTestIncomplete();
+        $pid = pcntl_fork();
+        if ($pid === -1) {
+            throw new RuntimeException('Could not fork');
+        }
+        if (!$pid) { // In child process
+            $this->createTcpServer($this->port, 1);
+        }
+        if ($pid) { // in Parent process...
+            sleep(2); // Give a second to server (child) to start up. TODO: Speed up by polling
 
-        $msg  = new Message();
-        $msg->addSegment(new MSH());
+            $connection = new Connection('localhost', $this->port);
+            $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", null, true, true);
+            $ack = $connection->send($msg);
+            $this->assertInstanceOf(Message::class, $ack);
+            $this->assertSame('MSH|^~\&|1||||||ACK|\nMSA|AA|\n|\n', $ack->toString());
 
-        $seg1 = new Segment('PID');
+            $this->assertStringContainsString("MSH|^~\\&|1|\nPV1|1|O|^AAAA1^^^BB|", $this->getWhatServerGot());
 
-        $seg1->setField(3, 'XXX');
+            $this->closeTcpSocket($connection->getSocket()); // Clean up listener
+            pcntl_wait($status); // Wait till child is closed
+        }
+    }
 
-        $msg->addSegment($seg1);
+    /**
+     * @test
+     * @throws HL7ConnectionException
+     * @throws HL7Exception
+     * @throws \ReflectionException
+     */
+    public function do_not_wait_for_ack_after_sending_if_corresponding_parameter_is_set(): void
+    {
+        $pid = pcntl_fork();
+        if ($pid === -1) {
+            throw new RuntimeException('Could not fork');
+        }
+        if (!$pid) { // In child process
+            $this->createTcpServer($this->port, 1);
+        }
+        if ($pid) { // in Parent process...
+            sleep(2); // Give a second to server (child) to start up
 
-        // If you have fork support, try this...
+            $connection = new Connection('localhost', $this->port);
+            $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", null, true, true);
+            $this->assertNull($connection->send($msg,' UTF-8', true));
 
-        // $pid = pcntl_fork();
-        //
-        // if (! $pid) {
-        //   // Server process
-        //   set_time_limit(0);
-        //
-        //   // Turn on implicit output flushing so we see what we're getting
-        //   // as it comes in.
-        //   ob_implicit_flush();
-        //
-        //   if (($sock = socket_create(AF_INET, SOCK_STREAM, SOL_TCP)) < 0) {
-        //     echo 'socket_create() failed: reason: ' . socket_strerror($sock) . "\n";
-        //   }
-        //
-        //   if (($ret = socket_bind($sock, "localhost", 12011)) < 0) {
-        //     echo 'socket_bind() failed: reason: ' . socket_strerror($ret) . "\n";
-        //   }
-        //
-        //   if (($ret = socket_listen($sock, 5)) < 0) {
-        //     echo 'socket_listen() failed: reason: ' . socket_strerror($ret) . "\n";
-        //   }
-        //
-        //   do {
-        //     if (($msgsock = socket_accept($sock)) < 0) {
-        //       echo 'socket_accept() failed: reason: ' . socket_strerror($msgsock) . "\n";
-        //       break;
-        //     }
-        //
-        //     if (false === ($buf = socket_read($msgsock, 8192, PHP_NORMAL_READ))) {
-        //       echo 'socket_read() failed: reason: ' . socket_strerror($ret) . "\n";
-        //       break 2;
-        //     }
-        //
-        //     echo "Incoming: $buf\n";
-        //
-        //     $msg = new Message($buf);
-        //
-        //     $ack = new ACK($msg);
-        //     socket_write($msgsock, "\013" . $ack->toString() . "\034\015", \strlen($ack->toString() + 3));
-        //     echo 'Said: ' . $ack->toString(1) . "\n";
-        //
-        //   } while (true);
-        //
-        //   socket_close($msgsock);
-        //
-        //   exit;
-        // }
-
-        $socket = $this->getMock('Net_Socket');
-
-        $socket->expects($this->once())
-                ->method('write')
-                ->with("\013" . $msg->toString() . "\034\015");
-
-        $socket->expects($this->once())
-                ->method('read')
-                ->will($this->returnValue("MSH*^~\\&*1\rPID***xxx\r" . "\034\015"));
-
-        $conn = new Connection($socket);
-
-        $resp = $conn->send($msg);
-
-        $this->assertInstanceOf(Message::class, $resp);
+            $this->closeTcpSocket($connection->getSocket()); // Clean up listener
+            pcntl_wait($status); // Wait till child is closed
+        }
     }
 }
