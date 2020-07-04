@@ -103,6 +103,8 @@ trait Hl7ListenerTrait
         // socket_set_option($socket, SOL_SOCKET, SO_LINGER, ['l_onoff' => 1, 'l_linger' => 1]);
         socket_set_nonblock($socket);
         socket_close($socket);
+        echo("sleeping...");
+        sleep(10);
         exit(0); // Child process needs it
     }
 
