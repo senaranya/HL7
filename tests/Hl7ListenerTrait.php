@@ -99,8 +99,8 @@ trait Hl7ListenerTrait
                 break;
             }
         }
+        socket_set_option($socket, SOL_SOCKET, SO_LINGER, ['l_linger' => 0, 'l_onoff' => 1]);
         socket_close($socket);
-        sleep(1);
         exit(0); // Child process needs it
     }
 
