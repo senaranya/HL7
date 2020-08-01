@@ -3,6 +3,7 @@
 namespace Aranyasen\HL7\Segments;
 
 use Aranyasen\HL7\Segment;
+use InvalidArgumentException;
 
 /**
  * PID segment class
@@ -83,10 +84,11 @@ class PID extends Segment
         return $this->setField($position, $value);
     }
 
-    public function setSex($value, int $position = 8)
+    public function setSex(string $value, int $position = 8)
     {
-        if ($value !== 'F' && $value !== 'M' && $value !== 'U') {
-            throw new \InvalidArgumentException("Sex should be either 'F', 'M' or 'U'. Given: '$value'");
+        // Ref: https://hl7-definition.caristix.com/v2/HL7v2.4/Tables/0001
+        if (!in_array($value, ['A', 'F', 'M', 'N', 'O', 'U'], true)) {
+            throw new InvalidArgumentException("Sex should one of 'A', 'F', 'M', 'N', 'O' or 'U'. Given: '$value'");
         }
         return $this->setField($position, $value);
     }
