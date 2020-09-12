@@ -5,11 +5,7 @@
 <a href="https://packagist.org/packages/aranyasen/hl7"><img src="https://poser.pugx.org/aranyasen/hl7/license" alt="License"></a>
 </p>
 
-**Important: Connection::send() Timeout error message changed from "Timed out listening for response from server" to "Response partially received. Timed out listening for end-of-message from server"**
-
 **Important: Supported PHP version has been updated to 7.2+. To use this package with 7.0 or 7.1, use previous release [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)**
-
-**Important: Exception message for invalid segment name changed to "Segment name '$name' should be 3 characters and in uppercase"**
 
 ## Introduction
 
@@ -51,6 +47,7 @@ $msg->addSegment($msh); // Message is: "MSH|^~\&|||||20171116140058|||2017111614
 // Create any custom segment
 $abc = new Segment('ABC');
 $abc->setField(1, 'xyz');
+$abc->setField(2, 0);
 $abc->setField(4, ['']); // Set an empty field at 4th position. 2nd and 3rd positions will be automatically set to empty
 $abc->clearField(2); // Clear the value from field 2
 $msg->setSegment($abc, 1); // Message is now: "MSH|^~\&|||||20171116140058|||2017111614005840157||2.3|\nABC|xyz|\n"

@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Aranyasen\HL7;
@@ -173,7 +174,7 @@ class Connection
      * Close the socket
      * TODO: Close only when the socket is open
      */
-    private function close()
+    private function close(): void
     {
         try {
             socket_close($this->socket);

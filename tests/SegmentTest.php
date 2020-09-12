@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Aranyasen\HL7\Tests;
@@ -81,8 +82,20 @@ class SegmentTest extends TestCase
     {
         $seg = new Segment('XXX');
         $seg->setField(8, ['']);
-        self::assertEquals(8, $seg->size(), 'Size operator');
+        self::assertSame(8, $seg->size(), 'Size operator');
         $seg->setField(12, 'x');
-        self::assertEquals(12, $seg->size(), 'Size operator');
+        self::assertSame(12, $seg->size(), 'Size operator');
+    }
+
+    /** @test */
+    public function a_field_can_have_0_as_a_value(): void
+    {
+        $segment = new Segment('XXX');
+
+        $segment->setField(1, 0);
+        self::assertSame(0, $segment->getField(1));
+
+        $segment->setField(1, '0');
+        self::assertSame('0', $segment->getField(1));
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Aranyasen\HL7;
 
 use InvalidArgumentException;
@@ -71,7 +73,11 @@ class Segment
      */
     public function setField(int $index, $value = ''): bool
     {
-        if (!($index && $value)) {
+        if ($index === 0) { // Do not allow changing 0th index, which is the name of the segment
+            return false;
+        }
+
+        if ($this->isValueEmpty($value)) {
             return false;
         }
 
@@ -83,6 +89,19 @@ class Segment
         $this->fields[$index] = $value;
 
         return true;
+    }
+
+    private function isValueEmpty($value): bool
+    {
+        if (is_array($value)) {
+            return empty($value);
+        }
+
+        if ((string) $value === '0') { // Allow 0
+            return false;
+        }
+
+        return ! $value;
     }
 
     /**
