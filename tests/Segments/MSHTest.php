@@ -20,7 +20,9 @@ class MSHTest extends TestCase
         self::assertNotEmpty($msh->getMessageControlId());
     }
 
-    /** @test */
+    /** @test
+     * @throws \Exception
+     */
     public function an_array_of_fields_can_be_passed_to_constructor_to_construct_MSH(): void
     {
         $msh = new MSH(['MSH', '^~\&', 'HL7 Corp', 'HL7 HQ', 'VISION', 'MISYS', '200404061744', '', ['DFT', 'P03'], 'TC-22222', 'T', '2.3']);

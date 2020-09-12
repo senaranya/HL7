@@ -35,11 +35,12 @@ class SegmentTest extends TestCase
     }
 
     /** @test */
-    public function field_can_be_set_to_null(): void
+    public function field_can_be_cleared(): void
     {
-        $seg = new Segment('XXX');
-        $seg->setField(1, null);
-        self::assertNull($seg->getField(1), 'HL7 NULL value');
+        $segment = new Segment('XXX', ['a']);
+        self::assertSame('a', $segment->getField(1));
+        $segment->clearField(1);
+        self::assertNull($segment->getField(1), 'Field 1 should be NULL');
     }
 
     /** @test */

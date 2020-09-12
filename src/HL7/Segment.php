@@ -105,6 +105,17 @@ class Segment
     }
 
     /**
+     * Remove any existing value from the field
+     *
+     * @param int $index Field index
+     * @return void
+     */
+    public function clearField(int $index): void
+    {
+        $this->fields[$index] = null;
+    }
+
+    /**
      * Get the field at index.
      *
      * If the field is a composite field, it returns an array
