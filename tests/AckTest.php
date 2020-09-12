@@ -6,9 +6,13 @@ namespace Aranyasen\HL7\Tests;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Messages\ACK;
 use Aranyasen\HL7\Segments\MSH;
+use Exception;
 
 class AckTest extends TestCase
 {
+    /**
+     * @throws Exception
+     */
     public function test()
     {
         $msg = new Message();
@@ -22,7 +26,7 @@ class AckTest extends TestCase
 
         $seg1 = $ack->getSegmentByIndex(1);
 
-        $this->assertSame('CA', $seg1->getField(1), 'Error code is CA');
+        self::assertSame('CA', $seg1->getField(1), 'Error code is CA');
 
         $msg = new Message();
         $msh = new MSH();
@@ -33,7 +37,7 @@ class AckTest extends TestCase
 
         $seg1 = $ack->getSegmentByIndex(1);
 
-        $this->assertSame('CA', $seg1->getField(1), 'Error code is CA');
+        self::assertSame('CA', $seg1->getField(1), 'Error code is CA');
 
         $msg = new Message();
         $msh = new MSH();
@@ -44,16 +48,16 @@ class AckTest extends TestCase
 
         $seg1 = $ack->getSegmentByIndex(1);
 
-        $this->assertSame('AA', $seg1->getField(1), 'Error code is AA');
+        self::assertSame('AA', $seg1->getField(1), 'Error code is AA');
 
         $ack->setAckCode('E');
-        $this->assertSame('AE', $seg1->getField(1), 'Error code is AE');
+        self::assertSame('AE', $seg1->getField(1), 'Error code is AE');
 
         $ack->setAckCode('CR');
-        $this->assertSame('CR', $seg1->getField(1), 'Error code is CR');
+        self::assertSame('CR', $seg1->getField(1), 'Error code is CR');
 
         $ack->setAckCode('CR', 'XX');
-        $this->assertSame('XX', $seg1->getField(3), 'Set message and code');
+        self::assertSame('XX', $seg1->getField(3), 'Set message and code');
 
         $msg = new Message();
         $msg->addSegment(new MSH());
@@ -65,39 +69,37 @@ class AckTest extends TestCase
 
         $ack = new ACK($msg);
         $seg0 = $ack->getSegmentByIndex(0);
-        $this->assertSame('P', $seg0->getField(11), 'Field 11 is P');
-        $this->assertSame('2.4', $seg0->getField(12), 'Field 12 is 2.4');
-        $this->assertSame('NE', $seg0->getField(15), 'Field 15 is NE');
-        $this->assertSame('NE', $seg0->getField(16), 'Field 16 is NE');
+        self::assertSame('P', $seg0->getField(11), 'Field 11 is P');
+        self::assertSame('2.4', $seg0->getField(12), 'Field 12 is 2.4');
+        self::assertSame('NE', $seg0->getField(15), 'Field 15 is NE');
+        self::assertSame('NE', $seg0->getField(16), 'Field 16 is NE');
 
         $ack = new ACK($msg);
         $ack->setErrorMessage('Some error');
         $seg1 = $ack->getSegmentByIndex(1);
-        $this->assertSame('Some error', $seg1->getField(3), 'Setting error message');
-        $this->assertSame('CE', $seg1->getField(1), 'Code CE after setting message');
+        self::assertSame('Some error', $seg1->getField(3), 'Setting error message');
+        self::assertSame('CE', $seg1->getField(1), 'Code CE after setting message');
     }
 
     /** @test
-     * @throws \Aranyasen\Exceptions\HL7Exception
-     * @throws \ReflectionException
-     * @throws \Exception
+     * @throws Exception
      */
     public function a_MSH_can_be_provided_to_get_the_fields_from(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|");
         $msh = new MSH(['MSH', '^~\&', 'HL7 Corp', 'HL7 HQ', 'VISION', 'MISYS', '200404061744', '', ['DFT', 'P03'], 'TC-22222', 'T', '2.3']);
         $ack = new ACK($msg, $msh);
-        $this->assertSame("MSH|^~\&|VISION|MISYS|HL7 Corp|HL7 HQ|||ACK|\nMSA|AA|TC-22222|\n", $ack->toString(true));
+        self::assertSame("MSH|^~\&|VISION|MISYS|HL7 Corp|HL7 HQ|||ACK|\nMSA|AA|TC-22222|\n", $ack->toString(true));
     }
 
-    /** @test
-     * @throws \Aranyasen\Exceptions\HL7Exception
-     * @throws \ReflectionException
+    /**
+     * @test
+     * @throws Exception
      */
     public function globals_can_be_passed_to_constructor(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|");
         $ack = new ACK($msg, null, ['HL7_VERSION' => '2.5']);
-        $this->assertSame("MSH|^~\&|1||||||ACK|\nMSA|AA|\n", $ack->toString(true));
+        self::assertSame("MSH|^~\&|1||||||ACK|\nMSA|AA|\n", $ack->toString(true));
     }
 }

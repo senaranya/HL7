@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Aranyasen\HL7;
 
 use Aranyasen\Exceptions\HL7Exception;
@@ -54,8 +56,8 @@ class Message
      * been added to the message will result in setting these values for the message.
      *
      * If the message couldn't be created, for example due to a erroneous HL7 message string, an error is raised.
-     * @param string $msgStr
-     * @param array $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
+     * @param string|null $msgStr
+     * @param array|null $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
      * @param bool $keepEmptySubFields Set this to true to retain empty sub fields
      * @param bool $resetIndices Reset Indices of each segment to 1.
      * @param bool $autoIncrementIndices True: auto-increment for each instance of same segment.
@@ -155,7 +157,7 @@ class Message
      */
     public function addSegment(Segment $segment): bool
     {
-        if (\count($this->segments) === 0) {
+        if (count($this->segments) === 0) {
             $this->resetCtrl($segment);
         }
 
@@ -173,24 +175,24 @@ class Message
      */
     public function insertSegment(Segment $segment, $index = null): void
     {
-        if ($index > \count($this->segments)) {
+        if ($index > count($this->segments)) {
             throw new InvalidArgumentException("Index out of range. Index: $index, Total segments: " .
-                \count($this->segments));
+                count($this->segments));
         }
 
         if ($index === 0) {
             $this->resetCtrl($segment);
             array_unshift($this->segments, $segment);
         }
-        elseif ($index === \count($this->segments)) {
+        elseif ($index === count($this->segments)) {
             $this->segments[] = $segment;
         }
         else {
             $this->segments =
                 array_merge(
-                    \array_slice($this->segments, 0, $index),
+                    array_slice($this->segments, 0, $index),
                     [$segment],
-                    \array_slice($this->segments, $index)
+                    array_slice($this->segments, $index)
                 );
         }
     }
@@ -205,7 +207,7 @@ class Message
      */
     public function getSegmentByIndex(int $index): ?Segment
     {
-        if ($index >= \count($this->segments)) {
+        if ($index >= count($this->segments)) {
             return null;
         }
 
@@ -257,7 +259,7 @@ class Message
      */
     public function removeSegmentByIndex(int $index): bool
     {
-        if ($index < \count($this->segments)) {
+        if ($index < count($this->segments)) {
             array_splice($this->segments, $index, 1);
         }
 
@@ -267,13 +269,13 @@ class Message
     /**
      * Remove given segment
      *
-     * @param string $segment
+     * @param string $segmentName
      * @return int Count of segments removed
      */
-    public function removeSegmentsByName(string $segment): int
+    public function removeSegmentsByName(string $segmentName): int
     {
         $count = 0;
-        foreach ($this->getSegmentsByName($segment) as $segment) {
+        foreach ($this->getSegmentsByName($segmentName) as $segment) {
             $this->removeSegmentByIndex($this->getSegmentIndex($segment));
             $count++;
         }
@@ -293,7 +295,7 @@ class Message
      */
     public function setSegment(Segment $segment, int $index): bool
     {
-        if (!isset($index) || $index > \count($this->segments)) {
+        if (!isset($index) || $index > count($this->segments)) {
             throw new InvalidArgumentException('Index out of range');
         }
 
@@ -313,13 +315,13 @@ class Message
      * @return bool
      * @access protected
      */
-    protected function resetCtrl(Segment $segment)
+    protected function resetCtrl(Segment $segment): bool
     {
         if ($segment->getField(1)) {
             $this->fieldSeparator = $segment->getField(1);
         }
 
-        if (preg_match('/(.)(.)(.)(.)/', $segment->getField(2), $matches)) {
+        if (preg_match('/(.)(.)(.)(.)/', (string) $segment->getField(2), $matches)) {
             $this->componentSeparator    = $matches[1];
             $this->repetitionSeparator   = $matches[2];
             $this->escapeChar            = $matches[3];
@@ -386,28 +388,28 @@ class Message
     public function segmentToString(Segment $seg): string
     {
         $segmentName = $seg->getName();
-        $segStr = $segmentName . $this->fieldSeparator;
+        $segmentString = $segmentName . $this->fieldSeparator;
         $fields = $seg->getFields(($segmentName === 'MSH' ? 2 : 1));
 
         foreach ($fields as $field) {
-            if (\is_array($field)) {
-                foreach ($field as $i => $iValue) {
-                    \is_array($field[$i])
-                        ? ($segStr .= implode($this->subcomponentSeparator, $field[$i]))
-                        : ($segStr .= $field[$i]);
+            if (is_array($field)) {
+                foreach ($field as $index => $value) {
+                    is_array($field[$index])
+                        ? ($segmentString .= implode($this->subcomponentSeparator, $field[$index]))
+                        : ($segmentString .= $field[$index]);
 
-                    if ($i < (\count($field) - 1)) {
-                        $segStr .= $this->componentSeparator;
+                    if ($index < (count($field) - 1)) {
+                        $segmentString .= $this->componentSeparator;
                     }
                 }
             } else {
-                $segStr .= $field;
+                $segmentString .= $field;
             }
 
-            $segStr .= $this->fieldSeparator;
+            $segmentString .= $this->fieldSeparator;
         }
 
-        return $segStr;
+        return $segmentString;
     }
 
     /**
@@ -437,15 +439,23 @@ class Message
      */
     private function extractComponentsFromFields(string $field, bool $keepEmptySubFields)
     {
-        $pregFlags = $keepEmptySubFields ? 0 : PREG_SPLIT_NO_EMPTY;
-        $comps = preg_split("/\\" . $this->componentSeparator . '/', $field, -1, $pregFlags);
-        foreach ($comps as $k => $kValue) {
-            $subComps = preg_split("/\\" . $this->subcomponentSeparator . '/', $comps[$k]);
+        $pregFlags = $keepEmptySubFields
+            ? 0
+            : PREG_SPLIT_NO_EMPTY;
+
+        $components = preg_split("/\\" . $this->componentSeparator . '/', $field, -1, $pregFlags);
+        foreach ($components as $index => $component) {
+            $subComps = preg_split("/\\" . $this->subcomponentSeparator . '/', $components[$index]);
             // Make it a ref or just the value
-            (\count($subComps) === 1) ? ($comps[$k] = $subComps[0]) : ($comps[$k] = $subComps);
+            $components[$index] = count($subComps) === 1
+                ? $subComps[0]
+                : $subComps;
         }
-        (\count($comps) === 1) ? ($field = $comps[0]) : ($field = $comps);
+
+        $field = count($components) === 1
+            ? $components[0]
+            : $components;
+
         return $field;
     }
-
 }
