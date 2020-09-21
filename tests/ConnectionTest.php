@@ -36,10 +36,10 @@ class ConnectionTest extends TestCase
             $connection = new Connection('localhost', $this->port);
             $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", null, true, true);
             $ack = $connection->send($msg);
-            $this->assertInstanceOf(Message::class, $ack);
+            self::assertInstanceOf(Message::class, $ack);
             self::assertSame('MSH|^~\&|1||||||ACK|\nMSA|AA|\n|\n', $ack->toString());
 
-            $this->assertStringContainsString("MSH|^~\\&|1|\nPV1|1|O|^AAAA1^^^BB|", $this->getWhatServerGot());
+            self::assertStringContainsString("MSH|^~\\&|1|\nPV1|1|O|^AAAA1^^^BB|", $this->getWhatServerGot());
 
             $this->closeTcpSocket($connection->getSocket()); // Clean up listener
             pcntl_wait($status); // Wait till child is closed

@@ -29,9 +29,6 @@
         }
     },
     "autoload-dev": {
-        "classmap": [
-            "tests/TestCase.php"
-        ],
         "psr-4": {
             "Aranyasen\\HL7\\Tests\\": "tests/"
         }
