@@ -3,4 +3,6 @@ install:
   - composer install
 php:
   - '7.2'
+  - '7.3'
+  - '7.4'
 script: vendor/bin/phpunit tests/

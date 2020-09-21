@@ -204,7 +204,7 @@ class MessageTest extends TestCase
         $msg = new Message();
         $this->expectException(InvalidArgumentException::class);
         $msg->insertSegment(new Segment('ZZ1'), 3);
-        $this->assertEmpty($msg->getSegmentByIndex(3), 'Erroneous insert');
+        self::assertEmpty($msg->getSegmentByIndex(3), 'Erroneous insert');
     }
 
     /** @test */

@@ -50,7 +50,7 @@ class SegmentTest extends TestCase
         $seg->setField(3, ['1', '2', '3']);
         self::assertIsArray($seg->getField(3), 'Composed field 1^2^3');
         self::assertCount(3, $seg->getField(3), 'Getting composed fields as array');
-        self::assertEquals(2, $seg->getField(3)[1], 'Getting single value from composed field');
+        self::assertSame('2', $seg->getField(3)[1], 'Getting single value from composed field');
     }
 
     /** @test */
