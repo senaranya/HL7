@@ -443,6 +443,16 @@ class Message
             ? 0
             : PREG_SPLIT_NO_EMPTY;
 
+        if (strpos($field, $this->repetitionSeparator) !== false) {
+            $components = preg_split("/\\".$this->repetitionSeparator.'/', $field, -1, $pregFlags);
+            $fields = [];
+            foreach ($components as $index => $component) {
+                $fields[$index] = $this->extractComponentsFromFields($component, $keepEmptySubFields);
+            }
+
+            return $fields;
+        }
+
         $components = preg_split("/\\" . $this->componentSeparator . '/', $field, -1, $pregFlags);
         foreach ($components as $index => $component) {
             $subComps = preg_split("/\\" . $this->subcomponentSeparator . '/', $components[$index]);
