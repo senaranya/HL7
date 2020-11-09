@@ -414,4 +414,17 @@ class MessageTest extends TestCase
         self::assertTrue((new Message())->isEmpty());
         self::assertFalse((new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|"))->isEmpty());
     }
+
+    /** @test */
+    public function message_with_repetition_separator(): void
+    {
+        $message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1");
+        $pid = $message->getSegmentByIndex(1);
+        $patientIdentifierList = $pid->getField(3);
+        self::assertIsArray($patientIdentifierList);
+        self::assertSame('3', $patientIdentifierList[0][0]);
+        self::assertSame('0', $patientIdentifierList[0][1]);
+        self::assertSame('4', $patientIdentifierList[1][0]);
+        self::assertSame('1', $patientIdentifierList[1][1]);
+    }
 }
