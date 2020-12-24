@@ -119,6 +119,18 @@ trait MessageHelpersTrait
     }
 
     /**
+     * Check if given message is a SIU
+     *
+     * @return bool
+     */
+    public function isSiu(): bool
+    {
+        /** @var MSH $msh */
+        $msh = $this->getFirstSegmentInstance('MSH');
+        return false !== strpos($msh->getMessageType(), 'SIU');
+    }
+
+    /**
      * Check if given segment is present in the message object
      *
      * @param string $segment
