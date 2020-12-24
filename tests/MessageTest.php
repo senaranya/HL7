@@ -321,10 +321,17 @@ class MessageTest extends TestCase
         $msg = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
         self::assertTrue($msg->isOrm());
         self::assertFalse($msg->isOru());
+        self::assertFalse($msg->isSiu());
 
         $msg = new Message("MSH|^~\&|||||||ORU^O01||P|2.3.1|");
         self::assertTrue($msg->isOru());
         self::assertFalse($msg->isOrm());
+        self::assertFalse($msg->isSiu());
+
+        $msg = new Message("MSH|^~\&|||||||SIU^S12||P|2.3.1|");
+        self::assertTrue($msg->isSiu());
+        self::assertFalse($msg->isOrm());
+        self::assertFalse($msg->isOru());
     }
 
     /**
