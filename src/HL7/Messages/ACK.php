@@ -31,10 +31,10 @@ class ACK extends Message
         parent::__construct(null, $hl7Globals);
 
         if ($req) {
-            $msh = $req->getSegmentByIndex(0);
+            $reqMsh = $req->getSegmentByIndex(0);
 
-            if ($msh) {
-                $msh = new MSH($msh->getFields(1));
+            if ($reqMsh) {
+                $msh = new MSH($reqMsh->getFields(1));
             }
             else {
                 $msh = new MSH();
@@ -68,6 +68,7 @@ class ACK extends Message
             $msh->setField(4, $reqMsh->getReceivingFacility());
             $msh->setField(5, $reqMsh->getSendingApplication());
             $msh->setField(6, $reqMsh->getSendingFacility());
+            $msh->setField(9, ['ACK', $reqMsh->getTriggerEvent(), 'ACK']);
             $msa->setMessageControlID($reqMsh->getMessageControlId());
         }
     }
