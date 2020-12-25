@@ -21,12 +21,11 @@ class ACK extends Message
      * acknowledgement for an incoming message.
      *
      * @param Message|null $req
-     * @param MSH|null $reqMsh
      * @param array $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
      * @throws \Exception
      * @throws \InvalidArgumentException
      */
-    public function __construct(Message $req = null, MSH $reqMsh = null, array $hl7Globals = null)
+    public function __construct(Message $req = null, array $hl7Globals = null)
     {
         parent::__construct(null, $hl7Globals);
 
