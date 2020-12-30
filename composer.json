@@ -14,13 +14,13 @@
     "minimum-stability": "dev",
     "prefer-stable" : true,
     "require": {
-        "php": ">=7.2",
+        "php": ">=7.3",
         "ext-sockets": "*",
         "ext-mbstring": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8",
-        "dms/phpunit-arraysubset-asserts": "^0.1.0",
+        "phpunit/phpunit": "^9",
+        "dms/phpunit-arraysubset-asserts": "^0.2",
         "ext-pcntl": "*"
     },
     "autoload": {

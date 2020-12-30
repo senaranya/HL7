@@ -5,7 +5,7 @@
 <a href="https://packagist.org/packages/aranyasen/hl7"><img src="https://poser.pugx.org/aranyasen/hl7/license" alt="License"></a>
 </p>
 
-**Important: Supported PHP version has been updated to 7.2+. To use this package with 7.0 or 7.1, use previous release [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)**
+**Important: Supported PHP version has been updated to 7.3+. Last supported versions: for PHP 7.2 => [2.0.2](https://github.com/senaranya/HL7/tree/2.0.2), for PHP 7.0 or 7.1 => [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)**
 
 ## Introduction
 
