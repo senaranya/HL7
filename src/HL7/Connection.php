@@ -69,7 +69,7 @@ class Connection
     protected function setSocket(string $host, int $port, int $timeout = 10): void
     {
         $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
-        if (!$socket || !is_resource($socket)) {
+        if (!$socket) {
             $this->throwSocketError('Failed to create socket');
         }
 
