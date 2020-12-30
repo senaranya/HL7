@@ -48,7 +48,7 @@ trait Hl7ListenerTrait
      */
     public function createTcpServer(int $port, int $totalClientsToConnect): void
     {
-        if (($socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP)) < 0) {
+        if (($socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP)) === false) {
             throw new \RuntimeException('socket_create() failed: reason: ' . socket_strerror(socket_last_error()) . "\n");
         }
 
@@ -58,16 +58,16 @@ trait Hl7ListenerTrait
             exit(-1);
         }
 
-        if (($ret = socket_bind($socket, "localhost", $port)) < 0) {
+        if (($ret = socket_bind($socket, "localhost", $port)) === false) {
             throw new \RuntimeException('socket_bind() failed: reason: ' . socket_strerror($ret) . "\n");
         }
-        if (($ret = socket_listen($socket, 5)) < 0) {
+        if (($ret = socket_listen($socket, 5)) === false) {
             throw new \RuntimeException('socket_listen() failed: reason: ' . socket_strerror($ret) . "\n");
         }
 
         $clientCount = 0;
         while (true) { // Loop over each client
-            if (($clientSocket = socket_accept($socket)) < 0) {
+            if (($clientSocket = socket_accept($socket)) === false) {
                 echo 'socket_accept() failed: reason: ' . socket_strerror(socket_last_error()) . "\n";
                 socket_close($clientSocket);
                 exit();
