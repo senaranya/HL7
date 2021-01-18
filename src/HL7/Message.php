@@ -84,12 +84,6 @@ class Message
         $this->hl7Version = $hl7Globals['HL7_VERSION'] ?? '2.3';
 
         $this->doNotSplitRepetition = $doNotSplitRepetition;
-        if ($doNotSplitRepetition) {
-            trigger_error(
-                "'doNotSplitRepetition' is set to true. This leads to non-standard behavior, and thus may be removed from future versions",
-                E_USER_WARNING
-            );
-        }
 
         if ($resetIndices) {
             $this->resetSegmentIndices();
