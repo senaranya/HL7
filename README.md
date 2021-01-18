@@ -84,6 +84,13 @@ $msg->toString(true); // Returns "MSH|^~\&|1\nABC|||xxx\n"
 
 // Specify custom values for separators, HL7 version etc.
 $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", ['SEGMENT_SEPARATOR' => '\r\n', 'HL7_VERSION' => '2.3']);
+
+// Segment with separator character (~) creates sub-arrays containing each sub-segment
+$message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1"); // Creates [[3,0], [4,1]]
+        
+// To create a single array instead, pass 'true' as 5th argument. This may be used to retain behavior from previous releases
+// Notice: Since this leads to a non-standard behavior, it may be removed in future
+$message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1", null, false, false, true, true); // Creates ['3', '0~4', '1']
 ```
 
 ### Send messages to remote listeners

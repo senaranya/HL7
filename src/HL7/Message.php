@@ -42,6 +42,9 @@ class Message
     protected $escapeChar;
     protected $hl7Version;
 
+    /** @var bool|null $doNotSplitRepetition */
+    protected $doNotSplitRepetition;
+
     /**
      * Constructor for Message. Consider using the HL7 factory to obtain a message instead.
      *
@@ -61,10 +64,11 @@ class Message
      * @param bool $keepEmptySubFields Set this to true to retain empty sub fields
      * @param bool $resetIndices Reset Indices of each segment to 1.
      * @param bool $autoIncrementIndices True: auto-increment for each instance of same segment.
+     * @param bool|null $doNotSplitRepetition If true, repeated segments will be in single array instead of sub-arrays. Since this is non-standard, it may be removed in future
      * @throws HL7Exception
      * @throws \ReflectionException
      */
-    public function __construct(string $msgStr = null, array $hl7Globals = null, bool $keepEmptySubFields = false, bool $resetIndices = false, bool $autoIncrementIndices = true)
+    public function __construct(string $msgStr = null, array $hl7Globals = null, bool $keepEmptySubFields = false, bool $resetIndices = false, bool $autoIncrementIndices = true, bool $doNotSplitRepetition = null)
     {
         // Array holding the segments
         $this->segments = [];
@@ -78,6 +82,14 @@ class Message
         $this->repetitionSeparator = $hl7Globals['REPETITION_SEPARATOR'] ?? '~';
         $this->escapeChar = $hl7Globals['ESCAPE_CHAR'] ?? '\\';
         $this->hl7Version = $hl7Globals['HL7_VERSION'] ?? '2.3';
+
+        $this->doNotSplitRepetition = $doNotSplitRepetition;
+        if ($doNotSplitRepetition) {
+            trigger_error(
+                "'doNotSplitRepetition' is set to true. This leads to non-standard behavior, and thus may be removed from future versions",
+                E_USER_WARNING
+            );
+        }
 
         if ($resetIndices) {
             $this->resetSegmentIndices();
@@ -177,7 +189,7 @@ class Message
     {
         if ($index > count($this->segments)) {
             throw new InvalidArgumentException("Index out of range. Index: $index, Total segments: " .
-                count($this->segments));
+                                               count($this->segments));
         }
 
         if ($index === 0) {
@@ -443,7 +455,7 @@ class Message
             ? 0
             : PREG_SPLIT_NO_EMPTY;
 
-        if (strpos($field, $this->repetitionSeparator) !== false) {
+        if ((strpos($field, $this->repetitionSeparator) !== false) && (! $this->doNotSplitRepetition)) {
             $components = preg_split("/\\".$this->repetitionSeparator.'/', $field, -1, $pregFlags);
             $fields = [];
             foreach ($components as $index => $component) {
