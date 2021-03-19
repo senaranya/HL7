@@ -39,6 +39,12 @@ $msg->isempty(); // Returns true
 
 ### Creating new messages
 ```php
+
+use Aranyasen\HL7\Message;
+use Aranyasen\HL7\Segment;
+use Aranyasen\HL7\Segments\MSH;
+use Aranyasen\HL7\Segments\PID;
+
 // Create an empty Message object, and populate MSH and PID segments... 
 $msg = new Message();
 $msh = new MSH();
@@ -57,7 +63,7 @@ $msg->setSegment($abc, 1); // Message is now: "MSH|^~\&|||||20171116140058|||201
 $pid = new PID(); // Automatically creates PID segment, and adds segment index at PID.1
 $pid->setPatientName([$lastname, $firstname, $middlename, $suffix]); // Use a setter method to add patient's name at standard position (PID.5)
 $pid->setField('abcd', 5); // Apart from standard setter methods, you can manually set a value at any position too
-unset $pid; // Destroy the segment and decrement the id number. Useful when you want to discard a segment.
+unset($pid); // Destroy the segment and decrement the id number. Useful when you want to discard a segment.
 ```
 ```php
 // Creating multiple message objects may have an unexpected side-effect: segments start with wrong index values (Check tests/MessageTest for explanation)...
