@@ -18,6 +18,15 @@ composer require aranyasen/hl7
 ```
 
 ## Usage
+### Import library
+```php
+// First, import classes from the library as needed...
+use Aranyasen\HL7\Message; // If Message is used
+use Aranyasen\HL7\Segment; // If Segment is used
+use Aranyasen\HL7\Segments\MSH; // If MSH is used
+// ... and so on
+```
+
 ### Parsing
 ```php
 // Create a Message object from a HL7 string
@@ -39,12 +48,6 @@ $msg->isempty(); // Returns true
 
 ### Creating new messages
 ```php
-
-use Aranyasen\HL7\Message;
-use Aranyasen\HL7\Segment;
-use Aranyasen\HL7\Segments\MSH;
-use Aranyasen\HL7\Segments\PID;
-
 // Create an empty Message object, and populate MSH and PID segments... 
 $msg = new Message();
 $msh = new MSH();
