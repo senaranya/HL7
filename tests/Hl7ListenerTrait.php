@@ -135,5 +135,14 @@ trait Hl7ListenerTrait
         $ack = new ACK($msg);
         return $ack->toString();
     }
-    // TODO: This trait leaves a file pipe1 behind. Clean it up: in tearDown: unlink($this->>pipe)
+
+    /**
+     * Clean up temporary pipe file generated for testing
+     */
+    private function deletePipe()
+    {
+        if (file_exists($this->pipeName)) {
+            unlink($this->pipeName);
+        }
+    }
 }
