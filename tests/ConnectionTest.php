@@ -15,6 +15,12 @@ class ConnectionTest extends TestCase
 
     protected $port = 12011;
 
+    protected function tearDown(): void
+    {
+        $this->deletePipe();
+        parent::tearDown();
+    }
+
     /**
      * @test
      * @throws HL7ConnectionException

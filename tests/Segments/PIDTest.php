@@ -23,7 +23,7 @@ class PIDTest extends TestCase
     /**
      * @dataProvider invalidSexValues
      * @test
-     * @param $invalidSexValue
+     * @param  string  $invalidSexValue
      */
     public function PID_8_should_not_accept_non_standard_values_for_sex(string $invalidSexValue): void
     {
