@@ -99,7 +99,7 @@ class AckTest extends TestCase
     public function globals_can_be_passed_to_constructor(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|");
-        $ack = new ACK($msg, null, ['HL7_VERSION' => '2.5']);
-        self::assertSame("MSH|^~\&|1||||||ACK|\nMSA|AA|\n", $ack->toString(true));
+        $ack = new ACK($msg, null, ['SEGMENT_SEPARATOR' => '\r\n']);
+        self::assertSame("MSH|^~\&|1||||||ACK|\r\nMSA|AA|\r\n", $ack->toString(true));
     }
 }
