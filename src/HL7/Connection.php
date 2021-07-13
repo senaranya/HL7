@@ -52,6 +52,9 @@ class Connection
      */
     public function __construct(string $host, int $port, int $timeout = 10)
     {
+        if (!extension_loaded('sockets')) {
+            throw new HL7ConnectionException('Please install ext-sockets to run Connection');
+        }
         $this->setSocket($host, $port, $timeout);
         $this->MESSAGE_PREFIX = "\013";
         $this->MESSAGE_SUFFIX = "\034\015";
