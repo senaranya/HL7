@@ -103,6 +103,9 @@ $message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1", null, 
 ```
 
 ### Send messages to remote listeners
+
+Side note: In order to run Connection you need to install PHP ext-sockets [https://www.php.net/manual/en/sockets.installation.php](https://www.php.net/manual/en/sockets.installation.php)
+
 ```php
 $ip = '127.0.0.1'; // An IP
 $port = '12001'; // And Port where a HL7 listener is listening

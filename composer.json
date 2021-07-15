@@ -15,13 +15,13 @@
     "prefer-stable" : true,
     "require": {
         "php": ">=7.3",
-        "ext-sockets": "*",
         "ext-mbstring": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^9",
         "dms/phpunit-arraysubset-asserts": "^0.2",
-        "ext-pcntl": "*"
+        "ext-pcntl": "*",
+        "ext-sockets": "*"
     },
     "autoload": {
         "psr-4": {
