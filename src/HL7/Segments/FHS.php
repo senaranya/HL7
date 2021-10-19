@@ -6,7 +6,7 @@ use Aranyasen\HL7\Segment;
 
 /**
  * FHS: File Header Segment
- * Ref: http://hl7-definition.caristix.com:9010/HL7%20v2.3/segment/FHS
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.3/Segments/FHS
  */
 class FHS extends Segment
 {
