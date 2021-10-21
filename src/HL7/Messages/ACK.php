@@ -37,11 +37,11 @@ class ACK extends Message
                 $msh = new MSH($msh->getFields(1));
             }
             else {
-                $msh = new MSH();
+                $msh = new MSH(null, $hl7Globals);
             }
         }
         else {
-            $msh = new MSH();
+            $msh = new MSH(null, $hl7Globals);
         }
 
         $msa = new MSA();
