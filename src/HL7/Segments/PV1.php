@@ -6,7 +6,7 @@ use Aranyasen\HL7\Segment;
 
 /**
  * PV1 segment class
- * Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-pv1-patient-visit-information-segment
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/PV1
  */
 class PV1 extends Segment
 {

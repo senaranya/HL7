@@ -6,7 +6,7 @@ use Aranyasen\HL7\Segment;
 
 /**
  * MSA: Message acknowledgement segment
- * Ref: http://hl7-definition.caristix.com:9010/HL7%20v2.3/segment/MSA
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/MSA
  */
 class MSA extends Segment
 {
@@ -15,7 +15,7 @@ class MSA extends Segment
         parent::__construct('MSA', $fields);
     }
 
-    public function setAcknowledgementCode($value, int $position = 1)
+    public function setAcknowledgmentCode($value, int $position = 1)
     {
         return $this->setField($position, $value);
     }
@@ -47,7 +47,7 @@ class MSA extends Segment
 
     // -------------------- Getter Methods ------------------------------
 
-    public function getAcknowledgementCode(int $position = 1)
+    public function getAcknowledgmentCode(int $position = 1)
     {
         return $this->getField($position);
     }

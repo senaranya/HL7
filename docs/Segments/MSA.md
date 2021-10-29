@@ -1,7 +1,7 @@
-# Aranyasen\HL7\Segments\EQU  
+# Aranyasen\HL7\Segments\MSA  
 
-EQU segment class
-Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/EQU
+MSA: Message acknowledgement segment
+Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/MSA
 
 
 
@@ -13,17 +13,18 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getAlertLevel](#equgetalertlevel)||
-|[getEquipmentInstanceIdentifier](#equgetequipmentinstanceidentifier)||
-|[getEquipmentState](#equgetequipmentstate)||
-|[getEventDateTime](#equgeteventdatetime)||
-|[getLocalRemoteControlState](#equgetlocalremotecontrolstate)||
-|[resetIndex](#equresetindex)|Reset index of this segment|
-|[setAlertLevel](#equsetalertlevel)||
-|[setEquipmentInstanceIdentifier](#equsetequipmentinstanceidentifier)||
-|[setEquipmentState](#equsetequipmentstate)||
-|[setEventDateTime](#equseteventdatetime)||
-|[setLocalRemoteControlState](#equsetlocalremotecontrolstate)||
+|[getAcknowledgmentCode](#msagetacknowledgmentcode)||
+|[getDelayedAcknowledgementType](#msagetdelayedacknowledgementtype)||
+|[getErrorCondition](#msageterrorcondition)||
+|[getExpectedSequenceNumber](#msagetexpectedsequencenumber)||
+|[getMessageControlID](#msagetmessagecontrolid)||
+|[getTextMessage](#msagettextmessage)||
+|[setAcknowledgmentCode](#msasetacknowledgmentcode)||
+|[setDelayedAcknowledgementType](#msasetdelayedacknowledgementtype)||
+|[setErrorCondition](#msaseterrorcondition)||
+|[setExpectedSequenceNumber](#msasetexpectedsequencenumber)||
+|[setMessageControlID](#msasetmessagecontrolid)||
+|[setTextMessage](#msasettextmessage)||
 
 ## Inherited methods
 
@@ -39,12 +40,12 @@ Aranyasen\HL7\Segment
 
 
 
-### EQU::getAlertLevel  
+### MSA::getAcknowledgmentCode  
 
 **Description**
 
 ```php
- getAlertLevel (void)
+ getAcknowledgmentCode (void)
 ```
 
  
@@ -63,12 +64,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### EQU::getEquipmentInstanceIdentifier  
+### MSA::getDelayedAcknowledgementType  
 
 **Description**
 
 ```php
- getEquipmentInstanceIdentifier (void)
+ getDelayedAcknowledgementType (void)
 ```
 
  
@@ -87,12 +88,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### EQU::getEquipmentState  
+### MSA::getErrorCondition  
 
 **Description**
 
 ```php
- getEquipmentState (void)
+ getErrorCondition (void)
 ```
 
  
@@ -111,12 +112,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### EQU::getEventDateTime  
+### MSA::getExpectedSequenceNumber  
 
 **Description**
 
 ```php
- getEventDateTime (void)
+ getExpectedSequenceNumber (void)
 ```
 
  
@@ -135,12 +136,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### EQU::getLocalRemoteControlState  
+### MSA::getMessageControlID  
 
 **Description**
 
 ```php
- getLocalRemoteControlState (void)
+ getMessageControlID (void)
 ```
 
  
@@ -159,36 +160,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### EQU::resetIndex  
+### MSA::getTextMessage  
 
 **Description**
 
 ```php
-public static resetIndex (int $index)
-```
-
-Reset index of this segment 
-
- 
-
-**Parameters**
-
-* `(int) $index`
-
-**Return Values**
-
-`void`
-
-
-<hr />
-
-
-### EQU::setAlertLevel  
-
-**Description**
-
-```php
- setAlertLevel (void)
+ getTextMessage (void)
 ```
 
  
@@ -207,12 +184,12 @@ Reset index of this segment
 <hr />
 
 
-### EQU::setEquipmentInstanceIdentifier  
+### MSA::setAcknowledgmentCode  
 
 **Description**
 
 ```php
- setEquipmentInstanceIdentifier (void)
+ setAcknowledgmentCode (void)
 ```
 
  
@@ -231,12 +208,12 @@ Reset index of this segment
 <hr />
 
 
-### EQU::setEquipmentState  
+### MSA::setDelayedAcknowledgementType  
 
 **Description**
 
 ```php
- setEquipmentState (void)
+ setDelayedAcknowledgementType (void)
 ```
 
  
@@ -255,12 +232,12 @@ Reset index of this segment
 <hr />
 
 
-### EQU::setEventDateTime  
+### MSA::setErrorCondition  
 
 **Description**
 
 ```php
- setEventDateTime (void)
+ setErrorCondition (void)
 ```
 
  
@@ -279,12 +256,60 @@ Reset index of this segment
 <hr />
 
 
-### EQU::setLocalRemoteControlState  
+### MSA::setExpectedSequenceNumber  
 
 **Description**
 
 ```php
- setLocalRemoteControlState (void)
+ setExpectedSequenceNumber (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### MSA::setMessageControlID  
+
+**Description**
+
+```php
+ setMessageControlID (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### MSA::setTextMessage  
+
+**Description**
+
+```php
+ setTextMessage (void)
 ```
 
  

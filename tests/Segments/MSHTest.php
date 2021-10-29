@@ -15,7 +15,7 @@ class MSHTest extends TestCase
         $msh = new MSH();
         self::assertSame('|', $msh->getField(1));
         self::assertSame('^~\\&', $msh->getField(2));
-        self::assertSame('2.3', $msh->getVersionId());
+        self::assertSame('2.5.1', $msh->getVersionId());
         self::assertNotEmpty($msh->getDateTimeOfMessage());
         self::assertNotEmpty($msh->getMessageControlId());
     }

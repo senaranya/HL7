@@ -6,8 +6,10 @@ use Aranyasen\HL7\Segment;
 
 /**
  * SCH segment class
- * Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-siu-message
- * http://hl7-definition.caristix.com:9010/HL7%20v2.3.1/segment/SCH
+ *
+ * The SCH segment contains general information about the scheduled appointment.
+ *
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/SCH
  */
 class SCH extends Segment
 {
@@ -141,6 +143,16 @@ class SCH extends Segment
          return $this->setField($position, $value);
     }
 
+    public function setPlacerOrderNumber($value, int $position = 26)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setFillerOrderNumber($value, int $position = 27)
+    {
+        return $this->setField($position, $value);
+    }
+
     public function getPlacerAppointmentID(int $position = 1)
     {
         return $this->getField($position);
@@ -262,6 +274,16 @@ class SCH extends Segment
     }
 
     public function getFillerStatusCode(int $position = 25)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPlacerOrderNumber(int $position = 26)
+    {
+        return $this->getField($position);
+    }
+
+    public function getFillerOrderNumber(int $position = 27)
     {
         return $this->getField($position);
     }

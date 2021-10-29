@@ -4,9 +4,115 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56419b9e24a2b25e86209b13570b8290",
+    "content-hash": "5a1299aeb62728507d780c9c638083dc",
     "packages": [],
     "packages-dev": [
+        {
+            "name": "clean/phpatlas",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clean/phpatlas.git",
+                "reference": "4e74a8e646b289768e77500127389acf69bbeb71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clean/phpatlas/zipball/4e74a8e646b289768e77500127389acf69bbeb71",
+                "reference": "4e74a8e646b289768e77500127389acf69bbeb71",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.7.27"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Clean\\PhpAtlas\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2019-12-06T08:40:56+00:00"
+        },
+        {
+            "name": "clean/phpdoc-md",
+            "version": "0.19.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clean/phpdoc-md.git",
+                "reference": "3a15f1bda437b76c6658ce34f5b52e8c5a10ada3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clean/phpdoc-md/zipball/3a15f1bda437b76c6658ce34f5b52e8c5a10ada3",
+                "reference": "3a15f1bda437b76c6658ce34f5b52e8c5a10ada3",
+                "shasum": ""
+            },
+            "require": {
+                "clean/phpatlas": "0.2.0",
+                "clean/view": "0.1.0",
+                "phpdocumentor/reflection-docblock": "^3|^4|^5"
+            },
+            "require-dev": {
+                "clean/mpr": "dev-master",
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "<6"
+            },
+            "bin": [
+                "bin/phpdoc-md"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Clean\\PhpDocMd\\": "src/"
+                },
+                "files": [
+                    "src/snippets.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Parse PHP classes and writes documentation to markdown files",
+            "keywords": [
+                "markdown",
+                "phpdoc"
+            ],
+            "time": "2020-02-25T12:57:26+00:00"
+        },
+        {
+            "name": "clean/view",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clean/view.git",
+                "reference": "34448b22810024781392d2c07564ded0e6e978ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clean/view/zipball/34448b22810024781392d2c07564ded0e6e978ef",
+                "reference": "34448b22810024781392d2c07564ded0e6e978ef",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.2.*",
+                "scrutinizer/ocular": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Clean\\View\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2015-08-04T00:09:23+00:00"
+        },
         {
             "name": "dms/phpunit-arraysubset-asserts",
             "version": "v0.2.1",
@@ -2146,11 +2252,11 @@
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.3",
-        "ext-sockets": "*",
         "ext-mbstring": "*"
     },
     "platform-dev": {
-        "ext-pcntl": "*"
+        "ext-pcntl": "*",
+        "ext-sockets": "*"
     },
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }

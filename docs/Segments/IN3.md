@@ -1,7 +1,7 @@
 # Aranyasen\HL7\Segments\IN3  
 
 IN3 segment class
-Ref: http://hl7-definition.caristix.com:9010/Default.aspx?version=HL7+v2.5.1&segment=ORC
+Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/IN3
 
 
 
@@ -13,6 +13,7 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
+|[__destruct](#in3__destruct)||
 |[getAppealReason](#in3getappealreason)||
 |[getCaseManager](#in3getcasemanager)||
 |[getCertificationAgency](#in3getcertificationagency)||
@@ -38,6 +39,7 @@ Aranyasen\HL7\Segment
 |[getSecondOpinionDocumentationReceived](#in3getsecondopiniondocumentationreceived)||
 |[getSecondOpinionPhysician](#in3getsecondopinionphysician)||
 |[getSecondOpinionStatus](#in3getsecondopinionstatus)||
+|[resetIndex](#in3resetindex)|Reset index of this segment|
 |[setAppealReason](#in3setappealreason)||
 |[setCaseManager](#in3setcasemanager)||
 |[setCertificationAgency](#in3setcertificationagency)||
@@ -69,6 +71,7 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -77,12 +80,12 @@ Aranyasen\HL7\Segment
 
 
 
-### IN3::getAppealReason  
+### IN3::__destruct  
 
 **Description**
 
 ```php
-public getAppealReason (void)
+ __destruct (void)
 ```
 
  
@@ -96,6 +99,31 @@ public getAppealReason (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### IN3::getAppealReason  
+
+**Description**
+
+```php
+ getAppealReason (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -105,7 +133,7 @@ public getAppealReason (void)
 **Description**
 
 ```php
-public getCaseManager (void)
+ getCaseManager (void)
 ```
 
  
@@ -119,6 +147,7 @@ public getCaseManager (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -128,7 +157,7 @@ public getCaseManager (void)
 **Description**
 
 ```php
-public getCertificationAgency (void)
+ getCertificationAgency (void)
 ```
 
  
@@ -142,6 +171,7 @@ public getCertificationAgency (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -151,7 +181,7 @@ public getCertificationAgency (void)
 **Description**
 
 ```php
-public getCertificationAgencyPhoneNumber (void)
+ getCertificationAgencyPhoneNumber (void)
 ```
 
  
@@ -165,6 +195,7 @@ public getCertificationAgencyPhoneNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -174,7 +205,7 @@ public getCertificationAgencyPhoneNumber (void)
 **Description**
 
 ```php
-public getCertificationBeginDate (void)
+ getCertificationBeginDate (void)
 ```
 
  
@@ -188,6 +219,7 @@ public getCertificationBeginDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -197,7 +229,7 @@ public getCertificationBeginDate (void)
 **Description**
 
 ```php
-public getCertificationContact (void)
+ getCertificationContact (void)
 ```
 
  
@@ -211,6 +243,7 @@ public getCertificationContact (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -220,7 +253,7 @@ public getCertificationContact (void)
 **Description**
 
 ```php
-public getCertificationContactPhoneNumber (void)
+ getCertificationContactPhoneNumber (void)
 ```
 
  
@@ -234,6 +267,7 @@ public getCertificationContactPhoneNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -243,7 +277,7 @@ public getCertificationContactPhoneNumber (void)
 **Description**
 
 ```php
-public getCertificationDateTime (void)
+ getCertificationDateTime (void)
 ```
 
  
@@ -257,6 +291,7 @@ public getCertificationDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -266,7 +301,7 @@ public getCertificationDateTime (void)
 **Description**
 
 ```php
-public getCertificationEndDate (void)
+ getCertificationEndDate (void)
 ```
 
  
@@ -280,6 +315,7 @@ public getCertificationEndDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -289,7 +325,7 @@ public getCertificationEndDate (void)
 **Description**
 
 ```php
-public getCertificationModifyDateTime (void)
+ getCertificationModifyDateTime (void)
 ```
 
  
@@ -303,6 +339,7 @@ public getCertificationModifyDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -312,7 +349,7 @@ public getCertificationModifyDateTime (void)
 **Description**
 
 ```php
-public getCertificationNumber (void)
+ getCertificationNumber (void)
 ```
 
  
@@ -326,6 +363,7 @@ public getCertificationNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -335,7 +373,7 @@ public getCertificationNumber (void)
 **Description**
 
 ```php
-public getCertificationRequired (void)
+ getCertificationRequired (void)
 ```
 
  
@@ -349,6 +387,7 @@ public getCertificationRequired (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -358,7 +397,7 @@ public getCertificationRequired (void)
 **Description**
 
 ```php
-public getCertifiedBy (void)
+ getCertifiedBy (void)
 ```
 
  
@@ -372,6 +411,7 @@ public getCertifiedBy (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -381,7 +421,7 @@ public getCertifiedBy (void)
 **Description**
 
 ```php
-public getDays (void)
+ getDays (void)
 ```
 
  
@@ -395,6 +435,7 @@ public getDays (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -404,7 +445,7 @@ public getDays (void)
 **Description**
 
 ```php
-public getID (void)
+ getID (void)
 ```
 
  
@@ -418,6 +459,7 @@ public getID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -427,7 +469,7 @@ public getID (void)
 **Description**
 
 ```php
-public getNonConcurCodeDescription (void)
+ getNonConcurCodeDescription (void)
 ```
 
  
@@ -441,6 +483,7 @@ public getNonConcurCodeDescription (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -450,7 +493,7 @@ public getNonConcurCodeDescription (void)
 **Description**
 
 ```php
-public getNonConcurEffectiveDateTime (void)
+ getNonConcurEffectiveDateTime (void)
 ```
 
  
@@ -464,6 +507,7 @@ public getNonConcurEffectiveDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -473,7 +517,7 @@ public getNonConcurEffectiveDateTime (void)
 **Description**
 
 ```php
-public getOperator (void)
+ getOperator (void)
 ```
 
  
@@ -487,6 +531,7 @@ public getOperator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -496,7 +541,7 @@ public getOperator (void)
 **Description**
 
 ```php
-public getPenalty (void)
+ getPenalty (void)
 ```
 
  
@@ -510,6 +555,7 @@ public getPenalty (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -519,7 +565,7 @@ public getPenalty (void)
 **Description**
 
 ```php
-public getPhysicianReviewer (void)
+ getPhysicianReviewer (void)
 ```
 
  
@@ -533,6 +579,7 @@ public getPhysicianReviewer (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -542,7 +589,7 @@ public getPhysicianReviewer (void)
 **Description**
 
 ```php
-public getPreCertificationRequirement (void)
+ getPreCertificationRequirement (void)
 ```
 
  
@@ -556,6 +603,7 @@ public getPreCertificationRequirement (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -565,7 +613,7 @@ public getPreCertificationRequirement (void)
 **Description**
 
 ```php
-public getSecondOpinionDate (void)
+ getSecondOpinionDate (void)
 ```
 
  
@@ -579,6 +627,7 @@ public getSecondOpinionDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -588,7 +637,7 @@ public getSecondOpinionDate (void)
 **Description**
 
 ```php
-public getSecondOpinionDocumentationReceived (void)
+ getSecondOpinionDocumentationReceived (void)
 ```
 
  
@@ -602,6 +651,7 @@ public getSecondOpinionDocumentationReceived (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -611,7 +661,7 @@ public getSecondOpinionDocumentationReceived (void)
 **Description**
 
 ```php
-public getSecondOpinionPhysician (void)
+ getSecondOpinionPhysician (void)
 ```
 
  
@@ -625,6 +675,7 @@ public getSecondOpinionPhysician (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -634,7 +685,7 @@ public getSecondOpinionPhysician (void)
 **Description**
 
 ```php
-public getSecondOpinionStatus (void)
+ getSecondOpinionStatus (void)
 ```
 
  
@@ -648,6 +699,31 @@ public getSecondOpinionStatus (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### IN3::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (int $index)
+```
+
+Reset index of this segment 
+
+ 
+
+**Parameters**
+
+* `(int) $index`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -657,7 +733,7 @@ public getSecondOpinionStatus (void)
 **Description**
 
 ```php
-public setAppealReason (void)
+ setAppealReason (void)
 ```
 
  
@@ -671,6 +747,7 @@ public setAppealReason (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -680,7 +757,7 @@ public setAppealReason (void)
 **Description**
 
 ```php
-public setCaseManager (void)
+ setCaseManager (void)
 ```
 
  
@@ -694,6 +771,7 @@ public setCaseManager (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -703,7 +781,7 @@ public setCaseManager (void)
 **Description**
 
 ```php
-public setCertificationAgency (void)
+ setCertificationAgency (void)
 ```
 
  
@@ -717,6 +795,7 @@ public setCertificationAgency (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -726,7 +805,7 @@ public setCertificationAgency (void)
 **Description**
 
 ```php
-public setCertificationAgencyPhoneNumber (void)
+ setCertificationAgencyPhoneNumber (void)
 ```
 
  
@@ -740,6 +819,7 @@ public setCertificationAgencyPhoneNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -749,7 +829,7 @@ public setCertificationAgencyPhoneNumber (void)
 **Description**
 
 ```php
-public setCertificationBeginDate (void)
+ setCertificationBeginDate (void)
 ```
 
  
@@ -763,6 +843,7 @@ public setCertificationBeginDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -772,7 +853,7 @@ public setCertificationBeginDate (void)
 **Description**
 
 ```php
-public setCertificationContact (void)
+ setCertificationContact (void)
 ```
 
  
@@ -786,6 +867,7 @@ public setCertificationContact (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -795,7 +877,7 @@ public setCertificationContact (void)
 **Description**
 
 ```php
-public setCertificationContactPhoneNumber (void)
+ setCertificationContactPhoneNumber (void)
 ```
 
  
@@ -809,6 +891,7 @@ public setCertificationContactPhoneNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -818,7 +901,7 @@ public setCertificationContactPhoneNumber (void)
 **Description**
 
 ```php
-public setCertificationDateTime (void)
+ setCertificationDateTime (void)
 ```
 
  
@@ -832,6 +915,7 @@ public setCertificationDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -841,7 +925,7 @@ public setCertificationDateTime (void)
 **Description**
 
 ```php
-public setCertificationEndDate (void)
+ setCertificationEndDate (void)
 ```
 
  
@@ -855,6 +939,7 @@ public setCertificationEndDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -864,7 +949,7 @@ public setCertificationEndDate (void)
 **Description**
 
 ```php
-public setCertificationModifyDateTime (void)
+ setCertificationModifyDateTime (void)
 ```
 
  
@@ -878,6 +963,7 @@ public setCertificationModifyDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -887,7 +973,7 @@ public setCertificationModifyDateTime (void)
 **Description**
 
 ```php
-public setCertificationNumber (void)
+ setCertificationNumber (void)
 ```
 
  
@@ -901,6 +987,7 @@ public setCertificationNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -910,7 +997,7 @@ public setCertificationNumber (void)
 **Description**
 
 ```php
-public setCertificationRequired (void)
+ setCertificationRequired (void)
 ```
 
  
@@ -924,6 +1011,7 @@ public setCertificationRequired (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -933,7 +1021,7 @@ public setCertificationRequired (void)
 **Description**
 
 ```php
-public setCertifiedBy (void)
+ setCertifiedBy (void)
 ```
 
  
@@ -947,6 +1035,7 @@ public setCertifiedBy (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -956,7 +1045,7 @@ public setCertifiedBy (void)
 **Description**
 
 ```php
-public setDays (void)
+ setDays (void)
 ```
 
  
@@ -970,6 +1059,7 @@ public setDays (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -979,7 +1069,7 @@ public setDays (void)
 **Description**
 
 ```php
-public setID (void)
+ setID (void)
 ```
 
  
@@ -993,6 +1083,7 @@ public setID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1002,7 +1093,7 @@ public setID (void)
 **Description**
 
 ```php
-public setNonConcurCodeDescription (void)
+ setNonConcurCodeDescription (void)
 ```
 
  
@@ -1016,6 +1107,7 @@ public setNonConcurCodeDescription (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1025,7 +1117,7 @@ public setNonConcurCodeDescription (void)
 **Description**
 
 ```php
-public setNonConcurEffectiveDateTime (void)
+ setNonConcurEffectiveDateTime (void)
 ```
 
  
@@ -1039,6 +1131,7 @@ public setNonConcurEffectiveDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1048,7 +1141,7 @@ public setNonConcurEffectiveDateTime (void)
 **Description**
 
 ```php
-public setOperator (void)
+ setOperator (void)
 ```
 
  
@@ -1062,6 +1155,7 @@ public setOperator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1071,7 +1165,7 @@ public setOperator (void)
 **Description**
 
 ```php
-public setPenalty (void)
+ setPenalty (void)
 ```
 
  
@@ -1085,6 +1179,7 @@ public setPenalty (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1094,7 +1189,7 @@ public setPenalty (void)
 **Description**
 
 ```php
-public setPhysicianReviewer (void)
+ setPhysicianReviewer (void)
 ```
 
  
@@ -1108,6 +1203,7 @@ public setPhysicianReviewer (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1117,7 +1213,7 @@ public setPhysicianReviewer (void)
 **Description**
 
 ```php
-public setPreCertificationRequirement (void)
+ setPreCertificationRequirement (void)
 ```
 
  
@@ -1131,6 +1227,7 @@ public setPreCertificationRequirement (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1140,7 +1237,7 @@ public setPreCertificationRequirement (void)
 **Description**
 
 ```php
-public setSecondOpinionDate (void)
+ setSecondOpinionDate (void)
 ```
 
  
@@ -1154,6 +1251,7 @@ public setSecondOpinionDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1163,7 +1261,7 @@ public setSecondOpinionDate (void)
 **Description**
 
 ```php
-public setSecondOpinionDocumentationReceived (void)
+ setSecondOpinionDocumentationReceived (void)
 ```
 
  
@@ -1177,6 +1275,7 @@ public setSecondOpinionDocumentationReceived (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1186,7 +1285,7 @@ public setSecondOpinionDocumentationReceived (void)
 **Description**
 
 ```php
-public setSecondOpinionPhysician (void)
+ setSecondOpinionPhysician (void)
 ```
 
  
@@ -1200,6 +1299,7 @@ public setSecondOpinionPhysician (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1209,7 +1309,7 @@ public setSecondOpinionPhysician (void)
 **Description**
 
 ```php
-public setSecondOpinionStatus (void)
+ setSecondOpinionStatus (void)
 ```
 
  
@@ -1223,6 +1323,7 @@ public setSecondOpinionStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 

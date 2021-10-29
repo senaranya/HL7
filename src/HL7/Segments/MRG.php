@@ -6,7 +6,7 @@ use Aranyasen\HL7\Segment;
 
 /**
  * MRG segment class
- * Ref: http://hl7-definition.caristix.com:9010/HL7%20v2.3.1/segment/MRG
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/MRG
  */
 class MRG extends Segment
 {

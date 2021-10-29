@@ -133,6 +133,16 @@ class DG1 extends Segment
         return $this->setField($position, $value);
     }
 
+    public function setDiagnosisIdentifier($value, int $position = 20)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setDiagnosisActionCode($value, int $position = 21)
+    {
+        return $this->setField($position, $value);
+    }
+
     public function getID(int $position = 1)
     {
         return $this->getField($position);
@@ -224,6 +234,16 @@ class DG1 extends Segment
     }
 
     public function getAttestationDateTime(int $position = 19)
+    {
+        return $this->getField($position);
+    }
+
+    public function getDiagnosisIdentifier(int $position = 20)
+    {
+        return $this->getField($position);
+    }
+
+    public function getDiagnosisActionCode(int $position = 21)
     {
         return $this->getField($position);
     }

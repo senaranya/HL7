@@ -6,7 +6,7 @@ use Aranyasen\HL7\Segment;
 
 /**
  * NTE segment class
- * Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-nte-notes-comments
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/NTE
  */
 class NTE extends Segment
 {

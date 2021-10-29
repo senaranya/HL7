@@ -15,7 +15,7 @@ use Aranyasen\HL7\Segment;
 * on a schedule request using this segment. Location resources are identified with this specific segment because of the
 * specific encoding of locations used by the HL7 specification.
 
- * Ref: http://hl7-definition.caristix.com:9010/Default.aspx?version=HL7+v2.5.1&segment=AIL
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/AIL
  */
 class AIL extends Segment
 {

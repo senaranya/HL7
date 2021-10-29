@@ -81,7 +81,7 @@ class Message
         $this->subcomponentSeparator = $hl7Globals['SUBCOMPONENT_SEPARATOR'] ?? '&';
         $this->repetitionSeparator = $hl7Globals['REPETITION_SEPARATOR'] ?? '~';
         $this->escapeChar = $hl7Globals['ESCAPE_CHAR'] ?? '\\';
-        $this->hl7Version = $hl7Globals['HL7_VERSION'] ?? '2.3';
+        $this->hl7Version = $hl7Globals['HL7_VERSION'] ?? '2.5.1';
 
         $this->doNotSplitRepetition = $doNotSplitRepetition;
 

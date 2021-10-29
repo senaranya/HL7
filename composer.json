@@ -21,7 +21,8 @@
         "phpunit/phpunit": "^9",
         "dms/phpunit-arraysubset-asserts": "^0.2",
         "ext-pcntl": "*",
-        "ext-sockets": "*"
+        "ext-sockets": "*",
+        "clean/phpdoc-md": "^0.19.1"
     },
     "autoload": {
         "psr-4": {

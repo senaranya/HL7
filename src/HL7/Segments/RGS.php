@@ -6,7 +6,19 @@ use Aranyasen\HL7\Segment;
 
 /**
  * RGS segment class
- * Ref: http://hl7-definition.caristix.com:9010/Default.aspx?version=HL7+v2.5.1&segment=RGS
+ *
+ * RGS - Resource group segment
+ * The RGS segment is used to identify relationships between resources identified for a scheduled event.
+ * This segment can be used, on a site specified basis, to identify groups of resources that are used together
+ * within a scheduled event, or to describe some other relationship between resources. To specify related groups
+ * of resources within a message, begin each group with an RGS segment, and then follow that RGS with one or more
+ * of the Appointment Information segments (AIG, AIL, AIS, or AIP).
+ *
+ * If a message does not require any grouping of resources, then specify a single RGS in the message, and follow it
+ * with all of the Appointment Information segments for the scheduled event. (At least one RGS segment is required in
+ * each message – even if no grouping of resources is required – to allow parsers to properly understand the message.)
+ *
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/RGS
  */
 class RGS extends Segment
 {

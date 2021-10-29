@@ -6,7 +6,7 @@ use Aranyasen\HL7\Segment;
 
 /**
  * EQU segment class
- * Ref: https://www.interfaceware.com/hl7-standard/hl7-segment-EQU.html
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/EQU
  */
 class EQU extends Segment
 {

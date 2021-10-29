@@ -6,7 +6,7 @@ use Aranyasen\HL7\Segment;
 
 /**
  * IN3 segment class
- * Ref: http://hl7-definition.caristix.com:9010/Default.aspx?version=HL7+v2.5.1&segment=ORC
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/IN3
  */
 class IN3 extends Segment
 {

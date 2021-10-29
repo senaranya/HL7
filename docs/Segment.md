@@ -11,6 +11,7 @@
 | Name | Description |
 |------|-------------|
 |[__construct](#segment__construct)|Create a segment.|
+|[clearField](#segmentclearfield)|Remove any existing value from the field|
 |[getField](#segmentgetfield)|Get the field at index.|
 |[getFields](#segmentgetfields)|Get fields from a segment|
 |[getName](#segmentgetname)|Get the name of the segment. This is basically the value at index 0|
@@ -55,6 +56,40 @@ echo $seg->getField(1);
 
 `void`
 
+
+**Throws Exceptions**
+
+
+`\InvalidArgumentException`
+
+
+<hr />
+
+
+### Segment::clearField  
+
+**Description**
+
+```php
+public clearField (int $index)
+```
+
+Remove any existing value from the field 
+
+ 
+
+**Parameters**
+
+* `(int) $index`
+: Field index  
+
+**Return Values**
+
+`void`
+
+
+
+
 <hr />
 
 
@@ -85,6 +120,7 @@ $field = $seg->getField(9); // Returns a string/null/array depending on what the
 
 > The value of the field
 
+
 <hr />
 
 
@@ -114,6 +150,7 @@ fields from this index till the end of the segment will be returned.
 
 > List of fields
 
+
 <hr />
 
 
@@ -138,6 +175,7 @@ Get the name of the segment. This is basically the value at index 0
 `mixed`
 
 > Name of segment
+
 
 <hr />
 
@@ -175,7 +213,8 @@ If values are not provided at all, the method will just return.
 
 **Return Values**
 
-`boolean`
+`bool`
+
 
 
 
@@ -203,6 +242,7 @@ Get the number of fields for this segment, not including the name
 `int`
 
 > number of fields
+
 
 <hr />
 
