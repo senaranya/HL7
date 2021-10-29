@@ -1,7 +1,6 @@
 # Aranyasen\HL7\Segments\SAC  
 
-SAC segment class
-Ref: https://www.interfaceware.com/hl7-standard/hl7-segment-SAC.html
+
 
 
 
@@ -108,6 +107,7 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|

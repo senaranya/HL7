@@ -1,6 +1,7 @@
 # Aranyasen\HL7\Segments\PID  
 
 PID segment class
+Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/PID
 
 
 
@@ -12,15 +13,21 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
+|[__destruct](#pid__destruct)||
 |[getAlternatePatientID](#pidgetalternatepatientid)||
 |[getBirthOrder](#pidgetbirthorder)||
 |[getBirthPlace](#pidgetbirthplace)||
+|[getBreedCode](#pidgetbreedcode)||
 |[getCitizenship](#pidgetcitizenship)||
 |[getCountryCode](#pidgetcountrycode)||
 |[getDateTimeOfBirth](#pidgetdatetimeofbirth)||
 |[getDriversLicenseNumber](#pidgetdriverslicensenumber)||
 |[getEthnicGroup](#pidgetethnicgroup)||
 |[getID](#pidgetid)||
+|[getIdentityReliabilityCode](#pidgetidentityreliabilitycode)||
+|[getIdentityUnknownIndicator](#pidgetidentityunknownindicator)||
+|[getLastUpdateDateTime](#pidgetlastupdatedatetime)||
+|[getLastUpdateFacility](#pidgetlastupdatefacility)||
 |[getMaritalStatus](#pidgetmaritalstatus)||
 |[getMothersIdentifier](#pidgetmothersidentifier)||
 |[getMothersMaidenName](#pidgetmothersmaidenname)||
@@ -37,20 +44,30 @@ Aranyasen\HL7\Segment
 |[getPhoneNumberBusiness](#pidgetphonenumberbusiness)||
 |[getPhoneNumberHome](#pidgetphonenumberhome)||
 |[getPrimaryLanguage](#pidgetprimarylanguage)||
+|[getProductionClassCode](#pidgetproductionclasscode)||
 |[getRace](#pidgetrace)||
 |[getReligion](#pidgetreligion)||
 |[getSSNNumber](#pidgetssnnumber)||
 |[getSex](#pidgetsex)||
+|[getSpeciesCode](#pidgetspeciescode)||
+|[getStrain](#pidgetstrain)||
+|[getTribalCitizenship](#pidgettribalcitizenship)||
 |[getVeteransMilitaryStatus](#pidgetveteransmilitarystatus)||
+|[resetIndex](#pidresetindex)|Reset index of this segment|
 |[setAlternatePatientID](#pidsetalternatepatientid)||
 |[setBirthOrder](#pidsetbirthorder)||
 |[setBirthPlace](#pidsetbirthplace)||
+|[setBreedCode](#pidsetbreedcode)||
 |[setCitizenship](#pidsetcitizenship)||
 |[setCountryCode](#pidsetcountrycode)||
 |[setDateTimeOfBirth](#pidsetdatetimeofbirth)||
 |[setDriversLicenseNumber](#pidsetdriverslicensenumber)||
 |[setEthnicGroup](#pidsetethnicgroup)||
 |[setID](#pidsetid)||
+|[setIdentityReliabilityCode](#pidsetidentityreliabilitycode)||
+|[setIdentityUnknownIndicator](#pidsetidentityunknownindicator)||
+|[setLastUpdateDateTime](#pidsetlastupdatedatetime)||
+|[setLastUpdateFacility](#pidsetlastupdatefacility)||
 |[setMaritalStatus](#pidsetmaritalstatus)||
 |[setMothersIdentifier](#pidsetmothersidentifier)||
 |[setMothersMaidenName](#pidsetmothersmaidenname)||
@@ -67,10 +84,14 @@ Aranyasen\HL7\Segment
 |[setPhoneNumberBusiness](#pidsetphonenumberbusiness)||
 |[setPhoneNumberHome](#pidsetphonenumberhome)||
 |[setPrimaryLanguage](#pidsetprimarylanguage)||
+|[setProductionClassCode](#pidsetproductionclasscode)||
 |[setRace](#pidsetrace)||
 |[setReligion](#pidsetreligion)||
 |[setSSNNumber](#pidsetssnnumber)||
 |[setSex](#pidsetsex)||
+|[setSpeciesCode](#pidsetspeciescode)||
+|[setStrain](#pidsetstrain)||
+|[setTribalCitizenship](#pidsettribalcitizenship)||
 |[setVeteransMilitaryStatus](#pidsetveteransmilitarystatus)||
 
 ## Inherited methods
@@ -78,6 +99,7 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -86,12 +108,12 @@ Aranyasen\HL7\Segment
 
 
 
-### PID::getAlternatePatientID  
+### PID::__destruct  
 
 **Description**
 
 ```php
-public getAlternatePatientID (void)
+ __destruct (void)
 ```
 
  
@@ -105,6 +127,31 @@ public getAlternatePatientID (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### PID::getAlternatePatientID  
+
+**Description**
+
+```php
+ getAlternatePatientID (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -114,7 +161,7 @@ public getAlternatePatientID (void)
 **Description**
 
 ```php
-public getBirthOrder (void)
+ getBirthOrder (void)
 ```
 
  
@@ -128,6 +175,7 @@ public getBirthOrder (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -137,7 +185,7 @@ public getBirthOrder (void)
 **Description**
 
 ```php
-public getBirthPlace (void)
+ getBirthPlace (void)
 ```
 
  
@@ -151,6 +199,31 @@ public getBirthPlace (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### PID::getBreedCode  
+
+**Description**
+
+```php
+ getBreedCode (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -160,7 +233,7 @@ public getBirthPlace (void)
 **Description**
 
 ```php
-public getCitizenship (void)
+ getCitizenship (void)
 ```
 
  
@@ -174,6 +247,7 @@ public getCitizenship (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -183,7 +257,7 @@ public getCitizenship (void)
 **Description**
 
 ```php
-public getCountryCode (void)
+ getCountryCode (void)
 ```
 
  
@@ -197,6 +271,7 @@ public getCountryCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -206,7 +281,7 @@ public getCountryCode (void)
 **Description**
 
 ```php
-public getDateTimeOfBirth (void)
+ getDateTimeOfBirth (void)
 ```
 
  
@@ -220,6 +295,7 @@ public getDateTimeOfBirth (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -229,7 +305,7 @@ public getDateTimeOfBirth (void)
 **Description**
 
 ```php
-public getDriversLicenseNumber (void)
+ getDriversLicenseNumber (void)
 ```
 
  
@@ -243,6 +319,7 @@ public getDriversLicenseNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -252,7 +329,7 @@ public getDriversLicenseNumber (void)
 **Description**
 
 ```php
-public getEthnicGroup (void)
+ getEthnicGroup (void)
 ```
 
  
@@ -266,6 +343,7 @@ public getEthnicGroup (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -275,7 +353,7 @@ public getEthnicGroup (void)
 **Description**
 
 ```php
-public getID (void)
+ getID (void)
 ```
 
  
@@ -289,6 +367,103 @@ public getID (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### PID::getIdentityReliabilityCode  
+
+**Description**
+
+```php
+ getIdentityReliabilityCode (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### PID::getIdentityUnknownIndicator  
+
+**Description**
+
+```php
+ getIdentityUnknownIndicator (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### PID::getLastUpdateDateTime  
+
+**Description**
+
+```php
+ getLastUpdateDateTime (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### PID::getLastUpdateFacility  
+
+**Description**
+
+```php
+ getLastUpdateFacility (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -298,7 +473,7 @@ public getID (void)
 **Description**
 
 ```php
-public getMaritalStatus (void)
+ getMaritalStatus (void)
 ```
 
  
@@ -312,6 +487,7 @@ public getMaritalStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -321,7 +497,7 @@ public getMaritalStatus (void)
 **Description**
 
 ```php
-public getMothersIdentifier (void)
+ getMothersIdentifier (void)
 ```
 
  
@@ -335,6 +511,7 @@ public getMothersIdentifier (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -344,7 +521,7 @@ public getMothersIdentifier (void)
 **Description**
 
 ```php
-public getMothersMaidenName (void)
+ getMothersMaidenName (void)
 ```
 
  
@@ -358,6 +535,7 @@ public getMothersMaidenName (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -367,7 +545,7 @@ public getMothersMaidenName (void)
 **Description**
 
 ```php
-public getMultipleBirthIndicator (void)
+ getMultipleBirthIndicator (void)
 ```
 
  
@@ -381,6 +559,7 @@ public getMultipleBirthIndicator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -390,7 +569,7 @@ public getMultipleBirthIndicator (void)
 **Description**
 
 ```php
-public getNationality (void)
+ getNationality (void)
 ```
 
  
@@ -404,6 +583,7 @@ public getNationality (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -413,7 +593,7 @@ public getNationality (void)
 **Description**
 
 ```php
-public getPatientAccountNumber (void)
+ getPatientAccountNumber (void)
 ```
 
  
@@ -427,6 +607,7 @@ public getPatientAccountNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -436,7 +617,7 @@ public getPatientAccountNumber (void)
 **Description**
 
 ```php
-public getPatientAddress (void)
+ getPatientAddress (void)
 ```
 
  
@@ -450,6 +631,7 @@ public getPatientAddress (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -459,7 +641,7 @@ public getPatientAddress (void)
 **Description**
 
 ```php
-public getPatientAlias (void)
+ getPatientAlias (void)
 ```
 
  
@@ -473,6 +655,7 @@ public getPatientAlias (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -482,7 +665,7 @@ public getPatientAlias (void)
 **Description**
 
 ```php
-public getPatientDeathDateAndTime (void)
+ getPatientDeathDateAndTime (void)
 ```
 
  
@@ -496,6 +679,7 @@ public getPatientDeathDateAndTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -505,7 +689,7 @@ public getPatientDeathDateAndTime (void)
 **Description**
 
 ```php
-public getPatientDeathIndicator (void)
+ getPatientDeathIndicator (void)
 ```
 
  
@@ -519,6 +703,7 @@ public getPatientDeathIndicator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -528,7 +713,7 @@ public getPatientDeathIndicator (void)
 **Description**
 
 ```php
-public getPatientID (void)
+ getPatientID (void)
 ```
 
  
@@ -542,6 +727,7 @@ public getPatientID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -568,6 +754,7 @@ Patient ID (Internal ID)
 
 
 
+
 <hr />
 
 
@@ -576,7 +763,7 @@ Patient ID (Internal ID)
 **Description**
 
 ```php
-public getPatientName (void)
+ getPatientName (void)
 ```
 
  
@@ -590,6 +777,7 @@ public getPatientName (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -599,7 +787,7 @@ public getPatientName (void)
 **Description**
 
 ```php
-public getPhoneNumberBusiness (void)
+ getPhoneNumberBusiness (void)
 ```
 
  
@@ -613,6 +801,7 @@ public getPhoneNumberBusiness (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -622,7 +811,7 @@ public getPhoneNumberBusiness (void)
 **Description**
 
 ```php
-public getPhoneNumberHome (void)
+ getPhoneNumberHome (void)
 ```
 
  
@@ -636,6 +825,7 @@ public getPhoneNumberHome (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -645,7 +835,7 @@ public getPhoneNumberHome (void)
 **Description**
 
 ```php
-public getPrimaryLanguage (void)
+ getPrimaryLanguage (void)
 ```
 
  
@@ -659,6 +849,31 @@ public getPrimaryLanguage (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### PID::getProductionClassCode  
+
+**Description**
+
+```php
+ getProductionClassCode (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -668,7 +883,7 @@ public getPrimaryLanguage (void)
 **Description**
 
 ```php
-public getRace (void)
+ getRace (void)
 ```
 
  
@@ -682,6 +897,7 @@ public getRace (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -691,7 +907,7 @@ public getRace (void)
 **Description**
 
 ```php
-public getReligion (void)
+ getReligion (void)
 ```
 
  
@@ -705,6 +921,7 @@ public getReligion (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -714,7 +931,7 @@ public getReligion (void)
 **Description**
 
 ```php
-public getSSNNumber (void)
+ getSSNNumber (void)
 ```
 
  
@@ -728,6 +945,7 @@ public getSSNNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -737,7 +955,7 @@ public getSSNNumber (void)
 **Description**
 
 ```php
-public getSex (void)
+ getSex (void)
 ```
 
  
@@ -751,6 +969,79 @@ public getSex (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### PID::getSpeciesCode  
+
+**Description**
+
+```php
+ getSpeciesCode (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### PID::getStrain  
+
+**Description**
+
+```php
+ getStrain (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### PID::getTribalCitizenship  
+
+**Description**
+
+```php
+ getTribalCitizenship (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -760,7 +1051,7 @@ public getSex (void)
 **Description**
 
 ```php
-public getVeteransMilitaryStatus (void)
+ getVeteransMilitaryStatus (void)
 ```
 
  
@@ -774,6 +1065,31 @@ public getVeteransMilitaryStatus (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### PID::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (int $index)
+```
+
+Reset index of this segment 
+
+ 
+
+**Parameters**
+
+* `(int) $index`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -783,7 +1099,7 @@ public getVeteransMilitaryStatus (void)
 **Description**
 
 ```php
-public setAlternatePatientID (void)
+ setAlternatePatientID (void)
 ```
 
  
@@ -797,6 +1113,7 @@ public setAlternatePatientID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -806,7 +1123,7 @@ public setAlternatePatientID (void)
 **Description**
 
 ```php
-public setBirthOrder (void)
+ setBirthOrder (void)
 ```
 
  
@@ -820,6 +1137,7 @@ public setBirthOrder (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -829,7 +1147,7 @@ public setBirthOrder (void)
 **Description**
 
 ```php
-public setBirthPlace (void)
+ setBirthPlace (void)
 ```
 
  
@@ -843,6 +1161,31 @@ public setBirthPlace (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### PID::setBreedCode  
+
+**Description**
+
+```php
+ setBreedCode (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -852,7 +1195,7 @@ public setBirthPlace (void)
 **Description**
 
 ```php
-public setCitizenship (void)
+ setCitizenship (void)
 ```
 
  
@@ -866,6 +1209,7 @@ public setCitizenship (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -875,7 +1219,7 @@ public setCitizenship (void)
 **Description**
 
 ```php
-public setCountryCode (void)
+ setCountryCode (void)
 ```
 
  
@@ -889,6 +1233,7 @@ public setCountryCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -898,7 +1243,7 @@ public setCountryCode (void)
 **Description**
 
 ```php
-public setDateTimeOfBirth (void)
+ setDateTimeOfBirth (void)
 ```
 
  
@@ -912,6 +1257,7 @@ public setDateTimeOfBirth (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -921,7 +1267,7 @@ public setDateTimeOfBirth (void)
 **Description**
 
 ```php
-public setDriversLicenseNumber (void)
+ setDriversLicenseNumber (void)
 ```
 
  
@@ -935,6 +1281,7 @@ public setDriversLicenseNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -944,7 +1291,7 @@ public setDriversLicenseNumber (void)
 **Description**
 
 ```php
-public setEthnicGroup (void)
+ setEthnicGroup (void)
 ```
 
  
@@ -958,6 +1305,7 @@ public setEthnicGroup (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -967,7 +1315,7 @@ public setEthnicGroup (void)
 **Description**
 
 ```php
-public setID (void)
+ setID (void)
 ```
 
  
@@ -981,6 +1329,103 @@ public setID (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### PID::setIdentityReliabilityCode  
+
+**Description**
+
+```php
+ setIdentityReliabilityCode (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### PID::setIdentityUnknownIndicator  
+
+**Description**
+
+```php
+ setIdentityUnknownIndicator (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### PID::setLastUpdateDateTime  
+
+**Description**
+
+```php
+ setLastUpdateDateTime (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### PID::setLastUpdateFacility  
+
+**Description**
+
+```php
+ setLastUpdateFacility (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -990,7 +1435,7 @@ public setID (void)
 **Description**
 
 ```php
-public setMaritalStatus (void)
+ setMaritalStatus (void)
 ```
 
  
@@ -1004,6 +1449,7 @@ public setMaritalStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1013,7 +1459,7 @@ public setMaritalStatus (void)
 **Description**
 
 ```php
-public setMothersIdentifier (void)
+ setMothersIdentifier (void)
 ```
 
  
@@ -1027,6 +1473,7 @@ public setMothersIdentifier (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1036,7 +1483,7 @@ public setMothersIdentifier (void)
 **Description**
 
 ```php
-public setMothersMaidenName (void)
+ setMothersMaidenName (void)
 ```
 
  
@@ -1050,6 +1497,7 @@ public setMothersMaidenName (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1059,7 +1507,7 @@ public setMothersMaidenName (void)
 **Description**
 
 ```php
-public setMultipleBirthIndicator (void)
+ setMultipleBirthIndicator (void)
 ```
 
  
@@ -1073,6 +1521,7 @@ public setMultipleBirthIndicator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1082,7 +1531,7 @@ public setMultipleBirthIndicator (void)
 **Description**
 
 ```php
-public setNationality (void)
+ setNationality (void)
 ```
 
  
@@ -1096,6 +1545,7 @@ public setNationality (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1105,7 +1555,7 @@ public setNationality (void)
 **Description**
 
 ```php
-public setPatientAccountNumber (void)
+ setPatientAccountNumber (void)
 ```
 
  
@@ -1119,6 +1569,7 @@ public setPatientAccountNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1128,7 +1579,7 @@ public setPatientAccountNumber (void)
 **Description**
 
 ```php
-public setPatientAddress (void)
+ setPatientAddress (void)
 ```
 
  
@@ -1142,6 +1593,7 @@ public setPatientAddress (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1151,7 +1603,7 @@ public setPatientAddress (void)
 **Description**
 
 ```php
-public setPatientAlias (void)
+ setPatientAlias (void)
 ```
 
  
@@ -1165,6 +1617,7 @@ public setPatientAlias (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1174,7 +1627,7 @@ public setPatientAlias (void)
 **Description**
 
 ```php
-public setPatientDeathDateAndTime (void)
+ setPatientDeathDateAndTime (void)
 ```
 
  
@@ -1188,6 +1641,7 @@ public setPatientDeathDateAndTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1197,7 +1651,7 @@ public setPatientDeathDateAndTime (void)
 **Description**
 
 ```php
-public setPatientDeathIndicator (void)
+ setPatientDeathIndicator (void)
 ```
 
  
@@ -1211,6 +1665,7 @@ public setPatientDeathIndicator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1220,7 +1675,7 @@ public setPatientDeathIndicator (void)
 **Description**
 
 ```php
-public setPatientID (void)
+ setPatientID (void)
 ```
 
  
@@ -1234,6 +1689,7 @@ public setPatientID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1261,6 +1717,7 @@ Patient ID (Internal ID)
 
 
 
+
 <hr />
 
 
@@ -1269,7 +1726,7 @@ Patient ID (Internal ID)
 **Description**
 
 ```php
-public setPatientName (void)
+ setPatientName (void)
 ```
 
  
@@ -1283,6 +1740,7 @@ public setPatientName (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1292,7 +1750,7 @@ public setPatientName (void)
 **Description**
 
 ```php
-public setPhoneNumberBusiness (void)
+ setPhoneNumberBusiness (void)
 ```
 
  
@@ -1306,6 +1764,7 @@ public setPhoneNumberBusiness (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1315,7 +1774,7 @@ public setPhoneNumberBusiness (void)
 **Description**
 
 ```php
-public setPhoneNumberHome (void)
+ setPhoneNumberHome (void)
 ```
 
  
@@ -1329,6 +1788,7 @@ public setPhoneNumberHome (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1338,7 +1798,7 @@ public setPhoneNumberHome (void)
 **Description**
 
 ```php
-public setPrimaryLanguage (void)
+ setPrimaryLanguage (void)
 ```
 
  
@@ -1352,6 +1812,31 @@ public setPrimaryLanguage (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### PID::setProductionClassCode  
+
+**Description**
+
+```php
+ setProductionClassCode (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -1361,7 +1846,7 @@ public setPrimaryLanguage (void)
 **Description**
 
 ```php
-public setRace (void)
+ setRace (void)
 ```
 
  
@@ -1375,6 +1860,7 @@ public setRace (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1384,7 +1870,7 @@ public setRace (void)
 **Description**
 
 ```php
-public setReligion (void)
+ setReligion (void)
 ```
 
  
@@ -1398,6 +1884,7 @@ public setReligion (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1407,7 +1894,7 @@ public setReligion (void)
 **Description**
 
 ```php
-public setSSNNumber (void)
+ setSSNNumber (void)
 ```
 
  
@@ -1421,6 +1908,7 @@ public setSSNNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1430,7 +1918,7 @@ public setSSNNumber (void)
 **Description**
 
 ```php
-public setSex (void)
+ setSex (void)
 ```
 
  
@@ -1444,6 +1932,79 @@ public setSex (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### PID::setSpeciesCode  
+
+**Description**
+
+```php
+ setSpeciesCode (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### PID::setStrain  
+
+**Description**
+
+```php
+ setStrain (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### PID::setTribalCitizenship  
+
+**Description**
+
+```php
+ setTribalCitizenship (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -1453,7 +2014,7 @@ public setSex (void)
 **Description**
 
 ```php
-public setVeteransMilitaryStatus (void)
+ setVeteransMilitaryStatus (void)
 ```
 
  
@@ -1467,6 +2028,7 @@ public setVeteransMilitaryStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 

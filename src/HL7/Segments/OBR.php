@@ -6,7 +6,7 @@ use Aranyasen\HL7\Segment;
 
 /**
  * OBR segment class
- * Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-obr-segment
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/OBR
  */
 class OBR extends Segment
 {
@@ -53,7 +53,7 @@ class OBR extends Segment
         return $this->setField($position, $value);
     }
 
-    public function setUniversalServiceID($value, int $position = 4)
+    public function setUniversalServiceIdentifier($value, int $position = 4)
     {
         return $this->setField($position, $value);
     }
@@ -63,7 +63,7 @@ class OBR extends Segment
         return $this->setField($position, $value);
     }
 
-    public function setRequestedDatetime($value, int $position = 6)
+    public function setRequestedDateTime($value, int $position = 6)
     {
         return $this->setField($position, $value);
     }
@@ -98,7 +98,7 @@ class OBR extends Segment
         return $this->setField($position, $value);
     }
 
-    public function setRelevantClinicalInfo($value, int $position = 13)
+    public function setRelevantClinicalInformation($value, int $position = 13)
     {
         return $this->setField($position, $value);
     }
@@ -266,6 +266,41 @@ class OBR extends Segment
         return $this->setField($position, $value);
     }
 
+    public function setProcedureCode($value, int $position = 44)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setProcedureCodeModifier($value, int $position = 45)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setPlacerSupplementalServiceInformation($value, int $position = 46)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setFillerSupplementalServiceInformation($value, int $position = 47)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setMedicallyNecessaryDuplicateProcedureReason($value, int $position = 48)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setResultHandling($value, int $position = 49)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setParentUniversalServiceIdentifier($value, int $position = 50)
+    {
+        return $this->setField($position, $value);
+    }
+
     public function getID(int $position = 1)
     {
         return $this->getField($position);
@@ -281,7 +316,7 @@ class OBR extends Segment
         return $this->getField($position);
     }
 
-    public function getUniversalServiceID(int $position = 4)
+    public function getUniversalServiceIdentifier(int $position = 4)
     {
         return $this->getField($position);
     }
@@ -291,7 +326,7 @@ class OBR extends Segment
         return $this->getField($position);
     }
 
-    public function getRequestedDatetime(int $position = 6)
+    public function getRequestedDateTime(int $position = 6)
     {
         return $this->getField($position);
     }
@@ -326,7 +361,7 @@ class OBR extends Segment
         return $this->getField($position);
     }
 
-    public function getRelevantClinicalInfo(int $position = 13)
+    public function getRelevantClinicalInformation(int $position = 13)
     {
         return $this->getField($position);
     }
@@ -477,6 +512,41 @@ class OBR extends Segment
     }
 
     public function getPlannedPatientTransportComment(int $position = 43)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getProcedureCode(int $position = 44)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getProcedureCodeModifier(int $position = 45)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getPlacerSupplementalServiceInformation(int $position = 46)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getFillerSupplementalServiceInformation(int $position = 47)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getMedicallyNecessaryDuplicateProcedureReason(int $position = 48)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getResultHandling(int $position = 49)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getParentUniversalServiceIdentifier(int $position = 50)
     {
         return $this->getField($position);
     }

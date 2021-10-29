@@ -59,7 +59,7 @@ class MSH extends Segment
         } else {
             $this->setField(1, '|');
             $this->setField(2, '^~\\&');
-            $this->setVersionId('2.3');
+            $this->setVersionId('2.5.1');
         }
         $this->setDateTimeOfMessage(strftime('%Y%m%d%H%M%S'));
         $this->setMessageControlId($this->getDateTimeOfMessage() . random_int(10000, 99999));
@@ -296,7 +296,7 @@ class MSH extends Segment
     }
 
     /**
-     * Get HL7 version, e.g. 2.1, 2.3, 3.0 etc.
+     * Get HL7 version, e.g. 2.1, 2.3, 2.5 etc.
      * @param int $position
      * @return array|null|string
      */

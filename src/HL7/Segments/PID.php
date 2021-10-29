@@ -7,7 +7,7 @@ use InvalidArgumentException;
 
 /**
  * PID segment class
- * Reference: https://corepointhealth.com/resource-center/hl7-resources/hl7-pid-segment
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/PID
  */
 class PID extends Segment
 {
@@ -203,6 +203,52 @@ class PID extends Segment
         return $this->setField($position, $value);
     }
 
+    public function setIdentityUnknownIndicator($value, int $position = 31)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setIdentityReliabilityCode($value, int $position = 32)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setLastUpdateDateTime($value, int $position = 33)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setLastUpdateFacility($value, int $position = 34)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setSpeciesCode($value, int $position = 35)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setBreedCode($value, int $position = 36)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setStrain($value, int $position = 37)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setProductionClassCode($value, int $position = 38)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setTribalCitizenship($value, int $position = 39)
+    {
+        return $this->setField($position, $value);
+    }
+
+
     public function getID(int $position = 1)
     {
         return $this->getField($position);
@@ -354,6 +400,51 @@ class PID extends Segment
     }
 
     public function getPatientDeathIndicator(int $position = 30)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getIdentityUnknownIndicator(int $position = 31)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getIdentityReliabilityCode(int $position = 32)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getLastUpdateDateTime(int $position = 33)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getLastUpdateFacility(int $position = 34)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getSpeciesCode(int $position = 35)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getBreedCode(int $position = 36)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getStrain(int $position = 37)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getProductionClassCode(int $position = 38)
+    {
+        return $this->getField($position);
+    }
+    
+    public function getTribalCitizenship(int $position = 39)
     {
         return $this->getField($position);
     }

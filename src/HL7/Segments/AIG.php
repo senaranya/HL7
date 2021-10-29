@@ -14,7 +14,7 @@ use Aranyasen\HL7\Segment;
  * identified on a schedule request using this segment. Resources described by this segment are general kinds of
  * resources, such as equipment, that are identified with a simple identification code.
 
- * Ref: http://hl7-definition.caristix.com:9010/Default.aspx?version=HL7+v2.3.1&segment=AIG
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/AIG
  */
 class AIG extends Segment
 {
@@ -49,6 +49,14 @@ class AIG extends Segment
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set the Action Code (A,U,D).
+     *
+     * @param string $value     Can be A (Add / Insert), U (Update), D (Delete).
+     *                          Ref. https://hl7-definition.caristix.com/v2/HL7v2.3.1/Tables/0206
+     * @param int $position
+     * @return bool
+     */
     public function setSegmentActionCode($value, int $position = 2): bool
     {
         return $this->setField($value, $position);

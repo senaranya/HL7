@@ -1,7 +1,7 @@
 # Aranyasen\HL7\Segments\OBR  
 
 OBR segment class
-Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-obr-segment
+Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/OBR
 
 
 
@@ -13,6 +13,7 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
+|[__destruct](#obr__destruct)||
 |[getAssistantResultInterpreter](#obrgetassistantresultinterpreter)||
 |[getChargetoPractice](#obrgetchargetopractice)||
 |[getCollectionVolume](#obrgetcollectionvolume)||
@@ -24,7 +25,9 @@ Aranyasen\HL7\Segment
 |[getFillerField1](#obrgetfillerfield1)||
 |[getFillerField2](#obrgetfillerfield2)||
 |[getFillerOrderNumber](#obrgetfillerordernumber)||
+|[getFillerSupplementalServiceInformation](#obrgetfillersupplementalserviceinformation)||
 |[getID](#obrgetid)||
+|[getMedicallyNecessaryDuplicateProcedureReason](#obrgetmedicallynecessaryduplicateprocedurereason)||
 |[getNumberofSampleContainers](#obrgetnumberofsamplecontainers)||
 |[getObservationDateTime](#obrgetobservationdatetime)||
 |[getObservationEndDateTime](#obrgetobservationenddatetime)||
@@ -32,17 +35,22 @@ Aranyasen\HL7\Segment
 |[getOrderingProvider](#obrgetorderingprovider)||
 |[getParent](#obrgetparent)||
 |[getParentResult](#obrgetparentresult)||
+|[getParentUniversalServiceIdentifier](#obrgetparentuniversalserviceidentifier)||
 |[getPlacerOrderNumber](#obrgetplacerordernumber)||
+|[getPlacerSupplementalServiceInformation](#obrgetplacersupplementalserviceinformation)||
 |[getPlacerfield1](#obrgetplacerfield1)||
 |[getPlacerfield2](#obrgetplacerfield2)||
 |[getPlannedPatientTransportComment](#obrgetplannedpatienttransportcomment)||
 |[getPrincipalResultInterpreter](#obrgetprincipalresultinterpreter)||
 |[getPriority](#obrgetpriority)||
+|[getProcedureCode](#obrgetprocedurecode)||
+|[getProcedureCodeModifier](#obrgetprocedurecodemodifier)||
 |[getQuantityTiming](#obrgetquantitytiming)||
 |[getReasonforStudy](#obrgetreasonforstudy)||
-|[getRelevantClinicalInfo](#obrgetrelevantclinicalinfo)||
-|[getRequestedDatetime](#obrgetrequesteddatetime)||
+|[getRelevantClinicalInformation](#obrgetrelevantclinicalinformation)||
+|[getRequestedDateTime](#obrgetrequesteddatetime)||
 |[getResultCopiesTo](#obrgetresultcopiesto)||
+|[getResultHandling](#obrgetresulthandling)||
 |[getResultStatus](#obrgetresultstatus)||
 |[getResultsRptStatusChngDateTime](#obrgetresultsrptstatuschngdatetime)||
 |[getScheduledDateTime](#obrgetscheduleddatetime)||
@@ -55,7 +63,8 @@ Aranyasen\HL7\Segment
 |[getTransportArrangementResponsibility](#obrgettransportarrangementresponsibility)||
 |[getTransportLogisticsofCollectedSample](#obrgettransportlogisticsofcollectedsample)||
 |[getTransportationMode](#obrgettransportationmode)||
-|[getUniversalServiceID](#obrgetuniversalserviceid)||
+|[getUniversalServiceIdentifier](#obrgetuniversalserviceidentifier)||
+|[resetIndex](#obrresetindex)|Reset index of this segment|
 |[setAssistantResultInterpreter](#obrsetassistantresultinterpreter)||
 |[setChargetoPractice](#obrsetchargetopractice)||
 |[setCollectionVolume](#obrsetcollectionvolume)||
@@ -67,7 +76,9 @@ Aranyasen\HL7\Segment
 |[setFillerField1](#obrsetfillerfield1)||
 |[setFillerField2](#obrsetfillerfield2)||
 |[setFillerOrderNumber](#obrsetfillerordernumber)||
+|[setFillerSupplementalServiceInformation](#obrsetfillersupplementalserviceinformation)||
 |[setID](#obrsetid)||
+|[setMedicallyNecessaryDuplicateProcedureReason](#obrsetmedicallynecessaryduplicateprocedurereason)||
 |[setNumberofSampleContainers](#obrsetnumberofsamplecontainers)||
 |[setObservationDateTime](#obrsetobservationdatetime)||
 |[setObservationEndDateTime](#obrsetobservationenddatetime)||
@@ -75,19 +86,30 @@ Aranyasen\HL7\Segment
 |[setOrderingProvider](#obrsetorderingprovider)||
 |[setParent](#obrsetparent)||
 |[setParentResult](#obrsetparentresult)||
+|[setParentUniversalServiceIdentifier](#obrsetparentuniversalserviceidentifier)||
 |[setPlacerOrderNumber](#obrsetplacerordernumber)||
+|[setPlacerSupplementalServiceInformation](#obrsetplacersupplementalserviceinformation)||
 |[setPlacerfield1](#obrsetplacerfield1)||
 |[setPlacerfield2](#obrsetplacerfield2)||
 |[setPlannedPatientTransportComment](#obrsetplannedpatienttransportcomment)||
 |[setPrincipalResultInterpreter](#obrsetprincipalresultinterpreter)||
 |[setPriority](#obrsetpriority)||
+|[setProcedureCode](#obrsetprocedurecode)||
+|[setProcedureCodeModifier](#obrsetprocedurecodemodifier)||
 |[setQuantityTiming](#obrsetquantitytiming)||
 |[setReasonforStudy](#obrsetreasonforstudy)||
-|[setRelevantClinicalInfo](#obrsetrelevantclinicalinfo)||
-|[setRequestedDatetime](#obrsetrequesteddatetime)||
+|[setRelevantClinicalInformation](#obrsetrelevantclinicalinformation)||
+|[setRequestedDateTime](#obrsetrequesteddatetime)||
 |[setResultCopiesTo](#obrsetresultcopiesto)||
+|[setResultHandling](#obrsetresulthandling)||
 |[setResultStatus](#obrsetresultstatus)||
-|[setResultsRptStatusChngDateTime](#obrsetresultsrptstatuschngdatetime)||
+|[setResultsRptStatusChngDateTime](#obrsetresultsrptstatuschngdatetime)|This field specifies the date/time when the results were reported or status changed. This field is used to
+indicate the date and time that the results are composed into a report and released, or that a status, as
+defined in ORC-5 order status, is entered or changed. (This is a results field only.) When other applications
+(such as office or clinical database applications) query the laboratory application for untransmitted results,
+the information in this field may be used to control processing on the communications link. Usually, the
+ordering service would want only those results for which the reporting date/time is greater than the date/time
+the inquiring application last received results.|
 |[setScheduledDateTime](#obrsetscheduleddatetime)||
 |[setSpecimenActionCode](#obrsetspecimenactioncode)||
 |[setSpecimenReceivedDateTime](#obrsetspecimenreceiveddatetime)||
@@ -98,13 +120,14 @@ Aranyasen\HL7\Segment
 |[setTransportArrangementResponsibility](#obrsettransportarrangementresponsibility)||
 |[setTransportLogisticsofCollectedSample](#obrsettransportlogisticsofcollectedsample)||
 |[setTransportationMode](#obrsettransportationmode)||
-|[setUniversalServiceID](#obrsetuniversalserviceid)||
+|[setUniversalServiceIdentifier](#obrsetuniversalserviceidentifier)||
 
 ## Inherited methods
 
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -113,12 +136,12 @@ Aranyasen\HL7\Segment
 
 
 
-### OBR::getAssistantResultInterpreter  
+### OBR::__destruct  
 
 **Description**
 
 ```php
-public getAssistantResultInterpreter (void)
+ __destruct (void)
 ```
 
  
@@ -132,6 +155,31 @@ public getAssistantResultInterpreter (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::getAssistantResultInterpreter  
+
+**Description**
+
+```php
+ getAssistantResultInterpreter (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -141,7 +189,7 @@ public getAssistantResultInterpreter (void)
 **Description**
 
 ```php
-public getChargetoPractice (void)
+ getChargetoPractice (void)
 ```
 
  
@@ -155,6 +203,7 @@ public getChargetoPractice (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -164,7 +213,7 @@ public getChargetoPractice (void)
 **Description**
 
 ```php
-public getCollectionVolume (void)
+ getCollectionVolume (void)
 ```
 
  
@@ -178,6 +227,7 @@ public getCollectionVolume (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -187,7 +237,7 @@ public getCollectionVolume (void)
 **Description**
 
 ```php
-public getCollectorIdentifier (void)
+ getCollectorIdentifier (void)
 ```
 
  
@@ -201,6 +251,7 @@ public getCollectorIdentifier (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -210,7 +261,7 @@ public getCollectorIdentifier (void)
 **Description**
 
 ```php
-public getCollectorsComment (void)
+ getCollectorsComment (void)
 ```
 
  
@@ -224,6 +275,7 @@ public getCollectorsComment (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -233,7 +285,7 @@ public getCollectorsComment (void)
 **Description**
 
 ```php
-public getDangerCode (void)
+ getDangerCode (void)
 ```
 
  
@@ -247,6 +299,7 @@ public getDangerCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -256,7 +309,7 @@ public getDangerCode (void)
 **Description**
 
 ```php
-public getDiagnosticServSectID (void)
+ getDiagnosticServSectID (void)
 ```
 
  
@@ -270,6 +323,7 @@ public getDiagnosticServSectID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -279,7 +333,7 @@ public getDiagnosticServSectID (void)
 **Description**
 
 ```php
-public getEscortRequired (void)
+ getEscortRequired (void)
 ```
 
  
@@ -293,6 +347,7 @@ public getEscortRequired (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -302,7 +357,7 @@ public getEscortRequired (void)
 **Description**
 
 ```php
-public getFillerField1 (void)
+ getFillerField1 (void)
 ```
 
  
@@ -316,6 +371,7 @@ public getFillerField1 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -325,7 +381,7 @@ public getFillerField1 (void)
 **Description**
 
 ```php
-public getFillerField2 (void)
+ getFillerField2 (void)
 ```
 
  
@@ -339,6 +395,7 @@ public getFillerField2 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -348,7 +405,7 @@ public getFillerField2 (void)
 **Description**
 
 ```php
-public getFillerOrderNumber (void)
+ getFillerOrderNumber (void)
 ```
 
  
@@ -362,6 +419,31 @@ public getFillerOrderNumber (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::getFillerSupplementalServiceInformation  
+
+**Description**
+
+```php
+ getFillerSupplementalServiceInformation (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -371,7 +453,7 @@ public getFillerOrderNumber (void)
 **Description**
 
 ```php
-public getID (void)
+ getID (void)
 ```
 
  
@@ -385,6 +467,31 @@ public getID (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::getMedicallyNecessaryDuplicateProcedureReason  
+
+**Description**
+
+```php
+ getMedicallyNecessaryDuplicateProcedureReason (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -394,7 +501,7 @@ public getID (void)
 **Description**
 
 ```php
-public getNumberofSampleContainers (void)
+ getNumberofSampleContainers (void)
 ```
 
  
@@ -408,6 +515,7 @@ public getNumberofSampleContainers (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -417,7 +525,7 @@ public getNumberofSampleContainers (void)
 **Description**
 
 ```php
-public getObservationDateTime (void)
+ getObservationDateTime (void)
 ```
 
  
@@ -431,6 +539,7 @@ public getObservationDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -440,7 +549,7 @@ public getObservationDateTime (void)
 **Description**
 
 ```php
-public getObservationEndDateTime (void)
+ getObservationEndDateTime (void)
 ```
 
  
@@ -454,6 +563,7 @@ public getObservationEndDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -463,7 +573,7 @@ public getObservationEndDateTime (void)
 **Description**
 
 ```php
-public getOrderCallbackPhoneNumber (void)
+ getOrderCallbackPhoneNumber (void)
 ```
 
  
@@ -477,6 +587,7 @@ public getOrderCallbackPhoneNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -486,7 +597,7 @@ public getOrderCallbackPhoneNumber (void)
 **Description**
 
 ```php
-public getOrderingProvider (void)
+ getOrderingProvider (void)
 ```
 
  
@@ -500,6 +611,7 @@ public getOrderingProvider (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -509,7 +621,7 @@ public getOrderingProvider (void)
 **Description**
 
 ```php
-public getParent (void)
+ getParent (void)
 ```
 
  
@@ -523,6 +635,7 @@ public getParent (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -532,7 +645,7 @@ public getParent (void)
 **Description**
 
 ```php
-public getParentResult (void)
+ getParentResult (void)
 ```
 
  
@@ -546,6 +659,31 @@ public getParentResult (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::getParentUniversalServiceIdentifier  
+
+**Description**
+
+```php
+ getParentUniversalServiceIdentifier (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -555,7 +693,7 @@ public getParentResult (void)
 **Description**
 
 ```php
-public getPlacerOrderNumber (void)
+ getPlacerOrderNumber (void)
 ```
 
  
@@ -569,6 +707,31 @@ public getPlacerOrderNumber (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::getPlacerSupplementalServiceInformation  
+
+**Description**
+
+```php
+ getPlacerSupplementalServiceInformation (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -578,7 +741,7 @@ public getPlacerOrderNumber (void)
 **Description**
 
 ```php
-public getPlacerfield1 (void)
+ getPlacerfield1 (void)
 ```
 
  
@@ -592,6 +755,7 @@ public getPlacerfield1 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -601,7 +765,7 @@ public getPlacerfield1 (void)
 **Description**
 
 ```php
-public getPlacerfield2 (void)
+ getPlacerfield2 (void)
 ```
 
  
@@ -615,6 +779,7 @@ public getPlacerfield2 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -624,7 +789,7 @@ public getPlacerfield2 (void)
 **Description**
 
 ```php
-public getPlannedPatientTransportComment (void)
+ getPlannedPatientTransportComment (void)
 ```
 
  
@@ -638,6 +803,7 @@ public getPlannedPatientTransportComment (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -647,7 +813,7 @@ public getPlannedPatientTransportComment (void)
 **Description**
 
 ```php
-public getPrincipalResultInterpreter (void)
+ getPrincipalResultInterpreter (void)
 ```
 
  
@@ -661,6 +827,7 @@ public getPrincipalResultInterpreter (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -670,7 +837,7 @@ public getPrincipalResultInterpreter (void)
 **Description**
 
 ```php
-public getPriority (void)
+ getPriority (void)
 ```
 
  
@@ -684,6 +851,55 @@ public getPriority (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::getProcedureCode  
+
+**Description**
+
+```php
+ getProcedureCode (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### OBR::getProcedureCodeModifier  
+
+**Description**
+
+```php
+ getProcedureCodeModifier (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -693,7 +909,7 @@ public getPriority (void)
 **Description**
 
 ```php
-public getQuantityTiming (void)
+ getQuantityTiming (void)
 ```
 
  
@@ -707,6 +923,7 @@ public getQuantityTiming (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -716,7 +933,7 @@ public getQuantityTiming (void)
 **Description**
 
 ```php
-public getReasonforStudy (void)
+ getReasonforStudy (void)
 ```
 
  
@@ -730,16 +947,17 @@ public getReasonforStudy (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
 
-### OBR::getRelevantClinicalInfo  
+### OBR::getRelevantClinicalInformation  
 
 **Description**
 
 ```php
-public getRelevantClinicalInfo (void)
+ getRelevantClinicalInformation (void)
 ```
 
  
@@ -753,16 +971,17 @@ public getRelevantClinicalInfo (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
 
-### OBR::getRequestedDatetime  
+### OBR::getRequestedDateTime  
 
 **Description**
 
 ```php
-public getRequestedDatetime (void)
+ getRequestedDateTime (void)
 ```
 
  
@@ -776,6 +995,7 @@ public getRequestedDatetime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -785,7 +1005,7 @@ public getRequestedDatetime (void)
 **Description**
 
 ```php
-public getResultCopiesTo (void)
+ getResultCopiesTo (void)
 ```
 
  
@@ -799,6 +1019,31 @@ public getResultCopiesTo (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::getResultHandling  
+
+**Description**
+
+```php
+ getResultHandling (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -808,7 +1053,7 @@ public getResultCopiesTo (void)
 **Description**
 
 ```php
-public getResultStatus (void)
+ getResultStatus (void)
 ```
 
  
@@ -822,6 +1067,7 @@ public getResultStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -831,7 +1077,7 @@ public getResultStatus (void)
 **Description**
 
 ```php
-public getResultsRptStatusChngDateTime (void)
+ getResultsRptStatusChngDateTime (void)
 ```
 
  
@@ -845,6 +1091,7 @@ public getResultsRptStatusChngDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -854,7 +1101,7 @@ public getResultsRptStatusChngDateTime (void)
 **Description**
 
 ```php
-public getScheduledDateTime (void)
+ getScheduledDateTime (void)
 ```
 
  
@@ -868,6 +1115,7 @@ public getScheduledDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -877,7 +1125,7 @@ public getScheduledDateTime (void)
 **Description**
 
 ```php
-public getSpecimenActionCode (void)
+ getSpecimenActionCode (void)
 ```
 
  
@@ -891,6 +1139,7 @@ public getSpecimenActionCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -900,7 +1149,7 @@ public getSpecimenActionCode (void)
 **Description**
 
 ```php
-public getSpecimenReceivedDateTime (void)
+ getSpecimenReceivedDateTime (void)
 ```
 
  
@@ -914,6 +1163,7 @@ public getSpecimenReceivedDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -923,7 +1173,7 @@ public getSpecimenReceivedDateTime (void)
 **Description**
 
 ```php
-public getSpecimenSource (void)
+ getSpecimenSource (void)
 ```
 
  
@@ -937,6 +1187,7 @@ public getSpecimenSource (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -946,7 +1197,7 @@ public getSpecimenSource (void)
 **Description**
 
 ```php
-public getTechnician (void)
+ getTechnician (void)
 ```
 
  
@@ -960,6 +1211,7 @@ public getTechnician (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -969,7 +1221,7 @@ public getTechnician (void)
 **Description**
 
 ```php
-public getTranscriptionist (void)
+ getTranscriptionist (void)
 ```
 
  
@@ -983,6 +1235,7 @@ public getTranscriptionist (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -992,7 +1245,7 @@ public getTranscriptionist (void)
 **Description**
 
 ```php
-public getTransportArranged (void)
+ getTransportArranged (void)
 ```
 
  
@@ -1006,6 +1259,7 @@ public getTransportArranged (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1015,7 +1269,7 @@ public getTransportArranged (void)
 **Description**
 
 ```php
-public getTransportArrangementResponsibility (void)
+ getTransportArrangementResponsibility (void)
 ```
 
  
@@ -1029,6 +1283,7 @@ public getTransportArrangementResponsibility (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1038,7 +1293,7 @@ public getTransportArrangementResponsibility (void)
 **Description**
 
 ```php
-public getTransportLogisticsofCollectedSample (void)
+ getTransportLogisticsofCollectedSample (void)
 ```
 
  
@@ -1052,6 +1307,7 @@ public getTransportLogisticsofCollectedSample (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1061,7 +1317,7 @@ public getTransportLogisticsofCollectedSample (void)
 **Description**
 
 ```php
-public getTransportationMode (void)
+ getTransportationMode (void)
 ```
 
  
@@ -1075,16 +1331,17 @@ public getTransportationMode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
 
-### OBR::getUniversalServiceID  
+### OBR::getUniversalServiceIdentifier  
 
 **Description**
 
 ```php
-public getUniversalServiceID (void)
+ getUniversalServiceIdentifier (void)
 ```
 
  
@@ -1098,6 +1355,31 @@ public getUniversalServiceID (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (int $index)
+```
+
+Reset index of this segment 
+
+ 
+
+**Parameters**
+
+* `(int) $index`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -1107,7 +1389,7 @@ public getUniversalServiceID (void)
 **Description**
 
 ```php
-public setAssistantResultInterpreter (void)
+ setAssistantResultInterpreter (void)
 ```
 
  
@@ -1121,6 +1403,7 @@ public setAssistantResultInterpreter (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1130,7 +1413,7 @@ public setAssistantResultInterpreter (void)
 **Description**
 
 ```php
-public setChargetoPractice (void)
+ setChargetoPractice (void)
 ```
 
  
@@ -1144,6 +1427,7 @@ public setChargetoPractice (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1153,7 +1437,7 @@ public setChargetoPractice (void)
 **Description**
 
 ```php
-public setCollectionVolume (void)
+ setCollectionVolume (void)
 ```
 
  
@@ -1167,6 +1451,7 @@ public setCollectionVolume (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1176,7 +1461,7 @@ public setCollectionVolume (void)
 **Description**
 
 ```php
-public setCollectorIdentifier (void)
+ setCollectorIdentifier (void)
 ```
 
  
@@ -1190,6 +1475,7 @@ public setCollectorIdentifier (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1199,7 +1485,7 @@ public setCollectorIdentifier (void)
 **Description**
 
 ```php
-public setCollectorsComment (void)
+ setCollectorsComment (void)
 ```
 
  
@@ -1213,6 +1499,7 @@ public setCollectorsComment (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1222,7 +1509,7 @@ public setCollectorsComment (void)
 **Description**
 
 ```php
-public setDangerCode (void)
+ setDangerCode (void)
 ```
 
  
@@ -1236,6 +1523,7 @@ public setDangerCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1245,7 +1533,7 @@ public setDangerCode (void)
 **Description**
 
 ```php
-public setDiagnosticServSectID (void)
+ setDiagnosticServSectID (void)
 ```
 
  
@@ -1259,6 +1547,7 @@ public setDiagnosticServSectID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1268,7 +1557,7 @@ public setDiagnosticServSectID (void)
 **Description**
 
 ```php
-public setEscortRequired (void)
+ setEscortRequired (void)
 ```
 
  
@@ -1282,6 +1571,7 @@ public setEscortRequired (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1291,7 +1581,7 @@ public setEscortRequired (void)
 **Description**
 
 ```php
-public setFillerField1 (void)
+ setFillerField1 (void)
 ```
 
  
@@ -1305,6 +1595,7 @@ public setFillerField1 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1314,7 +1605,7 @@ public setFillerField1 (void)
 **Description**
 
 ```php
-public setFillerField2 (void)
+ setFillerField2 (void)
 ```
 
  
@@ -1328,6 +1619,7 @@ public setFillerField2 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1337,7 +1629,7 @@ public setFillerField2 (void)
 **Description**
 
 ```php
-public setFillerOrderNumber (void)
+ setFillerOrderNumber (void)
 ```
 
  
@@ -1351,6 +1643,31 @@ public setFillerOrderNumber (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::setFillerSupplementalServiceInformation  
+
+**Description**
+
+```php
+ setFillerSupplementalServiceInformation (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -1360,7 +1677,7 @@ public setFillerOrderNumber (void)
 **Description**
 
 ```php
-public setID (void)
+ setID (void)
 ```
 
  
@@ -1374,6 +1691,31 @@ public setID (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::setMedicallyNecessaryDuplicateProcedureReason  
+
+**Description**
+
+```php
+ setMedicallyNecessaryDuplicateProcedureReason (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -1383,7 +1725,7 @@ public setID (void)
 **Description**
 
 ```php
-public setNumberofSampleContainers (void)
+ setNumberofSampleContainers (void)
 ```
 
  
@@ -1397,6 +1739,7 @@ public setNumberofSampleContainers (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1406,7 +1749,7 @@ public setNumberofSampleContainers (void)
 **Description**
 
 ```php
-public setObservationDateTime (void)
+ setObservationDateTime (void)
 ```
 
  
@@ -1420,6 +1763,7 @@ public setObservationDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1429,7 +1773,7 @@ public setObservationDateTime (void)
 **Description**
 
 ```php
-public setObservationEndDateTime (void)
+ setObservationEndDateTime (void)
 ```
 
  
@@ -1443,6 +1787,7 @@ public setObservationEndDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1452,7 +1797,7 @@ public setObservationEndDateTime (void)
 **Description**
 
 ```php
-public setOrderCallbackPhoneNumber (void)
+ setOrderCallbackPhoneNumber (void)
 ```
 
  
@@ -1466,6 +1811,7 @@ public setOrderCallbackPhoneNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1475,7 +1821,7 @@ public setOrderCallbackPhoneNumber (void)
 **Description**
 
 ```php
-public setOrderingProvider (void)
+ setOrderingProvider (void)
 ```
 
  
@@ -1489,6 +1835,7 @@ public setOrderingProvider (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1498,7 +1845,7 @@ public setOrderingProvider (void)
 **Description**
 
 ```php
-public setParent (void)
+ setParent (void)
 ```
 
  
@@ -1512,6 +1859,7 @@ public setParent (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1521,7 +1869,7 @@ public setParent (void)
 **Description**
 
 ```php
-public setParentResult (void)
+ setParentResult (void)
 ```
 
  
@@ -1535,6 +1883,31 @@ public setParentResult (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::setParentUniversalServiceIdentifier  
+
+**Description**
+
+```php
+ setParentUniversalServiceIdentifier (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -1544,7 +1917,7 @@ public setParentResult (void)
 **Description**
 
 ```php
-public setPlacerOrderNumber (void)
+ setPlacerOrderNumber (void)
 ```
 
  
@@ -1558,6 +1931,31 @@ public setPlacerOrderNumber (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::setPlacerSupplementalServiceInformation  
+
+**Description**
+
+```php
+ setPlacerSupplementalServiceInformation (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -1567,7 +1965,7 @@ public setPlacerOrderNumber (void)
 **Description**
 
 ```php
-public setPlacerfield1 (void)
+ setPlacerfield1 (void)
 ```
 
  
@@ -1581,6 +1979,7 @@ public setPlacerfield1 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1590,7 +1989,7 @@ public setPlacerfield1 (void)
 **Description**
 
 ```php
-public setPlacerfield2 (void)
+ setPlacerfield2 (void)
 ```
 
  
@@ -1604,6 +2003,7 @@ public setPlacerfield2 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1613,7 +2013,7 @@ public setPlacerfield2 (void)
 **Description**
 
 ```php
-public setPlannedPatientTransportComment (void)
+ setPlannedPatientTransportComment (void)
 ```
 
  
@@ -1627,6 +2027,7 @@ public setPlannedPatientTransportComment (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1636,7 +2037,7 @@ public setPlannedPatientTransportComment (void)
 **Description**
 
 ```php
-public setPrincipalResultInterpreter (void)
+ setPrincipalResultInterpreter (void)
 ```
 
  
@@ -1650,6 +2051,7 @@ public setPrincipalResultInterpreter (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1659,7 +2061,7 @@ public setPrincipalResultInterpreter (void)
 **Description**
 
 ```php
-public setPriority (void)
+ setPriority (void)
 ```
 
  
@@ -1673,6 +2075,55 @@ public setPriority (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::setProcedureCode  
+
+**Description**
+
+```php
+ setProcedureCode (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### OBR::setProcedureCodeModifier  
+
+**Description**
+
+```php
+ setProcedureCodeModifier (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -1682,7 +2133,7 @@ public setPriority (void)
 **Description**
 
 ```php
-public setQuantityTiming (void)
+ setQuantityTiming (void)
 ```
 
  
@@ -1696,6 +2147,7 @@ public setQuantityTiming (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1705,7 +2157,7 @@ public setQuantityTiming (void)
 **Description**
 
 ```php
-public setReasonforStudy (void)
+ setReasonforStudy (void)
 ```
 
  
@@ -1719,16 +2171,17 @@ public setReasonforStudy (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
 
-### OBR::setRelevantClinicalInfo  
+### OBR::setRelevantClinicalInformation  
 
 **Description**
 
 ```php
-public setRelevantClinicalInfo (void)
+ setRelevantClinicalInformation (void)
 ```
 
  
@@ -1742,16 +2195,17 @@ public setRelevantClinicalInfo (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
 
-### OBR::setRequestedDatetime  
+### OBR::setRequestedDateTime  
 
 **Description**
 
 ```php
-public setRequestedDatetime (void)
+ setRequestedDateTime (void)
 ```
 
  
@@ -1765,6 +2219,7 @@ public setRequestedDatetime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1774,7 +2229,7 @@ public setRequestedDatetime (void)
 **Description**
 
 ```php
-public setResultCopiesTo (void)
+ setResultCopiesTo (void)
 ```
 
  
@@ -1788,6 +2243,31 @@ public setResultCopiesTo (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::setResultHandling  
+
+**Description**
+
+```php
+ setResultHandling (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -1797,7 +2277,7 @@ public setResultCopiesTo (void)
 **Description**
 
 ```php
-public setResultStatus (void)
+ setResultStatus (void)
 ```
 
  
@@ -1811,6 +2291,7 @@ public setResultStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1820,20 +2301,30 @@ public setResultStatus (void)
 **Description**
 
 ```php
-public setResultsRptStatusChngDateTime (void)
+public setResultsRptStatusChngDateTime ( $value, int $position)
 ```
 
- 
+This field specifies the date/time when the results were reported or status changed. This field is used to
+indicate the date and time that the results are composed into a report and released, or that a status, as
+defined in ORC-5 order status, is entered or changed. (This is a results field only.) When other applications
+(such as office or clinical database applications) query the laboratory application for untransmitted results,
+the information in this field may be used to control processing on the communications link. Usually, the
+ordering service would want only those results for which the reporting date/time is greater than the date/time
+the inquiring application last received results. 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `() $value`
+* `(int) $position`
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1843,7 +2334,7 @@ public setResultsRptStatusChngDateTime (void)
 **Description**
 
 ```php
-public setScheduledDateTime (void)
+ setScheduledDateTime (void)
 ```
 
  
@@ -1857,6 +2348,7 @@ public setScheduledDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1866,7 +2358,7 @@ public setScheduledDateTime (void)
 **Description**
 
 ```php
-public setSpecimenActionCode (void)
+ setSpecimenActionCode (void)
 ```
 
  
@@ -1880,6 +2372,7 @@ public setSpecimenActionCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1889,7 +2382,7 @@ public setSpecimenActionCode (void)
 **Description**
 
 ```php
-public setSpecimenReceivedDateTime (void)
+ setSpecimenReceivedDateTime (void)
 ```
 
  
@@ -1903,6 +2396,7 @@ public setSpecimenReceivedDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1912,7 +2406,7 @@ public setSpecimenReceivedDateTime (void)
 **Description**
 
 ```php
-public setSpecimenSource (void)
+ setSpecimenSource (void)
 ```
 
  
@@ -1926,6 +2420,7 @@ public setSpecimenSource (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1935,7 +2430,7 @@ public setSpecimenSource (void)
 **Description**
 
 ```php
-public setTechnician (void)
+ setTechnician (void)
 ```
 
  
@@ -1949,6 +2444,7 @@ public setTechnician (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1958,7 +2454,7 @@ public setTechnician (void)
 **Description**
 
 ```php
-public setTranscriptionist (void)
+ setTranscriptionist (void)
 ```
 
  
@@ -1972,6 +2468,7 @@ public setTranscriptionist (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1981,7 +2478,7 @@ public setTranscriptionist (void)
 **Description**
 
 ```php
-public setTransportArranged (void)
+ setTransportArranged (void)
 ```
 
  
@@ -1995,6 +2492,7 @@ public setTransportArranged (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2004,7 +2502,7 @@ public setTransportArranged (void)
 **Description**
 
 ```php
-public setTransportArrangementResponsibility (void)
+ setTransportArrangementResponsibility (void)
 ```
 
  
@@ -2018,6 +2516,7 @@ public setTransportArrangementResponsibility (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2027,7 +2526,7 @@ public setTransportArrangementResponsibility (void)
 **Description**
 
 ```php
-public setTransportLogisticsofCollectedSample (void)
+ setTransportLogisticsofCollectedSample (void)
 ```
 
  
@@ -2041,6 +2540,7 @@ public setTransportLogisticsofCollectedSample (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2050,7 +2550,7 @@ public setTransportLogisticsofCollectedSample (void)
 **Description**
 
 ```php
-public setTransportationMode (void)
+ setTransportationMode (void)
 ```
 
  
@@ -2064,16 +2564,17 @@ public setTransportationMode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
 
-### OBR::setUniversalServiceID  
+### OBR::setUniversalServiceIdentifier  
 
 **Description**
 
 ```php
-public setUniversalServiceID (void)
+ setUniversalServiceIdentifier (void)
 ```
 
  
@@ -2087,6 +2588,7 @@ public setUniversalServiceID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 

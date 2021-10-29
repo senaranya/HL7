@@ -1,7 +1,7 @@
 # Aranyasen\HL7\Segments\NTE  
 
 NTE segment class
-Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-nte-notes-comments
+Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/NTE
 
 
 
@@ -13,10 +13,12 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
+|[__destruct](#nte__destruct)||
 |[getComment](#ntegetcomment)||
 |[getCommentType](#ntegetcommenttype)||
 |[getID](#ntegetid)||
 |[getSourceOfComment](#ntegetsourceofcomment)||
+|[resetIndex](#nteresetindex)|Reset index of this segment|
 |[setComment](#ntesetcomment)||
 |[setCommentType](#ntesetcommenttype)||
 |[setID](#ntesetid)||
@@ -27,6 +29,7 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -35,12 +38,12 @@ Aranyasen\HL7\Segment
 
 
 
-### NTE::getComment  
+### NTE::__destruct  
 
 **Description**
 
 ```php
-public getComment (void)
+ __destruct (void)
 ```
 
  
@@ -54,6 +57,31 @@ public getComment (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### NTE::getComment  
+
+**Description**
+
+```php
+ getComment (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -63,7 +91,7 @@ public getComment (void)
 **Description**
 
 ```php
-public getCommentType (void)
+ getCommentType (void)
 ```
 
  
@@ -77,6 +105,7 @@ public getCommentType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -86,7 +115,7 @@ public getCommentType (void)
 **Description**
 
 ```php
-public getID (void)
+ getID (void)
 ```
 
  
@@ -100,6 +129,7 @@ public getID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -109,7 +139,7 @@ public getID (void)
 **Description**
 
 ```php
-public getSourceOfComment (void)
+ getSourceOfComment (void)
 ```
 
  
@@ -123,6 +153,31 @@ public getSourceOfComment (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### NTE::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (int $index)
+```
+
+Reset index of this segment 
+
+ 
+
+**Parameters**
+
+* `(int) $index`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -132,7 +187,7 @@ public getSourceOfComment (void)
 **Description**
 
 ```php
-public setComment (void)
+ setComment (void)
 ```
 
  
@@ -146,6 +201,7 @@ public setComment (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -155,7 +211,7 @@ public setComment (void)
 **Description**
 
 ```php
-public setCommentType (void)
+ setCommentType (void)
 ```
 
  
@@ -169,6 +225,7 @@ public setCommentType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -178,7 +235,7 @@ public setCommentType (void)
 **Description**
 
 ```php
-public setID (void)
+ setID (void)
 ```
 
  
@@ -192,6 +249,7 @@ public setID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -201,7 +259,7 @@ public setID (void)
 **Description**
 
 ```php
-public setSourceOfComment (void)
+ setSourceOfComment (void)
 ```
 
  
@@ -215,6 +273,7 @@ public setSourceOfComment (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 

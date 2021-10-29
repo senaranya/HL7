@@ -6,7 +6,13 @@ use Aranyasen\HL7\Segment;
 
 /**
  * TQ1 segment class
- * Ref: http://hl7-definition.caristix.com:9010/HL7%20v2.5.1/dataType/Default.aspx?version=HL7+v2.5.1&dataType=TQ1
+ * The TQ1 segment is used to specify the complex timing of events and actions such as those that occur in order
+ * management and scheduling systems. This segment determines the quantity, frequency, priority, and timing
+ * of a service.
+ * By allowing the segment to repeat, it is possible to have service requests that vary the quantity,
+ * frequency and priority of a service request over time.
+ *
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/TQ1
  */
 class TQ1 extends Segment
 {

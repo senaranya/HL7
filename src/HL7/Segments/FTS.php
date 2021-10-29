@@ -6,7 +6,7 @@ use Aranyasen\HL7\Segment;
 
 /**
  * FTS: File Trailer Segment
- * Ref: https://hl7-definition.caristix.com/v2/HL7v2.3/Segments/FTS
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/FTS
  */
 class FTS extends Segment
 {

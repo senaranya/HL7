@@ -1,7 +1,7 @@
 # Aranyasen\HL7\Segments\PV1  
 
 PV1 segment class
-Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-pv1-patient-visit-information-segment
+Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/PV1
 
 
 
@@ -13,6 +13,7 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
+|[__destruct](#pv1__destruct)||
 |[getAccountStatus](#pv1getaccountstatus)||
 |[getAdmissionType](#pv1getadmissiontype)||
 |[getAdmitDateTime](#pv1getadmitdatetime)||
@@ -65,6 +66,7 @@ Aranyasen\HL7\Segment
 |[getVipIndicator](#pv1getvipindicator)||
 |[getVisitIndicator](#pv1getvisitindicator)||
 |[getVisitNumber](#pv1getvisitnumber)||
+|[resetIndex](#pv1resetindex)|Reset index of this segment|
 |[setAccountStatus](#pv1setaccountstatus)||
 |[setAdmissionType](#pv1setadmissiontype)||
 |[setAdmitDateTime](#pv1setadmitdatetime)||
@@ -123,6 +125,7 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -131,12 +134,12 @@ Aranyasen\HL7\Segment
 
 
 
-### PV1::getAccountStatus  
+### PV1::__destruct  
 
 **Description**
 
 ```php
-public getAccountStatus (void)
+ __destruct (void)
 ```
 
  
@@ -150,6 +153,31 @@ public getAccountStatus (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### PV1::getAccountStatus  
+
+**Description**
+
+```php
+ getAccountStatus (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -159,7 +187,7 @@ public getAccountStatus (void)
 **Description**
 
 ```php
-public getAdmissionType (void)
+ getAdmissionType (void)
 ```
 
  
@@ -173,6 +201,7 @@ public getAdmissionType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -182,7 +211,7 @@ public getAdmissionType (void)
 **Description**
 
 ```php
-public getAdmitDateTime (void)
+ getAdmitDateTime (void)
 ```
 
  
@@ -196,6 +225,7 @@ public getAdmitDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -205,7 +235,7 @@ public getAdmitDateTime (void)
 **Description**
 
 ```php
-public getAdmitSource (void)
+ getAdmitSource (void)
 ```
 
  
@@ -219,6 +249,7 @@ public getAdmitSource (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -228,7 +259,7 @@ public getAdmitSource (void)
 **Description**
 
 ```php
-public getAdmittingDoctor (void)
+ getAdmittingDoctor (void)
 ```
 
  
@@ -242,6 +273,7 @@ public getAdmittingDoctor (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -251,7 +283,7 @@ public getAdmittingDoctor (void)
 **Description**
 
 ```php
-public getAlternateVisitID (void)
+ getAlternateVisitID (void)
 ```
 
  
@@ -265,6 +297,7 @@ public getAlternateVisitID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -274,7 +307,7 @@ public getAlternateVisitID (void)
 **Description**
 
 ```php
-public getAmbulatoryStatus (void)
+ getAmbulatoryStatus (void)
 ```
 
  
@@ -288,6 +321,7 @@ public getAmbulatoryStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -297,7 +331,7 @@ public getAmbulatoryStatus (void)
 **Description**
 
 ```php
-public getAssignedPatientLocation (void)
+ getAssignedPatientLocation (void)
 ```
 
  
@@ -311,6 +345,7 @@ public getAssignedPatientLocation (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -320,7 +355,7 @@ public getAssignedPatientLocation (void)
 **Description**
 
 ```php
-public getAttendingDoctor (void)
+ getAttendingDoctor (void)
 ```
 
  
@@ -334,6 +369,7 @@ public getAttendingDoctor (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -343,7 +379,7 @@ public getAttendingDoctor (void)
 **Description**
 
 ```php
-public getBadDebtAgencyCode (void)
+ getBadDebtAgencyCode (void)
 ```
 
  
@@ -357,6 +393,7 @@ public getBadDebtAgencyCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -366,7 +403,7 @@ public getBadDebtAgencyCode (void)
 **Description**
 
 ```php
-public getBadDebtRecoveryAmount (void)
+ getBadDebtRecoveryAmount (void)
 ```
 
  
@@ -380,6 +417,7 @@ public getBadDebtRecoveryAmount (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -389,7 +427,7 @@ public getBadDebtRecoveryAmount (void)
 **Description**
 
 ```php
-public getBadDebtTransferAmount (void)
+ getBadDebtTransferAmount (void)
 ```
 
  
@@ -403,6 +441,7 @@ public getBadDebtTransferAmount (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -412,7 +451,7 @@ public getBadDebtTransferAmount (void)
 **Description**
 
 ```php
-public getBedStatus (void)
+ getBedStatus (void)
 ```
 
  
@@ -426,6 +465,7 @@ public getBedStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -435,7 +475,7 @@ public getBedStatus (void)
 **Description**
 
 ```php
-public getChargePriceIndicator (void)
+ getChargePriceIndicator (void)
 ```
 
  
@@ -449,6 +489,7 @@ public getChargePriceIndicator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -458,7 +499,7 @@ public getChargePriceIndicator (void)
 **Description**
 
 ```php
-public getConsultingDoctor (void)
+ getConsultingDoctor (void)
 ```
 
  
@@ -472,6 +513,7 @@ public getConsultingDoctor (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -481,7 +523,7 @@ public getConsultingDoctor (void)
 **Description**
 
 ```php
-public getContractAmount (void)
+ getContractAmount (void)
 ```
 
  
@@ -495,6 +537,7 @@ public getContractAmount (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -504,7 +547,7 @@ public getContractAmount (void)
 **Description**
 
 ```php
-public getContractCode (void)
+ getContractCode (void)
 ```
 
  
@@ -518,6 +561,7 @@ public getContractCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -527,7 +571,7 @@ public getContractCode (void)
 **Description**
 
 ```php
-public getContractEffectiveDate (void)
+ getContractEffectiveDate (void)
 ```
 
  
@@ -541,6 +585,7 @@ public getContractEffectiveDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -550,7 +595,7 @@ public getContractEffectiveDate (void)
 **Description**
 
 ```php
-public getContractPeriod (void)
+ getContractPeriod (void)
 ```
 
  
@@ -564,6 +609,7 @@ public getContractPeriod (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -573,7 +619,7 @@ public getContractPeriod (void)
 **Description**
 
 ```php
-public getCourtesyCode (void)
+ getCourtesyCode (void)
 ```
 
  
@@ -587,6 +633,7 @@ public getCourtesyCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -596,7 +643,7 @@ public getCourtesyCode (void)
 **Description**
 
 ```php
-public getCreditRating (void)
+ getCreditRating (void)
 ```
 
  
@@ -610,6 +657,7 @@ public getCreditRating (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -619,7 +667,7 @@ public getCreditRating (void)
 **Description**
 
 ```php
-public getCurrentPatientBalance (void)
+ getCurrentPatientBalance (void)
 ```
 
  
@@ -633,6 +681,7 @@ public getCurrentPatientBalance (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -642,7 +691,7 @@ public getCurrentPatientBalance (void)
 **Description**
 
 ```php
-public getDeleteAccountDate (void)
+ getDeleteAccountDate (void)
 ```
 
  
@@ -656,6 +705,7 @@ public getDeleteAccountDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -665,7 +715,7 @@ public getDeleteAccountDate (void)
 **Description**
 
 ```php
-public getDeleteAccountIndicator (void)
+ getDeleteAccountIndicator (void)
 ```
 
  
@@ -679,6 +729,7 @@ public getDeleteAccountIndicator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -688,7 +739,7 @@ public getDeleteAccountIndicator (void)
 **Description**
 
 ```php
-public getDietType (void)
+ getDietType (void)
 ```
 
  
@@ -702,6 +753,7 @@ public getDietType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -711,7 +763,7 @@ public getDietType (void)
 **Description**
 
 ```php
-public getDischargeDateTime (void)
+ getDischargeDateTime (void)
 ```
 
  
@@ -725,6 +777,7 @@ public getDischargeDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -734,7 +787,7 @@ public getDischargeDateTime (void)
 **Description**
 
 ```php
-public getDischargeDisposition (void)
+ getDischargeDisposition (void)
 ```
 
  
@@ -748,6 +801,7 @@ public getDischargeDisposition (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -757,7 +811,7 @@ public getDischargeDisposition (void)
 **Description**
 
 ```php
-public getDischargedToLocation (void)
+ getDischargedToLocation (void)
 ```
 
  
@@ -771,6 +825,7 @@ public getDischargedToLocation (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -780,7 +835,7 @@ public getDischargedToLocation (void)
 **Description**
 
 ```php
-public getFinancialClass (void)
+ getFinancialClass (void)
 ```
 
  
@@ -794,6 +849,7 @@ public getFinancialClass (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -803,7 +859,7 @@ public getFinancialClass (void)
 **Description**
 
 ```php
-public getHospitalService (void)
+ getHospitalService (void)
 ```
 
  
@@ -817,6 +873,7 @@ public getHospitalService (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -826,7 +883,7 @@ public getHospitalService (void)
 **Description**
 
 ```php
-public getID (void)
+ getID (void)
 ```
 
  
@@ -840,6 +897,7 @@ public getID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -849,7 +907,7 @@ public getID (void)
 **Description**
 
 ```php
-public getInterestCode (void)
+ getInterestCode (void)
 ```
 
  
@@ -863,6 +921,7 @@ public getInterestCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -872,7 +931,7 @@ public getInterestCode (void)
 **Description**
 
 ```php
-public getOtherHealthcareProvider (void)
+ getOtherHealthcareProvider (void)
 ```
 
  
@@ -886,6 +945,7 @@ public getOtherHealthcareProvider (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -895,7 +955,7 @@ public getOtherHealthcareProvider (void)
 **Description**
 
 ```php
-public getPatientClass (void)
+ getPatientClass (void)
 ```
 
  
@@ -909,6 +969,7 @@ public getPatientClass (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -918,7 +979,7 @@ public getPatientClass (void)
 **Description**
 
 ```php
-public getPatientType (void)
+ getPatientType (void)
 ```
 
  
@@ -932,6 +993,7 @@ public getPatientType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -941,7 +1003,7 @@ public getPatientType (void)
 **Description**
 
 ```php
-public getPendingLocation (void)
+ getPendingLocation (void)
 ```
 
  
@@ -955,6 +1017,7 @@ public getPendingLocation (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -964,7 +1027,7 @@ public getPendingLocation (void)
 **Description**
 
 ```php
-public getPreAdmitNumber (void)
+ getPreAdmitNumber (void)
 ```
 
  
@@ -978,6 +1041,7 @@ public getPreAdmitNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -987,7 +1051,7 @@ public getPreAdmitNumber (void)
 **Description**
 
 ```php
-public getPreAdmitTestIndicator (void)
+ getPreAdmitTestIndicator (void)
 ```
 
  
@@ -1001,6 +1065,7 @@ public getPreAdmitTestIndicator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1010,7 +1075,7 @@ public getPreAdmitTestIndicator (void)
 **Description**
 
 ```php
-public getPriorPatientLocation (void)
+ getPriorPatientLocation (void)
 ```
 
  
@@ -1024,6 +1089,7 @@ public getPriorPatientLocation (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1033,7 +1099,7 @@ public getPriorPatientLocation (void)
 **Description**
 
 ```php
-public getPriorTemporaryLocation (void)
+ getPriorTemporaryLocation (void)
 ```
 
  
@@ -1047,6 +1113,7 @@ public getPriorTemporaryLocation (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1056,7 +1123,7 @@ public getPriorTemporaryLocation (void)
 **Description**
 
 ```php
-public getReAdmissionIndicator (void)
+ getReAdmissionIndicator (void)
 ```
 
  
@@ -1070,6 +1137,7 @@ public getReAdmissionIndicator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1079,7 +1147,7 @@ public getReAdmissionIndicator (void)
 **Description**
 
 ```php
-public getReferringDoctor (void)
+ getReferringDoctor (void)
 ```
 
  
@@ -1093,6 +1161,7 @@ public getReferringDoctor (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1102,7 +1171,7 @@ public getReferringDoctor (void)
 **Description**
 
 ```php
-public getServicingFacility (void)
+ getServicingFacility (void)
 ```
 
  
@@ -1116,6 +1185,7 @@ public getServicingFacility (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1125,7 +1195,7 @@ public getServicingFacility (void)
 **Description**
 
 ```php
-public getTemporaryLocation (void)
+ getTemporaryLocation (void)
 ```
 
  
@@ -1139,6 +1209,7 @@ public getTemporaryLocation (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1148,7 +1219,7 @@ public getTemporaryLocation (void)
 **Description**
 
 ```php
-public getTotalAdjustments (void)
+ getTotalAdjustments (void)
 ```
 
  
@@ -1162,6 +1233,7 @@ public getTotalAdjustments (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1171,7 +1243,7 @@ public getTotalAdjustments (void)
 **Description**
 
 ```php
-public getTotalCharges (void)
+ getTotalCharges (void)
 ```
 
  
@@ -1185,6 +1257,7 @@ public getTotalCharges (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1194,7 +1267,7 @@ public getTotalCharges (void)
 **Description**
 
 ```php
-public getTotalPayments (void)
+ getTotalPayments (void)
 ```
 
  
@@ -1208,6 +1281,7 @@ public getTotalPayments (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1217,7 +1291,7 @@ public getTotalPayments (void)
 **Description**
 
 ```php
-public getTransferToBadDebtCode (void)
+ getTransferToBadDebtCode (void)
 ```
 
  
@@ -1231,6 +1305,7 @@ public getTransferToBadDebtCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1240,7 +1315,7 @@ public getTransferToBadDebtCode (void)
 **Description**
 
 ```php
-public getTransferToBadDebtDate (void)
+ getTransferToBadDebtDate (void)
 ```
 
  
@@ -1254,6 +1329,7 @@ public getTransferToBadDebtDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1263,7 +1339,7 @@ public getTransferToBadDebtDate (void)
 **Description**
 
 ```php
-public getVipIndicator (void)
+ getVipIndicator (void)
 ```
 
  
@@ -1277,6 +1353,7 @@ public getVipIndicator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1286,7 +1363,7 @@ public getVipIndicator (void)
 **Description**
 
 ```php
-public getVisitIndicator (void)
+ getVisitIndicator (void)
 ```
 
  
@@ -1300,6 +1377,7 @@ public getVisitIndicator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1309,7 +1387,7 @@ public getVisitIndicator (void)
 **Description**
 
 ```php
-public getVisitNumber (void)
+ getVisitNumber (void)
 ```
 
  
@@ -1324,6 +1402,31 @@ public getVisitNumber (void)
 
 `void`
 
+
+<hr />
+
+
+### PV1::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (int $index)
+```
+
+Reset index of this segment 
+
+ 
+
+**Parameters**
+
+* `(int) $index`
+
+**Return Values**
+
+`void`
+
+
 <hr />
 
 
@@ -1332,7 +1435,7 @@ public getVisitNumber (void)
 **Description**
 
 ```php
-public setAccountStatus ( $value, int $position)
+ setAccountStatus (void)
 ```
 
  
@@ -1341,13 +1444,11 @@ public setAccountStatus ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1358,7 +1459,7 @@ public setAccountStatus ( $value, int $position)
 **Description**
 
 ```php
-public setAdmissionType ( $value, int $position)
+ setAdmissionType (void)
 ```
 
  
@@ -1367,13 +1468,11 @@ public setAdmissionType ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1384,7 +1483,7 @@ public setAdmissionType ( $value, int $position)
 **Description**
 
 ```php
-public setAdmitDateTime ( $value, int $position)
+ setAdmitDateTime (void)
 ```
 
  
@@ -1393,13 +1492,11 @@ public setAdmitDateTime ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1410,7 +1507,7 @@ public setAdmitDateTime ( $value, int $position)
 **Description**
 
 ```php
-public setAdmitSource ( $value, int $position)
+ setAdmitSource (void)
 ```
 
  
@@ -1419,13 +1516,11 @@ public setAdmitSource ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1436,7 +1531,7 @@ public setAdmitSource ( $value, int $position)
 **Description**
 
 ```php
-public setAdmittingDoctor ( $value, int $position)
+ setAdmittingDoctor (void)
 ```
 
  
@@ -1445,13 +1540,11 @@ public setAdmittingDoctor ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1462,7 +1555,7 @@ public setAdmittingDoctor ( $value, int $position)
 **Description**
 
 ```php
-public setAlternateVisitID ( $value, int $position)
+ setAlternateVisitID (void)
 ```
 
  
@@ -1471,13 +1564,11 @@ public setAlternateVisitID ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1488,7 +1579,7 @@ public setAlternateVisitID ( $value, int $position)
 **Description**
 
 ```php
-public setAmbulatoryStatus ( $value, int $position)
+ setAmbulatoryStatus (void)
 ```
 
  
@@ -1497,13 +1588,11 @@ public setAmbulatoryStatus ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1514,7 +1603,7 @@ public setAmbulatoryStatus ( $value, int $position)
 **Description**
 
 ```php
-public setAssignedPatientLocation (void)
+ setAssignedPatientLocation (void)
 ```
 
  
@@ -1529,6 +1618,7 @@ public setAssignedPatientLocation (void)
 
 `void`
 
+
 <hr />
 
 
@@ -1537,7 +1627,7 @@ public setAssignedPatientLocation (void)
 **Description**
 
 ```php
-public setAttendingDoctor ( $value, int $position)
+ setAttendingDoctor (void)
 ```
 
  
@@ -1546,13 +1636,11 @@ public setAttendingDoctor ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1563,7 +1651,7 @@ public setAttendingDoctor ( $value, int $position)
 **Description**
 
 ```php
-public setBadDebtAgencyCode ( $value, int $position)
+ setBadDebtAgencyCode (void)
 ```
 
  
@@ -1572,13 +1660,11 @@ public setBadDebtAgencyCode ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1589,7 +1675,7 @@ public setBadDebtAgencyCode ( $value, int $position)
 **Description**
 
 ```php
-public setBadDebtRecoveryAmount ( $value, int $position)
+ setBadDebtRecoveryAmount (void)
 ```
 
  
@@ -1598,13 +1684,11 @@ public setBadDebtRecoveryAmount ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1615,7 +1699,7 @@ public setBadDebtRecoveryAmount ( $value, int $position)
 **Description**
 
 ```php
-public setBadDebtTransferAmount ( $value, int $position)
+ setBadDebtTransferAmount (void)
 ```
 
  
@@ -1624,13 +1708,11 @@ public setBadDebtTransferAmount ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1641,7 +1723,7 @@ public setBadDebtTransferAmount ( $value, int $position)
 **Description**
 
 ```php
-public setBedStatus ( $value, int $position)
+ setBedStatus (void)
 ```
 
  
@@ -1650,13 +1732,11 @@ public setBedStatus ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1667,7 +1747,7 @@ public setBedStatus ( $value, int $position)
 **Description**
 
 ```php
-public setChargePriceIndicator ( $value, int $position)
+ setChargePriceIndicator (void)
 ```
 
  
@@ -1676,13 +1756,11 @@ public setChargePriceIndicator ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1693,7 +1771,7 @@ public setChargePriceIndicator ( $value, int $position)
 **Description**
 
 ```php
-public setConsultingDoctor ( $value, int $position)
+ setConsultingDoctor (void)
 ```
 
  
@@ -1702,13 +1780,11 @@ public setConsultingDoctor ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1719,7 +1795,7 @@ public setConsultingDoctor ( $value, int $position)
 **Description**
 
 ```php
-public setContractAmount ( $value, int $position)
+ setContractAmount (void)
 ```
 
  
@@ -1728,13 +1804,11 @@ public setContractAmount ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1745,7 +1819,7 @@ public setContractAmount ( $value, int $position)
 **Description**
 
 ```php
-public setContractCode ( $value, int $position)
+ setContractCode (void)
 ```
 
  
@@ -1754,13 +1828,11 @@ public setContractCode ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1771,7 +1843,7 @@ public setContractCode ( $value, int $position)
 **Description**
 
 ```php
-public setContractEffectiveDate ( $value, int $position)
+ setContractEffectiveDate (void)
 ```
 
  
@@ -1780,13 +1852,11 @@ public setContractEffectiveDate ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1797,7 +1867,7 @@ public setContractEffectiveDate ( $value, int $position)
 **Description**
 
 ```php
-public setContractPeriod ( $value, int $position)
+ setContractPeriod (void)
 ```
 
  
@@ -1806,13 +1876,11 @@ public setContractPeriod ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1823,7 +1891,7 @@ public setContractPeriod ( $value, int $position)
 **Description**
 
 ```php
-public setCourtesyCode ( $value, int $position)
+ setCourtesyCode (void)
 ```
 
  
@@ -1832,13 +1900,11 @@ public setCourtesyCode ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1849,7 +1915,7 @@ public setCourtesyCode ( $value, int $position)
 **Description**
 
 ```php
-public setCreditRating ( $value, int $position)
+ setCreditRating (void)
 ```
 
  
@@ -1858,13 +1924,11 @@ public setCreditRating ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1875,7 +1939,7 @@ public setCreditRating ( $value, int $position)
 **Description**
 
 ```php
-public setCurrentPatientBalance ( $value, int $position)
+ setCurrentPatientBalance (void)
 ```
 
  
@@ -1884,13 +1948,11 @@ public setCurrentPatientBalance ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1901,7 +1963,7 @@ public setCurrentPatientBalance ( $value, int $position)
 **Description**
 
 ```php
-public setDeleteAccountDate ( $value, int $position)
+ setDeleteAccountDate (void)
 ```
 
  
@@ -1910,13 +1972,11 @@ public setDeleteAccountDate ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1927,7 +1987,7 @@ public setDeleteAccountDate ( $value, int $position)
 **Description**
 
 ```php
-public setDeleteAccountIndicator ( $value, int $position)
+ setDeleteAccountIndicator (void)
 ```
 
  
@@ -1936,13 +1996,11 @@ public setDeleteAccountIndicator ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1953,7 +2011,7 @@ public setDeleteAccountIndicator ( $value, int $position)
 **Description**
 
 ```php
-public setDietType ( $value, int $position)
+ setDietType (void)
 ```
 
  
@@ -1962,13 +2020,11 @@ public setDietType ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -1979,7 +2035,7 @@ public setDietType ( $value, int $position)
 **Description**
 
 ```php
-public setDischargeDateTime ( $value, int $position)
+ setDischargeDateTime (void)
 ```
 
  
@@ -1988,13 +2044,11 @@ public setDischargeDateTime ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2005,7 +2059,7 @@ public setDischargeDateTime ( $value, int $position)
 **Description**
 
 ```php
-public setDischargeDisposition ( $value, int $position)
+ setDischargeDisposition (void)
 ```
 
  
@@ -2014,13 +2068,11 @@ public setDischargeDisposition ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2031,7 +2083,7 @@ public setDischargeDisposition ( $value, int $position)
 **Description**
 
 ```php
-public setDischargedToLocation ( $value, int $position)
+ setDischargedToLocation (void)
 ```
 
  
@@ -2040,13 +2092,11 @@ public setDischargedToLocation ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2057,7 +2107,7 @@ public setDischargedToLocation ( $value, int $position)
 **Description**
 
 ```php
-public setFinancialClass ( $value, int $position)
+ setFinancialClass (void)
 ```
 
  
@@ -2066,13 +2116,11 @@ public setFinancialClass ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2083,7 +2131,7 @@ public setFinancialClass ( $value, int $position)
 **Description**
 
 ```php
-public setHospitalService ( $value, int $position)
+ setHospitalService (void)
 ```
 
  
@@ -2092,13 +2140,11 @@ public setHospitalService ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2109,7 +2155,7 @@ public setHospitalService ( $value, int $position)
 **Description**
 
 ```php
-public setID (void)
+ setID (void)
 ```
 
  
@@ -2124,6 +2170,7 @@ public setID (void)
 
 `void`
 
+
 <hr />
 
 
@@ -2132,7 +2179,7 @@ public setID (void)
 **Description**
 
 ```php
-public setInterestCode ( $value, int $position)
+ setInterestCode (void)
 ```
 
  
@@ -2141,13 +2188,11 @@ public setInterestCode ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2158,33 +2203,7 @@ public setInterestCode ( $value, int $position)
 **Description**
 
 ```php
-public setOtherHealthcareProvider ( $value, int $position)
-```
-
- 
-
- 
-
-**Parameters**
-
-* `() $value`
-* `(int) $position`
-
-**Return Values**
-
-`bool`
-
-
-
-<hr />
-
-
-### PV1::setPatientClass  
-
-**Description**
-
-```php
-public setPatientClass (void)
+ setOtherHealthcareProvider (void)
 ```
 
  
@@ -2199,15 +2218,16 @@ public setPatientClass (void)
 
 `void`
 
+
 <hr />
 
 
-### PV1::setPatientType  
+### PV1::setPatientClass  
 
 **Description**
 
 ```php
-public setPatientType ( $value, int $position)
+ setPatientClass (void)
 ```
 
  
@@ -2216,13 +2236,35 @@ public setPatientType ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
+`void`
 
+
+<hr />
+
+
+### PV1::setPatientType  
+
+**Description**
+
+```php
+ setPatientType (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
 
 
 <hr />
@@ -2233,7 +2275,7 @@ public setPatientType ( $value, int $position)
 **Description**
 
 ```php
-public setPendingLocation ( $value, int $position)
+ setPendingLocation (void)
 ```
 
  
@@ -2242,13 +2284,11 @@ public setPendingLocation ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2259,7 +2299,7 @@ public setPendingLocation ( $value, int $position)
 **Description**
 
 ```php
-public setPreAdmitNumber ( $value, int $position)
+ setPreAdmitNumber (void)
 ```
 
  
@@ -2268,13 +2308,11 @@ public setPreAdmitNumber ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2285,7 +2323,7 @@ public setPreAdmitNumber ( $value, int $position)
 **Description**
 
 ```php
-public setPreAdmitTestIndicator ( $value, int $position)
+ setPreAdmitTestIndicator (void)
 ```
 
  
@@ -2294,13 +2332,11 @@ public setPreAdmitTestIndicator ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2311,7 +2347,7 @@ public setPreAdmitTestIndicator ( $value, int $position)
 **Description**
 
 ```php
-public setPriorPatientLocation ( $value, int $position)
+ setPriorPatientLocation (void)
 ```
 
  
@@ -2320,13 +2356,11 @@ public setPriorPatientLocation ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2337,7 +2371,7 @@ public setPriorPatientLocation ( $value, int $position)
 **Description**
 
 ```php
-public setPriorTemporaryLocation ( $value, int $position)
+ setPriorTemporaryLocation (void)
 ```
 
  
@@ -2346,13 +2380,11 @@ public setPriorTemporaryLocation ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2363,7 +2395,7 @@ public setPriorTemporaryLocation ( $value, int $position)
 **Description**
 
 ```php
-public setReAdmissionIndicator ( $value, int $position)
+ setReAdmissionIndicator (void)
 ```
 
  
@@ -2372,13 +2404,11 @@ public setReAdmissionIndicator ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2389,7 +2419,7 @@ public setReAdmissionIndicator ( $value, int $position)
 **Description**
 
 ```php
-public setReferringDoctor ( $value, int $position)
+ setReferringDoctor (void)
 ```
 
  
@@ -2398,13 +2428,11 @@ public setReferringDoctor ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2415,7 +2443,7 @@ public setReferringDoctor ( $value, int $position)
 **Description**
 
 ```php
-public setServicingFacility ( $value, int $position)
+ setServicingFacility (void)
 ```
 
  
@@ -2424,13 +2452,11 @@ public setServicingFacility ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2441,7 +2467,7 @@ public setServicingFacility ( $value, int $position)
 **Description**
 
 ```php
-public setTemporaryLocation ( $value, int $position)
+ setTemporaryLocation (void)
 ```
 
  
@@ -2450,13 +2476,11 @@ public setTemporaryLocation ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2467,7 +2491,7 @@ public setTemporaryLocation ( $value, int $position)
 **Description**
 
 ```php
-public setTotalAdjustments ( $value, int $position)
+ setTotalAdjustments (void)
 ```
 
  
@@ -2476,13 +2500,11 @@ public setTotalAdjustments ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2493,7 +2515,7 @@ public setTotalAdjustments ( $value, int $position)
 **Description**
 
 ```php
-public setTotalCharges ( $value, int $position)
+ setTotalCharges (void)
 ```
 
  
@@ -2502,13 +2524,11 @@ public setTotalCharges ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2519,7 +2539,7 @@ public setTotalCharges ( $value, int $position)
 **Description**
 
 ```php
-public setTotalPayments ( $value, int $position)
+ setTotalPayments (void)
 ```
 
  
@@ -2528,13 +2548,11 @@ public setTotalPayments ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2545,7 +2563,7 @@ public setTotalPayments ( $value, int $position)
 **Description**
 
 ```php
-public setTransferToBadDebtCode ( $value, int $position)
+ setTransferToBadDebtCode (void)
 ```
 
  
@@ -2554,13 +2572,11 @@ public setTransferToBadDebtCode ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2571,7 +2587,7 @@ public setTransferToBadDebtCode ( $value, int $position)
 **Description**
 
 ```php
-public setTransferToBadDebtDate ( $value, int $position)
+ setTransferToBadDebtDate (void)
 ```
 
  
@@ -2580,13 +2596,11 @@ public setTransferToBadDebtDate ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2597,7 +2611,7 @@ public setTransferToBadDebtDate ( $value, int $position)
 **Description**
 
 ```php
-public setVipIndicator ( $value, int $position)
+ setVipIndicator (void)
 ```
 
  
@@ -2606,13 +2620,11 @@ public setVipIndicator ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2623,7 +2635,7 @@ public setVipIndicator ( $value, int $position)
 **Description**
 
 ```php
-public setVisitIndicator ( $value, int $position)
+ setVisitIndicator (void)
 ```
 
  
@@ -2632,13 +2644,11 @@ public setVisitIndicator ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -2649,7 +2659,7 @@ public setVisitIndicator ( $value, int $position)
 **Description**
 
 ```php
-public setVisitNumber ( $value, int $position)
+ setVisitNumber (void)
 ```
 
  
@@ -2658,13 +2668,11 @@ public setVisitNumber ( $value, int $position)
 
 **Parameters**
 
-* `() $value`
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />

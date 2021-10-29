@@ -6,8 +6,7 @@ use Aranyasen\HL7\Segment;
 
 /**
  * EVN segment class
- * Ref: http://hl7-definition.caristix.com:9010/HL7%20v2.3.1/segment/EVN
- *      https://corepointhealth.com/resource-center/hl7-resources/hl7-evn-event-type-segment
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/EVN
  */
 class EVN extends Segment
 {
@@ -46,6 +45,11 @@ class EVN extends Segment
         return $this->setField($position, $value);
     }
 
+    public function setEventFacility($value, int $position = 7): bool
+    {
+        return $this->setField($position, $value);
+    }
+
     public function getEventTypeCode(int $position = 1)
     {
         return $this->getField($position);
@@ -72,6 +76,11 @@ class EVN extends Segment
     }
 
     public function getEventOccurred(int $position = 6)
+    {
+        return $this->getField($position);
+    }
+
+    public function getEventFacility(int $position = 7)
     {
         return $this->getField($position);
     }
