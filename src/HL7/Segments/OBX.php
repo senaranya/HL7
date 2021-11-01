@@ -243,6 +243,24 @@ class OBX extends Segment
     {
         return $this->getField($position);
     }
+    
+    // Positions 20 to 22 are reserved for harmonization with V2.6
+    // Ref. https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/OBX
+
+    public function getPerformingOrganizationName(int $position = 23)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPerformingOrganizationAddress(int $position = 24)
+    {
+        return $this->getField($position);
+    }
+
+    public function getPerformingOrganizationMedicalDirector(int $position = 25)
+    {
+        return $this->getField($position);
+    }
 
     // Positions 20 to 22 are reserved for harmonization with V2.6
     // Ref. https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/OBX
