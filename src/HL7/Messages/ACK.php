@@ -34,14 +34,12 @@ class ACK extends Message
             $msh = $req->getSegmentByIndex(0);
 
             if ($msh) {
-                $msh = new MSH($msh->getFields(1));
+                $msh = new MSH($msh->getFields(1), $hl7Globals);
+            } else {
+                $msh = new MSH(null, $hl7Globals);
             }
-            else {
-                $msh = new MSH();
-            }
-        }
-        else {
-            $msh = new MSH();
+        } else {
+            $msh = new MSH(null, $hl7Globals);
         }
 
         $msa = new MSA();
