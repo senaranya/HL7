@@ -29,7 +29,9 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[getDateTimeOfMessage](#mshgetdatetimeofmessage)||
+|[getMessageCode](#mshgetmessagecode)||
 |[getMessageControlId](#mshgetmessagecontrolid)||
+|[getMessageStructure](#mshgetmessagestructure)||
 |[getMessageType](#mshgetmessagetype)|ORM / ORU etc.|
 |[getProcessingId](#mshgetprocessingid)||
 |[getReceivingApplication](#mshgetreceivingapplication)||
@@ -44,7 +46,9 @@ Aranyasen\HL7\Segment
 |[setContinuationPointer](#mshsetcontinuationpointer)||
 |[setCountryCode](#mshsetcountrycode)||
 |[setDateTimeOfMessage](#mshsetdatetimeofmessage)||
+|[setMessageCode](#mshsetmessagecode)|Set the Message Type's Message Code (MSH.9.1)|
 |[setMessageControlId](#mshsetmessagecontrolid)||
+|[setMessageStructure](#mshsetmessagestructure)|Ref. https://hl7-definition.caristix.com/v2/HL7v2.5.1/Tables/0354|
 |[setMessageType](#mshsetmessagetype)|Sets message type to MSH segment.|
 |[setPrincipalLanguage](#mshsetprincipallanguage)||
 |[setProcessingId](#mshsetprocessingid)||
@@ -95,12 +99,60 @@ Aranyasen\HL7\Segment
 <hr />
 
 
+### MSH::getMessageCode  
+
+**Description**
+
+```php
+ getMessageCode (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
 ### MSH::getMessageControlId  
 
 **Description**
 
 ```php
  getMessageControlId (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### MSH::getMessageStructure  
+
+**Description**
+
+```php
+ getMessageStructure (void)
 ```
 
  
@@ -459,6 +511,34 @@ Get HL7 version, e.g. 2.1, 2.3, 2.5 etc.
 <hr />
 
 
+### MSH::setMessageCode  
+
+**Description**
+
+```php
+public setMessageCode ( $value, int $position)
+```
+
+Set the Message Type's Message Code (MSH.9.1) 
+
+Ref. https://hl7-definition.caristix.com/v2/HL7v2.5.1/Fields/MSH.9  
+https://hl7-definition.caristix.com/v2/HL7v2.5.1/Tables/0076 
+
+**Parameters**
+
+* `() $value`
+* `(int) $position`
+
+**Return Values**
+
+`bool`
+
+
+
+
+<hr />
+
+
 ### MSH::setMessageControlId  
 
 **Description**
@@ -478,6 +558,33 @@ Get HL7 version, e.g. 2.1, 2.3, 2.5 etc.
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### MSH::setMessageStructure  
+
+**Description**
+
+```php
+public setMessageStructure ( $value, int $position)
+```
+
+Ref. https://hl7-definition.caristix.com/v2/HL7v2.5.1/Tables/0354 
+
+ 
+
+**Parameters**
+
+* `() $value`
+* `(int) $position`
+
+**Return Values**
+
+`bool`
+
+
 
 
 <hr />
@@ -723,7 +830,7 @@ public setTriggerEvent (string $value, int $position)
 
 Sets trigger event to MSH segment. 
 
-If meessage type is already set, then it is preserved  
+If message type is already set, then it is preserved  
   
 Example:  
   
@@ -734,7 +841,9 @@ $msh->setTriggerEvent('R30');
 ```  
   
 Then the new field value will be ORU^R30.  
-If trigger event was not set then it will set the new value. 
+If trigger event was not set then it will set the new value.  
+  
+Ref. https://hl7-definition.caristix.com/v2/HL7v2.5.1/Tables/0003 
 
 **Parameters**
 

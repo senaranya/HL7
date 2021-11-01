@@ -51,7 +51,7 @@ Aranyasen\HL7\Message
 **Description**
 
 ```php
-public setAckCode (string $code, string $msg)
+public setAckCode (string $code, string|null $msg)
 ```
 
 Set the acknowledgement code for the acknowledgement. 
@@ -64,7 +64,7 @@ This denotes: accept, general error and reject respectively. The ACK module will
 
 * `(string) $code`
 : Code to use in acknowledgement  
-* `(string) $msg`
+* `(string|null) $msg`
 : Acknowledgement message  
 
 **Return Values**

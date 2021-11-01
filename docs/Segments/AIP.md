@@ -9,7 +9,6 @@ Personnel not controlled by a schedule are not identified on a schedule request 
 personnel described on this segment include any healthcare provider in the institution controlled by a schedule (for
 example: technicians, physicians, nurses, surgeons, anesthesiologists, or CRNAs).
 
-
 Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/AIP  
 
 

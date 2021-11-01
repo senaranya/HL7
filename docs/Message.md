@@ -72,13 +72,14 @@ If the message couldn't be created, for example due to a erroneous HL7 message s
 * `(array|null) $hl7Globals`
 : Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']  
 * `(bool) $keepEmptySubFields`
-: Set this to true to retain empty sub fields  
+: Set this to true to retain empty sub-fields  
 * `(bool) $resetIndices`
 : Reset Indices of each segment to 1.  
 * `(bool) $autoIncrementIndices`
 : True: auto-increment for each instance of same segment.  
 * `(bool|null) $doNotSplitRepetition`
-: If true, repeated segments will be in single array instead of sub-arrays. Since this is non-standard, it may be removed in future  
+: If true, repeated segments will be in single array instead of sub-arrays.  
+Note: Since this is non-standard, it may be removed in future!  
 
 **Return Values**
 
@@ -89,9 +90,6 @@ If the message couldn't be created, for example due to a erroneous HL7 message s
 
 
 `\HL7Exception`
-
-
-`\ReflectionException`
 
 
 <hr />
@@ -225,7 +223,7 @@ Returns empty string if field is not set.
 
 **Return Values**
 
-`mixed`
+`null|string`
 
 > String representation of field
 
@@ -601,12 +599,6 @@ Reset index attribute of each given segment, so when those are added the indices
 
 
 
-**Throws Exceptions**
-
-
-`\ReflectionException`
-
-
 <hr />
 
 
@@ -615,7 +607,7 @@ Reset index attribute of each given segment, so when those are added the indices
 **Description**
 
 ```php
-public segmentToString ( $seg)
+public segmentToString (\Segment $seg)
 ```
 
 Convert Segment object to string 
@@ -624,7 +616,7 @@ Convert Segment object to string
 
 **Parameters**
 
-* `() $seg`
+* `(\Segment) $seg`
 
 **Return Values**
 
