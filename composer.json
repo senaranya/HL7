@@ -34,7 +34,8 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit tests/"
+        "test": "vendor/bin/phpunit tests/",
+        "lint": "vendor/bin/phpcs src/"
     },
     "extra": {
         "branch-alias": {
