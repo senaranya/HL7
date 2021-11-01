@@ -35,7 +35,7 @@ jobs:
             ${{ runner.os }}-php-
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-progress
+        run: composer install --dev --prefer-dist --no-progress
       - name: Run linter
         run: composer run-script lint
       - name: Run test suite
