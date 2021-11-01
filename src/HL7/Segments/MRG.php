@@ -15,37 +15,37 @@ class MRG extends Segment
         parent::__construct('MRG', $fields);
     }
 
-    public function setPriorPatientIdentifierList($value, int $position = 1):bool
+    public function setPriorPatientIdentifierList($value, int $position = 1): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setPriorAlternatePatientID($value, int $position = 2):bool
+    public function setPriorAlternatePatientID($value, int $position = 2): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setPriorPatientAccountNumber($value, int $position = 3):bool
+    public function setPriorPatientAccountNumber($value, int $position = 3): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setPriorPatientID($value, int $position = 4):bool
+    public function setPriorPatientID($value, int $position = 4): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setPriorVisitNumber($value, int $position = 5):bool
+    public function setPriorVisitNumber($value, int $position = 5): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setPriorAlternateVisitID($value, int $position = 6):bool
+    public function setPriorAlternateVisitID($value, int $position = 6): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setPriorPatientName($value, int $position = 7):bool
+    public function setPriorPatientName($value, int $position = 7): bool
     {
         return $this->setField($position, $value);
     }

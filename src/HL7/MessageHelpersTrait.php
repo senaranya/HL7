@@ -31,10 +31,10 @@ trait MessageHelpersTrait
      *
      * @param int $segmentIndex Index for segment to get
      * @param int $fieldIndex Index for field to get
-     * @return mixed String representation of field
+     * @return null|string String representation of field
      * @access public
      */
-    public function getSegmentFieldAsString(int $segmentIndex, int $fieldIndex)
+    public function getSegmentFieldAsString(int $segmentIndex, int $fieldIndex): ?string
     {
         $segment = $this->getSegmentByIndex($segmentIndex);
 
@@ -51,17 +51,16 @@ trait MessageHelpersTrait
         $fieldString = null;
 
         if (\is_array($field)) {
-            foreach ($field as $i => $iValue) {
-                \is_array($field[$i])
-                    ? ($fieldString .= implode($this->subcomponentSeparator, $field[$i]))
-                    : ($fieldString .= $field[$i]);
+            foreach ($field as $i => $value) {
+                \is_array($value)
+                    ? ($fieldString .= implode($this->subcomponentSeparator, $value))
+                    : ($fieldString .= $value);
 
                 if ($i < (\count($field) - 1)) {
                     $fieldString .= $this->componentSeparator;
                 }
             }
-        }
-        else {
+        } else {
             $fieldString .= $field;
         }
 
@@ -163,7 +162,7 @@ trait MessageHelpersTrait
      */
     public function removeSegment(Segment $segment, bool $reIndex = false): void
     {
-        if(($key = array_search($segment, $this->segments, true)) !== false) {
+        if (($key = array_search($segment, $this->segments, true)) !== false) {
             unset($this->segments[$key]);
         }
 

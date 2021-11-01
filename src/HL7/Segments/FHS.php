@@ -136,5 +136,4 @@ class FHS extends Segment
     {
         return $this->getField($position);
     }
-    
 }

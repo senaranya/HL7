@@ -71,14 +71,14 @@ class SAC extends Segment
      * @return bool
      *
      * value:
-     * I :	Identified
-     * P :	In Position
-     * O :	In Process
-     * R :	Process Completed
-     * L :	Left Equipment
-     * M :	Missing
-     * X :	Container Unavailable
-     * U :	Unknown
+     * I : Identified
+     * P : In Position
+     * O : In Process
+     * R : Process Completed
+     * L : Left Equipment
+     * M : Missing
+     * X : Container Unavailable
+     * U : Unknown
      */
     public function setContainerStatus($value, int $position = 8)
     {

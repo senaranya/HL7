@@ -149,7 +149,7 @@ class PV1 extends Segment
      * @return bool
      */
     public function setReAdmissionIndicator($value, int $position = 13)
-        {
+    {
         return $this->setField($position, $value);
     }
 

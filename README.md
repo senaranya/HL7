@@ -127,10 +127,10 @@ if (strpos($returnString, 'MSH') === false) {
 $msa = $ack->getSegmentsByName('MSA')[0];
 $ackCode = $msa->getAcknowledgementCode();
 if ($ackCode[1] === 'A') {
-    echo "Recieved ACK from remote\n";
+    echo "Received ACK from remote\n";
 }
 else {
-    echo "Recieved NACK from remote\n";
+    echo "Received NACK from remote\n";
     echo "Error text: " . $msa->getTextMessage();
 }
 ```
@@ -166,7 +166,8 @@ All segment level getter/setter APIs can be used in two ways -
 `$pid->setPatientName('John Doe', 6)` -> Set patient name at 6th position in PID segment  
 `$pid->getPatientAddress(12)` -> Get patient address from 12th position  
 
-### TODOs
-* Data Validation
-* Search by regex and return segment/field/index
-* Define more segments
+### Issues
+Bug reports and feature requests can be submitted on the [Github Issue Tracker](https://github.com/senaranya/HL7/issues).
+
+### Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md) for information.

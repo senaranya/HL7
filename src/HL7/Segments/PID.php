@@ -348,7 +348,7 @@ class PID extends Segment
         return $this->getField($position);
     }
 
-    public function getPatientDeathDateAndTime( int $position = 29)
+    public function getPatientDeathDateAndTime(int $position = 29)
     {
         return $this->getField($position);
     }

@@ -21,7 +21,8 @@
         "phpunit/phpunit": "^9",
         "dms/phpunit-arraysubset-asserts": "^0.2",
         "ext-pcntl": "*",
-        "ext-sockets": "*"
+        "ext-sockets": "*",
+        "squizlabs/php_codesniffer": "^3.6"
     },
     "autoload": {
         "psr-4": {

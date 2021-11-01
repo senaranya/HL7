@@ -56,8 +56,7 @@ class MSH extends Segment
                 $hl7Globals['SUBCOMPONENT_SEPARATOR']
             );
             $this->setVersionId($hl7Globals['HL7_VERSION']);
-        }
-        else {
+        } else {
             $this->setField(1, '|');
             $this->setField(2, '^~\\&');
             $this->setVersionId('2.3');
@@ -268,7 +267,7 @@ class MSH extends Segment
      * @param int $position
      * @return string
      */
-    public function getMessageType(int $position = 9) : string
+    public function getMessageType(int $position = 9): string
     {
         $typeField = $this->getField($position);
         if (!empty($typeField) && is_array($typeField)) {

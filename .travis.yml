@@ -5,4 +5,10 @@ php:
   - '7.3'
   - '7.4'
   - '8.0'
-script: vendor/bin/phpunit tests/
+
+jobs:
+  include:
+    - stage: Linting and Testing
+      script:
+        - vendor/bin/phpcs --standard=PSR12 src/
+        - vendor/bin/phpunit tests/ --coverage-text

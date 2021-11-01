@@ -2,6 +2,7 @@
 
 namespace Aranyasen\HL7\Tests\Segments;
 
+use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Segments\PID;
 use Aranyasen\HL7\Tests\TestCase;
 use InvalidArgumentException;
@@ -33,6 +34,21 @@ class PIDTest extends TestCase
         $pidSegment->setSex($invalidSexValue);
         self::assertEmpty($pidSegment->getSex(), "Sex should not have been set with value: $invalidSexValue");
         self::assertEmpty($pidSegment->getField(8), "Sex should not have been set with value: $invalidSexValue");
+    }
+
+    /** @test */
+    public function PID_5_should_parse_properly(): void
+    {
+        $messageString = "MSH|^~\\&|1|\r" .
+            'PID|||||' .
+            'Test &""&firstname &""&""^F^N N^^^^F^^^^""~Test &""&Test^Test^""^^^^B~""&""&""^^^^^^P~^Lastname^^^^^N|' .
+            "\r";
+        $msg = new Message($messageString, null, false, false, true, true);
+
+        self::assertSame(
+            'MSH|^~\&|1|\nPID|1||||Test &""&firstname &""&""^F^N N^F^""~Test &""&Test^Test^""^B~""&""&""^P~^Lastname^N|\n',
+            $msg->toString()
+        );
     }
 
     public function validSexValues(): array
