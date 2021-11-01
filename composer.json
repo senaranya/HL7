@@ -34,6 +34,10 @@
             "Aranyasen\\HL7\\Tests\\": "tests/"
         }
     },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests/ --coverage-text",
+        "lint": "vendor/bin/phpcs src/"
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "0.1.x-dev"
