@@ -79,5 +79,4 @@ class EQU extends Segment
     {
         return $this->getField($position);
     }
-
 }

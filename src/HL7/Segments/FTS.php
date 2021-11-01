@@ -36,5 +36,4 @@ class FTS extends Segment
     {
         return $this->getField($position);
     }
-    
 }

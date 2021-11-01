@@ -56,8 +56,8 @@ class Connection
             throw new HL7ConnectionException('Please install ext-sockets to run Connection');
         }
         $this->setSocket($host, $port, $timeout);
-        $this->MESSAGE_PREFIX = "\013";
-        $this->MESSAGE_SUFFIX = "\034\015";
+        $this->MESSAGE_PREFIX = "\013"; # Octal 13 (Hex: 0B): Vertical Tab
+        $this->MESSAGE_SUFFIX = "\034\015"; # 34 (Hex: 1C): file separator character, 15 (Hex: 0D): Carriage return
         $this->timeout = $timeout;
     }
 
@@ -147,7 +147,9 @@ class Connection
                 break;
             }
             if ((time() - $startTime) > $this->timeout) {
-                throw new HL7ConnectionException("Response partially received. Timed out listening for end-of-message from server");
+                throw new HL7ConnectionException(
+                    "Response partially received. Timed out listening for end-of-message from server"
+                );
             }
         }
 
@@ -181,8 +183,7 @@ class Connection
     {
         try {
             socket_close($this->socket);
-        }
-        catch (Exception $e) {
+        } catch (Exception $e) {
             echo 'Failed to close socket: ' . socket_strerror(socket_last_error()) . PHP_EOL;
         }
     }

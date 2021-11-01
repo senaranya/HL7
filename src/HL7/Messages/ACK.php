@@ -22,7 +22,7 @@ class ACK extends Message
      *
      * @param Message|null $req
      * @param MSH|null $reqMsh
-     * @param array $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
+     * @param array|null $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
      * @throws \Exception
      * @throws \InvalidArgumentException
      */
@@ -34,14 +34,12 @@ class ACK extends Message
             $msh = $req->getSegmentByIndex(0);
 
             if ($msh) {
-                $msh = new MSH($msh->getFields(1));
+                $msh = new MSH($msh->getFields(1), $hl7Globals);
+            } else {
+                $msh = new MSH(null, $hl7Globals);
             }
-            else {
-                $msh = new MSH();
-            }
-        }
-        else {
-            $msh = new MSH();
+        } else {
+            $msh = new MSH(null, $hl7Globals);
         }
 
         $msa = new MSA();
@@ -51,8 +49,7 @@ class ACK extends Message
         if ($req && ($msh->getField(15) || $msh->getField(16))) {
             $this->ACK_TYPE = 'E';
             $msa->setAcknowledgementCode('CA');
-        }
-        else {
+        } else {
             $this->ACK_TYPE = 'N';
             $msa->setAcknowledgementCode('AA');
         }
@@ -79,8 +76,8 @@ class ACK extends Message
      * This denotes: accept, general error and reject respectively. The ACK module will determine the right answer mode
      * (normal or enhanced) based upon the request, if not provided. The message provided in $msg will be set in MSA 3.
      *
-     * @param string $code Code to use in acknowledgement
-     * @param string $msg Acknowledgement message
+     * @param  string  $code  Code to use in acknowledgement
+     * @param  string|null  $msg  Acknowledgement message
      * @return boolean
      * @access public
      */

@@ -61,21 +61,27 @@ class Message
      * If the message couldn't be created, for example due to a erroneous HL7 message string, an error is raised.
      * @param string|null $msgStr
      * @param array|null $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
-     * @param bool $keepEmptySubFields Set this to true to retain empty sub fields
+     * @param bool $keepEmptySubFields Set this to true to retain empty sub-fields
      * @param bool $resetIndices Reset Indices of each segment to 1.
      * @param bool $autoIncrementIndices True: auto-increment for each instance of same segment.
-     * @param bool|null $doNotSplitRepetition If true, repeated segments will be in single array instead of sub-arrays. Since this is non-standard, it may be removed in future
+     * @param bool|null $doNotSplitRepetition If true, repeated segments will be in single array instead of sub-arrays.
+     *     Note: Since this is non-standard, it may be removed in future!
      * @throws HL7Exception
-     * @throws \ReflectionException
      */
-    public function __construct(string $msgStr = null, array $hl7Globals = null, bool $keepEmptySubFields = false, bool $resetIndices = false, bool $autoIncrementIndices = true, bool $doNotSplitRepetition = null)
-    {
+    public function __construct(
+        string $msgStr = null,
+        array $hl7Globals = null,
+        bool $keepEmptySubFields = false,
+        bool $resetIndices = false,
+        bool $autoIncrementIndices = true,
+        bool $doNotSplitRepetition = null
+    ) {
         // Array holding the segments
         $this->segments = [];
 
         // Control characters and other HL7 properties
         $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] ?? '\n';
-        $this->segmentEndingBar = $hl7Globals['SEGMENT_ENDING_BAR'] ?? true; // Bar (|) at end of each segment. Default: Present
+        $this->segmentEndingBar = $hl7Globals['SEGMENT_ENDING_BAR'] ?? true; // '|' at end of each segment
         $this->fieldSeparator = $hl7Globals['FIELD_SEPARATOR'] ?? '|';
         $this->componentSeparator = $hl7Globals['COMPONENT_SEPARATOR'] ?? '^';
         $this->subcomponentSeparator = $hl7Globals['SUBCOMPONENT_SEPARATOR'] ?? '&';
@@ -136,12 +142,10 @@ class Message
                     if ($segmentName === 'MSH') {
                         array_unshift($fields, $this->fieldSeparator); # First field for MSH is '|'
                         $segment = new $className($fields);
-                    }
-                    else {
+                    } else {
                         $segment = new $className($fields, $autoIncrementIndices);
                     }
-                }
-                else {
+                } else {
                     $segment = new Segment($segmentName, $fields);
                 }
 
@@ -179,7 +183,7 @@ class Message
      * @param null|int $index Index where segment is inserted
      * @throws \InvalidArgumentException
      */
-    public function insertSegment(Segment $segment, $index = null): void
+    public function insertSegment(Segment $segment, int $index = null): void
     {
         if ($index > count($this->segments)) {
             throw new InvalidArgumentException("Index out of range. Index: $index, Total segments: " .
@@ -189,11 +193,9 @@ class Message
         if ($index === 0) {
             $this->resetCtrl($segment);
             array_unshift($this->segments, $segment);
-        }
-        elseif ($index === count($this->segments)) {
+        } elseif ($index === count($this->segments)) {
             $this->segments[] = $segment;
-        }
-        else {
+        } else {
             $this->segments =
                 array_merge(
                     array_slice($this->segments, 0, $index),
@@ -388,7 +390,7 @@ class Message
 
     /**
      * Convert Segment object to string
-     * @param $seg
+     * @param  Segment  $seg
      * @return string
      */
     public function segmentToString(Segment $seg): string
@@ -400,9 +402,9 @@ class Message
         foreach ($fields as $field) {
             if (is_array($field)) {
                 foreach ($field as $index => $value) {
-                    is_array($field[$index])
-                        ? ($segmentString .= implode($this->subcomponentSeparator, $field[$index]))
-                        : ($segmentString .= $field[$index]);
+                    is_array($value)
+                        ? ($segmentString .= implode($this->subcomponentSeparator, $value))
+                        : ($segmentString .= $value);
 
                     if ($index < (count($field) - 1)) {
                         $segmentString .= $this->componentSeparator;
@@ -422,7 +424,6 @@ class Message
      * Reset index attribute of each given segment, so when those are added the indices start from 1
      *
      * @return void
-     * @throws \ReflectionException
      */
     public function resetSegmentIndices(): void
     {
@@ -450,7 +451,7 @@ class Message
             : PREG_SPLIT_NO_EMPTY;
 
         if ((strpos($field, $this->repetitionSeparator) !== false) && (! $this->doNotSplitRepetition)) {
-            $components = preg_split("/\\".$this->repetitionSeparator.'/', $field, -1, $pregFlags);
+            $components = preg_split("/\\" . $this->repetitionSeparator . '/', $field, -1, $pregFlags);
             $fields = [];
             foreach ($components as $index => $component) {
                 $fields[$index] = $this->extractComponentsFromFields($component, $keepEmptySubFields);
@@ -461,17 +462,15 @@ class Message
 
         $components = preg_split("/\\" . $this->componentSeparator . '/', $field, -1, $pregFlags);
         foreach ($components as $index => $component) {
-            $subComps = preg_split("/\\" . $this->subcomponentSeparator . '/', $components[$index]);
+            $subComps = preg_split("/\\" . $this->subcomponentSeparator . '/', $component);
             // Make it a ref or just the value
             $components[$index] = count($subComps) === 1
                 ? $subComps[0]
                 : $subComps;
         }
 
-        $field = count($components) === 1
+        return count($components) === 1
             ? $components[0]
             : $components;
-
-        return $field;
     }
 }

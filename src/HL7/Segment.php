@@ -13,11 +13,11 @@ class Segment
     /**
      * Create a segment.
      *
-     * A segment may be created with just a name or a name and an array of field
-     * values. The segment name should be a standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and
-     * upper case. If an array is given, all fields will be filled from that array. Note that for composed fields and
-     * sub-components, the array may hold sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same
-     * way, since we can't distinguish between composed fields and repeated fields.
+     * A segment may be created with just a name or a name and an array of field values. The segment name should be a
+     * standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and upper case. If an array is given,
+     * all fields will be filled from that array. Note that for composed fields and sub-components, the array may hold
+     * sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same way, since we can't distinguish
+     * between composed fields and repeated fields.
      *
      * Example:
      * ```php
