@@ -48,10 +48,10 @@ class ACK extends Message
         //
         if ($req && ($msh->getField(15) || $msh->getField(16))) {
             $this->ACK_TYPE = 'E';
-            $msa->setAcknowledgementCode('CA');
+            $msa->setAcknowledgmentCode('CA');
         } else {
             $this->ACK_TYPE = 'N';
-            $msa->setAcknowledgementCode('AA');
+            $msa->setAcknowledgmentCode('AA');
         }
 
         $this->addSegment($msh);

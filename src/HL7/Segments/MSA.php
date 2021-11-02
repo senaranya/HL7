@@ -20,6 +20,17 @@ class MSA extends Segment
         return $this->setField($position, $value);
     }
 
+    /**
+     * Backward compatibility with 2.3
+     * @param $value
+     * @param int $position
+     * @return bool
+     */
+    public function setAcknowledgementCode($value, int $position = 1)
+    {
+        return $this->setField($position, $value);
+    }
+
     public function setMessageControlID($value, int $position = 2)
     {
         return $this->setField($position, $value);
@@ -48,6 +59,16 @@ class MSA extends Segment
     // -------------------- Getter Methods ------------------------------
 
     public function getAcknowledgmentCode(int $position = 1)
+    {
+        return $this->getField($position);
+    }
+
+    /**
+     * Backward compatibility with 2.3
+     * @param int $position
+     * @return array|string|null
+     */
+    public function getAcknowledgementCode(int $position = 1)
     {
         return $this->getField($position);
     }
