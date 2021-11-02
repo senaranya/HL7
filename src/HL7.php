@@ -161,7 +161,7 @@ class HL7
     }
 
     /**
-     * Set the HL7 version to be used by the factory. Default 2.5.1
+     * Set the HL7 version to be used by the factory. Default 2.3
      *
      * @param string HL7 version character.
      * @return boolean true if value has been set.
