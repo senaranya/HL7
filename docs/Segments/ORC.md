@@ -81,6 +81,7 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -94,7 +95,7 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
-public getActionBy (void)
+ getActionBy (void)
 ```
 
  
@@ -108,6 +109,7 @@ public getActionBy (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -117,7 +119,7 @@ public getActionBy (void)
 **Description**
 
 ```php
-public getAdvancedBeneficiaryNoticeCode (void)
+ getAdvancedBeneficiaryNoticeCode (void)
 ```
 
  
@@ -131,6 +133,7 @@ public getAdvancedBeneficiaryNoticeCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -140,7 +143,7 @@ public getAdvancedBeneficiaryNoticeCode (void)
 **Description**
 
 ```php
-public getAdvancedBeneficiaryNoticeOverrideReason (void)
+ getAdvancedBeneficiaryNoticeOverrideReason (void)
 ```
 
  
@@ -154,6 +157,7 @@ public getAdvancedBeneficiaryNoticeOverrideReason (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -163,7 +167,7 @@ public getAdvancedBeneficiaryNoticeOverrideReason (void)
 **Description**
 
 ```php
-public getCallBackPhoneNumber (void)
+ getCallBackPhoneNumber (void)
 ```
 
  
@@ -177,6 +181,7 @@ public getCallBackPhoneNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -186,7 +191,7 @@ public getCallBackPhoneNumber (void)
 **Description**
 
 ```php
-public getConfidentialityCode (void)
+ getConfidentialityCode (void)
 ```
 
  
@@ -200,6 +205,7 @@ public getConfidentialityCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -209,7 +215,7 @@ public getConfidentialityCode (void)
 **Description**
 
 ```php
-public getDateTimeofTransaction (void)
+ getDateTimeofTransaction (void)
 ```
 
  
@@ -223,6 +229,7 @@ public getDateTimeofTransaction (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -232,7 +239,7 @@ public getDateTimeofTransaction (void)
 **Description**
 
 ```php
-public getEnteredBy (void)
+ getEnteredBy (void)
 ```
 
  
@@ -246,6 +253,7 @@ public getEnteredBy (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -255,7 +263,7 @@ public getEnteredBy (void)
 **Description**
 
 ```php
-public getEntererAuthorizationMode (void)
+ getEntererAuthorizationMode (void)
 ```
 
  
@@ -269,6 +277,7 @@ public getEntererAuthorizationMode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -278,7 +287,7 @@ public getEntererAuthorizationMode (void)
 **Description**
 
 ```php
-public getEnterersLocation (void)
+ getEnterersLocation (void)
 ```
 
  
@@ -292,6 +301,7 @@ public getEnterersLocation (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -301,7 +311,7 @@ public getEnterersLocation (void)
 **Description**
 
 ```php
-public getEnteringDevice (void)
+ getEnteringDevice (void)
 ```
 
  
@@ -315,6 +325,7 @@ public getEnteringDevice (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -324,7 +335,7 @@ public getEnteringDevice (void)
 **Description**
 
 ```php
-public getEnteringOrganization (void)
+ getEnteringOrganization (void)
 ```
 
  
@@ -338,6 +349,7 @@ public getEnteringOrganization (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -347,7 +359,7 @@ public getEnteringOrganization (void)
 **Description**
 
 ```php
-public getFillerOrderNumber (void)
+ getFillerOrderNumber (void)
 ```
 
  
@@ -361,6 +373,7 @@ public getFillerOrderNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -370,7 +383,7 @@ public getFillerOrderNumber (void)
 **Description**
 
 ```php
-public getFillersExpectedAvailabilityDateTime (void)
+ getFillersExpectedAvailabilityDateTime (void)
 ```
 
  
@@ -384,6 +397,7 @@ public getFillersExpectedAvailabilityDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -393,7 +407,7 @@ public getFillersExpectedAvailabilityDateTime (void)
 **Description**
 
 ```php
-public getOrderControl (void)
+ getOrderControl (void)
 ```
 
  
@@ -407,6 +421,7 @@ public getOrderControl (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -416,7 +431,7 @@ public getOrderControl (void)
 **Description**
 
 ```php
-public getOrderControlCodeReason (void)
+ getOrderControlCodeReason (void)
 ```
 
  
@@ -430,6 +445,7 @@ public getOrderControlCodeReason (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -439,7 +455,7 @@ public getOrderControlCodeReason (void)
 **Description**
 
 ```php
-public getOrderEffectiveDateTime (void)
+ getOrderEffectiveDateTime (void)
 ```
 
  
@@ -453,6 +469,7 @@ public getOrderEffectiveDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -462,7 +479,7 @@ public getOrderEffectiveDateTime (void)
 **Description**
 
 ```php
-public getOrderStatus (void)
+ getOrderStatus (void)
 ```
 
  
@@ -476,6 +493,7 @@ public getOrderStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -485,7 +503,7 @@ public getOrderStatus (void)
 **Description**
 
 ```php
-public getOrderStatusModifier (void)
+ getOrderStatusModifier (void)
 ```
 
  
@@ -499,6 +517,7 @@ public getOrderStatusModifier (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -508,7 +527,7 @@ public getOrderStatusModifier (void)
 **Description**
 
 ```php
-public getOrderType (void)
+ getOrderType (void)
 ```
 
  
@@ -522,6 +541,7 @@ public getOrderType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -531,7 +551,7 @@ public getOrderType (void)
 **Description**
 
 ```php
-public getOrderingFacilityAddress (void)
+ getOrderingFacilityAddress (void)
 ```
 
  
@@ -545,6 +565,7 @@ public getOrderingFacilityAddress (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -554,7 +575,7 @@ public getOrderingFacilityAddress (void)
 **Description**
 
 ```php
-public getOrderingFacilityName (void)
+ getOrderingFacilityName (void)
 ```
 
  
@@ -568,6 +589,7 @@ public getOrderingFacilityName (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -577,7 +599,7 @@ public getOrderingFacilityName (void)
 **Description**
 
 ```php
-public getOrderingFacilityPhoneNumber (void)
+ getOrderingFacilityPhoneNumber (void)
 ```
 
  
@@ -591,6 +613,7 @@ public getOrderingFacilityPhoneNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -600,7 +623,7 @@ public getOrderingFacilityPhoneNumber (void)
 **Description**
 
 ```php
-public getOrderingProvider (void)
+ getOrderingProvider (void)
 ```
 
  
@@ -614,6 +637,7 @@ public getOrderingProvider (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -623,7 +647,7 @@ public getOrderingProvider (void)
 **Description**
 
 ```php
-public getOrderingProviderAddress (void)
+ getOrderingProviderAddress (void)
 ```
 
  
@@ -637,6 +661,7 @@ public getOrderingProviderAddress (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -646,7 +671,7 @@ public getOrderingProviderAddress (void)
 **Description**
 
 ```php
-public getParentOrder (void)
+ getParentOrder (void)
 ```
 
  
@@ -660,6 +685,7 @@ public getParentOrder (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -669,7 +695,7 @@ public getParentOrder (void)
 **Description**
 
 ```php
-public getParentUniversalServiceIdentifier (void)
+ getParentUniversalServiceIdentifier (void)
 ```
 
  
@@ -683,6 +709,7 @@ public getParentUniversalServiceIdentifier (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -692,7 +719,7 @@ public getParentUniversalServiceIdentifier (void)
 **Description**
 
 ```php
-public getPlacerGroupNumber (void)
+ getPlacerGroupNumber (void)
 ```
 
  
@@ -706,6 +733,7 @@ public getPlacerGroupNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -715,7 +743,7 @@ public getPlacerGroupNumber (void)
 **Description**
 
 ```php
-public getPlacerOrderNumber (void)
+ getPlacerOrderNumber (void)
 ```
 
  
@@ -729,6 +757,7 @@ public getPlacerOrderNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -738,7 +767,7 @@ public getPlacerOrderNumber (void)
 **Description**
 
 ```php
-public getQuantityTiming (void)
+ getQuantityTiming (void)
 ```
 
  
@@ -752,6 +781,7 @@ public getQuantityTiming (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -761,7 +791,7 @@ public getQuantityTiming (void)
 **Description**
 
 ```php
-public getResponseFlag (void)
+ getResponseFlag (void)
 ```
 
  
@@ -775,6 +805,7 @@ public getResponseFlag (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -784,7 +815,7 @@ public getResponseFlag (void)
 **Description**
 
 ```php
-public getVerifiedBy (void)
+ getVerifiedBy (void)
 ```
 
  
@@ -798,6 +829,7 @@ public getVerifiedBy (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -807,7 +839,7 @@ public getVerifiedBy (void)
 **Description**
 
 ```php
-public setActionBy (void)
+ setActionBy (void)
 ```
 
  
@@ -821,6 +853,7 @@ public setActionBy (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -830,7 +863,7 @@ public setActionBy (void)
 **Description**
 
 ```php
-public setAdvancedBeneficiaryNoticeCode (void)
+ setAdvancedBeneficiaryNoticeCode (void)
 ```
 
  
@@ -844,6 +877,7 @@ public setAdvancedBeneficiaryNoticeCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -853,7 +887,7 @@ public setAdvancedBeneficiaryNoticeCode (void)
 **Description**
 
 ```php
-public setAdvancedBeneficiaryNoticeOverrideReason (void)
+ setAdvancedBeneficiaryNoticeOverrideReason (void)
 ```
 
  
@@ -867,6 +901,7 @@ public setAdvancedBeneficiaryNoticeOverrideReason (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -876,7 +911,7 @@ public setAdvancedBeneficiaryNoticeOverrideReason (void)
 **Description**
 
 ```php
-public setCallBackPhoneNumber (void)
+ setCallBackPhoneNumber (void)
 ```
 
  
@@ -890,6 +925,7 @@ public setCallBackPhoneNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -899,7 +935,7 @@ public setCallBackPhoneNumber (void)
 **Description**
 
 ```php
-public setConfidentialityCode (void)
+ setConfidentialityCode (void)
 ```
 
  
@@ -913,6 +949,7 @@ public setConfidentialityCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -922,7 +959,7 @@ public setConfidentialityCode (void)
 **Description**
 
 ```php
-public setDateTimeofTransaction (void)
+ setDateTimeofTransaction (void)
 ```
 
  
@@ -936,6 +973,7 @@ public setDateTimeofTransaction (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -945,7 +983,7 @@ public setDateTimeofTransaction (void)
 **Description**
 
 ```php
-public setEnteredBy (void)
+ setEnteredBy (void)
 ```
 
  
@@ -959,6 +997,7 @@ public setEnteredBy (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -968,7 +1007,7 @@ public setEnteredBy (void)
 **Description**
 
 ```php
-public setEntererAuthorizationMode (void)
+ setEntererAuthorizationMode (void)
 ```
 
  
@@ -982,6 +1021,7 @@ public setEntererAuthorizationMode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -991,7 +1031,7 @@ public setEntererAuthorizationMode (void)
 **Description**
 
 ```php
-public setEnterersLocation (void)
+ setEnterersLocation (void)
 ```
 
  
@@ -1005,6 +1045,7 @@ public setEnterersLocation (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1014,7 +1055,7 @@ public setEnterersLocation (void)
 **Description**
 
 ```php
-public setEnteringDevice (void)
+ setEnteringDevice (void)
 ```
 
  
@@ -1028,6 +1069,7 @@ public setEnteringDevice (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1037,7 +1079,7 @@ public setEnteringDevice (void)
 **Description**
 
 ```php
-public setEnteringOrganization (void)
+ setEnteringOrganization (void)
 ```
 
  
@@ -1051,6 +1093,7 @@ public setEnteringOrganization (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1060,7 +1103,7 @@ public setEnteringOrganization (void)
 **Description**
 
 ```php
-public setFillerOrderNumber (void)
+ setFillerOrderNumber (void)
 ```
 
  
@@ -1074,6 +1117,7 @@ public setFillerOrderNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1083,7 +1127,7 @@ public setFillerOrderNumber (void)
 **Description**
 
 ```php
-public setFillersExpectedAvailabilityDateTime (void)
+ setFillersExpectedAvailabilityDateTime (void)
 ```
 
  
@@ -1097,6 +1141,7 @@ public setFillersExpectedAvailabilityDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1106,7 +1151,7 @@ public setFillersExpectedAvailabilityDateTime (void)
 **Description**
 
 ```php
-public setOrderControl (void)
+ setOrderControl (void)
 ```
 
  
@@ -1120,6 +1165,7 @@ public setOrderControl (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1129,7 +1175,7 @@ public setOrderControl (void)
 **Description**
 
 ```php
-public setOrderControlCodeReason (void)
+ setOrderControlCodeReason (void)
 ```
 
  
@@ -1143,6 +1189,7 @@ public setOrderControlCodeReason (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1152,7 +1199,7 @@ public setOrderControlCodeReason (void)
 **Description**
 
 ```php
-public setOrderEffectiveDateTime (void)
+ setOrderEffectiveDateTime (void)
 ```
 
  
@@ -1166,6 +1213,7 @@ public setOrderEffectiveDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1175,7 +1223,7 @@ public setOrderEffectiveDateTime (void)
 **Description**
 
 ```php
-public setOrderStatus (void)
+ setOrderStatus (void)
 ```
 
  
@@ -1189,6 +1237,7 @@ public setOrderStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1198,7 +1247,7 @@ public setOrderStatus (void)
 **Description**
 
 ```php
-public setOrderStatusModifier (void)
+ setOrderStatusModifier (void)
 ```
 
  
@@ -1212,6 +1261,7 @@ public setOrderStatusModifier (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1221,7 +1271,7 @@ public setOrderStatusModifier (void)
 **Description**
 
 ```php
-public setOrderType (void)
+ setOrderType (void)
 ```
 
  
@@ -1235,6 +1285,7 @@ public setOrderType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1244,7 +1295,7 @@ public setOrderType (void)
 **Description**
 
 ```php
-public setOrderingFacilityAddress (void)
+ setOrderingFacilityAddress (void)
 ```
 
  
@@ -1258,6 +1309,7 @@ public setOrderingFacilityAddress (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1267,7 +1319,7 @@ public setOrderingFacilityAddress (void)
 **Description**
 
 ```php
-public setOrderingFacilityName (void)
+ setOrderingFacilityName (void)
 ```
 
  
@@ -1281,6 +1333,7 @@ public setOrderingFacilityName (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1290,7 +1343,7 @@ public setOrderingFacilityName (void)
 **Description**
 
 ```php
-public setOrderingFacilityPhoneNumber (void)
+ setOrderingFacilityPhoneNumber (void)
 ```
 
  
@@ -1304,6 +1357,7 @@ public setOrderingFacilityPhoneNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1313,7 +1367,7 @@ public setOrderingFacilityPhoneNumber (void)
 **Description**
 
 ```php
-public setOrderingProvider (void)
+ setOrderingProvider (void)
 ```
 
  
@@ -1327,6 +1381,7 @@ public setOrderingProvider (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1336,7 +1391,7 @@ public setOrderingProvider (void)
 **Description**
 
 ```php
-public setOrderingProviderAddress (void)
+ setOrderingProviderAddress (void)
 ```
 
  
@@ -1350,6 +1405,7 @@ public setOrderingProviderAddress (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1359,7 +1415,7 @@ public setOrderingProviderAddress (void)
 **Description**
 
 ```php
-public setParentOrder (void)
+ setParentOrder (void)
 ```
 
  
@@ -1373,6 +1429,7 @@ public setParentOrder (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1382,7 +1439,7 @@ public setParentOrder (void)
 **Description**
 
 ```php
-public setParentUniversalServiceIdentifier (void)
+ setParentUniversalServiceIdentifier (void)
 ```
 
  
@@ -1396,6 +1453,7 @@ public setParentUniversalServiceIdentifier (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1405,7 +1463,7 @@ public setParentUniversalServiceIdentifier (void)
 **Description**
 
 ```php
-public setPlacerGroupNumber (void)
+ setPlacerGroupNumber (void)
 ```
 
  
@@ -1419,6 +1477,7 @@ public setPlacerGroupNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1428,7 +1487,7 @@ public setPlacerGroupNumber (void)
 **Description**
 
 ```php
-public setPlacerOrderNumber (void)
+ setPlacerOrderNumber (void)
 ```
 
  
@@ -1442,6 +1501,7 @@ public setPlacerOrderNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1451,7 +1511,7 @@ public setPlacerOrderNumber (void)
 **Description**
 
 ```php
-public setQuantityTiming (void)
+ setQuantityTiming (void)
 ```
 
  
@@ -1465,6 +1525,7 @@ public setQuantityTiming (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1474,7 +1535,7 @@ public setQuantityTiming (void)
 **Description**
 
 ```php
-public setResponseFlag (void)
+ setResponseFlag (void)
 ```
 
  
@@ -1488,6 +1549,7 @@ public setResponseFlag (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1497,7 +1559,7 @@ public setResponseFlag (void)
 **Description**
 
 ```php
-public setVerifiedBy (void)
+ setVerifiedBy (void)
 ```
 
  
@@ -1511,6 +1573,7 @@ public setVerifiedBy (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 

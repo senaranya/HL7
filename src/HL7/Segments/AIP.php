@@ -13,9 +13,8 @@ use Aranyasen\HL7\Segment;
  * Personnel not controlled by a schedule are not identified on a schedule request using this segment. The kinds of
  * personnel described on this segment include any healthcare provider in the institution controlled by a schedule (for
  * example: technicians, physicians, nurses, surgeons, anesthesiologists, or CRNAs).
-
-
- * Ref: http://hl7-definition.caristix.com:9010/Default.aspx?version=HL7+v2.5.1&segment=AIP
+ *
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/AIP
  */
 class AIP extends Segment
 {

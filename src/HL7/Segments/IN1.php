@@ -6,7 +6,7 @@ use Aranyasen\HL7\Segment;
 
 /**
  * IN1 segment class
- * Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-in1-insurance-segment
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/IN1
  */
 class IN1 extends Segment
 {
@@ -283,6 +283,26 @@ class IN1 extends Segment
         return $this->setField($position, $value);
     }
 
+    public function setSignatureCode($value, int $position = 50)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setSignatureCodeDate($value, int $position = 51)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setInsuredsBirthPlace($value, int $position = 52)
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setVIPIndicator($value, int $position = 53)
+    {
+        return $this->setField($position, $value);
+    }
+
     public function getID(int $position = 1)
     {
         return $this->getField($position);
@@ -527,4 +547,31 @@ class IN1 extends Segment
     {
         return $this->getField($position);
     }
+
+    public function getSignatureCode(int $position = 50)
+    {
+        return $this->getField($position);
+    }
+
+    public function getSignatureCodeDate(int $position = 51)
+    {
+        return $this->getField($position);
+    }
+
+    public function getInsuredsBirthPlace(int $position = 52)
+    {
+        return $this->getField($position);
+    }
+
+    public function getVIPIndicator(int $position = 53)
+    {
+        return $this->getField($position);
+    }
+
+
+
+
+
+
+
 }

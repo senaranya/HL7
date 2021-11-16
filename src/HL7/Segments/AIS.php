@@ -5,19 +5,17 @@ namespace Aranyasen\HL7\Segments;
 use Aranyasen\HL7\Segment;
 
 /**
- * AIL segment class
+ * AIS segment class
  *
- * AIL: Appointment Information - Location Resource
+ * AIS - Appointment Information
+ * The AIS segment contains information about various kinds of services that can be scheduled. 
+ * Services included in a transaction using this segment are assumed to be controlled by a schedule 
+ * on a schedule filler application. 
+ * Services not controlled by a schedule are not identified on a schedule request using this segment.
  *
- * The AIL segment contains information about location resources (meeting rooms, operating rooms, examination rooms, or
- * other locations) that can be scheduled. Resources included in a transaction using this segment are assumed to be
- * controlled by a schedule on a schedule filler application. Resources not controlled by a schedule are not identified
- * on a schedule request using this segment. Location resources are identified with this specific segment because of the
- * specific encoding of locations used by the HL7 specification.
- *
- * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/AIL
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/AIS
  */
-class AIL extends Segment
+class AIS extends Segment
 {
     /**
      * Index of this segment. Incremented for every new segment of this class created
@@ -27,7 +25,7 @@ class AIL extends Segment
 
     public function __construct(array $fields = null)
     {
-        parent::__construct('AIL', $fields);
+        parent::__construct('AIS', $fields);
         $this->setID($this::$setId++);
     }
 
@@ -55,55 +53,57 @@ class AIL extends Segment
         return $this->setField($position, $value);
     }
 
-    public function setLocationResourceID($value, int $position = 3): bool
+    public function setUniversalServiceIdentifier($value, int $position = 3)
     {
         return $this->setField($position, $value);
     }
 
-    public function setLocationTypeAIL($value, int $position = 4): bool
+    public function setStartDateTime($value, int $position = 4)
     {
         return $this->setField($position, $value);
     }
 
-    public function setLocationGroup($value, int $position = 5): bool
+    public function setStartDateTimeOffset($value, int $position = 5)
     {
         return $this->setField($position, $value);
     }
 
-    public function setStartDateTime($value, int $position = 6): bool
+    public function setStartDateTimeOffsetUnits($value, int $position = 6)
     {
         return $this->setField($position, $value);
     }
 
-    public function setStartDateTimeOffset($value, int $position = 7): bool
+    public function setDuration($value, int $position = 7)
     {
         return $this->setField($position, $value);
     }
 
-    public function setStartDateTimeOffsetUnits($value, int $position = 8): bool
+    public function setDurationUnits($value, int $position = 8)
     {
         return $this->setField($position, $value);
     }
 
-    public function setDuration($value, int $position = 9): bool
+    public function setAllowSubstitutionCode($value, int $position = 9)
     {
         return $this->setField($position, $value);
     }
 
-    public function setDurationUnits($value, int $position = 10): bool
+    public function setFillerStatusCode($value, int $position = 10)
     {
         return $this->setField($position, $value);
     }
 
-    public function setAllowSubstitutionCode($value, int $position = 11): bool
+    public function setPlacerSupplementalServiceInformation($value, int $position = 11)
     {
         return $this->setField($position, $value);
     }
 
-    public function setFillerStatusCode($value, int $position = 12): bool
+    public function setFillerSupplementalServiceInformation($value, int $position = 12)
     {
         return $this->setField($position, $value);
     }
+
+    
 
     public function getID(int $position = 1)
     {
@@ -114,53 +114,53 @@ class AIL extends Segment
     {
         return $this->getField($position);
     }
-
-    public function getLocationResourceID(int $position = 3)
+    
+    public function getUniversalServiceIdentifier(int $position = 3)
     {
         return $this->getField($position);
     }
-
-    public function getLocationTypeAIL(int $position = 4)
+    
+    public function getStartDateTime(int $position = 4)
     {
         return $this->getField($position);
     }
-
-    public function getLocationGroup(int $position = 5)
+    
+    public function getStartDateTimeOffset(int $position = 5)
     {
         return $this->getField($position);
     }
-
-    public function getStartDateTime(int $position = 6)
+    
+    public function getStartDateTimeOffsetUnits(int $position = 6)
     {
         return $this->getField($position);
     }
-
-    public function getStartDateTimeOffset(int $position = 7)
+    
+    public function getDuration(int $position = 7)
     {
         return $this->getField($position);
     }
-
-    public function getStartDateTimeOffsetUnits(int $position = 8)
+    
+    public function getDurationUnits(int $position = 8)
     {
         return $this->getField($position);
     }
-
-    public function getDuration(int $position = 9)
+    
+    public function getAllowSubstitutionCode(int $position = 9)
     {
         return $this->getField($position);
     }
-
-    public function getDurationUnits(int $position = 10)
+    
+    public function getFillerStatusCode(int $position = 10)
     {
         return $this->getField($position);
     }
-
-    public function getAllowSubstitutionCode(int $position = 11)
+    
+    public function getPlacerSupplementalServiceInformation(int $position = 11)
     {
         return $this->getField($position);
     }
-
-    public function getFillerStatusCode(int $position = 12)
+    
+    public function getFillerSupplementalServiceInformation(int $position = 12)
     {
         return $this->getField($position);
     }

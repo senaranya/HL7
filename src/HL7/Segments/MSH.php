@@ -59,7 +59,7 @@ class MSH extends Segment
         } else {
             $this->setField(1, '|');
             $this->setField(2, '^~\\&');
-            $this->setVersionId('2.3');
+            $this->setVersionId('2.5.1');
         }
         $this->setDateTimeOfMessage(strftime('%Y%m%d%H%M%S'));
         $this->setMessageControlId($this->getDateTimeOfMessage() . random_int(10000, 99999));
@@ -146,10 +146,27 @@ class MSH extends Segment
      */
     public function setMessageType($value, int $position = 9): bool
     {
-        $typeField = $this->getField($position);
-        if (is_array($typeField) && !empty($typeField[1])) {
-            $value = [$value, $typeField[1]];
-        }
+        if (is_array($value))
+            return $this->setField($position, $value);
+
+        // Keep compatibility with previous behavior:
+        $value = [$value, $this->getTriggerEvent(), $this->getMessageStructure()];
+        return $this->setField($position, $value);
+    }
+
+    /**
+     * Set the Message Type's Message Code (MSH.9.1)
+     *
+     * Ref. https://hl7-definition.caristix.com/v2/HL7v2.5.1/Fields/MSH.9
+     *      https://hl7-definition.caristix.com/v2/HL7v2.5.1/Tables/0076
+     *
+     * @param $value
+     * @param int $position
+     * @return bool
+     */
+    public function setMessageCode($value, int $position = 9)
+    {
+        $value = [$value, $this->getTriggerEvent($position), $this->getMessageStructure($position)];
         return $this->setField($position, $value);
     }
 
@@ -157,7 +174,7 @@ class MSH extends Segment
      *
      * Sets trigger event to MSH segment.
      *
-     * If meessage type is already set, then it is preserved
+     * If message type is already set, then it is preserved
      *
      * Example:
      *
@@ -170,20 +187,31 @@ class MSH extends Segment
      * Then the new field value will be ORU^R30.
      * If trigger event was not set then it will set the new value.
      *
+     * Ref. https://hl7-definition.caristix.com/v2/HL7v2.5.1/Tables/0003
+     *
      * @param string $value
      * @param int $position
      * @return bool
      */
     public function setTriggerEvent($value, int $position = 9): bool
     {
-        $typeField = $this->getField($position);
-        if (is_array($typeField) && !empty($typeField[0])) {
-            $value = [$typeField[0], $value];
-        } else {
-            $value = [$typeField, $value];
-        }
+        $value = [$this->getMessageCode(), $value, $this->getMessageStructure($position)];
         return $this->setField($position, $value);
     }
+
+    /**
+     * Ref. https://hl7-definition.caristix.com/v2/HL7v2.5.1/Tables/0354
+     *
+     * @param $value
+     * @param int $position
+     * @return bool
+     */
+    public function setMessageStructure($value, int $position = 9): bool
+    {
+        $value = [$this->getMessageCode(), $this->getTriggerEvent(), $value];
+        return $this->setField($position, $value);
+    }
+
 
     public function setMessageControlId($value, int $position = 10)
     {
@@ -273,7 +301,16 @@ class MSH extends Segment
         if (!empty($typeField) && is_array($typeField)) {
             return (string) $typeField[0];
         }
-        return (string) $typeField;
+        return '';
+    }
+
+    public function getMessageCode(int $position = 9): string
+    {
+        $triggerField = $this->getField($position);
+        if (!empty($triggerField[0]) && is_array($triggerField)) {
+            return $triggerField[0];
+        }
+        return '';
     }
 
     public function getTriggerEvent(int $position = 9): string
@@ -282,7 +319,16 @@ class MSH extends Segment
         if (!empty($triggerField[1]) && is_array($triggerField)) {
             return $triggerField[1];
         }
-        return false;
+        return '';
+    }
+
+    public function getMessageStructure(int $position = 9): string
+    {
+        $triggerField = $this->getField($position);
+        if (!empty($triggerField[2]) && is_array($triggerField)) {
+            return $triggerField[2];
+        }
+        return '';
     }
 
     public function getMessageControlId(int $position = 10)
@@ -296,7 +342,7 @@ class MSH extends Segment
     }
 
     /**
-     * Get HL7 version, e.g. 2.1, 2.3, 3.0 etc.
+     * Get HL7 version, e.g. 2.1, 2.3, 2.5 etc.
      * @param int $position
      * @return array|null|string
      */
