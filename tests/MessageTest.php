@@ -73,8 +73,11 @@ class MessageTest extends TestCase
     {
         $msg = new Message("MSH|^~\\&|1|\nABC|||xxx|\n", ['SEGMENT_SEPARATOR' => '\r\n']);
         self::assertSame('MSH|^~\\&|1|\r\nABC|||xxx|\r\n', $msg->toString(), 'Custom line-endings');
-        self::assertSame("MSH|^~\\&|1|\r\nABC|||xxx|\r\n", $msg->toString(true),
-            'toString() respects custom line-endings');
+        self::assertSame(
+            "MSH|^~\\&|1|\r\nABC|||xxx|\r\n",
+            $msg->toString(true),
+            'toString() respects custom line-endings'
+        );
     }
 
     /** @test
@@ -84,8 +87,11 @@ class MessageTest extends TestCase
     {
         $msg = new Message("MSH|^~\\&|1|\rABC|||xxx|\r");
         self::assertSame('MSH|^~\\&|1|\nABC|||xxx|\n', $msg->toString(), 'String representation of message');
-        self::assertSame("MSH|^~\\&|1|\nABC|||xxx|\n", $msg->toString(true),
-            'Pretty print representation of message');
+        self::assertSame(
+            "MSH|^~\\&|1|\nABC|||xxx|\n",
+            $msg->toString(true),
+            'Pretty print representation of message'
+        );
     }
 
     /** @test
@@ -241,7 +247,6 @@ class MessageTest extends TestCase
 
         $msh->setField(1, '|');
         self::assertSame('MSH|abcd|\n', $msg->toString(), 'Field separator should be changed to |');
-
     }
 
     /**
@@ -384,12 +389,24 @@ class MessageTest extends TestCase
         $hl7String = "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|1||22^BB|\n";
 
         $msg = new Message($hl7String, null, true, true);
-        self::assertSame("MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|2||22^BB|\n",
-            $msg->toString(true), 'without 5th argument as false, each instance is auto-incremented');
+        self::assertSame(
+            "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|2||22^BB|\n",
+            $msg->toString(true),
+            'without 5th argument as false, each instance is auto-incremented'
+        );
 
         $msg = new Message($hl7String, null, true, true, false);
-        self::assertSame("MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|1||22^BB|\n",
-            $msg->toString(true));
+        self::assertSame(
+            "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|1||22^BB|\n",
+            $msg->toString(true)
+        );
+
+        $msg = new Message("MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "PID|||3^0\n", null, true, false, false);
+        self::assertSame(
+            "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "PID|||3^0|\n",
+            $msg->toString(true),
+            "With auto-incrementing off, a segment index shouldn't be inserted if not present"
+        );
     }
 
     /** @test */
