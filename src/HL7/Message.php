@@ -95,66 +95,48 @@ class Message
             $this->resetSegmentIndices();
         }
 
-        // If an HL7 string is given to the constructor, parse it.
-        if ($msgStr) {
-            $segments = preg_split("/[\n\r" . $this->segmentSeparator . ']/', $msgStr, -1, PREG_SPLIT_NO_EMPTY);
+        // If no HL7 string is passed to the constructor, nothing else to do
+        if (!$msgStr) {
+            return;
+        }
 
-            // The first segment should be the control segment
-            if (!preg_match('/^([A-Z0-9]{3})(.)(.)(.)(.)(.)(.)/', $segments[0], $matches)) {
-                throw new HL7Exception('Not a valid message: invalid control segment', E_USER_ERROR);
-            }
+        $segments = preg_split("/[\n\r" . $this->segmentSeparator . ']/', $msgStr, -1, PREG_SPLIT_NO_EMPTY);
+        $this->setSeparators($segments[0]); // First segment is MSH, the control segment
 
-            [$dummy, $hdr, $fieldSep, $compSep, $repSep, $esc, $subCompSep, $fieldSepCtrl] = $matches;
+        // Do all segments
+        foreach ($segments as $index => $segmentString) {
+            $fields = preg_split("/\\" . $this->fieldSeparator . '/', $segmentString);
+            $segmentName = array_shift($fields);
 
-            // Check whether field separator is repeated after 4 control characters
-            if ($fieldSep !== $fieldSepCtrl) {
-                throw new HL7Exception('Not a valid message: field separator invalid', E_USER_ERROR);
-            }
-
-            // Set field separator based on control segment
-            $this->fieldSeparator        = $fieldSep;
-
-            // Set other separators
-            $this->componentSeparator    = $compSep;
-            $this->subcomponentSeparator = $subCompSep;
-            $this->escapeChar            = $esc;
-            $this->repetitionSeparator   = $repSep;
-
-            // Do all segments
-            foreach ($segments as $i => $iValue) {
-                $fields = preg_split("/\\" . $this->fieldSeparator . '/', $segments[$i]);
-                $segmentName = array_shift($fields);
-
-                foreach ($fields as $j => $jValue) {
-                    // Skip control field
-                    if ($i === 0 && $j === 0) {
-                        continue;
-                    }
-
-                    $fields[$j] = $this->extractComponentsFromFields($fields[$j], $keepEmptySubFields);
+            foreach ($fields as $j => $field) {
+                // Skip control field
+                if ($index === 0 && $j === 0) {
+                    continue;
                 }
 
-                $segment = null;
+                $fields[$j] = $this->extractComponentsFromField($field, $keepEmptySubFields);
+            }
 
-                // If a class exists for the segment under segments/, (e.g., MSH)
-                $className = "Aranyasen\\HL7\\Segments\\$segmentName";
-                if (class_exists($className)) {
-                    if ($segmentName === 'MSH') {
-                        array_unshift($fields, $this->fieldSeparator); # First field for MSH is '|'
-                        $segment = new $className($fields);
-                    } else {
-                        $segment = new $className($fields, $autoIncrementIndices);
-                    }
+            $segment = null;
+
+            // If a class exists for the segment under segments/, (e.g., MSH)
+            $className = "Aranyasen\\HL7\\Segments\\$segmentName";
+            if (class_exists($className)) {
+                if ($segmentName === 'MSH') {
+                    array_unshift($fields, $this->fieldSeparator); # First field for MSH is '|'
+                    $segment = new $className($fields);
                 } else {
-                    $segment = new Segment($segmentName, $fields);
+                    $segment = new $className($fields, $autoIncrementIndices);
                 }
-
-                if (!$segment) {
-                    trigger_error('Segment not created', E_USER_WARNING);
-                }
-
-                $this->addSegment($segment);
+            } else {
+                $segment = new Segment($segmentName, $fields);
             }
+
+            if (!$segment) {
+                trigger_error('Segment not created', E_USER_WARNING);
+            }
+
+            $this->addSegment($segment);
         }
     }
 
@@ -444,7 +426,7 @@ class Message
      * @param bool $keepEmptySubFields
      * @return array|string
      */
-    private function extractComponentsFromFields(string $field, bool $keepEmptySubFields)
+    private function extractComponentsFromField(string $field, bool $keepEmptySubFields)
     {
         $pregFlags = $keepEmptySubFields
             ? 0
@@ -454,7 +436,7 @@ class Message
             $components = preg_split("/\\" . $this->repetitionSeparator . '/', $field, -1, $pregFlags);
             $fields = [];
             foreach ($components as $index => $component) {
-                $fields[$index] = $this->extractComponentsFromFields($component, $keepEmptySubFields);
+                $fields[$index] = $this->extractComponentsFromField($component, $keepEmptySubFields);
             }
 
             return $fields;
@@ -472,5 +454,35 @@ class Message
         return count($components) === 1
             ? $components[0]
             : $components;
+    }
+
+    /**
+     * Set various separators - segment, field etc.
+     *
+     * @param  string  $msh
+     * @return void
+     * @throws HL7Exception
+     */
+    private function setSeparators(string $msh): void
+    {
+        if (!preg_match('/^([A-Z0-9]{3})(.)(.)(.)(.)(.)(.)/', $msh, $matches)) {
+            throw new HL7Exception('Not a valid message: invalid control segment', E_USER_ERROR);
+        }
+
+        [, , $fieldSep, $compSep, $repSep, $esc, $subCompSep, $fieldSepCtrl] = $matches;
+
+        // Check whether field separator is repeated after 4 control characters
+        if ($fieldSep !== $fieldSepCtrl) {
+            throw new HL7Exception('Not a valid message: field separator invalid', E_USER_ERROR);
+        }
+
+        // Set field separator based on control segment
+        $this->fieldSeparator = $fieldSep;
+
+        // Set other separators
+        $this->componentSeparator = $compSep;
+        $this->subcomponentSeparator = $subCompSep;
+        $this->escapeChar = $esc;
+        $this->repetitionSeparator = $repSep;
     }
 }
