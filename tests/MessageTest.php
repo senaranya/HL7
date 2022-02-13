@@ -121,7 +121,8 @@ class MessageTest extends TestCase
         $msg = new Message("MSH*^~\\&*1\rABC***xxx\r"); // Use * as a field separator
 
         self::assertSame(
-            'MSH*^~\&*1*\nABC***xxx*\n', $msg->toString(),
+            'MSH*^~\&*1*\nABC***xxx*\n',
+            $msg->toString(),
             'String representation of message with * as field separator'
         );
         self::assertSame('1', $msg->getSegmentByIndex(0)->getField(3), '3d field of MSH');
@@ -162,7 +163,11 @@ class MessageTest extends TestCase
         $msg = new Message("MSH|^~\\&|1|\nAAA|1||xxx|\nBBB|1|a|\nBBB|2|b|\nBBB|3|c|");
         $segment = $msg->getSegmentsByName('BBB')[1];
         $msg->removeSegment($segment, true);
-        self::assertSame("MSH|^~\\&|1|\nAAA|1||xxx|\nBBB|1|a|\nBBB|2|c|\n", $msg->toString(true), 'Should reset index of subsequent segments');
+        self::assertSame(
+            "MSH|^~\\&|1|\nAAA|1||xxx|\nBBB|1|a|\nBBB|2|c|\n",
+            $msg->toString(true),
+            'Should reset index of subsequent segments'
+        );
     }
 
     /** @test */
@@ -299,7 +304,7 @@ class MessageTest extends TestCase
     /** @test */
     public function segment_ending_bar_can_be_omitted(): void
     {
-        $msg = new Message("MSH|^~\\&|1|\nABC|||xxx|\n",  ['SEGMENT_ENDING_BAR' => false]);
+        $msg = new Message("MSH|^~\\&|1|\nABC|||xxx|\n", ['SEGMENT_ENDING_BAR' => false]);
         self::assertSame("MSH|^~\\&|1\nABC|||xxx\n", $msg->toString(true), 'No ending bar on each segment');
 
         $msg = new Message("MSH|^~\\&|1|\nABC|||xxx|\n");
@@ -341,11 +346,13 @@ class MessageTest extends TestCase
 
     /**
      * The segment classes use static properties to maintain segment-index. This is required as one can add new segments
-     * to a given message object and expect the index to auto-increment. The side-effect to this is, if you create a
-     * second message, adding the same segments will now start indexing from their index in the last message instead of 1!
-     * This happens because static properties are class properties, not object ones, and thus shared across all objects.
+     * to a given message object and expect the index to auto-increment. The side effect to this is, if you create a
+     * second message, adding the same segments will now start indexing from their index in the last message instead of
+     * 1! This happens because static properties are class properties, not object ones, and thus shared across all
+     * objects.
      *
-     * To counter this, use 'true' in the 4th argument while creating a message, or call resetSegmentIndices() explicitly
+     * To counter this, use 'true' in the 4th argument while creating a message, or call resetSegmentIndices()
+     * explicitly.
      *
      * This test verifies both.
      *
@@ -357,12 +364,20 @@ class MessageTest extends TestCase
         // Create a message with a PID segment
         $msg1 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
         $msg1->addSegment(new PID());
-        self::assertSame("MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|1|\n", $msg1->toString(true), 'PID index in first message is 1');
+        self::assertSame(
+            "MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|1|\n",
+            $msg1->toString(true),
+            'PID index in first message is 1'
+        );
 
         // Create another message with a PID segment
         $msg2 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
         $msg2->addSegment(new PID());
-        self::assertSame("MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|2|\n", $msg2->toString(true), 'PID index gets incremented');
+        self::assertSame(
+            "MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|2|\n",
+            $msg2->toString(true),
+            'PID index gets incremented'
+        );
 
         // Create another message with a PID segment, this time 4th argument to message as true
         $msg3 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|", null, true, true);
@@ -372,7 +387,11 @@ class MessageTest extends TestCase
         // Create a message with a PID segment
         $msg4 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
         $msg4->addSegment(new PID());
-        self::assertSame("MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|2|\n", $msg4->toString(true), 'PID index gets incremented');
+        self::assertSame(
+            "MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|2|\n",
+            $msg4->toString(true),
+            'PID index gets incremented'
+        );
 
         $msg5 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
         $msg5->resetSegmentIndices();

@@ -49,7 +49,8 @@ class PIDTest extends TestCase
         $msg = new Message($messageString, null, false, true, true, true);
 
         self::assertSame(
-            'MSH|^~\&|1|\nPID|1||||Test &""&firstname &""&""^F^N N^F^""~Test &""&Test^Test^""^B~""&""&""^P~^Lastname^N|\n',
+            'MSH|^~\&|1|\nPID|1||||Test &""&firstname &""&""^F^N N^F^""~Test &""&Test^Test^""^B~""&""&""^P~^' .
+            'Lastname^N|\n',
             $msg->toString()
         );
     }

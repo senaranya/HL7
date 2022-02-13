@@ -5,6 +5,8 @@ namespace Aranyasen\HL7\Tests;
 use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Messages\ACK;
+use ReflectionException;
+use RuntimeException;
 
 /**
  * Trait Hl7ListenerTrait
@@ -25,13 +27,13 @@ trait Hl7ListenerTrait
 
     public function writeToPipe(string $value): void
     {
-        $pipe = fopen($this->pipeName,'wb');
+        $pipe = fopen($this->pipeName, 'wb');
         fwrite($pipe, $value);
     }
 
     public function readFromPipe(): string
     {
-        $pipe = fopen($this->pipeName,'rb');
+        $pipe = fopen($this->pipeName, 'rb');
         return fread($pipe, 1024);
     }
 
@@ -44,12 +46,14 @@ trait Hl7ListenerTrait
      * @param int $port
      * @param int $totalClientsToConnect How many clients are expected to connect to this server, once it's up
      * @throws HL7Exception
-     * @throws \ReflectionException
+     * @throws ReflectionException
      */
     public function createTcpServer(int $port, int $totalClientsToConnect): void
     {
         if (($socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP)) === false) {
-            throw new \RuntimeException('socket_create() failed: reason: ' . socket_strerror(socket_last_error()) . "\n");
+            throw new RuntimeException(
+                'socket_create() failed: reason: ' . socket_strerror(socket_last_error()) . "\n"
+            );
         }
 
         // This is to avoid "address already in use" error while doing ->bind()

@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Aranyasen\HL7\Tests;
@@ -72,7 +73,7 @@ class ConnectionTest extends TestCase
 
             $connection = new Connection('localhost', $this->port);
             $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", null, true, true);
-            self::assertNull($connection->send($msg,' UTF-8', true));
+            self::assertNull($connection->send($msg, ' UTF-8', true));
 
             $this->closeTcpSocket($connection->getSocket()); // Clean up listener
             pcntl_wait($status); // Wait till child is closed

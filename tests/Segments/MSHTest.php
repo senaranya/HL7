@@ -6,6 +6,7 @@ namespace Aranyasen\HL7\Tests\Segments;
 
 use Aranyasen\HL7\Segments\MSH;
 use Aranyasen\HL7\Tests\TestCase;
+use Exception;
 
 class MSHTest extends TestCase
 {
@@ -21,13 +22,21 @@ class MSHTest extends TestCase
     }
 
     /** @test
-     * @throws \Exception
+     * @throws Exception
      */
     public function an_array_of_fields_can_be_passed_to_constructor_to_construct_MSH(): void
     {
-        $msh = new MSH(['MSH', '^~\&', 'HL7 Corp', 'HL7 HQ', 'VISION', 'MISYS', '200404061744', '', ['DFT', 'P03'], 'TC-22222', 'T', '2.3']);
+        $msh = new MSH(
+            [
+                'MSH', '^~\&', 'HL7 Corp', 'HL7 HQ', 'VISION', 'MISYS', '200404061744', '', ['DFT', 'P03'], 'TC-22222',
+                'T', '2.3',
+            ]
+        );
         self::assertSame(
-            ['MSH', '', '^~\&', 'HL7 Corp', 'HL7 HQ', 'VISION', 'MISYS', '200404061744', '', ['DFT', 'P03'], 'TC-22222', 'T', '2.3'],
+            [
+                'MSH', '', '^~\&', 'HL7 Corp', 'HL7 HQ', 'VISION', 'MISYS', '200404061744', '', ['DFT', 'P03'],
+                'TC-22222', 'T', '2.3',
+            ],
             $msh->getFields()
         );
     }

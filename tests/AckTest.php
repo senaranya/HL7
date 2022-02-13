@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Aranyasen\HL7\Tests;
@@ -87,7 +88,12 @@ class AckTest extends TestCase
     public function a_MSH_can_be_provided_to_get_the_fields_from(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|");
-        $msh = new MSH(['MSH', '^~\&', 'HL7 Corp', 'HL7 HQ', 'VISION', 'MISYS', '200404061744', '', ['DFT', 'P03'], 'TC-22222', 'T', '2.3']);
+        $msh = new MSH(
+            [
+                'MSH', '^~\&', 'HL7 Corp', 'HL7 HQ', 'VISION', 'MISYS', '200404061744', '', ['DFT', 'P03'], 'TC-22222',
+                'T', '2.3',
+            ]
+        );
         $ack = new ACK($msg, $msh);
         self::assertSame("MSH|^~\&|VISION|MISYS|HL7 Corp|HL7 HQ|||ACK|\nMSA|AA|TC-22222|\n", $ack->toString(true));
     }
