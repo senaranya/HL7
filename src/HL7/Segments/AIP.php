@@ -52,57 +52,57 @@ class AIP extends Segment
 
     public function setSegmentActionCode($value, int $position = 2): bool
     {
-        return $this->setField($value, $position);
+        return $this->setField($position, $value);
     }
 
     public function setPersonnelResourceID($value, int $position = 3): bool
     {
-        return $this->setField($value, $position);
+        return $this->setField($position, $value);
     }
 
     public function setResourceType($value, int $position = 4): bool
     {
-        return $this->setField($value, $position);
+        return $this->setField($position, $value);
     }
 
     public function setResourceGroup($value, int $position = 5): bool
     {
-        return $this->setField($value, $position);
+        return $this->setField($position, $value);
     }
 
     public function setStartDateTime($value, int $position = 6): bool
     {
-        return $this->setField($value, $position);
+        return $this->setField($position, $value);
     }
 
     public function setStartDateTimeOffset($value, int $position = 7): bool
     {
-        return $this->setField($value, $position);
+        return $this->setField($position, $value);
     }
 
     public function setStartDateTimeOffsetUnits($value, int $position = 8): bool
     {
-        return $this->setField($value, $position);
+        return $this->setField($position, $value);
     }
 
     public function setDuration($value, int $position = 9): bool
     {
-        return $this->setField($value, $position);
+        return $this->setField($position, $value);
     }
 
     public function setDurationUnits($value, int $position = 10): bool
     {
-        return $this->setField($value, $position);
+        return $this->setField($position, $value);
     }
 
     public function setAllowSubstitutionCode($value, int $position = 11): bool
     {
-        return $this->setField($value, $position);
+        return $this->setField($position, $value);
     }
 
     public function setFillerStatusCode($value, int $position = 12): bool
     {
-        return $this->setField($value, $position);
+        return $this->setField($position, $value);
     }
 
     public function getID(int $position = 1)
