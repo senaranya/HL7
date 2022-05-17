@@ -18,6 +18,7 @@ class MSHTest extends TestCase
         self::assertSame('^~\\&', $msh->getField(2));
         self::assertSame('2.3', $msh->getVersionId());
         self::assertNotEmpty($msh->getDateTimeOfMessage());
+        self::assertMatchesRegularExpression('/\d{14}/', $msh->getDateTimeOfMessage());
         self::assertNotEmpty($msh->getMessageControlId());
     }
 
