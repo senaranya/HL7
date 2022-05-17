@@ -61,7 +61,7 @@ class MSH extends Segment
             $this->setField(2, '^~\\&');
             $this->setVersionId('2.3');
         }
-        $this->setDateTimeOfMessage(strftime('%Y%m%d%H%M%S'));
+        $this->setDateTimeOfMessage(date('YmdHis', time()));
         $this->setMessageControlId($this->getDateTimeOfMessage() . random_int(10000, 99999));
     }
 
