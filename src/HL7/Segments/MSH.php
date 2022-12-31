@@ -77,8 +77,6 @@ class MSH extends Segment
      *
      * @param int $index Index of field
      * @param string $value
-     * @return bool
-     * @access public
      */
     public function setField(int $index, $value = ''): bool
     {

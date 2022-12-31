@@ -14,9 +14,8 @@ class OBX extends Segment
 {
     /**
      * Index of this segment. Incremented for every new segment of this class created
-     * @var int
      */
-    protected static $setId = 1;
+    protected static int $setId = 1;
 
     public function __construct(array $fields = null, bool $autoIncrementIndices = true)
     {

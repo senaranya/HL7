@@ -14,9 +14,8 @@ class RGS extends Segment
 {
     /**
      * Index of this segment. Incremented for every new segment of this class created
-     * @var int
      */
-    protected static $setId = 1;
+    protected static int $setId = 1;
 
     public function __construct(array $fields = null, bool $autoIncrementIndices = true)
     {
@@ -33,7 +32,6 @@ class RGS extends Segment
 
     /**
      * Reset index of this segment
-     * @param int $index
      */
     public static function resetIndex(int $index = 1): void
     {

@@ -25,7 +25,6 @@ class SAC extends Segment
 
     /**
      * Reset index of this segment
-     * @param int $index
      */
     public static function resetIndex(int $index = 1): void
     {

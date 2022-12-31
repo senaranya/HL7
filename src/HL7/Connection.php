@@ -94,7 +94,7 @@ class Connection
         $result = null;
         try {
             $result = socket_connect($socket, $host, $port);
-        } catch (Exception $exception) {
+        } catch (Exception) {
             $this->throwSocketError("Failed to connect to server ($host:$port)");
         }
         if (!$result) {
@@ -115,11 +115,10 @@ class Connection
     /**
      * Sends a Message object over this connection.
      *
-     * @param string $responseCharEncoding The expected character encoding of the response.
-     * @param bool $noWait Do no wait for ACK. Helpful for building load testing tools...
+     * @param  string  $responseCharEncoding  The expected character encoding of the response.
+     * @param  bool  $noWait  Do no wait for ACK. Helpful for building load testing tools...
      * @throws HL7ConnectionException
      * @throws HL7Exception
-     * @throws ReflectionException
      */
     public function send(Message $msg, string $responseCharEncoding = 'UTF-8', bool $noWait = false): ?Message
     {

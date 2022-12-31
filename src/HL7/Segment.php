@@ -8,7 +8,7 @@ use InvalidArgumentException;
 
 class Segment
 {
-    protected $fields;
+    protected array $fields = [];
 
     /**
      * Create a segment.
@@ -38,8 +38,6 @@ class Segment
         if ((!$name) || (\strlen($name) !== 3) || (strtoupper($name) !== $name)) {
             throw new InvalidArgumentException("Segment name '$name' should be 3 characters and in uppercase");
         }
-
-        $this->fields = [];
 
         $this->fields[0] = $name;
 
@@ -161,7 +159,7 @@ class Segment
     /**
      * Get the name of the segment. This is basically the value at index 0
      *
-     * @return mixed Name of segment
+     * @return string Name of segment
      */
     public function getName(): string
     {

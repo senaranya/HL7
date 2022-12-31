@@ -105,7 +105,7 @@ class Message
             $segmentName = array_shift($fields);
 
             foreach ($fields as $j => $field) {
-                // Skip control field
+                // Skip control field (i.e. first field in MSH segment)
                 if ($index === 0 && $j === 0) {
                     continue;
                 }
@@ -113,24 +113,7 @@ class Message
                 $fields[$j] = $this->extractComponentsFromField($field, $keepEmptySubFields);
             }
 
-            $segment = null;
-
-            // If a class exists for the segment under segments/, (e.g., MSH)
-            $className = "Aranyasen\\HL7\\Segments\\$segmentName";
-            if (class_exists($className)) {
-                if ($segmentName === 'MSH') {
-                    array_unshift($fields, $this->fieldSeparator); # First field for MSH is '|'
-                    $segment = new $className($fields);
-                } else {
-                    $segment = new $className($fields, $autoIncrementIndices);
-                }
-            } else {
-                $segment = new Segment($segmentName, $fields);
-            }
-
-            if (!$segment) {
-                trigger_error('Segment not created', E_USER_WARNING);
-            }
+            $segment = $this->getSegmentClass($segmentName, $fields, $autoIncrementIndices);
 
             $this->addSegment($segment);
         }
@@ -453,5 +436,21 @@ class Message
         $this->subcomponentSeparator = $subCompSep;
         $this->escapeChar = $esc;
         $this->repetitionSeparator = $repSep;
+    }
+
+    private function getSegmentClass(string $segmentName, array $fields, bool $autoIncrementIndices): Segment
+    {
+        // If a class exists for the segment under segments/, (e.g., MSH)
+        $className = "Aranyasen\\HL7\\Segments\\$segmentName";
+        if (!class_exists($className)) {
+            return new Segment($segmentName, $fields);
+        }
+
+        if ($segmentName === 'MSH') {
+            array_unshift($fields, $this->fieldSeparator); # First field for MSH is '|'
+            return new $className($fields);
+        }
+
+        return new $className($fields, $autoIncrementIndices);
     }
 }

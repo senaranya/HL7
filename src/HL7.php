@@ -53,7 +53,6 @@ class HL7
 
     /**
      * Create a new MSH segment, using the global HL7 variables as defaults.
-     * @return MSH
      * @throws \Exception
      */
     public function createMSH(): MSH
