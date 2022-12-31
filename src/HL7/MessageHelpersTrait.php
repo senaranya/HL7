@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Aranyasen\HL7;
 
 use Aranyasen\Exceptions\HL7Exception;
@@ -32,7 +34,6 @@ trait MessageHelpersTrait
      * @param int $segmentIndex Index for segment to get
      * @param int $fieldIndex Index for field to get
      * @return null|string String representation of field
-     * @access public
      */
     public function getSegmentFieldAsString(int $segmentIndex, int $fieldIndex): ?string
     {
@@ -70,7 +71,6 @@ trait MessageHelpersTrait
     /**
      * Write HL7 to a file
      *
-     * @param string $filename
      * @throws HL7Exception
      */
     public function toFile(string $filename): void
@@ -81,59 +81,36 @@ trait MessageHelpersTrait
         }
     }
 
-    /**
-     * Check if given message is an ORM
-     *
-     * @return bool
-     */
     public function isOrm(): bool
     {
         /** @var MSH $msh */
         $msh = $this->getFirstSegmentInstance('MSH');
-        return false !== strpos($msh->getMessageType(), 'ORM');
+        return str_contains($msh->getMessageType(), 'ORM');
     }
 
-    /**
-     * Check if given message is an ORU
-     *
-     * @return bool
-     */
     public function isOru(): bool
     {
         /** @var MSH $msh */
         $msh = $this->getFirstSegmentInstance('MSH');
-        return false !== strpos($msh->getMessageType(), 'ORU');
+        return str_contains($msh->getMessageType(), 'ORU');
     }
 
-    /**
-     * Check if given message is an ADT
-     *
-     * @return bool
-     */
     public function isAdt(): bool
     {
         /** @var MSH $msh */
         $msh = $this->getFirstSegmentInstance('MSH');
-        return false !== strpos($msh->getMessageType(), 'ADT');
+        return str_contains($msh->getMessageType(), 'ADT');
     }
 
-    /**
-     * Check if given message is a SIU
-     *
-     * @return bool
-     */
     public function isSiu(): bool
     {
         /** @var MSH $msh */
         $msh = $this->getFirstSegmentInstance('MSH');
-        return false !== strpos($msh->getMessageType(), 'SIU');
+        return str_contains($msh->getMessageType(), 'SIU');
     }
 
     /**
      * Check if given segment is present in the message object
-     *
-     * @param string $segment
-     * @return bool
      */
     public function hasSegment(string $segment): bool
     {
@@ -143,7 +120,6 @@ trait MessageHelpersTrait
     /**
      * Return the first segment with given name in the message
      *
-     * @param string $segment name of the segment to return
      * @return mixed|null
      */
     public function getFirstSegmentInstance(string $segment)
@@ -155,9 +131,6 @@ trait MessageHelpersTrait
     }
 
     /**
-     * Remove a segment from the message
-     *
-     * @param Segment $segment
      * @param bool $reIndex After deleting, re-index remaining segments of same name
      */
     public function removeSegment(Segment $segment, bool $reIndex = false): void
@@ -178,11 +151,6 @@ trait MessageHelpersTrait
         }
     }
 
-    /**
-     * Check if the message has any data
-     *
-     * @return bool
-     */
     public function isEmpty(): bool
     {
         return empty($this->getSegments());

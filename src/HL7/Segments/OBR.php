@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Aranyasen\HL7\Segments;
 
 use Aranyasen\HL7\Segment;
@@ -31,7 +33,6 @@ class OBR extends Segment
 
     /**
      * Reset index of this segment
-     * @param int $index
      */
     public static function resetIndex(int $index = 1): void
     {
@@ -152,8 +153,6 @@ class OBR extends Segment
      * ordering service would want only those results for which the reporting date/time is greater than the date/time
      * the inquiring application last received results.
      *
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setResultsRptStatusChngDateTime($value, int $position = 22)

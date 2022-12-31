@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Aranyasen;
 
 use InvalidArgumentException;
@@ -40,8 +42,7 @@ class HL7
     /**
      * Create a new Message, using the global HL7 variables as defaults.
      *
-     * @param string|null Text representation of an HL7 message
-     * @return Message
+     * @param string|null  $msgStr  Text representation of an HL7 message
      * @throws \Exception
      * @throws \InvalidArgumentException
      */
@@ -52,8 +53,7 @@ class HL7
 
     /**
      * Create a new MSH segment, using the global HL7 variables as defaults.
-     * @return MSH
-     * @throws \InvalidArgumentException
+     * @throws \Exception
      */
     public function createMSH(): MSH
     {
@@ -64,7 +64,7 @@ class HL7
      * Set the component separator to be used by the factory. Should be a single character. Default ^
      *
      * @param string $value Component separator char.
-     * @return boolean true if value has been set.
+     * @return bool true if value has been set.
      * @throws \InvalidArgumentException
      */
     public function setComponentSeparator(string $value): bool
@@ -81,7 +81,7 @@ class HL7
      * Set the subcomponent separator to be used by the factory. Should be a single character. Default: &
      *
      * @param string $value Subcomponent separator char.
-     * @return boolean true if value has been set.
+     * @return bool true if value has been set.
      * @throws \InvalidArgumentException
      */
     public function setSubcomponentSeparator(string $value): bool
@@ -98,7 +98,7 @@ class HL7
      * Set the repetition separator to be used by the factory. Should be a single character. Default: ~
      *
      * @param string $value Repetition separator char.
-     * @return boolean true if value has been set.
+     * @return bool true if value has been set.
      * @throws \InvalidArgumentException
      */
     public function setRepetitionSeparator(string $value): bool
@@ -115,7 +115,7 @@ class HL7
      * Set the field separator to be used by the factory. Should be a single character. Default: |
      *
      * @param string $value Field separator char.
-     * @return boolean true if value has been set.
+     * @return bool true if value has been set.
      * @throws \InvalidArgumentException
      */
     public function setFieldSeparator(string $value): bool
@@ -132,7 +132,7 @@ class HL7
      * Set the segment separator to be used by the factory. Should be a single character. Default: \015
      *
      * @param string $value separator char.
-     * @return boolean true if value has been set.
+     * @return bool true if value has been set.
      * @throws \InvalidArgumentException
      */
     public function setSegmentSeparator(string $value): bool
@@ -148,7 +148,7 @@ class HL7
      * Set the escape character to be used by the factory. Should be a single character. Default: \
      *
      * @param string $value Escape character.
-     * @return boolean true if value has been set.
+     * @return bool true if value has been set.
      * @throws \InvalidArgumentException
      */
     public function setEscapeCharacter(string $value): bool
@@ -164,7 +164,7 @@ class HL7
      * Set the HL7 version to be used by the factory. Default 2.3
      *
      * @param string HL7 version character.
-     * @return boolean true if value has been set.
+     * @return bool true if value has been set.
      */
     public function setHL7Version(string $value): bool
     {
@@ -174,8 +174,8 @@ class HL7
     /**
      * Set the NULL string to be used by the factory.
      *
-     * @param string NULL string.
-     * @return boolean true if value has been set.
+     * @param string  $value  NULL string.
+     * @return bool true if value has been set.
      */
     public function setNull($value): bool
     {
@@ -194,11 +194,6 @@ class HL7
 
     /**
      * Set the HL7 global variable
-     *
-     * @access protected
-     * @param string $name
-     * @param string $value
-     * @return bool
      */
     protected function setGlobal(string $name, string $value): bool
     {

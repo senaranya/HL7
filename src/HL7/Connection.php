@@ -64,8 +64,6 @@ class Connection
     /**
      * Create a client-side TCP socket
      *
-     * @param string $host
-     * @param int $port
      * @param int $timeout Connection timeout
      * @throws HL7ConnectionException
      */
@@ -96,7 +94,7 @@ class Connection
         $result = null;
         try {
             $result = socket_connect($socket, $host, $port);
-        } catch (Exception $exception) {
+        } catch (Exception) {
             $this->throwSocketError("Failed to connect to server ($host:$port)");
         }
         if (!$result) {
@@ -107,7 +105,6 @@ class Connection
     }
 
     /**
-     * @param string $message
      * @throws HL7ConnectionException
      */
     protected function throwSocketError(string $message): void
@@ -118,14 +115,10 @@ class Connection
     /**
      * Sends a Message object over this connection.
      *
-     * @param Message $msg
-     * @param string $responseCharEncoding The expected character encoding of the response.
-     * @param bool $noWait Do no wait for ACK. Helpful for building load testing tools...
-     * @return Message|null
+     * @param  string  $responseCharEncoding  The expected character encoding of the response.
+     * @param  bool  $noWait  Do no wait for ACK. Helpful for building load testing tools...
      * @throws HL7ConnectionException
      * @throws HL7Exception
-     * @throws ReflectionException
-     * @access public
      */
     public function send(Message $msg, string $responseCharEncoding = 'UTF-8', bool $noWait = false): ?Message
     {

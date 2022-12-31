@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Aranyasen\HL7\Tests\Segments;
 
 use Aranyasen\Exceptions\HL7Exception;
