@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Aranyasen\HL7\Segments;
 
 use Aranyasen\HL7\Segment;
@@ -19,8 +21,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPriorPendingLocation($value, int $position = 1)
@@ -29,8 +29,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setAccommodationCode($value, int $position = 2)
@@ -39,8 +37,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setAdmitReason($value, int $position = 3)
@@ -49,8 +45,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setTransferReason($value, int $position = 4)
@@ -59,8 +53,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPatientValuables($value, int $position = 5)
@@ -69,8 +61,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPatientValuablesLocation($value, int $position = 6)
@@ -79,8 +69,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setVisitUserCode($value, int $position = 7)
@@ -89,8 +77,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setExpectedAdmitDateTime($value, int $position = 8)
@@ -99,8 +85,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setExpectedDischargeDateTime($value, int $position = 9)
@@ -109,8 +93,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setEstimatedLengthofInpatientStay($value, int $position = 10)
@@ -119,8 +101,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setActualLengthOfInpatientStay($value, int $position = 11)
@@ -129,8 +109,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setVisitDescription($value, int $position = 12)
@@ -139,8 +117,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setReferralSourceCode($value, int $position = 13)
@@ -149,8 +125,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPreviousServiceDate($value, int $position = 14)
@@ -159,8 +133,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setEmploymentIllnessRelatedIndicator($value, int $position = 15)
@@ -169,8 +141,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPurgeStatusCode($value, int $position = 16)
@@ -179,8 +149,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPurgeStatusDate($value, int $position = 17)
@@ -189,8 +157,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setSpecialProgramCode($value, int $position = 18)
@@ -199,8 +165,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setRetentionIndicator($value, int $position = 19)
@@ -209,8 +173,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setExpectedNumberOfInsurancePlans($value, int $position = 20)
@@ -219,8 +181,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setVisitPublicityCode($value, int $position = 21)
@@ -229,8 +189,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setVisitProtectionIndicator($value, int $position = 22)
@@ -239,8 +197,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setClinicOrganizationName($value, int $position = 23)
@@ -249,8 +205,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPatientStatusCode($value, int $position = 24)
@@ -259,8 +213,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setVisitPriorityCode($value, int $position = 25)
@@ -269,8 +221,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPreviousTreatmentDate($value, int $position = 26)
@@ -279,8 +229,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setExpectedDischargeDisposition($value, int $position = 27)
@@ -289,8 +237,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setSignatureOnFileDate($value, int $position = 28)
@@ -299,8 +245,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setFirstSimilarIllnessDate($value, int $position = 29)
@@ -309,8 +253,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPatientChargeAdjustmentCode($value, int $position = 30)
@@ -319,8 +261,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setRecurringServiceCode($value, int $position = 31)
@@ -329,8 +269,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setBillingMediaCode($value, int $position = 32)
@@ -339,8 +277,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setExpectedSurgeryDateAndTime($value, int $position = 33)
@@ -349,8 +285,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setMilitaryPartnershipCode($value, int $position = 34)
@@ -359,8 +293,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setMilitaryNonAvailabilityCode($value, int $position = 35)
@@ -369,8 +301,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setNewbornBabyIndicator($value, int $position = 36)
@@ -379,8 +309,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setBabyDetainedIndicator($value, int $position = 37)
@@ -389,8 +317,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setModeOfArrivalCode($value, int $position = 38)
@@ -399,8 +325,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setRecreationalDrugUseCode($value, int $position = 39)
@@ -409,8 +333,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setAdmissionLevelOfCareCode($value, int $position = 40)
@@ -419,8 +341,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPrecautionCode($value, int $position = 41)
@@ -429,8 +349,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPatientConditionCode($value, int $position = 42)
@@ -439,8 +357,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setLivingWillCode($value, int $position = 43)
@@ -449,8 +365,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setOrganDonorCode($value, int $position = 44)
@@ -459,8 +373,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setAdvanceDirectiveCode($value, int $position = 45)
@@ -469,8 +381,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPatientStatusEffectiveDate($value, int $position = 46)
@@ -479,8 +389,6 @@ class PV2 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setExpectedLOAReturnDateTime($value, int $position = 47)

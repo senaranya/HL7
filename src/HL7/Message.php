@@ -22,10 +22,9 @@ class Message
 {
     use MessageHelpersTrait;
 
-    /**
-     * Array holding all segments of this message.
-     */
-    protected $segments;
+
+    /** @var array Array holding all segments of this message */
+    protected array $segments = [];
 
     /**
      * local value for segment separator
@@ -76,9 +75,6 @@ class Message
         bool $autoIncrementIndices = true,
         bool $doNotSplitRepetition = null
     ) {
-        // Array holding the segments
-        $this->segments = [];
-
         // Control characters and other HL7 properties
         $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] ?? '\n';
         $this->segmentEndingBar = $hl7Globals['SEGMENT_ENDING_BAR'] ?? true; // '|' at end of each segment
@@ -142,10 +138,6 @@ class Message
 
     /**
      * Append a segment to the end of the message
-     *
-     * @param Segment $segment
-     * @return bool
-     * @access public
      */
     public function addSegment(Segment $segment): bool
     {
@@ -161,9 +153,8 @@ class Message
     /**
      * Insert a segment.
      *
-     * @param Segment $segment
      * @param null|int $index Index where segment is inserted
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     public function insertSegment(Segment $segment, int $index = null): void
     {
@@ -193,7 +184,6 @@ class Message
      * Note: Segment count within the message starts at 0.
      *
      * @param int $index Index where segment is inserted
-     * @return Segment
      */
     public function getSegmentByIndex(int $index): ?Segment
     {
@@ -204,10 +194,6 @@ class Message
         return $this->segments[$index];
     }
 
-    /**
-     * @param Segment $segment
-     * @return int|null
-     */
     public function getSegmentIndex(Segment $segment): ?int
     {
         foreach ($this->segments as $ii => $value) {
@@ -244,8 +230,6 @@ class Message
      * after this one will be moved one index up.
      *
      * @param int $index Index where segment is removed
-     * @return boolean
-     * @access public
      */
     public function removeSegmentByIndex(int $index): bool
     {
@@ -259,7 +243,6 @@ class Message
     /**
      * Remove given segment
      *
-     * @param string $segmentName
      * @return int Count of segments removed
      */
     public function removeSegmentsByName(string $segmentName): int
@@ -278,9 +261,7 @@ class Message
      * If index is out of range, or not provided, do nothing. Setting MSH on index 0 will re-validate field separator,
      * control characters and hl7 version, based on MSH(1), MSH(2) and MSH(12).
      *
-     * @param Segment $segment
      * @param int $index Index where segment is set
-     * @return boolean
      * @throws \InvalidArgumentException
      */
     public function setSegment(Segment $segment, int $index): bool
@@ -300,10 +281,6 @@ class Message
 
     /**
      * After change of MSH, reset control fields
-     *
-     * @param Segment $segment
-     * @return bool
-     * @access protected
      */
     protected function resetCtrl(Segment $segment): bool
     {
@@ -372,8 +349,6 @@ class Message
 
     /**
      * Convert Segment object to string
-     * @param  Segment  $seg
-     * @return string
      */
     public function segmentToString(Segment $seg): string
     {
@@ -404,8 +379,6 @@ class Message
 
     /**
      * Reset index attribute of each given segment, so when those are added the indices start from 1
-     *
-     * @return void
      */
     public function resetSegmentIndices(): void
     {
@@ -422,8 +395,6 @@ class Message
     }
 
     /**
-     * @param string $field
-     * @param bool $keepEmptySubFields
      * @return array|string
      */
     private function extractComponentsFromField(string $field, bool $keepEmptySubFields)
@@ -432,7 +403,7 @@ class Message
             ? 0
             : PREG_SPLIT_NO_EMPTY;
 
-        if ((strpos($field, $this->repetitionSeparator) !== false) && (! $this->doNotSplitRepetition)) {
+        if ((str_contains($field, $this->repetitionSeparator)) && (! $this->doNotSplitRepetition)) {
             $components = preg_split("/\\" . $this->repetitionSeparator . '/', $field, -1, $pregFlags);
             $fields = [];
             foreach ($components as $index => $component) {
@@ -459,8 +430,6 @@ class Message
     /**
      * Set various separators - segment, field etc.
      *
-     * @param  string  $msh
-     * @return void
      * @throws HL7Exception
      */
     private function setSeparators(string $msh): void

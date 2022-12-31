@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Aranyasen\HL7\Segments;
 
 use Aranyasen\HL7\Segment;
@@ -31,7 +33,6 @@ class PV1 extends Segment
 
     /**
      * Reset index of this segment
-     * @param int $index
      */
     public static function resetIndex(int $index = 1): void
     {
@@ -54,8 +55,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setAdmissionType($value, int $position = 4)
@@ -64,8 +63,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPreAdmitNumber($value, int $position = 5)
@@ -74,8 +71,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPriorPatientLocation($value, int $position = 6)
@@ -84,8 +79,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setAttendingDoctor($value, int $position = 7)
@@ -94,8 +87,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setReferringDoctor($value, int $position = 8)
@@ -104,8 +95,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setConsultingDoctor($value, int $position = 9)
@@ -114,8 +103,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setHospitalService($value, int $position = 10)
@@ -124,8 +111,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setTemporaryLocation($value, int $position = 11)
@@ -134,8 +119,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPreAdmitTestIndicator($value, int $position = 12)
@@ -144,8 +127,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setReAdmissionIndicator($value, int $position = 13)
@@ -154,8 +135,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setAdmitSource($value, int $position = 14)
@@ -164,8 +143,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setAmbulatoryStatus($value, int $position = 15)
@@ -174,8 +151,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setVipIndicator($value, int $position = 16)
@@ -184,8 +159,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setAdmittingDoctor($value, int $position = 17)
@@ -194,8 +167,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPatientType($value, int $position = 18)
@@ -204,8 +175,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setVisitNumber($value, int $position = 19)
@@ -214,8 +183,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setFinancialClass($value, int $position = 20)
@@ -224,8 +191,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setChargePriceIndicator($value, int $position = 21)
@@ -234,8 +199,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setCourtesyCode($value, int $position = 22)
@@ -244,8 +207,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setCreditRating($value, int $position = 23)
@@ -254,8 +215,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setContractCode($value, int $position = 24)
@@ -264,8 +223,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setContractEffectiveDate($value, int $position = 25)
@@ -274,8 +231,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setContractAmount($value, int $position = 26)
@@ -284,8 +239,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setContractPeriod($value, int $position = 27)
@@ -294,8 +247,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setInterestCode($value, int $position = 28)
@@ -304,8 +255,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setTransferToBadDebtCode($value, int $position = 29)
@@ -314,8 +263,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setTransferToBadDebtDate($value, int $position = 30)
@@ -324,8 +271,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setBadDebtAgencyCode($value, int $position = 31)
@@ -334,8 +279,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setBadDebtTransferAmount($value, int $position = 32)
@@ -344,8 +287,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setBadDebtRecoveryAmount($value, int $position = 33)
@@ -354,8 +295,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setDeleteAccountIndicator($value, int $position = 34)
@@ -364,8 +303,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setDeleteAccountDate($value, int $position = 35)
@@ -374,8 +311,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setDischargeDisposition($value, int $position = 36)
@@ -384,8 +319,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setDischargedToLocation($value, int $position = 37)
@@ -394,8 +327,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setDietType($value, int $position = 38)
@@ -404,8 +335,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setServicingFacility($value, int $position = 39)
@@ -414,8 +343,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setBedStatus($value, int $position = 40)
@@ -424,8 +351,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setAccountStatus($value, int $position = 41)
@@ -434,8 +359,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPendingLocation($value, int $position = 42)
@@ -444,8 +367,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setPriorTemporaryLocation($value, int $position = 43)
@@ -454,8 +375,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setAdmitDateTime($value, int $position = 44)
@@ -464,8 +383,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setDischargeDateTime($value, int $position = 45)
@@ -474,8 +391,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setCurrentPatientBalance($value, int $position = 46)
@@ -484,8 +399,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setTotalCharges($value, int $position = 47)
@@ -494,8 +407,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setTotalAdjustments($value, int $position = 48)
@@ -504,8 +415,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setTotalPayments($value, int $position = 49)
@@ -514,8 +423,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setAlternateVisitID($value, int $position = 50)
@@ -524,8 +431,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setVisitIndicator($value, int $position = 51)
@@ -534,8 +439,6 @@ class PV1 extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      */
     public function setOtherHealthcareProvider($value, int $position = 52)

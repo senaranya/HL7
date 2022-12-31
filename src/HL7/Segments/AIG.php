@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Aranyasen\HL7\Segments;
 
 use Aranyasen\HL7\Segment;
@@ -37,7 +39,6 @@ class AIG extends Segment
 
     /**
      * Reset index of this segment
-     * @param int $index
      */
     public static function resetIndex(int $index = 1): void
     {

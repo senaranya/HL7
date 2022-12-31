@@ -69,7 +69,6 @@ class Segment
      *
      * @param int $index Index to set
      * @param string|array $value Value for field
-     * @return boolean
      */
     public function setField(int $index, $value = ''): bool
     {
@@ -108,7 +107,6 @@ class Segment
      * Remove any existing value from the field
      *
      * @param int $index Field index
-     * @return void
      */
     public function clearField(int $index): void
     {
@@ -136,7 +134,6 @@ class Segment
      * Get the number of fields for this segment, not including the name
      *
      * @return int number of fields
-     * @access public
      */
     public function size(): int
     {
@@ -165,7 +162,6 @@ class Segment
      * Get the name of the segment. This is basically the value at index 0
      *
      * @return mixed Name of segment
-     * @access public
      */
     public function getName(): string
     {

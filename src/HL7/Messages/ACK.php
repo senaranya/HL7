@@ -1,9 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Aranyasen\HL7\Messages;
 
 use Aranyasen\HL7\Message;
-use Aranyasen\HL7\Segment;
 use Aranyasen\HL7\Segments\MSA;
 use Aranyasen\HL7\Segments\MSH;
 
@@ -78,8 +79,6 @@ class ACK extends Message
      *
      * @param  string  $code  Code to use in acknowledgement
      * @param  string|null  $msg  Acknowledgement message
-     * @return boolean
-     * @access public
      */
     public function setAckCode(string $code, string $msg = null): bool
     {
@@ -112,7 +111,6 @@ class ACK extends Message
      * This will also set the error code to either AE or CE, depending on the mode of the incoming message.
      *
      * @param string $msg Error message
-     * @access public
      */
     public function setErrorMessage(string $msg): void
     {

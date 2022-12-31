@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Aranyasen\HL7\Segments;
 
 use Aranyasen\HL7\Segment;
@@ -141,8 +143,6 @@ class MSH extends Segment
      * If it was empty then the new value will be just ORM.
      *
      * @param string $value
-     * @param int $position
-     * @return bool
      */
     public function setMessageType($value, int $position = 9): bool
     {
@@ -171,8 +171,6 @@ class MSH extends Segment
      * If trigger event was not set then it will set the new value.
      *
      * @param string $value
-     * @param int $position
-     * @return bool
      */
     public function setTriggerEvent($value, int $position = 9): bool
     {
@@ -264,8 +262,6 @@ class MSH extends Segment
 
     /**
      * ORM / ORU etc.
-     * @param int $position
-     * @return string
      */
     public function getMessageType(int $position = 9): string
     {
@@ -297,7 +293,6 @@ class MSH extends Segment
 
     /**
      * Get HL7 version, e.g. 2.1, 2.3, 3.0 etc.
-     * @param int $position
      * @return array|null|string
      */
     public function getVersionId(int $position = 12)

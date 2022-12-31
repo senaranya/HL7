@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Aranyasen\HL7\Segments;
 
 use Aranyasen\HL7\Segment;
@@ -66,8 +68,6 @@ class SAC extends Segment
     }
 
     /**
-     * @param $value
-     * @param int $position
      * @return bool
      *
      * value:
