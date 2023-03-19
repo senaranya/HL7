@@ -15,34 +15,22 @@ use InvalidArgumentException;
  * ```php $msg->getSegmentByIndex(0) ```
  *
  * The segment separator defaults to \015. To change this, set the global variable $SEGMENT_SEPARATOR.
- *
- * @author     Aranya Sen
  */
 class Message
 {
     use MessageHelpersTrait;
 
-
-    /** @var array Array holding all segments of this message */
     protected array $segments = [];
 
-    /**
-     * local value for segment separator
-     */
-    protected $segmentSeparator;
-    /**
-     * @var bool Is the bar (|) at the end of each segment required? Default: Yes.
-     */
-    protected $segmentEndingBar;
-    protected $fieldSeparator;
-    protected $componentSeparator;
-    protected $subcomponentSeparator;
-    protected $repetitionSeparator;
-    protected $escapeChar;
-    protected $hl7Version;
-
-    /** @var bool|null $doNotSplitRepetition */
-    protected $doNotSplitRepetition;
+    protected string $segmentSeparator;
+    protected bool $segmentEndingBar; # true, if '|' at end of each segment is needed
+    protected string $fieldSeparator;
+    protected string $componentSeparator;
+    protected string $subcomponentSeparator;
+    protected string $repetitionSeparator;
+    protected string $escapeChar;
+    protected string $hl7Version;
+    protected bool|null $doNotSplitRepetition;
 
     /**
      * Constructor for Message. Consider using the HL7 factory to obtain a message instead.
@@ -77,7 +65,7 @@ class Message
     ) {
         // Control characters and other HL7 properties
         $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] ?? '\n';
-        $this->segmentEndingBar = $hl7Globals['SEGMENT_ENDING_BAR'] ?? true; // '|' at end of each segment
+        $this->segmentEndingBar = $hl7Globals['SEGMENT_ENDING_BAR'] ?? true;
         $this->fieldSeparator = $hl7Globals['FIELD_SEPARATOR'] ?? '|';
         $this->componentSeparator = $hl7Globals['COMPONENT_SEPARATOR'] ?? '^';
         $this->subcomponentSeparator = $hl7Globals['SUBCOMPONENT_SEPARATOR'] ?? '&';
@@ -245,7 +233,7 @@ class Message
      * control characters and hl7 version, based on MSH(1), MSH(2) and MSH(12).
      *
      * @param int $index Index where segment is set
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     public function setSegment(Segment $segment, int $index): bool
     {
@@ -272,9 +260,9 @@ class Message
         }
 
         if (preg_match('/(.)(.)(.)(.)/', (string) $segment->getField(2), $matches)) {
-            $this->componentSeparator    = $matches[1];
-            $this->repetitionSeparator   = $matches[2];
-            $this->escapeChar            = $matches[3];
+            $this->componentSeparator = $matches[1];
+            $this->repetitionSeparator = $matches[2];
+            $this->escapeChar = $matches[3];
             $this->subcomponentSeparator = $matches[4];
         }
 
@@ -377,10 +365,7 @@ class Message
         }
     }
 
-    /**
-     * @return array|string
-     */
-    private function extractComponentsFromField(string $field, bool $keepEmptySubFields)
+    private function extractComponentsFromField(string $field, bool $keepEmptySubFields): array|string
     {
         $pregFlags = $keepEmptySubFields
             ? 0

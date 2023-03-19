@@ -30,18 +30,18 @@ class Segment
      * @author     Aranya Sen
      * @param string $name Name of the segment
      * @param array|null $fields Fields for segment
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     public function __construct(string $name, array $fields = null)
     {
         // Is the name 3 upper case characters?
-        if ((!$name) || (\strlen($name) !== 3) || (strtoupper($name) !== $name)) {
+        if ((!$name) || (strlen($name) !== 3) || (strtoupper($name) !== $name)) {
             throw new InvalidArgumentException("Segment name '$name' should be 3 characters and in uppercase");
         }
 
         $this->fields[0] = $name;
 
-        if (\is_array($fields)) {
+        if (is_array($fields)) {
             foreach ($fields as $i => $value) {
                 $this->setField($i + 1, $value);
             }
@@ -66,9 +66,8 @@ class Segment
      * If values are not provided at all, the method will just return.
      *
      * @param int $index Index to set
-     * @param string|array $value Value for field
      */
-    public function setField(int $index, $value = ''): bool
+    public function setField(int $index, string|int|array $value = ''): bool
     {
         if ($index === 0) { // Do not allow changing 0th index, which is the name of the segment
             return false;
@@ -79,7 +78,7 @@ class Segment
         }
 
         // Fill in the blanks...
-        for ($i = \count($this->fields); $i < $index; $i++) {
+        for ($i = count($this->fields); $i < $index; $i++) {
             $this->fields[$i] = '';
         }
 
@@ -119,11 +118,8 @@ class Segment
      * ```php
      * $field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.
      * ```
-     *
-     * @param int $index Index of field
-     * @return null|string|array The value of the field
      */
-    public function getField(int $index)
+    public function getField(int $index): array|string|int|null
     {
         return $this->fields[$index] ?? null;
     }
@@ -135,7 +131,7 @@ class Segment
      */
     public function size(): int
     {
-        return \count($this->fields) - 1;
+        return count($this->fields) - 1;
     }
 
     /**
@@ -151,9 +147,9 @@ class Segment
     public function getFields(int $from = 0, int $to = null): array
     {
         if (!$to) {
-            $to = \count($this->fields);
+            $to = count($this->fields);
         }
-        return \array_slice($this->fields, $from, $to - $from + 1);
+        return array_slice($this->fields, $from, $to - $from + 1);
     }
 
     /**

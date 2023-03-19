@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Aranyasen\HL7\Segments;
 
 use Aranyasen\HL7\Segment;
+use Exception;
+use InvalidArgumentException;
 
 /**
  * MSH (message header) segment class
@@ -36,8 +38,7 @@ class MSH extends Segment
      *
      * @param null|array $fields
      * @param null|array $hl7Globals
-     * @throws \InvalidArgumentException
-     * @throws \Exception
+     * @throws InvalidArgumentException|Exception
      */
     public function __construct(array $fields = null, array $hl7Globals = null)
     {
@@ -63,7 +64,7 @@ class MSH extends Segment
             $this->setField(2, '^~\\&');
             $this->setVersionId('2.3');
         }
-        $this->setDateTimeOfMessage(date('YmdHis', time()));
+        $this->setDateTimeOfMessage(date('YmdHis'));
         $this->setMessageControlId($this->getDateTimeOfMessage() . random_int(10000, 99999));
     }
 
@@ -279,7 +280,7 @@ class MSH extends Segment
         return false;
     }
 
-    public function getMessageControlId(int $position = 10)
+    public function getMessageControlId(int $position = 10): string
     {
         return $this->getField($position);
     }
@@ -291,9 +292,8 @@ class MSH extends Segment
 
     /**
      * Get HL7 version, e.g. 2.1, 2.3, 3.0 etc.
-     * @return array|null|string
      */
-    public function getVersionId(int $position = 12)
+    public function getVersionId(int $position = 12): string
     {
         return $this->getField($position);
     }
