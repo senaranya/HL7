@@ -101,9 +101,11 @@ $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", ['SEGMENT_SEPARATOR' =>
 // Segment with separator character (~) creates sub-arrays containing each sub-segment
 $message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1"); // Creates [[3,0], [4,1]]
         
-// To create a single array instead, pass 'true' as 5th argument. This may be used to retain behavior from previous releases
+// To create a single array instead, pass 'true' as 6th argument. This may be used to retain behavior from previous releases
 // Notice: Since this leads to a non-standard behavior, it may be removed in future
 $message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1", null, false, false, true, true); // Creates ['3', '0~4', '1']
+// or
+$message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1", doNotSplitRepetition: true); // Creates ['3', '0~4', '1']
 ```
 
 ### Send messages to remote listeners

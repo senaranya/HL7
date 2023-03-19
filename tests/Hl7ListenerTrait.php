@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Aranyasen\HL7\Tests;
 
 use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Messages\ACK;
-use ReflectionException;
+use Exception;
 use RuntimeException;
 
 /**
@@ -18,12 +20,12 @@ use RuntimeException;
  */
 trait Hl7ListenerTrait
 {
-    private $pipeName = "pipe1";
+    private string $pipeName = "pipe1";
 
     // As per MLLP protocol, the sender prefixes and suffixes the HL7 message with certain codes. If these need to be
     // overwritten, simply declare these after the 'use Hl7ListenerTrait' statement in the calling class
-    protected $MESSAGE_PREFIX = "\013";
-    protected $MESSAGE_SUFFIX = "\034\015";
+    protected string $MESSAGE_PREFIX = "\013";
+    protected string $MESSAGE_SUFFIX = "\034\015";
 
     public function writeToPipe(string $value): void
     {
@@ -46,10 +48,12 @@ trait Hl7ListenerTrait
      * @param int $port
      * @param int $totalClientsToConnect How many clients are expected to connect to this server, once it's up
      * @throws HL7Exception
-     * @throws ReflectionException
      */
     public function createTcpServer(int $port, int $totalClientsToConnect): void
     {
+        if (!extension_loaded('sockets')) {
+            throw new RuntimeException("need ext-sockets to run this");
+        }
         if (($socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP)) === false) {
             throw new RuntimeException(
                 'socket_create() failed: reason: ' . socket_strerror(socket_last_error()) . "\n"
@@ -63,10 +67,10 @@ trait Hl7ListenerTrait
         }
 
         if (($ret = socket_bind($socket, "localhost", $port)) === false) {
-            throw new \RuntimeException('socket_bind() failed: reason: ' . socket_strerror($ret) . "\n");
+            throw new RuntimeException('socket_bind() failed: reason: ' . socket_strerror($ret) . "\n");
         }
         if (($ret = socket_listen($socket, 5)) === false) {
-            throw new \RuntimeException('socket_listen() failed: reason: ' . socket_strerror($ret) . "\n");
+            throw new RuntimeException('socket_listen() failed: reason: ' . socket_strerror($ret) . "\n");
         }
 
         $clientCount = 0;
@@ -124,10 +128,9 @@ trait Hl7ListenerTrait
     }
 
     /**
-     * @param string $hl7
      * @return string ACK string
      * @throws HL7Exception
-     * @throws \ReflectionException
+     * @throws Exception
      */
     private function getAckString(string $hl7): string
     {
@@ -136,14 +139,13 @@ trait Hl7ListenerTrait
         $hl7 = preg_replace('/' . $this->MESSAGE_SUFFIX . '$/', '', $hl7);
 
         $msg = new Message(trim($hl7), null, true, true);
-        $ack = new ACK($msg);
-        return $ack->toString();
+        return (new ACK($msg))->toString();
     }
 
     /**
      * Clean up temporary pipe file generated for testing
      */
-    private function deletePipe()
+    private function deletePipe(): void
     {
         if (file_exists($this->pipeName)) {
             unlink($this->pipeName);

@@ -7,7 +7,7 @@ namespace Aranyasen\HL7;
 use Aranyasen\Exceptions\HL7ConnectionException;
 use Aranyasen\Exceptions\HL7Exception;
 use Exception;
-use ReflectionException;
+use Socket;
 
 /**
  * Usage:
@@ -37,10 +37,14 @@ use ReflectionException;
  */
 class Connection
 {
-    protected $socket;
-    protected $timeout;
-    protected $MESSAGE_PREFIX;
-    protected $MESSAGE_SUFFIX;
+    protected Socket $socket;
+    protected int $timeout;
+
+    /** # Octal 13 (Hex: 0B): Vertical Tab */
+    protected string $MESSAGE_PREFIX = "\013";
+
+    /** # 34 (Hex: 1C): file separator character, 15 (Hex: 0D): Carriage return */
+    protected string $MESSAGE_SUFFIX = "\034\015";
 
     /**
      * Creates a connection to a HL7 server, or throws exception when a connection could not be established.
@@ -56,8 +60,6 @@ class Connection
             throw new HL7ConnectionException('Please install ext-sockets to run Connection');
         }
         $this->setSocket($host, $port, $timeout);
-        $this->MESSAGE_PREFIX = "\013"; # Octal 13 (Hex: 0B): Vertical Tab
-        $this->MESSAGE_SUFFIX = "\034\015"; # 34 (Hex: 1C): file separator character, 15 (Hex: 0D): Carriage return
         $this->timeout = $timeout;
     }
 
@@ -161,9 +163,9 @@ class Connection
     }
 
     /*
-     * Return the socket opened/used by this class
+     * Return the raw socket opened/used by this class
      */
-    public function getSocket()
+    public function getSocket(): Socket
     {
         return $this->socket;
     }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Aranyasen;
 
+use Exception;
 use InvalidArgumentException;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Segments\MSH;
@@ -18,10 +19,7 @@ use Aranyasen\HL7\Segments\MSH;
  */
 class HL7
 {
-    /**
-     * Holds all global HL7 settings.
-     */
-    protected $hl7Globals;
+    protected array $hl7Globals;
 
     /**
      * Create a new instance of the HL7 factory, and set global
@@ -43,8 +41,8 @@ class HL7
      * Create a new Message, using the global HL7 variables as defaults.
      *
      * @param string|null  $msgStr  Text representation of an HL7 message
-     * @throws \Exception
-     * @throws \InvalidArgumentException
+     * @throws Exception
+     * @throws InvalidArgumentException
      */
     public function createMessage(string $msgStr = null): Message
     {
@@ -53,7 +51,7 @@ class HL7
 
     /**
      * Create a new MSH segment, using the global HL7 variables as defaults.
-     * @throws \Exception
+     * @throws Exception
      */
     public function createMSH(): MSH
     {
@@ -65,11 +63,11 @@ class HL7
      *
      * @param string $value Component separator char.
      * @return bool true if value has been set.
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     public function setComponentSeparator(string $value): bool
     {
-        if (\strlen($value) !== 1) {
+        if (strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
         }
 
@@ -82,11 +80,11 @@ class HL7
      *
      * @param string $value Subcomponent separator char.
      * @return bool true if value has been set.
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     public function setSubcomponentSeparator(string $value): bool
     {
-        if (\strlen($value) !== 1) {
+        if (strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
         }
 
@@ -99,11 +97,11 @@ class HL7
      *
      * @param string $value Repetition separator char.
      * @return bool true if value has been set.
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     public function setRepetitionSeparator(string $value): bool
     {
-        if (\strlen($value) !== 1) {
+        if (strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
         }
 
@@ -116,11 +114,11 @@ class HL7
      *
      * @param string $value Field separator char.
      * @return bool true if value has been set.
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     public function setFieldSeparator(string $value): bool
     {
-        if (\strlen($value) !== 1) {
+        if (strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
         }
 
@@ -133,11 +131,11 @@ class HL7
      *
      * @param string $value separator char.
      * @return bool true if value has been set.
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     public function setSegmentSeparator(string $value): bool
     {
-        if (\strlen($value) !== 1) {
+        if (strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
         }
 
@@ -149,26 +147,20 @@ class HL7
      *
      * @param string $value Escape character.
      * @return bool true if value has been set.
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
      */
     public function setEscapeCharacter(string $value): bool
     {
-        if (\strlen($value) !== 1) {
+        if (strlen($value) !== 1) {
             throw new InvalidArgumentException("Parameter should be of single character. Received: '$value'");
         }
 
         return $this->setGlobal('ESCAPE_CHARACTER', $value);
     }
 
-    /**
-     * Set the HL7 version to be used by the factory. Default 2.3
-     *
-     * @param string HL7 version character.
-     * @return bool true if value has been set.
-     */
-    public function setHL7Version(string $value): bool
+    public function setHL7Version(string $hl7Version): bool
     {
-        return $this->setGlobal('HL7_VERSION', $value);
+        return $this->setGlobal('HL7_VERSION', $hl7Version);
     }
 
     /**

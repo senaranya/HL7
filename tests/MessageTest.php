@@ -459,9 +459,9 @@ class MessageTest extends TestCase
     }
 
     /** @test */
-    public function message_with_repetition_separator(): void
+    public function field_with_repetition_separator_splits_into_array_by_default(): void
     {
-        $message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1");
+        $message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1"); // Repetition separator is ~
         $pid = $message->getSegmentByIndex(1);
         $patientIdentifierList = $pid->getField(3);
         self::assertIsArray($patientIdentifierList);
@@ -472,9 +472,22 @@ class MessageTest extends TestCase
     }
 
     /** @test */
-    public function separation_character_can_be_ignored(): void
+    public function field_with_repetition_separator_can_be_split_into_array(): void
     {
-        $message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1", null, false, false, true, true);
+        $message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1", doNotSplitRepetition: false);
+        $pid = $message->getSegmentByIndex(1);
+        $patientIdentifierList = $pid->getField(3);
+        self::assertIsArray($patientIdentifierList);
+        self::assertSame('3', $patientIdentifierList[0][0]);
+        self::assertSame('0', $patientIdentifierList[0][1]);
+        self::assertSame('4', $patientIdentifierList[1][0]);
+        self::assertSame('1', $patientIdentifierList[1][1]);
+    }
+
+    /** @test */
+    public function repetition_separation_character_can_be_ignored(): void
+    {
+        $message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1", doNotSplitRepetition: true);
         $pid = $message->getSegmentByIndex(1);
         $patientIdentifierList = $pid->getField(3);
         self::assertIsArray($patientIdentifierList);

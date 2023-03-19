@@ -7,10 +7,12 @@ namespace Aranyasen\HL7\Messages;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Segments\MSA;
 use Aranyasen\HL7\Segments\MSH;
+use Exception;
+use InvalidArgumentException;
 
 class ACK extends Message
 {
-    protected $ACK_TYPE;
+    protected string $ACK_TYPE;
 
     /**
      * Usage:
@@ -24,8 +26,8 @@ class ACK extends Message
      * @param Message|null $req
      * @param MSH|null $reqMsh
      * @param array|null $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
-     * @throws \Exception
-     * @throws \InvalidArgumentException
+     * @throws Exception
+     * @throws InvalidArgumentException
      */
     public function __construct(Message $req = null, MSH $reqMsh = null, array $hl7Globals = null)
     {
