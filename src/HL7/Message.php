@@ -30,7 +30,9 @@ class Message
     protected string $repetitionSeparator;
     protected string $escapeChar;
     protected string $hl7Version;
-    protected bool|null $doNotSplitRepetition;
+
+    // Split (or not) repeated subfields joined by ~. E.g. if true, parses 3^0~4^1 to [3, '0~4', 1]
+    protected bool $doNotSplitRepetition;
 
     /**
      * Constructor for Message. Consider using the HL7 factory to obtain a message instead.
@@ -73,7 +75,7 @@ class Message
         $this->escapeChar = $hl7Globals['ESCAPE_CHAR'] ?? '\\';
         $this->hl7Version = $hl7Globals['HL7_VERSION'] ?? '2.3';
 
-        $this->doNotSplitRepetition = $doNotSplitRepetition;
+        $this->doNotSplitRepetition = (bool) $doNotSplitRepetition;
 
         if ($resetIndices) {
             $this->resetSegmentIndices();
