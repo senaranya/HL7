@@ -24,12 +24,12 @@ class Message
 
     protected string $segmentSeparator;
     protected bool $segmentEndingBar; # true, if '|' at end of each segment is needed
-    protected string $fieldSeparator;
+    protected $fieldSeparator;
     protected string $componentSeparator;
     protected string $subcomponentSeparator;
     protected string $repetitionSeparator;
     protected string $escapeChar;
-    protected string $hl7Version;
+    protected $hl7Version;
 
     // Split (or not) repeated subfields joined by ~. E.g. if true, parses 3^0~4^1 to [3, '0~4', 1]
     protected bool $doNotSplitRepetition;

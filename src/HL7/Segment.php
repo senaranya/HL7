@@ -67,7 +67,7 @@ class Segment
      *
      * @param int $index Index to set
      */
-    public function setField(int $index, string|int|array $value = ''): bool
+    public function setField(int $index, string|int|array|null $value = ''): bool
     {
         if ($index === 0) { // Do not allow changing 0th index, which is the name of the segment
             return false;
