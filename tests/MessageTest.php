@@ -462,8 +462,7 @@ class MessageTest extends TestCase
     public function field_with_repetition_separator_splits_into_array_by_default(): void
     {
         $message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1"); // Repetition separator is ~
-        $pid = $message->getSegmentByIndex(1);
-        $patientIdentifierList = $pid->getField(3);
+        $patientIdentifierList = $message->getSegmentByIndex(1)->getField(3);
         self::assertIsArray($patientIdentifierList);
         self::assertSame('3', $patientIdentifierList[0][0]);
         self::assertSame('0', $patientIdentifierList[0][1]);
@@ -475,8 +474,7 @@ class MessageTest extends TestCase
     public function field_with_repetition_separator_can_be_split_into_array(): void
     {
         $message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1", doNotSplitRepetition: false);
-        $pid = $message->getSegmentByIndex(1);
-        $patientIdentifierList = $pid->getField(3);
+        $patientIdentifierList = $message->getSegmentByIndex(1)->getField(3);
         self::assertIsArray($patientIdentifierList);
         self::assertSame('3', $patientIdentifierList[0][0]);
         self::assertSame('0', $patientIdentifierList[0][1]);
