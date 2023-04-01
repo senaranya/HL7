@@ -361,6 +361,8 @@ class MessageTest extends TestCase
      */
     public function segment_id_can_be_reset_on_demand(): void
     {
+        PID::resetIndex(); // Start with a clean slate
+
         // Create a message with a PID segment
         $msg1 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
         $msg1->addSegment(new PID());
@@ -380,7 +382,7 @@ class MessageTest extends TestCase
         );
 
         // Create another message with a PID segment, this time 4th argument to message as true
-        $msg3 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|", null, true, true);
+        $msg3 = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|", resetIndices: true);
         $msg3->addSegment(new PID());
         self::assertSame("MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|1|\n", $msg3->toString(true), 'PID index resets to 1');
 
@@ -407,7 +409,7 @@ class MessageTest extends TestCase
     {
         $hl7String = "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|1||22^BB|\n";
 
-        $msg = new Message($hl7String, null, true, true);
+        $msg = new Message($hl7String, resetIndices: true);
         self::assertSame(
             "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|2||22^BB|\n",
             $msg->toString(true),
