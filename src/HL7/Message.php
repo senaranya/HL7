@@ -24,12 +24,12 @@ class Message
 
     protected string $segmentSeparator;
     protected bool $segmentEndingBar; # true, if '|' at end of each segment is needed
-    protected $fieldSeparator;
+    protected string $fieldSeparator;
     protected string $componentSeparator;
     protected string $subcomponentSeparator;
     protected string $repetitionSeparator;
     protected string $escapeChar;
-    protected $hl7Version;
+    protected string $hl7Version;
 
     // Split (or not) repeated subfields joined by ~. E.g. if true, parses 3^0~4^1 to [3, '0~4', 1]
     protected bool $doNotSplitRepetition;
@@ -56,6 +56,7 @@ class Message
      * @param bool|null $doNotSplitRepetition If true, repeated segments will be in single array instead of sub-arrays.
      *     Note: Since this is non-standard, it may be removed in future!
      * @throws HL7Exception
+     * @deprecated Use HL7 factory class instead. Check readme
      */
     public function __construct(
         string $msgStr = null,
@@ -114,7 +115,12 @@ class Message
      */
     public function addSegment(Segment $segment): bool
     {
-        if (count($this->segments) === 0) {
+        $isFirstSegment = count($this->segments) === 0;
+        if ($isFirstSegment && $segment->getName() !== 'MSH') {
+            throw new HL7Exception('First segment added to an empty Message should be MSH');
+        }
+
+        if ($isFirstSegment) {
             $this->resetCtrl($segment);
         }
 

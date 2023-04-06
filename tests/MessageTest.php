@@ -42,6 +42,17 @@ class MessageTest extends TestCase
     }
 
     /** @test */
+    public function first_segment_added_to_an_empty_message_should_be_MSH(): void
+    {
+        $msg = new Message();
+        $this->expectException(HL7Exception::class);
+        $this->expectExceptionMessage('First segment added to an empty Message should be MSH');
+        $msg->addSegment(new Segment('PID'));
+    }
+
+    /** @test
+     * @throws HL7Exception
+     */
     public function fields_can_be_added_to_existing_segments(): void
     {
         $msg = new Message();
@@ -228,7 +239,9 @@ class MessageTest extends TestCase
         self::assertSame('BBB', $msg->getSegmentByIndex(0)->getName(), 'BBB should have replaced AAA');
     }
 
-    /** @test */
+    /** @test
+     * @throws HL7Exception
+     */
     public function same_segment_type_can_be_added_multiple_times(): void
     {
         $msg = new Message();
