@@ -10,7 +10,6 @@ use Aranyasen\HL7\Segment;
 use Aranyasen\HL7\Segments\MSH;
 use Aranyasen\HL7\Segments\PID;
 use Exception;
-use InvalidArgumentException;
 use DMS\PHPUnitExtensions\ArraySubset\Assert;
 
 class MessageTest extends TestCase
@@ -25,6 +24,15 @@ class MessageTest extends TestCase
         $pv1 = $msg->getSegmentByIndex(1);
         $fields = $pv1->getField(3);
         Assert::assertArraySubset(['', 'AAAA1', '', '', 'BB'], $fields);
+    }
+
+    /** @test */
+    public function field_separator_should_be_used_in_the_MSH_segment(): void
+    {
+        self::expectException(HL7Exception::class);
+        self::expectExceptionMessage('Not a valid message: field separator invalid');
+        $invalidFieldSeparator = '='; // Can be any character but |
+        new Message("MSH|^~\\&$invalidFieldSeparator");
     }
 
     /** @test */
@@ -156,11 +164,11 @@ class MessageTest extends TestCase
     }
 
     /** @test */
-    public function segments_can_be_added_from_message(): void
+    public function segments_can_be_added_to_message(): void
     {
-        $msg = new Message();
+        $msg = new Message("MSH|^~\\&|1|\r");
         $msg->addSegment(new Segment('XXX'));
-        self::assertSame('XXX', $msg->getSegmentByIndex(0)->getName(), 'Add segment');
+        self::assertSame('XXX', $msg->getSegmentByIndex(1)->getName(), 'Add segment');
     }
 
     /** @test */
@@ -184,11 +192,11 @@ class MessageTest extends TestCase
     /** @test */
     public function segments_can_be_removed_from_message_using_index(): void
     {
-        $msg = new Message();
+        $msg = new Message("MSH|^~\\&|1|\r");
         $msg->addSegment(new Segment('XXX'));
         $msg->addSegment(new Segment('YYY'));
-        $msg->removeSegmentByIndex(0);
-        self::assertSame('YYY', $msg->getSegmentByIndex(0)->getName(), 'Remove segment');
+        $msg->removeSegmentByIndex(1);
+        self::assertSame('YYY', $msg->getSegmentByIndex(1)->getName(), 'Remove segment');
     }
 
     /**
@@ -211,20 +219,30 @@ class MessageTest extends TestCase
     /** @test */
     public function a_new_segment_can_be_inserted_between_two_existing_segments(): void
     {
-        $msg = new Message();
+        $msg = new Message("MSH|^~\\&|1|\r");
         $msg->addSegment(new Segment('AAA'));
         $msg->addSegment(new Segment('BBB'));
-        $msg->insertSegment(new Segment('XXX'), 1);
+        $msg->insertSegment(new Segment('XXX'), 2);
 
-        self::assertSame('XXX', $msg->getSegmentByIndex(1)->getName(), 'Inserted segment');
-        self::assertSame('BBB', $msg->getSegmentByIndex(2)->getName(), 'Existing segment should shift');
+        self::assertSame('XXX', $msg->getSegmentByIndex(2)->getName(), 'Inserted segment');
+        self::assertSame('BBB', $msg->getSegmentByIndex(3)->getName(), 'Existing segment should shift');
+    }
+
+    /** @test */
+    public function the_only_segment_that_can_be_inserted_in_0_index_is_msh(): void
+    {
+        $msg = new Message("MSH|^~\\&|1|\r");
+        $msg->insertSegment(new Segment('MSH'), 0, true); // Should be allowed
+
+        self::expectException(HL7Exception::class);
+        $msg->insertSegment(new Segment('XXX'), 0); // Should not be allowed
     }
 
     /** @test */
     public function it_should_not_be_possible_to_insert_segment_beyond_last_index(): void
     {
         $msg = new Message();
-        $this->expectException(InvalidArgumentException::class);
+        $this->expectException(HL7Exception::class);
         $msg->insertSegment(new Segment('ZZ1'), 3);
         self::assertEmpty($msg->getSegmentByIndex(3), 'Erroneous insert');
     }
@@ -232,11 +250,11 @@ class MessageTest extends TestCase
     /** @test */
     public function a_segment_can_be_overwritten(): void
     {
-        $msg = new Message();
+        $msg = new Message("MSH|^~\\&|1|\r");
         $msg->addSegment(new Segment('AAA'));
-        $msg->setSegment(new Segment('BBB'), 0);
+        $msg->setSegment(new Segment('BBB'), 1);
         self::assertCount(0, $msg->getSegmentsByName('AAA'), 'No AAA segment anymore');
-        self::assertSame('BBB', $msg->getSegmentByIndex(0)->getName(), 'BBB should have replaced AAA');
+        self::assertSame('BBB', $msg->getSegmentByIndex(1)->getName(), 'BBB should have replaced AAA');
     }
 
     /** @test
@@ -244,7 +262,7 @@ class MessageTest extends TestCase
      */
     public function same_segment_type_can_be_added_multiple_times(): void
     {
-        $msg = new Message();
+        $msg = new Message("MSH|^~\\&|1|\r");
         $msg->addSegment(new Segment('AAA'));
         $msg->addSegment(new Segment('AAA'));
         self::assertCount(2, $msg->getSegmentsByName('AAA'), 'Message should have 2 AAAs');

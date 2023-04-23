@@ -343,7 +343,7 @@ Insert a segment.
 **Throws Exceptions**
 
 
-`\InvalidArgumentException`
+`\HL7Exception`
 
 
 <hr />
