@@ -19,6 +19,20 @@ class EscapeSequenceHandler
     protected array $escapeSequences = [];
 
     /**
+     * Create a EscapeSequenceHandler
+     *
+     * This is usually used in conjuction with a HL7 segment in order to escape
+     * and unescape the field values where it is expected that separator characters
+     * may be present somewhere in the data contents of the message.
+     *
+     * Example:
+     * ```php
+     * $seg = new Segment("PID");
+     * $seg->setEscapeSequenceHandler(new EscapeSequenceHandler('\\'));
+     *
+     * $seg->setField(8, 'ab|cd'); // Sets the 8th field value to 'ab\F\cd'
+     * echo $seg->getField(8); // Returns the 8th field value as 'ab|cd'
+     *
      * @param string $escapeChar
      */
     public function __construct(string $escapeChar)
@@ -28,6 +42,9 @@ class EscapeSequenceHandler
         $this->buildEscapeSequences();
     }
 
+    /**
+     * Build the escape sequences using $escapeChar.
+     */
     protected function buildEscapeSequences()
     {
         $escapeSequences = self::ESCAPE_SEQUENCES;
@@ -62,6 +79,8 @@ class EscapeSequenceHandler
     }
 
     /**
+     * Convert separator characters in a string into their escaped meanings.
+     *
      * @param string $value
      */
     public function escape(string $value): string
@@ -74,6 +93,8 @@ class EscapeSequenceHandler
     }
 
     /**
+     * Convert escaped separator characters into their regular form.
+     *
      * @param string $value
      */
     public function unescape(string $value): string

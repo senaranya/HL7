@@ -64,11 +64,13 @@ class Segment
      * $segment->setField(8, 'ab^cd'); // Sets 8th field to ab^cd
      * $segment->setField(10, ['John', 'Doe']); // Sets 10th field to John^Doe
      * $segment->setField(12, ['']); // Sets 12th field to ''
+     * $segment->setField(8, 'ab|cd', true); // Sets 8th field to ab\F\cd
      * ```
      *
      * If values are not provided at all, the method will just return.
      *
      * @param int $index Index to set
+     * @param bool $escape Whether to escape special characters. Default is false for backwards compatibility.
      */
     public function setField(int $index, string|int|array|null $value = '', bool $escape = false): bool
     {
@@ -123,6 +125,8 @@ class Segment
      * ```php
      * $field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.
      * ```
+     *
+     * @param bool $unescape Whether to unescape special characters
      */
     public function getField(int $index, bool $unescape = false): array|string|int|null
     {
@@ -153,6 +157,7 @@ class Segment
      *
      * @param int $from Start range at this index
      * @param int|null $to Stop range at this index
+     * @param bool $unescape Whether to unescape special characters. Default is false for backwards compatibility.
      * @return array List of fields
      */
     public function getFields(int $from = 0, int $to = null, bool $unescape = false): array
@@ -178,11 +183,21 @@ class Segment
         return $this->fields[0];
     }
 
+    /**
+     * Check if escape sequence handler is set
+     *
+     * @return bool
+     */
     protected function hasEscapeSequenceHandler(): bool
     {
         return !is_null($this->escapeSequenceHandler);
     }
 
+    /**
+     * Set the escape sequence handler
+     *
+     * @param EscapeSequenceHandler $escapeSequenceHandler
+     */
     public function setEscapeSequenceHandler(EscapeSequenceHandler $escapeSequenceHandler): self
     {
         if ($this->hasEscapeSequenceHandler()) {
@@ -195,6 +210,11 @@ class Segment
         return $this;
     }
 
+    /**
+     * Get escape sequence handler instance
+     *
+     * @return EscapeSequenceHandler
+     */
     protected function getEscapeSequenceHandler(): EscapeSequenceHandler
     {
         return $this->escapeSequenceHandler ?? new EscapeSequenceHandler('\\');

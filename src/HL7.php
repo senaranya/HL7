@@ -163,6 +163,9 @@ class HL7
         return $this->setGlobal('HL7_VERSION', $hl7Version);
     }
 
+    /**
+     * Set the handle escape sequences flag. Should be a boolean. Default: false
+     */
     public function withHandleEscapeSequences(bool $handleEscapeSequences): self
     {
         $this->hl7Globals['HANDLE_ESCAPE_SEQUENCES'] = $handleEscapeSequences;

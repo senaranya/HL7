@@ -134,6 +134,14 @@ $pid->setField('abcd', 5); // Apart from standard setter methods, you can manual
 unset($pid); // Destroy the segment and decrement the id number. Useful when you want to discard a segment.
 ```
 
+##### Escape Sequences
+```php
+// Create a custom segment
+$abc = new Segment('ABC');
+$abc->setField(1, 'xy&z', true); // Converts 'xy&z' to 'xy\T\z' and sets it to field 1
+$xyz = $abc->getField(1, true); // Retrieves field 1 and converts 'xy\T\z' back to 'xy&z'
+```
+
 ### Send messages to remote listeners
 
 Side note: In order to run Connection you need to install PHP ext-sockets [https://www.php.net/manual/en/sockets.installation.php](https://www.php.net/manual/en/sockets.installation.php)
