@@ -79,7 +79,7 @@ class MSH extends Segment
      * @param int $index Index of field
      * @param string $value
      */
-    public function setField(int $index, $value = ''): bool
+    public function setField(int $index, $value = '', bool $escape = false): bool
     {
         if (($index === 1) && strlen($value) !== 1) {
             return false;
@@ -89,7 +89,7 @@ class MSH extends Segment
             return false;
         }
 
-        return parent::setField($index, $value);
+        return parent::setField($index, $value, $escape);
     }
 
     // -------------------- Setter Methods ------------------------------

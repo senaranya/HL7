@@ -163,6 +163,12 @@ class HL7
         return $this->setGlobal('HL7_VERSION', $hl7Version);
     }
 
+    public function withEscapeFieldValues(bool $escapeFieldValues): self
+    {
+        $this->hl7Globals['ESCAPE_FIELD_VALUES'] = $escapeFieldValues;
+        return $this;
+    }
+
     public function keepEmptySubfields(bool $value = true): self
     {
         $this->emptySubFields = $value;
@@ -203,6 +209,7 @@ class HL7
         $this->hl7Globals['REPETITION_SEPARATOR'] = '~';
         $this->hl7Globals['ESCAPE_CHARACTER'] = '\\';
         $this->hl7Globals['HL7_VERSION'] = '2.3';
+        $this->hl7Globals['ESCAPE_FIELD_VALUES'] = false;
     }
 
     /**

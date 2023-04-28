@@ -4,11 +4,14 @@ declare(strict_types=1);
 
 namespace Aranyasen\HL7;
 
+use Exception;
 use InvalidArgumentException;
 
 class Segment
 {
     protected array $fields = [];
+
+    protected ?Encoder $encoder = null;
 
     /**
      * Create a segment.
@@ -67,7 +70,7 @@ class Segment
      *
      * @param int $index Index to set
      */
-    public function setField(int $index, string|int|array|null $value = ''): bool
+    public function setField(int $index, string|int|array|null $value = '', bool $escape = false): bool
     {
         if ($index === 0) { // Do not allow changing 0th index, which is the name of the segment
             return false;
@@ -82,7 +85,9 @@ class Segment
             $this->fields[$i] = '';
         }
 
-        $this->fields[$index] = $value;
+        $this->fields[$index] = ($this->hasEncoder() || $escape === true)
+            ? $this->getEncoder()->escape($value)
+            : $value;
 
         return true;
     }
@@ -119,9 +124,15 @@ class Segment
      * $field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.
      * ```
      */
-    public function getField(int $index): array|string|int|null
+    public function getField(int $index, bool $unescape = false): array|string|int|null
     {
-        return $this->fields[$index] ?? null;
+        if (!array_key_exists($index, $this->fields)) {
+            return null;
+        }
+
+        return ($this->hasEncoder() || $unescape === true)
+            ? $this->getEncoder()->unescape($this->fields[$index])
+            : $this->fields[$index];
     }
 
     /**
@@ -144,12 +155,17 @@ class Segment
      * @param int|null $to Stop range at this index
      * @return array List of fields
      */
-    public function getFields(int $from = 0, int $to = null): array
+    public function getFields(int $from = 0, int $to = null, bool $unescape = false): array
     {
         if (!$to) {
             $to = count($this->fields);
         }
-        return array_slice($this->fields, $from, $to - $from + 1);
+
+        $fields = array_slice($this->fields, $from, $to - $from + 1);
+
+        return ($this->hasEncoder() || $unescape === true)
+            ? array_map([ $this->getEncoder(), 'unescape' ], $fields)
+            : $fields;
     }
 
     /**
@@ -160,5 +176,27 @@ class Segment
     public function getName(): string
     {
         return $this->fields[0];
+    }
+
+    protected function hasEncoder(): bool
+    {
+        return !is_null($this->encoder);
+    }
+
+    public function setEncoder(Encoder $encoder): self
+    {
+        if ($this->hasEncoder()) {
+            // Changing Encoder can result in malformed results.
+            throw new Exception("Segment Encoder has already been set.");
+        }
+
+        $this->encoder = $encoder;
+
+        return $this;
+    }
+
+    protected function getEncoder(): Encoder
+    {
+        return $this->encoder ?? new Encoder();
     }
 }
