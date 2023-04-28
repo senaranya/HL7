@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Aranyasen\HL7;
 
-class Encoder
+class EscapeSequenceHandler
 {
     public const ESCAPE_SEQUENCES = [
         'F' => '|',
@@ -17,10 +17,11 @@ class Encoder
     protected string $escapeChar;
 
     protected array $escapeSequences = [];
+
     /**
      * @param string $escapeChar
      */
-    public function __construct(string $escapeChar = '\\')
+    public function __construct(string $escapeChar)
     {
         $this->escapeChar = $escapeChar;
 

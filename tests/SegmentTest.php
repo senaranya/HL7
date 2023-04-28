@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Aranyasen\HL7\Tests;
 
-use Aranyasen\HL7\Encoder;
+use Aranyasen\HL7\EscapeSequenceHandler;
 use Aranyasen\HL7\Segment;
 
 class SegmentTest extends TestCase
@@ -100,9 +100,7 @@ class SegmentTest extends TestCase
         self::assertSame('0', $segment->getField(1));
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function a_field_value_can_be_escaped_then_set(): void
     {
         $segment = new Segment('XXX');
@@ -112,9 +110,7 @@ class SegmentTest extends TestCase
         self::assertSame('a\F\b', $segment->getField(1));
     }
 
-    /**
-     * @test
-     */
+    /** @test */
     public function a_field_value_can_be_set_then_unescaped(): void
     {
         $segment = new Segment('XXX');
@@ -123,25 +119,21 @@ class SegmentTest extends TestCase
         self::assertSame('a|b', $segment->getField(1, true));
     }
 
-    /**
-     * @test
-     */
-    public function a_field_value_can_be_set_then_unescaped_by_encoder(): void
+    /** @test */
+    public function a_field_value_can_be_set_then_unescaped_by_escape_sequence_handler(): void
     {
         $segment = new Segment('XXX');
         $segment->setField(1, 'a\F\b');
-        $segment->setEncoder(new Encoder());
+        $segment->setEscapeSequenceHandler(new EscapeSequenceHandler('\\'));
 
         self::assertSame('a|b', $segment->getField(1));
     }
 
-    /**
-     * @test
-     */
-    public function a_field_value_can_be_escapred_then_set_then_unescaped_by_encoder(): void
+    /** @test */
+    public function a_field_value_can_be_escapred_then_set_then_unescaped_by_escape_sequence_handler(): void
     {
         $segment = new Segment('XXX');
-        $segment->setEncoder(new Encoder());
+        $segment->setEscapeSequenceHandler(new EscapeSequenceHandler('\\'));
         $segment->setField(1, 'a|b');
 
         self::assertSame('a|b', $segment->getField(1));

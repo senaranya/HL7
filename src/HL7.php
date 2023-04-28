@@ -163,9 +163,9 @@ class HL7
         return $this->setGlobal('HL7_VERSION', $hl7Version);
     }
 
-    public function withEscapeFieldValues(bool $escapeFieldValues): self
+    public function withHandleEscapeSequences(bool $handleEscapeSequences): self
     {
-        $this->hl7Globals['ESCAPE_FIELD_VALUES'] = $escapeFieldValues;
+        $this->hl7Globals['HANDLE_ESCAPE_SEQUENCES'] = $handleEscapeSequences;
         return $this;
     }
 
@@ -209,7 +209,7 @@ class HL7
         $this->hl7Globals['REPETITION_SEPARATOR'] = '~';
         $this->hl7Globals['ESCAPE_CHARACTER'] = '\\';
         $this->hl7Globals['HL7_VERSION'] = '2.3';
-        $this->hl7Globals['ESCAPE_FIELD_VALUES'] = false;
+        $this->hl7Globals['HANDLE_ESCAPE_SEQUENCES'] = false;
     }
 
     /**

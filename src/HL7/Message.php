@@ -30,7 +30,7 @@ class Message
     protected string $repetitionSeparator;
     protected string $escapeChar;
     protected $hl7Version;
-    protected bool $escapeFieldValues;
+    protected bool $handleEscapeSequences;
 
     // Split (or not) repeated subfields joined by ~. E.g. if true, parses 3^0~4^1 to [3, '0~4', 1]
     protected bool $doNotSplitRepetition;
@@ -75,7 +75,7 @@ class Message
         $this->repetitionSeparator = $hl7Globals['REPETITION_SEPARATOR'] ?? '~';
         $this->escapeChar = $hl7Globals['ESCAPE_CHARACTER'] ?? '\\';
         $this->hl7Version = $hl7Globals['HL7_VERSION'] ?? '2.3';
-        $this->escapeFieldValues = $hl7Globals['ESCAPE_FIELD_VALUES'] ?? false;
+        $this->handleEscapeSequences = $hl7Globals['HANDLE_ESCAPE_SEQUENCES'] ?? false;
 
         $this->doNotSplitRepetition = (bool) $doNotSplitRepetition;
 
@@ -107,8 +107,8 @@ class Message
 
             $segment = $this->getSegmentClass($segmentName, $fields, $autoIncrementIndices);
 
-            if ($this->escapeFieldValues === true) {
-                $segment->setEncoder(new Encoder($this->escapeChar));
+            if ($this->handleEscapeSequences === true) {
+                $segment->setEscapeSequenceHandler(new EscapeSequenceHandler($this->escapeChar));
             }
 
             $this->addSegment($segment);

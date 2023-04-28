@@ -11,7 +11,7 @@ class Segment
 {
     protected array $fields = [];
 
-    protected ?Encoder $encoder = null;
+    protected ?EscapeSequenceHandler $escapeSequenceHandler = null;
 
     /**
      * Create a segment.
@@ -85,8 +85,8 @@ class Segment
             $this->fields[$i] = '';
         }
 
-        $this->fields[$index] = ($this->hasEncoder() || $escape === true)
-            ? $this->getEncoder()->escape($value)
+        $this->fields[$index] = ($this->hasEscapeSequenceHandler() || $escape === true)
+            ? $this->getEscapeSequenceHandler()->escape($value)
             : $value;
 
         return true;
@@ -130,8 +130,8 @@ class Segment
             return null;
         }
 
-        return ($this->hasEncoder() || $unescape === true)
-            ? $this->getEncoder()->unescape($this->fields[$index])
+        return ($this->hasEscapeSequenceHandler() || $unescape === true)
+            ? $this->getEscapeSequenceHandler()->unescape($this->fields[$index])
             : $this->fields[$index];
     }
 
@@ -163,8 +163,8 @@ class Segment
 
         $fields = array_slice($this->fields, $from, $to - $from + 1);
 
-        return ($this->hasEncoder() || $unescape === true)
-            ? array_map([ $this->getEncoder(), 'unescape' ], $fields)
+        return ($this->hasEscapeSequenceHandler() || $unescape === true)
+            ? array_map([ $this->getEscapeSequenceHandler(), 'unescape' ], $fields)
             : $fields;
     }
 
@@ -178,25 +178,25 @@ class Segment
         return $this->fields[0];
     }
 
-    protected function hasEncoder(): bool
+    protected function hasEscapeSequenceHandler(): bool
     {
-        return !is_null($this->encoder);
+        return !is_null($this->escapeSequenceHandler);
     }
 
-    public function setEncoder(Encoder $encoder): self
+    public function setEscapeSequenceHandler(EscapeSequenceHandler $escapeSequenceHandler): self
     {
-        if ($this->hasEncoder()) {
-            // Changing Encoder can result in malformed results.
-            throw new Exception("Segment Encoder has already been set.");
+        if ($this->hasEscapeSequenceHandler()) {
+            // Changing EscapeSequenceHandler can result in malformed results.
+            throw new Exception("Segment EscapeSequenceHandler has already been set.");
         }
 
-        $this->encoder = $encoder;
+        $this->escapeSequenceHandler = $escapeSequenceHandler;
 
         return $this;
     }
 
-    protected function getEncoder(): Encoder
+    protected function getEscapeSequenceHandler(): EscapeSequenceHandler
     {
-        return $this->encoder ?? new Encoder();
+        return $this->escapeSequenceHandler ?? new EscapeSequenceHandler('\\');
     }
 }
