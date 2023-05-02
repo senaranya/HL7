@@ -130,7 +130,7 @@ class SegmentTest extends TestCase
     }
 
     /** @test */
-    public function a_field_value_can_be_escapred_then_set_then_unescaped_by_escape_sequence_handler(): void
+    public function a_field_value_can_be_escaped_then_set_then_unescaped_by_escape_sequence_handler(): void
     {
         $segment = new Segment('XXX');
         $segment->setEscapeSequenceHandler(new EscapeSequenceHandler('\\'));
