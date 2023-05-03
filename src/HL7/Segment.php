@@ -4,11 +4,14 @@ declare(strict_types=1);
 
 namespace Aranyasen\HL7;
 
+use Exception;
 use InvalidArgumentException;
 
 class Segment
 {
     protected array $fields = [];
+
+    protected ?EscapeSequenceHandler $escapeSequenceHandler = null;
 
     /**
      * Create a segment.
@@ -61,13 +64,15 @@ class Segment
      * $segment->setField(8, 'ab^cd'); // Sets 8th field to ab^cd
      * $segment->setField(10, ['John', 'Doe']); // Sets 10th field to John^Doe
      * $segment->setField(12, ['']); // Sets 12th field to ''
+     * $segment->setField(8, 'ab|cd', true); // Sets 8th field to ab\F\cd
      * ```
      *
      * If values are not provided at all, the method will just return.
      *
      * @param int $index Index to set
+     * @param bool $escape Whether to escape special characters. Default is false for backwards compatibility.
      */
-    public function setField(int $index, string|int|array|null $value = ''): bool
+    public function setField(int $index, string|int|array|null $value = '', bool $escape = false): bool
     {
         if ($index === 0) { // Do not allow changing 0th index, which is the name of the segment
             return false;
@@ -82,7 +87,9 @@ class Segment
             $this->fields[$i] = '';
         }
 
-        $this->fields[$index] = $value;
+        $this->fields[$index] = ($this->hasEscapeSequenceHandler() || $escape === true)
+            ? $this->getEscapeSequenceHandler()->escape($value)
+            : $value;
 
         return true;
     }
@@ -118,10 +125,18 @@ class Segment
      * ```php
      * $field = $seg->getField(9); // Returns a string/null/array depending on what the 9th field is.
      * ```
+     *
+     * @param bool $unescape Whether to unescape special characters
      */
-    public function getField(int $index): array|string|int|null
+    public function getField(int $index, bool $unescape = false): array|string|int|null
     {
-        return $this->fields[$index] ?? null;
+        if (!array_key_exists($index, $this->fields)) {
+            return null;
+        }
+
+        return ($this->hasEscapeSequenceHandler() || $unescape === true)
+            ? $this->getEscapeSequenceHandler()->unescape($this->fields[$index])
+            : $this->fields[$index];
     }
 
     /**
@@ -142,14 +157,20 @@ class Segment
      *
      * @param int $from Start range at this index
      * @param int|null $to Stop range at this index
+     * @param bool $unescape Whether to unescape special characters. Default is false for backwards compatibility.
      * @return array List of fields
      */
-    public function getFields(int $from = 0, int $to = null): array
+    public function getFields(int $from = 0, int $to = null, bool $unescape = false): array
     {
         if (!$to) {
             $to = count($this->fields);
         }
-        return array_slice($this->fields, $from, $to - $from + 1);
+
+        $fields = array_slice($this->fields, $from, $to - $from + 1);
+
+        return ($this->hasEscapeSequenceHandler() || $unescape === true)
+            ? array_map([ $this->getEscapeSequenceHandler(), 'unescape' ], $fields)
+            : $fields;
     }
 
     /**
@@ -160,5 +181,42 @@ class Segment
     public function getName(): string
     {
         return $this->fields[0];
+    }
+
+    /**
+     * Check if escape sequence handler is set
+     *
+     * @return bool
+     */
+    protected function hasEscapeSequenceHandler(): bool
+    {
+        return !is_null($this->escapeSequenceHandler);
+    }
+
+    /**
+     * Set the escape sequence handler
+     *
+     * @param EscapeSequenceHandler $escapeSequenceHandler
+     */
+    public function setEscapeSequenceHandler(EscapeSequenceHandler $escapeSequenceHandler): self
+    {
+        if ($this->hasEscapeSequenceHandler()) {
+            // Changing EscapeSequenceHandler can result in malformed results.
+            throw new Exception("Segment EscapeSequenceHandler has already been set.");
+        }
+
+        $this->escapeSequenceHandler = $escapeSequenceHandler;
+
+        return $this;
+    }
+
+    /**
+     * Get escape sequence handler instance
+     *
+     * @return EscapeSequenceHandler
+     */
+    protected function getEscapeSequenceHandler(): EscapeSequenceHandler
+    {
+        return $this->escapeSequenceHandler ?? new EscapeSequenceHandler('\\');
     }
 }
