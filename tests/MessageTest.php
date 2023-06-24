@@ -29,8 +29,8 @@ class MessageTest extends TestCase
     /** @test */
     public function field_separator_should_be_used_in_the_MSH_segment(): void
     {
-        self::expectException(HL7Exception::class);
-        self::expectExceptionMessage('Not a valid message: field separator invalid');
+        $this->expectException(HL7Exception::class);
+        $this->expectExceptionMessage('Not a valid message: field separator invalid');
         $invalidFieldSeparator = '='; // Can be any character but |
         new Message("MSH|^~\\&$invalidFieldSeparator");
     }
