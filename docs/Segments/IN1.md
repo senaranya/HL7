@@ -13,6 +13,7 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
+|[__destruct](#in1__destruct)||
 |[getAssignmentOfBenefits](#in1getassignmentofbenefits)||
 |[getAuthorizationInformation](#in1getauthorizationinformation)||
 |[getBillingStatus](#in1getbillingstatus)||
@@ -62,6 +63,7 @@ Aranyasen\HL7\Segment
 |[getVerificationBy](#in1getverificationby)||
 |[getVerificationDateTime](#in1getverificationdatetime)||
 |[getVerificationStatus](#in1getverificationstatus)||
+|[resetIndex](#in1resetindex)|Reset index of this segment|
 |[setAssignmentOfBenefits](#in1setassignmentofbenefits)||
 |[setAuthorizationInformation](#in1setauthorizationinformation)||
 |[setBillingStatus](#in1setbillingstatus)||
@@ -117,6 +119,7 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -125,12 +128,12 @@ Aranyasen\HL7\Segment
 
 
 
-### IN1::getAssignmentOfBenefits  
+### IN1::__destruct  
 
 **Description**
 
 ```php
-public getAssignmentOfBenefits (void)
+ __destruct (void)
 ```
 
  
@@ -144,6 +147,31 @@ public getAssignmentOfBenefits (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### IN1::getAssignmentOfBenefits  
+
+**Description**
+
+```php
+ getAssignmentOfBenefits (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -153,7 +181,7 @@ public getAssignmentOfBenefits (void)
 **Description**
 
 ```php
-public getAuthorizationInformation (void)
+ getAuthorizationInformation (void)
 ```
 
  
@@ -167,6 +195,7 @@ public getAuthorizationInformation (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -176,7 +205,7 @@ public getAuthorizationInformation (void)
 **Description**
 
 ```php
-public getBillingStatus (void)
+ getBillingStatus (void)
 ```
 
  
@@ -190,6 +219,7 @@ public getBillingStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -199,7 +229,7 @@ public getBillingStatus (void)
 **Description**
 
 ```php
-public getCompanyPlanCode (void)
+ getCompanyPlanCode (void)
 ```
 
  
@@ -213,6 +243,7 @@ public getCompanyPlanCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -222,7 +253,7 @@ public getCompanyPlanCode (void)
 **Description**
 
 ```php
-public getCoordOfBenPriority (void)
+ getCoordOfBenPriority (void)
 ```
 
  
@@ -236,6 +267,7 @@ public getCoordOfBenPriority (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -245,7 +277,7 @@ public getCoordOfBenPriority (void)
 **Description**
 
 ```php
-public getCoordinationOfBenefits (void)
+ getCoordinationOfBenefits (void)
 ```
 
  
@@ -259,6 +291,7 @@ public getCoordinationOfBenefits (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -268,7 +301,7 @@ public getCoordinationOfBenefits (void)
 **Description**
 
 ```php
-public getCoverageType (void)
+ getCoverageType (void)
 ```
 
  
@@ -282,6 +315,7 @@ public getCoverageType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -291,7 +325,7 @@ public getCoverageType (void)
 **Description**
 
 ```php
-public getDelayBeforeLRDay (void)
+ getDelayBeforeLRDay (void)
 ```
 
  
@@ -305,6 +339,7 @@ public getDelayBeforeLRDay (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -314,7 +349,7 @@ public getDelayBeforeLRDay (void)
 **Description**
 
 ```php
-public getGroupName (void)
+ getGroupName (void)
 ```
 
  
@@ -328,6 +363,7 @@ public getGroupName (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -337,7 +373,7 @@ public getGroupName (void)
 **Description**
 
 ```php
-public getGroupNumber (void)
+ getGroupNumber (void)
 ```
 
  
@@ -351,6 +387,7 @@ public getGroupNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -360,7 +397,7 @@ public getGroupNumber (void)
 **Description**
 
 ```php
-public getHandicap (void)
+ getHandicap (void)
 ```
 
  
@@ -374,6 +411,7 @@ public getHandicap (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -383,7 +421,7 @@ public getHandicap (void)
 **Description**
 
 ```php
-public getID (void)
+ getID (void)
 ```
 
  
@@ -397,6 +435,7 @@ public getID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -406,7 +445,7 @@ public getID (void)
 **Description**
 
 ```php
-public getInsuranceCoContactPerson (void)
+ getInsuranceCoContactPerson (void)
 ```
 
  
@@ -420,6 +459,7 @@ public getInsuranceCoContactPerson (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -429,7 +469,7 @@ public getInsuranceCoContactPerson (void)
 **Description**
 
 ```php
-public getInsuranceCoPhoneNumber (void)
+ getInsuranceCoPhoneNumber (void)
 ```
 
  
@@ -443,6 +483,7 @@ public getInsuranceCoPhoneNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -452,7 +493,7 @@ public getInsuranceCoPhoneNumber (void)
 **Description**
 
 ```php
-public getInsuranceCompanyAddress (void)
+ getInsuranceCompanyAddress (void)
 ```
 
  
@@ -466,6 +507,7 @@ public getInsuranceCompanyAddress (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -475,7 +517,7 @@ public getInsuranceCompanyAddress (void)
 **Description**
 
 ```php
-public getInsuranceCompanyID (void)
+ getInsuranceCompanyID (void)
 ```
 
  
@@ -489,6 +531,7 @@ public getInsuranceCompanyID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -498,7 +541,7 @@ public getInsuranceCompanyID (void)
 **Description**
 
 ```php
-public getInsuranceCompanyName (void)
+ getInsuranceCompanyName (void)
 ```
 
  
@@ -512,6 +555,7 @@ public getInsuranceCompanyName (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -521,7 +565,7 @@ public getInsuranceCompanyName (void)
 **Description**
 
 ```php
-public getInsurancePlanID (void)
+ getInsurancePlanID (void)
 ```
 
  
@@ -535,6 +579,7 @@ public getInsurancePlanID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -544,7 +589,7 @@ public getInsurancePlanID (void)
 **Description**
 
 ```php
-public getInsuredsAddress (void)
+ getInsuredsAddress (void)
 ```
 
  
@@ -558,6 +603,7 @@ public getInsuredsAddress (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -567,7 +613,7 @@ public getInsuredsAddress (void)
 **Description**
 
 ```php
-public getInsuredsDateOfBirth (void)
+ getInsuredsDateOfBirth (void)
 ```
 
  
@@ -581,6 +627,7 @@ public getInsuredsDateOfBirth (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -590,7 +637,7 @@ public getInsuredsDateOfBirth (void)
 **Description**
 
 ```php
-public getInsuredsEmployersAddress (void)
+ getInsuredsEmployersAddress (void)
 ```
 
  
@@ -604,6 +651,7 @@ public getInsuredsEmployersAddress (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -613,7 +661,7 @@ public getInsuredsEmployersAddress (void)
 **Description**
 
 ```php
-public getInsuredsEmploymentStatus (void)
+ getInsuredsEmploymentStatus (void)
 ```
 
  
@@ -627,6 +675,7 @@ public getInsuredsEmploymentStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -636,7 +685,7 @@ public getInsuredsEmploymentStatus (void)
 **Description**
 
 ```php
-public getInsuredsGroupEmpID (void)
+ getInsuredsGroupEmpID (void)
 ```
 
  
@@ -650,6 +699,7 @@ public getInsuredsGroupEmpID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -659,7 +709,7 @@ public getInsuredsGroupEmpID (void)
 **Description**
 
 ```php
-public getInsuredsGroupEmpName (void)
+ getInsuredsGroupEmpName (void)
 ```
 
  
@@ -673,6 +723,7 @@ public getInsuredsGroupEmpName (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -682,7 +733,7 @@ public getInsuredsGroupEmpName (void)
 **Description**
 
 ```php
-public getInsuredsIDNumber (void)
+ getInsuredsIDNumber (void)
 ```
 
  
@@ -696,6 +747,7 @@ public getInsuredsIDNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -705,7 +757,7 @@ public getInsuredsIDNumber (void)
 **Description**
 
 ```php
-public getInsuredsRelationshipToPatient (void)
+ getInsuredsRelationshipToPatient (void)
 ```
 
  
@@ -719,6 +771,7 @@ public getInsuredsRelationshipToPatient (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -728,7 +781,7 @@ public getInsuredsRelationshipToPatient (void)
 **Description**
 
 ```php
-public getInsuredsSex (void)
+ getInsuredsSex (void)
 ```
 
  
@@ -742,6 +795,7 @@ public getInsuredsSex (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -751,7 +805,7 @@ public getInsuredsSex (void)
 **Description**
 
 ```php
-public getLifetimeReserveDays (void)
+ getLifetimeReserveDays (void)
 ```
 
  
@@ -765,6 +819,7 @@ public getLifetimeReserveDays (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -774,7 +829,7 @@ public getLifetimeReserveDays (void)
 **Description**
 
 ```php
-public getNameOfInsured (void)
+ getNameOfInsured (void)
 ```
 
  
@@ -788,6 +843,7 @@ public getNameOfInsured (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -797,7 +853,7 @@ public getNameOfInsured (void)
 **Description**
 
 ```php
-public getNoticeOfAdmissionDate (void)
+ getNoticeOfAdmissionDate (void)
 ```
 
  
@@ -811,6 +867,7 @@ public getNoticeOfAdmissionDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -820,7 +877,7 @@ public getNoticeOfAdmissionDate (void)
 **Description**
 
 ```php
-public getNoticeOfAdmissionFlag (void)
+ getNoticeOfAdmissionFlag (void)
 ```
 
  
@@ -834,6 +891,7 @@ public getNoticeOfAdmissionFlag (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -843,7 +901,7 @@ public getNoticeOfAdmissionFlag (void)
 **Description**
 
 ```php
-public getPlanEffectiveDate (void)
+ getPlanEffectiveDate (void)
 ```
 
  
@@ -857,6 +915,7 @@ public getPlanEffectiveDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -866,7 +925,7 @@ public getPlanEffectiveDate (void)
 **Description**
 
 ```php
-public getPlanExpirationDate (void)
+ getPlanExpirationDate (void)
 ```
 
  
@@ -880,6 +939,7 @@ public getPlanExpirationDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -889,7 +949,7 @@ public getPlanExpirationDate (void)
 **Description**
 
 ```php
-public getPlanType (void)
+ getPlanType (void)
 ```
 
  
@@ -903,6 +963,7 @@ public getPlanType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -912,7 +973,7 @@ public getPlanType (void)
 **Description**
 
 ```php
-public getPolicyDeductible (void)
+ getPolicyDeductible (void)
 ```
 
  
@@ -926,6 +987,7 @@ public getPolicyDeductible (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -935,7 +997,7 @@ public getPolicyDeductible (void)
 **Description**
 
 ```php
-public getPolicyLimitAmount (void)
+ getPolicyLimitAmount (void)
 ```
 
  
@@ -949,6 +1011,7 @@ public getPolicyLimitAmount (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -958,7 +1021,7 @@ public getPolicyLimitAmount (void)
 **Description**
 
 ```php
-public getPolicyLimitDays (void)
+ getPolicyLimitDays (void)
 ```
 
  
@@ -972,6 +1035,7 @@ public getPolicyLimitDays (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -981,7 +1045,7 @@ public getPolicyLimitDays (void)
 **Description**
 
 ```php
-public getPolicyNumber (void)
+ getPolicyNumber (void)
 ```
 
  
@@ -995,6 +1059,7 @@ public getPolicyNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1004,7 +1069,7 @@ public getPolicyNumber (void)
 **Description**
 
 ```php
-public getPreAdmitCertPAC (void)
+ getPreAdmitCertPAC (void)
 ```
 
  
@@ -1018,6 +1083,7 @@ public getPreAdmitCertPAC (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1027,7 +1093,7 @@ public getPreAdmitCertPAC (void)
 **Description**
 
 ```php
-public getPriorInsurancePlanID (void)
+ getPriorInsurancePlanID (void)
 ```
 
  
@@ -1041,6 +1107,7 @@ public getPriorInsurancePlanID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1050,7 +1117,7 @@ public getPriorInsurancePlanID (void)
 **Description**
 
 ```php
-public getReleaseInformationCode (void)
+ getReleaseInformationCode (void)
 ```
 
  
@@ -1064,6 +1131,7 @@ public getReleaseInformationCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1073,7 +1141,7 @@ public getReleaseInformationCode (void)
 **Description**
 
 ```php
-public getReportOfEligibilityDate (void)
+ getReportOfEligibilityDate (void)
 ```
 
  
@@ -1087,6 +1155,7 @@ public getReportOfEligibilityDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1096,7 +1165,7 @@ public getReportOfEligibilityDate (void)
 **Description**
 
 ```php
-public getReportOfEligibilityFlag (void)
+ getReportOfEligibilityFlag (void)
 ```
 
  
@@ -1110,6 +1179,7 @@ public getReportOfEligibilityFlag (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1119,7 +1189,7 @@ public getReportOfEligibilityFlag (void)
 **Description**
 
 ```php
-public getRoomRatePrivate (void)
+ getRoomRatePrivate (void)
 ```
 
  
@@ -1133,6 +1203,7 @@ public getRoomRatePrivate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1142,7 +1213,7 @@ public getRoomRatePrivate (void)
 **Description**
 
 ```php
-public getRoomRateSemiPrivate (void)
+ getRoomRateSemiPrivate (void)
 ```
 
  
@@ -1156,6 +1227,7 @@ public getRoomRateSemiPrivate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1165,7 +1237,7 @@ public getRoomRateSemiPrivate (void)
 **Description**
 
 ```php
-public getTypeOfAgreementCode (void)
+ getTypeOfAgreementCode (void)
 ```
 
  
@@ -1179,6 +1251,7 @@ public getTypeOfAgreementCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1188,7 +1261,7 @@ public getTypeOfAgreementCode (void)
 **Description**
 
 ```php
-public getVerificationBy (void)
+ getVerificationBy (void)
 ```
 
  
@@ -1202,6 +1275,7 @@ public getVerificationBy (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1211,7 +1285,7 @@ public getVerificationBy (void)
 **Description**
 
 ```php
-public getVerificationDateTime (void)
+ getVerificationDateTime (void)
 ```
 
  
@@ -1225,6 +1299,7 @@ public getVerificationDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1234,7 +1309,7 @@ public getVerificationDateTime (void)
 **Description**
 
 ```php
-public getVerificationStatus (void)
+ getVerificationStatus (void)
 ```
 
  
@@ -1248,6 +1323,31 @@ public getVerificationStatus (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### IN1::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (void)
+```
+
+Reset index of this segment 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -1257,7 +1357,7 @@ public getVerificationStatus (void)
 **Description**
 
 ```php
-public setAssignmentOfBenefits (void)
+ setAssignmentOfBenefits (void)
 ```
 
  
@@ -1271,6 +1371,7 @@ public setAssignmentOfBenefits (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1280,7 +1381,7 @@ public setAssignmentOfBenefits (void)
 **Description**
 
 ```php
-public setAuthorizationInformation (void)
+ setAuthorizationInformation (void)
 ```
 
  
@@ -1294,6 +1395,7 @@ public setAuthorizationInformation (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1303,7 +1405,7 @@ public setAuthorizationInformation (void)
 **Description**
 
 ```php
-public setBillingStatus (void)
+ setBillingStatus (void)
 ```
 
  
@@ -1317,6 +1419,7 @@ public setBillingStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1326,7 +1429,7 @@ public setBillingStatus (void)
 **Description**
 
 ```php
-public setCompanyPlanCode (void)
+ setCompanyPlanCode (void)
 ```
 
  
@@ -1340,6 +1443,7 @@ public setCompanyPlanCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1349,7 +1453,7 @@ public setCompanyPlanCode (void)
 **Description**
 
 ```php
-public setCoordOfBenPriority (void)
+ setCoordOfBenPriority (void)
 ```
 
  
@@ -1363,6 +1467,7 @@ public setCoordOfBenPriority (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1372,7 +1477,7 @@ public setCoordOfBenPriority (void)
 **Description**
 
 ```php
-public setCoordinationOfBenefits (void)
+ setCoordinationOfBenefits (void)
 ```
 
  
@@ -1386,6 +1491,7 @@ public setCoordinationOfBenefits (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1395,7 +1501,7 @@ public setCoordinationOfBenefits (void)
 **Description**
 
 ```php
-public setCoverageType (void)
+ setCoverageType (void)
 ```
 
  
@@ -1409,6 +1515,7 @@ public setCoverageType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1418,7 +1525,7 @@ public setCoverageType (void)
 **Description**
 
 ```php
-public setDelayBeforeLRDay (void)
+ setDelayBeforeLRDay (void)
 ```
 
  
@@ -1432,6 +1539,7 @@ public setDelayBeforeLRDay (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1441,7 +1549,7 @@ public setDelayBeforeLRDay (void)
 **Description**
 
 ```php
-public setGroupName (void)
+ setGroupName (void)
 ```
 
  
@@ -1455,6 +1563,7 @@ public setGroupName (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1464,7 +1573,7 @@ public setGroupName (void)
 **Description**
 
 ```php
-public setGroupNumber (void)
+ setGroupNumber (void)
 ```
 
  
@@ -1478,6 +1587,7 @@ public setGroupNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1487,7 +1597,7 @@ public setGroupNumber (void)
 **Description**
 
 ```php
-public setHandicap (void)
+ setHandicap (void)
 ```
 
  
@@ -1501,6 +1611,7 @@ public setHandicap (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1510,7 +1621,7 @@ public setHandicap (void)
 **Description**
 
 ```php
-public setID (void)
+ setID (void)
 ```
 
  
@@ -1524,6 +1635,7 @@ public setID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1533,7 +1645,7 @@ public setID (void)
 **Description**
 
 ```php
-public setInsuranceCoContactPerson (void)
+ setInsuranceCoContactPerson (void)
 ```
 
  
@@ -1547,6 +1659,7 @@ public setInsuranceCoContactPerson (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1556,7 +1669,7 @@ public setInsuranceCoContactPerson (void)
 **Description**
 
 ```php
-public setInsuranceCoPhoneNumber (void)
+ setInsuranceCoPhoneNumber (void)
 ```
 
  
@@ -1570,6 +1683,7 @@ public setInsuranceCoPhoneNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1579,7 +1693,7 @@ public setInsuranceCoPhoneNumber (void)
 **Description**
 
 ```php
-public setInsuranceCompanyAddress (void)
+ setInsuranceCompanyAddress (void)
 ```
 
  
@@ -1593,6 +1707,7 @@ public setInsuranceCompanyAddress (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1602,7 +1717,7 @@ public setInsuranceCompanyAddress (void)
 **Description**
 
 ```php
-public setInsuranceCompanyID (void)
+ setInsuranceCompanyID (void)
 ```
 
  
@@ -1616,6 +1731,7 @@ public setInsuranceCompanyID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1625,7 +1741,7 @@ public setInsuranceCompanyID (void)
 **Description**
 
 ```php
-public setInsuranceCompanyName (void)
+ setInsuranceCompanyName (void)
 ```
 
  
@@ -1639,6 +1755,7 @@ public setInsuranceCompanyName (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1648,7 +1765,7 @@ public setInsuranceCompanyName (void)
 **Description**
 
 ```php
-public setInsurancePlanID (void)
+ setInsurancePlanID (void)
 ```
 
  
@@ -1662,6 +1779,7 @@ public setInsurancePlanID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1671,7 +1789,7 @@ public setInsurancePlanID (void)
 **Description**
 
 ```php
-public setInsuredsAddress (void)
+ setInsuredsAddress (void)
 ```
 
  
@@ -1685,6 +1803,7 @@ public setInsuredsAddress (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1694,7 +1813,7 @@ public setInsuredsAddress (void)
 **Description**
 
 ```php
-public setInsuredsDateOfBirth (void)
+ setInsuredsDateOfBirth (void)
 ```
 
  
@@ -1708,6 +1827,7 @@ public setInsuredsDateOfBirth (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1717,7 +1837,7 @@ public setInsuredsDateOfBirth (void)
 **Description**
 
 ```php
-public setInsuredsEmployersAddress (void)
+ setInsuredsEmployersAddress (void)
 ```
 
  
@@ -1731,6 +1851,7 @@ public setInsuredsEmployersAddress (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1740,7 +1861,7 @@ public setInsuredsEmployersAddress (void)
 **Description**
 
 ```php
-public setInsuredsEmploymentStatus (void)
+ setInsuredsEmploymentStatus (void)
 ```
 
  
@@ -1754,6 +1875,7 @@ public setInsuredsEmploymentStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1763,7 +1885,7 @@ public setInsuredsEmploymentStatus (void)
 **Description**
 
 ```php
-public setInsuredsGroupEmpID (void)
+ setInsuredsGroupEmpID (void)
 ```
 
  
@@ -1777,6 +1899,7 @@ public setInsuredsGroupEmpID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1786,7 +1909,7 @@ public setInsuredsGroupEmpID (void)
 **Description**
 
 ```php
-public setInsuredsGroupEmpName (void)
+ setInsuredsGroupEmpName (void)
 ```
 
  
@@ -1800,6 +1923,7 @@ public setInsuredsGroupEmpName (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1809,7 +1933,7 @@ public setInsuredsGroupEmpName (void)
 **Description**
 
 ```php
-public setInsuredsIDNumber (void)
+ setInsuredsIDNumber (void)
 ```
 
  
@@ -1823,6 +1947,7 @@ public setInsuredsIDNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1832,7 +1957,7 @@ public setInsuredsIDNumber (void)
 **Description**
 
 ```php
-public setInsuredsRelationshipToPatient (void)
+ setInsuredsRelationshipToPatient (void)
 ```
 
  
@@ -1846,6 +1971,7 @@ public setInsuredsRelationshipToPatient (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1855,7 +1981,7 @@ public setInsuredsRelationshipToPatient (void)
 **Description**
 
 ```php
-public setInsuredsSex (void)
+ setInsuredsSex (void)
 ```
 
  
@@ -1869,6 +1995,7 @@ public setInsuredsSex (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1878,7 +2005,7 @@ public setInsuredsSex (void)
 **Description**
 
 ```php
-public setLifetimeReserveDays (void)
+ setLifetimeReserveDays (void)
 ```
 
  
@@ -1892,6 +2019,7 @@ public setLifetimeReserveDays (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1901,7 +2029,7 @@ public setLifetimeReserveDays (void)
 **Description**
 
 ```php
-public setNameOfInsured (void)
+ setNameOfInsured (void)
 ```
 
  
@@ -1915,6 +2043,7 @@ public setNameOfInsured (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1924,7 +2053,7 @@ public setNameOfInsured (void)
 **Description**
 
 ```php
-public setNoticeOfAdmissionDate (void)
+ setNoticeOfAdmissionDate (void)
 ```
 
  
@@ -1938,6 +2067,7 @@ public setNoticeOfAdmissionDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1947,7 +2077,7 @@ public setNoticeOfAdmissionDate (void)
 **Description**
 
 ```php
-public setNoticeOfAdmissionFlag (void)
+ setNoticeOfAdmissionFlag (void)
 ```
 
  
@@ -1961,6 +2091,7 @@ public setNoticeOfAdmissionFlag (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1970,7 +2101,7 @@ public setNoticeOfAdmissionFlag (void)
 **Description**
 
 ```php
-public setPlanEffectiveDate (void)
+ setPlanEffectiveDate (void)
 ```
 
  
@@ -1984,6 +2115,7 @@ public setPlanEffectiveDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1993,7 +2125,7 @@ public setPlanEffectiveDate (void)
 **Description**
 
 ```php
-public setPlanExpirationDate (void)
+ setPlanExpirationDate (void)
 ```
 
  
@@ -2007,6 +2139,7 @@ public setPlanExpirationDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2016,7 +2149,7 @@ public setPlanExpirationDate (void)
 **Description**
 
 ```php
-public setPlanType (void)
+ setPlanType (void)
 ```
 
  
@@ -2030,6 +2163,7 @@ public setPlanType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2039,7 +2173,7 @@ public setPlanType (void)
 **Description**
 
 ```php
-public setPolicyDeductible (void)
+ setPolicyDeductible (void)
 ```
 
  
@@ -2053,6 +2187,7 @@ public setPolicyDeductible (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2062,7 +2197,7 @@ public setPolicyDeductible (void)
 **Description**
 
 ```php
-public setPolicyLimitAmount (void)
+ setPolicyLimitAmount (void)
 ```
 
  
@@ -2076,6 +2211,7 @@ public setPolicyLimitAmount (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2085,7 +2221,7 @@ public setPolicyLimitAmount (void)
 **Description**
 
 ```php
-public setPolicyLimitDays (void)
+ setPolicyLimitDays (void)
 ```
 
  
@@ -2099,6 +2235,7 @@ public setPolicyLimitDays (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2108,7 +2245,7 @@ public setPolicyLimitDays (void)
 **Description**
 
 ```php
-public setPolicyNumber (void)
+ setPolicyNumber (void)
 ```
 
  
@@ -2122,6 +2259,7 @@ public setPolicyNumber (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2131,7 +2269,7 @@ public setPolicyNumber (void)
 **Description**
 
 ```php
-public setPreAdmitCertPAC (void)
+ setPreAdmitCertPAC (void)
 ```
 
  
@@ -2145,6 +2283,7 @@ public setPreAdmitCertPAC (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2154,7 +2293,7 @@ public setPreAdmitCertPAC (void)
 **Description**
 
 ```php
-public setPriorInsurancePlanID (void)
+ setPriorInsurancePlanID (void)
 ```
 
  
@@ -2168,6 +2307,7 @@ public setPriorInsurancePlanID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2177,7 +2317,7 @@ public setPriorInsurancePlanID (void)
 **Description**
 
 ```php
-public setReleaseInformationCode (void)
+ setReleaseInformationCode (void)
 ```
 
  
@@ -2191,6 +2331,7 @@ public setReleaseInformationCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2200,7 +2341,7 @@ public setReleaseInformationCode (void)
 **Description**
 
 ```php
-public setReportOfEligibilityDate (void)
+ setReportOfEligibilityDate (void)
 ```
 
  
@@ -2214,6 +2355,7 @@ public setReportOfEligibilityDate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2223,7 +2365,7 @@ public setReportOfEligibilityDate (void)
 **Description**
 
 ```php
-public setReportOfEligibilityFlag (void)
+ setReportOfEligibilityFlag (void)
 ```
 
  
@@ -2237,6 +2379,7 @@ public setReportOfEligibilityFlag (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2246,7 +2389,7 @@ public setReportOfEligibilityFlag (void)
 **Description**
 
 ```php
-public setRoomRatePrivate (void)
+ setRoomRatePrivate (void)
 ```
 
  
@@ -2260,6 +2403,7 @@ public setRoomRatePrivate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2269,7 +2413,7 @@ public setRoomRatePrivate (void)
 **Description**
 
 ```php
-public setRoomRateSemiPrivate (void)
+ setRoomRateSemiPrivate (void)
 ```
 
  
@@ -2283,6 +2427,7 @@ public setRoomRateSemiPrivate (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2292,7 +2437,7 @@ public setRoomRateSemiPrivate (void)
 **Description**
 
 ```php
-public setTypeOfAgreementCode (void)
+ setTypeOfAgreementCode (void)
 ```
 
  
@@ -2306,6 +2451,7 @@ public setTypeOfAgreementCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2315,7 +2461,7 @@ public setTypeOfAgreementCode (void)
 **Description**
 
 ```php
-public setVerificationBy (void)
+ setVerificationBy (void)
 ```
 
  
@@ -2329,6 +2475,7 @@ public setVerificationBy (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2338,7 +2485,7 @@ public setVerificationBy (void)
 **Description**
 
 ```php
-public setVerificationDateTime (void)
+ setVerificationDateTime (void)
 ```
 
  
@@ -2352,6 +2499,7 @@ public setVerificationDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -2361,7 +2509,7 @@ public setVerificationDateTime (void)
 **Description**
 
 ```php
-public setVerificationStatus (void)
+ setVerificationStatus (void)
 ```
 
  
@@ -2375,6 +2523,7 @@ public setVerificationStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 

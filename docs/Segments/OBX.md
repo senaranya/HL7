@@ -1,7 +1,7 @@
 # Aranyasen\HL7\Segments\OBX  
 
 OBX segment class
-Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-obx-segment
+Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/OBX
 
 
 
@@ -13,9 +13,12 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
+|[__destruct](#obx__destruct)||
 |[getAbnormalFlags](#obxgetabnormalflags)||
 |[getDataLastObsNormalValues](#obxgetdatalastobsnormalvalues)||
+|[getDateTimeOfAnalysis](#obxgetdatetimeofanalysis)||
 |[getDateTimeOfTheObservation](#obxgetdatetimeoftheobservation)||
+|[getEquipmentInstanceIdentifier](#obxgetequipmentinstanceidentifier)||
 |[getID](#obxgetid)||
 |[getNatureOfAbnormalTest](#obxgetnatureofabnormaltest)||
 |[getObservationIdentifier](#obxgetobservationidentifier)||
@@ -30,9 +33,12 @@ Aranyasen\HL7\Segment
 |[getUnits](#obxgetunits)||
 |[getUserDefinedAccessChecks](#obxgetuserdefinedaccesschecks)||
 |[getValueType](#obxgetvaluetype)||
+|[resetIndex](#obxresetindex)|Reset index of this segment|
 |[setAbnormalFlags](#obxsetabnormalflags)||
 |[setDataLastObsNormalValues](#obxsetdatalastobsnormalvalues)||
+|[setDateTimeOfAnalysis](#obxsetdatetimeofanalysis)||
 |[setDateTimeOfTheObservation](#obxsetdatetimeoftheobservation)||
+|[setEquipmentInstanceIdentifier](#obxsetequipmentinstanceidentifier)||
 |[setID](#obxsetid)||
 |[setNatureOfAbnormalTest](#obxsetnatureofabnormaltest)||
 |[setObservationIdentifier](#obxsetobservationidentifier)||
@@ -53,6 +59,7 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -61,12 +68,12 @@ Aranyasen\HL7\Segment
 
 
 
-### OBX::getAbnormalFlags  
+### OBX::__destruct  
 
 **Description**
 
 ```php
-public getAbnormalFlags (void)
+ __destruct (void)
 ```
 
  
@@ -80,6 +87,31 @@ public getAbnormalFlags (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBX::getAbnormalFlags  
+
+**Description**
+
+```php
+ getAbnormalFlags (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -89,7 +121,7 @@ public getAbnormalFlags (void)
 **Description**
 
 ```php
-public getDataLastObsNormalValues (void)
+ getDataLastObsNormalValues (void)
 ```
 
  
@@ -103,6 +135,31 @@ public getDataLastObsNormalValues (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBX::getDateTimeOfAnalysis  
+
+**Description**
+
+```php
+ getDateTimeOfAnalysis (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -112,7 +169,7 @@ public getDataLastObsNormalValues (void)
 **Description**
 
 ```php
-public getDateTimeOfTheObservation (void)
+ getDateTimeOfTheObservation (void)
 ```
 
  
@@ -126,6 +183,31 @@ public getDateTimeOfTheObservation (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBX::getEquipmentInstanceIdentifier  
+
+**Description**
+
+```php
+ getEquipmentInstanceIdentifier (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -135,7 +217,7 @@ public getDateTimeOfTheObservation (void)
 **Description**
 
 ```php
-public getID (void)
+ getID (void)
 ```
 
  
@@ -149,6 +231,7 @@ public getID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -158,7 +241,7 @@ public getID (void)
 **Description**
 
 ```php
-public getNatureOfAbnormalTest (void)
+ getNatureOfAbnormalTest (void)
 ```
 
  
@@ -172,6 +255,7 @@ public getNatureOfAbnormalTest (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -181,7 +265,7 @@ public getNatureOfAbnormalTest (void)
 **Description**
 
 ```php
-public getObservationIdentifier (void)
+ getObservationIdentifier (void)
 ```
 
  
@@ -195,6 +279,7 @@ public getObservationIdentifier (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -204,7 +289,7 @@ public getObservationIdentifier (void)
 **Description**
 
 ```php
-public getObservationMethod (void)
+ getObservationMethod (void)
 ```
 
  
@@ -218,6 +303,7 @@ public getObservationMethod (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -227,7 +313,7 @@ public getObservationMethod (void)
 **Description**
 
 ```php
-public getObservationSubId (void)
+ getObservationSubId (void)
 ```
 
  
@@ -241,6 +327,7 @@ public getObservationSubId (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -250,7 +337,7 @@ public getObservationSubId (void)
 **Description**
 
 ```php
-public getObservationValue (void)
+ getObservationValue (void)
 ```
 
  
@@ -264,6 +351,7 @@ public getObservationValue (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -273,7 +361,7 @@ public getObservationValue (void)
 **Description**
 
 ```php
-public getObserveResultStatus (void)
+ getObserveResultStatus (void)
 ```
 
  
@@ -287,6 +375,7 @@ public getObserveResultStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -296,7 +385,7 @@ public getObserveResultStatus (void)
 **Description**
 
 ```php
-public getProbability (void)
+ getProbability (void)
 ```
 
  
@@ -310,6 +399,7 @@ public getProbability (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -319,7 +409,7 @@ public getProbability (void)
 **Description**
 
 ```php
-public getProducersId (void)
+ getProducersId (void)
 ```
 
  
@@ -333,6 +423,7 @@ public getProducersId (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -342,7 +433,7 @@ public getProducersId (void)
 **Description**
 
 ```php
-public getReferenceRange (void)
+ getReferenceRange (void)
 ```
 
  
@@ -356,6 +447,7 @@ public getReferenceRange (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -365,7 +457,7 @@ public getReferenceRange (void)
 **Description**
 
 ```php
-public getResponsibleObserver (void)
+ getResponsibleObserver (void)
 ```
 
  
@@ -379,6 +471,7 @@ public getResponsibleObserver (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -388,7 +481,7 @@ public getResponsibleObserver (void)
 **Description**
 
 ```php
-public getUnits (void)
+ getUnits (void)
 ```
 
  
@@ -402,6 +495,7 @@ public getUnits (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -411,7 +505,7 @@ public getUnits (void)
 **Description**
 
 ```php
-public getUserDefinedAccessChecks (void)
+ getUserDefinedAccessChecks (void)
 ```
 
  
@@ -425,6 +519,7 @@ public getUserDefinedAccessChecks (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -434,7 +529,7 @@ public getUserDefinedAccessChecks (void)
 **Description**
 
 ```php
-public getValueType (void)
+ getValueType (void)
 ```
 
  
@@ -448,6 +543,31 @@ public getValueType (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBX::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (void)
+```
+
+Reset index of this segment 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -457,7 +577,7 @@ public getValueType (void)
 **Description**
 
 ```php
-public setAbnormalFlags (void)
+ setAbnormalFlags (void)
 ```
 
  
@@ -471,6 +591,7 @@ public setAbnormalFlags (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -480,7 +601,7 @@ public setAbnormalFlags (void)
 **Description**
 
 ```php
-public setDataLastObsNormalValues (void)
+ setDataLastObsNormalValues (void)
 ```
 
  
@@ -494,6 +615,31 @@ public setDataLastObsNormalValues (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBX::setDateTimeOfAnalysis  
+
+**Description**
+
+```php
+ setDateTimeOfAnalysis (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -503,7 +649,7 @@ public setDataLastObsNormalValues (void)
 **Description**
 
 ```php
-public setDateTimeOfTheObservation (void)
+ setDateTimeOfTheObservation (void)
 ```
 
  
@@ -517,6 +663,31 @@ public setDateTimeOfTheObservation (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBX::setEquipmentInstanceIdentifier  
+
+**Description**
+
+```php
+ setEquipmentInstanceIdentifier (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -526,7 +697,7 @@ public setDateTimeOfTheObservation (void)
 **Description**
 
 ```php
-public setID (void)
+ setID (void)
 ```
 
  
@@ -540,6 +711,7 @@ public setID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -549,7 +721,7 @@ public setID (void)
 **Description**
 
 ```php
-public setNatureOfAbnormalTest (void)
+ setNatureOfAbnormalTest (void)
 ```
 
  
@@ -563,6 +735,7 @@ public setNatureOfAbnormalTest (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -572,7 +745,7 @@ public setNatureOfAbnormalTest (void)
 **Description**
 
 ```php
-public setObservationIdentifier (void)
+ setObservationIdentifier (void)
 ```
 
  
@@ -586,6 +759,7 @@ public setObservationIdentifier (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -595,7 +769,7 @@ public setObservationIdentifier (void)
 **Description**
 
 ```php
-public setObservationMethod (void)
+ setObservationMethod (void)
 ```
 
  
@@ -609,6 +783,7 @@ public setObservationMethod (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -618,7 +793,7 @@ public setObservationMethod (void)
 **Description**
 
 ```php
-public setObservationSubId (void)
+ setObservationSubId (void)
 ```
 
  
@@ -632,6 +807,7 @@ public setObservationSubId (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -641,7 +817,7 @@ public setObservationSubId (void)
 **Description**
 
 ```php
-public setObservationValue (void)
+ setObservationValue (void)
 ```
 
  
@@ -655,6 +831,7 @@ public setObservationValue (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -664,7 +841,7 @@ public setObservationValue (void)
 **Description**
 
 ```php
-public setObserveResultStatus (void)
+ setObserveResultStatus (void)
 ```
 
  
@@ -678,6 +855,7 @@ public setObserveResultStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -687,7 +865,7 @@ public setObserveResultStatus (void)
 **Description**
 
 ```php
-public setProbability (void)
+ setProbability (void)
 ```
 
  
@@ -701,6 +879,7 @@ public setProbability (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -710,7 +889,7 @@ public setProbability (void)
 **Description**
 
 ```php
-public setProducersId (void)
+ setProducersId (void)
 ```
 
  
@@ -724,6 +903,7 @@ public setProducersId (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -733,7 +913,7 @@ public setProducersId (void)
 **Description**
 
 ```php
-public setReferenceRange (void)
+ setReferenceRange (void)
 ```
 
  
@@ -747,6 +927,7 @@ public setReferenceRange (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -756,7 +937,7 @@ public setReferenceRange (void)
 **Description**
 
 ```php
-public setResponsibleObserver (void)
+ setResponsibleObserver (void)
 ```
 
  
@@ -770,6 +951,7 @@ public setResponsibleObserver (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -779,7 +961,7 @@ public setResponsibleObserver (void)
 **Description**
 
 ```php
-public setUnits (void)
+ setUnits (void)
 ```
 
  
@@ -793,6 +975,7 @@ public setUnits (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -802,7 +985,7 @@ public setUnits (void)
 **Description**
 
 ```php
-public setUserDefinedAccessChecks (void)
+ setUserDefinedAccessChecks (void)
 ```
 
  
@@ -816,6 +999,7 @@ public setUserDefinedAccessChecks (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -825,7 +1009,7 @@ public setUserDefinedAccessChecks (void)
 **Description**
 
 ```php
-public setValueType (void)
+ setValueType (void)
 ```
 
  
@@ -839,6 +1023,7 @@ public setValueType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 

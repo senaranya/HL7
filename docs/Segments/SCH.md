@@ -1,7 +1,8 @@
-# Aranyasen\HL7\Segments\IN3  
+# Aranyasen\HL7\Segments\SCH  
 
-IN3 segment class
-Ref: http://hl7-definition.caristix.com:9010/Default.aspx?version=HL7+v2.5.1&segment=ORC
+SCH segment class
+Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-siu-message
+http://hl7-definition.caristix.com:9010/HL7%20v2.3.1/segment/SCH
 
 
 
@@ -13,58 +14,56 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[__destruct](#in3__destruct)||
-|[getAppealReason](#in3getappealreason)||
-|[getCaseManager](#in3getcasemanager)||
-|[getCertificationAgency](#in3getcertificationagency)||
-|[getCertificationAgencyPhoneNumber](#in3getcertificationagencyphonenumber)||
-|[getCertificationBeginDate](#in3getcertificationbegindate)||
-|[getCertificationContact](#in3getcertificationcontact)||
-|[getCertificationContactPhoneNumber](#in3getcertificationcontactphonenumber)||
-|[getCertificationDateTime](#in3getcertificationdatetime)||
-|[getCertificationEndDate](#in3getcertificationenddate)||
-|[getCertificationModifyDateTime](#in3getcertificationmodifydatetime)||
-|[getCertificationNumber](#in3getcertificationnumber)||
-|[getCertificationRequired](#in3getcertificationrequired)||
-|[getCertifiedBy](#in3getcertifiedby)||
-|[getDays](#in3getdays)||
-|[getID](#in3getid)||
-|[getNonConcurCodeDescription](#in3getnonconcurcodedescription)||
-|[getNonConcurEffectiveDateTime](#in3getnonconcureffectivedatetime)||
-|[getOperator](#in3getoperator)||
-|[getPenalty](#in3getpenalty)||
-|[getPhysicianReviewer](#in3getphysicianreviewer)||
-|[getPreCertificationRequirement](#in3getprecertificationrequirement)||
-|[getSecondOpinionDate](#in3getsecondopiniondate)||
-|[getSecondOpinionDocumentationReceived](#in3getsecondopiniondocumentationreceived)||
-|[getSecondOpinionPhysician](#in3getsecondopinionphysician)||
-|[getSecondOpinionStatus](#in3getsecondopinionstatus)||
-|[resetIndex](#in3resetindex)|Reset index of this segment|
-|[setAppealReason](#in3setappealreason)||
-|[setCaseManager](#in3setcasemanager)||
-|[setCertificationAgency](#in3setcertificationagency)||
-|[setCertificationAgencyPhoneNumber](#in3setcertificationagencyphonenumber)||
-|[setCertificationBeginDate](#in3setcertificationbegindate)||
-|[setCertificationContact](#in3setcertificationcontact)||
-|[setCertificationContactPhoneNumber](#in3setcertificationcontactphonenumber)||
-|[setCertificationDateTime](#in3setcertificationdatetime)||
-|[setCertificationEndDate](#in3setcertificationenddate)||
-|[setCertificationModifyDateTime](#in3setcertificationmodifydatetime)||
-|[setCertificationNumber](#in3setcertificationnumber)||
-|[setCertificationRequired](#in3setcertificationrequired)||
-|[setCertifiedBy](#in3setcertifiedby)||
-|[setDays](#in3setdays)||
-|[setID](#in3setid)||
-|[setNonConcurCodeDescription](#in3setnonconcurcodedescription)||
-|[setNonConcurEffectiveDateTime](#in3setnonconcureffectivedatetime)||
-|[setOperator](#in3setoperator)||
-|[setPenalty](#in3setpenalty)||
-|[setPhysicianReviewer](#in3setphysicianreviewer)||
-|[setPreCertificationRequirement](#in3setprecertificationrequirement)||
-|[setSecondOpinionDate](#in3setsecondopiniondate)||
-|[setSecondOpinionDocumentationReceived](#in3setsecondopiniondocumentationreceived)||
-|[setSecondOpinionPhysician](#in3setsecondopinionphysician)||
-|[setSecondOpinionStatus](#in3setsecondopinionstatus)||
+|[getAppointmentDuration](#schgetappointmentduration)||
+|[getAppointmentDurationUnits](#schgetappointmentdurationunits)||
+|[getAppointmentReason](#schgetappointmentreason)||
+|[getAppointmentTimingQuantity](#schgetappointmenttimingquantity)||
+|[getAppointmentType](#schgetappointmenttype)||
+|[getEnteredbyLocation](#schgetenteredbylocation)||
+|[getEnteredbyPerson](#schgetenteredbyperson)||
+|[getEnteredbyPhoneNumber](#schgetenteredbyphonenumber)||
+|[getEventReason](#schgeteventreason)||
+|[getFillerAppointmentID](#schgetfillerappointmentid)||
+|[getFillerContactAddress](#schgetfillercontactaddress)||
+|[getFillerContactLocation](#schgetfillercontactlocation)||
+|[getFillerContactPerson](#schgetfillercontactperson)||
+|[getFillerContactPhoneNumber](#schgetfillercontactphonenumber)||
+|[getFillerStatusCode](#schgetfillerstatuscode)||
+|[getOccurrenceNumber](#schgetoccurrencenumber)||
+|[getParentFillerAppointmentID](#schgetparentfillerappointmentid)||
+|[getParentPlacerAppointmentID](#schgetparentplacerappointmentid)||
+|[getPlacerAppointmentID](#schgetplacerappointmentid)||
+|[getPlacerContactAddress](#schgetplacercontactaddress)||
+|[getPlacerContactLocation](#schgetplacercontactlocation)||
+|[getPlacerContactPerson](#schgetplacercontactperson)||
+|[getPlacerContactPhoneNumber](#schgetplacercontactphonenumber)||
+|[getPlacerGroupNumber](#schgetplacergroupnumber)||
+|[getScheduleID](#schgetscheduleid)||
+|[setAppointmentDuration](#schsetappointmentduration)||
+|[setAppointmentDurationUnits](#schsetappointmentdurationunits)||
+|[setAppointmentReason](#schsetappointmentreason)||
+|[setAppointmentTimingQuantity](#schsetappointmenttimingquantity)||
+|[setAppointmentType](#schsetappointmenttype)||
+|[setEnteredbyLocation](#schsetenteredbylocation)||
+|[setEnteredbyPerson](#schsetenteredbyperson)||
+|[setEnteredbyPhoneNumber](#schsetenteredbyphonenumber)||
+|[setEventReason](#schseteventreason)||
+|[setFillerAppointmentID](#schsetfillerappointmentid)||
+|[setFillerContactAddress](#schsetfillercontactaddress)||
+|[setFillerContactLocation](#schsetfillercontactlocation)||
+|[setFillerContactPerson](#schsetfillercontactperson)||
+|[setFillerContactPhoneNumber](#schsetfillercontactphonenumber)||
+|[setFillerStatusCode](#schsetfillerstatuscode)||
+|[setOccurrenceNumber](#schsetoccurrencenumber)||
+|[setParentFillerAppointmentID](#schsetparentfillerappointmentid)||
+|[setParentPlacerAppointmentID](#schsetparentplacerappointmentid)||
+|[setPlacerAppointmentID](#schsetplacerappointmentid)||
+|[setPlacerContactAddress](#schsetplacercontactaddress)||
+|[setPlacerContactLocation](#schsetplacercontactlocation)||
+|[setPlacerContactPerson](#schsetplacercontactperson)||
+|[setPlacerContactPhoneNumber](#schsetplacercontactphonenumber)||
+|[setPlacerGroupNumber](#schsetplacergroupnumber)||
+|[setScheduleID](#schsetscheduleid)||
 
 ## Inherited methods
 
@@ -80,12 +79,12 @@ Aranyasen\HL7\Segment
 
 
 
-### IN3::__destruct  
+### SCH::getAppointmentDuration  
 
 **Description**
 
 ```php
- __destruct (void)
+ getAppointmentDuration (void)
 ```
 
  
@@ -104,12 +103,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getAppealReason  
+### SCH::getAppointmentDurationUnits  
 
 **Description**
 
 ```php
- getAppealReason (void)
+ getAppointmentDurationUnits (void)
 ```
 
  
@@ -128,12 +127,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getCaseManager  
+### SCH::getAppointmentReason  
 
 **Description**
 
 ```php
- getCaseManager (void)
+ getAppointmentReason (void)
 ```
 
  
@@ -152,12 +151,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getCertificationAgency  
+### SCH::getAppointmentTimingQuantity  
 
 **Description**
 
 ```php
- getCertificationAgency (void)
+ getAppointmentTimingQuantity (void)
 ```
 
  
@@ -176,12 +175,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getCertificationAgencyPhoneNumber  
+### SCH::getAppointmentType  
 
 **Description**
 
 ```php
- getCertificationAgencyPhoneNumber (void)
+ getAppointmentType (void)
 ```
 
  
@@ -200,12 +199,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getCertificationBeginDate  
+### SCH::getEnteredbyLocation  
 
 **Description**
 
 ```php
- getCertificationBeginDate (void)
+ getEnteredbyLocation (void)
 ```
 
  
@@ -224,12 +223,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getCertificationContact  
+### SCH::getEnteredbyPerson  
 
 **Description**
 
 ```php
- getCertificationContact (void)
+ getEnteredbyPerson (void)
 ```
 
  
@@ -248,12 +247,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getCertificationContactPhoneNumber  
+### SCH::getEnteredbyPhoneNumber  
 
 **Description**
 
 ```php
- getCertificationContactPhoneNumber (void)
+ getEnteredbyPhoneNumber (void)
 ```
 
  
@@ -272,12 +271,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getCertificationDateTime  
+### SCH::getEventReason  
 
 **Description**
 
 ```php
- getCertificationDateTime (void)
+ getEventReason (void)
 ```
 
  
@@ -296,12 +295,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getCertificationEndDate  
+### SCH::getFillerAppointmentID  
 
 **Description**
 
 ```php
- getCertificationEndDate (void)
+ getFillerAppointmentID (void)
 ```
 
  
@@ -320,12 +319,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getCertificationModifyDateTime  
+### SCH::getFillerContactAddress  
 
 **Description**
 
 ```php
- getCertificationModifyDateTime (void)
+ getFillerContactAddress (void)
 ```
 
  
@@ -344,12 +343,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getCertificationNumber  
+### SCH::getFillerContactLocation  
 
 **Description**
 
 ```php
- getCertificationNumber (void)
+ getFillerContactLocation (void)
 ```
 
  
@@ -368,12 +367,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getCertificationRequired  
+### SCH::getFillerContactPerson  
 
 **Description**
 
 ```php
- getCertificationRequired (void)
+ getFillerContactPerson (void)
 ```
 
  
@@ -392,12 +391,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getCertifiedBy  
+### SCH::getFillerContactPhoneNumber  
 
 **Description**
 
 ```php
- getCertifiedBy (void)
+ getFillerContactPhoneNumber (void)
 ```
 
  
@@ -416,12 +415,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getDays  
+### SCH::getFillerStatusCode  
 
 **Description**
 
 ```php
- getDays (void)
+ getFillerStatusCode (void)
 ```
 
  
@@ -440,12 +439,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getID  
+### SCH::getOccurrenceNumber  
 
 **Description**
 
 ```php
- getID (void)
+ getOccurrenceNumber (void)
 ```
 
  
@@ -464,12 +463,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getNonConcurCodeDescription  
+### SCH::getParentFillerAppointmentID  
 
 **Description**
 
 ```php
- getNonConcurCodeDescription (void)
+ getParentFillerAppointmentID (void)
 ```
 
  
@@ -488,12 +487,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getNonConcurEffectiveDateTime  
+### SCH::getParentPlacerAppointmentID  
 
 **Description**
 
 ```php
- getNonConcurEffectiveDateTime (void)
+ getParentPlacerAppointmentID (void)
 ```
 
  
@@ -512,12 +511,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getOperator  
+### SCH::getPlacerAppointmentID  
 
 **Description**
 
 ```php
- getOperator (void)
+ getPlacerAppointmentID (void)
 ```
 
  
@@ -536,12 +535,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getPenalty  
+### SCH::getPlacerContactAddress  
 
 **Description**
 
 ```php
- getPenalty (void)
+ getPlacerContactAddress (void)
 ```
 
  
@@ -560,12 +559,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getPhysicianReviewer  
+### SCH::getPlacerContactLocation  
 
 **Description**
 
 ```php
- getPhysicianReviewer (void)
+ getPlacerContactLocation (void)
 ```
 
  
@@ -584,12 +583,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getPreCertificationRequirement  
+### SCH::getPlacerContactPerson  
 
 **Description**
 
 ```php
- getPreCertificationRequirement (void)
+ getPlacerContactPerson (void)
 ```
 
  
@@ -608,12 +607,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getSecondOpinionDate  
+### SCH::getPlacerContactPhoneNumber  
 
 **Description**
 
 ```php
- getSecondOpinionDate (void)
+ getPlacerContactPhoneNumber (void)
 ```
 
  
@@ -632,12 +631,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getSecondOpinionDocumentationReceived  
+### SCH::getPlacerGroupNumber  
 
 **Description**
 
 ```php
- getSecondOpinionDocumentationReceived (void)
+ getPlacerGroupNumber (void)
 ```
 
  
@@ -656,12 +655,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getSecondOpinionPhysician  
+### SCH::getScheduleID  
 
 **Description**
 
 ```php
- getSecondOpinionPhysician (void)
+ getScheduleID (void)
 ```
 
  
@@ -680,12 +679,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::getSecondOpinionStatus  
+### SCH::setAppointmentDuration  
 
 **Description**
 
 ```php
- getSecondOpinionStatus (void)
+ setAppointmentDuration (void)
 ```
 
  
@@ -704,36 +703,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### IN3::resetIndex  
+### SCH::setAppointmentDurationUnits  
 
 **Description**
 
 ```php
-public static resetIndex (void)
-```
-
-Reset index of this segment 
-
- 
-
-**Parameters**
-
-`This function has no parameters.`
-
-**Return Values**
-
-`void`
-
-
-<hr />
-
-
-### IN3::setAppealReason  
-
-**Description**
-
-```php
- setAppealReason (void)
+ setAppointmentDurationUnits (void)
 ```
 
  
@@ -752,12 +727,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setCaseManager  
+### SCH::setAppointmentReason  
 
 **Description**
 
 ```php
- setCaseManager (void)
+ setAppointmentReason (void)
 ```
 
  
@@ -776,12 +751,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setCertificationAgency  
+### SCH::setAppointmentTimingQuantity  
 
 **Description**
 
 ```php
- setCertificationAgency (void)
+ setAppointmentTimingQuantity (void)
 ```
 
  
@@ -800,12 +775,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setCertificationAgencyPhoneNumber  
+### SCH::setAppointmentType  
 
 **Description**
 
 ```php
- setCertificationAgencyPhoneNumber (void)
+ setAppointmentType (void)
 ```
 
  
@@ -824,12 +799,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setCertificationBeginDate  
+### SCH::setEnteredbyLocation  
 
 **Description**
 
 ```php
- setCertificationBeginDate (void)
+ setEnteredbyLocation (void)
 ```
 
  
@@ -848,12 +823,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setCertificationContact  
+### SCH::setEnteredbyPerson  
 
 **Description**
 
 ```php
- setCertificationContact (void)
+ setEnteredbyPerson (void)
 ```
 
  
@@ -872,12 +847,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setCertificationContactPhoneNumber  
+### SCH::setEnteredbyPhoneNumber  
 
 **Description**
 
 ```php
- setCertificationContactPhoneNumber (void)
+ setEnteredbyPhoneNumber (void)
 ```
 
  
@@ -896,12 +871,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setCertificationDateTime  
+### SCH::setEventReason  
 
 **Description**
 
 ```php
- setCertificationDateTime (void)
+ setEventReason (void)
 ```
 
  
@@ -920,12 +895,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setCertificationEndDate  
+### SCH::setFillerAppointmentID  
 
 **Description**
 
 ```php
- setCertificationEndDate (void)
+ setFillerAppointmentID (void)
 ```
 
  
@@ -944,12 +919,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setCertificationModifyDateTime  
+### SCH::setFillerContactAddress  
 
 **Description**
 
 ```php
- setCertificationModifyDateTime (void)
+ setFillerContactAddress (void)
 ```
 
  
@@ -968,12 +943,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setCertificationNumber  
+### SCH::setFillerContactLocation  
 
 **Description**
 
 ```php
- setCertificationNumber (void)
+ setFillerContactLocation (void)
 ```
 
  
@@ -992,12 +967,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setCertificationRequired  
+### SCH::setFillerContactPerson  
 
 **Description**
 
 ```php
- setCertificationRequired (void)
+ setFillerContactPerson (void)
 ```
 
  
@@ -1016,12 +991,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setCertifiedBy  
+### SCH::setFillerContactPhoneNumber  
 
 **Description**
 
 ```php
- setCertifiedBy (void)
+ setFillerContactPhoneNumber (void)
 ```
 
  
@@ -1040,12 +1015,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setDays  
+### SCH::setFillerStatusCode  
 
 **Description**
 
 ```php
- setDays (void)
+ setFillerStatusCode (void)
 ```
 
  
@@ -1064,12 +1039,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setID  
+### SCH::setOccurrenceNumber  
 
 **Description**
 
 ```php
- setID (void)
+ setOccurrenceNumber (void)
 ```
 
  
@@ -1088,12 +1063,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setNonConcurCodeDescription  
+### SCH::setParentFillerAppointmentID  
 
 **Description**
 
 ```php
- setNonConcurCodeDescription (void)
+ setParentFillerAppointmentID (void)
 ```
 
  
@@ -1112,12 +1087,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setNonConcurEffectiveDateTime  
+### SCH::setParentPlacerAppointmentID  
 
 **Description**
 
 ```php
- setNonConcurEffectiveDateTime (void)
+ setParentPlacerAppointmentID (void)
 ```
 
  
@@ -1136,12 +1111,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setOperator  
+### SCH::setPlacerAppointmentID  
 
 **Description**
 
 ```php
- setOperator (void)
+ setPlacerAppointmentID (void)
 ```
 
  
@@ -1160,12 +1135,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setPenalty  
+### SCH::setPlacerContactAddress  
 
 **Description**
 
 ```php
- setPenalty (void)
+ setPlacerContactAddress (void)
 ```
 
  
@@ -1184,12 +1159,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setPhysicianReviewer  
+### SCH::setPlacerContactLocation  
 
 **Description**
 
 ```php
- setPhysicianReviewer (void)
+ setPlacerContactLocation (void)
 ```
 
  
@@ -1208,12 +1183,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setPreCertificationRequirement  
+### SCH::setPlacerContactPerson  
 
 **Description**
 
 ```php
- setPreCertificationRequirement (void)
+ setPlacerContactPerson (void)
 ```
 
  
@@ -1232,12 +1207,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setSecondOpinionDate  
+### SCH::setPlacerContactPhoneNumber  
 
 **Description**
 
 ```php
- setSecondOpinionDate (void)
+ setPlacerContactPhoneNumber (void)
 ```
 
  
@@ -1256,12 +1231,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setSecondOpinionDocumentationReceived  
+### SCH::setPlacerGroupNumber  
 
 **Description**
 
 ```php
- setSecondOpinionDocumentationReceived (void)
+ setPlacerGroupNumber (void)
 ```
 
  
@@ -1280,36 +1255,12 @@ Reset index of this segment
 <hr />
 
 
-### IN3::setSecondOpinionPhysician  
+### SCH::setScheduleID  
 
 **Description**
 
 ```php
- setSecondOpinionPhysician (void)
-```
-
- 
-
- 
-
-**Parameters**
-
-`This function has no parameters.`
-
-**Return Values**
-
-`void`
-
-
-<hr />
-
-
-### IN3::setSecondOpinionStatus  
-
-**Description**
-
-```php
- setSecondOpinionStatus (void)
+ setScheduleID (void)
 ```
 
  

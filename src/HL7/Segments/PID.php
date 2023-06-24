@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Aranyasen\HL7\Segments;
 
+use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Segment;
-use InvalidArgumentException;
 
 /**
  * PID segment class
@@ -77,7 +77,7 @@ class PID extends Segment
     {
         // TODO: Validate if $value is of the form %Y%m%d%H%M%S
         //if ($value !== 'F' && $value !== 'M') {
-        //    throw new \InvalidArgumentException("Date should be of the form YYYYmmddHHMMSS. Given: '$value''");
+        //    throw new \Hl7Exception("Date should be of the form YYYYmmddHHMMSS. Given: '$value''");
         //}
         return $this->setField($position, $value);
     }
@@ -86,7 +86,7 @@ class PID extends Segment
     {
         // Ref: https://hl7-definition.caristix.com/v2/HL7v2.4/Tables/0001
         if (!in_array($value, ['A', 'F', 'M', 'N', 'O', 'U'], true)) {
-            throw new InvalidArgumentException("Sex should one of 'A', 'F', 'M', 'N', 'O' or 'U'. Given: '$value'");
+            throw new HL7Exception("Sex should one of 'A', 'F', 'M', 'N', 'O' or 'U'. Given: '$value'");
         }
         return $this->setField($position, $value);
     }
