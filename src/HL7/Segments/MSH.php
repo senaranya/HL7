@@ -271,7 +271,7 @@ class MSH extends Segment
         return (string) $typeField;
     }
 
-    public function getTriggerEvent(int $position = 9): string
+    public function getTriggerEvent(int $position = 9): string|bool
     {
         $triggerField = $this->getField($position);
         if (!empty($triggerField[1]) && is_array($triggerField)) {
