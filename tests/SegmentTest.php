@@ -5,9 +5,31 @@ declare(strict_types=1);
 namespace Aranyasen\HL7\Tests;
 
 use Aranyasen\HL7\Segment;
+use InvalidArgumentException;
 
 class SegmentTest extends TestCase
 {
+    /** @test */
+    public function it_throws_error_when_segment_name_has_less_than_3_characters(): void
+    {
+        $this->expectException(InvalidArgumentException::class);
+        new Segment('XX');
+    }
+
+    /** @test */
+    public function it_throws_exception_when_a_blank_string_is_passed_as_segment_name(): void
+    {
+        $this->expectException(InvalidArgumentException::class);
+        new Segment('');
+    }
+
+    /** @test */
+    public function it_throws_exception_when_segment_name_is_not_in_upper_case(): void
+    {
+        $this->expectException(InvalidArgumentException::class);
+        new Segment('xxx');
+    }
+
     /** @test */
     public function field_at_a_given_nonzero_index_can_be_set(): void
     {
