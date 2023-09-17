@@ -259,7 +259,7 @@ trait SegmentManagerTrait
      */
     public function setSegment(Segment $segment, int $index): bool
     {
-        if (!isset($index) || $index > count($this->segments)) {
+        if ($index > count($this->segments)) {
             throw new HL7Exception('Index out of range');
         }
 
