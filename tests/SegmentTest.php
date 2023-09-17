@@ -4,29 +4,29 @@ declare(strict_types=1);
 
 namespace Aranyasen\HL7\Tests;
 
+use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Segment;
-use InvalidArgumentException;
 
 class SegmentTest extends TestCase
 {
     /** @test */
     public function it_throws_error_when_segment_name_has_less_than_3_characters(): void
     {
-        $this->expectException(InvalidArgumentException::class);
+        $this->expectException(HL7Exception::class);
         new Segment('XX');
     }
 
     /** @test */
     public function it_throws_exception_when_a_blank_string_is_passed_as_segment_name(): void
     {
-        $this->expectException(InvalidArgumentException::class);
+        $this->expectException(HL7Exception::class);
         new Segment('');
     }
 
     /** @test */
     public function it_throws_exception_when_segment_name_is_not_in_upper_case(): void
     {
-        $this->expectException(InvalidArgumentException::class);
+        $this->expectException(HL7Exception::class);
         new Segment('xxx');
     }
 

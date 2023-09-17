@@ -255,7 +255,7 @@ class MessageTest extends TestCase
         $msg = new Message("MSH|^~\\&|1|\r");
         $msg->insertSegment(new Segment('MSH'), 0, true); // Should be allowed
 
-        self::expectException(HL7Exception::class);
+        $this->expectException(HL7Exception::class);
         $msg->insertSegment(new Segment('XXX'), 0); // Should not be allowed
     }
 
@@ -303,7 +303,7 @@ class MessageTest extends TestCase
     /** @test */
     public function setSegment_throws_exception_when_the_target_index_is_beyond_total_count_of_segments(): void
     {
-        $this->expectException(InvalidArgumentException::class);
+        $this->expectException(HL7Exception::class);
         $msg = new Message("MSH|^~\\&|1|\nAAA|1|\n");
         $msg->setSegment(new Segment('BBB'), 3);
     }

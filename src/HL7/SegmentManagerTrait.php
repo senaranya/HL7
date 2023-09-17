@@ -145,8 +145,8 @@ trait SegmentManagerTrait
             if ($segment->getName() !== 'MSH') {
                 throw new HL7Exception('Only MSH can be inserted at position 0');
             }
-            if (!$replace) {
-                throw new HL7Exception('MSH segment can not be replaced unless forced');
+            if ($this->hasSegment('MSH') && !$replace) {
+                throw new HL7Exception('MSH already exists. It can not be replaced unless $replace is true');
             }
             $this->resetCtrl($segment);
             array_unshift($this->segments, $segment);
