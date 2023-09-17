@@ -239,7 +239,7 @@ class Message
      */
     public function setSegment(Segment $segment, int $index): bool
     {
-        if (!isset($index) || $index > count($this->segments)) {
+        if ($index > count($this->segments)) {
             throw new InvalidArgumentException('Index out of range');
         }
 
