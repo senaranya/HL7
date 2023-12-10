@@ -59,6 +59,17 @@ class MSHTest extends TestCase
     }
 
     /** @test */
+    public function version_id_can_be_string_or_array_for_v2_7_onwards(): void
+    {
+        $msh = new MSH();
+        $msh->setVersionId('2.3');
+        self::assertSame('2.3', $msh->getVersionId());
+
+        $msh->setVersionId(['2.7', 'NZL', '1.0']);
+        self::assertSame(['2.7', 'NZL', '1.0'], $msh->getVersionId());
+    }
+
+    /** @test */
     public function index_2_in_MSH_accepts_only_4_character_strings(): void
     {
         $msh = new MSH();
