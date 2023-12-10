@@ -134,7 +134,7 @@ class MSH extends Segment
      * ORM^R01. If it was empty then the new value will be just ORM.
      *
      * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5/Fields/MSH.9
-     * @param string $value
+     * @param string|array<int, string> $value
      */
     public function setMessageType($value, int $position = 9): bool
     {
