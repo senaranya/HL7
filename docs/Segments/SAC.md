@@ -13,101 +13,102 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getAccessionIdentifier](#sacgetaccessionidentifier)||
-|[getAdditive](#sacgetadditive)||
-|[getArtificialBlood](#sacgetartificialblood)||
-|[getAvailableSpecimenVolume](#sacgetavailablespecimenvolume)||
-|[getBarrierDelta](#sacgetbarrierdelta)||
-|[getBottomDelta](#sacgetbottomdelta)||
-|[getCapType](#sacgetcaptype)||
-|[getCarrierIdentifier](#sacgetcarrieridentifier)||
-|[getCarrierType](#sacgetcarriertype)||
-|[getContainerDiameter](#sacgetcontainerdiameter)||
-|[getContainerHeight](#sacgetcontainerheight)||
-|[getContainerIdentifier](#sacgetcontaineridentifier)||
-|[getContainerSizeUnits](#sacgetcontainersizeunits)||
-|[getContainerStatus](#sacgetcontainerstatus)||
-|[getContainerVolume](#sacgetcontainervolume)||
-|[getDilutionFactor](#sacgetdilutionfactor)||
-|[getDrugInterference](#sacgetdruginterference)||
-|[getEquipmentContainerIdentifier](#sacgetequipmentcontaineridentifier)||
-|[getExternalAccessionIdentifier](#sacgetexternalaccessionidentifier)||
-|[getFibrinIndex](#sacgetfibrinindex)||
-|[getFibrinIndexUnits](#sacgetfibrinindexunits)||
-|[getHemolysisIndex](#sacgethemolysisindex)||
-|[getHemolysisIndexUnits](#sacgethemolysisindexunits)||
-|[getIcterusIndex](#sacgeticterusindex)||
-|[getIcterusIndexUnits](#sacgeticterusindexunits)||
-|[getInitialSpecimenVolume](#sacgetinitialspecimenvolume)||
-|[getLepemiaIndex](#sacgetlepemiaindex)||
-|[getLepemiaIndexUnits](#sacgetlepemiaindexunits)||
-|[getLocation](#sacgetlocation)||
-|[getOtherEnvironmentalFactors](#sacgetotherenvironmentalfactors)||
-|[getPositionInCarrier](#sacgetpositionincarrier)||
-|[getPositionInTray](#sacgetpositionintray)||
-|[getPrimaryContainerIdentifier](#sacgetprimarycontaineridentifier)||
-|[getRegistrationDateTime](#sacgetregistrationdatetime)||
-|[getSeparatorType](#sacgetseparatortype)||
-|[getSpecialHandlingCode](#sacgetspecialhandlingcode)||
-|[getSpecimenComponent](#sacgetspecimencomponent)||
-|[getSpecimenSource](#sacgetspecimensource)||
-|[getSystemInducedContaminants](#sacgetsysteminducedcontaminants)||
-|[getTemperature](#sacgettemperature)||
-|[getTrayIdentifier](#sacgettrayidentifier)||
-|[getTrayTypeSAC](#sacgettraytypesac)||
-|[getTreatment](#sacgettreatment)||
-|[getVolumeUnits](#sacgetvolumeunits)||
+|[getAccessionIdentifier](#sacgetaccessionidentifier)|Get Accession Identifier (OBR.2)|
+|[getAdditive](#sacgetadditive)|Get Additive (OBR.27)|
+|[getArtificialBlood](#sacgetartificialblood)|Get Artificial Blood (OBR.42)|
+|[getAvailableSpecimenVolume](#sacgetavailablespecimenvolume)|Get Available SpecimenVolume (OBR.22)|
+|[getBarrierDelta](#sacgetbarrierdelta)|Get Barrier Delta (OBR.18)|
+|[getBottomDelta](#sacgetbottomdelta)|Get Bottom Delta (OBR.19)|
+|[getCapType](#sacgetcaptype)|Get Cap Type (OBR.26)|
+|[getCarrierIdentifier](#sacgetcarrieridentifier)|Get Carrier Identifier (OBR.10)|
+|[getCarrierType](#sacgetcarriertype)|Get Carrier Type (OBR.9)|
+|[getContainerDiameter](#sacgetcontainerdiameter)|Get Container Diameter (OBR.17)|
+|[getContainerHeight](#sacgetcontainerheight)|Get Container Height (OBR.16)|
+|[getContainerIdentifier](#sacgetcontaineridentifier)|Get Container Identifier (OBR.3)|
+|[getContainerSizeUnits](#sacgetcontainersizeunits)|Get Container SizeUnits (OBR.20)|
+|[getContainerStatus](#sacgetcontainerstatus)|Get Container Status (OBR.8)|
+|[getContainerVolume](#sacgetcontainervolume)|Get Container Volume (OBR.21)|
+|[getDilutionFactor](#sacgetdilutionfactor)|Get Dilution Factor (OBR.29)|
+|[getDrugInterference](#sacgetdruginterference)|Get Drug Interference (OBR.41)|
+|[getEquipmentContainerIdentifier](#sacgetequipmentcontaineridentifier)|Get Equipment ContainerIdentifier (OBR.5)|
+|[getExternalAccessionIdentifier](#sacgetexternalaccessionidentifier)|Get External AccessionIdentifier (OBR.1)|
+|[getFibrinIndex](#sacgetfibrinindex)|Get Fibrin Index (OBR.38)|
+|[getFibrinIndexUnits](#sacgetfibrinindexunits)|Get Fibrin IndexUnits (OBR.39)|
+|[getHemolysisIndex](#sacgethemolysisindex)|Get Hemolysis Index (OBR.32)|
+|[getHemolysisIndexUnits](#sacgethemolysisindexunits)|Get Hemolysis IndexUnits (OBR.33)|
+|[getIcterusIndex](#sacgeticterusindex)|Get Icterus Index (OBR.36)|
+|[getIcterusIndexUnits](#sacgeticterusindexunits)|Get Icterus IndexUnits (OBR.37)|
+|[getInitialSpecimenVolume](#sacgetinitialspecimenvolume)|Get Initial SpecimenVolume (OBR.23)|
+|[getLepemiaIndex](#sacgetlepemiaindex)|Get Lepemia Index (OBR.34)|
+|[getLepemiaIndexUnits](#sacgetlepemiaindexunits)|Get Lepemia IndexUnits (OBR.35)|
+|[getLocation](#sacgetlocation)|Get Location (OBR.15)|
+|[getOtherEnvironmentalFactors](#sacgetotherenvironmentalfactors)|Get Other EnvironmentalFactors (OBR.44)|
+|[getPositionInCarrier](#sacgetpositionincarrier)|Get Position InCarrier (OBR.11)|
+|[getPositionInTray](#sacgetpositionintray)|Get Position InTray (OBR.14)|
+|[getPrimaryContainerIdentifier](#sacgetprimarycontaineridentifier)|Get Primary ContainerIdentifier (OBR.4)|
+|[getRegistrationDateTime](#sacgetregistrationdatetime)|Get Registration DateTime (OBR.7)|
+|[getSeparatorType](#sacgetseparatortype)|Get Separator Type (OBR.25)|
+|[getSpecialHandlingCode](#sacgetspecialhandlingcode)|Get Special HandlingCode (OBR.43)|
+|[getSpecimenComponent](#sacgetspecimencomponent)|Get Specimen Component (OBR.28)|
+|[getSpecimenSource](#sacgetspecimensource)|Get Specimen Source (OBR.6)|
+|[getSystemInducedContaminants](#sacgetsysteminducedcontaminants)|Get System InducedContaminants (OBR.40)|
+|[getTemperature](#sacgettemperature)|Get Temperature (OBR.31)|
+|[getTrayIdentifier](#sacgettrayidentifier)|Get Tray Identifier (OBR.13)|
+|[getTrayTypeSAC](#sacgettraytypesac)|Get Tray TypeSAC (OBR.12)|
+|[getTreatment](#sacgettreatment)|Get Treatment (OBR.30)|
+|[getVolumeUnits](#sacgetvolumeunits)|Get Volume Units (OBR.24)|
 |[resetIndex](#sacresetindex)|Reset index of this segment|
-|[setAccessionIdentifier](#sacsetaccessionidentifier)||
-|[setAdditive](#sacsetadditive)||
-|[setArtificialBlood](#sacsetartificialblood)||
-|[setAvailableSpecimenVolume](#sacsetavailablespecimenvolume)||
-|[setBarrierDelta](#sacsetbarrierdelta)||
-|[setBottomDelta](#sacsetbottomdelta)||
-|[setCapType](#sacsetcaptype)||
-|[setCarrierIdentifier](#sacsetcarrieridentifier)||
-|[setCarrierType](#sacsetcarriertype)||
-|[setContainerDiameter](#sacsetcontainerdiameter)||
-|[setContainerHeight](#sacsetcontainerheight)||
-|[setContainerIdentifier](#sacsetcontaineridentifier)||
-|[setContainerSizeUnits](#sacsetcontainersizeunits)||
-|[setContainerStatus](#sacsetcontainerstatus)||
-|[setContainerVolume](#sacsetcontainervolume)||
-|[setDilutionFactor](#sacsetdilutionfactor)||
-|[setDrugInterference](#sacsetdruginterference)||
-|[setEquipmentContainerIdentifier](#sacsetequipmentcontaineridentifier)||
+|[setAccessionIdentifier](#sacsetaccessionidentifier)|Set Accession Identifier (OBR.2)|
+|[setAdditive](#sacsetadditive)|Set Additive (OBR.27)|
+|[setArtificialBlood](#sacsetartificialblood)|Set Artificial Blood (OBR.42)|
+|[setAvailableSpecimenVolume](#sacsetavailablespecimenvolume)|Set Available SpecimenVolume (OBR.22)|
+|[setBarrierDelta](#sacsetbarrierdelta)|Set Barrier Delta (OBR.18)|
+|[setBottomDelta](#sacsetbottomdelta)|Set Bottom Delta (OBR.19)|
+|[setCapType](#sacsetcaptype)|Set Cap Type (OBR.26)|
+|[setCarrierIdentifier](#sacsetcarrieridentifier)|Set Carrier Identifier (OBR.10)|
+|[setCarrierType](#sacsetcarriertype)|Set Carrier Type (OBR.9)|
+|[setContainerDiameter](#sacsetcontainerdiameter)|Set Container Diameter (OBR.17)|
+|[setContainerHeight](#sacsetcontainerheight)|Set Container Height (OBR.16)|
+|[setContainerIdentifier](#sacsetcontaineridentifier)|Set Container Identifier (OBR.3)|
+|[setContainerSizeUnits](#sacsetcontainersizeunits)|Set Container SizeUnits (OBR.20)|
+|[setContainerStatus](#sacsetcontainerstatus)|Set Container Status (OBR.8)|
+|[setContainerVolume](#sacsetcontainervolume)|Set Container Volume (OBR.21)|
+|[setDilutionFactor](#sacsetdilutionfactor)|Set Dilution Factor (OBR.29)|
+|[setDrugInterference](#sacsetdruginterference)|Set Drug Interference (OBR.41)|
+|[setEquipmentContainerIdentifier](#sacsetequipmentcontaineridentifier)|Set Equipment ContainerIdentifier (OBR.5)|
 |[setExternalAccessionIdentifier](#sacsetexternalaccessionidentifier)||
-|[setFibrinIndex](#sacsetfibrinindex)||
-|[setFibrinIndexUnits](#sacsetfibrinindexunits)||
-|[setHemolysisIndex](#sacsethemolysisindex)||
-|[setHemolysisIndexUnits](#sacsethemolysisindexunits)||
-|[setIcterusIndex](#sacseticterusindex)||
-|[setIcterusIndexUnits](#sacseticterusindexunits)||
-|[setInitialSpecimenVolume](#sacsetinitialspecimenvolume)||
-|[setLepemiaIndex](#sacsetlepemiaindex)||
-|[setLepemiaIndexUnits](#sacsetlepemiaindexunits)||
-|[setLocation](#sacsetlocation)||
-|[setOtherEnvironmentalFactors](#sacsetotherenvironmentalfactors)||
-|[setPositionInCarrier](#sacsetpositionincarrier)||
-|[setPositionInTray](#sacsetpositionintray)||
-|[setPrimaryContainerIdentifier](#sacsetprimarycontaineridentifier)||
-|[setRegistrationDateTime](#sacsetregistrationdatetime)||
-|[setSeparatorType](#sacsetseparatortype)||
-|[setSpecialHandlingCode](#sacsetspecialhandlingcode)||
-|[setSpecimenComponent](#sacsetspecimencomponent)||
-|[setSpecimenSource](#sacsetspecimensource)||
-|[setSystemInducedContaminants](#sacsetsysteminducedcontaminants)||
-|[setTemperature](#sacsettemperature)||
-|[setTrayIdentifier](#sacsettrayidentifier)||
-|[setTrayTypeSAC](#sacsettraytypesac)||
-|[setTreatment](#sacsettreatment)||
-|[setVolumeUnits](#sacsetvolumeunits)||
+|[setFibrinIndex](#sacsetfibrinindex)|Set Fibrin Index (OBR.38)|
+|[setFibrinIndexUnits](#sacsetfibrinindexunits)|Set Fibrin IndexUnits (OBR.39)|
+|[setHemolysisIndex](#sacsethemolysisindex)|Set Hemolysis Index (OBR.32)|
+|[setHemolysisIndexUnits](#sacsethemolysisindexunits)|Set Hemolysis IndexUnits (OBR.33)|
+|[setIcterusIndex](#sacseticterusindex)|Set Icterus Index (OBR.36)|
+|[setIcterusIndexUnits](#sacseticterusindexunits)|Set Icterus IndexUnits (OBR.37)|
+|[setInitialSpecimenVolume](#sacsetinitialspecimenvolume)|Set Initial SpecimenVolume (OBR.23)|
+|[setLepemiaIndex](#sacsetlepemiaindex)|Set Lepemia Index (OBR.34)|
+|[setLepemiaIndexUnits](#sacsetlepemiaindexunits)|Set Lepemia IndexUnits (OBR.35)|
+|[setLocation](#sacsetlocation)|Set Location (OBR.15)|
+|[setOtherEnvironmentalFactors](#sacsetotherenvironmentalfactors)|Set Other EnvironmentalFactors (OBR.44)|
+|[setPositionInCarrier](#sacsetpositionincarrier)|Set Position InCarrier (OBR.11)|
+|[setPositionInTray](#sacsetpositionintray)|Set Position InTray (OBR.14)|
+|[setPrimaryContainerIdentifier](#sacsetprimarycontaineridentifier)|Set Primary ContainerIdentifier (OBR.4)|
+|[setRegistrationDateTime](#sacsetregistrationdatetime)|Set Registration DateTime (OBR.7)|
+|[setSeparatorType](#sacsetseparatortype)|Set Separator Type (OBR.25)|
+|[setSpecialHandlingCode](#sacsetspecialhandlingcode)|Set Special HandlingCode (OBR.43)|
+|[setSpecimenComponent](#sacsetspecimencomponent)|Set Specimen Component (OBR.28)|
+|[setSpecimenSource](#sacsetspecimensource)|Set Specimen Source (OBR.6)|
+|[setSystemInducedContaminants](#sacsetsysteminducedcontaminants)|Set System InducedContaminants (OBR.40)|
+|[setTemperature](#sacsettemperature)|Set Temperature (OBR.31)|
+|[setTrayIdentifier](#sacsettrayidentifier)|Set Tray Identifier (OBR.13)|
+|[setTrayTypeSAC](#sacsettraytypesac)|Set Tray TypeSAC (OBR.12)|
+|[setTreatment](#sacsettreatment)|Set Treatment (OBR.30)|
+|[setVolumeUnits](#sacsetvolumeunits)|Set Volume Units (OBR.24)|
 
 ## Inherited methods
 
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -121,20 +122,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getAccessionIdentifier (void)
+public getAccessionIdentifier (int $position)
 ```
 
- 
+Get Accession Identifier (OBR.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -145,20 +149,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getAdditive (void)
+public getAdditive (int $position)
 ```
 
- 
+Get Additive (OBR.27) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 27  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -169,20 +176,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getArtificialBlood (void)
+public getArtificialBlood (int $position)
 ```
 
- 
+Get Artificial Blood (OBR.42) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 42  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -193,20 +203,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getAvailableSpecimenVolume (void)
+public getAvailableSpecimenVolume (int $position)
 ```
 
- 
+Get Available SpecimenVolume (OBR.22) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 22  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -217,20 +230,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getBarrierDelta (void)
+public getBarrierDelta (int $position)
 ```
 
- 
+Get Barrier Delta (OBR.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -241,20 +257,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getBottomDelta (void)
+public getBottomDelta (int $position)
 ```
 
- 
+Get Bottom Delta (OBR.19) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -265,20 +284,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getCapType (void)
+public getCapType (int $position)
 ```
 
- 
+Get Cap Type (OBR.26) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 26  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -289,20 +311,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getCarrierIdentifier (void)
+public getCarrierIdentifier (int $position)
 ```
 
- 
+Get Carrier Identifier (OBR.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -313,20 +338,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getCarrierType (void)
+public getCarrierType (int $position)
 ```
 
- 
+Get Carrier Type (OBR.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -337,20 +365,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getContainerDiameter (void)
+public getContainerDiameter (int $position)
 ```
 
- 
+Get Container Diameter (OBR.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -361,20 +392,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getContainerHeight (void)
+public getContainerHeight (int $position)
 ```
 
- 
+Get Container Height (OBR.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -385,20 +419,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getContainerIdentifier (void)
+public getContainerIdentifier (int $position)
 ```
 
- 
+Get Container Identifier (OBR.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -409,20 +446,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getContainerSizeUnits (void)
+public getContainerSizeUnits (int $position)
 ```
 
- 
+Get Container SizeUnits (OBR.20) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 20  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -433,20 +473,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getContainerStatus (void)
+public getContainerStatus (int $position)
 ```
 
- 
+Get Container Status (OBR.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -457,20 +500,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getContainerVolume (void)
+public getContainerVolume (int $position)
 ```
 
- 
+Get Container Volume (OBR.21) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 21  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -481,20 +527,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getDilutionFactor (void)
+public getDilutionFactor (int $position)
 ```
 
- 
+Get Dilution Factor (OBR.29) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 29  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -505,20 +554,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getDrugInterference (void)
+public getDrugInterference (int $position)
 ```
 
- 
+Get Drug Interference (OBR.41) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 41  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -529,20 +581,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getEquipmentContainerIdentifier (void)
+public getEquipmentContainerIdentifier (int $position)
 ```
 
- 
+Get Equipment ContainerIdentifier (OBR.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -553,20 +608,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getExternalAccessionIdentifier (void)
+public getExternalAccessionIdentifier (int $position)
 ```
 
- 
+Get External AccessionIdentifier (OBR.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -577,20 +635,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getFibrinIndex (void)
+public getFibrinIndex (int $position)
 ```
 
- 
+Get Fibrin Index (OBR.38) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 38  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -601,20 +662,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getFibrinIndexUnits (void)
+public getFibrinIndexUnits (int $position)
 ```
 
- 
+Get Fibrin IndexUnits (OBR.39) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 39  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -625,20 +689,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getHemolysisIndex (void)
+public getHemolysisIndex (int $position)
 ```
 
- 
+Get Hemolysis Index (OBR.32) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 32  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -649,20 +716,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getHemolysisIndexUnits (void)
+public getHemolysisIndexUnits (int $position)
 ```
 
- 
+Get Hemolysis IndexUnits (OBR.33) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 33  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -673,20 +743,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getIcterusIndex (void)
+public getIcterusIndex (int $position)
 ```
 
- 
+Get Icterus Index (OBR.36) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 36  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -697,20 +770,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getIcterusIndexUnits (void)
+public getIcterusIndexUnits (int $position)
 ```
 
- 
+Get Icterus IndexUnits (OBR.37) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 37  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -721,20 +797,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getInitialSpecimenVolume (void)
+public getInitialSpecimenVolume (int $position)
 ```
 
- 
+Get Initial SpecimenVolume (OBR.23) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 23  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -745,20 +824,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getLepemiaIndex (void)
+public getLepemiaIndex (int $position)
 ```
 
- 
+Get Lepemia Index (OBR.34) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 34  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -769,20 +851,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getLepemiaIndexUnits (void)
+public getLepemiaIndexUnits (int $position)
 ```
 
- 
+Get Lepemia IndexUnits (OBR.35) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 35  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -793,20 +878,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getLocation (void)
+public getLocation (int $position)
 ```
 
- 
+Get Location (OBR.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -817,20 +905,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getOtherEnvironmentalFactors (void)
+public getOtherEnvironmentalFactors (int $position)
 ```
 
- 
+Get Other EnvironmentalFactors (OBR.44) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 44  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -841,20 +932,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getPositionInCarrier (void)
+public getPositionInCarrier (int $position)
 ```
 
- 
+Get Position InCarrier (OBR.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -865,20 +959,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getPositionInTray (void)
+public getPositionInTray (int $position)
 ```
 
- 
+Get Position InTray (OBR.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -889,20 +986,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getPrimaryContainerIdentifier (void)
+public getPrimaryContainerIdentifier (int $position)
 ```
 
- 
+Get Primary ContainerIdentifier (OBR.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -913,20 +1013,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getRegistrationDateTime (void)
+public getRegistrationDateTime (int $position)
 ```
 
- 
+Get Registration DateTime (OBR.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -937,20 +1040,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getSeparatorType (void)
+public getSeparatorType (int $position)
 ```
 
- 
+Get Separator Type (OBR.25) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 25  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -961,20 +1067,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getSpecialHandlingCode (void)
+public getSpecialHandlingCode (int $position)
 ```
 
- 
+Get Special HandlingCode (OBR.43) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 43  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -985,20 +1094,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getSpecimenComponent (void)
+public getSpecimenComponent (int $position)
 ```
 
- 
+Get Specimen Component (OBR.28) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 28  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -1009,20 +1121,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getSpecimenSource (void)
+public getSpecimenSource (int $position)
 ```
 
- 
+Get Specimen Source (OBR.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -1033,20 +1148,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getSystemInducedContaminants (void)
+public getSystemInducedContaminants (int $position)
 ```
 
- 
+Get System InducedContaminants (OBR.40) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 40  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -1057,20 +1175,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getTemperature (void)
+public getTemperature (int $position)
 ```
 
- 
+Get Temperature (OBR.31) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 31  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -1081,20 +1202,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getTrayIdentifier (void)
+public getTrayIdentifier (int $position)
 ```
 
- 
+Get Tray Identifier (OBR.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -1105,20 +1229,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getTrayTypeSAC (void)
+public getTrayTypeSAC (int $position)
 ```
 
- 
+Get Tray TypeSAC (OBR.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -1129,20 +1256,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getTreatment (void)
+public getTreatment (int $position)
 ```
 
- 
+Get Treatment (OBR.30) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 30  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -1153,20 +1283,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getVolumeUnits (void)
+public getVolumeUnits (int $position)
 ```
 
- 
+Get Volume Units (OBR.24) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 24  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -1177,7 +1310,7 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
-public static resetIndex (int $index)
+public static resetIndex (void)
 ```
 
 Reset index of this segment 
@@ -1186,7 +1319,7 @@ Reset index of this segment
 
 **Parameters**
 
-* `(int) $index`
+`This function has no parameters.`
 
 **Return Values**
 
@@ -1201,20 +1334,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setAccessionIdentifier (void)
+public setAccessionIdentifier (string|int|array|null $value, int $position)
 ```
 
- 
+Set Accession Identifier (OBR.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1225,20 +1362,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setAdditive (void)
+public setAdditive (string|int|array|null $value, int $position)
 ```
 
- 
+Set Additive (OBR.27) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 27  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1249,20 +1390,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setArtificialBlood (void)
+public setArtificialBlood (string|int|array|null $value, int $position)
 ```
 
- 
+Set Artificial Blood (OBR.42) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 42  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1273,20 +1418,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setAvailableSpecimenVolume (void)
+public setAvailableSpecimenVolume (string|int|array|null $value, int $position)
 ```
 
- 
+Set Available SpecimenVolume (OBR.22) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 22  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1297,20 +1446,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setBarrierDelta (void)
+public setBarrierDelta (string|int|array|null $value, int $position)
 ```
 
- 
+Set Barrier Delta (OBR.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1321,20 +1474,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setBottomDelta (void)
+public setBottomDelta (string|int|array|null $value, int $position)
 ```
 
- 
+Set Bottom Delta (OBR.19) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1345,20 +1502,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setCapType (void)
+public setCapType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Cap Type (OBR.26) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 26  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1369,20 +1530,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setCarrierIdentifier (void)
+public setCarrierIdentifier (string|int|array|null $value, int $position)
 ```
 
- 
+Set Carrier Identifier (OBR.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1393,20 +1558,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setCarrierType (void)
+public setCarrierType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Carrier Type (OBR.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1417,20 +1586,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setContainerDiameter (void)
+public setContainerDiameter (string|int|array|null $value, int $position)
 ```
 
- 
+Set Container Diameter (OBR.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1441,20 +1614,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setContainerHeight (void)
+public setContainerHeight (string|int|array|null $value, int $position)
 ```
 
- 
+Set Container Height (OBR.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1465,20 +1642,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setContainerIdentifier (void)
+public setContainerIdentifier (string|int|array|null $value, int $position)
 ```
 
- 
+Set Container Identifier (OBR.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1489,20 +1670,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setContainerSizeUnits (void)
+public setContainerSizeUnits (string|int|array|null $value, int $position)
 ```
 
- 
+Set Container SizeUnits (OBR.20) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 20  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1513,20 +1698,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setContainerStatus (void)
+public setContainerStatus (string|int|array|null $value, int $position)
 ```
 
- 
+Set Container Status (OBR.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1537,20 +1726,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setContainerVolume (void)
+public setContainerVolume (string|int|array|null $value, int $position)
 ```
 
- 
+Set Container Volume (OBR.21) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 21  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1561,20 +1754,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setDilutionFactor (void)
+public setDilutionFactor (string|int|array|null $value, int $position)
 ```
 
- 
+Set Dilution Factor (OBR.29) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 29  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1585,20 +1782,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setDrugInterference (void)
+public setDrugInterference (string|int|array|null $value, int $position)
 ```
 
- 
+Set Drug Interference (OBR.41) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 41  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1609,20 +1810,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setEquipmentContainerIdentifier (void)
+public setEquipmentContainerIdentifier (string|int|array|null $value, int $position)
 ```
 
- 
+Set Equipment ContainerIdentifier (OBR.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1657,20 +1862,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setFibrinIndex (void)
+public setFibrinIndex (string|int|array|null $value, int $position)
 ```
 
- 
+Set Fibrin Index (OBR.38) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 38  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1681,20 +1890,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setFibrinIndexUnits (void)
+public setFibrinIndexUnits (string|int|array|null $value, int $position)
 ```
 
- 
+Set Fibrin IndexUnits (OBR.39) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 39  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1705,20 +1918,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setHemolysisIndex (void)
+public setHemolysisIndex (string|int|array|null $value, int $position)
 ```
 
- 
+Set Hemolysis Index (OBR.32) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 32  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1729,20 +1946,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setHemolysisIndexUnits (void)
+public setHemolysisIndexUnits (string|int|array|null $value, int $position)
 ```
 
- 
+Set Hemolysis IndexUnits (OBR.33) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 33  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1753,20 +1974,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setIcterusIndex (void)
+public setIcterusIndex (string|int|array|null $value, int $position)
 ```
 
- 
+Set Icterus Index (OBR.36) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 36  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1777,20 +2002,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setIcterusIndexUnits (void)
+public setIcterusIndexUnits (string|int|array|null $value, int $position)
 ```
 
- 
+Set Icterus IndexUnits (OBR.37) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 37  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1801,20 +2030,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setInitialSpecimenVolume (void)
+public setInitialSpecimenVolume (string|int|array|null $value, int $position)
 ```
 
- 
+Set Initial SpecimenVolume (OBR.23) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 23  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1825,20 +2058,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setLepemiaIndex (void)
+public setLepemiaIndex (string|int|array|null $value, int $position)
 ```
 
- 
+Set Lepemia Index (OBR.34) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 34  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1849,20 +2086,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setLepemiaIndexUnits (void)
+public setLepemiaIndexUnits (string|int|array|null $value, int $position)
 ```
 
- 
+Set Lepemia IndexUnits (OBR.35) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 35  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1873,20 +2114,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setLocation (void)
+public setLocation (string|int|array|null $value, int $position)
 ```
 
- 
+Set Location (OBR.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1897,20 +2142,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setOtherEnvironmentalFactors (void)
+public setOtherEnvironmentalFactors (string|int|array|null $value, int $position)
 ```
 
- 
+Set Other EnvironmentalFactors (OBR.44) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 44  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1921,20 +2170,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setPositionInCarrier (void)
+public setPositionInCarrier (string|int|array|null $value, int $position)
 ```
 
- 
+Set Position InCarrier (OBR.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1945,20 +2198,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setPositionInTray (void)
+public setPositionInTray (string|int|array|null $value, int $position)
 ```
 
- 
+Set Position InTray (OBR.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1969,20 +2226,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setPrimaryContainerIdentifier (void)
+public setPrimaryContainerIdentifier (string|int|array|null $value, int $position)
 ```
 
- 
+Set Primary ContainerIdentifier (OBR.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1993,20 +2254,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setRegistrationDateTime (void)
+public setRegistrationDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Registration DateTime (OBR.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -2017,20 +2282,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setSeparatorType (void)
+public setSeparatorType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Separator Type (OBR.25) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 25  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -2041,20 +2310,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setSpecialHandlingCode (void)
+public setSpecialHandlingCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Special HandlingCode (OBR.43) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 43  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -2065,20 +2338,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setSpecimenComponent (void)
+public setSpecimenComponent (string|int|array|null $value, int $position)
 ```
 
- 
+Set Specimen Component (OBR.28) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 28  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -2089,20 +2366,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setSpecimenSource (void)
+public setSpecimenSource (string|int|array|null $value, int $position)
 ```
 
- 
+Set Specimen Source (OBR.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -2113,20 +2394,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setSystemInducedContaminants (void)
+public setSystemInducedContaminants (string|int|array|null $value, int $position)
 ```
 
- 
+Set System InducedContaminants (OBR.40) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 40  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -2137,20 +2422,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setTemperature (void)
+public setTemperature (string|int|array|null $value, int $position)
 ```
 
- 
+Set Temperature (OBR.31) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 31  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -2161,20 +2450,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setTrayIdentifier (void)
+public setTrayIdentifier (string|int|array|null $value, int $position)
 ```
 
- 
+Set Tray Identifier (OBR.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -2185,20 +2478,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setTrayTypeSAC (void)
+public setTrayTypeSAC (string|int|array|null $value, int $position)
 ```
 
- 
+Set Tray TypeSAC (OBR.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -2209,20 +2506,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setTreatment (void)
+public setTreatment (string|int|array|null $value, int $position)
 ```
 
- 
+Set Treatment (OBR.30) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 30  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -2233,20 +2534,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setVolumeUnits (void)
+public setVolumeUnits (string|int|array|null $value, int $position)
 ```
 
- 
+Set Volume Units (OBR.24) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 24  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />

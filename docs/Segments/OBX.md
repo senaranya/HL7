@@ -1,7 +1,7 @@
 # Aranyasen\HL7\Segments\OBX  
 
 OBX segment class
-Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-obx-segment
+Ref: https://hl7-definition.caristix.com/v2/HL7v2.5.1/Segments/OBX
 
 
 
@@ -13,46 +13,53 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getAbnormalFlags](#obxgetabnormalflags)||
-|[getDataLastObsNormalValues](#obxgetdatalastobsnormalvalues)||
-|[getDateTimeOfTheObservation](#obxgetdatetimeoftheobservation)||
-|[getID](#obxgetid)||
-|[getNatureOfAbnormalTest](#obxgetnatureofabnormaltest)||
-|[getObservationIdentifier](#obxgetobservationidentifier)||
-|[getObservationMethod](#obxgetobservationmethod)||
-|[getObservationSubId](#obxgetobservationsubid)||
-|[getObservationValue](#obxgetobservationvalue)||
-|[getObserveResultStatus](#obxgetobserveresultstatus)||
-|[getProbability](#obxgetprobability)||
-|[getProducersId](#obxgetproducersid)||
-|[getReferenceRange](#obxgetreferencerange)||
-|[getResponsibleObserver](#obxgetresponsibleobserver)||
-|[getUnits](#obxgetunits)||
-|[getUserDefinedAccessChecks](#obxgetuserdefinedaccesschecks)||
-|[getValueType](#obxgetvaluetype)||
-|[setAbnormalFlags](#obxsetabnormalflags)||
-|[setDataLastObsNormalValues](#obxsetdatalastobsnormalvalues)||
-|[setDateTimeOfTheObservation](#obxsetdatetimeoftheobservation)||
+|[__destruct](#obx__destruct)||
+|[getAbnormalFlags](#obxgetabnormalflags)|Get Abnormal Flags (OBR.8)|
+|[getDataLastObsNormalValues](#obxgetdatalastobsnormalvalues)|Get Data LastObsNormalValues (OBR.12)|
+|[getDateTimeOfAnalysis](#obxgetdatetimeofanalysis)|Get Date TimeOfAnalysis (OBR.19)|
+|[getDateTimeOfTheObservation](#obxgetdatetimeoftheobservation)|Get Date TimeOfTheObservation (OBR.14)|
+|[getEquipmentInstanceIdentifier](#obxgetequipmentinstanceidentifier)|Get Equipment InstanceIdentifier (OBR.18)|
+|[getID](#obxgetid)|Get ID (OBR.1)|
+|[getNatureOfAbnormalTest](#obxgetnatureofabnormaltest)|Get Nature OfAbnormalTest (OBR.10)|
+|[getObservationIdentifier](#obxgetobservationidentifier)|Get Observation Identifier (OBR.3)|
+|[getObservationMethod](#obxgetobservationmethod)|Get Observation Method (OBR.17)|
+|[getObservationSubId](#obxgetobservationsubid)|Get Observation SubId (OBR.4)|
+|[getObservationValue](#obxgetobservationvalue)|Get Observation Value (OBR.5)|
+|[getObserveResultStatus](#obxgetobserveresultstatus)|Get Observe ResultStatus (OBR.11)|
+|[getProbability](#obxgetprobability)|Get Probability (OBR.9)|
+|[getProducersId](#obxgetproducersid)|Get Producers Id (OBR.15)|
+|[getReferenceRange](#obxgetreferencerange)|Get Reference Range (OBR.7)|
+|[getResponsibleObserver](#obxgetresponsibleobserver)|Get Responsible Observer (OBR.16)|
+|[getUnits](#obxgetunits)|Get Units (OBR.6)|
+|[getUserDefinedAccessChecks](#obxgetuserdefinedaccesschecks)|Get User DefinedAccessChecks (OBR.13)|
+|[getValueType](#obxgetvaluetype)|Get Value Type (OBR.2)|
+|[resetIndex](#obxresetindex)|Reset index of this segment|
+|[setAbnormalFlags](#obxsetabnormalflags)|Set Abnormal Flags (OBR.8)|
+|[setDataLastObsNormalValues](#obxsetdatalastobsnormalvalues)|Set Data LastObsNormalValues (OBR.12)|
+|[setDateTimeOfAnalysis](#obxsetdatetimeofanalysis)|Set Date TimeOfAnalysis (OBR.19)|
+|[setDateTimeOfTheObservation](#obxsetdatetimeoftheobservation)|Set Date TimeOfTheObservation (OBR.14)|
+|[setEquipmentInstanceIdentifier](#obxsetequipmentinstanceidentifier)|Set Equipment InstanceIdentifier (OBR.18)|
 |[setID](#obxsetid)||
-|[setNatureOfAbnormalTest](#obxsetnatureofabnormaltest)||
-|[setObservationIdentifier](#obxsetobservationidentifier)||
-|[setObservationMethod](#obxsetobservationmethod)||
-|[setObservationSubId](#obxsetobservationsubid)||
-|[setObservationValue](#obxsetobservationvalue)||
-|[setObserveResultStatus](#obxsetobserveresultstatus)||
-|[setProbability](#obxsetprobability)||
-|[setProducersId](#obxsetproducersid)||
-|[setReferenceRange](#obxsetreferencerange)||
-|[setResponsibleObserver](#obxsetresponsibleobserver)||
-|[setUnits](#obxsetunits)||
-|[setUserDefinedAccessChecks](#obxsetuserdefinedaccesschecks)||
-|[setValueType](#obxsetvaluetype)||
+|[setNatureOfAbnormalTest](#obxsetnatureofabnormaltest)|Set Nature OfAbnormalTest (OBR.10)|
+|[setObservationIdentifier](#obxsetobservationidentifier)|Set Observation Identifier (OBR.3)|
+|[setObservationMethod](#obxsetobservationmethod)|Set Observation Method (OBR.17)|
+|[setObservationSubId](#obxsetobservationsubid)|Set Observation SubId (OBR.4)|
+|[setObservationValue](#obxsetobservationvalue)|Set Observation Value (OBR.5)|
+|[setObserveResultStatus](#obxsetobserveresultstatus)|Set Observe ResultStatus (OBR.11)|
+|[setProbability](#obxsetprobability)|Set Probability (OBR.9)|
+|[setProducersId](#obxsetproducersid)|Set Producers Id (OBR.15)|
+|[setReferenceRange](#obxsetreferencerange)|Set Reference Range (OBR.7)|
+|[setResponsibleObserver](#obxsetresponsibleobserver)|Set Responsible Observer (OBR.16)|
+|[setUnits](#obxsetunits)|Set Units (OBR.6)|
+|[setUserDefinedAccessChecks](#obxsetuserdefinedaccesschecks)|Set User DefinedAccessChecks (OBR.13)|
+|[setValueType](#obxsetvaluetype)|Set Value Type (OBR.2)|
 
 ## Inherited methods
 
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -61,12 +68,12 @@ Aranyasen\HL7\Segment
 
 
 
-### OBX::getAbnormalFlags  
+### OBX::__destruct  
 
 **Description**
 
 ```php
-public getAbnormalFlags (void)
+ __destruct (void)
 ```
 
  
@@ -80,6 +87,34 @@ public getAbnormalFlags (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBX::getAbnormalFlags  
+
+**Description**
+
+```php
+public getAbnormalFlags (int $position)
+```
+
+Get Abnormal Flags (OBR.8) 
+
+ 
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 8  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -89,20 +124,51 @@ public getAbnormalFlags (void)
 **Description**
 
 ```php
-public getDataLastObsNormalValues (void)
+public getDataLastObsNormalValues (int $position)
 ```
 
- 
+Get Data LastObsNormalValues (OBR.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
+
+<hr />
+
+
+### OBX::getDateTimeOfAnalysis  
+
+**Description**
+
+```php
+public getDateTimeOfAnalysis (int $position)
+```
+
+Get Date TimeOfAnalysis (OBR.19) 
+
+ 
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 19  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -112,20 +178,51 @@ public getDataLastObsNormalValues (void)
 **Description**
 
 ```php
-public getDateTimeOfTheObservation (void)
+public getDateTimeOfTheObservation (int $position)
 ```
 
- 
+Get Date TimeOfTheObservation (OBR.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
+
+<hr />
+
+
+### OBX::getEquipmentInstanceIdentifier  
+
+**Description**
+
+```php
+public getEquipmentInstanceIdentifier (int $position)
+```
+
+Get Equipment InstanceIdentifier (OBR.18) 
+
+ 
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 18  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -135,20 +232,24 @@ public getDateTimeOfTheObservation (void)
 **Description**
 
 ```php
-public getID (void)
+public getID (int $position)
 ```
 
- 
+Get ID (OBR.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -158,20 +259,24 @@ public getID (void)
 **Description**
 
 ```php
-public getNatureOfAbnormalTest (void)
+public getNatureOfAbnormalTest (int $position)
 ```
 
- 
+Get Nature OfAbnormalTest (OBR.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -181,20 +286,24 @@ public getNatureOfAbnormalTest (void)
 **Description**
 
 ```php
-public getObservationIdentifier (void)
+public getObservationIdentifier (int $position)
 ```
 
- 
+Get Observation Identifier (OBR.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -204,20 +313,24 @@ public getObservationIdentifier (void)
 **Description**
 
 ```php
-public getObservationMethod (void)
+public getObservationMethod (int $position)
 ```
 
- 
+Get Observation Method (OBR.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -227,20 +340,24 @@ public getObservationMethod (void)
 **Description**
 
 ```php
-public getObservationSubId (void)
+public getObservationSubId (int $position)
 ```
 
- 
+Get Observation SubId (OBR.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -250,20 +367,24 @@ public getObservationSubId (void)
 **Description**
 
 ```php
-public getObservationValue (void)
+public getObservationValue (int $position)
 ```
 
- 
+Get Observation Value (OBR.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -273,20 +394,24 @@ public getObservationValue (void)
 **Description**
 
 ```php
-public getObserveResultStatus (void)
+public getObserveResultStatus (int $position)
 ```
 
- 
+Get Observe ResultStatus (OBR.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -296,20 +421,24 @@ public getObserveResultStatus (void)
 **Description**
 
 ```php
-public getProbability (void)
+public getProbability (int $position)
 ```
 
- 
+Get Probability (OBR.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -319,20 +448,24 @@ public getProbability (void)
 **Description**
 
 ```php
-public getProducersId (void)
+public getProducersId (int $position)
 ```
 
- 
+Get Producers Id (OBR.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -342,20 +475,24 @@ public getProducersId (void)
 **Description**
 
 ```php
-public getReferenceRange (void)
+public getReferenceRange (int $position)
 ```
 
- 
+Get Reference Range (OBR.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -365,20 +502,24 @@ public getReferenceRange (void)
 **Description**
 
 ```php
-public getResponsibleObserver (void)
+public getResponsibleObserver (int $position)
 ```
 
- 
+Get Responsible Observer (OBR.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -388,20 +529,24 @@ public getResponsibleObserver (void)
 **Description**
 
 ```php
-public getUnits (void)
+public getUnits (int $position)
 ```
 
- 
+Get Units (OBR.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -411,20 +556,24 @@ public getUnits (void)
 **Description**
 
 ```php
-public getUserDefinedAccessChecks (void)
+public getUserDefinedAccessChecks (int $position)
 ```
 
- 
+Get User DefinedAccessChecks (OBR.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -434,10 +583,37 @@ public getUserDefinedAccessChecks (void)
 **Description**
 
 ```php
-public getValueType (void)
+public getValueType (int $position)
 ```
 
+Get Value Type (OBR.2) 
+
  
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 2  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
+
+<hr />
+
+
+### OBX::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (void)
+```
+
+Reset index of this segment 
 
  
 
@@ -448,6 +624,7 @@ public getValueType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -457,20 +634,25 @@ public getValueType (void)
 **Description**
 
 ```php
-public setAbnormalFlags (void)
+public setAbnormalFlags (string|int|array|null $value, int $position)
 ```
 
- 
+Set Abnormal Flags (OBR.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -480,20 +662,53 @@ public setAbnormalFlags (void)
 **Description**
 
 ```php
-public setDataLastObsNormalValues (void)
+public setDataLastObsNormalValues (string|int|array|null $value, int $position)
 ```
 
- 
+Set Data LastObsNormalValues (OBR.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
+
+<hr />
+
+
+### OBX::setDateTimeOfAnalysis  
+
+**Description**
+
+```php
+public setDateTimeOfAnalysis (string|int|array|null $value, int $position)
+```
+
+Set Date TimeOfAnalysis (OBR.19) 
+
+ 
+
+**Parameters**
+
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 19  
+
+**Return Values**
+
+`bool`
+
+
+
 
 <hr />
 
@@ -503,20 +718,53 @@ public setDataLastObsNormalValues (void)
 **Description**
 
 ```php
-public setDateTimeOfTheObservation (void)
+public setDateTimeOfTheObservation (string|int|array|null $value, int $position)
 ```
 
- 
+Set Date TimeOfTheObservation (OBR.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
+
+<hr />
+
+
+### OBX::setEquipmentInstanceIdentifier  
+
+**Description**
+
+```php
+public setEquipmentInstanceIdentifier (string|int|array|null $value, int $position)
+```
+
+Set Equipment InstanceIdentifier (OBR.18) 
+
+ 
+
+**Parameters**
+
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 18  
+
+**Return Values**
+
+`bool`
+
+
+
 
 <hr />
 
@@ -526,7 +774,7 @@ public setDateTimeOfTheObservation (void)
 **Description**
 
 ```php
-public setID (void)
+ setID (void)
 ```
 
  
@@ -540,6 +788,7 @@ public setID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -549,20 +798,25 @@ public setID (void)
 **Description**
 
 ```php
-public setNatureOfAbnormalTest (void)
+public setNatureOfAbnormalTest (string|int|array|null $value, int $position)
 ```
 
- 
+Set Nature OfAbnormalTest (OBR.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -572,20 +826,25 @@ public setNatureOfAbnormalTest (void)
 **Description**
 
 ```php
-public setObservationIdentifier (void)
+public setObservationIdentifier (string|int|array|null $value, int $position)
 ```
 
- 
+Set Observation Identifier (OBR.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -595,20 +854,25 @@ public setObservationIdentifier (void)
 **Description**
 
 ```php
-public setObservationMethod (void)
+public setObservationMethod (string|int|array|null $value, int $position)
 ```
 
- 
+Set Observation Method (OBR.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -618,20 +882,25 @@ public setObservationMethod (void)
 **Description**
 
 ```php
-public setObservationSubId (void)
+public setObservationSubId (string|int|array|null $value, int $position)
 ```
 
- 
+Set Observation SubId (OBR.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -641,20 +910,25 @@ public setObservationSubId (void)
 **Description**
 
 ```php
-public setObservationValue (void)
+public setObservationValue (string|int|array|null $value, int $position)
 ```
 
- 
+Set Observation Value (OBR.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -664,20 +938,25 @@ public setObservationValue (void)
 **Description**
 
 ```php
-public setObserveResultStatus (void)
+public setObserveResultStatus (string|int|array|null $value, int $position)
 ```
 
- 
+Set Observe ResultStatus (OBR.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -687,20 +966,25 @@ public setObserveResultStatus (void)
 **Description**
 
 ```php
-public setProbability (void)
+public setProbability (string|int|array|null $value, int $position)
 ```
 
- 
+Set Probability (OBR.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -710,20 +994,25 @@ public setProbability (void)
 **Description**
 
 ```php
-public setProducersId (void)
+public setProducersId (string|int|array|null $value, int $position)
 ```
 
- 
+Set Producers Id (OBR.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -733,20 +1022,25 @@ public setProducersId (void)
 **Description**
 
 ```php
-public setReferenceRange (void)
+public setReferenceRange (string|int|array|null $value, int $position)
 ```
 
- 
+Set Reference Range (OBR.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -756,20 +1050,25 @@ public setReferenceRange (void)
 **Description**
 
 ```php
-public setResponsibleObserver (void)
+public setResponsibleObserver (string|int|array|null $value, int $position)
 ```
 
- 
+Set Responsible Observer (OBR.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -779,20 +1078,25 @@ public setResponsibleObserver (void)
 **Description**
 
 ```php
-public setUnits (void)
+public setUnits (string|int|array|null $value, int $position)
 ```
 
- 
+Set Units (OBR.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -802,20 +1106,25 @@ public setUnits (void)
 **Description**
 
 ```php
-public setUserDefinedAccessChecks (void)
+public setUserDefinedAccessChecks (string|int|array|null $value, int $position)
 ```
 
- 
+Set User DefinedAccessChecks (OBR.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -825,20 +1134,25 @@ public setUserDefinedAccessChecks (void)
 **Description**
 
 ```php
-public setValueType (void)
+public setValueType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Value Type (OBR.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 

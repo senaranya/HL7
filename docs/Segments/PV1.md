@@ -13,116 +13,119 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getAccountStatus](#pv1getaccountstatus)||
-|[getAdmissionType](#pv1getadmissiontype)||
-|[getAdmitDateTime](#pv1getadmitdatetime)||
-|[getAdmitSource](#pv1getadmitsource)||
-|[getAdmittingDoctor](#pv1getadmittingdoctor)||
-|[getAlternateVisitID](#pv1getalternatevisitid)||
-|[getAmbulatoryStatus](#pv1getambulatorystatus)||
-|[getAssignedPatientLocation](#pv1getassignedpatientlocation)||
-|[getAttendingDoctor](#pv1getattendingdoctor)||
-|[getBadDebtAgencyCode](#pv1getbaddebtagencycode)||
-|[getBadDebtRecoveryAmount](#pv1getbaddebtrecoveryamount)||
-|[getBadDebtTransferAmount](#pv1getbaddebttransferamount)||
-|[getBedStatus](#pv1getbedstatus)||
-|[getChargePriceIndicator](#pv1getchargepriceindicator)||
-|[getConsultingDoctor](#pv1getconsultingdoctor)||
-|[getContractAmount](#pv1getcontractamount)||
-|[getContractCode](#pv1getcontractcode)||
-|[getContractEffectiveDate](#pv1getcontracteffectivedate)||
-|[getContractPeriod](#pv1getcontractperiod)||
-|[getCourtesyCode](#pv1getcourtesycode)||
-|[getCreditRating](#pv1getcreditrating)||
-|[getCurrentPatientBalance](#pv1getcurrentpatientbalance)||
-|[getDeleteAccountDate](#pv1getdeleteaccountdate)||
-|[getDeleteAccountIndicator](#pv1getdeleteaccountindicator)||
-|[getDietType](#pv1getdiettype)||
-|[getDischargeDateTime](#pv1getdischargedatetime)||
-|[getDischargeDisposition](#pv1getdischargedisposition)||
-|[getDischargedToLocation](#pv1getdischargedtolocation)||
-|[getFinancialClass](#pv1getfinancialclass)||
-|[getHospitalService](#pv1gethospitalservice)||
-|[getID](#pv1getid)||
-|[getInterestCode](#pv1getinterestcode)||
-|[getOtherHealthcareProvider](#pv1getotherhealthcareprovider)||
-|[getPatientClass](#pv1getpatientclass)||
-|[getPatientType](#pv1getpatienttype)||
-|[getPendingLocation](#pv1getpendinglocation)||
-|[getPreAdmitNumber](#pv1getpreadmitnumber)||
-|[getPreAdmitTestIndicator](#pv1getpreadmittestindicator)||
-|[getPriorPatientLocation](#pv1getpriorpatientlocation)||
-|[getPriorTemporaryLocation](#pv1getpriortemporarylocation)||
-|[getReAdmissionIndicator](#pv1getreadmissionindicator)||
-|[getReferringDoctor](#pv1getreferringdoctor)||
-|[getServicingFacility](#pv1getservicingfacility)||
-|[getTemporaryLocation](#pv1gettemporarylocation)||
-|[getTotalAdjustments](#pv1gettotaladjustments)||
-|[getTotalCharges](#pv1gettotalcharges)||
-|[getTotalPayments](#pv1gettotalpayments)||
-|[getTransferToBadDebtCode](#pv1gettransfertobaddebtcode)||
-|[getTransferToBadDebtDate](#pv1gettransfertobaddebtdate)||
-|[getVipIndicator](#pv1getvipindicator)||
-|[getVisitIndicator](#pv1getvisitindicator)||
-|[getVisitNumber](#pv1getvisitnumber)||
-|[setAccountStatus](#pv1setaccountstatus)||
-|[setAdmissionType](#pv1setadmissiontype)||
-|[setAdmitDateTime](#pv1setadmitdatetime)||
-|[setAdmitSource](#pv1setadmitsource)||
-|[setAdmittingDoctor](#pv1setadmittingdoctor)||
-|[setAlternateVisitID](#pv1setalternatevisitid)||
-|[setAmbulatoryStatus](#pv1setambulatorystatus)||
-|[setAssignedPatientLocation](#pv1setassignedpatientlocation)||
-|[setAttendingDoctor](#pv1setattendingdoctor)||
-|[setBadDebtAgencyCode](#pv1setbaddebtagencycode)||
-|[setBadDebtRecoveryAmount](#pv1setbaddebtrecoveryamount)||
-|[setBadDebtTransferAmount](#pv1setbaddebttransferamount)||
-|[setBedStatus](#pv1setbedstatus)||
-|[setChargePriceIndicator](#pv1setchargepriceindicator)||
-|[setConsultingDoctor](#pv1setconsultingdoctor)||
-|[setContractAmount](#pv1setcontractamount)||
-|[setContractCode](#pv1setcontractcode)||
-|[setContractEffectiveDate](#pv1setcontracteffectivedate)||
-|[setContractPeriod](#pv1setcontractperiod)||
-|[setCourtesyCode](#pv1setcourtesycode)||
-|[setCreditRating](#pv1setcreditrating)||
-|[setCurrentPatientBalance](#pv1setcurrentpatientbalance)||
-|[setDeleteAccountDate](#pv1setdeleteaccountdate)||
-|[setDeleteAccountIndicator](#pv1setdeleteaccountindicator)||
-|[setDietType](#pv1setdiettype)||
-|[setDischargeDateTime](#pv1setdischargedatetime)||
-|[setDischargeDisposition](#pv1setdischargedisposition)||
-|[setDischargedToLocation](#pv1setdischargedtolocation)||
-|[setFinancialClass](#pv1setfinancialclass)||
-|[setHospitalService](#pv1sethospitalservice)||
+|[__destruct](#pv1__destruct)||
+|[getAccountStatus](#pv1getaccountstatus)|Get Account Status (OBR.41)|
+|[getAdmissionType](#pv1getadmissiontype)|Get Admission Type (OBR.4)|
+|[getAdmitDateTime](#pv1getadmitdatetime)|Get Admit DateTime (OBR.44)|
+|[getAdmitSource](#pv1getadmitsource)|Get Admit Source (OBR.14)|
+|[getAdmittingDoctor](#pv1getadmittingdoctor)|Get Admitting Doctor (OBR.17)|
+|[getAlternateVisitID](#pv1getalternatevisitid)|Get Alternate VisitID (OBR.50)|
+|[getAmbulatoryStatus](#pv1getambulatorystatus)|Get Ambulatory Status (OBR.15)|
+|[getAssignedPatientLocation](#pv1getassignedpatientlocation)|Get Assigned PatientLocation (OBR.3)|
+|[getAttendingDoctor](#pv1getattendingdoctor)|Get Attending Doctor (OBR.7)|
+|[getBadDebtAgencyCode](#pv1getbaddebtagencycode)|Get Bad DebtAgencyCode (OBR.31)|
+|[getBadDebtRecoveryAmount](#pv1getbaddebtrecoveryamount)|Get Bad DebtRecoveryAmount (OBR.33)|
+|[getBadDebtTransferAmount](#pv1getbaddebttransferamount)|Get Bad DebtTransferAmount (OBR.32)|
+|[getBedStatus](#pv1getbedstatus)|Get Bed Status (OBR.40)|
+|[getChargePriceIndicator](#pv1getchargepriceindicator)|Get Charge PriceIndicator (OBR.21)|
+|[getConsultingDoctor](#pv1getconsultingdoctor)|Get Consulting Doctor (OBR.9)|
+|[getContractAmount](#pv1getcontractamount)|Get Contract Amount (OBR.26)|
+|[getContractCode](#pv1getcontractcode)|Get Contract Code (OBR.24)|
+|[getContractEffectiveDate](#pv1getcontracteffectivedate)|Get Contract EffectiveDate (OBR.25)|
+|[getContractPeriod](#pv1getcontractperiod)|Get Contract Period (OBR.27)|
+|[getCourtesyCode](#pv1getcourtesycode)|Get Courtesy Code (OBR.22)|
+|[getCreditRating](#pv1getcreditrating)|Get Credit Rating (OBR.23)|
+|[getCurrentPatientBalance](#pv1getcurrentpatientbalance)|Get Current PatientBalance (OBR.46)|
+|[getDeleteAccountDate](#pv1getdeleteaccountdate)|Get Delete AccountDate (OBR.35)|
+|[getDeleteAccountIndicator](#pv1getdeleteaccountindicator)|Get Delete AccountIndicator (OBR.34)|
+|[getDietType](#pv1getdiettype)|Get Diet Type (OBR.38)|
+|[getDischargeDateTime](#pv1getdischargedatetime)|Get Discharge DateTime (OBR.45)|
+|[getDischargeDisposition](#pv1getdischargedisposition)|Get Discharge Disposition (OBR.36)|
+|[getDischargedToLocation](#pv1getdischargedtolocation)|Get Discharged ToLocation (OBR.37)|
+|[getFinancialClass](#pv1getfinancialclass)|Get Financial Class (OBR.20)|
+|[getHospitalService](#pv1gethospitalservice)|Get Hospital Service (OBR.10)|
+|[getID](#pv1getid)|Get ID (OBR.1)|
+|[getInterestCode](#pv1getinterestcode)|Get Interest Code (OBR.28)|
+|[getOtherHealthcareProvider](#pv1getotherhealthcareprovider)|Get Other HealthcareProvider (OBR.52)|
+|[getPatientClass](#pv1getpatientclass)|Get Patient Class (OBR.2)|
+|[getPatientType](#pv1getpatienttype)|Get Patient Type (OBR.18)|
+|[getPendingLocation](#pv1getpendinglocation)|Get Pending Location (OBR.42)|
+|[getPreAdmitNumber](#pv1getpreadmitnumber)|Get Pre AdmitNumber (OBR.5)|
+|[getPreAdmitTestIndicator](#pv1getpreadmittestindicator)|Get Pre AdmitTestIndicator (OBR.12)|
+|[getPriorPatientLocation](#pv1getpriorpatientlocation)|Get Prior PatientLocation (OBR.6)|
+|[getPriorTemporaryLocation](#pv1getpriortemporarylocation)|Get Prior TemporaryLocation (OBR.43)|
+|[getReAdmissionIndicator](#pv1getreadmissionindicator)|Get Re AdmissionIndicator (OBR.13)|
+|[getReferringDoctor](#pv1getreferringdoctor)|Get Referring Doctor (OBR.8)|
+|[getServicingFacility](#pv1getservicingfacility)|Get Servicing Facility (OBR.39)|
+|[getTemporaryLocation](#pv1gettemporarylocation)|Get Temporary Location (OBR.11)|
+|[getTotalAdjustments](#pv1gettotaladjustments)|Get Total Adjustments (OBR.48)|
+|[getTotalCharges](#pv1gettotalcharges)|Get Total Charges (OBR.47)|
+|[getTotalPayments](#pv1gettotalpayments)|Get Total Payments (OBR.49)|
+|[getTransferToBadDebtCode](#pv1gettransfertobaddebtcode)|Get Transfer ToBadDebtCode (OBR.29)|
+|[getTransferToBadDebtDate](#pv1gettransfertobaddebtdate)|Get Transfer ToBadDebtDate (OBR.30)|
+|[getVipIndicator](#pv1getvipindicator)|Get Vip Indicator (OBR.16)|
+|[getVisitIndicator](#pv1getvisitindicator)|Get Visit Indicator (OBR.51)|
+|[getVisitNumber](#pv1getvisitnumber)|Get Visit Number (OBR.19)|
+|[resetIndex](#pv1resetindex)|Reset index of this segment|
+|[setAccountStatus](#pv1setaccountstatus)|Set Account Status (OBR.41)|
+|[setAdmissionType](#pv1setadmissiontype)|Set Admission Type (OBR.4)|
+|[setAdmitDateTime](#pv1setadmitdatetime)|Set Admit DateTime (OBR.44)|
+|[setAdmitSource](#pv1setadmitsource)|Set Admit Source (OBR.14)|
+|[setAdmittingDoctor](#pv1setadmittingdoctor)|Set Admitting Doctor (OBR.17)|
+|[setAlternateVisitID](#pv1setalternatevisitid)|Set Alternate VisitID (OBR.50)|
+|[setAmbulatoryStatus](#pv1setambulatorystatus)|Set Ambulatory Status (OBR.15)|
+|[setAssignedPatientLocation](#pv1setassignedpatientlocation)|Set Assigned PatientLocation (OBR.3)|
+|[setAttendingDoctor](#pv1setattendingdoctor)|Set Attending Doctor (OBR.7)|
+|[setBadDebtAgencyCode](#pv1setbaddebtagencycode)|Set Bad DebtAgencyCode (OBR.31)|
+|[setBadDebtRecoveryAmount](#pv1setbaddebtrecoveryamount)|Set Bad DebtRecoveryAmount (OBR.33)|
+|[setBadDebtTransferAmount](#pv1setbaddebttransferamount)|Set Bad DebtTransferAmount (OBR.32)|
+|[setBedStatus](#pv1setbedstatus)|Set Bed Status (OBR.40)|
+|[setChargePriceIndicator](#pv1setchargepriceindicator)|Set Charge PriceIndicator (OBR.21)|
+|[setConsultingDoctor](#pv1setconsultingdoctor)|Set Consulting Doctor (OBR.9)|
+|[setContractAmount](#pv1setcontractamount)|Set Contract Amount (OBR.26)|
+|[setContractCode](#pv1setcontractcode)|Set Contract Code (OBR.24)|
+|[setContractEffectiveDate](#pv1setcontracteffectivedate)|Set Contract EffectiveDate (OBR.25)|
+|[setContractPeriod](#pv1setcontractperiod)|Set Contract Period (OBR.27)|
+|[setCourtesyCode](#pv1setcourtesycode)|Set Courtesy Code (OBR.22)|
+|[setCreditRating](#pv1setcreditrating)|Set Credit Rating (OBR.23)|
+|[setCurrentPatientBalance](#pv1setcurrentpatientbalance)|Set Current PatientBalance (OBR.46)|
+|[setDeleteAccountDate](#pv1setdeleteaccountdate)|Set Delete AccountDate (OBR.35)|
+|[setDeleteAccountIndicator](#pv1setdeleteaccountindicator)|Set Delete AccountIndicator (OBR.34)|
+|[setDietType](#pv1setdiettype)|Set Diet Type (OBR.38)|
+|[setDischargeDateTime](#pv1setdischargedatetime)|Set Discharge DateTime (OBR.45)|
+|[setDischargeDisposition](#pv1setdischargedisposition)|Set Discharge Disposition (OBR.36)|
+|[setDischargedToLocation](#pv1setdischargedtolocation)|Set Discharged ToLocation (OBR.37)|
+|[setFinancialClass](#pv1setfinancialclass)|Set Financial Class (OBR.20)|
+|[setHospitalService](#pv1sethospitalservice)|Set Hospital Service (OBR.10)|
 |[setID](#pv1setid)||
-|[setInterestCode](#pv1setinterestcode)||
-|[setOtherHealthcareProvider](#pv1setotherhealthcareprovider)||
-|[setPatientClass](#pv1setpatientclass)||
-|[setPatientType](#pv1setpatienttype)||
-|[setPendingLocation](#pv1setpendinglocation)||
-|[setPreAdmitNumber](#pv1setpreadmitnumber)||
-|[setPreAdmitTestIndicator](#pv1setpreadmittestindicator)||
-|[setPriorPatientLocation](#pv1setpriorpatientlocation)||
-|[setPriorTemporaryLocation](#pv1setpriortemporarylocation)||
-|[setReAdmissionIndicator](#pv1setreadmissionindicator)||
-|[setReferringDoctor](#pv1setreferringdoctor)||
-|[setServicingFacility](#pv1setservicingfacility)||
-|[setTemporaryLocation](#pv1settemporarylocation)||
-|[setTotalAdjustments](#pv1settotaladjustments)||
-|[setTotalCharges](#pv1settotalcharges)||
-|[setTotalPayments](#pv1settotalpayments)||
-|[setTransferToBadDebtCode](#pv1settransfertobaddebtcode)||
-|[setTransferToBadDebtDate](#pv1settransfertobaddebtdate)||
-|[setVipIndicator](#pv1setvipindicator)||
-|[setVisitIndicator](#pv1setvisitindicator)||
-|[setVisitNumber](#pv1setvisitnumber)||
+|[setInterestCode](#pv1setinterestcode)|Set Interest Code (OBR.28)|
+|[setOtherHealthcareProvider](#pv1setotherhealthcareprovider)|Set Other HealthcareProvider (OBR.52)|
+|[setPatientClass](#pv1setpatientclass)|Set Patient Class (OBR.2)|
+|[setPatientType](#pv1setpatienttype)|Set Patient Type (OBR.18)|
+|[setPendingLocation](#pv1setpendinglocation)|Set Pending Location (OBR.42)|
+|[setPreAdmitNumber](#pv1setpreadmitnumber)|Set Pre AdmitNumber (OBR.5)|
+|[setPreAdmitTestIndicator](#pv1setpreadmittestindicator)|Set Pre AdmitTestIndicator (OBR.12)|
+|[setPriorPatientLocation](#pv1setpriorpatientlocation)|Set Prior PatientLocation (OBR.6)|
+|[setPriorTemporaryLocation](#pv1setpriortemporarylocation)|Set Prior TemporaryLocation (OBR.43)|
+|[setReAdmissionIndicator](#pv1setreadmissionindicator)|Set Re AdmissionIndicator (OBR.13)|
+|[setReferringDoctor](#pv1setreferringdoctor)|Set Referring Doctor (OBR.8)|
+|[setServicingFacility](#pv1setservicingfacility)|Set Servicing Facility (OBR.39)|
+|[setTemporaryLocation](#pv1settemporarylocation)|Set Temporary Location (OBR.11)|
+|[setTotalAdjustments](#pv1settotaladjustments)|Set Total Adjustments (OBR.48)|
+|[setTotalCharges](#pv1settotalcharges)|Set Total Charges (OBR.47)|
+|[setTotalPayments](#pv1settotalpayments)|Set Total Payments (OBR.49)|
+|[setTransferToBadDebtCode](#pv1settransfertobaddebtcode)|Set Transfer ToBadDebtCode (OBR.29)|
+|[setTransferToBadDebtDate](#pv1settransfertobaddebtdate)|Set Transfer ToBadDebtDate (OBR.30)|
+|[setVipIndicator](#pv1setvipindicator)|Set Vip Indicator (OBR.16)|
+|[setVisitIndicator](#pv1setvisitindicator)|Set Visit Indicator (OBR.51)|
+|[setVisitNumber](#pv1setvisitnumber)|Set Visit Number (OBR.19)|
 
 ## Inherited methods
 
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -131,12 +134,12 @@ Aranyasen\HL7\Segment
 
 
 
-### PV1::getAccountStatus  
+### PV1::__destruct  
 
 **Description**
 
 ```php
-public getAccountStatus (void)
+ __destruct (void)
 ```
 
  
@@ -150,6 +153,34 @@ public getAccountStatus (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### PV1::getAccountStatus  
+
+**Description**
+
+```php
+public getAccountStatus (int $position)
+```
+
+Get Account Status (OBR.41) 
+
+ 
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 41  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -159,20 +190,24 @@ public getAccountStatus (void)
 **Description**
 
 ```php
-public getAdmissionType (void)
+public getAdmissionType (int $position)
 ```
 
- 
+Get Admission Type (OBR.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -182,20 +217,24 @@ public getAdmissionType (void)
 **Description**
 
 ```php
-public getAdmitDateTime (void)
+public getAdmitDateTime (int $position)
 ```
 
- 
+Get Admit DateTime (OBR.44) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 44  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -205,20 +244,24 @@ public getAdmitDateTime (void)
 **Description**
 
 ```php
-public getAdmitSource (void)
+public getAdmitSource (int $position)
 ```
 
- 
+Get Admit Source (OBR.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -228,20 +271,24 @@ public getAdmitSource (void)
 **Description**
 
 ```php
-public getAdmittingDoctor (void)
+public getAdmittingDoctor (int $position)
 ```
 
- 
+Get Admitting Doctor (OBR.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -251,20 +298,24 @@ public getAdmittingDoctor (void)
 **Description**
 
 ```php
-public getAlternateVisitID (void)
+public getAlternateVisitID (int $position)
 ```
 
- 
+Get Alternate VisitID (OBR.50) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 50  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -274,20 +325,24 @@ public getAlternateVisitID (void)
 **Description**
 
 ```php
-public getAmbulatoryStatus (void)
+public getAmbulatoryStatus (int $position)
 ```
 
- 
+Get Ambulatory Status (OBR.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -297,20 +352,24 @@ public getAmbulatoryStatus (void)
 **Description**
 
 ```php
-public getAssignedPatientLocation (void)
+public getAssignedPatientLocation (int $position)
 ```
 
- 
+Get Assigned PatientLocation (OBR.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -320,20 +379,24 @@ public getAssignedPatientLocation (void)
 **Description**
 
 ```php
-public getAttendingDoctor (void)
+public getAttendingDoctor (int $position)
 ```
 
- 
+Get Attending Doctor (OBR.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -343,20 +406,24 @@ public getAttendingDoctor (void)
 **Description**
 
 ```php
-public getBadDebtAgencyCode (void)
+public getBadDebtAgencyCode (int $position)
 ```
 
- 
+Get Bad DebtAgencyCode (OBR.31) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 31  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -366,20 +433,24 @@ public getBadDebtAgencyCode (void)
 **Description**
 
 ```php
-public getBadDebtRecoveryAmount (void)
+public getBadDebtRecoveryAmount (int $position)
 ```
 
- 
+Get Bad DebtRecoveryAmount (OBR.33) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 33  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -389,20 +460,24 @@ public getBadDebtRecoveryAmount (void)
 **Description**
 
 ```php
-public getBadDebtTransferAmount (void)
+public getBadDebtTransferAmount (int $position)
 ```
 
- 
+Get Bad DebtTransferAmount (OBR.32) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 32  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -412,20 +487,24 @@ public getBadDebtTransferAmount (void)
 **Description**
 
 ```php
-public getBedStatus (void)
+public getBedStatus (int $position)
 ```
 
- 
+Get Bed Status (OBR.40) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 40  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -435,20 +514,24 @@ public getBedStatus (void)
 **Description**
 
 ```php
-public getChargePriceIndicator (void)
+public getChargePriceIndicator (int $position)
 ```
 
- 
+Get Charge PriceIndicator (OBR.21) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 21  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -458,20 +541,24 @@ public getChargePriceIndicator (void)
 **Description**
 
 ```php
-public getConsultingDoctor (void)
+public getConsultingDoctor (int $position)
 ```
 
- 
+Get Consulting Doctor (OBR.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -481,20 +568,24 @@ public getConsultingDoctor (void)
 **Description**
 
 ```php
-public getContractAmount (void)
+public getContractAmount (int $position)
 ```
 
- 
+Get Contract Amount (OBR.26) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 26  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -504,20 +595,24 @@ public getContractAmount (void)
 **Description**
 
 ```php
-public getContractCode (void)
+public getContractCode (int $position)
 ```
 
- 
+Get Contract Code (OBR.24) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 24  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -527,20 +622,24 @@ public getContractCode (void)
 **Description**
 
 ```php
-public getContractEffectiveDate (void)
+public getContractEffectiveDate (int $position)
 ```
 
- 
+Get Contract EffectiveDate (OBR.25) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 25  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -550,20 +649,24 @@ public getContractEffectiveDate (void)
 **Description**
 
 ```php
-public getContractPeriod (void)
+public getContractPeriod (int $position)
 ```
 
- 
+Get Contract Period (OBR.27) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 27  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -573,20 +676,24 @@ public getContractPeriod (void)
 **Description**
 
 ```php
-public getCourtesyCode (void)
+public getCourtesyCode (int $position)
 ```
 
- 
+Get Courtesy Code (OBR.22) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 22  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -596,20 +703,24 @@ public getCourtesyCode (void)
 **Description**
 
 ```php
-public getCreditRating (void)
+public getCreditRating (int $position)
 ```
 
- 
+Get Credit Rating (OBR.23) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 23  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -619,20 +730,24 @@ public getCreditRating (void)
 **Description**
 
 ```php
-public getCurrentPatientBalance (void)
+public getCurrentPatientBalance (int $position)
 ```
 
- 
+Get Current PatientBalance (OBR.46) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 46  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -642,20 +757,24 @@ public getCurrentPatientBalance (void)
 **Description**
 
 ```php
-public getDeleteAccountDate (void)
+public getDeleteAccountDate (int $position)
 ```
 
- 
+Get Delete AccountDate (OBR.35) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 35  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -665,20 +784,24 @@ public getDeleteAccountDate (void)
 **Description**
 
 ```php
-public getDeleteAccountIndicator (void)
+public getDeleteAccountIndicator (int $position)
 ```
 
- 
+Get Delete AccountIndicator (OBR.34) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 34  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -688,20 +811,24 @@ public getDeleteAccountIndicator (void)
 **Description**
 
 ```php
-public getDietType (void)
+public getDietType (int $position)
 ```
 
- 
+Get Diet Type (OBR.38) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 38  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -711,20 +838,24 @@ public getDietType (void)
 **Description**
 
 ```php
-public getDischargeDateTime (void)
+public getDischargeDateTime (int $position)
 ```
 
- 
+Get Discharge DateTime (OBR.45) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 45  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -734,20 +865,24 @@ public getDischargeDateTime (void)
 **Description**
 
 ```php
-public getDischargeDisposition (void)
+public getDischargeDisposition (int $position)
 ```
 
- 
+Get Discharge Disposition (OBR.36) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 36  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -757,20 +892,24 @@ public getDischargeDisposition (void)
 **Description**
 
 ```php
-public getDischargedToLocation (void)
+public getDischargedToLocation (int $position)
 ```
 
- 
+Get Discharged ToLocation (OBR.37) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 37  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -780,20 +919,24 @@ public getDischargedToLocation (void)
 **Description**
 
 ```php
-public getFinancialClass (void)
+public getFinancialClass (int $position)
 ```
 
- 
+Get Financial Class (OBR.20) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 20  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -803,20 +946,24 @@ public getFinancialClass (void)
 **Description**
 
 ```php
-public getHospitalService (void)
+public getHospitalService (int $position)
 ```
 
- 
+Get Hospital Service (OBR.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -826,20 +973,24 @@ public getHospitalService (void)
 **Description**
 
 ```php
-public getID (void)
+public getID (int $position)
 ```
 
- 
+Get ID (OBR.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -849,20 +1000,24 @@ public getID (void)
 **Description**
 
 ```php
-public getInterestCode (void)
+public getInterestCode (int $position)
 ```
 
- 
+Get Interest Code (OBR.28) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 28  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -872,20 +1027,24 @@ public getInterestCode (void)
 **Description**
 
 ```php
-public getOtherHealthcareProvider (void)
+public getOtherHealthcareProvider (int $position)
 ```
 
- 
+Get Other HealthcareProvider (OBR.52) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 52  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -895,20 +1054,24 @@ public getOtherHealthcareProvider (void)
 **Description**
 
 ```php
-public getPatientClass (void)
+public getPatientClass (int $position)
 ```
 
- 
+Get Patient Class (OBR.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -918,20 +1081,24 @@ public getPatientClass (void)
 **Description**
 
 ```php
-public getPatientType (void)
+public getPatientType (int $position)
 ```
 
- 
+Get Patient Type (OBR.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -941,20 +1108,24 @@ public getPatientType (void)
 **Description**
 
 ```php
-public getPendingLocation (void)
+public getPendingLocation (int $position)
 ```
 
- 
+Get Pending Location (OBR.42) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 42  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -964,20 +1135,24 @@ public getPendingLocation (void)
 **Description**
 
 ```php
-public getPreAdmitNumber (void)
+public getPreAdmitNumber (int $position)
 ```
 
- 
+Get Pre AdmitNumber (OBR.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -987,20 +1162,24 @@ public getPreAdmitNumber (void)
 **Description**
 
 ```php
-public getPreAdmitTestIndicator (void)
+public getPreAdmitTestIndicator (int $position)
 ```
 
- 
+Get Pre AdmitTestIndicator (OBR.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1010,20 +1189,24 @@ public getPreAdmitTestIndicator (void)
 **Description**
 
 ```php
-public getPriorPatientLocation (void)
+public getPriorPatientLocation (int $position)
 ```
 
- 
+Get Prior PatientLocation (OBR.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1033,20 +1216,24 @@ public getPriorPatientLocation (void)
 **Description**
 
 ```php
-public getPriorTemporaryLocation (void)
+public getPriorTemporaryLocation (int $position)
 ```
 
- 
+Get Prior TemporaryLocation (OBR.43) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 43  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1056,20 +1243,24 @@ public getPriorTemporaryLocation (void)
 **Description**
 
 ```php
-public getReAdmissionIndicator (void)
+public getReAdmissionIndicator (int $position)
 ```
 
- 
+Get Re AdmissionIndicator (OBR.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1079,20 +1270,24 @@ public getReAdmissionIndicator (void)
 **Description**
 
 ```php
-public getReferringDoctor (void)
+public getReferringDoctor (int $position)
 ```
 
- 
+Get Referring Doctor (OBR.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1102,20 +1297,24 @@ public getReferringDoctor (void)
 **Description**
 
 ```php
-public getServicingFacility (void)
+public getServicingFacility (int $position)
 ```
 
- 
+Get Servicing Facility (OBR.39) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 39  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1125,20 +1324,24 @@ public getServicingFacility (void)
 **Description**
 
 ```php
-public getTemporaryLocation (void)
+public getTemporaryLocation (int $position)
 ```
 
- 
+Get Temporary Location (OBR.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1148,20 +1351,24 @@ public getTemporaryLocation (void)
 **Description**
 
 ```php
-public getTotalAdjustments (void)
+public getTotalAdjustments (int $position)
 ```
 
- 
+Get Total Adjustments (OBR.48) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 48  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1171,20 +1378,24 @@ public getTotalAdjustments (void)
 **Description**
 
 ```php
-public getTotalCharges (void)
+public getTotalCharges (int $position)
 ```
 
- 
+Get Total Charges (OBR.47) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 47  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1194,20 +1405,24 @@ public getTotalCharges (void)
 **Description**
 
 ```php
-public getTotalPayments (void)
+public getTotalPayments (int $position)
 ```
 
- 
+Get Total Payments (OBR.49) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 49  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1217,20 +1432,24 @@ public getTotalPayments (void)
 **Description**
 
 ```php
-public getTransferToBadDebtCode (void)
+public getTransferToBadDebtCode (int $position)
 ```
 
- 
+Get Transfer ToBadDebtCode (OBR.29) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 29  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1240,20 +1459,24 @@ public getTransferToBadDebtCode (void)
 **Description**
 
 ```php
-public getTransferToBadDebtDate (void)
+public getTransferToBadDebtDate (int $position)
 ```
 
- 
+Get Transfer ToBadDebtDate (OBR.30) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 30  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1263,20 +1486,24 @@ public getTransferToBadDebtDate (void)
 **Description**
 
 ```php
-public getVipIndicator (void)
+public getVipIndicator (int $position)
 ```
 
- 
+Get Vip Indicator (OBR.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1286,20 +1513,24 @@ public getVipIndicator (void)
 **Description**
 
 ```php
-public getVisitIndicator (void)
+public getVisitIndicator (int $position)
 ```
 
- 
+Get Visit Indicator (OBR.51) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 51  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1309,10 +1540,37 @@ public getVisitIndicator (void)
 **Description**
 
 ```php
-public getVisitNumber (void)
+public getVisitNumber (int $position)
 ```
 
+Get Visit Number (OBR.19) 
+
  
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 19  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
+
+<hr />
+
+
+### PV1::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (void)
+```
+
+Reset index of this segment 
 
  
 
@@ -1324,6 +1582,7 @@ public getVisitNumber (void)
 
 `void`
 
+
 <hr />
 
 
@@ -1332,21 +1591,23 @@ public getVisitNumber (void)
 **Description**
 
 ```php
-public setAccountStatus ( $value, int $position)
+public setAccountStatus (string|int|array|null $value, int $position)
 ```
 
- 
+Set Account Status (OBR.41) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 41  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1358,21 +1619,23 @@ public setAccountStatus ( $value, int $position)
 **Description**
 
 ```php
-public setAdmissionType ( $value, int $position)
+public setAdmissionType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Admission Type (OBR.4) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1384,21 +1647,23 @@ public setAdmissionType ( $value, int $position)
 **Description**
 
 ```php
-public setAdmitDateTime ( $value, int $position)
+public setAdmitDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Admit DateTime (OBR.44) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 44  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1410,21 +1675,23 @@ public setAdmitDateTime ( $value, int $position)
 **Description**
 
 ```php
-public setAdmitSource ( $value, int $position)
+public setAdmitSource (string|int|array|null $value, int $position)
 ```
 
- 
+Set Admit Source (OBR.14) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1436,21 +1703,23 @@ public setAdmitSource ( $value, int $position)
 **Description**
 
 ```php
-public setAdmittingDoctor ( $value, int $position)
+public setAdmittingDoctor (string|int|array|null $value, int $position)
 ```
 
- 
+Set Admitting Doctor (OBR.17) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1462,21 +1731,23 @@ public setAdmittingDoctor ( $value, int $position)
 **Description**
 
 ```php
-public setAlternateVisitID ( $value, int $position)
+public setAlternateVisitID (string|int|array|null $value, int $position)
 ```
 
- 
+Set Alternate VisitID (OBR.50) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 50  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1488,21 +1759,23 @@ public setAlternateVisitID ( $value, int $position)
 **Description**
 
 ```php
-public setAmbulatoryStatus ( $value, int $position)
+public setAmbulatoryStatus (string|int|array|null $value, int $position)
 ```
 
- 
+Set Ambulatory Status (OBR.15) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1514,20 +1787,25 @@ public setAmbulatoryStatus ( $value, int $position)
 **Description**
 
 ```php
-public setAssignedPatientLocation (void)
+public setAssignedPatientLocation (string|int|array|null $value, int $position)
 ```
 
- 
+Set Assigned PatientLocation (OBR.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1537,21 +1815,23 @@ public setAssignedPatientLocation (void)
 **Description**
 
 ```php
-public setAttendingDoctor ( $value, int $position)
+public setAttendingDoctor (string|int|array|null $value, int $position)
 ```
 
- 
+Set Attending Doctor (OBR.7) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1563,21 +1843,23 @@ public setAttendingDoctor ( $value, int $position)
 **Description**
 
 ```php
-public setBadDebtAgencyCode ( $value, int $position)
+public setBadDebtAgencyCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Bad DebtAgencyCode (OBR.31) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 31  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1589,21 +1871,23 @@ public setBadDebtAgencyCode ( $value, int $position)
 **Description**
 
 ```php
-public setBadDebtRecoveryAmount ( $value, int $position)
+public setBadDebtRecoveryAmount (string|int|array|null $value, int $position)
 ```
 
- 
+Set Bad DebtRecoveryAmount (OBR.33) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 33  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1615,21 +1899,23 @@ public setBadDebtRecoveryAmount ( $value, int $position)
 **Description**
 
 ```php
-public setBadDebtTransferAmount ( $value, int $position)
+public setBadDebtTransferAmount (string|int|array|null $value, int $position)
 ```
 
- 
+Set Bad DebtTransferAmount (OBR.32) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 32  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1641,21 +1927,23 @@ public setBadDebtTransferAmount ( $value, int $position)
 **Description**
 
 ```php
-public setBedStatus ( $value, int $position)
+public setBedStatus (string|int|array|null $value, int $position)
 ```
 
- 
+Set Bed Status (OBR.40) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 40  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1667,21 +1955,23 @@ public setBedStatus ( $value, int $position)
 **Description**
 
 ```php
-public setChargePriceIndicator ( $value, int $position)
+public setChargePriceIndicator (string|int|array|null $value, int $position)
 ```
 
- 
+Set Charge PriceIndicator (OBR.21) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 21  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1693,21 +1983,23 @@ public setChargePriceIndicator ( $value, int $position)
 **Description**
 
 ```php
-public setConsultingDoctor ( $value, int $position)
+public setConsultingDoctor (string|int|array|null $value, int $position)
 ```
 
- 
+Set Consulting Doctor (OBR.9) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1719,21 +2011,23 @@ public setConsultingDoctor ( $value, int $position)
 **Description**
 
 ```php
-public setContractAmount ( $value, int $position)
+public setContractAmount (string|int|array|null $value, int $position)
 ```
 
- 
+Set Contract Amount (OBR.26) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 26  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1745,21 +2039,23 @@ public setContractAmount ( $value, int $position)
 **Description**
 
 ```php
-public setContractCode ( $value, int $position)
+public setContractCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Contract Code (OBR.24) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 24  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1771,21 +2067,23 @@ public setContractCode ( $value, int $position)
 **Description**
 
 ```php
-public setContractEffectiveDate ( $value, int $position)
+public setContractEffectiveDate (string|int|array|null $value, int $position)
 ```
 
- 
+Set Contract EffectiveDate (OBR.25) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 25  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1797,21 +2095,23 @@ public setContractEffectiveDate ( $value, int $position)
 **Description**
 
 ```php
-public setContractPeriod ( $value, int $position)
+public setContractPeriod (string|int|array|null $value, int $position)
 ```
 
- 
+Set Contract Period (OBR.27) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 27  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1823,21 +2123,23 @@ public setContractPeriod ( $value, int $position)
 **Description**
 
 ```php
-public setCourtesyCode ( $value, int $position)
+public setCourtesyCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Courtesy Code (OBR.22) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 22  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1849,21 +2151,23 @@ public setCourtesyCode ( $value, int $position)
 **Description**
 
 ```php
-public setCreditRating ( $value, int $position)
+public setCreditRating (string|int|array|null $value, int $position)
 ```
 
- 
+Set Credit Rating (OBR.23) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 23  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1875,21 +2179,23 @@ public setCreditRating ( $value, int $position)
 **Description**
 
 ```php
-public setCurrentPatientBalance ( $value, int $position)
+public setCurrentPatientBalance (string|int|array|null $value, int $position)
 ```
 
- 
+Set Current PatientBalance (OBR.46) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 46  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1901,21 +2207,23 @@ public setCurrentPatientBalance ( $value, int $position)
 **Description**
 
 ```php
-public setDeleteAccountDate ( $value, int $position)
+public setDeleteAccountDate (string|int|array|null $value, int $position)
 ```
 
- 
+Set Delete AccountDate (OBR.35) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 35  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1927,21 +2235,23 @@ public setDeleteAccountDate ( $value, int $position)
 **Description**
 
 ```php
-public setDeleteAccountIndicator ( $value, int $position)
+public setDeleteAccountIndicator (string|int|array|null $value, int $position)
 ```
 
- 
+Set Delete AccountIndicator (OBR.34) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 34  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1953,21 +2263,23 @@ public setDeleteAccountIndicator ( $value, int $position)
 **Description**
 
 ```php
-public setDietType ( $value, int $position)
+public setDietType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Diet Type (OBR.38) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 38  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1979,21 +2291,23 @@ public setDietType ( $value, int $position)
 **Description**
 
 ```php
-public setDischargeDateTime ( $value, int $position)
+public setDischargeDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Discharge DateTime (OBR.45) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 45  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2005,21 +2319,23 @@ public setDischargeDateTime ( $value, int $position)
 **Description**
 
 ```php
-public setDischargeDisposition ( $value, int $position)
+public setDischargeDisposition (string|int|array|null $value, int $position)
 ```
 
- 
+Set Discharge Disposition (OBR.36) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 36  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2031,21 +2347,23 @@ public setDischargeDisposition ( $value, int $position)
 **Description**
 
 ```php
-public setDischargedToLocation ( $value, int $position)
+public setDischargedToLocation (string|int|array|null $value, int $position)
 ```
 
- 
+Set Discharged ToLocation (OBR.37) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 37  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2057,21 +2375,23 @@ public setDischargedToLocation ( $value, int $position)
 **Description**
 
 ```php
-public setFinancialClass ( $value, int $position)
+public setFinancialClass (string|int|array|null $value, int $position)
 ```
 
- 
+Set Financial Class (OBR.20) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 20  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2083,21 +2403,23 @@ public setFinancialClass ( $value, int $position)
 **Description**
 
 ```php
-public setHospitalService ( $value, int $position)
+public setHospitalService (string|int|array|null $value, int $position)
 ```
 
- 
+Set Hospital Service (OBR.10) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2109,7 +2431,7 @@ public setHospitalService ( $value, int $position)
 **Description**
 
 ```php
-public setID (void)
+ setID (void)
 ```
 
  
@@ -2124,6 +2446,7 @@ public setID (void)
 
 `void`
 
+
 <hr />
 
 
@@ -2132,21 +2455,23 @@ public setID (void)
 **Description**
 
 ```php
-public setInterestCode ( $value, int $position)
+public setInterestCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Interest Code (OBR.28) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 28  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2158,21 +2483,23 @@ public setInterestCode ( $value, int $position)
 **Description**
 
 ```php
-public setOtherHealthcareProvider ( $value, int $position)
+public setOtherHealthcareProvider (string|int|array|null $value, int $position)
 ```
 
- 
+Set Other HealthcareProvider (OBR.52) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 52  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2184,20 +2511,25 @@ public setOtherHealthcareProvider ( $value, int $position)
 **Description**
 
 ```php
-public setPatientClass (void)
+public setPatientClass (string|int|array|null $value, int $position)
 ```
 
- 
+Set Patient Class (OBR.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2207,21 +2539,23 @@ public setPatientClass (void)
 **Description**
 
 ```php
-public setPatientType ( $value, int $position)
+public setPatientType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Patient Type (OBR.18) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2233,21 +2567,23 @@ public setPatientType ( $value, int $position)
 **Description**
 
 ```php
-public setPendingLocation ( $value, int $position)
+public setPendingLocation (string|int|array|null $value, int $position)
 ```
 
- 
+Set Pending Location (OBR.42) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 42  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2259,21 +2595,23 @@ public setPendingLocation ( $value, int $position)
 **Description**
 
 ```php
-public setPreAdmitNumber ( $value, int $position)
+public setPreAdmitNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Pre AdmitNumber (OBR.5) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2285,21 +2623,23 @@ public setPreAdmitNumber ( $value, int $position)
 **Description**
 
 ```php
-public setPreAdmitTestIndicator ( $value, int $position)
+public setPreAdmitTestIndicator (string|int|array|null $value, int $position)
 ```
 
- 
+Set Pre AdmitTestIndicator (OBR.12) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2311,21 +2651,23 @@ public setPreAdmitTestIndicator ( $value, int $position)
 **Description**
 
 ```php
-public setPriorPatientLocation ( $value, int $position)
+public setPriorPatientLocation (string|int|array|null $value, int $position)
 ```
 
- 
+Set Prior PatientLocation (OBR.6) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2337,21 +2679,23 @@ public setPriorPatientLocation ( $value, int $position)
 **Description**
 
 ```php
-public setPriorTemporaryLocation ( $value, int $position)
+public setPriorTemporaryLocation (string|int|array|null $value, int $position)
 ```
 
- 
+Set Prior TemporaryLocation (OBR.43) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 43  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2363,21 +2707,23 @@ public setPriorTemporaryLocation ( $value, int $position)
 **Description**
 
 ```php
-public setReAdmissionIndicator ( $value, int $position)
+public setReAdmissionIndicator (string|int|array|null $value, int $position)
 ```
 
- 
+Set Re AdmissionIndicator (OBR.13) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2389,21 +2735,23 @@ public setReAdmissionIndicator ( $value, int $position)
 **Description**
 
 ```php
-public setReferringDoctor ( $value, int $position)
+public setReferringDoctor (string|int|array|null $value, int $position)
 ```
 
- 
+Set Referring Doctor (OBR.8) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2415,21 +2763,23 @@ public setReferringDoctor ( $value, int $position)
 **Description**
 
 ```php
-public setServicingFacility ( $value, int $position)
+public setServicingFacility (string|int|array|null $value, int $position)
 ```
 
- 
+Set Servicing Facility (OBR.39) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 39  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2441,21 +2791,23 @@ public setServicingFacility ( $value, int $position)
 **Description**
 
 ```php
-public setTemporaryLocation ( $value, int $position)
+public setTemporaryLocation (string|int|array|null $value, int $position)
 ```
 
- 
+Set Temporary Location (OBR.11) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2467,21 +2819,23 @@ public setTemporaryLocation ( $value, int $position)
 **Description**
 
 ```php
-public setTotalAdjustments ( $value, int $position)
+public setTotalAdjustments (string|int|array|null $value, int $position)
 ```
 
- 
+Set Total Adjustments (OBR.48) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 48  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2493,21 +2847,23 @@ public setTotalAdjustments ( $value, int $position)
 **Description**
 
 ```php
-public setTotalCharges ( $value, int $position)
+public setTotalCharges (string|int|array|null $value, int $position)
 ```
 
- 
+Set Total Charges (OBR.47) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 47  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2519,21 +2875,23 @@ public setTotalCharges ( $value, int $position)
 **Description**
 
 ```php
-public setTotalPayments ( $value, int $position)
+public setTotalPayments (string|int|array|null $value, int $position)
 ```
 
- 
+Set Total Payments (OBR.49) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 49  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2545,21 +2903,23 @@ public setTotalPayments ( $value, int $position)
 **Description**
 
 ```php
-public setTransferToBadDebtCode ( $value, int $position)
+public setTransferToBadDebtCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Transfer ToBadDebtCode (OBR.29) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 29  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2571,21 +2931,23 @@ public setTransferToBadDebtCode ( $value, int $position)
 **Description**
 
 ```php
-public setTransferToBadDebtDate ( $value, int $position)
+public setTransferToBadDebtDate (string|int|array|null $value, int $position)
 ```
 
- 
+Set Transfer ToBadDebtDate (OBR.30) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 30  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2597,21 +2959,23 @@ public setTransferToBadDebtDate ( $value, int $position)
 **Description**
 
 ```php
-public setVipIndicator ( $value, int $position)
+public setVipIndicator (string|int|array|null $value, int $position)
 ```
 
- 
+Set Vip Indicator (OBR.16) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2623,21 +2987,23 @@ public setVipIndicator ( $value, int $position)
 **Description**
 
 ```php
-public setVisitIndicator ( $value, int $position)
+public setVisitIndicator (string|int|array|null $value, int $position)
 ```
 
- 
+Set Visit Indicator (OBR.51) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 51  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -2649,21 +3015,23 @@ public setVisitIndicator ( $value, int $position)
 **Description**
 
 ```php
-public setVisitNumber ( $value, int $position)
+public setVisitNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Visit Number (OBR.19) 
 
  
 
 **Parameters**
 
-* `() $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
 `bool`
+
 
 
 

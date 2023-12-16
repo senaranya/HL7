@@ -14,3 +14,6 @@
 * [Segments\OBX](Segments/OBX.md) 
 * [Segments\ORC](Segments/ORC.md) 
 * [Segments\PV1](Segments/PV1.md) 
+* [Segments\EVN](Segments/EVN.md) 
+* [Segments\EQU](Segments/EQU.md) 
+* [Segments\SAC](Segments/SAC.md) 

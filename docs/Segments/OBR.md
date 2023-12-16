@@ -13,98 +13,101 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getAssistantResultInterpreter](#obrgetassistantresultinterpreter)||
-|[getChargetoPractice](#obrgetchargetopractice)||
-|[getCollectionVolume](#obrgetcollectionvolume)||
-|[getCollectorIdentifier](#obrgetcollectoridentifier)||
-|[getCollectorsComment](#obrgetcollectorscomment)||
-|[getDangerCode](#obrgetdangercode)||
-|[getDiagnosticServSectID](#obrgetdiagnosticservsectid)||
-|[getEscortRequired](#obrgetescortrequired)||
+|[__destruct](#obr__destruct)||
+|[getAssistantResultInterpreter](#obrgetassistantresultinterpreter)|Get Assistant ResultInterpreter (OBR.33)|
+|[getChargetoPractice](#obrgetchargetopractice)|Get Chargeto Practice (OBR.23)|
+|[getCollectionVolume](#obrgetcollectionvolume)|Get Collection Volume (OBR.9)|
+|[getCollectorIdentifier](#obrgetcollectoridentifier)|Get Collector Identifier (OBR.10)|
+|[getCollectorsComment](#obrgetcollectorscomment)|Get Collectors Comment (OBR.39)|
+|[getDangerCode](#obrgetdangercode)|Get Danger Code (OBR.12)|
+|[getDiagnosticServSectID](#obrgetdiagnosticservsectid)|Get Diagnostic ServSectID (OBR.24)|
+|[getEscortRequired](#obrgetescortrequired)|Get Escort Required (OBR.42)|
 |[getFillerField1](#obrgetfillerfield1)||
 |[getFillerField2](#obrgetfillerfield2)||
-|[getFillerOrderNumber](#obrgetfillerordernumber)||
-|[getID](#obrgetid)||
-|[getNumberofSampleContainers](#obrgetnumberofsamplecontainers)||
-|[getObservationDateTime](#obrgetobservationdatetime)||
-|[getObservationEndDateTime](#obrgetobservationenddatetime)||
-|[getOrderCallbackPhoneNumber](#obrgetordercallbackphonenumber)||
-|[getOrderingProvider](#obrgetorderingprovider)||
-|[getParent](#obrgetparent)||
-|[getParentResult](#obrgetparentresult)||
-|[getPlacerOrderNumber](#obrgetplacerordernumber)||
+|[getFillerOrderNumber](#obrgetfillerordernumber)|Get Filler OrderNumber (OBR.3)|
+|[getID](#obrgetid)|Get ID (OBR.1)|
+|[getNumberofSampleContainers](#obrgetnumberofsamplecontainers)|Get Numberof SampleContainers (OBR.37)|
+|[getObservationDateTime](#obrgetobservationdatetime)|Get Observation DateTime (OBR.7)|
+|[getObservationEndDateTime](#obrgetobservationenddatetime)|Get Observation EndDateTime (OBR.8)|
+|[getOrderCallbackPhoneNumber](#obrgetordercallbackphonenumber)|Get Order CallbackPhoneNumber (OBR.17)|
+|[getOrderingProvider](#obrgetorderingprovider)|Get Ordering Provider (OBR.16)|
+|[getParent](#obrgetparent)|Get Parent (OBR.29)|
+|[getParentResult](#obrgetparentresult)|Get Parent Result (OBR.26)|
+|[getPlacerOrderNumber](#obrgetplacerordernumber)|Get Placer OrderNumber (OBR.2)|
 |[getPlacerfield1](#obrgetplacerfield1)||
 |[getPlacerfield2](#obrgetplacerfield2)||
-|[getPlannedPatientTransportComment](#obrgetplannedpatienttransportcomment)||
-|[getPrincipalResultInterpreter](#obrgetprincipalresultinterpreter)||
-|[getPriority](#obrgetpriority)||
-|[getQuantityTiming](#obrgetquantitytiming)||
-|[getReasonforStudy](#obrgetreasonforstudy)||
-|[getRelevantClinicalInfo](#obrgetrelevantclinicalinfo)||
-|[getRequestedDatetime](#obrgetrequesteddatetime)||
-|[getResultCopiesTo](#obrgetresultcopiesto)||
-|[getResultStatus](#obrgetresultstatus)||
-|[getResultsRptStatusChngDateTime](#obrgetresultsrptstatuschngdatetime)||
-|[getScheduledDateTime](#obrgetscheduleddatetime)||
-|[getSpecimenActionCode](#obrgetspecimenactioncode)||
-|[getSpecimenReceivedDateTime](#obrgetspecimenreceiveddatetime)||
-|[getSpecimenSource](#obrgetspecimensource)||
-|[getTechnician](#obrgettechnician)||
-|[getTranscriptionist](#obrgettranscriptionist)||
-|[getTransportArranged](#obrgettransportarranged)||
-|[getTransportArrangementResponsibility](#obrgettransportarrangementresponsibility)||
-|[getTransportLogisticsofCollectedSample](#obrgettransportlogisticsofcollectedsample)||
-|[getTransportationMode](#obrgettransportationmode)||
-|[getUniversalServiceID](#obrgetuniversalserviceid)||
-|[setAssistantResultInterpreter](#obrsetassistantresultinterpreter)||
-|[setChargetoPractice](#obrsetchargetopractice)||
-|[setCollectionVolume](#obrsetcollectionvolume)||
-|[setCollectorIdentifier](#obrsetcollectoridentifier)||
-|[setCollectorsComment](#obrsetcollectorscomment)||
-|[setDangerCode](#obrsetdangercode)||
-|[setDiagnosticServSectID](#obrsetdiagnosticservsectid)||
-|[setEscortRequired](#obrsetescortrequired)||
+|[getPlannedPatientTransportComment](#obrgetplannedpatienttransportcomment)|Get Planned PatientTransportComment (OBR.43)|
+|[getPrincipalResultInterpreter](#obrgetprincipalresultinterpreter)|Get Principal ResultInterpreter (OBR.32)|
+|[getPriority](#obrgetpriority)|Get Priority (OBR.5)|
+|[getQuantityTiming](#obrgetquantitytiming)|Get Quantity Timing (OBR.27)|
+|[getReasonforStudy](#obrgetreasonforstudy)|Get Reasonfor Study (OBR.31)|
+|[getRelevantClinicalInfo](#obrgetrelevantclinicalinfo)|Get Relevant ClinicalInfo (OBR.13)|
+|[getRequestedDatetime](#obrgetrequesteddatetime)|Get Requested Datetime (OBR.6)|
+|[getResultCopiesTo](#obrgetresultcopiesto)|Get Result CopiesTo (OBR.28)|
+|[getResultStatus](#obrgetresultstatus)|Get Result Status (OBR.25)|
+|[getResultsRptStatusChngDateTime](#obrgetresultsrptstatuschngdatetime)|Get Results RptStatusChngDateTime (OBR.22)|
+|[getScheduledDateTime](#obrgetscheduleddatetime)|Get Scheduled DateTime (OBR.36)|
+|[getSpecimenActionCode](#obrgetspecimenactioncode)|Get Specimen ActionCode (OBR.11)|
+|[getSpecimenReceivedDateTime](#obrgetspecimenreceiveddatetime)|Get Specimen ReceivedDateTime (OBR.14)|
+|[getSpecimenSource](#obrgetspecimensource)|Get Specimen Source (OBR.15)|
+|[getTechnician](#obrgettechnician)|Get Technician (OBR.34)|
+|[getTranscriptionist](#obrgettranscriptionist)|Get Transcriptionist (OBR.35)|
+|[getTransportArranged](#obrgettransportarranged)|Get Transport Arranged (OBR.41)|
+|[getTransportArrangementResponsibility](#obrgettransportarrangementresponsibility)|Get Transport ArrangementResponsibility (OBR.40)|
+|[getTransportLogisticsofCollectedSample](#obrgettransportlogisticsofcollectedsample)|Get Transport LogisticsofCollectedSample (OBR.38)|
+|[getTransportationMode](#obrgettransportationmode)|Get Transportation Mode (OBR.30)|
+|[getUniversalServiceID](#obrgetuniversalserviceid)|Get Universal ServiceID (OBR.4)|
+|[resetIndex](#obrresetindex)|Reset index of this segment|
+|[setAssistantResultInterpreter](#obrsetassistantresultinterpreter)|Set Assistant ResultInterpreter (OBR.33)|
+|[setChargetoPractice](#obrsetchargetopractice)|Set Chargeto Practice (OBR.23)|
+|[setCollectionVolume](#obrsetcollectionvolume)|Set Collection Volume (OBR.9)|
+|[setCollectorIdentifier](#obrsetcollectoridentifier)|Set Collector Identifier (OBR.10)|
+|[setCollectorsComment](#obrsetcollectorscomment)|Set Collectors Comment (OBR.39)|
+|[setDangerCode](#obrsetdangercode)|Set Danger Code (OBR.12)|
+|[setDiagnosticServSectID](#obrsetdiagnosticservsectid)|Set Diagnostic ServSectID (OBR.24)|
+|[setEscortRequired](#obrsetescortrequired)|Set Escort Required (OBR.42)|
 |[setFillerField1](#obrsetfillerfield1)||
 |[setFillerField2](#obrsetfillerfield2)||
-|[setFillerOrderNumber](#obrsetfillerordernumber)||
+|[setFillerOrderNumber](#obrsetfillerordernumber)|Set Filler OrderNumber (OBR.3)|
 |[setID](#obrsetid)||
-|[setNumberofSampleContainers](#obrsetnumberofsamplecontainers)||
-|[setObservationDateTime](#obrsetobservationdatetime)||
-|[setObservationEndDateTime](#obrsetobservationenddatetime)||
-|[setOrderCallbackPhoneNumber](#obrsetordercallbackphonenumber)||
-|[setOrderingProvider](#obrsetorderingprovider)||
-|[setParent](#obrsetparent)||
-|[setParentResult](#obrsetparentresult)||
-|[setPlacerOrderNumber](#obrsetplacerordernumber)||
+|[setNumberofSampleContainers](#obrsetnumberofsamplecontainers)|Set Numberof SampleContainers (OBR.37)|
+|[setObservationDateTime](#obrsetobservationdatetime)|Set Observation DateTime (OBR.7)|
+|[setObservationEndDateTime](#obrsetobservationenddatetime)|Set Observation EndDateTime (OBR.8)|
+|[setOrderCallbackPhoneNumber](#obrsetordercallbackphonenumber)|Set Order CallbackPhoneNumber (OBR.17)|
+|[setOrderingProvider](#obrsetorderingprovider)|Set Ordering Provider (OBR.16)|
+|[setParent](#obrsetparent)|Set Parent (OBR.29)|
+|[setParentResult](#obrsetparentresult)|Set Parent Result (OBR.26)|
+|[setPlacerOrderNumber](#obrsetplacerordernumber)|Set Placer OrderNumber (OBR.2)|
 |[setPlacerfield1](#obrsetplacerfield1)||
 |[setPlacerfield2](#obrsetplacerfield2)||
-|[setPlannedPatientTransportComment](#obrsetplannedpatienttransportcomment)||
-|[setPrincipalResultInterpreter](#obrsetprincipalresultinterpreter)||
-|[setPriority](#obrsetpriority)||
-|[setQuantityTiming](#obrsetquantitytiming)||
-|[setReasonforStudy](#obrsetreasonforstudy)||
-|[setRelevantClinicalInfo](#obrsetrelevantclinicalinfo)||
-|[setRequestedDatetime](#obrsetrequesteddatetime)||
-|[setResultCopiesTo](#obrsetresultcopiesto)||
-|[setResultStatus](#obrsetresultstatus)||
-|[setResultsRptStatusChngDateTime](#obrsetresultsrptstatuschngdatetime)||
-|[setScheduledDateTime](#obrsetscheduleddatetime)||
-|[setSpecimenActionCode](#obrsetspecimenactioncode)||
-|[setSpecimenReceivedDateTime](#obrsetspecimenreceiveddatetime)||
-|[setSpecimenSource](#obrsetspecimensource)||
-|[setTechnician](#obrsettechnician)||
-|[setTranscriptionist](#obrsettranscriptionist)||
-|[setTransportArranged](#obrsettransportarranged)||
-|[setTransportArrangementResponsibility](#obrsettransportarrangementresponsibility)||
-|[setTransportLogisticsofCollectedSample](#obrsettransportlogisticsofcollectedsample)||
-|[setTransportationMode](#obrsettransportationmode)||
-|[setUniversalServiceID](#obrsetuniversalserviceid)||
+|[setPlannedPatientTransportComment](#obrsetplannedpatienttransportcomment)|Set Planned PatientTransportComment (OBR.43)|
+|[setPrincipalResultInterpreter](#obrsetprincipalresultinterpreter)|Set Principal ResultInterpreter (OBR.32)|
+|[setPriority](#obrsetpriority)|Set Priority (OBR.5)|
+|[setQuantityTiming](#obrsetquantitytiming)|Set Quantity Timing (OBR.27)|
+|[setReasonforStudy](#obrsetreasonforstudy)|Set Reasonfor Study (OBR.31)|
+|[setRelevantClinicalInfo](#obrsetrelevantclinicalinfo)|Set Relevant ClinicalInfo (OBR.13)|
+|[setRequestedDatetime](#obrsetrequesteddatetime)|Set Requested Datetime (OBR.6)|
+|[setResultCopiesTo](#obrsetresultcopiesto)|Set Result CopiesTo (OBR.28)|
+|[setResultStatus](#obrsetresultstatus)|Set Result Status (OBR.25)|
+|[setResultsRptStatusChngDateTime](#obrsetresultsrptstatuschngdatetime)|Set Results RptStatusChngDateTime (OBR.22)|
+|[setScheduledDateTime](#obrsetscheduleddatetime)|Set Scheduled DateTime (OBR.36)|
+|[setSpecimenActionCode](#obrsetspecimenactioncode)|Set Specimen ActionCode (OBR.11)|
+|[setSpecimenReceivedDateTime](#obrsetspecimenreceiveddatetime)|Set Specimen ReceivedDateTime (OBR.14)|
+|[setSpecimenSource](#obrsetspecimensource)|Set Specimen Source (OBR.15)|
+|[setTechnician](#obrsettechnician)|Set Technician (OBR.34)|
+|[setTranscriptionist](#obrsettranscriptionist)|Set Transcriptionist (OBR.35)|
+|[setTransportArranged](#obrsettransportarranged)|Set Transport Arranged (OBR.41)|
+|[setTransportArrangementResponsibility](#obrsettransportarrangementresponsibility)|Set Transport ArrangementResponsibility (OBR.40)|
+|[setTransportLogisticsofCollectedSample](#obrsettransportlogisticsofcollectedsample)|Set Transport LogisticsofCollectedSample (OBR.38)|
+|[setTransportationMode](#obrsettransportationmode)|Set Transportation Mode (OBR.30)|
+|[setUniversalServiceID](#obrsetuniversalserviceid)|Set Universal ServiceID (OBR.4)|
 
 ## Inherited methods
 
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -113,12 +116,12 @@ Aranyasen\HL7\Segment
 
 
 
-### OBR::getAssistantResultInterpreter  
+### OBR::__destruct  
 
 **Description**
 
 ```php
-public getAssistantResultInterpreter (void)
+ __destruct (void)
 ```
 
  
@@ -132,6 +135,34 @@ public getAssistantResultInterpreter (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### OBR::getAssistantResultInterpreter  
+
+**Description**
+
+```php
+public getAssistantResultInterpreter (int $position)
+```
+
+Get Assistant ResultInterpreter (OBR.33) 
+
+ 
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 33  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -141,20 +172,24 @@ public getAssistantResultInterpreter (void)
 **Description**
 
 ```php
-public getChargetoPractice (void)
+public getChargetoPractice (int $position)
 ```
 
- 
+Get Chargeto Practice (OBR.23) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 23  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -164,20 +199,24 @@ public getChargetoPractice (void)
 **Description**
 
 ```php
-public getCollectionVolume (void)
+public getCollectionVolume (int $position)
 ```
 
- 
+Get Collection Volume (OBR.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -187,20 +226,24 @@ public getCollectionVolume (void)
 **Description**
 
 ```php
-public getCollectorIdentifier (void)
+public getCollectorIdentifier (int $position)
 ```
 
- 
+Get Collector Identifier (OBR.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -210,20 +253,24 @@ public getCollectorIdentifier (void)
 **Description**
 
 ```php
-public getCollectorsComment (void)
+public getCollectorsComment (int $position)
 ```
 
- 
+Get Collectors Comment (OBR.39) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 39  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -233,20 +280,24 @@ public getCollectorsComment (void)
 **Description**
 
 ```php
-public getDangerCode (void)
+public getDangerCode (int $position)
 ```
 
- 
+Get Danger Code (OBR.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -256,20 +307,24 @@ public getDangerCode (void)
 **Description**
 
 ```php
-public getDiagnosticServSectID (void)
+public getDiagnosticServSectID (int $position)
 ```
 
- 
+Get Diagnostic ServSectID (OBR.24) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 24  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -279,20 +334,24 @@ public getDiagnosticServSectID (void)
 **Description**
 
 ```php
-public getEscortRequired (void)
+public getEscortRequired (int $position)
 ```
 
- 
+Get Escort Required (OBR.42) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 42  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -302,7 +361,7 @@ public getEscortRequired (void)
 **Description**
 
 ```php
-public getFillerField1 (void)
+ getFillerField1 (void)
 ```
 
  
@@ -316,6 +375,7 @@ public getFillerField1 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -325,7 +385,7 @@ public getFillerField1 (void)
 **Description**
 
 ```php
-public getFillerField2 (void)
+ getFillerField2 (void)
 ```
 
  
@@ -339,6 +399,7 @@ public getFillerField2 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -348,20 +409,24 @@ public getFillerField2 (void)
 **Description**
 
 ```php
-public getFillerOrderNumber (void)
+public getFillerOrderNumber (int $position)
 ```
 
- 
+Get Filler OrderNumber (OBR.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -371,20 +436,24 @@ public getFillerOrderNumber (void)
 **Description**
 
 ```php
-public getID (void)
+public getID (int $position)
 ```
 
- 
+Get ID (OBR.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -394,20 +463,24 @@ public getID (void)
 **Description**
 
 ```php
-public getNumberofSampleContainers (void)
+public getNumberofSampleContainers (int $position)
 ```
 
- 
+Get Numberof SampleContainers (OBR.37) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 37  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -417,20 +490,24 @@ public getNumberofSampleContainers (void)
 **Description**
 
 ```php
-public getObservationDateTime (void)
+public getObservationDateTime (int $position)
 ```
 
- 
+Get Observation DateTime (OBR.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -440,20 +517,24 @@ public getObservationDateTime (void)
 **Description**
 
 ```php
-public getObservationEndDateTime (void)
+public getObservationEndDateTime (int $position)
 ```
 
- 
+Get Observation EndDateTime (OBR.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -463,20 +544,24 @@ public getObservationEndDateTime (void)
 **Description**
 
 ```php
-public getOrderCallbackPhoneNumber (void)
+public getOrderCallbackPhoneNumber (int $position)
 ```
 
- 
+Get Order CallbackPhoneNumber (OBR.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -486,20 +571,24 @@ public getOrderCallbackPhoneNumber (void)
 **Description**
 
 ```php
-public getOrderingProvider (void)
+public getOrderingProvider (int $position)
 ```
 
- 
+Get Ordering Provider (OBR.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -509,20 +598,24 @@ public getOrderingProvider (void)
 **Description**
 
 ```php
-public getParent (void)
+public getParent (int $position)
 ```
 
- 
+Get Parent (OBR.29) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 29  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -532,20 +625,24 @@ public getParent (void)
 **Description**
 
 ```php
-public getParentResult (void)
+public getParentResult (int $position)
 ```
 
- 
+Get Parent Result (OBR.26) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 26  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -555,20 +652,24 @@ public getParentResult (void)
 **Description**
 
 ```php
-public getPlacerOrderNumber (void)
+public getPlacerOrderNumber (int $position)
 ```
 
- 
+Get Placer OrderNumber (OBR.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -578,7 +679,7 @@ public getPlacerOrderNumber (void)
 **Description**
 
 ```php
-public getPlacerfield1 (void)
+ getPlacerfield1 (void)
 ```
 
  
@@ -592,6 +693,7 @@ public getPlacerfield1 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -601,7 +703,7 @@ public getPlacerfield1 (void)
 **Description**
 
 ```php
-public getPlacerfield2 (void)
+ getPlacerfield2 (void)
 ```
 
  
@@ -615,6 +717,7 @@ public getPlacerfield2 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -624,20 +727,24 @@ public getPlacerfield2 (void)
 **Description**
 
 ```php
-public getPlannedPatientTransportComment (void)
+public getPlannedPatientTransportComment (int $position)
 ```
 
- 
+Get Planned PatientTransportComment (OBR.43) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 43  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -647,20 +754,24 @@ public getPlannedPatientTransportComment (void)
 **Description**
 
 ```php
-public getPrincipalResultInterpreter (void)
+public getPrincipalResultInterpreter (int $position)
 ```
 
- 
+Get Principal ResultInterpreter (OBR.32) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 32  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -670,20 +781,24 @@ public getPrincipalResultInterpreter (void)
 **Description**
 
 ```php
-public getPriority (void)
+public getPriority (int $position)
 ```
 
- 
+Get Priority (OBR.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -693,20 +808,24 @@ public getPriority (void)
 **Description**
 
 ```php
-public getQuantityTiming (void)
+public getQuantityTiming (int $position)
 ```
 
- 
+Get Quantity Timing (OBR.27) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 27  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -716,20 +835,24 @@ public getQuantityTiming (void)
 **Description**
 
 ```php
-public getReasonforStudy (void)
+public getReasonforStudy (int $position)
 ```
 
- 
+Get Reasonfor Study (OBR.31) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 31  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -739,20 +862,24 @@ public getReasonforStudy (void)
 **Description**
 
 ```php
-public getRelevantClinicalInfo (void)
+public getRelevantClinicalInfo (int $position)
 ```
 
- 
+Get Relevant ClinicalInfo (OBR.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -762,20 +889,24 @@ public getRelevantClinicalInfo (void)
 **Description**
 
 ```php
-public getRequestedDatetime (void)
+public getRequestedDatetime (int $position)
 ```
 
- 
+Get Requested Datetime (OBR.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -785,20 +916,24 @@ public getRequestedDatetime (void)
 **Description**
 
 ```php
-public getResultCopiesTo (void)
+public getResultCopiesTo (int $position)
 ```
 
- 
+Get Result CopiesTo (OBR.28) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 28  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -808,20 +943,24 @@ public getResultCopiesTo (void)
 **Description**
 
 ```php
-public getResultStatus (void)
+public getResultStatus (int $position)
 ```
 
- 
+Get Result Status (OBR.25) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 25  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -831,20 +970,24 @@ public getResultStatus (void)
 **Description**
 
 ```php
-public getResultsRptStatusChngDateTime (void)
+public getResultsRptStatusChngDateTime (int $position)
 ```
 
- 
+Get Results RptStatusChngDateTime (OBR.22) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 22  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -854,20 +997,24 @@ public getResultsRptStatusChngDateTime (void)
 **Description**
 
 ```php
-public getScheduledDateTime (void)
+public getScheduledDateTime (int $position)
 ```
 
- 
+Get Scheduled DateTime (OBR.36) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 36  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -877,20 +1024,24 @@ public getScheduledDateTime (void)
 **Description**
 
 ```php
-public getSpecimenActionCode (void)
+public getSpecimenActionCode (int $position)
 ```
 
- 
+Get Specimen ActionCode (OBR.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -900,20 +1051,24 @@ public getSpecimenActionCode (void)
 **Description**
 
 ```php
-public getSpecimenReceivedDateTime (void)
+public getSpecimenReceivedDateTime (int $position)
 ```
 
- 
+Get Specimen ReceivedDateTime (OBR.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -923,20 +1078,24 @@ public getSpecimenReceivedDateTime (void)
 **Description**
 
 ```php
-public getSpecimenSource (void)
+public getSpecimenSource (int $position)
 ```
 
- 
+Get Specimen Source (OBR.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -946,20 +1105,24 @@ public getSpecimenSource (void)
 **Description**
 
 ```php
-public getTechnician (void)
+public getTechnician (int $position)
 ```
 
- 
+Get Technician (OBR.34) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 34  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -969,20 +1132,24 @@ public getTechnician (void)
 **Description**
 
 ```php
-public getTranscriptionist (void)
+public getTranscriptionist (int $position)
 ```
 
- 
+Get Transcriptionist (OBR.35) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 35  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -992,20 +1159,24 @@ public getTranscriptionist (void)
 **Description**
 
 ```php
-public getTransportArranged (void)
+public getTransportArranged (int $position)
 ```
 
- 
+Get Transport Arranged (OBR.41) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 41  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1015,20 +1186,24 @@ public getTransportArranged (void)
 **Description**
 
 ```php
-public getTransportArrangementResponsibility (void)
+public getTransportArrangementResponsibility (int $position)
 ```
 
- 
+Get Transport ArrangementResponsibility (OBR.40) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 40  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1038,20 +1213,24 @@ public getTransportArrangementResponsibility (void)
 **Description**
 
 ```php
-public getTransportLogisticsofCollectedSample (void)
+public getTransportLogisticsofCollectedSample (int $position)
 ```
 
- 
+Get Transport LogisticsofCollectedSample (OBR.38) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 38  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1061,20 +1240,24 @@ public getTransportLogisticsofCollectedSample (void)
 **Description**
 
 ```php
-public getTransportationMode (void)
+public getTransportationMode (int $position)
 ```
 
- 
+Get Transportation Mode (OBR.30) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 30  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1084,10 +1267,37 @@ public getTransportationMode (void)
 **Description**
 
 ```php
-public getUniversalServiceID (void)
+public getUniversalServiceID (int $position)
 ```
 
+Get Universal ServiceID (OBR.4) 
+
  
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 4  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
+
+<hr />
+
+
+### OBR::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (void)
+```
+
+Reset index of this segment 
 
  
 
@@ -1098,6 +1308,7 @@ public getUniversalServiceID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1107,20 +1318,25 @@ public getUniversalServiceID (void)
 **Description**
 
 ```php
-public setAssistantResultInterpreter (void)
+public setAssistantResultInterpreter (string|int|array|null $value, int $position)
 ```
 
- 
+Set Assistant ResultInterpreter (OBR.33) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 33  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1130,20 +1346,25 @@ public setAssistantResultInterpreter (void)
 **Description**
 
 ```php
-public setChargetoPractice (void)
+public setChargetoPractice (string|int|array|null $value, int $position)
 ```
 
- 
+Set Chargeto Practice (OBR.23) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 23  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1153,20 +1374,25 @@ public setChargetoPractice (void)
 **Description**
 
 ```php
-public setCollectionVolume (void)
+public setCollectionVolume (string|int|array|null $value, int $position)
 ```
 
- 
+Set Collection Volume (OBR.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1176,20 +1402,25 @@ public setCollectionVolume (void)
 **Description**
 
 ```php
-public setCollectorIdentifier (void)
+public setCollectorIdentifier (string|int|array|null $value, int $position)
 ```
 
- 
+Set Collector Identifier (OBR.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1199,20 +1430,25 @@ public setCollectorIdentifier (void)
 **Description**
 
 ```php
-public setCollectorsComment (void)
+public setCollectorsComment (string|int|array|null $value, int $position)
 ```
 
- 
+Set Collectors Comment (OBR.39) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 39  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1222,20 +1458,25 @@ public setCollectorsComment (void)
 **Description**
 
 ```php
-public setDangerCode (void)
+public setDangerCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Danger Code (OBR.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1245,20 +1486,25 @@ public setDangerCode (void)
 **Description**
 
 ```php
-public setDiagnosticServSectID (void)
+public setDiagnosticServSectID (string|int|array|null $value, int $position)
 ```
 
- 
+Set Diagnostic ServSectID (OBR.24) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 24  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1268,20 +1514,25 @@ public setDiagnosticServSectID (void)
 **Description**
 
 ```php
-public setEscortRequired (void)
+public setEscortRequired (string|int|array|null $value, int $position)
 ```
 
- 
+Set Escort Required (OBR.42) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 42  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1291,7 +1542,7 @@ public setEscortRequired (void)
 **Description**
 
 ```php
-public setFillerField1 (void)
+ setFillerField1 (void)
 ```
 
  
@@ -1305,6 +1556,7 @@ public setFillerField1 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1314,7 +1566,7 @@ public setFillerField1 (void)
 **Description**
 
 ```php
-public setFillerField2 (void)
+ setFillerField2 (void)
 ```
 
  
@@ -1328,6 +1580,7 @@ public setFillerField2 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1337,20 +1590,25 @@ public setFillerField2 (void)
 **Description**
 
 ```php
-public setFillerOrderNumber (void)
+public setFillerOrderNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Filler OrderNumber (OBR.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1360,7 +1618,7 @@ public setFillerOrderNumber (void)
 **Description**
 
 ```php
-public setID (void)
+ setID (void)
 ```
 
  
@@ -1374,6 +1632,7 @@ public setID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1383,20 +1642,25 @@ public setID (void)
 **Description**
 
 ```php
-public setNumberofSampleContainers (void)
+public setNumberofSampleContainers (string|int|array|null $value, int $position)
 ```
 
- 
+Set Numberof SampleContainers (OBR.37) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 37  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1406,20 +1670,25 @@ public setNumberofSampleContainers (void)
 **Description**
 
 ```php
-public setObservationDateTime (void)
+public setObservationDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Observation DateTime (OBR.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1429,20 +1698,25 @@ public setObservationDateTime (void)
 **Description**
 
 ```php
-public setObservationEndDateTime (void)
+public setObservationEndDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Observation EndDateTime (OBR.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1452,20 +1726,25 @@ public setObservationEndDateTime (void)
 **Description**
 
 ```php
-public setOrderCallbackPhoneNumber (void)
+public setOrderCallbackPhoneNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Order CallbackPhoneNumber (OBR.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1475,20 +1754,25 @@ public setOrderCallbackPhoneNumber (void)
 **Description**
 
 ```php
-public setOrderingProvider (void)
+public setOrderingProvider (string|int|array|null $value, int $position)
 ```
 
- 
+Set Ordering Provider (OBR.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1498,20 +1782,25 @@ public setOrderingProvider (void)
 **Description**
 
 ```php
-public setParent (void)
+public setParent (string|int|array|null $value, int $position)
 ```
 
- 
+Set Parent (OBR.29) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 29  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1521,20 +1810,25 @@ public setParent (void)
 **Description**
 
 ```php
-public setParentResult (void)
+public setParentResult (string|int|array|null $value, int $position)
 ```
 
- 
+Set Parent Result (OBR.26) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 26  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1544,20 +1838,25 @@ public setParentResult (void)
 **Description**
 
 ```php
-public setPlacerOrderNumber (void)
+public setPlacerOrderNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Placer OrderNumber (OBR.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1567,7 +1866,7 @@ public setPlacerOrderNumber (void)
 **Description**
 
 ```php
-public setPlacerfield1 (void)
+ setPlacerfield1 (void)
 ```
 
  
@@ -1581,6 +1880,7 @@ public setPlacerfield1 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1590,7 +1890,7 @@ public setPlacerfield1 (void)
 **Description**
 
 ```php
-public setPlacerfield2 (void)
+ setPlacerfield2 (void)
 ```
 
  
@@ -1604,6 +1904,7 @@ public setPlacerfield2 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1613,20 +1914,25 @@ public setPlacerfield2 (void)
 **Description**
 
 ```php
-public setPlannedPatientTransportComment (void)
+public setPlannedPatientTransportComment (string|int|array|null $value, int $position)
 ```
 
- 
+Set Planned PatientTransportComment (OBR.43) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 43  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1636,20 +1942,25 @@ public setPlannedPatientTransportComment (void)
 **Description**
 
 ```php
-public setPrincipalResultInterpreter (void)
+public setPrincipalResultInterpreter (string|int|array|null $value, int $position)
 ```
 
- 
+Set Principal ResultInterpreter (OBR.32) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 32  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1659,20 +1970,25 @@ public setPrincipalResultInterpreter (void)
 **Description**
 
 ```php
-public setPriority (void)
+public setPriority (string|int|array|null $value, int $position)
 ```
 
- 
+Set Priority (OBR.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1682,20 +1998,25 @@ public setPriority (void)
 **Description**
 
 ```php
-public setQuantityTiming (void)
+public setQuantityTiming (string|int|array|null $value, int $position)
 ```
 
- 
+Set Quantity Timing (OBR.27) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 27  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1705,20 +2026,25 @@ public setQuantityTiming (void)
 **Description**
 
 ```php
-public setReasonforStudy (void)
+public setReasonforStudy (string|int|array|null $value, int $position)
 ```
 
- 
+Set Reasonfor Study (OBR.31) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 31  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1728,20 +2054,25 @@ public setReasonforStudy (void)
 **Description**
 
 ```php
-public setRelevantClinicalInfo (void)
+public setRelevantClinicalInfo (string|int|array|null $value, int $position)
 ```
 
- 
+Set Relevant ClinicalInfo (OBR.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1751,20 +2082,25 @@ public setRelevantClinicalInfo (void)
 **Description**
 
 ```php
-public setRequestedDatetime (void)
+public setRequestedDatetime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Requested Datetime (OBR.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1774,20 +2110,25 @@ public setRequestedDatetime (void)
 **Description**
 
 ```php
-public setResultCopiesTo (void)
+public setResultCopiesTo (string|int|array|null $value, int $position)
 ```
 
- 
+Set Result CopiesTo (OBR.28) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 28  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1797,20 +2138,25 @@ public setResultCopiesTo (void)
 **Description**
 
 ```php
-public setResultStatus (void)
+public setResultStatus (string|int|array|null $value, int $position)
 ```
 
- 
+Set Result Status (OBR.25) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 25  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1820,20 +2166,25 @@ public setResultStatus (void)
 **Description**
 
 ```php
-public setResultsRptStatusChngDateTime (void)
+public setResultsRptStatusChngDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Results RptStatusChngDateTime (OBR.22) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 22  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1843,20 +2194,25 @@ public setResultsRptStatusChngDateTime (void)
 **Description**
 
 ```php
-public setScheduledDateTime (void)
+public setScheduledDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Scheduled DateTime (OBR.36) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 36  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1866,20 +2222,25 @@ public setScheduledDateTime (void)
 **Description**
 
 ```php
-public setSpecimenActionCode (void)
+public setSpecimenActionCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Specimen ActionCode (OBR.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1889,20 +2250,25 @@ public setSpecimenActionCode (void)
 **Description**
 
 ```php
-public setSpecimenReceivedDateTime (void)
+public setSpecimenReceivedDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Specimen ReceivedDateTime (OBR.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1912,20 +2278,25 @@ public setSpecimenReceivedDateTime (void)
 **Description**
 
 ```php
-public setSpecimenSource (void)
+public setSpecimenSource (string|int|array|null $value, int $position)
 ```
 
- 
+Set Specimen Source (OBR.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1935,20 +2306,25 @@ public setSpecimenSource (void)
 **Description**
 
 ```php
-public setTechnician (void)
+public setTechnician (string|int|array|null $value, int $position)
 ```
 
- 
+Set Technician (OBR.34) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 34  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1958,20 +2334,25 @@ public setTechnician (void)
 **Description**
 
 ```php
-public setTranscriptionist (void)
+public setTranscriptionist (string|int|array|null $value, int $position)
 ```
 
- 
+Set Transcriptionist (OBR.35) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 35  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1981,20 +2362,25 @@ public setTranscriptionist (void)
 **Description**
 
 ```php
-public setTransportArranged (void)
+public setTransportArranged (string|int|array|null $value, int $position)
 ```
 
- 
+Set Transport Arranged (OBR.41) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 41  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2004,20 +2390,25 @@ public setTransportArranged (void)
 **Description**
 
 ```php
-public setTransportArrangementResponsibility (void)
+public setTransportArrangementResponsibility (string|int|array|null $value, int $position)
 ```
 
- 
+Set Transport ArrangementResponsibility (OBR.40) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 40  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2027,20 +2418,25 @@ public setTransportArrangementResponsibility (void)
 **Description**
 
 ```php
-public setTransportLogisticsofCollectedSample (void)
+public setTransportLogisticsofCollectedSample (string|int|array|null $value, int $position)
 ```
 
- 
+Set Transport LogisticsofCollectedSample (OBR.38) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 38  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2050,20 +2446,25 @@ public setTransportLogisticsofCollectedSample (void)
 **Description**
 
 ```php
-public setTransportationMode (void)
+public setTransportationMode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Transportation Mode (OBR.30) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 30  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2073,20 +2474,25 @@ public setTransportationMode (void)
 **Description**
 
 ```php
-public setUniversalServiceID (void)
+public setUniversalServiceID (string|int|array|null $value, int $position)
 ```
 
- 
+Set Universal ServiceID (OBR.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 

@@ -1,6 +1,7 @@
 # Aranyasen\HL7\Segments\PID  
 
 PID segment class
+Reference: https://corepointhealth.com/resource-center/hl7-resources/hl7-pid-segment
 
 
 
@@ -12,72 +13,75 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getAlternatePatientID](#pidgetalternatepatientid)||
-|[getBirthOrder](#pidgetbirthorder)||
-|[getBirthPlace](#pidgetbirthplace)||
-|[getCitizenship](#pidgetcitizenship)||
-|[getCountryCode](#pidgetcountrycode)||
-|[getDateTimeOfBirth](#pidgetdatetimeofbirth)||
-|[getDriversLicenseNumber](#pidgetdriverslicensenumber)||
-|[getEthnicGroup](#pidgetethnicgroup)||
-|[getID](#pidgetid)||
-|[getMaritalStatus](#pidgetmaritalstatus)||
-|[getMothersIdentifier](#pidgetmothersidentifier)||
-|[getMothersMaidenName](#pidgetmothersmaidenname)||
-|[getMultipleBirthIndicator](#pidgetmultiplebirthindicator)||
-|[getNationality](#pidgetnationality)||
-|[getPatientAccountNumber](#pidgetpatientaccountnumber)||
-|[getPatientAddress](#pidgetpatientaddress)||
-|[getPatientAlias](#pidgetpatientalias)||
-|[getPatientDeathDateAndTime](#pidgetpatientdeathdateandtime)||
-|[getPatientDeathIndicator](#pidgetpatientdeathindicator)||
-|[getPatientID](#pidgetpatientid)||
-|[getPatientIdentifierList](#pidgetpatientidentifierlist)|Patient ID (Internal ID)|
-|[getPatientName](#pidgetpatientname)||
-|[getPhoneNumberBusiness](#pidgetphonenumberbusiness)||
-|[getPhoneNumberHome](#pidgetphonenumberhome)||
-|[getPrimaryLanguage](#pidgetprimarylanguage)||
-|[getRace](#pidgetrace)||
-|[getReligion](#pidgetreligion)||
-|[getSSNNumber](#pidgetssnnumber)||
-|[getSex](#pidgetsex)||
-|[getVeteransMilitaryStatus](#pidgetveteransmilitarystatus)||
-|[setAlternatePatientID](#pidsetalternatepatientid)||
-|[setBirthOrder](#pidsetbirthorder)||
-|[setBirthPlace](#pidsetbirthplace)||
-|[setCitizenship](#pidsetcitizenship)||
-|[setCountryCode](#pidsetcountrycode)||
-|[setDateTimeOfBirth](#pidsetdatetimeofbirth)||
-|[setDriversLicenseNumber](#pidsetdriverslicensenumber)||
-|[setEthnicGroup](#pidsetethnicgroup)||
+|[__destruct](#pid__destruct)||
+|[getAlternatePatientID](#pidgetalternatepatientid)|Get Alternate PatientID (OBR.4)|
+|[getBirthOrder](#pidgetbirthorder)|Get Birth Order (OBR.25)|
+|[getBirthPlace](#pidgetbirthplace)|Get Birth Place (OBR.23)|
+|[getCitizenship](#pidgetcitizenship)|Get Citizenship (OBR.26)|
+|[getCountryCode](#pidgetcountrycode)|Get Country Code (OBR.12)|
+|[getDateTimeOfBirth](#pidgetdatetimeofbirth)|Get Date TimeOfBirth (OBR.7)|
+|[getDriversLicenseNumber](#pidgetdriverslicensenumber)|Get Drivers LicenseNumber (OBR.20)|
+|[getEthnicGroup](#pidgetethnicgroup)|Get Ethnic Group (OBR.22)|
+|[getID](#pidgetid)|Get ID (OBR.1)|
+|[getMaritalStatus](#pidgetmaritalstatus)|Get Marital Status (OBR.16)|
+|[getMothersIdentifier](#pidgetmothersidentifier)|Get Mothers Identifier (OBR.21)|
+|[getMothersMaidenName](#pidgetmothersmaidenname)|Get Mothers MaidenName (OBR.6)|
+|[getMultipleBirthIndicator](#pidgetmultiplebirthindicator)|Get Multiple BirthIndicator (OBR.24)|
+|[getNationality](#pidgetnationality)|Get Nationality (OBR.28)|
+|[getPatientAccountNumber](#pidgetpatientaccountnumber)|Get Patient AccountNumber (OBR.18)|
+|[getPatientAddress](#pidgetpatientaddress)|Get Patient Address (OBR.11)|
+|[getPatientAlias](#pidgetpatientalias)|Get Patient Alias (OBR.9)|
+|[getPatientDeathDateAndTime](#pidgetpatientdeathdateandtime)|Get Patient DeathDateAndTime (OBR.29)|
+|[getPatientDeathIndicator](#pidgetpatientdeathindicator)|Get Patient DeathIndicator (OBR.30)|
+|[getPatientID](#pidgetpatientid)|Get Patient ID (OBR.2)|
+|[getPatientIdentifierList](#pidgetpatientidentifierlist)|Get Patient IdentifierList (OBR.3)|
+|[getPatientName](#pidgetpatientname)|Get Patient Name (OBR.5)|
+|[getPhoneNumberBusiness](#pidgetphonenumberbusiness)|Get Phone NumberBusiness (OBR.14)|
+|[getPhoneNumberHome](#pidgetphonenumberhome)|Get Phone NumberHome (OBR.13)|
+|[getPrimaryLanguage](#pidgetprimarylanguage)|Get Primary Language (OBR.15)|
+|[getRace](#pidgetrace)|Get Race (OBR.10)|
+|[getReligion](#pidgetreligion)|Get Religion (OBR.17)|
+|[getSSNNumber](#pidgetssnnumber)|Get SSNNumber (OBR.19)|
+|[getSex](#pidgetsex)|Get Sex (OBR.8)|
+|[getVeteransMilitaryStatus](#pidgetveteransmilitarystatus)|Get Veterans MilitaryStatus (OBR.27)|
+|[resetIndex](#pidresetindex)|Reset index of this segment|
+|[setAlternatePatientID](#pidsetalternatepatientid)|Set Alternate PatientID (OBR.4)|
+|[setBirthOrder](#pidsetbirthorder)|Set Birth Order (OBR.25)|
+|[setBirthPlace](#pidsetbirthplace)|Set Birth Place (OBR.23)|
+|[setCitizenship](#pidsetcitizenship)|Set Citizenship (OBR.26)|
+|[setCountryCode](#pidsetcountrycode)|Set Country Code (OBR.12)|
+|[setDateTimeOfBirth](#pidsetdatetimeofbirth)|Set Date TimeOfBirth (OBR.7)|
+|[setDriversLicenseNumber](#pidsetdriverslicensenumber)|Set Drivers LicenseNumber (OBR.20)|
+|[setEthnicGroup](#pidsetethnicgroup)|Set Ethnic Group (OBR.22)|
 |[setID](#pidsetid)||
-|[setMaritalStatus](#pidsetmaritalstatus)||
-|[setMothersIdentifier](#pidsetmothersidentifier)||
-|[setMothersMaidenName](#pidsetmothersmaidenname)||
-|[setMultipleBirthIndicator](#pidsetmultiplebirthindicator)||
-|[setNationality](#pidsetnationality)||
-|[setPatientAccountNumber](#pidsetpatientaccountnumber)||
-|[setPatientAddress](#pidsetpatientaddress)||
-|[setPatientAlias](#pidsetpatientalias)||
-|[setPatientDeathDateAndTime](#pidsetpatientdeathdateandtime)||
-|[setPatientDeathIndicator](#pidsetpatientdeathindicator)||
-|[setPatientID](#pidsetpatientid)||
-|[setPatientIdentifierList](#pidsetpatientidentifierlist)|Patient ID (Internal ID)|
-|[setPatientName](#pidsetpatientname)||
-|[setPhoneNumberBusiness](#pidsetphonenumberbusiness)||
-|[setPhoneNumberHome](#pidsetphonenumberhome)||
-|[setPrimaryLanguage](#pidsetprimarylanguage)||
-|[setRace](#pidsetrace)||
-|[setReligion](#pidsetreligion)||
-|[setSSNNumber](#pidsetssnnumber)||
+|[setMaritalStatus](#pidsetmaritalstatus)|Set Marital Status (OBR.16)|
+|[setMothersIdentifier](#pidsetmothersidentifier)|Set Mothers Identifier (OBR.21)|
+|[setMothersMaidenName](#pidsetmothersmaidenname)|Set Mothers MaidenName (OBR.6)|
+|[setMultipleBirthIndicator](#pidsetmultiplebirthindicator)|Set Multiple BirthIndicator (OBR.24)|
+|[setNationality](#pidsetnationality)|Set Nationality (OBR.28)|
+|[setPatientAccountNumber](#pidsetpatientaccountnumber)|Set Patient AccountNumber (OBR.18)|
+|[setPatientAddress](#pidsetpatientaddress)|Set Patient Address (OBR.11)|
+|[setPatientAlias](#pidsetpatientalias)|Set Patient Alias (OBR.9)|
+|[setPatientDeathDateAndTime](#pidsetpatientdeathdateandtime)|Set Patient DeathDateAndTime (OBR.29)|
+|[setPatientDeathIndicator](#pidsetpatientdeathindicator)|Set Patient DeathIndicator (OBR.30)|
+|[setPatientID](#pidsetpatientid)|Set Patient ID (OBR.2)|
+|[setPatientIdentifierList](#pidsetpatientidentifierlist)|Set Patient IdentifierList (OBR.3)|
+|[setPatientName](#pidsetpatientname)|Set Patient Name (OBR.5)|
+|[setPhoneNumberBusiness](#pidsetphonenumberbusiness)|Set Phone NumberBusiness (OBR.14)|
+|[setPhoneNumberHome](#pidsetphonenumberhome)|Set Phone NumberHome (OBR.13)|
+|[setPrimaryLanguage](#pidsetprimarylanguage)|Set Primary Language (OBR.15)|
+|[setRace](#pidsetrace)|Set Race (OBR.10)|
+|[setReligion](#pidsetreligion)|Set Religion (OBR.17)|
+|[setSSNNumber](#pidsetssnnumber)|Set SSNNumber (OBR.19)|
 |[setSex](#pidsetsex)||
-|[setVeteransMilitaryStatus](#pidsetveteransmilitarystatus)||
+|[setVeteransMilitaryStatus](#pidsetveteransmilitarystatus)|Set Veterans MilitaryStatus (OBR.27)|
 
 ## Inherited methods
 
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -86,12 +90,12 @@ Aranyasen\HL7\Segment
 
 
 
-### PID::getAlternatePatientID  
+### PID::__destruct  
 
 **Description**
 
 ```php
-public getAlternatePatientID (void)
+ __destruct (void)
 ```
 
  
@@ -105,6 +109,34 @@ public getAlternatePatientID (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### PID::getAlternatePatientID  
+
+**Description**
+
+```php
+public getAlternatePatientID (int $position)
+```
+
+Get Alternate PatientID (OBR.4) 
+
+ 
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 4  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -114,20 +146,24 @@ public getAlternatePatientID (void)
 **Description**
 
 ```php
-public getBirthOrder (void)
+public getBirthOrder (int $position)
 ```
 
- 
+Get Birth Order (OBR.25) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 25  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -137,20 +173,24 @@ public getBirthOrder (void)
 **Description**
 
 ```php
-public getBirthPlace (void)
+public getBirthPlace (int $position)
 ```
 
- 
+Get Birth Place (OBR.23) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 23  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -160,20 +200,24 @@ public getBirthPlace (void)
 **Description**
 
 ```php
-public getCitizenship (void)
+public getCitizenship (int $position)
 ```
 
- 
+Get Citizenship (OBR.26) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 26  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -183,20 +227,24 @@ public getCitizenship (void)
 **Description**
 
 ```php
-public getCountryCode (void)
+public getCountryCode (int $position)
 ```
 
- 
+Get Country Code (OBR.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -206,20 +254,24 @@ public getCountryCode (void)
 **Description**
 
 ```php
-public getDateTimeOfBirth (void)
+public getDateTimeOfBirth (int $position)
 ```
 
- 
+Get Date TimeOfBirth (OBR.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -229,20 +281,24 @@ public getDateTimeOfBirth (void)
 **Description**
 
 ```php
-public getDriversLicenseNumber (void)
+public getDriversLicenseNumber (int $position)
 ```
 
- 
+Get Drivers LicenseNumber (OBR.20) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 20  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -252,20 +308,24 @@ public getDriversLicenseNumber (void)
 **Description**
 
 ```php
-public getEthnicGroup (void)
+public getEthnicGroup (int $position)
 ```
 
- 
+Get Ethnic Group (OBR.22) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 22  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -275,20 +335,24 @@ public getEthnicGroup (void)
 **Description**
 
 ```php
-public getID (void)
+public getID (int $position)
 ```
 
- 
+Get ID (OBR.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -298,20 +362,24 @@ public getID (void)
 **Description**
 
 ```php
-public getMaritalStatus (void)
+public getMaritalStatus (int $position)
 ```
 
- 
+Get Marital Status (OBR.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -321,20 +389,24 @@ public getMaritalStatus (void)
 **Description**
 
 ```php
-public getMothersIdentifier (void)
+public getMothersIdentifier (int $position)
 ```
 
- 
+Get Mothers Identifier (OBR.21) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 21  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -344,20 +416,24 @@ public getMothersIdentifier (void)
 **Description**
 
 ```php
-public getMothersMaidenName (void)
+public getMothersMaidenName (int $position)
 ```
 
- 
+Get Mothers MaidenName (OBR.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -367,20 +443,24 @@ public getMothersMaidenName (void)
 **Description**
 
 ```php
-public getMultipleBirthIndicator (void)
+public getMultipleBirthIndicator (int $position)
 ```
 
- 
+Get Multiple BirthIndicator (OBR.24) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 24  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -390,20 +470,24 @@ public getMultipleBirthIndicator (void)
 **Description**
 
 ```php
-public getNationality (void)
+public getNationality (int $position)
 ```
 
- 
+Get Nationality (OBR.28) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 28  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -413,20 +497,24 @@ public getNationality (void)
 **Description**
 
 ```php
-public getPatientAccountNumber (void)
+public getPatientAccountNumber (int $position)
 ```
 
- 
+Get Patient AccountNumber (OBR.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -436,20 +524,24 @@ public getPatientAccountNumber (void)
 **Description**
 
 ```php
-public getPatientAddress (void)
+public getPatientAddress (int $position)
 ```
 
- 
+Get Patient Address (OBR.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -459,20 +551,24 @@ public getPatientAddress (void)
 **Description**
 
 ```php
-public getPatientAlias (void)
+public getPatientAlias (int $position)
 ```
 
- 
+Get Patient Alias (OBR.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -482,20 +578,24 @@ public getPatientAlias (void)
 **Description**
 
 ```php
-public getPatientDeathDateAndTime (void)
+public getPatientDeathDateAndTime (int $position)
 ```
 
- 
+Get Patient DeathDateAndTime (OBR.29) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 29  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -505,20 +605,24 @@ public getPatientDeathDateAndTime (void)
 **Description**
 
 ```php
-public getPatientDeathIndicator (void)
+public getPatientDeathIndicator (int $position)
 ```
 
- 
+Get Patient DeathIndicator (OBR.30) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 30  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -528,20 +632,24 @@ public getPatientDeathIndicator (void)
 **Description**
 
 ```php
-public getPatientID (void)
+public getPatientID (int $position)
 ```
 
- 
+Get Patient ID (OBR.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -554,17 +662,19 @@ public getPatientID (void)
 public getPatientIdentifierList (int $position)
 ```
 
-Patient ID (Internal ID) 
+Get Patient IdentifierList (OBR.3) 
 
  
 
 **Parameters**
 
 * `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`array|null|string`
+`array|string|int|null`
+
 
 
 
@@ -576,20 +686,24 @@ Patient ID (Internal ID)
 **Description**
 
 ```php
-public getPatientName (void)
+public getPatientName (int $position)
 ```
 
- 
+Get Patient Name (OBR.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -599,20 +713,24 @@ public getPatientName (void)
 **Description**
 
 ```php
-public getPhoneNumberBusiness (void)
+public getPhoneNumberBusiness (int $position)
 ```
 
- 
+Get Phone NumberBusiness (OBR.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -622,20 +740,24 @@ public getPhoneNumberBusiness (void)
 **Description**
 
 ```php
-public getPhoneNumberHome (void)
+public getPhoneNumberHome (int $position)
 ```
 
- 
+Get Phone NumberHome (OBR.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -645,20 +767,24 @@ public getPhoneNumberHome (void)
 **Description**
 
 ```php
-public getPrimaryLanguage (void)
+public getPrimaryLanguage (int $position)
 ```
 
- 
+Get Primary Language (OBR.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -668,20 +794,24 @@ public getPrimaryLanguage (void)
 **Description**
 
 ```php
-public getRace (void)
+public getRace (int $position)
 ```
 
- 
+Get Race (OBR.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -691,20 +821,24 @@ public getRace (void)
 **Description**
 
 ```php
-public getReligion (void)
+public getReligion (int $position)
 ```
 
- 
+Get Religion (OBR.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -714,20 +848,24 @@ public getReligion (void)
 **Description**
 
 ```php
-public getSSNNumber (void)
+public getSSNNumber (int $position)
 ```
 
- 
+Get SSNNumber (OBR.19) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -737,20 +875,24 @@ public getSSNNumber (void)
 **Description**
 
 ```php
-public getSex (void)
+public getSex (int $position)
 ```
 
- 
+Get Sex (OBR.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -760,10 +902,37 @@ public getSex (void)
 **Description**
 
 ```php
-public getVeteransMilitaryStatus (void)
+public getVeteransMilitaryStatus (int $position)
 ```
 
+Get Veterans MilitaryStatus (OBR.27) 
+
  
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 27  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
+
+<hr />
+
+
+### PID::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (void)
+```
+
+Reset index of this segment 
 
  
 
@@ -774,6 +943,7 @@ public getVeteransMilitaryStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -783,20 +953,25 @@ public getVeteransMilitaryStatus (void)
 **Description**
 
 ```php
-public setAlternatePatientID (void)
+public setAlternatePatientID (string|int|array|null $value, int $position)
 ```
 
- 
+Set Alternate PatientID (OBR.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -806,20 +981,25 @@ public setAlternatePatientID (void)
 **Description**
 
 ```php
-public setBirthOrder (void)
+public setBirthOrder (string|int|array|null $value, int $position)
 ```
 
- 
+Set Birth Order (OBR.25) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 25  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -829,20 +1009,25 @@ public setBirthOrder (void)
 **Description**
 
 ```php
-public setBirthPlace (void)
+public setBirthPlace (string|int|array|null $value, int $position)
 ```
 
- 
+Set Birth Place (OBR.23) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 23  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -852,20 +1037,25 @@ public setBirthPlace (void)
 **Description**
 
 ```php
-public setCitizenship (void)
+public setCitizenship (string|int|array|null $value, int $position)
 ```
 
- 
+Set Citizenship (OBR.26) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 26  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -875,20 +1065,25 @@ public setCitizenship (void)
 **Description**
 
 ```php
-public setCountryCode (void)
+public setCountryCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Country Code (OBR.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -898,20 +1093,25 @@ public setCountryCode (void)
 **Description**
 
 ```php
-public setDateTimeOfBirth (void)
+public setDateTimeOfBirth (string|int|array|null $value, int $position)
 ```
 
- 
+Set Date TimeOfBirth (OBR.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -921,20 +1121,25 @@ public setDateTimeOfBirth (void)
 **Description**
 
 ```php
-public setDriversLicenseNumber (void)
+public setDriversLicenseNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Drivers LicenseNumber (OBR.20) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 20  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -944,20 +1149,25 @@ public setDriversLicenseNumber (void)
 **Description**
 
 ```php
-public setEthnicGroup (void)
+public setEthnicGroup (string|int|array|null $value, int $position)
 ```
 
- 
+Set Ethnic Group (OBR.22) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 22  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -967,7 +1177,7 @@ public setEthnicGroup (void)
 **Description**
 
 ```php
-public setID (void)
+ setID (void)
 ```
 
  
@@ -981,6 +1191,7 @@ public setID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -990,20 +1201,25 @@ public setID (void)
 **Description**
 
 ```php
-public setMaritalStatus (void)
+public setMaritalStatus (string|int|array|null $value, int $position)
 ```
 
- 
+Set Marital Status (OBR.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1013,20 +1229,25 @@ public setMaritalStatus (void)
 **Description**
 
 ```php
-public setMothersIdentifier (void)
+public setMothersIdentifier (string|int|array|null $value, int $position)
 ```
 
- 
+Set Mothers Identifier (OBR.21) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 21  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1036,20 +1257,25 @@ public setMothersIdentifier (void)
 **Description**
 
 ```php
-public setMothersMaidenName (void)
+public setMothersMaidenName (string|int|array|null $value, int $position)
 ```
 
- 
+Set Mothers MaidenName (OBR.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1059,20 +1285,25 @@ public setMothersMaidenName (void)
 **Description**
 
 ```php
-public setMultipleBirthIndicator (void)
+public setMultipleBirthIndicator (string|int|array|null $value, int $position)
 ```
 
- 
+Set Multiple BirthIndicator (OBR.24) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 24  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1082,20 +1313,25 @@ public setMultipleBirthIndicator (void)
 **Description**
 
 ```php
-public setNationality (void)
+public setNationality (string|int|array|null $value, int $position)
 ```
 
- 
+Set Nationality (OBR.28) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 28  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1105,20 +1341,25 @@ public setNationality (void)
 **Description**
 
 ```php
-public setPatientAccountNumber (void)
+public setPatientAccountNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Patient AccountNumber (OBR.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1128,20 +1369,25 @@ public setPatientAccountNumber (void)
 **Description**
 
 ```php
-public setPatientAddress (void)
+public setPatientAddress (string|int|array|null $value, int $position)
 ```
 
- 
+Set Patient Address (OBR.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1151,20 +1397,25 @@ public setPatientAddress (void)
 **Description**
 
 ```php
-public setPatientAlias (void)
+public setPatientAlias (string|int|array|null $value, int $position)
 ```
 
- 
+Set Patient Alias (OBR.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1174,20 +1425,25 @@ public setPatientAlias (void)
 **Description**
 
 ```php
-public setPatientDeathDateAndTime (void)
+public setPatientDeathDateAndTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Patient DeathDateAndTime (OBR.29) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 29  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1197,20 +1453,25 @@ public setPatientDeathDateAndTime (void)
 **Description**
 
 ```php
-public setPatientDeathIndicator (void)
+public setPatientDeathIndicator (string|int|array|null $value, int $position)
 ```
 
- 
+Set Patient DeathIndicator (OBR.30) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 30  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1220,20 +1481,25 @@ public setPatientDeathIndicator (void)
 **Description**
 
 ```php
-public setPatientID (void)
+public setPatientID (string|int|array|null $value, int $position)
 ```
 
- 
+Set Patient ID (OBR.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1243,21 +1509,23 @@ public setPatientID (void)
 **Description**
 
 ```php
-public setPatientIdentifierList (string $value, int $position)
+public setPatientIdentifierList (string|int|array|null $value, int $position)
 ```
 
-Patient ID (Internal ID) 
+Set Patient IdentifierList (OBR.3) 
 
  
 
 **Parameters**
 
-* `(string) $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -1269,20 +1537,25 @@ Patient ID (Internal ID)
 **Description**
 
 ```php
-public setPatientName (void)
+public setPatientName (string|int|array|null $value, int $position)
 ```
 
- 
+Set Patient Name (OBR.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1292,20 +1565,25 @@ public setPatientName (void)
 **Description**
 
 ```php
-public setPhoneNumberBusiness (void)
+public setPhoneNumberBusiness (string|int|array|null $value, int $position)
 ```
 
- 
+Set Phone NumberBusiness (OBR.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1315,20 +1593,25 @@ public setPhoneNumberBusiness (void)
 **Description**
 
 ```php
-public setPhoneNumberHome (void)
+public setPhoneNumberHome (string|int|array|null $value, int $position)
 ```
 
- 
+Set Phone NumberHome (OBR.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1338,20 +1621,25 @@ public setPhoneNumberHome (void)
 **Description**
 
 ```php
-public setPrimaryLanguage (void)
+public setPrimaryLanguage (string|int|array|null $value, int $position)
 ```
 
- 
+Set Primary Language (OBR.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1361,20 +1649,25 @@ public setPrimaryLanguage (void)
 **Description**
 
 ```php
-public setRace (void)
+public setRace (string|int|array|null $value, int $position)
 ```
 
- 
+Set Race (OBR.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1384,20 +1677,25 @@ public setRace (void)
 **Description**
 
 ```php
-public setReligion (void)
+public setReligion (string|int|array|null $value, int $position)
 ```
 
- 
+Set Religion (OBR.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1407,20 +1705,25 @@ public setReligion (void)
 **Description**
 
 ```php
-public setSSNNumber (void)
+public setSSNNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set SSNNumber (OBR.19) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1430,7 +1733,7 @@ public setSSNNumber (void)
 **Description**
 
 ```php
-public setSex (void)
+ setSex (void)
 ```
 
  
@@ -1444,6 +1747,7 @@ public setSex (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1453,20 +1757,25 @@ public setSex (void)
 **Description**
 
 ```php
-public setVeteransMilitaryStatus (void)
+public setVeteransMilitaryStatus (string|int|array|null $value, int $position)
 ```
 
- 
+Set Veterans MilitaryStatus (OBR.27) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 27  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 

@@ -13,110 +13,113 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getAssignmentOfBenefits](#in1getassignmentofbenefits)||
-|[getAuthorizationInformation](#in1getauthorizationinformation)||
-|[getBillingStatus](#in1getbillingstatus)||
-|[getCompanyPlanCode](#in1getcompanyplancode)||
-|[getCoordOfBenPriority](#in1getcoordofbenpriority)||
-|[getCoordinationOfBenefits](#in1getcoordinationofbenefits)||
-|[getCoverageType](#in1getcoveragetype)||
-|[getDelayBeforeLRDay](#in1getdelaybeforelrday)||
-|[getGroupName](#in1getgroupname)||
-|[getGroupNumber](#in1getgroupnumber)||
-|[getHandicap](#in1gethandicap)||
-|[getID](#in1getid)||
-|[getInsuranceCoContactPerson](#in1getinsurancecocontactperson)||
-|[getInsuranceCoPhoneNumber](#in1getinsurancecophonenumber)||
-|[getInsuranceCompanyAddress](#in1getinsurancecompanyaddress)||
-|[getInsuranceCompanyID](#in1getinsurancecompanyid)||
-|[getInsuranceCompanyName](#in1getinsurancecompanyname)||
-|[getInsurancePlanID](#in1getinsuranceplanid)||
-|[getInsuredsAddress](#in1getinsuredsaddress)||
-|[getInsuredsDateOfBirth](#in1getinsuredsdateofbirth)||
-|[getInsuredsEmployersAddress](#in1getinsuredsemployersaddress)||
-|[getInsuredsEmploymentStatus](#in1getinsuredsemploymentstatus)||
-|[getInsuredsGroupEmpID](#in1getinsuredsgroupempid)||
-|[getInsuredsGroupEmpName](#in1getinsuredsgroupempname)||
-|[getInsuredsIDNumber](#in1getinsuredsidnumber)||
-|[getInsuredsRelationshipToPatient](#in1getinsuredsrelationshiptopatient)||
-|[getInsuredsSex](#in1getinsuredssex)||
-|[getLifetimeReserveDays](#in1getlifetimereservedays)||
-|[getNameOfInsured](#in1getnameofinsured)||
-|[getNoticeOfAdmissionDate](#in1getnoticeofadmissiondate)||
-|[getNoticeOfAdmissionFlag](#in1getnoticeofadmissionflag)||
-|[getPlanEffectiveDate](#in1getplaneffectivedate)||
-|[getPlanExpirationDate](#in1getplanexpirationdate)||
-|[getPlanType](#in1getplantype)||
-|[getPolicyDeductible](#in1getpolicydeductible)||
-|[getPolicyLimitAmount](#in1getpolicylimitamount)||
-|[getPolicyLimitDays](#in1getpolicylimitdays)||
-|[getPolicyNumber](#in1getpolicynumber)||
-|[getPreAdmitCertPAC](#in1getpreadmitcertpac)||
-|[getPriorInsurancePlanID](#in1getpriorinsuranceplanid)||
-|[getReleaseInformationCode](#in1getreleaseinformationcode)||
-|[getReportOfEligibilityDate](#in1getreportofeligibilitydate)||
-|[getReportOfEligibilityFlag](#in1getreportofeligibilityflag)||
-|[getRoomRatePrivate](#in1getroomrateprivate)||
-|[getRoomRateSemiPrivate](#in1getroomratesemiprivate)||
-|[getTypeOfAgreementCode](#in1gettypeofagreementcode)||
-|[getVerificationBy](#in1getverificationby)||
-|[getVerificationDateTime](#in1getverificationdatetime)||
-|[getVerificationStatus](#in1getverificationstatus)||
-|[setAssignmentOfBenefits](#in1setassignmentofbenefits)||
-|[setAuthorizationInformation](#in1setauthorizationinformation)||
-|[setBillingStatus](#in1setbillingstatus)||
-|[setCompanyPlanCode](#in1setcompanyplancode)||
-|[setCoordOfBenPriority](#in1setcoordofbenpriority)||
-|[setCoordinationOfBenefits](#in1setcoordinationofbenefits)||
-|[setCoverageType](#in1setcoveragetype)||
-|[setDelayBeforeLRDay](#in1setdelaybeforelrday)||
-|[setGroupName](#in1setgroupname)||
-|[setGroupNumber](#in1setgroupnumber)||
-|[setHandicap](#in1sethandicap)||
+|[__destruct](#in1__destruct)||
+|[getAssignmentOfBenefits](#in1getassignmentofbenefits)|Get Assignment OfBenefits (OBR.20)|
+|[getAuthorizationInformation](#in1getauthorizationinformation)|Get Authorization Information (OBR.14)|
+|[getBillingStatus](#in1getbillingstatus)|Get Billing Status (OBR.32)|
+|[getCompanyPlanCode](#in1getcompanyplancode)|Get Company PlanCode (OBR.35)|
+|[getCoordOfBenPriority](#in1getcoordofbenpriority)|Get Coord OfBenPriority (OBR.22)|
+|[getCoordinationOfBenefits](#in1getcoordinationofbenefits)|Get Coordination OfBenefits (OBR.21)|
+|[getCoverageType](#in1getcoveragetype)|Get Coverage Type (OBR.47)|
+|[getDelayBeforeLRDay](#in1getdelaybeforelrday)|Get Delay BeforeLRDay (OBR.34)|
+|[getGroupName](#in1getgroupname)|Get Group Name (OBR.9)|
+|[getGroupNumber](#in1getgroupnumber)|Get Group Number (OBR.8)|
+|[getHandicap](#in1gethandicap)|Get Handicap (OBR.48)|
+|[getID](#in1getid)|Get ID (OBR.1)|
+|[getInsuranceCoContactPerson](#in1getinsurancecocontactperson)|Get Insurance CoContactPerson (OBR.6)|
+|[getInsuranceCoPhoneNumber](#in1getinsurancecophonenumber)|Get Insurance CoPhoneNumber (OBR.7)|
+|[getInsuranceCompanyAddress](#in1getinsurancecompanyaddress)|Get Insurance CompanyAddress (OBR.5)|
+|[getInsuranceCompanyID](#in1getinsurancecompanyid)|Get Insurance CompanyID (OBR.3)|
+|[getInsuranceCompanyName](#in1getinsurancecompanyname)|Get Insurance CompanyName (OBR.4)|
+|[getInsurancePlanID](#in1getinsuranceplanid)|Get Insurance PlanID (OBR.2)|
+|[getInsuredsAddress](#in1getinsuredsaddress)|Get Insureds Address (OBR.19)|
+|[getInsuredsDateOfBirth](#in1getinsuredsdateofbirth)|Get Insureds DateOfBirth (OBR.18)|
+|[getInsuredsEmployersAddress](#in1getinsuredsemployersaddress)|Get Insureds EmployersAddress (OBR.44)|
+|[getInsuredsEmploymentStatus](#in1getinsuredsemploymentstatus)|Get Insureds EmploymentStatus (OBR.42)|
+|[getInsuredsGroupEmpID](#in1getinsuredsgroupempid)|Get Insureds GroupEmpID (OBR.10)|
+|[getInsuredsGroupEmpName](#in1getinsuredsgroupempname)|Get Insureds GroupEmpName (OBR.11)|
+|[getInsuredsIDNumber](#in1getinsuredsidnumber)|Get Insureds IDNumber (OBR.49)|
+|[getInsuredsRelationshipToPatient](#in1getinsuredsrelationshiptopatient)|Get Insureds RelationshipToPatient (OBR.17)|
+|[getInsuredsSex](#in1getinsuredssex)|Get Insureds Sex (OBR.43)|
+|[getLifetimeReserveDays](#in1getlifetimereservedays)|Get Lifetime ReserveDays (OBR.33)|
+|[getNameOfInsured](#in1getnameofinsured)|Get Name OfInsured (OBR.16)|
+|[getNoticeOfAdmissionDate](#in1getnoticeofadmissiondate)|Get Notice OfAdmissionDate (OBR.24)|
+|[getNoticeOfAdmissionFlag](#in1getnoticeofadmissionflag)|Get Notice OfAdmissionFlag (OBR.23)|
+|[getPlanEffectiveDate](#in1getplaneffectivedate)|Get Plan EffectiveDate (OBR.12)|
+|[getPlanExpirationDate](#in1getplanexpirationdate)|Get Plan ExpirationDate (OBR.13)|
+|[getPlanType](#in1getplantype)|Get Plan Type (OBR.15)|
+|[getPolicyDeductible](#in1getpolicydeductible)|Get Policy Deductible (OBR.37)|
+|[getPolicyLimitAmount](#in1getpolicylimitamount)|Get Policy LimitAmount (OBR.38)|
+|[getPolicyLimitDays](#in1getpolicylimitdays)|Get Policy LimitDays (OBR.39)|
+|[getPolicyNumber](#in1getpolicynumber)|Get Policy Number (OBR.36)|
+|[getPreAdmitCertPAC](#in1getpreadmitcertpac)|Get Pre AdmitCertPAC (OBR.28)|
+|[getPriorInsurancePlanID](#in1getpriorinsuranceplanid)|Get Prior InsurancePlanID (OBR.46)|
+|[getReleaseInformationCode](#in1getreleaseinformationcode)|Get Release InformationCode (OBR.27)|
+|[getReportOfEligibilityDate](#in1getreportofeligibilitydate)|Get Report OfEligibilityDate (OBR.26)|
+|[getReportOfEligibilityFlag](#in1getreportofeligibilityflag)|Get Report OfEligibilityFlag (OBR.25)|
+|[getRoomRatePrivate](#in1getroomrateprivate)|Get Room RatePrivate (OBR.41)|
+|[getRoomRateSemiPrivate](#in1getroomratesemiprivate)|Get Room RateSemiPrivate (OBR.40)|
+|[getTypeOfAgreementCode](#in1gettypeofagreementcode)|Get Type OfAgreementCode (OBR.31)|
+|[getVerificationBy](#in1getverificationby)|Get Verification By (OBR.30)|
+|[getVerificationDateTime](#in1getverificationdatetime)|Get Verification DateTime (OBR.29)|
+|[getVerificationStatus](#in1getverificationstatus)|Get Verification Status (OBR.45)|
+|[resetIndex](#in1resetindex)|Reset index of this segment|
+|[setAssignmentOfBenefits](#in1setassignmentofbenefits)|Set Assignment OfBenefits (OBR.20)|
+|[setAuthorizationInformation](#in1setauthorizationinformation)|Set Authorization Information (OBR.14)|
+|[setBillingStatus](#in1setbillingstatus)|Set Billing Status (OBR.32)|
+|[setCompanyPlanCode](#in1setcompanyplancode)|Set Company PlanCode (OBR.35)|
+|[setCoordOfBenPriority](#in1setcoordofbenpriority)|Set Coord OfBenPriority (OBR.22)|
+|[setCoordinationOfBenefits](#in1setcoordinationofbenefits)|Set Coordination OfBenefits (OBR.21)|
+|[setCoverageType](#in1setcoveragetype)|Set Coverage Type (OBR.47)|
+|[setDelayBeforeLRDay](#in1setdelaybeforelrday)|Set Delay BeforeLRDay (OBR.34)|
+|[setGroupName](#in1setgroupname)|Set Group Name (OBR.9)|
+|[setGroupNumber](#in1setgroupnumber)|Set Group Number (OBR.8)|
+|[setHandicap](#in1sethandicap)|Set Handicap (OBR.48)|
 |[setID](#in1setid)||
-|[setInsuranceCoContactPerson](#in1setinsurancecocontactperson)||
-|[setInsuranceCoPhoneNumber](#in1setinsurancecophonenumber)||
-|[setInsuranceCompanyAddress](#in1setinsurancecompanyaddress)||
-|[setInsuranceCompanyID](#in1setinsurancecompanyid)||
-|[setInsuranceCompanyName](#in1setinsurancecompanyname)||
-|[setInsurancePlanID](#in1setinsuranceplanid)||
-|[setInsuredsAddress](#in1setinsuredsaddress)||
-|[setInsuredsDateOfBirth](#in1setinsuredsdateofbirth)||
-|[setInsuredsEmployersAddress](#in1setinsuredsemployersaddress)||
-|[setInsuredsEmploymentStatus](#in1setinsuredsemploymentstatus)||
-|[setInsuredsGroupEmpID](#in1setinsuredsgroupempid)||
-|[setInsuredsGroupEmpName](#in1setinsuredsgroupempname)||
-|[setInsuredsIDNumber](#in1setinsuredsidnumber)||
-|[setInsuredsRelationshipToPatient](#in1setinsuredsrelationshiptopatient)||
-|[setInsuredsSex](#in1setinsuredssex)||
-|[setLifetimeReserveDays](#in1setlifetimereservedays)||
-|[setNameOfInsured](#in1setnameofinsured)||
-|[setNoticeOfAdmissionDate](#in1setnoticeofadmissiondate)||
-|[setNoticeOfAdmissionFlag](#in1setnoticeofadmissionflag)||
-|[setPlanEffectiveDate](#in1setplaneffectivedate)||
-|[setPlanExpirationDate](#in1setplanexpirationdate)||
-|[setPlanType](#in1setplantype)||
-|[setPolicyDeductible](#in1setpolicydeductible)||
-|[setPolicyLimitAmount](#in1setpolicylimitamount)||
-|[setPolicyLimitDays](#in1setpolicylimitdays)||
-|[setPolicyNumber](#in1setpolicynumber)||
-|[setPreAdmitCertPAC](#in1setpreadmitcertpac)||
-|[setPriorInsurancePlanID](#in1setpriorinsuranceplanid)||
-|[setReleaseInformationCode](#in1setreleaseinformationcode)||
-|[setReportOfEligibilityDate](#in1setreportofeligibilitydate)||
-|[setReportOfEligibilityFlag](#in1setreportofeligibilityflag)||
-|[setRoomRatePrivate](#in1setroomrateprivate)||
-|[setRoomRateSemiPrivate](#in1setroomratesemiprivate)||
-|[setTypeOfAgreementCode](#in1settypeofagreementcode)||
-|[setVerificationBy](#in1setverificationby)||
-|[setVerificationDateTime](#in1setverificationdatetime)||
-|[setVerificationStatus](#in1setverificationstatus)||
+|[setInsuranceCoContactPerson](#in1setinsurancecocontactperson)|Set Insurance CoContactPerson (OBR.6)|
+|[setInsuranceCoPhoneNumber](#in1setinsurancecophonenumber)|Set Insurance CoPhoneNumber (OBR.7)|
+|[setInsuranceCompanyAddress](#in1setinsurancecompanyaddress)|Set Insurance CompanyAddress (OBR.5)|
+|[setInsuranceCompanyID](#in1setinsurancecompanyid)|Set Insurance CompanyID (OBR.3)|
+|[setInsuranceCompanyName](#in1setinsurancecompanyname)|Set Insurance CompanyName (OBR.4)|
+|[setInsurancePlanID](#in1setinsuranceplanid)|Set Insurance PlanID (OBR.2)|
+|[setInsuredsAddress](#in1setinsuredsaddress)|Set Insureds Address (OBR.19)|
+|[setInsuredsDateOfBirth](#in1setinsuredsdateofbirth)|Set Insureds DateOfBirth (OBR.18)|
+|[setInsuredsEmployersAddress](#in1setinsuredsemployersaddress)|Set Insureds EmployersAddress (OBR.44)|
+|[setInsuredsEmploymentStatus](#in1setinsuredsemploymentstatus)|Set Insureds EmploymentStatus (OBR.42)|
+|[setInsuredsGroupEmpID](#in1setinsuredsgroupempid)|Set Insureds GroupEmpID (OBR.10)|
+|[setInsuredsGroupEmpName](#in1setinsuredsgroupempname)|Set Insureds GroupEmpName (OBR.11)|
+|[setInsuredsIDNumber](#in1setinsuredsidnumber)|Set Insureds IDNumber (OBR.49)|
+|[setInsuredsRelationshipToPatient](#in1setinsuredsrelationshiptopatient)|Set Insureds RelationshipToPatient (OBR.17)|
+|[setInsuredsSex](#in1setinsuredssex)|Set Insureds Sex (OBR.43)|
+|[setLifetimeReserveDays](#in1setlifetimereservedays)|Set Lifetime ReserveDays (OBR.33)|
+|[setNameOfInsured](#in1setnameofinsured)|Set Name OfInsured (OBR.16)|
+|[setNoticeOfAdmissionDate](#in1setnoticeofadmissiondate)|Set Notice OfAdmissionDate (OBR.24)|
+|[setNoticeOfAdmissionFlag](#in1setnoticeofadmissionflag)|Set Notice OfAdmissionFlag (OBR.23)|
+|[setPlanEffectiveDate](#in1setplaneffectivedate)|Set Plan EffectiveDate (OBR.12)|
+|[setPlanExpirationDate](#in1setplanexpirationdate)|Set Plan ExpirationDate (OBR.13)|
+|[setPlanType](#in1setplantype)|Set Plan Type (OBR.15)|
+|[setPolicyDeductible](#in1setpolicydeductible)|Set Policy Deductible (OBR.37)|
+|[setPolicyLimitAmount](#in1setpolicylimitamount)|Set Policy LimitAmount (OBR.38)|
+|[setPolicyLimitDays](#in1setpolicylimitdays)|Set Policy LimitDays (OBR.39)|
+|[setPolicyNumber](#in1setpolicynumber)|Set Policy Number (OBR.36)|
+|[setPreAdmitCertPAC](#in1setpreadmitcertpac)|Set Pre AdmitCertPAC (OBR.28)|
+|[setPriorInsurancePlanID](#in1setpriorinsuranceplanid)|Set Prior InsurancePlanID (OBR.46)|
+|[setReleaseInformationCode](#in1setreleaseinformationcode)|Set Release InformationCode (OBR.27)|
+|[setReportOfEligibilityDate](#in1setreportofeligibilitydate)|Set Report OfEligibilityDate (OBR.26)|
+|[setReportOfEligibilityFlag](#in1setreportofeligibilityflag)|Set Report OfEligibilityFlag (OBR.25)|
+|[setRoomRatePrivate](#in1setroomrateprivate)|Set Room RatePrivate (OBR.41)|
+|[setRoomRateSemiPrivate](#in1setroomratesemiprivate)|Set Room RateSemiPrivate (OBR.40)|
+|[setTypeOfAgreementCode](#in1settypeofagreementcode)|Set Type OfAgreementCode (OBR.31)|
+|[setVerificationBy](#in1setverificationby)|Set Verification By (OBR.30)|
+|[setVerificationDateTime](#in1setverificationdatetime)|Set Verification DateTime (OBR.29)|
+|[setVerificationStatus](#in1setverificationstatus)|Set Verification Status (OBR.45)|
 
 ## Inherited methods
 
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -125,12 +128,12 @@ Aranyasen\HL7\Segment
 
 
 
-### IN1::getAssignmentOfBenefits  
+### IN1::__destruct  
 
 **Description**
 
 ```php
-public getAssignmentOfBenefits (void)
+ __destruct (void)
 ```
 
  
@@ -144,6 +147,34 @@ public getAssignmentOfBenefits (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### IN1::getAssignmentOfBenefits  
+
+**Description**
+
+```php
+public getAssignmentOfBenefits (int $position)
+```
+
+Get Assignment OfBenefits (OBR.20) 
+
+ 
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 20  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -153,20 +184,24 @@ public getAssignmentOfBenefits (void)
 **Description**
 
 ```php
-public getAuthorizationInformation (void)
+public getAuthorizationInformation (int $position)
 ```
 
- 
+Get Authorization Information (OBR.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -176,20 +211,24 @@ public getAuthorizationInformation (void)
 **Description**
 
 ```php
-public getBillingStatus (void)
+public getBillingStatus (int $position)
 ```
 
- 
+Get Billing Status (OBR.32) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 32  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -199,20 +238,24 @@ public getBillingStatus (void)
 **Description**
 
 ```php
-public getCompanyPlanCode (void)
+public getCompanyPlanCode (int $position)
 ```
 
- 
+Get Company PlanCode (OBR.35) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 35  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -222,20 +265,24 @@ public getCompanyPlanCode (void)
 **Description**
 
 ```php
-public getCoordOfBenPriority (void)
+public getCoordOfBenPriority (int $position)
 ```
 
- 
+Get Coord OfBenPriority (OBR.22) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 22  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -245,20 +292,24 @@ public getCoordOfBenPriority (void)
 **Description**
 
 ```php
-public getCoordinationOfBenefits (void)
+public getCoordinationOfBenefits (int $position)
 ```
 
- 
+Get Coordination OfBenefits (OBR.21) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 21  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -268,20 +319,24 @@ public getCoordinationOfBenefits (void)
 **Description**
 
 ```php
-public getCoverageType (void)
+public getCoverageType (int $position)
 ```
 
- 
+Get Coverage Type (OBR.47) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 47  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -291,20 +346,24 @@ public getCoverageType (void)
 **Description**
 
 ```php
-public getDelayBeforeLRDay (void)
+public getDelayBeforeLRDay (int $position)
 ```
 
- 
+Get Delay BeforeLRDay (OBR.34) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 34  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -314,20 +373,24 @@ public getDelayBeforeLRDay (void)
 **Description**
 
 ```php
-public getGroupName (void)
+public getGroupName (int $position)
 ```
 
- 
+Get Group Name (OBR.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -337,20 +400,24 @@ public getGroupName (void)
 **Description**
 
 ```php
-public getGroupNumber (void)
+public getGroupNumber (int $position)
 ```
 
- 
+Get Group Number (OBR.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -360,20 +427,24 @@ public getGroupNumber (void)
 **Description**
 
 ```php
-public getHandicap (void)
+public getHandicap (int $position)
 ```
 
- 
+Get Handicap (OBR.48) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 48  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -383,20 +454,24 @@ public getHandicap (void)
 **Description**
 
 ```php
-public getID (void)
+public getID (int $position)
 ```
 
- 
+Get ID (OBR.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -406,20 +481,24 @@ public getID (void)
 **Description**
 
 ```php
-public getInsuranceCoContactPerson (void)
+public getInsuranceCoContactPerson (int $position)
 ```
 
- 
+Get Insurance CoContactPerson (OBR.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -429,20 +508,24 @@ public getInsuranceCoContactPerson (void)
 **Description**
 
 ```php
-public getInsuranceCoPhoneNumber (void)
+public getInsuranceCoPhoneNumber (int $position)
 ```
 
- 
+Get Insurance CoPhoneNumber (OBR.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -452,20 +535,24 @@ public getInsuranceCoPhoneNumber (void)
 **Description**
 
 ```php
-public getInsuranceCompanyAddress (void)
+public getInsuranceCompanyAddress (int $position)
 ```
 
- 
+Get Insurance CompanyAddress (OBR.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -475,20 +562,24 @@ public getInsuranceCompanyAddress (void)
 **Description**
 
 ```php
-public getInsuranceCompanyID (void)
+public getInsuranceCompanyID (int $position)
 ```
 
- 
+Get Insurance CompanyID (OBR.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -498,20 +589,24 @@ public getInsuranceCompanyID (void)
 **Description**
 
 ```php
-public getInsuranceCompanyName (void)
+public getInsuranceCompanyName (int $position)
 ```
 
- 
+Get Insurance CompanyName (OBR.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -521,20 +616,24 @@ public getInsuranceCompanyName (void)
 **Description**
 
 ```php
-public getInsurancePlanID (void)
+public getInsurancePlanID (int $position)
 ```
 
- 
+Get Insurance PlanID (OBR.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -544,20 +643,24 @@ public getInsurancePlanID (void)
 **Description**
 
 ```php
-public getInsuredsAddress (void)
+public getInsuredsAddress (int $position)
 ```
 
- 
+Get Insureds Address (OBR.19) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -567,20 +670,24 @@ public getInsuredsAddress (void)
 **Description**
 
 ```php
-public getInsuredsDateOfBirth (void)
+public getInsuredsDateOfBirth (int $position)
 ```
 
- 
+Get Insureds DateOfBirth (OBR.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -590,20 +697,24 @@ public getInsuredsDateOfBirth (void)
 **Description**
 
 ```php
-public getInsuredsEmployersAddress (void)
+public getInsuredsEmployersAddress (int $position)
 ```
 
- 
+Get Insureds EmployersAddress (OBR.44) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 44  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -613,20 +724,24 @@ public getInsuredsEmployersAddress (void)
 **Description**
 
 ```php
-public getInsuredsEmploymentStatus (void)
+public getInsuredsEmploymentStatus (int $position)
 ```
 
- 
+Get Insureds EmploymentStatus (OBR.42) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 42  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -636,20 +751,24 @@ public getInsuredsEmploymentStatus (void)
 **Description**
 
 ```php
-public getInsuredsGroupEmpID (void)
+public getInsuredsGroupEmpID (int $position)
 ```
 
- 
+Get Insureds GroupEmpID (OBR.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -659,20 +778,24 @@ public getInsuredsGroupEmpID (void)
 **Description**
 
 ```php
-public getInsuredsGroupEmpName (void)
+public getInsuredsGroupEmpName (int $position)
 ```
 
- 
+Get Insureds GroupEmpName (OBR.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -682,20 +805,24 @@ public getInsuredsGroupEmpName (void)
 **Description**
 
 ```php
-public getInsuredsIDNumber (void)
+public getInsuredsIDNumber (int $position)
 ```
 
- 
+Get Insureds IDNumber (OBR.49) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 49  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -705,20 +832,24 @@ public getInsuredsIDNumber (void)
 **Description**
 
 ```php
-public getInsuredsRelationshipToPatient (void)
+public getInsuredsRelationshipToPatient (int $position)
 ```
 
- 
+Get Insureds RelationshipToPatient (OBR.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -728,20 +859,24 @@ public getInsuredsRelationshipToPatient (void)
 **Description**
 
 ```php
-public getInsuredsSex (void)
+public getInsuredsSex (int $position)
 ```
 
- 
+Get Insureds Sex (OBR.43) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 43  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -751,20 +886,24 @@ public getInsuredsSex (void)
 **Description**
 
 ```php
-public getLifetimeReserveDays (void)
+public getLifetimeReserveDays (int $position)
 ```
 
- 
+Get Lifetime ReserveDays (OBR.33) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 33  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -774,20 +913,24 @@ public getLifetimeReserveDays (void)
 **Description**
 
 ```php
-public getNameOfInsured (void)
+public getNameOfInsured (int $position)
 ```
 
- 
+Get Name OfInsured (OBR.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -797,20 +940,24 @@ public getNameOfInsured (void)
 **Description**
 
 ```php
-public getNoticeOfAdmissionDate (void)
+public getNoticeOfAdmissionDate (int $position)
 ```
 
- 
+Get Notice OfAdmissionDate (OBR.24) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 24  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -820,20 +967,24 @@ public getNoticeOfAdmissionDate (void)
 **Description**
 
 ```php
-public getNoticeOfAdmissionFlag (void)
+public getNoticeOfAdmissionFlag (int $position)
 ```
 
- 
+Get Notice OfAdmissionFlag (OBR.23) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 23  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -843,20 +994,24 @@ public getNoticeOfAdmissionFlag (void)
 **Description**
 
 ```php
-public getPlanEffectiveDate (void)
+public getPlanEffectiveDate (int $position)
 ```
 
- 
+Get Plan EffectiveDate (OBR.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -866,20 +1021,24 @@ public getPlanEffectiveDate (void)
 **Description**
 
 ```php
-public getPlanExpirationDate (void)
+public getPlanExpirationDate (int $position)
 ```
 
- 
+Get Plan ExpirationDate (OBR.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -889,20 +1048,24 @@ public getPlanExpirationDate (void)
 **Description**
 
 ```php
-public getPlanType (void)
+public getPlanType (int $position)
 ```
 
- 
+Get Plan Type (OBR.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -912,20 +1075,24 @@ public getPlanType (void)
 **Description**
 
 ```php
-public getPolicyDeductible (void)
+public getPolicyDeductible (int $position)
 ```
 
- 
+Get Policy Deductible (OBR.37) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 37  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -935,20 +1102,24 @@ public getPolicyDeductible (void)
 **Description**
 
 ```php
-public getPolicyLimitAmount (void)
+public getPolicyLimitAmount (int $position)
 ```
 
- 
+Get Policy LimitAmount (OBR.38) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 38  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -958,20 +1129,24 @@ public getPolicyLimitAmount (void)
 **Description**
 
 ```php
-public getPolicyLimitDays (void)
+public getPolicyLimitDays (int $position)
 ```
 
- 
+Get Policy LimitDays (OBR.39) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 39  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -981,20 +1156,24 @@ public getPolicyLimitDays (void)
 **Description**
 
 ```php
-public getPolicyNumber (void)
+public getPolicyNumber (int $position)
 ```
 
- 
+Get Policy Number (OBR.36) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 36  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1004,20 +1183,24 @@ public getPolicyNumber (void)
 **Description**
 
 ```php
-public getPreAdmitCertPAC (void)
+public getPreAdmitCertPAC (int $position)
 ```
 
- 
+Get Pre AdmitCertPAC (OBR.28) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 28  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1027,20 +1210,24 @@ public getPreAdmitCertPAC (void)
 **Description**
 
 ```php
-public getPriorInsurancePlanID (void)
+public getPriorInsurancePlanID (int $position)
 ```
 
- 
+Get Prior InsurancePlanID (OBR.46) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 46  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1050,20 +1237,24 @@ public getPriorInsurancePlanID (void)
 **Description**
 
 ```php
-public getReleaseInformationCode (void)
+public getReleaseInformationCode (int $position)
 ```
 
- 
+Get Release InformationCode (OBR.27) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 27  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1073,20 +1264,24 @@ public getReleaseInformationCode (void)
 **Description**
 
 ```php
-public getReportOfEligibilityDate (void)
+public getReportOfEligibilityDate (int $position)
 ```
 
- 
+Get Report OfEligibilityDate (OBR.26) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 26  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1096,20 +1291,24 @@ public getReportOfEligibilityDate (void)
 **Description**
 
 ```php
-public getReportOfEligibilityFlag (void)
+public getReportOfEligibilityFlag (int $position)
 ```
 
- 
+Get Report OfEligibilityFlag (OBR.25) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 25  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1119,20 +1318,24 @@ public getReportOfEligibilityFlag (void)
 **Description**
 
 ```php
-public getRoomRatePrivate (void)
+public getRoomRatePrivate (int $position)
 ```
 
- 
+Get Room RatePrivate (OBR.41) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 41  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1142,20 +1345,24 @@ public getRoomRatePrivate (void)
 **Description**
 
 ```php
-public getRoomRateSemiPrivate (void)
+public getRoomRateSemiPrivate (int $position)
 ```
 
- 
+Get Room RateSemiPrivate (OBR.40) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 40  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1165,20 +1372,24 @@ public getRoomRateSemiPrivate (void)
 **Description**
 
 ```php
-public getTypeOfAgreementCode (void)
+public getTypeOfAgreementCode (int $position)
 ```
 
- 
+Get Type OfAgreementCode (OBR.31) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 31  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1188,20 +1399,24 @@ public getTypeOfAgreementCode (void)
 **Description**
 
 ```php
-public getVerificationBy (void)
+public getVerificationBy (int $position)
 ```
 
- 
+Get Verification By (OBR.30) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 30  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1211,20 +1426,24 @@ public getVerificationBy (void)
 **Description**
 
 ```php
-public getVerificationDateTime (void)
+public getVerificationDateTime (int $position)
 ```
 
- 
+Get Verification DateTime (OBR.29) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 29  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -1234,10 +1453,37 @@ public getVerificationDateTime (void)
 **Description**
 
 ```php
-public getVerificationStatus (void)
+public getVerificationStatus (int $position)
 ```
 
+Get Verification Status (OBR.45) 
+
  
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 45  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
+
+<hr />
+
+
+### IN1::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (void)
+```
+
+Reset index of this segment 
 
  
 
@@ -1248,6 +1494,7 @@ public getVerificationStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1257,20 +1504,25 @@ public getVerificationStatus (void)
 **Description**
 
 ```php
-public setAssignmentOfBenefits (void)
+public setAssignmentOfBenefits (string|int|array|null $value, int $position)
 ```
 
- 
+Set Assignment OfBenefits (OBR.20) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 20  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1280,20 +1532,25 @@ public setAssignmentOfBenefits (void)
 **Description**
 
 ```php
-public setAuthorizationInformation (void)
+public setAuthorizationInformation (string|int|array|null $value, int $position)
 ```
 
- 
+Set Authorization Information (OBR.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1303,20 +1560,25 @@ public setAuthorizationInformation (void)
 **Description**
 
 ```php
-public setBillingStatus (void)
+public setBillingStatus (string|int|array|null $value, int $position)
 ```
 
- 
+Set Billing Status (OBR.32) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 32  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1326,20 +1588,25 @@ public setBillingStatus (void)
 **Description**
 
 ```php
-public setCompanyPlanCode (void)
+public setCompanyPlanCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Company PlanCode (OBR.35) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 35  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1349,20 +1616,25 @@ public setCompanyPlanCode (void)
 **Description**
 
 ```php
-public setCoordOfBenPriority (void)
+public setCoordOfBenPriority (string|int|array|null $value, int $position)
 ```
 
- 
+Set Coord OfBenPriority (OBR.22) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 22  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1372,20 +1644,25 @@ public setCoordOfBenPriority (void)
 **Description**
 
 ```php
-public setCoordinationOfBenefits (void)
+public setCoordinationOfBenefits (string|int|array|null $value, int $position)
 ```
 
- 
+Set Coordination OfBenefits (OBR.21) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 21  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1395,20 +1672,25 @@ public setCoordinationOfBenefits (void)
 **Description**
 
 ```php
-public setCoverageType (void)
+public setCoverageType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Coverage Type (OBR.47) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 47  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1418,20 +1700,25 @@ public setCoverageType (void)
 **Description**
 
 ```php
-public setDelayBeforeLRDay (void)
+public setDelayBeforeLRDay (string|int|array|null $value, int $position)
 ```
 
- 
+Set Delay BeforeLRDay (OBR.34) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 34  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1441,20 +1728,25 @@ public setDelayBeforeLRDay (void)
 **Description**
 
 ```php
-public setGroupName (void)
+public setGroupName (string|int|array|null $value, int $position)
 ```
 
- 
+Set Group Name (OBR.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1464,20 +1756,25 @@ public setGroupName (void)
 **Description**
 
 ```php
-public setGroupNumber (void)
+public setGroupNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Group Number (OBR.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1487,20 +1784,25 @@ public setGroupNumber (void)
 **Description**
 
 ```php
-public setHandicap (void)
+public setHandicap (string|int|array|null $value, int $position)
 ```
 
- 
+Set Handicap (OBR.48) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 48  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1510,7 +1812,7 @@ public setHandicap (void)
 **Description**
 
 ```php
-public setID (void)
+ setID (void)
 ```
 
  
@@ -1524,6 +1826,7 @@ public setID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -1533,20 +1836,25 @@ public setID (void)
 **Description**
 
 ```php
-public setInsuranceCoContactPerson (void)
+public setInsuranceCoContactPerson (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insurance CoContactPerson (OBR.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1556,20 +1864,25 @@ public setInsuranceCoContactPerson (void)
 **Description**
 
 ```php
-public setInsuranceCoPhoneNumber (void)
+public setInsuranceCoPhoneNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insurance CoPhoneNumber (OBR.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1579,20 +1892,25 @@ public setInsuranceCoPhoneNumber (void)
 **Description**
 
 ```php
-public setInsuranceCompanyAddress (void)
+public setInsuranceCompanyAddress (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insurance CompanyAddress (OBR.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1602,20 +1920,25 @@ public setInsuranceCompanyAddress (void)
 **Description**
 
 ```php
-public setInsuranceCompanyID (void)
+public setInsuranceCompanyID (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insurance CompanyID (OBR.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1625,20 +1948,25 @@ public setInsuranceCompanyID (void)
 **Description**
 
 ```php
-public setInsuranceCompanyName (void)
+public setInsuranceCompanyName (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insurance CompanyName (OBR.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1648,20 +1976,25 @@ public setInsuranceCompanyName (void)
 **Description**
 
 ```php
-public setInsurancePlanID (void)
+public setInsurancePlanID (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insurance PlanID (OBR.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1671,20 +2004,25 @@ public setInsurancePlanID (void)
 **Description**
 
 ```php
-public setInsuredsAddress (void)
+public setInsuredsAddress (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insureds Address (OBR.19) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1694,20 +2032,25 @@ public setInsuredsAddress (void)
 **Description**
 
 ```php
-public setInsuredsDateOfBirth (void)
+public setInsuredsDateOfBirth (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insureds DateOfBirth (OBR.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1717,20 +2060,25 @@ public setInsuredsDateOfBirth (void)
 **Description**
 
 ```php
-public setInsuredsEmployersAddress (void)
+public setInsuredsEmployersAddress (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insureds EmployersAddress (OBR.44) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 44  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1740,20 +2088,25 @@ public setInsuredsEmployersAddress (void)
 **Description**
 
 ```php
-public setInsuredsEmploymentStatus (void)
+public setInsuredsEmploymentStatus (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insureds EmploymentStatus (OBR.42) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 42  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1763,20 +2116,25 @@ public setInsuredsEmploymentStatus (void)
 **Description**
 
 ```php
-public setInsuredsGroupEmpID (void)
+public setInsuredsGroupEmpID (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insureds GroupEmpID (OBR.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1786,20 +2144,25 @@ public setInsuredsGroupEmpID (void)
 **Description**
 
 ```php
-public setInsuredsGroupEmpName (void)
+public setInsuredsGroupEmpName (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insureds GroupEmpName (OBR.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1809,20 +2172,25 @@ public setInsuredsGroupEmpName (void)
 **Description**
 
 ```php
-public setInsuredsIDNumber (void)
+public setInsuredsIDNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insureds IDNumber (OBR.49) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 49  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1832,20 +2200,25 @@ public setInsuredsIDNumber (void)
 **Description**
 
 ```php
-public setInsuredsRelationshipToPatient (void)
+public setInsuredsRelationshipToPatient (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insureds RelationshipToPatient (OBR.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1855,20 +2228,25 @@ public setInsuredsRelationshipToPatient (void)
 **Description**
 
 ```php
-public setInsuredsSex (void)
+public setInsuredsSex (string|int|array|null $value, int $position)
 ```
 
- 
+Set Insureds Sex (OBR.43) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 43  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1878,20 +2256,25 @@ public setInsuredsSex (void)
 **Description**
 
 ```php
-public setLifetimeReserveDays (void)
+public setLifetimeReserveDays (string|int|array|null $value, int $position)
 ```
 
- 
+Set Lifetime ReserveDays (OBR.33) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 33  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1901,20 +2284,25 @@ public setLifetimeReserveDays (void)
 **Description**
 
 ```php
-public setNameOfInsured (void)
+public setNameOfInsured (string|int|array|null $value, int $position)
 ```
 
- 
+Set Name OfInsured (OBR.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1924,20 +2312,25 @@ public setNameOfInsured (void)
 **Description**
 
 ```php
-public setNoticeOfAdmissionDate (void)
+public setNoticeOfAdmissionDate (string|int|array|null $value, int $position)
 ```
 
- 
+Set Notice OfAdmissionDate (OBR.24) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 24  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1947,20 +2340,25 @@ public setNoticeOfAdmissionDate (void)
 **Description**
 
 ```php
-public setNoticeOfAdmissionFlag (void)
+public setNoticeOfAdmissionFlag (string|int|array|null $value, int $position)
 ```
 
- 
+Set Notice OfAdmissionFlag (OBR.23) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 23  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1970,20 +2368,25 @@ public setNoticeOfAdmissionFlag (void)
 **Description**
 
 ```php
-public setPlanEffectiveDate (void)
+public setPlanEffectiveDate (string|int|array|null $value, int $position)
 ```
 
- 
+Set Plan EffectiveDate (OBR.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1993,20 +2396,25 @@ public setPlanEffectiveDate (void)
 **Description**
 
 ```php
-public setPlanExpirationDate (void)
+public setPlanExpirationDate (string|int|array|null $value, int $position)
 ```
 
- 
+Set Plan ExpirationDate (OBR.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2016,20 +2424,25 @@ public setPlanExpirationDate (void)
 **Description**
 
 ```php
-public setPlanType (void)
+public setPlanType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Plan Type (OBR.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2039,20 +2452,25 @@ public setPlanType (void)
 **Description**
 
 ```php
-public setPolicyDeductible (void)
+public setPolicyDeductible (string|int|array|null $value, int $position)
 ```
 
- 
+Set Policy Deductible (OBR.37) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 37  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2062,20 +2480,25 @@ public setPolicyDeductible (void)
 **Description**
 
 ```php
-public setPolicyLimitAmount (void)
+public setPolicyLimitAmount (string|int|array|null $value, int $position)
 ```
 
- 
+Set Policy LimitAmount (OBR.38) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 38  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2085,20 +2508,25 @@ public setPolicyLimitAmount (void)
 **Description**
 
 ```php
-public setPolicyLimitDays (void)
+public setPolicyLimitDays (string|int|array|null $value, int $position)
 ```
 
- 
+Set Policy LimitDays (OBR.39) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 39  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2108,20 +2536,25 @@ public setPolicyLimitDays (void)
 **Description**
 
 ```php
-public setPolicyNumber (void)
+public setPolicyNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Policy Number (OBR.36) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 36  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2131,20 +2564,25 @@ public setPolicyNumber (void)
 **Description**
 
 ```php
-public setPreAdmitCertPAC (void)
+public setPreAdmitCertPAC (string|int|array|null $value, int $position)
 ```
 
- 
+Set Pre AdmitCertPAC (OBR.28) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 28  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2154,20 +2592,25 @@ public setPreAdmitCertPAC (void)
 **Description**
 
 ```php
-public setPriorInsurancePlanID (void)
+public setPriorInsurancePlanID (string|int|array|null $value, int $position)
 ```
 
- 
+Set Prior InsurancePlanID (OBR.46) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 46  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2177,20 +2620,25 @@ public setPriorInsurancePlanID (void)
 **Description**
 
 ```php
-public setReleaseInformationCode (void)
+public setReleaseInformationCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Release InformationCode (OBR.27) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 27  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2200,20 +2648,25 @@ public setReleaseInformationCode (void)
 **Description**
 
 ```php
-public setReportOfEligibilityDate (void)
+public setReportOfEligibilityDate (string|int|array|null $value, int $position)
 ```
 
- 
+Set Report OfEligibilityDate (OBR.26) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 26  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2223,20 +2676,25 @@ public setReportOfEligibilityDate (void)
 **Description**
 
 ```php
-public setReportOfEligibilityFlag (void)
+public setReportOfEligibilityFlag (string|int|array|null $value, int $position)
 ```
 
- 
+Set Report OfEligibilityFlag (OBR.25) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 25  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2246,20 +2704,25 @@ public setReportOfEligibilityFlag (void)
 **Description**
 
 ```php
-public setRoomRatePrivate (void)
+public setRoomRatePrivate (string|int|array|null $value, int $position)
 ```
 
- 
+Set Room RatePrivate (OBR.41) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 41  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2269,20 +2732,25 @@ public setRoomRatePrivate (void)
 **Description**
 
 ```php
-public setRoomRateSemiPrivate (void)
+public setRoomRateSemiPrivate (string|int|array|null $value, int $position)
 ```
 
- 
+Set Room RateSemiPrivate (OBR.40) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 40  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2292,20 +2760,25 @@ public setRoomRateSemiPrivate (void)
 **Description**
 
 ```php
-public setTypeOfAgreementCode (void)
+public setTypeOfAgreementCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Type OfAgreementCode (OBR.31) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 31  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2315,20 +2788,25 @@ public setTypeOfAgreementCode (void)
 **Description**
 
 ```php
-public setVerificationBy (void)
+public setVerificationBy (string|int|array|null $value, int $position)
 ```
 
- 
+Set Verification By (OBR.30) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 30  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2338,20 +2816,25 @@ public setVerificationBy (void)
 **Description**
 
 ```php
-public setVerificationDateTime (void)
+public setVerificationDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Verification DateTime (OBR.29) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 29  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -2361,20 +2844,25 @@ public setVerificationDateTime (void)
 **Description**
 
 ```php
-public setVerificationStatus (void)
+public setVerificationStatus (string|int|array|null $value, int $position)
 ```
 
- 
+Set Verification Status (OBR.45) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 45  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
