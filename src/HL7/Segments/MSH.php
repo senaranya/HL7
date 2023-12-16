@@ -180,7 +180,11 @@ class MSH extends Segment
 
     /**
      *
-     * Sets message type to MSH segment.
+     *
+     * @param string $value
+     */
+    /**
+     * Sets message type to MSH segment. (OBR.9)
      *
      * If trigger event is already set, then it is preserved
      *
@@ -194,11 +198,6 @@ class MSH extends Segment
      *
      * Then the new field value will be ORM^R01.
      * If it was empty then the new value will be just ORM.
-     *
-     * @param string $value
-     */
-    /**
-     * Set Message Type (OBR.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -216,8 +215,7 @@ class MSH extends Segment
     }
 
     /**
-     *
-     * Sets trigger event to MSH segment.
+     * Sets trigger event to MSH segment. (OBR.9)
      *
      * If meessage type is already set, then it is preserved
      *
@@ -231,11 +229,6 @@ class MSH extends Segment
      *
      * Then the new field value will be ORU^R30.
      * If trigger event was not set then it will set the new value.
-     *
-     * @param string $value
-     */
-    /**
-     * Set Trigger Event (OBR.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
