@@ -44,11 +44,29 @@ class PV1 extends Segment
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Patient Class (OBR.2)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 2
+     *
+     * @return bool
+     *
+     */
     public function setPatientClass($value, int $position = 2)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Assigned PatientLocation (OBR.3)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 3
+     *
+     * @return bool
+     *
+     */
     public function setAssignedPatientLocation($value, int $position = 3)
     {
         return $this->setField($position, $value);
@@ -56,6 +74,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Admission Type (OBR.4)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 4
+     *
+     * @return bool
+     *
      */
     public function setAdmissionType($value, int $position = 4)
     {
@@ -65,6 +92,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Pre AdmitNumber (OBR.5)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 5
+     *
+     * @return bool
+     *
+     */
     public function setPreAdmitNumber($value, int $position = 5)
     {
         return $this->setField($position, $value);
@@ -72,6 +108,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Prior PatientLocation (OBR.6)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 6
+     *
+     * @return bool
+     *
      */
     public function setPriorPatientLocation($value, int $position = 6)
     {
@@ -81,6 +126,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Attending Doctor (OBR.7)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 7
+     *
+     * @return bool
+     *
+     */
     public function setAttendingDoctor($value, int $position = 7)
     {
         return $this->setField($position, $value);
@@ -88,6 +142,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Referring Doctor (OBR.8)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 8
+     *
+     * @return bool
+     *
      */
     public function setReferringDoctor($value, int $position = 8)
     {
@@ -97,6 +160,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Consulting Doctor (OBR.9)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 9
+     *
+     * @return bool
+     *
+     */
     public function setConsultingDoctor($value, int $position = 9)
     {
         return $this->setField($position, $value);
@@ -104,6 +176,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Hospital Service (OBR.10)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 10
+     *
+     * @return bool
+     *
      */
     public function setHospitalService($value, int $position = 10)
     {
@@ -113,6 +194,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Temporary Location (OBR.11)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 11
+     *
+     * @return bool
+     *
+     */
     public function setTemporaryLocation($value, int $position = 11)
     {
         return $this->setField($position, $value);
@@ -120,6 +210,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Pre AdmitTestIndicator (OBR.12)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 12
+     *
+     * @return bool
+     *
      */
     public function setPreAdmitTestIndicator($value, int $position = 12)
     {
@@ -129,6 +228,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Re AdmissionIndicator (OBR.13)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 13
+     *
+     * @return bool
+     *
+     */
     public function setReAdmissionIndicator($value, int $position = 13)
     {
         return $this->setField($position, $value);
@@ -136,6 +244,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Admit Source (OBR.14)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 14
+     *
+     * @return bool
+     *
      */
     public function setAdmitSource($value, int $position = 14)
     {
@@ -145,6 +262,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Ambulatory Status (OBR.15)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 15
+     *
+     * @return bool
+     *
+     */
     public function setAmbulatoryStatus($value, int $position = 15)
     {
         return $this->setField($position, $value);
@@ -152,6 +278,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Vip Indicator (OBR.16)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 16
+     *
+     * @return bool
+     *
      */
     public function setVipIndicator($value, int $position = 16)
     {
@@ -161,6 +296,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Admitting Doctor (OBR.17)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 17
+     *
+     * @return bool
+     *
+     */
     public function setAdmittingDoctor($value, int $position = 17)
     {
         return $this->setField($position, $value);
@@ -168,6 +312,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Patient Type (OBR.18)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 18
+     *
+     * @return bool
+     *
      */
     public function setPatientType($value, int $position = 18)
     {
@@ -177,6 +330,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Visit Number (OBR.19)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 19
+     *
+     * @return bool
+     *
+     */
     public function setVisitNumber($value, int $position = 19)
     {
         return $this->setField($position, $value);
@@ -184,6 +346,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Financial Class (OBR.20)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 20
+     *
+     * @return bool
+     *
      */
     public function setFinancialClass($value, int $position = 20)
     {
@@ -193,6 +364,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Charge PriceIndicator (OBR.21)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 21
+     *
+     * @return bool
+     *
+     */
     public function setChargePriceIndicator($value, int $position = 21)
     {
         return $this->setField($position, $value);
@@ -200,6 +380,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Courtesy Code (OBR.22)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 22
+     *
+     * @return bool
+     *
      */
     public function setCourtesyCode($value, int $position = 22)
     {
@@ -209,6 +398,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Credit Rating (OBR.23)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 23
+     *
+     * @return bool
+     *
+     */
     public function setCreditRating($value, int $position = 23)
     {
         return $this->setField($position, $value);
@@ -216,6 +414,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Contract Code (OBR.24)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 24
+     *
+     * @return bool
+     *
      */
     public function setContractCode($value, int $position = 24)
     {
@@ -225,6 +432,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Contract EffectiveDate (OBR.25)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 25
+     *
+     * @return bool
+     *
+     */
     public function setContractEffectiveDate($value, int $position = 25)
     {
         return $this->setField($position, $value);
@@ -232,6 +448,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Contract Amount (OBR.26)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 26
+     *
+     * @return bool
+     *
      */
     public function setContractAmount($value, int $position = 26)
     {
@@ -241,6 +466,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Contract Period (OBR.27)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 27
+     *
+     * @return bool
+     *
+     */
     public function setContractPeriod($value, int $position = 27)
     {
         return $this->setField($position, $value);
@@ -248,6 +482,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Interest Code (OBR.28)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 28
+     *
+     * @return bool
+     *
      */
     public function setInterestCode($value, int $position = 28)
     {
@@ -257,6 +500,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Transfer ToBadDebtCode (OBR.29)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 29
+     *
+     * @return bool
+     *
+     */
     public function setTransferToBadDebtCode($value, int $position = 29)
     {
         return $this->setField($position, $value);
@@ -264,6 +516,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Transfer ToBadDebtDate (OBR.30)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 30
+     *
+     * @return bool
+     *
      */
     public function setTransferToBadDebtDate($value, int $position = 30)
     {
@@ -273,6 +534,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Bad DebtAgencyCode (OBR.31)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 31
+     *
+     * @return bool
+     *
+     */
     public function setBadDebtAgencyCode($value, int $position = 31)
     {
         return $this->setField($position, $value);
@@ -280,6 +550,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Bad DebtTransferAmount (OBR.32)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 32
+     *
+     * @return bool
+     *
      */
     public function setBadDebtTransferAmount($value, int $position = 32)
     {
@@ -289,6 +568,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Bad DebtRecoveryAmount (OBR.33)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 33
+     *
+     * @return bool
+     *
+     */
     public function setBadDebtRecoveryAmount($value, int $position = 33)
     {
         return $this->setField($position, $value);
@@ -296,6 +584,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Delete AccountIndicator (OBR.34)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 34
+     *
+     * @return bool
+     *
      */
     public function setDeleteAccountIndicator($value, int $position = 34)
     {
@@ -305,6 +602,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Delete AccountDate (OBR.35)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 35
+     *
+     * @return bool
+     *
+     */
     public function setDeleteAccountDate($value, int $position = 35)
     {
         return $this->setField($position, $value);
@@ -312,6 +618,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Discharge Disposition (OBR.36)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 36
+     *
+     * @return bool
+     *
      */
     public function setDischargeDisposition($value, int $position = 36)
     {
@@ -321,6 +636,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Discharged ToLocation (OBR.37)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 37
+     *
+     * @return bool
+     *
+     */
     public function setDischargedToLocation($value, int $position = 37)
     {
         return $this->setField($position, $value);
@@ -328,6 +652,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Diet Type (OBR.38)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 38
+     *
+     * @return bool
+     *
      */
     public function setDietType($value, int $position = 38)
     {
@@ -337,6 +670,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Servicing Facility (OBR.39)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 39
+     *
+     * @return bool
+     *
+     */
     public function setServicingFacility($value, int $position = 39)
     {
         return $this->setField($position, $value);
@@ -344,6 +686,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Bed Status (OBR.40)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 40
+     *
+     * @return bool
+     *
      */
     public function setBedStatus($value, int $position = 40)
     {
@@ -353,6 +704,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Account Status (OBR.41)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 41
+     *
+     * @return bool
+     *
+     */
     public function setAccountStatus($value, int $position = 41)
     {
         return $this->setField($position, $value);
@@ -360,6 +720,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Pending Location (OBR.42)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 42
+     *
+     * @return bool
+     *
      */
     public function setPendingLocation($value, int $position = 42)
     {
@@ -369,6 +738,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Prior TemporaryLocation (OBR.43)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 43
+     *
+     * @return bool
+     *
+     */
     public function setPriorTemporaryLocation($value, int $position = 43)
     {
         return $this->setField($position, $value);
@@ -376,6 +754,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Admit DateTime (OBR.44)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 44
+     *
+     * @return bool
+     *
      */
     public function setAdmitDateTime($value, int $position = 44)
     {
@@ -385,6 +772,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Discharge DateTime (OBR.45)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 45
+     *
+     * @return bool
+     *
+     */
     public function setDischargeDateTime($value, int $position = 45)
     {
         return $this->setField($position, $value);
@@ -392,6 +788,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Current PatientBalance (OBR.46)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 46
+     *
+     * @return bool
+     *
      */
     public function setCurrentPatientBalance($value, int $position = 46)
     {
@@ -401,6 +806,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Total Charges (OBR.47)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 47
+     *
+     * @return bool
+     *
+     */
     public function setTotalCharges($value, int $position = 47)
     {
         return $this->setField($position, $value);
@@ -408,6 +822,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Total Adjustments (OBR.48)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 48
+     *
+     * @return bool
+     *
      */
     public function setTotalAdjustments($value, int $position = 48)
     {
@@ -417,6 +840,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Total Payments (OBR.49)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 49
+     *
+     * @return bool
+     *
+     */
     public function setTotalPayments($value, int $position = 49)
     {
         return $this->setField($position, $value);
@@ -424,6 +856,15 @@ class PV1 extends Segment
 
     /**
      * @return bool
+     */
+    /**
+     * Set Alternate VisitID (OBR.50)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 50
+     *
+     * @return bool
+     *
      */
     public function setAlternateVisitID($value, int $position = 50)
     {
@@ -433,6 +874,15 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Visit Indicator (OBR.51)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 51
+     *
+     * @return bool
+     *
+     */
     public function setVisitIndicator($value, int $position = 51)
     {
         return $this->setField($position, $value);
@@ -441,266 +891,691 @@ class PV1 extends Segment
     /**
      * @return bool
      */
+    /**
+     * Set Other HealthcareProvider (OBR.52)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 52
+     *
+     * @return bool
+     *
+     */
     public function setOtherHealthcareProvider($value, int $position = 52)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Get ID (OBR.1)
+     *
+     * @param int $position Defaults to 1
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getID(int $position = 1)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Patient Class (OBR.2)
+     *
+     * @param int $position Defaults to 2
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getPatientClass(int $position = 2)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Assigned PatientLocation (OBR.3)
+     *
+     * @param int $position Defaults to 3
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getAssignedPatientLocation(int $position = 3)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Admission Type (OBR.4)
+     *
+     * @param int $position Defaults to 4
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getAdmissionType(int $position = 4)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Pre AdmitNumber (OBR.5)
+     *
+     * @param int $position Defaults to 5
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getPreAdmitNumber(int $position = 5)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Prior PatientLocation (OBR.6)
+     *
+     * @param int $position Defaults to 6
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getPriorPatientLocation(int $position = 6)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Attending Doctor (OBR.7)
+     *
+     * @param int $position Defaults to 7
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getAttendingDoctor(int $position = 7)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Referring Doctor (OBR.8)
+     *
+     * @param int $position Defaults to 8
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getReferringDoctor(int $position = 8)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Consulting Doctor (OBR.9)
+     *
+     * @param int $position Defaults to 9
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getConsultingDoctor(int $position = 9)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Hospital Service (OBR.10)
+     *
+     * @param int $position Defaults to 10
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getHospitalService(int $position = 10)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Temporary Location (OBR.11)
+     *
+     * @param int $position Defaults to 11
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getTemporaryLocation(int $position = 11)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Pre AdmitTestIndicator (OBR.12)
+     *
+     * @param int $position Defaults to 12
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getPreAdmitTestIndicator(int $position = 12)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Re AdmissionIndicator (OBR.13)
+     *
+     * @param int $position Defaults to 13
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getReAdmissionIndicator(int $position = 13)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Admit Source (OBR.14)
+     *
+     * @param int $position Defaults to 14
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getAdmitSource(int $position = 14)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Ambulatory Status (OBR.15)
+     *
+     * @param int $position Defaults to 15
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getAmbulatoryStatus(int $position = 15)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Vip Indicator (OBR.16)
+     *
+     * @param int $position Defaults to 16
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getVipIndicator(int $position = 16)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Admitting Doctor (OBR.17)
+     *
+     * @param int $position Defaults to 17
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getAdmittingDoctor(int $position = 17)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Patient Type (OBR.18)
+     *
+     * @param int $position Defaults to 18
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getPatientType(int $position = 18)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Visit Number (OBR.19)
+     *
+     * @param int $position Defaults to 19
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getVisitNumber(int $position = 19)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Financial Class (OBR.20)
+     *
+     * @param int $position Defaults to 20
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getFinancialClass(int $position = 20)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Charge PriceIndicator (OBR.21)
+     *
+     * @param int $position Defaults to 21
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getChargePriceIndicator(int $position = 21)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Courtesy Code (OBR.22)
+     *
+     * @param int $position Defaults to 22
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getCourtesyCode(int $position = 22)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Credit Rating (OBR.23)
+     *
+     * @param int $position Defaults to 23
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getCreditRating(int $position = 23)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Contract Code (OBR.24)
+     *
+     * @param int $position Defaults to 24
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getContractCode(int $position = 24)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Contract EffectiveDate (OBR.25)
+     *
+     * @param int $position Defaults to 25
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getContractEffectiveDate(int $position = 25)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Contract Amount (OBR.26)
+     *
+     * @param int $position Defaults to 26
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getContractAmount(int $position = 26)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Contract Period (OBR.27)
+     *
+     * @param int $position Defaults to 27
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getContractPeriod(int $position = 27)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Interest Code (OBR.28)
+     *
+     * @param int $position Defaults to 28
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getInterestCode(int $position = 28)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Transfer ToBadDebtCode (OBR.29)
+     *
+     * @param int $position Defaults to 29
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getTransferToBadDebtCode(int $position = 29)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Transfer ToBadDebtDate (OBR.30)
+     *
+     * @param int $position Defaults to 30
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getTransferToBadDebtDate(int $position = 30)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Bad DebtAgencyCode (OBR.31)
+     *
+     * @param int $position Defaults to 31
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getBadDebtAgencyCode(int $position = 31)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Bad DebtTransferAmount (OBR.32)
+     *
+     * @param int $position Defaults to 32
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getBadDebtTransferAmount(int $position = 32)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Bad DebtRecoveryAmount (OBR.33)
+     *
+     * @param int $position Defaults to 33
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getBadDebtRecoveryAmount(int $position = 33)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Delete AccountIndicator (OBR.34)
+     *
+     * @param int $position Defaults to 34
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getDeleteAccountIndicator(int $position = 34)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Delete AccountDate (OBR.35)
+     *
+     * @param int $position Defaults to 35
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getDeleteAccountDate(int $position = 35)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Discharge Disposition (OBR.36)
+     *
+     * @param int $position Defaults to 36
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getDischargeDisposition(int $position = 36)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Discharged ToLocation (OBR.37)
+     *
+     * @param int $position Defaults to 37
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getDischargedToLocation(int $position = 37)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Diet Type (OBR.38)
+     *
+     * @param int $position Defaults to 38
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getDietType(int $position = 38)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Servicing Facility (OBR.39)
+     *
+     * @param int $position Defaults to 39
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getServicingFacility(int $position = 39)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Bed Status (OBR.40)
+     *
+     * @param int $position Defaults to 40
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getBedStatus(int $position = 40)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Account Status (OBR.41)
+     *
+     * @param int $position Defaults to 41
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getAccountStatus(int $position = 41)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Pending Location (OBR.42)
+     *
+     * @param int $position Defaults to 42
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getPendingLocation(int $position = 42)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Prior TemporaryLocation (OBR.43)
+     *
+     * @param int $position Defaults to 43
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getPriorTemporaryLocation(int $position = 43)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Admit DateTime (OBR.44)
+     *
+     * @param int $position Defaults to 44
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getAdmitDateTime(int $position = 44)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Discharge DateTime (OBR.45)
+     *
+     * @param int $position Defaults to 45
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getDischargeDateTime(int $position = 45)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Current PatientBalance (OBR.46)
+     *
+     * @param int $position Defaults to 46
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getCurrentPatientBalance(int $position = 46)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Total Charges (OBR.47)
+     *
+     * @param int $position Defaults to 47
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getTotalCharges(int $position = 47)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Total Adjustments (OBR.48)
+     *
+     * @param int $position Defaults to 48
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getTotalAdjustments(int $position = 48)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Total Payments (OBR.49)
+     *
+     * @param int $position Defaults to 49
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getTotalPayments(int $position = 49)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Alternate VisitID (OBR.50)
+     *
+     * @param int $position Defaults to 50
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getAlternateVisitID(int $position = 50)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Visit Indicator (OBR.51)
+     *
+     * @param int $position Defaults to 51
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getVisitIndicator(int $position = 51)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Other HealthcareProvider (OBR.52)
+     *
+     * @param int $position Defaults to 52
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getOtherHealthcareProvider(int $position = 52)
     {
         return $this->getField($position);

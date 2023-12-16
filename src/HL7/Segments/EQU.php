@@ -36,46 +36,122 @@ class EQU extends Segment
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Event DateTime (OBR.2)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 2
+     *
+     * @return bool
+     *
+     */
     public function setEventDateTime($value, int $position = 2)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Equipment State (OBR.3)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 3
+     *
+     * @return bool
+     *
+     */
     public function setEquipmentState($value, int $position = 3)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Local RemoteControlState (OBR.4)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 4
+     *
+     * @return bool
+     *
+     */
     public function setLocalRemoteControlState($value, int $position = 4)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Alert Level (OBR.5)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 5
+     *
+     * @return bool
+     *
+     */
     public function setAlertLevel($value, int $position = 5)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Get Equipment InstanceIdentifier (OBR.1)
+     *
+     * @param int $position Defaults to 1
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getEquipmentInstanceIdentifier(int $position = 1)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Event DateTime (OBR.2)
+     *
+     * @param int $position Defaults to 2
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getEventDateTime(int $position = 2)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Equipment State (OBR.3)
+     *
+     * @param int $position Defaults to 3
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getEquipmentState(int $position = 3)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Local RemoteControlState (OBR.4)
+     *
+     * @param int $position Defaults to 4
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getLocalRemoteControlState(int $position = 4)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Alert Level (OBR.4)
+     *
+     * @param int $position Defaults to 4
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getAlertLevel(int $position = 4)
     {
         return $this->getField($position);

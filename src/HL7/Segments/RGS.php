@@ -43,26 +43,68 @@ class RGS extends Segment
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Segment ActionCode (OBR.2)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 2
+     *
+     * @return bool
+     *
+     */
     public function setSegmentActionCode($value, int $position = 2): bool
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Resource GroupID (OBR.3)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 3
+     *
+     * @return bool
+     *
+     */
     public function setResourceGroupID($value, int $position = 3): bool
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Get ID (OBR.1)
+     *
+     * @param int $position Defaults to 1
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getID(int $position = 1)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Segment ActionCode (OBR.2)
+     *
+     * @param int $position Defaults to 2
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getSegmentActionCode(int $position = 2)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Resource GroupID (OBR.3)
+     *
+     * @param int $position Defaults to 3
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getResourceGroupID(int $position = 3)
     {
         return $this->getField($position);

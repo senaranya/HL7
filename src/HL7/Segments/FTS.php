@@ -17,11 +17,29 @@ class FTS extends Segment
         parent::__construct('FTS', $fields);
     }
 
+    /**
+     * Set File BatchCount (OBR.1)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 1
+     *
+     * @return bool
+     *
+     */
     public function setFileBatchCount($value, int $position = 1)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set File TrailerComment (OBR.2)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 2
+     *
+     * @return bool
+     *
+     */
     public function setFileTrailerComment($value, int $position = 2)
     {
         return $this->setField($position, $value);
@@ -29,11 +47,27 @@ class FTS extends Segment
 
     // -------------------- Getter Methods ------------------------------
 
+    /**
+     * Get File BatchCount (OBR.1)
+     *
+     * @param int $position Defaults to 1
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getFileBatchCount(int $position = 1)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get File TrailerComment (OBR.2)
+     *
+     * @param int $position Defaults to 2
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getFileTrailerComment(int $position = 2)
     {
         return $this->getField($position);
