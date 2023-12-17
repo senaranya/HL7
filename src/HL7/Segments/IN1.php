@@ -45,7 +45,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insurance PlanID (OBR.2)
+     * Set Insurance Plan ID (IN1.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -59,7 +59,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insurance CompanyID (OBR.3)
+     * Set Insurance Company ID (IN1.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -73,7 +73,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insurance CompanyName (OBR.4)
+     * Set Insurance Company Name (IN1.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -87,7 +87,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insurance CompanyAddress (OBR.5)
+     * Set Insurance Company Address (IN1.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -101,7 +101,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insurance CoContactPerson (OBR.6)
+     * Set Insurance Co Contact Person (IN1.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -115,7 +115,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insurance CoPhoneNumber (OBR.7)
+     * Set Insurance Co Phone Number (IN1.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -129,7 +129,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Group Number (OBR.8)
+     * Set Group Number (IN1.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -143,7 +143,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Group Name (OBR.9)
+     * Set Group Name (IN1.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -157,7 +157,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insureds GroupEmpID (OBR.10)
+     * Set Insureds Group Emp ID (IN1.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -171,7 +171,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insureds GroupEmpName (OBR.11)
+     * Set Insureds Group Emp Name (IN1.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -185,7 +185,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Plan EffectiveDate (OBR.12)
+     * Set Plan Effective Date (IN1.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -199,7 +199,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Plan ExpirationDate (OBR.13)
+     * Set Plan Expiration Date (IN1.13)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 13
@@ -213,7 +213,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Authorization Information (OBR.14)
+     * Set Authorization Information (IN1.14)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 14
@@ -227,7 +227,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Plan Type (OBR.15)
+     * Set Plan Type (IN1.15)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 15
@@ -241,7 +241,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Name OfInsured (OBR.16)
+     * Set Name Of Insured (IN1.16)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 16
@@ -255,7 +255,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insureds RelationshipToPatient (OBR.17)
+     * Set Insureds Relationship To Patient (IN1.17)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 17
@@ -269,7 +269,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insureds DateOfBirth (OBR.18)
+     * Set Insureds Date Of Birth (IN1.18)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 18
@@ -283,7 +283,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insureds Address (OBR.19)
+     * Set Insureds Address (IN1.19)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 19
@@ -297,7 +297,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Assignment OfBenefits (OBR.20)
+     * Set Assignment Of Benefits (IN1.20)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 20
@@ -311,7 +311,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Coordination OfBenefits (OBR.21)
+     * Set Coordination Of Benefits (IN1.21)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 21
@@ -325,7 +325,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Coord OfBenPriority (OBR.22)
+     * Set Coord Of Ben Priority (IN1.22)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 22
@@ -339,7 +339,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Notice OfAdmissionFlag (OBR.23)
+     * Set Notice Of Admission Flag (IN1.23)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 23
@@ -353,7 +353,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Notice OfAdmissionDate (OBR.24)
+     * Set Notice Of Admission Date (IN1.24)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 24
@@ -367,7 +367,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Report OfEligibilityFlag (OBR.25)
+     * Set Report Of Eligibility Flag (IN1.25)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 25
@@ -381,7 +381,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Report OfEligibilityDate (OBR.26)
+     * Set Report Of Eligibility Date (IN1.26)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 26
@@ -395,7 +395,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Release InformationCode (OBR.27)
+     * Set Release Information Code (IN1.27)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 27
@@ -409,7 +409,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Pre AdmitCertPAC (OBR.28)
+     * Set Pre Admit Cert PAC (IN1.28)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 28
@@ -423,7 +423,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Verification DateTime (OBR.29)
+     * Set Verification Date Time (IN1.29)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 29
@@ -437,7 +437,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Verification By (OBR.30)
+     * Set Verification By (IN1.30)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 30
@@ -451,7 +451,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Type OfAgreementCode (OBR.31)
+     * Set Type Of Agreement Code (IN1.31)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 31
@@ -465,7 +465,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Billing Status (OBR.32)
+     * Set Billing Status (IN1.32)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 32
@@ -479,7 +479,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Lifetime ReserveDays (OBR.33)
+     * Set Lifetime Reserve Days (IN1.33)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 33
@@ -493,7 +493,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Delay BeforeLRDay (OBR.34)
+     * Set Delay Before LRDay (IN1.34)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 34
@@ -507,7 +507,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Company PlanCode (OBR.35)
+     * Set Company Plan Code (IN1.35)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 35
@@ -521,7 +521,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Policy Number (OBR.36)
+     * Set Policy Number (IN1.36)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 36
@@ -535,7 +535,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Policy Deductible (OBR.37)
+     * Set Policy Deductible (IN1.37)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 37
@@ -549,7 +549,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Policy LimitAmount (OBR.38)
+     * Set Policy Limit Amount (IN1.38)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 38
@@ -563,7 +563,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Policy LimitDays (OBR.39)
+     * Set Policy Limit Days (IN1.39)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 39
@@ -577,7 +577,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Room RateSemiPrivate (OBR.40)
+     * Set Room Rate Semi Private (IN1.40)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 40
@@ -591,7 +591,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Room RatePrivate (OBR.41)
+     * Set Room Rate Private (IN1.41)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 41
@@ -605,7 +605,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insureds EmploymentStatus (OBR.42)
+     * Set Insureds Employment Status (IN1.42)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 42
@@ -619,7 +619,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insureds Sex (OBR.43)
+     * Set Insureds Sex (IN1.43)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 43
@@ -633,7 +633,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insureds EmployersAddress (OBR.44)
+     * Set Insureds Employers Address (IN1.44)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 44
@@ -647,7 +647,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Verification Status (OBR.45)
+     * Set Verification Status (IN1.45)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 45
@@ -661,7 +661,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Prior InsurancePlanID (OBR.46)
+     * Set Prior Insurance Plan ID (IN1.46)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 46
@@ -675,7 +675,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Coverage Type (OBR.47)
+     * Set Coverage Type (IN1.47)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 47
@@ -689,7 +689,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Handicap (OBR.48)
+     * Set Handicap (IN1.48)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 48
@@ -703,7 +703,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Set Insureds IDNumber (OBR.49)
+     * Set Insureds IDNumber (IN1.49)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 49
@@ -717,7 +717,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get ID (OBR.1)
+     * Get ID (IN1.1)
      *
      * @param int $position Defaults to 1
      *
@@ -730,7 +730,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insurance PlanID (OBR.2)
+     * Get Insurance PlanID (IN1.2)
      *
      * @param int $position Defaults to 2
      *
@@ -743,7 +743,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insurance CompanyID (OBR.3)
+     * Get Insurance CompanyID (IN1.3)
      *
      * @param int $position Defaults to 3
      *
@@ -756,7 +756,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insurance CompanyName (OBR.4)
+     * Get Insurance CompanyName (IN1.4)
      *
      * @param int $position Defaults to 4
      *
@@ -769,7 +769,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insurance CompanyAddress (OBR.5)
+     * Get Insurance CompanyAddress (IN1.5)
      *
      * @param int $position Defaults to 5
      *
@@ -782,7 +782,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insurance CoContactPerson (OBR.6)
+     * Get Insurance CoContactPerson (IN1.6)
      *
      * @param int $position Defaults to 6
      *
@@ -795,7 +795,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insurance CoPhoneNumber (OBR.7)
+     * Get Insurance CoPhoneNumber (IN1.7)
      *
      * @param int $position Defaults to 7
      *
@@ -808,7 +808,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Group Number (OBR.8)
+     * Get Group Number (IN1.8)
      *
      * @param int $position Defaults to 8
      *
@@ -821,7 +821,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Group Name (OBR.9)
+     * Get Group Name (IN1.9)
      *
      * @param int $position Defaults to 9
      *
@@ -834,7 +834,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insureds GroupEmpID (OBR.10)
+     * Get Insureds GroupEmpID (IN1.10)
      *
      * @param int $position Defaults to 10
      *
@@ -847,7 +847,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insureds GroupEmpName (OBR.11)
+     * Get Insureds GroupEmpName (IN1.11)
      *
      * @param int $position Defaults to 11
      *
@@ -860,7 +860,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Plan EffectiveDate (OBR.12)
+     * Get Plan EffectiveDate (IN1.12)
      *
      * @param int $position Defaults to 12
      *
@@ -873,7 +873,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Plan ExpirationDate (OBR.13)
+     * Get Plan ExpirationDate (IN1.13)
      *
      * @param int $position Defaults to 13
      *
@@ -886,7 +886,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Authorization Information (OBR.14)
+     * Get Authorization Information (IN1.14)
      *
      * @param int $position Defaults to 14
      *
@@ -899,7 +899,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Plan Type (OBR.15)
+     * Get Plan Type (IN1.15)
      *
      * @param int $position Defaults to 15
      *
@@ -912,7 +912,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Name OfInsured (OBR.16)
+     * Get Name OfInsured (IN1.16)
      *
      * @param int $position Defaults to 16
      *
@@ -925,7 +925,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insureds RelationshipToPatient (OBR.17)
+     * Get Insureds RelationshipToPatient (IN1.17)
      *
      * @param int $position Defaults to 17
      *
@@ -938,7 +938,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insureds DateOfBirth (OBR.18)
+     * Get Insureds DateOfBirth (IN1.18)
      *
      * @param int $position Defaults to 18
      *
@@ -951,7 +951,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insureds Address (OBR.19)
+     * Get Insureds Address (IN1.19)
      *
      * @param int $position Defaults to 19
      *
@@ -964,7 +964,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Assignment OfBenefits (OBR.20)
+     * Get Assignment OfBenefits (IN1.20)
      *
      * @param int $position Defaults to 20
      *
@@ -977,7 +977,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Coordination OfBenefits (OBR.21)
+     * Get Coordination OfBenefits (IN1.21)
      *
      * @param int $position Defaults to 21
      *
@@ -990,7 +990,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Coord OfBenPriority (OBR.22)
+     * Get Coord OfBenPriority (IN1.22)
      *
      * @param int $position Defaults to 22
      *
@@ -1003,7 +1003,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Notice OfAdmissionFlag (OBR.23)
+     * Get Notice OfAdmissionFlag (IN1.23)
      *
      * @param int $position Defaults to 23
      *
@@ -1016,7 +1016,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Notice OfAdmissionDate (OBR.24)
+     * Get Notice OfAdmissionDate (IN1.24)
      *
      * @param int $position Defaults to 24
      *
@@ -1029,7 +1029,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Report OfEligibilityFlag (OBR.25)
+     * Get Report OfEligibilityFlag (IN1.25)
      *
      * @param int $position Defaults to 25
      *
@@ -1042,7 +1042,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Report OfEligibilityDate (OBR.26)
+     * Get Report OfEligibilityDate (IN1.26)
      *
      * @param int $position Defaults to 26
      *
@@ -1055,7 +1055,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Release InformationCode (OBR.27)
+     * Get Release InformationCode (IN1.27)
      *
      * @param int $position Defaults to 27
      *
@@ -1068,7 +1068,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Pre AdmitCertPAC (OBR.28)
+     * Get Pre AdmitCertPAC (IN1.28)
      *
      * @param int $position Defaults to 28
      *
@@ -1081,7 +1081,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Verification DateTime (OBR.29)
+     * Get Verification DateTime (IN1.29)
      *
      * @param int $position Defaults to 29
      *
@@ -1094,7 +1094,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Verification By (OBR.30)
+     * Get Verification By (IN1.30)
      *
      * @param int $position Defaults to 30
      *
@@ -1107,7 +1107,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Type OfAgreementCode (OBR.31)
+     * Get Type OfAgreementCode (IN1.31)
      *
      * @param int $position Defaults to 31
      *
@@ -1120,7 +1120,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Billing Status (OBR.32)
+     * Get Billing Status (IN1.32)
      *
      * @param int $position Defaults to 32
      *
@@ -1133,7 +1133,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Lifetime ReserveDays (OBR.33)
+     * Get Lifetime ReserveDays (IN1.33)
      *
      * @param int $position Defaults to 33
      *
@@ -1146,7 +1146,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Delay BeforeLRDay (OBR.34)
+     * Get Delay BeforeLRDay (IN1.34)
      *
      * @param int $position Defaults to 34
      *
@@ -1159,7 +1159,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Company PlanCode (OBR.35)
+     * Get Company PlanCode (IN1.35)
      *
      * @param int $position Defaults to 35
      *
@@ -1172,7 +1172,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Policy Number (OBR.36)
+     * Get Policy Number (IN1.36)
      *
      * @param int $position Defaults to 36
      *
@@ -1185,7 +1185,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Policy Deductible (OBR.37)
+     * Get Policy Deductible (IN1.37)
      *
      * @param int $position Defaults to 37
      *
@@ -1198,7 +1198,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Policy LimitAmount (OBR.38)
+     * Get Policy LimitAmount (IN1.38)
      *
      * @param int $position Defaults to 38
      *
@@ -1211,7 +1211,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Policy LimitDays (OBR.39)
+     * Get Policy LimitDays (IN1.39)
      *
      * @param int $position Defaults to 39
      *
@@ -1224,7 +1224,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Room RateSemiPrivate (OBR.40)
+     * Get Room RateSemiPrivate (IN1.40)
      *
      * @param int $position Defaults to 40
      *
@@ -1237,7 +1237,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Room RatePrivate (OBR.41)
+     * Get Room RatePrivate (IN1.41)
      *
      * @param int $position Defaults to 41
      *
@@ -1250,7 +1250,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insureds EmploymentStatus (OBR.42)
+     * Get Insureds EmploymentStatus (IN1.42)
      *
      * @param int $position Defaults to 42
      *
@@ -1263,7 +1263,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insureds Sex (OBR.43)
+     * Get Insureds Sex (IN1.43)
      *
      * @param int $position Defaults to 43
      *
@@ -1276,7 +1276,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insureds EmployersAddress (OBR.44)
+     * Get Insureds EmployersAddress (IN1.44)
      *
      * @param int $position Defaults to 44
      *
@@ -1289,7 +1289,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Verification Status (OBR.45)
+     * Get Verification Status (IN1.45)
      *
      * @param int $position Defaults to 45
      *
@@ -1302,7 +1302,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Prior InsurancePlanID (OBR.46)
+     * Get Prior InsurancePlanID (IN1.46)
      *
      * @param int $position Defaults to 46
      *
@@ -1315,7 +1315,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Coverage Type (OBR.47)
+     * Get Coverage Type (IN1.47)
      *
      * @param int $position Defaults to 47
      *
@@ -1328,7 +1328,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Handicap (OBR.48)
+     * Get Handicap (IN1.48)
      *
      * @param int $position Defaults to 48
      *
@@ -1341,7 +1341,7 @@ class IN1 extends Segment
     }
 
     /**
-     * Get Insureds IDNumber (OBR.49)
+     * Get Insureds IDNumber (IN1.49)
      *
      * @param int $position Defaults to 49
      *

@@ -45,7 +45,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Certification Number (OBR.2)
+     * Set Certification Number (IN3.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -59,7 +59,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Certified By (OBR.3)
+     * Set Certified By (IN3.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -73,7 +73,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Certification Required (OBR.4)
+     * Set Certification Required (IN3.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -87,7 +87,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Penalty (OBR.5)
+     * Set Penalty (IN3.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -101,7 +101,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Certification DateTime (OBR.6)
+     * Set Certification Date Time (IN3.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -115,7 +115,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Certification ModifyDateTime (OBR.7)
+     * Set Certification Modify Date Time (IN3.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -129,7 +129,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Operator (OBR.8)
+     * Set Operator (IN3.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -143,7 +143,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Certification BeginDate (OBR.9)
+     * Set Certification Begin Date (IN3.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -157,7 +157,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Certification EndDate (OBR.10)
+     * Set Certification End Date (IN3.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -171,7 +171,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Days (OBR.11)
+     * Set Days (IN3.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -185,7 +185,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Non ConcurCodeDescription (OBR.12)
+     * Set Non Concur Code Description (IN3.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -199,7 +199,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Non ConcurEffectiveDateTime (OBR.13)
+     * Set Non Concur Effective Date Time (IN3.13)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 13
@@ -213,7 +213,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Physician Reviewer (OBR.14)
+     * Set Physician Reviewer (IN3.14)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 14
@@ -227,7 +227,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Certification Contact (OBR.15)
+     * Set Certification Contact (IN3.15)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 15
@@ -241,7 +241,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Certification ContactPhoneNumber (OBR.16)
+     * Set Certification Contact Phone Number (IN3.16)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 16
@@ -255,7 +255,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Appeal Reason (OBR.17)
+     * Set Appeal Reason (IN3.17)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 17
@@ -269,7 +269,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Certification Agency (OBR.18)
+     * Set Certification Agency (IN3.18)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 18
@@ -283,7 +283,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Certification AgencyPhoneNumber (OBR.19)
+     * Set Certification Agency Phone Number (IN3.19)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 19
@@ -297,7 +297,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Pre CertificationRequirement (OBR.20)
+     * Set Pre Certification Requirement (IN3.20)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 20
@@ -311,7 +311,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Case Manager (OBR.21)
+     * Set Case Manager (IN3.21)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 21
@@ -325,7 +325,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Second OpinionDate (OBR.22)
+     * Set Second Opinion Date (IN3.22)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 22
@@ -339,7 +339,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Second OpinionStatus (OBR.23)
+     * Set Second Opinion Status (IN3.23)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 23
@@ -353,7 +353,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Second OpinionDocumentationReceived (OBR.24)
+     * Set Second Opinion Documentation Received (IN3.24)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 24
@@ -367,7 +367,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Set Second OpinionPhysician (OBR.25)
+     * Set Second Opinion Physician (IN3.25)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 25
@@ -381,7 +381,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get ID (OBR.1)
+     * Get ID (IN3.1)
      *
      * @param int $position Defaults to 1
      *
@@ -394,7 +394,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification Number (OBR.2)
+     * Get Certification Number (IN3.2)
      *
      * @param int $position Defaults to 2
      *
@@ -407,7 +407,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certified By (OBR.3)
+     * Get Certified By (IN3.3)
      *
      * @param int $position Defaults to 3
      *
@@ -420,7 +420,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification Required (OBR.4)
+     * Get Certification Required (IN3.4)
      *
      * @param int $position Defaults to 4
      *
@@ -433,7 +433,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Penalty (OBR.5)
+     * Get Penalty (IN3.5)
      *
      * @param int $position Defaults to 5
      *
@@ -446,7 +446,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification DateTime (OBR.6)
+     * Get Certification DateTime (IN3.6)
      *
      * @param int $position Defaults to 6
      *
@@ -459,7 +459,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification ModifyDateTime (OBR.7)
+     * Get Certification ModifyDateTime (IN3.7)
      *
      * @param int $position Defaults to 7
      *
@@ -472,7 +472,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Operator (OBR.8)
+     * Get Operator (IN3.8)
      *
      * @param int $position Defaults to 8
      *
@@ -485,7 +485,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification BeginDate (OBR.9)
+     * Get Certification BeginDate (IN3.9)
      *
      * @param int $position Defaults to 9
      *
@@ -498,7 +498,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification EndDate (OBR.10)
+     * Get Certification EndDate (IN3.10)
      *
      * @param int $position Defaults to 10
      *
@@ -511,7 +511,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Days (OBR.11)
+     * Get Days (IN3.11)
      *
      * @param int $position Defaults to 11
      *
@@ -524,7 +524,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Non ConcurCodeDescription (OBR.12)
+     * Get Non ConcurCodeDescription (IN3.12)
      *
      * @param int $position Defaults to 12
      *
@@ -537,7 +537,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Non ConcurEffectiveDateTime (OBR.13)
+     * Get Non ConcurEffectiveDateTime (IN3.13)
      *
      * @param int $position Defaults to 13
      *
@@ -550,7 +550,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Physician Reviewer (OBR.14)
+     * Get Physician Reviewer (IN3.14)
      *
      * @param int $position Defaults to 14
      *
@@ -563,7 +563,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification Contact (OBR.15)
+     * Get Certification Contact (IN3.15)
      *
      * @param int $position Defaults to 15
      *
@@ -576,7 +576,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification ContactPhoneNumber (OBR.16)
+     * Get Certification ContactPhoneNumber (IN3.16)
      *
      * @param int $position Defaults to 16
      *
@@ -589,7 +589,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Appeal Reason (OBR.17)
+     * Get Appeal Reason (IN3.17)
      *
      * @param int $position Defaults to 17
      *
@@ -602,7 +602,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification Agency (OBR.18)
+     * Get Certification Agency (IN3.18)
      *
      * @param int $position Defaults to 18
      *
@@ -615,7 +615,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification AgencyPhoneNumber (OBR.19)
+     * Get Certification AgencyPhoneNumber (IN3.19)
      *
      * @param int $position Defaults to 19
      *
@@ -628,7 +628,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Pre CertificationRequirement (OBR.20)
+     * Get Pre CertificationRequirement (IN3.20)
      *
      * @param int $position Defaults to 20
      *
@@ -641,7 +641,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Case Manager (OBR.21)
+     * Get Case Manager (IN3.21)
      *
      * @param int $position Defaults to 21
      *
@@ -654,7 +654,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Second OpinionDate (OBR.22)
+     * Get Second OpinionDate (IN3.22)
      *
      * @param int $position Defaults to 22
      *
@@ -667,7 +667,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Second OpinionStatus (OBR.23)
+     * Get Second OpinionStatus (IN3.23)
      *
      * @param int $position Defaults to 23
      *
@@ -680,7 +680,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Second OpinionDocumentationReceived (OBR.24)
+     * Get Second OpinionDocumentationReceived (IN3.24)
      *
      * @param int $position Defaults to 24
      *
@@ -693,7 +693,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Second OpinionPhysician (OBR.25)
+     * Get Second OpinionPhysician (IN3.25)
      *
      * @param int $position Defaults to 25
      *

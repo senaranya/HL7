@@ -44,7 +44,7 @@ class RGS extends Segment
     }
 
     /**
-     * Set Segment ActionCode (OBR.2)
+     * Set Segment Action Code (RGS.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -58,7 +58,7 @@ class RGS extends Segment
     }
 
     /**
-     * Set Resource GroupID (OBR.3)
+     * Set Resource Group ID (RGS.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -72,7 +72,7 @@ class RGS extends Segment
     }
 
     /**
-     * Get ID (OBR.1)
+     * Get ID (RGS.1)
      *
      * @param int $position Defaults to 1
      *
@@ -85,7 +85,7 @@ class RGS extends Segment
     }
 
     /**
-     * Get Segment ActionCode (OBR.2)
+     * Get Segment ActionCode (RGS.2)
      *
      * @param int $position Defaults to 2
      *
@@ -98,7 +98,7 @@ class RGS extends Segment
     }
 
     /**
-     * Get Resource GroupID (OBR.3)
+     * Get Resource GroupID (RGS.3)
      *
      * @param int $position Defaults to 3
      *

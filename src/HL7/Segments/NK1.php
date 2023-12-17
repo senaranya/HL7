@@ -48,7 +48,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set NKName (OBR.2)
+     * Set NKName (NK1.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -62,7 +62,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Relationship (OBR.3)
+     * Set Relationship (NK1.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -76,7 +76,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Address (OBR.4)
+     * Set Address (NK1.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -90,7 +90,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Phone Number (OBR.5)
+     * Set Phone Number (NK1.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -104,7 +104,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Business PhoneNumber (OBR.6)
+     * Set Business Phone Number (NK1.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -118,7 +118,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Contact Role (OBR.7)
+     * Set Contact Role (NK1.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -132,7 +132,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Start Date (OBR.8)
+     * Set Start Date (NK1.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -146,7 +146,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set End Date (OBR.9)
+     * Set End Date (NK1.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -160,7 +160,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Next OfKinOrAssociatedPartiesJobTitle (OBR.10)
+     * Set Next Of Kin Or Associated Parties Job Title (NK1.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -174,7 +174,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Next OfKinOrAssociatedPartiesJobCodeOrClass (OBR.11)
+     * Set Next Of Kin Or Associated Parties Job Code Or Class (NK1.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -188,7 +188,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Next OfKinOrAssociatedPartiesEmployeeNumber (OBR.12)
+     * Set Next Of Kin Or Associated Parties Employee Number (NK1.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -202,7 +202,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Organization Name (OBR.13)
+     * Set Organization Name (NK1.13)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 13
@@ -216,7 +216,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Marital Status (OBR.14)
+     * Set Marital Status (NK1.14)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 14
@@ -230,7 +230,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Administrative Sex (OBR.15)
+     * Set Administrative Sex (NK1.15)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 15
@@ -244,7 +244,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Date TimeOfBirth (OBR.16)
+     * Set Date Time Of Birth (NK1.16)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 16
@@ -258,7 +258,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Living Dependency (OBR.17)
+     * Set Living Dependency (NK1.17)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 17
@@ -272,7 +272,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Ambulatory Status (OBR.18)
+     * Set Ambulatory Status (NK1.18)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 18
@@ -286,7 +286,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Citizenship (OBR.19)
+     * Set Citizenship (NK1.19)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 19
@@ -300,7 +300,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Primary Language (OBR.20)
+     * Set Primary Language (NK1.20)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 20
@@ -314,7 +314,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Living Arrangement (OBR.21)
+     * Set Living Arrangement (NK1.21)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 21
@@ -328,7 +328,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Publicity Code (OBR.22)
+     * Set Publicity Code (NK1.22)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 22
@@ -342,7 +342,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Protection Indicator (OBR.23)
+     * Set Protection Indicator (NK1.23)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 23
@@ -356,7 +356,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Student Indicator (OBR.24)
+     * Set Student Indicator (NK1.24)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 24
@@ -370,7 +370,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Religion (OBR.25)
+     * Set Religion (NK1.25)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 25
@@ -384,7 +384,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Mothers MaidenName (OBR.26)
+     * Set Mothers Maiden Name (NK1.26)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 26
@@ -398,7 +398,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Nationality (OBR.27)
+     * Set Nationality (NK1.27)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 27
@@ -412,7 +412,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Ethnic Group (OBR.28)
+     * Set Ethnic Group (NK1.28)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 28
@@ -426,7 +426,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Contact Reason (OBR.29)
+     * Set Contact Reason (NK1.29)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 29
@@ -440,7 +440,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Contact PersonsName (OBR.30)
+     * Set Contact Persons Name (NK1.30)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 30
@@ -454,7 +454,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Contact PersonsTelephoneNumber (OBR.31)
+     * Set Contact Persons Telephone Number (NK1.31)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 31
@@ -468,7 +468,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Contact PersonsAddress (OBR.32)
+     * Set Contact Persons Address (NK1.32)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 32
@@ -482,7 +482,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Next OfKinOrAssociatedPartysIdentifiers (OBR.33)
+     * Set Next Of Kin Or Associated Partys Identifiers (NK1.33)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 33
@@ -496,7 +496,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Job Status (OBR.34)
+     * Set Job Status (NK1.34)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 34
@@ -510,7 +510,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Race (OBR.35)
+     * Set Race (NK1.35)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 35
@@ -524,7 +524,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Handicap (OBR.36)
+     * Set Handicap (NK1.36)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 36
@@ -538,7 +538,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Contact PersonSocialSecurityNumber (OBR.37)
+     * Set Contact Person Social Security Number (NK1.37)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 37
@@ -552,7 +552,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Next OfKinBirthPlace (OBR.38)
+     * Set Next Of Kin Birth Place (NK1.38)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 38
@@ -566,7 +566,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Set Vip Indicator (OBR.39)
+     * Set Vip Indicator (NK1.39)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 39
@@ -580,7 +580,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get ID (OBR.1)
+     * Get ID (NK1.1)
      *
      * @param int $position Defaults to 1
      *
@@ -593,7 +593,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get NKName (OBR.2)
+     * Get NKName (NK1.2)
      *
      * @param int $position Defaults to 2
      *
@@ -606,7 +606,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Relationship (OBR.3)
+     * Get Relationship (NK1.3)
      *
      * @param int $position Defaults to 3
      *
@@ -619,7 +619,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Address (OBR.4)
+     * Get Address (NK1.4)
      *
      * @param int $position Defaults to 4
      *
@@ -632,7 +632,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Phone Number (OBR.5)
+     * Get Phone Number (NK1.5)
      *
      * @param int $position Defaults to 5
      *
@@ -645,7 +645,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Business PhoneNumber (OBR.6)
+     * Get Business PhoneNumber (NK1.6)
      *
      * @param int $position Defaults to 6
      *
@@ -658,7 +658,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Contact Role (OBR.7)
+     * Get Contact Role (NK1.7)
      *
      * @param int $position Defaults to 7
      *
@@ -671,7 +671,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Start Date (OBR.8)
+     * Get Start Date (NK1.8)
      *
      * @param int $position Defaults to 8
      *
@@ -684,7 +684,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get End Date (OBR.9)
+     * Get End Date (NK1.9)
      *
      * @param int $position Defaults to 9
      *
@@ -697,7 +697,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Next OfKinOrAssociatedPartiesJobTitle (OBR.10)
+     * Get Next OfKinOrAssociatedPartiesJobTitle (NK1.10)
      *
      * @param int $position Defaults to 10
      *
@@ -710,7 +710,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Next OfKinOrAssociatedPartiesJobCodeOrClass (OBR.11)
+     * Get Next OfKinOrAssociatedPartiesJobCodeOrClass (NK1.11)
      *
      * @param int $position Defaults to 11
      *
@@ -723,7 +723,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Next OfKinOrAssociatedPartiesEmployeeNumber (OBR.12)
+     * Get Next OfKinOrAssociatedPartiesEmployeeNumber (NK1.12)
      *
      * @param int $position Defaults to 12
      *
@@ -736,7 +736,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Organization Name (OBR.13)
+     * Get Organization Name (NK1.13)
      *
      * @param int $position Defaults to 13
      *
@@ -749,7 +749,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Marital Status (OBR.14)
+     * Get Marital Status (NK1.14)
      *
      * @param int $position Defaults to 14
      *
@@ -762,7 +762,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Administrative Sex (OBR.15)
+     * Get Administrative Sex (NK1.15)
      *
      * @param int $position Defaults to 15
      *
@@ -775,7 +775,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Date TimeOfBirth (OBR.16)
+     * Get Date TimeOfBirth (NK1.16)
      *
      * @param int $position Defaults to 16
      *
@@ -788,7 +788,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Living Dependency (OBR.17)
+     * Get Living Dependency (NK1.17)
      *
      * @param int $position Defaults to 17
      *
@@ -801,7 +801,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Ambulatory Status (OBR.18)
+     * Get Ambulatory Status (NK1.18)
      *
      * @param int $position Defaults to 18
      *
@@ -814,7 +814,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Citizenship (OBR.19)
+     * Get Citizenship (NK1.19)
      *
      * @param int $position Defaults to 19
      *
@@ -827,7 +827,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Primary Language (OBR.20)
+     * Get Primary Language (NK1.20)
      *
      * @param int $position Defaults to 20
      *
@@ -840,7 +840,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Living Arrangement (OBR.21)
+     * Get Living Arrangement (NK1.21)
      *
      * @param int $position Defaults to 21
      *
@@ -853,7 +853,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Publicity Code (OBR.22)
+     * Get Publicity Code (NK1.22)
      *
      * @param int $position Defaults to 22
      *
@@ -866,7 +866,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Protection Indicator (OBR.23)
+     * Get Protection Indicator (NK1.23)
      *
      * @param int $position Defaults to 23
      *
@@ -879,7 +879,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Student Indicator (OBR.24)
+     * Get Student Indicator (NK1.24)
      *
      * @param int $position Defaults to 24
      *
@@ -892,7 +892,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Religion (OBR.25)
+     * Get Religion (NK1.25)
      *
      * @param int $position Defaults to 25
      *
@@ -905,7 +905,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Mothers MaidenName (OBR.26)
+     * Get Mothers MaidenName (NK1.26)
      *
      * @param int $position Defaults to 26
      *
@@ -918,7 +918,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Nationality (OBR.27)
+     * Get Nationality (NK1.27)
      *
      * @param int $position Defaults to 27
      *
@@ -931,7 +931,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Ethnic Group (OBR.28)
+     * Get Ethnic Group (NK1.28)
      *
      * @param int $position Defaults to 28
      *
@@ -944,7 +944,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Contact Reason (OBR.29)
+     * Get Contact Reason (NK1.29)
      *
      * @param int $position Defaults to 29
      *
@@ -957,7 +957,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Contact PersonsName (OBR.30)
+     * Get Contact PersonsName (NK1.30)
      *
      * @param int $position Defaults to 30
      *
@@ -970,7 +970,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Contact PersonsTelephoneNumber (OBR.31)
+     * Get Contact PersonsTelephoneNumber (NK1.31)
      *
      * @param int $position Defaults to 31
      *
@@ -983,7 +983,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Contact PersonsAddress (OBR.32)
+     * Get Contact PersonsAddress (NK1.32)
      *
      * @param int $position Defaults to 32
      *
@@ -996,7 +996,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Next OfKinOrAssociatedPartysIdentifiers (OBR.33)
+     * Get Next OfKinOrAssociatedPartysIdentifiers (NK1.33)
      *
      * @param int $position Defaults to 33
      *
@@ -1009,7 +1009,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Job Status (OBR.34)
+     * Get Job Status (NK1.34)
      *
      * @param int $position Defaults to 34
      *
@@ -1022,7 +1022,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Race (OBR.35)
+     * Get Race (NK1.35)
      *
      * @param int $position Defaults to 35
      *
@@ -1035,7 +1035,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Handicap (OBR.36)
+     * Get Handicap (NK1.36)
      *
      * @param int $position Defaults to 36
      *
@@ -1048,7 +1048,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Contact PersonSocialSecurityNumber (OBR.37)
+     * Get Contact PersonSocialSecurityNumber (NK1.37)
      *
      * @param int $position Defaults to 37
      *
@@ -1061,7 +1061,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Next OfKinBirthPlace (OBR.38)
+     * Get Next OfKinBirthPlace (NK1.38)
      *
      * @param int $position Defaults to 38
      *
@@ -1074,7 +1074,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Vip Indicator (OBR.39)
+     * Get Vip Indicator (NK1.39)
      *
      * @param int $position Defaults to 39
      *

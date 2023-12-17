@@ -45,7 +45,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Placer OrderNumber (OBR.2)
+     * Set Placer Order Number (OBR.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -59,7 +59,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Filler OrderNumber (OBR.3)
+     * Set Filler Order Number (OBR.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -73,7 +73,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Universal ServiceID (OBR.4)
+     * Set Universal Service ID (OBR.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -115,7 +115,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Observation DateTime (OBR.7)
+     * Set Observation Date Time (OBR.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -129,7 +129,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Observation EndDateTime (OBR.8)
+     * Set Observation End Date Time (OBR.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -171,7 +171,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Specimen ActionCode (OBR.11)
+     * Set Specimen Action Code (OBR.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -199,7 +199,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Relevant ClinicalInfo (OBR.13)
+     * Set Relevant Clinical Info (OBR.13)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 13
@@ -213,7 +213,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Specimen ReceivedDateTime (OBR.14)
+     * Set Specimen Received Date Time (OBR.14)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 14
@@ -255,7 +255,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Order CallbackPhoneNumber (OBR.17)
+     * Set Order Callback Phone Number (OBR.17)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 17
@@ -300,7 +300,7 @@ class OBR extends Segment
      * @return bool
      */
     /**
-     * Set Results RptStatusChngDateTime (OBR.22)
+     * Set Results Rpt Status Chng Date Time (OBR.22)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 22
@@ -328,7 +328,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Diagnostic ServSectID (OBR.24)
+     * Set Diagnostic Serv Sect ID (OBR.24)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 24
@@ -384,7 +384,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Result CopiesTo (OBR.28)
+     * Set Result Copies To (OBR.28)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 28
@@ -440,7 +440,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Principal ResultInterpreter (OBR.32)
+     * Set Principal Result Interpreter (OBR.32)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 32
@@ -454,7 +454,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Assistant ResultInterpreter (OBR.33)
+     * Set Assistant Result Interpreter (OBR.33)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 33
@@ -496,7 +496,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Scheduled DateTime (OBR.36)
+     * Set Scheduled Date Time (OBR.36)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 36
@@ -510,7 +510,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Numberof SampleContainers (OBR.37)
+     * Set Numberof Sample Containers (OBR.37)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 37
@@ -524,7 +524,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Transport LogisticsofCollectedSample (OBR.38)
+     * Set Transport Logisticsof Collected Sample (OBR.38)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 38
@@ -552,7 +552,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Transport ArrangementResponsibility (OBR.40)
+     * Set Transport Arrangement Responsibility (OBR.40)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 40
@@ -594,7 +594,7 @@ class OBR extends Segment
     }
 
     /**
-     * Set Planned PatientTransportComment (OBR.43)
+     * Set Planned Patient Transport Comment (OBR.43)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 43

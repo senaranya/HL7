@@ -18,7 +18,7 @@ class FHS extends Segment
     }
 
     /**
-     * Set File FieldSeparator (OBR.1)
+     * Set File Field Separator (FHS.1)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 1
@@ -32,7 +32,7 @@ class FHS extends Segment
     }
 
     /**
-     * Set File EncodingCharacters (OBR.2)
+     * Set File Encoding Characters (FHS.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -46,7 +46,7 @@ class FHS extends Segment
     }
 
     /**
-     * Set File SendingApplication (OBR.3)
+     * Set File Sending Application (FHS.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -60,7 +60,7 @@ class FHS extends Segment
     }
 
     /**
-     * Set File SendingFacility (OBR.4)
+     * Set File Sending Facility (FHS.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -74,7 +74,7 @@ class FHS extends Segment
     }
 
     /**
-     * Set File RecievingApplication (OBR.5)
+     * Set File Recieving Application (FHS.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -88,7 +88,7 @@ class FHS extends Segment
     }
 
     /**
-     * Set File RecievingFacility (OBR.6)
+     * Set File Recieving Facility (FHS.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -102,7 +102,7 @@ class FHS extends Segment
     }
 
     /**
-     * Set File CreationDateTime (OBR.7)
+     * Set File Creation Date Time (FHS.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -116,7 +116,7 @@ class FHS extends Segment
     }
 
     /**
-     * Set File Security (OBR.8)
+     * Set File Security (FHS.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -130,7 +130,7 @@ class FHS extends Segment
     }
 
     /**
-     * Set File NameId (OBR.9)
+     * Set File Name Id (FHS.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -144,7 +144,7 @@ class FHS extends Segment
     }
 
     /**
-     * Set File HeaderComment (OBR.10)
+     * Set File Header Comment (FHS.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -158,7 +158,7 @@ class FHS extends Segment
     }
 
     /**
-     * Set File ControlId (OBR.11)
+     * Set File Control Id (FHS.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -172,7 +172,7 @@ class FHS extends Segment
     }
 
     /**
-     * Set Reference FileControlId (OBR.12)
+     * Set Reference File Control Id (FHS.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -188,7 +188,7 @@ class FHS extends Segment
     // -------------------- Getter Methods ------------------------------
 
     /**
-     * Get File FieldSeparator (OBR.1)
+     * Get File FieldSeparator (FHS.1)
      *
      * @param int $position Defaults to 1
      *
@@ -201,7 +201,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File EncodingCharacters (OBR.2)
+     * Get File EncodingCharacters (FHS.2)
      *
      * @param int $position Defaults to 2
      *
@@ -214,7 +214,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File SendingApplication (OBR.3)
+     * Get File SendingApplication (FHS.3)
      *
      * @param int $position Defaults to 3
      *
@@ -227,7 +227,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File SendingFacility (OBR.4)
+     * Get File SendingFacility (FHS.4)
      *
      * @param int $position Defaults to 4
      *
@@ -240,7 +240,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File RecievingApplication (OBR.5)
+     * Get File RecievingApplication (FHS.5)
      *
      * @param int $position Defaults to 5
      *
@@ -253,7 +253,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File RecievingFacility (OBR.6)
+     * Get File RecievingFacility (FHS.6)
      *
      * @param int $position Defaults to 6
      *
@@ -266,7 +266,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File CreationDateTime (OBR.7)
+     * Get File CreationDateTime (FHS.7)
      *
      * @param int $position Defaults to 7
      *
@@ -279,7 +279,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File Security (OBR.8)
+     * Get File Security (FHS.8)
      *
      * @param int $position Defaults to 8
      *
@@ -292,7 +292,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File NameId (OBR.9)
+     * Get File NameId (FHS.9)
      *
      * @param int $position Defaults to 9
      *
@@ -305,7 +305,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File HeaderComment (OBR.10)
+     * Get File HeaderComment (FHS.10)
      *
      * @param int $position Defaults to 10
      *
@@ -318,7 +318,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File ControlId (OBR.11)
+     * Get File ControlId (FHS.11)
      *
      * @param int $position Defaults to 11
      *
@@ -331,7 +331,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get Reference FileControlId (OBR.12)
+     * Get Reference FileControlId (FHS.12)
      *
      * @param int $position Defaults to 12
      *

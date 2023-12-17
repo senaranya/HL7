@@ -37,7 +37,7 @@ class EQU extends Segment
     }
 
     /**
-     * Set Event DateTime (OBR.2)
+     * Set Event Date Time (EQU.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -51,7 +51,7 @@ class EQU extends Segment
     }
 
     /**
-     * Set Equipment State (OBR.3)
+     * Set Equipment State (EQU.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -65,7 +65,7 @@ class EQU extends Segment
     }
 
     /**
-     * Set Local RemoteControlState (OBR.4)
+     * Set Local Remote Control State (EQU.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -79,7 +79,7 @@ class EQU extends Segment
     }
 
     /**
-     * Set Alert Level (OBR.5)
+     * Set Alert Level (EQU.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -93,7 +93,7 @@ class EQU extends Segment
     }
 
     /**
-     * Get Equipment InstanceIdentifier (OBR.1)
+     * Get Equipment InstanceIdentifier (EQU.1)
      *
      * @param int $position Defaults to 1
      *
@@ -106,7 +106,7 @@ class EQU extends Segment
     }
 
     /**
-     * Get Event DateTime (OBR.2)
+     * Get Event DateTime (EQU.2)
      *
      * @param int $position Defaults to 2
      *
@@ -119,7 +119,7 @@ class EQU extends Segment
     }
 
     /**
-     * Get Equipment State (OBR.3)
+     * Get Equipment State (EQU.3)
      *
      * @param int $position Defaults to 3
      *
@@ -132,7 +132,7 @@ class EQU extends Segment
     }
 
     /**
-     * Get Local RemoteControlState (OBR.4)
+     * Get Local RemoteControlState (EQU.4)
      *
      * @param int $position Defaults to 4
      *
@@ -145,7 +145,7 @@ class EQU extends Segment
     }
 
     /**
-     * Get Alert Level (OBR.4)
+     * Get Alert Level (EQU.4)
      *
      * @param int $position Defaults to 4
      *

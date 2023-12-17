@@ -52,7 +52,7 @@ class AIL extends Segment
     }
 
     /**
-     * Set Segment ActionCode (OBR.2)
+     * Set Segment Action Code (AIL.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -66,7 +66,7 @@ class AIL extends Segment
     }
 
     /**
-     * Set Location ResourceID (OBR.3)
+     * Set Location Resource ID (AIL.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -80,7 +80,7 @@ class AIL extends Segment
     }
 
     /**
-     * Set Location TypeAIL (OBR.4)
+     * Set Location Type AIL (AIL.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -94,7 +94,7 @@ class AIL extends Segment
     }
 
     /**
-     * Set Location Group (OBR.5)
+     * Set Location Group (AIL.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -108,7 +108,7 @@ class AIL extends Segment
     }
 
     /**
-     * Set Start DateTime (OBR.6)
+     * Set Start Date Time (AIL.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -122,7 +122,7 @@ class AIL extends Segment
     }
 
     /**
-     * Set Start DateTimeOffset (OBR.7)
+     * Set Start Date Time Offset (AIL.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -136,7 +136,7 @@ class AIL extends Segment
     }
 
     /**
-     * Set Start DateTimeOffsetUnits (OBR.8)
+     * Set Start Date Time Offset Units (AIL.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -150,7 +150,7 @@ class AIL extends Segment
     }
 
     /**
-     * Set Duration (OBR.9)
+     * Set Duration (AIL.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -164,7 +164,7 @@ class AIL extends Segment
     }
 
     /**
-     * Set Duration Units (OBR.10)
+     * Set Duration Units (AIL.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -178,7 +178,7 @@ class AIL extends Segment
     }
 
     /**
-     * Set Allow SubstitutionCode (OBR.11)
+     * Set Allow Substitution Code (AIL.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -192,7 +192,7 @@ class AIL extends Segment
     }
 
     /**
-     * Set Filler StatusCode (OBR.12)
+     * Set Filler Status Code (AIL.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -206,7 +206,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get ID (OBR.1)
+     * Get ID (AIL.1)
      *
      * @param int $position Defaults to 1
      *
@@ -219,7 +219,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Segment ActionCode (OBR.2)
+     * Get Segment ActionCode (AIL.2)
      *
      * @param int $position Defaults to 2
      *
@@ -232,7 +232,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Location ResourceID (OBR.3)
+     * Get Location ResourceID (AIL.3)
      *
      * @param int $position Defaults to 3
      *
@@ -245,7 +245,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Location TypeAIL (OBR.4)
+     * Get Location TypeAIL (AIL.4)
      *
      * @param int $position Defaults to 4
      *
@@ -258,7 +258,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Location Group (OBR.5)
+     * Get Location Group (AIL.5)
      *
      * @param int $position Defaults to 5
      *
@@ -271,7 +271,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Start DateTime (OBR.6)
+     * Get Start DateTime (AIL.6)
      *
      * @param int $position Defaults to 6
      *
@@ -284,7 +284,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Start DateTimeOffset (OBR.7)
+     * Get Start DateTimeOffset (AIL.7)
      *
      * @param int $position Defaults to 7
      *
@@ -297,7 +297,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Start DateTimeOffsetUnits (OBR.8)
+     * Get Start DateTimeOffsetUnits (AIL.8)
      *
      * @param int $position Defaults to 8
      *
@@ -310,7 +310,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Duration (OBR.9)
+     * Get Duration (AIL.9)
      *
      * @param int $position Defaults to 9
      *
@@ -323,7 +323,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Duration Units (OBR.10)
+     * Get Duration Units (AIL.10)
      *
      * @param int $position Defaults to 10
      *
@@ -336,7 +336,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Allow SubstitutionCode (OBR.11)
+     * Get Allow SubstitutionCode (AIL.11)
      *
      * @param int $position Defaults to 11
      *
@@ -349,7 +349,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Filler StatusCode (OBR.12)
+     * Get Filler StatusCode (AIL.12)
      *
      * @param int $position Defaults to 12
      *

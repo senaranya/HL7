@@ -37,7 +37,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Accession Identifier (OBR.2)
+     * Set Accession Identifier (SAC.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -51,7 +51,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Container Identifier (OBR.3)
+     * Set Container Identifier (SAC.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -65,7 +65,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Primary ContainerIdentifier (OBR.4)
+     * Set Primary Container Identifier (SAC.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -79,7 +79,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Equipment ContainerIdentifier (OBR.5)
+     * Set Equipment Container Identifier (SAC.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -93,7 +93,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Specimen Source (OBR.6)
+     * Set Specimen Source (SAC.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -107,7 +107,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Registration DateTime (OBR.7)
+     * Set Registration Date Time (SAC.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -134,7 +134,7 @@ class SAC extends Segment
      * U : Unknown
      */
     /**
-     * Set Container Status (OBR.8)
+     * Set Container Status (SAC.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -148,7 +148,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Carrier Type (OBR.9)
+     * Set Carrier Type (SAC.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -162,7 +162,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Carrier Identifier (OBR.10)
+     * Set Carrier Identifier (SAC.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -176,7 +176,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Position InCarrier (OBR.11)
+     * Set Position In Carrier (SAC.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -190,7 +190,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Tray TypeSAC (OBR.12)
+     * Set Tray Type SAC (SAC.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -204,7 +204,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Tray Identifier (OBR.13)
+     * Set Tray Identifier (SAC.13)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 13
@@ -218,7 +218,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Position InTray (OBR.14)
+     * Set Position In Tray (SAC.14)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 14
@@ -232,7 +232,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Location (OBR.15)
+     * Set Location (SAC.15)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 15
@@ -246,7 +246,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Container Height (OBR.16)
+     * Set Container Height (SAC.16)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 16
@@ -260,7 +260,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Container Diameter (OBR.17)
+     * Set Container Diameter (SAC.17)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 17
@@ -274,7 +274,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Barrier Delta (OBR.18)
+     * Set Barrier Delta (SAC.18)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 18
@@ -288,7 +288,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Bottom Delta (OBR.19)
+     * Set Bottom Delta (SAC.19)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 19
@@ -302,7 +302,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Container SizeUnits (OBR.20)
+     * Set Container Size Units (SAC.20)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 20
@@ -316,7 +316,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Container Volume (OBR.21)
+     * Set Container Volume (SAC.21)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 21
@@ -330,7 +330,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Available SpecimenVolume (OBR.22)
+     * Set Available Specimen Volume (SAC.22)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 22
@@ -344,7 +344,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Initial SpecimenVolume (OBR.23)
+     * Set Initial Specimen Volume (SAC.23)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 23
@@ -358,7 +358,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Volume Units (OBR.24)
+     * Set Volume Units (SAC.24)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 24
@@ -372,7 +372,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Separator Type (OBR.25)
+     * Set Separator Type (SAC.25)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 25
@@ -386,7 +386,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Cap Type (OBR.26)
+     * Set Cap Type (SAC.26)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 26
@@ -400,7 +400,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Additive (OBR.27)
+     * Set Additive (SAC.27)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 27
@@ -414,7 +414,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Specimen Component (OBR.28)
+     * Set Specimen Component (SAC.28)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 28
@@ -428,7 +428,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Dilution Factor (OBR.29)
+     * Set Dilution Factor (SAC.29)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 29
@@ -442,7 +442,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Treatment (OBR.30)
+     * Set Treatment (SAC.30)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 30
@@ -456,7 +456,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Temperature (OBR.31)
+     * Set Temperature (SAC.31)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 31
@@ -470,7 +470,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Hemolysis Index (OBR.32)
+     * Set Hemolysis Index (SAC.32)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 32
@@ -484,7 +484,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Hemolysis IndexUnits (OBR.33)
+     * Set Hemolysis Index Units (SAC.33)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 33
@@ -498,7 +498,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Lepemia Index (OBR.34)
+     * Set Lepemia Index (SAC.34)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 34
@@ -512,7 +512,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Lepemia IndexUnits (OBR.35)
+     * Set Lepemia Index Units (SAC.35)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 35
@@ -526,7 +526,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Icterus Index (OBR.36)
+     * Set Icterus Index (SAC.36)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 36
@@ -540,7 +540,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Icterus IndexUnits (OBR.37)
+     * Set Icterus Index Units (SAC.37)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 37
@@ -554,7 +554,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Fibrin Index (OBR.38)
+     * Set Fibrin Index (SAC.38)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 38
@@ -568,7 +568,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Fibrin IndexUnits (OBR.39)
+     * Set Fibrin Index Units (SAC.39)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 39
@@ -582,7 +582,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set System InducedContaminants (OBR.40)
+     * Set System Induced Contaminants (SAC.40)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 40
@@ -596,7 +596,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Drug Interference (OBR.41)
+     * Set Drug Interference (SAC.41)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 41
@@ -610,7 +610,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Artificial Blood (OBR.42)
+     * Set Artificial Blood (SAC.42)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 42
@@ -624,7 +624,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Special HandlingCode (OBR.43)
+     * Set Special Handling Code (SAC.43)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 43
@@ -638,7 +638,7 @@ class SAC extends Segment
     }
 
     /**
-     * Set Other EnvironmentalFactors (OBR.44)
+     * Set Other Environmental Factors (SAC.44)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 44
@@ -652,7 +652,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get External AccessionIdentifier (OBR.1)
+     * Get External AccessionIdentifier (SAC.1)
      *
      * @param int $position Defaults to 1
      *
@@ -665,7 +665,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Accession Identifier (OBR.2)
+     * Get Accession Identifier (SAC.2)
      *
      * @param int $position Defaults to 2
      *
@@ -678,7 +678,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Container Identifier (OBR.3)
+     * Get Container Identifier (SAC.3)
      *
      * @param int $position Defaults to 3
      *
@@ -691,7 +691,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Primary ContainerIdentifier (OBR.4)
+     * Get Primary ContainerIdentifier (SAC.4)
      *
      * @param int $position Defaults to 4
      *
@@ -704,7 +704,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Equipment ContainerIdentifier (OBR.5)
+     * Get Equipment ContainerIdentifier (SAC.5)
      *
      * @param int $position Defaults to 5
      *
@@ -717,7 +717,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Specimen Source (OBR.6)
+     * Get Specimen Source (SAC.6)
      *
      * @param int $position Defaults to 6
      *
@@ -730,7 +730,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Registration DateTime (OBR.7)
+     * Get Registration DateTime (SAC.7)
      *
      * @param int $position Defaults to 7
      *
@@ -743,7 +743,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Container Status (OBR.8)
+     * Get Container Status (SAC.8)
      *
      * @param int $position Defaults to 8
      *
@@ -756,7 +756,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Carrier Type (OBR.9)
+     * Get Carrier Type (SAC.9)
      *
      * @param int $position Defaults to 9
      *
@@ -769,7 +769,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Carrier Identifier (OBR.10)
+     * Get Carrier Identifier (SAC.10)
      *
      * @param int $position Defaults to 10
      *
@@ -782,7 +782,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Position InCarrier (OBR.11)
+     * Get Position InCarrier (SAC.11)
      *
      * @param int $position Defaults to 11
      *
@@ -795,7 +795,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Tray TypeSAC (OBR.12)
+     * Get Tray TypeSAC (SAC.12)
      *
      * @param int $position Defaults to 12
      *
@@ -808,7 +808,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Tray Identifier (OBR.13)
+     * Get Tray Identifier (SAC.13)
      *
      * @param int $position Defaults to 13
      *
@@ -821,7 +821,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Position InTray (OBR.14)
+     * Get Position InTray (SAC.14)
      *
      * @param int $position Defaults to 14
      *
@@ -834,7 +834,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Location (OBR.15)
+     * Get Location (SAC.15)
      *
      * @param int $position Defaults to 15
      *
@@ -847,7 +847,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Container Height (OBR.16)
+     * Get Container Height (SAC.16)
      *
      * @param int $position Defaults to 16
      *
@@ -860,7 +860,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Container Diameter (OBR.17)
+     * Get Container Diameter (SAC.17)
      *
      * @param int $position Defaults to 17
      *
@@ -873,7 +873,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Barrier Delta (OBR.18)
+     * Get Barrier Delta (SAC.18)
      *
      * @param int $position Defaults to 18
      *
@@ -886,7 +886,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Bottom Delta (OBR.19)
+     * Get Bottom Delta (SAC.19)
      *
      * @param int $position Defaults to 19
      *
@@ -899,7 +899,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Container SizeUnits (OBR.20)
+     * Get Container SizeUnits (SAC.20)
      *
      * @param int $position Defaults to 20
      *
@@ -912,7 +912,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Container Volume (OBR.21)
+     * Get Container Volume (SAC.21)
      *
      * @param int $position Defaults to 21
      *
@@ -925,7 +925,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Available SpecimenVolume (OBR.22)
+     * Get Available SpecimenVolume (SAC.22)
      *
      * @param int $position Defaults to 22
      *
@@ -938,7 +938,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Initial SpecimenVolume (OBR.23)
+     * Get Initial SpecimenVolume (SAC.23)
      *
      * @param int $position Defaults to 23
      *
@@ -951,7 +951,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Volume Units (OBR.24)
+     * Get Volume Units (SAC.24)
      *
      * @param int $position Defaults to 24
      *
@@ -964,7 +964,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Separator Type (OBR.25)
+     * Get Separator Type (SAC.25)
      *
      * @param int $position Defaults to 25
      *
@@ -977,7 +977,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Cap Type (OBR.26)
+     * Get Cap Type (SAC.26)
      *
      * @param int $position Defaults to 26
      *
@@ -990,7 +990,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Additive (OBR.27)
+     * Get Additive (SAC.27)
      *
      * @param int $position Defaults to 27
      *
@@ -1003,7 +1003,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Specimen Component (OBR.28)
+     * Get Specimen Component (SAC.28)
      *
      * @param int $position Defaults to 28
      *
@@ -1016,7 +1016,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Dilution Factor (OBR.29)
+     * Get Dilution Factor (SAC.29)
      *
      * @param int $position Defaults to 29
      *
@@ -1029,7 +1029,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Treatment (OBR.30)
+     * Get Treatment (SAC.30)
      *
      * @param int $position Defaults to 30
      *
@@ -1042,7 +1042,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Temperature (OBR.31)
+     * Get Temperature (SAC.31)
      *
      * @param int $position Defaults to 31
      *
@@ -1055,7 +1055,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Hemolysis Index (OBR.32)
+     * Get Hemolysis Index (SAC.32)
      *
      * @param int $position Defaults to 32
      *
@@ -1068,7 +1068,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Hemolysis IndexUnits (OBR.33)
+     * Get Hemolysis IndexUnits (SAC.33)
      *
      * @param int $position Defaults to 33
      *
@@ -1081,7 +1081,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Lepemia Index (OBR.34)
+     * Get Lepemia Index (SAC.34)
      *
      * @param int $position Defaults to 34
      *
@@ -1094,7 +1094,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Lepemia IndexUnits (OBR.35)
+     * Get Lepemia IndexUnits (SAC.35)
      *
      * @param int $position Defaults to 35
      *
@@ -1107,7 +1107,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Icterus Index (OBR.36)
+     * Get Icterus Index (SAC.36)
      *
      * @param int $position Defaults to 36
      *
@@ -1120,7 +1120,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Icterus IndexUnits (OBR.37)
+     * Get Icterus IndexUnits (SAC.37)
      *
      * @param int $position Defaults to 37
      *
@@ -1133,7 +1133,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Fibrin Index (OBR.38)
+     * Get Fibrin Index (SAC.38)
      *
      * @param int $position Defaults to 38
      *
@@ -1146,7 +1146,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Fibrin IndexUnits (OBR.39)
+     * Get Fibrin IndexUnits (SAC.39)
      *
      * @param int $position Defaults to 39
      *
@@ -1159,7 +1159,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get System InducedContaminants (OBR.40)
+     * Get System InducedContaminants (SAC.40)
      *
      * @param int $position Defaults to 40
      *
@@ -1172,7 +1172,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Drug Interference (OBR.41)
+     * Get Drug Interference (SAC.41)
      *
      * @param int $position Defaults to 41
      *
@@ -1185,7 +1185,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Artificial Blood (OBR.42)
+     * Get Artificial Blood (SAC.42)
      *
      * @param int $position Defaults to 42
      *
@@ -1198,7 +1198,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Special HandlingCode (OBR.43)
+     * Get Special HandlingCode (SAC.43)
      *
      * @param int $position Defaults to 43
      *
@@ -1211,7 +1211,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Other EnvironmentalFactors (OBR.44)
+     * Get Other EnvironmentalFactors (SAC.44)
      *
      * @param int $position Defaults to 44
      *

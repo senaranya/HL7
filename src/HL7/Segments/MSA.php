@@ -18,7 +18,7 @@ class MSA extends Segment
     }
 
     /**
-     * Set Acknowledgement Code (OBR.1)
+     * Set Acknowledgement Code (MSA.1)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 1
@@ -32,7 +32,7 @@ class MSA extends Segment
     }
 
     /**
-     * Set Message ControlID (OBR.2)
+     * Set Message Control ID (MSA.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -46,7 +46,7 @@ class MSA extends Segment
     }
 
     /**
-     * Set Text Message (OBR.3)
+     * Set Text Message (MSA.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -60,7 +60,7 @@ class MSA extends Segment
     }
 
     /**
-     * Set Expected SequenceNumber (OBR.4)
+     * Set Expected Sequence Number (MSA.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -74,7 +74,7 @@ class MSA extends Segment
     }
 
     /**
-     * Set Delayed AcknowledgementType (OBR.5)
+     * Set Delayed Acknowledgement Type (MSA.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -88,7 +88,7 @@ class MSA extends Segment
     }
 
     /**
-     * Set Error Condition (OBR.6)
+     * Set Error Condition (MSA.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -104,7 +104,7 @@ class MSA extends Segment
     // -------------------- Getter Methods ------------------------------
 
     /**
-     * Get Acknowledgement Code (OBR.1)
+     * Get Acknowledgement Code (MSA.1)
      *
      * @param int $position Defaults to 1
      *
@@ -117,7 +117,7 @@ class MSA extends Segment
     }
 
     /**
-     * Get Message ControlID (OBR.2)
+     * Get Message ControlID (MSA.2)
      *
      * @param int $position Defaults to 2
      *
@@ -130,7 +130,7 @@ class MSA extends Segment
     }
 
     /**
-     * Get Text Message (OBR.3)
+     * Get Text Message (MSA.3)
      *
      * @param int $position Defaults to 3
      *
@@ -143,7 +143,7 @@ class MSA extends Segment
     }
 
     /**
-     * Get Expected SequenceNumber (OBR.4)
+     * Get Expected SequenceNumber (MSA.4)
      *
      * @param int $position Defaults to 4
      *
@@ -156,7 +156,7 @@ class MSA extends Segment
     }
 
     /**
-     * Get Delayed AcknowledgementType (OBR.5)
+     * Get Delayed AcknowledgementType (MSA.5)
      *
      * @param int $position Defaults to 5
      *
@@ -169,7 +169,7 @@ class MSA extends Segment
     }
 
     /**
-     * Get Error Condition (OBR.6)
+     * Get Error Condition (MSA.6)
      *
      * @param int $position Defaults to 6
      *

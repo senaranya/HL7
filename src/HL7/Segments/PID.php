@@ -45,7 +45,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Patient ID (OBR.2)
+     * Set Patient ID (PID.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -63,7 +63,7 @@ class PID extends Segment
      * @param string $value
      */
     /**
-     * Set Patient IdentifierList (OBR.3)
+     * Set Patient Identifier List (PID.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -77,7 +77,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Alternate PatientID (OBR.4)
+     * Set Alternate Patient ID (PID.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -91,7 +91,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Patient Name (OBR.5)
+     * Set Patient Name (PID.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -105,7 +105,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Mothers MaidenName (OBR.6)
+     * Set Mothers Maiden Name (PID.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -119,7 +119,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Date TimeOfBirth (OBR.7)
+     * Set Date Time Of Birth (PID.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -146,7 +146,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Patient Alias (OBR.9)
+     * Set Patient Alias (PID.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -160,7 +160,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Race (OBR.10)
+     * Set Race (PID.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -174,7 +174,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Patient Address (OBR.11)
+     * Set Patient Address (PID.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -188,7 +188,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Country Code (OBR.12)
+     * Set Country Code (PID.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -202,7 +202,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Phone NumberHome (OBR.13)
+     * Set Phone Number Home (PID.13)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 13
@@ -216,7 +216,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Phone NumberBusiness (OBR.14)
+     * Set Phone Number Business (PID.14)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 14
@@ -230,7 +230,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Primary Language (OBR.15)
+     * Set Primary Language (PID.15)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 15
@@ -244,7 +244,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Marital Status (OBR.16)
+     * Set Marital Status (PID.16)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 16
@@ -258,7 +258,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Religion (OBR.17)
+     * Set Religion (PID.17)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 17
@@ -272,7 +272,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Patient AccountNumber (OBR.18)
+     * Set Patient Account Number (PID.18)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 18
@@ -286,7 +286,7 @@ class PID extends Segment
     }
 
     /**
-     * Set SSNNumber (OBR.19)
+     * Set SSNNumber (PID.19)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 19
@@ -300,7 +300,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Drivers LicenseNumber (OBR.20)
+     * Set Drivers License Number (PID.20)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 20
@@ -314,7 +314,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Mothers Identifier (OBR.21)
+     * Set Mothers Identifier (PID.21)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 21
@@ -328,7 +328,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Ethnic Group (OBR.22)
+     * Set Ethnic Group (PID.22)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 22
@@ -342,7 +342,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Birth Place (OBR.23)
+     * Set Birth Place (PID.23)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 23
@@ -356,7 +356,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Multiple BirthIndicator (OBR.24)
+     * Set Multiple Birth Indicator (PID.24)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 24
@@ -370,7 +370,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Birth Order (OBR.25)
+     * Set Birth Order (PID.25)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 25
@@ -384,7 +384,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Citizenship (OBR.26)
+     * Set Citizenship (PID.26)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 26
@@ -398,7 +398,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Veterans MilitaryStatus (OBR.27)
+     * Set Veterans Military Status (PID.27)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 27
@@ -412,7 +412,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Nationality (OBR.28)
+     * Set Nationality (PID.28)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 28
@@ -426,7 +426,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Patient DeathDateAndTime (OBR.29)
+     * Set Patient Death Date And Time (PID.29)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 29
@@ -440,7 +440,7 @@ class PID extends Segment
     }
 
     /**
-     * Set Patient DeathIndicator (OBR.30)
+     * Set Patient Death Indicator (PID.30)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 30
@@ -454,7 +454,7 @@ class PID extends Segment
     }
 
     /**
-     * Get ID (OBR.1)
+     * Get ID (PID.1)
      *
      * @param int $position Defaults to 1
      *
@@ -467,7 +467,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Patient ID (OBR.2)
+     * Get Patient ID (PID.2)
      *
      * @param int $position Defaults to 2
      *
@@ -484,7 +484,7 @@ class PID extends Segment
      * @return array|null|string
      */
     /**
-     * Get Patient IdentifierList (OBR.3)
+     * Get Patient IdentifierList (PID.3)
      *
      * @param int $position Defaults to 3
      *
@@ -497,7 +497,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Alternate PatientID (OBR.4)
+     * Get Alternate PatientID (PID.4)
      *
      * @param int $position Defaults to 4
      *
@@ -510,7 +510,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Patient Name (OBR.5)
+     * Get Patient Name (PID.5)
      *
      * @param int $position Defaults to 5
      *
@@ -523,7 +523,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Mothers MaidenName (OBR.6)
+     * Get Mothers MaidenName (PID.6)
      *
      * @param int $position Defaults to 6
      *
@@ -536,7 +536,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Date TimeOfBirth (OBR.7)
+     * Get Date TimeOfBirth (PID.7)
      *
      * @param int $position Defaults to 7
      *
@@ -549,7 +549,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Sex (OBR.8)
+     * Get Sex (PID.8)
      *
      * @param int $position Defaults to 8
      *
@@ -562,7 +562,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Patient Alias (OBR.9)
+     * Get Patient Alias (PID.9)
      *
      * @param int $position Defaults to 9
      *
@@ -575,7 +575,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Race (OBR.10)
+     * Get Race (PID.10)
      *
      * @param int $position Defaults to 10
      *
@@ -588,7 +588,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Patient Address (OBR.11)
+     * Get Patient Address (PID.11)
      *
      * @param int $position Defaults to 11
      *
@@ -601,7 +601,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Country Code (OBR.12)
+     * Get Country Code (PID.12)
      *
      * @param int $position Defaults to 12
      *
@@ -614,7 +614,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Phone NumberHome (OBR.13)
+     * Get Phone NumberHome (PID.13)
      *
      * @param int $position Defaults to 13
      *
@@ -627,7 +627,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Phone NumberBusiness (OBR.14)
+     * Get Phone NumberBusiness (PID.14)
      *
      * @param int $position Defaults to 14
      *
@@ -640,7 +640,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Primary Language (OBR.15)
+     * Get Primary Language (PID.15)
      *
      * @param int $position Defaults to 15
      *
@@ -653,7 +653,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Marital Status (OBR.16)
+     * Get Marital Status (PID.16)
      *
      * @param int $position Defaults to 16
      *
@@ -666,7 +666,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Religion (OBR.17)
+     * Get Religion (PID.17)
      *
      * @param int $position Defaults to 17
      *
@@ -679,7 +679,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Patient AccountNumber (OBR.18)
+     * Get Patient AccountNumber (PID.18)
      *
      * @param int $position Defaults to 18
      *
@@ -692,7 +692,7 @@ class PID extends Segment
     }
 
     /**
-     * Get SSNNumber (OBR.19)
+     * Get SSNNumber (PID.19)
      *
      * @param int $position Defaults to 19
      *
@@ -705,7 +705,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Drivers LicenseNumber (OBR.20)
+     * Get Drivers LicenseNumber (PID.20)
      *
      * @param int $position Defaults to 20
      *
@@ -718,7 +718,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Mothers Identifier (OBR.21)
+     * Get Mothers Identifier (PID.21)
      *
      * @param int $position Defaults to 21
      *
@@ -731,7 +731,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Ethnic Group (OBR.22)
+     * Get Ethnic Group (PID.22)
      *
      * @param int $position Defaults to 22
      *
@@ -744,7 +744,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Birth Place (OBR.23)
+     * Get Birth Place (PID.23)
      *
      * @param int $position Defaults to 23
      *
@@ -757,7 +757,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Multiple BirthIndicator (OBR.24)
+     * Get Multiple BirthIndicator (PID.24)
      *
      * @param int $position Defaults to 24
      *
@@ -770,7 +770,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Birth Order (OBR.25)
+     * Get Birth Order (PID.25)
      *
      * @param int $position Defaults to 25
      *
@@ -783,7 +783,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Citizenship (OBR.26)
+     * Get Citizenship (PID.26)
      *
      * @param int $position Defaults to 26
      *
@@ -796,7 +796,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Veterans MilitaryStatus (OBR.27)
+     * Get Veterans MilitaryStatus (PID.27)
      *
      * @param int $position Defaults to 27
      *
@@ -809,7 +809,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Nationality (OBR.28)
+     * Get Nationality (PID.28)
      *
      * @param int $position Defaults to 28
      *
@@ -822,7 +822,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Patient DeathDateAndTime (OBR.29)
+     * Get Patient DeathDateAndTime (PID.29)
      *
      * @param int $position Defaults to 29
      *
@@ -835,7 +835,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Patient DeathIndicator (OBR.30)
+     * Get Patient DeathIndicator (PID.30)
      *
      * @param int $position Defaults to 30
      *

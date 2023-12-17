@@ -52,7 +52,7 @@ class AIP extends Segment
     }
 
     /**
-     * Set Segment ActionCode (OBR.2)
+     * Set Segment Action Code (AIP.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -66,7 +66,7 @@ class AIP extends Segment
     }
 
     /**
-     * Set Personnel ResourceID (OBR.3)
+     * Set Personnel Resource ID (AIP.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -80,7 +80,7 @@ class AIP extends Segment
     }
 
     /**
-     * Set Resource Type (OBR.4)
+     * Set Resource Type (AIP.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -94,7 +94,7 @@ class AIP extends Segment
     }
 
     /**
-     * Set Resource Group (OBR.5)
+     * Set Resource Group (AIP.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -108,7 +108,7 @@ class AIP extends Segment
     }
 
     /**
-     * Set Start DateTime (OBR.6)
+     * Set Start Date Time (AIP.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -122,7 +122,7 @@ class AIP extends Segment
     }
 
     /**
-     * Set Start DateTimeOffset (OBR.7)
+     * Set Start Date Time Offset (AIP.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -136,7 +136,7 @@ class AIP extends Segment
     }
 
     /**
-     * Set Start DateTimeOffsetUnits (OBR.8)
+     * Set Start Date Time Offset Units (AIP.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -150,7 +150,7 @@ class AIP extends Segment
     }
 
     /**
-     * Set Duration (OBR.9)
+     * Set Duration (AIP.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -164,7 +164,7 @@ class AIP extends Segment
     }
 
     /**
-     * Set Duration Units (OBR.10)
+     * Set Duration Units (AIP.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -178,7 +178,7 @@ class AIP extends Segment
     }
 
     /**
-     * Set Allow SubstitutionCode (OBR.11)
+     * Set Allow Substitution Code (AIP.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -192,7 +192,7 @@ class AIP extends Segment
     }
 
     /**
-     * Set Filler StatusCode (OBR.12)
+     * Set Filler Status Code (AIP.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -206,7 +206,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get ID (OBR.1)
+     * Get ID (AIP.1)
      *
      * @param int $position Defaults to 1
      *
@@ -219,7 +219,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Segment ActionCode (OBR.2)
+     * Get Segment ActionCode (AIP.2)
      *
      * @param int $position Defaults to 2
      *
@@ -232,7 +232,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Personnel ResourceID (OBR.3)
+     * Get Personnel ResourceID (AIP.3)
      *
      * @param int $position Defaults to 3
      *
@@ -245,7 +245,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Resource Type (OBR.4)
+     * Get Resource Type (AIP.4)
      *
      * @param int $position Defaults to 4
      *
@@ -258,7 +258,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Resource Group (OBR.5)
+     * Get Resource Group (AIP.5)
      *
      * @param int $position Defaults to 5
      *
@@ -271,7 +271,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Start DateTime (OBR.6)
+     * Get Start DateTime (AIP.6)
      *
      * @param int $position Defaults to 6
      *
@@ -284,7 +284,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Start DateTimeOffset (OBR.7)
+     * Get Start DateTimeOffset (AIP.7)
      *
      * @param int $position Defaults to 7
      *
@@ -297,7 +297,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Start DateTimeOffsetUnits (OBR.8)
+     * Get Start DateTimeOffsetUnits (AIP.8)
      *
      * @param int $position Defaults to 8
      *
@@ -310,7 +310,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Duration (OBR.9)
+     * Get Duration (AIP.9)
      *
      * @param int $position Defaults to 9
      *
@@ -323,7 +323,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Duration Units (OBR.10)
+     * Get Duration Units (AIP.10)
      *
      * @param int $position Defaults to 10
      *
@@ -336,7 +336,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Allow SubstitutionCode (OBR.11)
+     * Get Allow SubstitutionCode (AIP.11)
      *
      * @param int $position Defaults to 11
      *
@@ -349,7 +349,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Filler StatusCode (OBR.12)
+     * Get Filler StatusCode (AIP.12)
      *
      * @param int $position Defaults to 12
      *

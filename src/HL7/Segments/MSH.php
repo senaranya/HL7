@@ -95,7 +95,7 @@ class MSH extends Segment
     // -------------------- Setter Methods ------------------------------
 
     /**
-     * Set Sending Application (OBR.3)
+     * Set Sending Application (MSH.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -109,7 +109,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Sending Facility (OBR.4)
+     * Set Sending Facility (MSH.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -123,7 +123,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Receiving Application (OBR.5)
+     * Set Receiving Application (MSH.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -137,7 +137,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Receiving Facility (OBR.6)
+     * Set Receiving Facility (MSH.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -151,7 +151,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Date TimeOfMessage (OBR.7)
+     * Set Date Time Of Message (MSH.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -165,7 +165,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Security (OBR.8)
+     * Set Security (MSH.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -184,7 +184,7 @@ class MSH extends Segment
      * @param string $value
      */
     /**
-     * Sets message type to MSH segment. (OBR.9)
+     * Sets message type to MSH segment. (MSH.9)
      *
      * If trigger event is already set, then it is preserved
      *
@@ -215,7 +215,7 @@ class MSH extends Segment
     }
 
     /**
-     * Sets trigger event to MSH segment. (OBR.9)
+     * Sets trigger event to MSH segment. (MSH.9)
      *
      * If meessage type is already set, then it is preserved
      *
@@ -248,7 +248,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Message ControlId (OBR.10)
+     * Set Message Control Id (MSH.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -262,7 +262,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Processing Id (OBR.11)
+     * Set Processing Id (MSH.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -276,7 +276,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Version Id (OBR.12)
+     * Set Version Id (MSH.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -290,7 +290,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Sequence Number (OBR.13)
+     * Set Sequence Number (MSH.13)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 13
@@ -304,7 +304,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Continuation Pointer (OBR.14)
+     * Set Continuation Pointer (MSH.14)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 14
@@ -318,7 +318,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Accept AcknowledgementType (OBR.15)
+     * Set Accept Acknowledgement Type (MSH.15)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 15
@@ -332,7 +332,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Application AcknowledgementType (OBR.16)
+     * Set Application Acknowledgement Type (MSH.16)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 16
@@ -346,7 +346,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Country Code (OBR.17)
+     * Set Country Code (MSH.17)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 17
@@ -360,7 +360,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Character Set (OBR.18)
+     * Set Character Set (MSH.18)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 18
@@ -374,7 +374,7 @@ class MSH extends Segment
     }
 
     /**
-     * Set Principal Language (OBR.19)
+     * Set Principal Language (MSH.19)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 19
@@ -390,7 +390,7 @@ class MSH extends Segment
     // -------------------- Getter Methods ------------------------------
 
     /**
-     * Get Sending Application (OBR.3)
+     * Get Sending Application (MSH.3)
      *
      * @param int $position Defaults to 3
      *
@@ -403,7 +403,7 @@ class MSH extends Segment
     }
 
     /**
-     * Get Sending Facility (OBR.4)
+     * Get Sending Facility (MSH.4)
      *
      * @param int $position Defaults to 4
      *
@@ -416,7 +416,7 @@ class MSH extends Segment
     }
 
     /**
-     * Get Receiving Application (OBR.5)
+     * Get Receiving Application (MSH.5)
      *
      * @param int $position Defaults to 5
      *
@@ -429,7 +429,7 @@ class MSH extends Segment
     }
 
     /**
-     * Get Receiving Facility (OBR.6)
+     * Get Receiving Facility (MSH.6)
      *
      * @param int $position Defaults to 6
      *
@@ -442,7 +442,7 @@ class MSH extends Segment
     }
 
     /**
-     * Get Date TimeOfMessage (OBR.7)
+     * Get Date TimeOfMessage (MSH.7)
      *
      * @param int $position Defaults to 7
      *
@@ -458,7 +458,7 @@ class MSH extends Segment
      * ORM / ORU etc.
      */
     /**
-     * Get Message Type (OBR.9)
+     * Get Message Type (MSH.9)
      *
      * @param int $position Defaults to 9
      *
@@ -475,7 +475,7 @@ class MSH extends Segment
     }
 
     /**
-     * Get Trigger Event (OBR.9)
+     * Get Trigger Event (MSH.9)
      *
      * @param int $position Defaults to 9
      *
@@ -492,7 +492,7 @@ class MSH extends Segment
     }
 
     /**
-     * Get Message ControlId (OBR.10)
+     * Get Message ControlId (MSH.10)
      *
      * @param int $position Defaults to 10
      *
@@ -505,7 +505,7 @@ class MSH extends Segment
     }
 
     /**
-     * Get Processing Id (OBR.11)
+     * Get Processing Id (MSH.11)
      *
      * @param int $position Defaults to 11
      *
@@ -521,7 +521,7 @@ class MSH extends Segment
      * Get HL7 version, e.g. 2.1, 2.3, 3.0 etc.
      */
     /**
-     * Get Version Id (OBR.12)
+     * Get Version Id (MSH.12)
      *
      * @param int $position Defaults to 12
      *

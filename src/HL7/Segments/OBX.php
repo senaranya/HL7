@@ -44,7 +44,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Value Type (OBR.2)
+     * Set Value Type (OBX.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -58,7 +58,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Observation Identifier (OBR.3)
+     * Set Observation Identifier (OBX.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -72,7 +72,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Observation SubId (OBR.4)
+     * Set Observation Sub Id (OBX.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -86,7 +86,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Observation Value (OBR.5)
+     * Set Observation Value (OBX.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -100,7 +100,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Units (OBR.6)
+     * Set Units (OBX.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -114,7 +114,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Reference Range (OBR.7)
+     * Set Reference Range (OBX.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -128,7 +128,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Abnormal Flags (OBR.8)
+     * Set Abnormal Flags (OBX.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -142,7 +142,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Probability (OBR.9)
+     * Set Probability (OBX.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -156,7 +156,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Nature OfAbnormalTest (OBR.10)
+     * Set Nature Of Abnormal Test (OBX.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -170,7 +170,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Observe ResultStatus (OBR.11)
+     * Set Observe Result Status (OBX.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -184,7 +184,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Data LastObsNormalValues (OBR.12)
+     * Set Data Last Obs Normal Values (OBX.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -198,7 +198,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set User DefinedAccessChecks (OBR.13)
+     * Set User Defined Access Checks (OBX.13)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 13
@@ -212,7 +212,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Date TimeOfTheObservation (OBR.14)
+     * Set Date Time Of The Observation (OBX.14)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 14
@@ -226,7 +226,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Producers Id (OBR.15)
+     * Set Producers Id (OBX.15)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 15
@@ -240,7 +240,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Responsible Observer (OBR.16)
+     * Set Responsible Observer (OBX.16)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 16
@@ -254,7 +254,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Observation Method (OBR.17)
+     * Set Observation Method (OBX.17)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 17
@@ -268,7 +268,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Equipment InstanceIdentifier (OBR.18)
+     * Set Equipment Instance Identifier (OBX.18)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 18
@@ -282,7 +282,7 @@ class OBX extends Segment
     }
 
     /**
-     * Set Date TimeOfAnalysis (OBR.19)
+     * Set Date Time Of Analysis (OBX.19)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 19
@@ -296,7 +296,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get ID (OBR.1)
+     * Get ID (OBX.1)
      *
      * @param int $position Defaults to 1
      *
@@ -309,7 +309,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Value Type (OBR.2)
+     * Get Value Type (OBX.2)
      *
      * @param int $position Defaults to 2
      *
@@ -322,7 +322,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Observation Identifier (OBR.3)
+     * Get Observation Identifier (OBX.3)
      *
      * @param int $position Defaults to 3
      *
@@ -335,7 +335,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Observation SubId (OBR.4)
+     * Get Observation SubId (OBX.4)
      *
      * @param int $position Defaults to 4
      *
@@ -348,7 +348,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Observation Value (OBR.5)
+     * Get Observation Value (OBX.5)
      *
      * @param int $position Defaults to 5
      *
@@ -361,7 +361,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Units (OBR.6)
+     * Get Units (OBX.6)
      *
      * @param int $position Defaults to 6
      *
@@ -374,7 +374,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Reference Range (OBR.7)
+     * Get Reference Range (OBX.7)
      *
      * @param int $position Defaults to 7
      *
@@ -387,7 +387,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Abnormal Flags (OBR.8)
+     * Get Abnormal Flags (OBX.8)
      *
      * @param int $position Defaults to 8
      *
@@ -400,7 +400,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Probability (OBR.9)
+     * Get Probability (OBX.9)
      *
      * @param int $position Defaults to 9
      *
@@ -413,7 +413,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Nature OfAbnormalTest (OBR.10)
+     * Get Nature OfAbnormalTest (OBX.10)
      *
      * @param int $position Defaults to 10
      *
@@ -426,7 +426,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Observe ResultStatus (OBR.11)
+     * Get Observe ResultStatus (OBX.11)
      *
      * @param int $position Defaults to 11
      *
@@ -439,7 +439,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Data LastObsNormalValues (OBR.12)
+     * Get Data LastObsNormalValues (OBX.12)
      *
      * @param int $position Defaults to 12
      *
@@ -452,7 +452,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get User DefinedAccessChecks (OBR.13)
+     * Get User DefinedAccessChecks (OBX.13)
      *
      * @param int $position Defaults to 13
      *
@@ -465,7 +465,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Date TimeOfTheObservation (OBR.14)
+     * Get Date TimeOfTheObservation (OBX.14)
      *
      * @param int $position Defaults to 14
      *
@@ -478,7 +478,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Producers Id (OBR.15)
+     * Get Producers Id (OBX.15)
      *
      * @param int $position Defaults to 15
      *
@@ -491,7 +491,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Responsible Observer (OBR.16)
+     * Get Responsible Observer (OBX.16)
      *
      * @param int $position Defaults to 16
      *
@@ -504,7 +504,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Observation Method (OBR.17)
+     * Get Observation Method (OBX.17)
      *
      * @param int $position Defaults to 17
      *
@@ -517,7 +517,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Equipment InstanceIdentifier (OBR.18)
+     * Get Equipment InstanceIdentifier (OBX.18)
      *
      * @param int $position Defaults to 18
      *
@@ -530,7 +530,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Date TimeOfAnalysis (OBR.19)
+     * Get Date TimeOfAnalysis (OBX.19)
      *
      * @param int $position Defaults to 19
      *

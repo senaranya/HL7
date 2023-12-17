@@ -18,7 +18,7 @@ class MRG extends Segment
     }
 
     /**
-     * Set Prior PatientIdentifierList (OBR.1)
+     * Set Prior Patient Identifier List (MRG.1)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 1
@@ -32,7 +32,7 @@ class MRG extends Segment
     }
 
     /**
-     * Set Prior AlternatePatientID (OBR.2)
+     * Set Prior Alternate Patient ID (MRG.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -46,7 +46,7 @@ class MRG extends Segment
     }
 
     /**
-     * Set Prior PatientAccountNumber (OBR.3)
+     * Set Prior Patient Account Number (MRG.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -60,7 +60,7 @@ class MRG extends Segment
     }
 
     /**
-     * Set Prior PatientID (OBR.4)
+     * Set Prior Patient ID (MRG.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -74,7 +74,7 @@ class MRG extends Segment
     }
 
     /**
-     * Set Prior VisitNumber (OBR.5)
+     * Set Prior Visit Number (MRG.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -88,7 +88,7 @@ class MRG extends Segment
     }
 
     /**
-     * Set Prior AlternateVisitID (OBR.6)
+     * Set Prior Alternate Visit ID (MRG.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -102,7 +102,7 @@ class MRG extends Segment
     }
 
     /**
-     * Set Prior PatientName (OBR.7)
+     * Set Prior Patient Name (MRG.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -116,7 +116,7 @@ class MRG extends Segment
     }
 
     /**
-     * Get Prior PatientIdentifierList (OBR.1)
+     * Get Prior PatientIdentifierList (MRG.1)
      *
      * @param int $position Defaults to 1
      *
@@ -129,7 +129,7 @@ class MRG extends Segment
     }
 
     /**
-     * Get Prior AlternatePatientID (OBR.2)
+     * Get Prior AlternatePatientID (MRG.2)
      *
      * @param int $position Defaults to 2
      *
@@ -142,7 +142,7 @@ class MRG extends Segment
     }
 
     /**
-     * Get Prior PatientAccountNumber (OBR.3)
+     * Get Prior PatientAccountNumber (MRG.3)
      *
      * @param int $position Defaults to 3
      *
@@ -155,7 +155,7 @@ class MRG extends Segment
     }
 
     /**
-     * Get Prior PatientID (OBR.4)
+     * Get Prior PatientID (MRG.4)
      *
      * @param int $position Defaults to 4
      *
@@ -168,7 +168,7 @@ class MRG extends Segment
     }
 
     /**
-     * Get Prior VisitNumber (OBR.5)
+     * Get Prior VisitNumber (MRG.5)
      *
      * @param int $position Defaults to 5
      *
@@ -181,7 +181,7 @@ class MRG extends Segment
     }
 
     /**
-     * Get Prior AlternateVisitID (OBR.6)
+     * Get Prior AlternateVisitID (MRG.6)
      *
      * @param int $position Defaults to 6
      *
@@ -194,7 +194,7 @@ class MRG extends Segment
     }
 
     /**
-     * Get Prior PatientName (OBR.7)
+     * Get Prior PatientName (MRG.7)
      *
      * @param int $position Defaults to 7
      *

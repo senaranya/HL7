@@ -51,7 +51,7 @@ class AIG extends Segment
     }
 
     /**
-     * Set Segment ActionCode (OBR.2)
+     * Set Segment Action Code (AIG.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -65,7 +65,7 @@ class AIG extends Segment
     }
 
     /**
-     * Set Resource ID (OBR.3)
+     * Set Resource ID (AIG.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -79,7 +79,7 @@ class AIG extends Segment
     }
 
     /**
-     * Set Resource Type (OBR.4)
+     * Set Resource Type (AIG.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -93,7 +93,7 @@ class AIG extends Segment
     }
 
     /**
-     * Set Resource Group (OBR.5)
+     * Set Resource Group (AIG.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -107,7 +107,7 @@ class AIG extends Segment
     }
 
     /**
-     * Set Resource Quantity (OBR.6)
+     * Set Resource Quantity (AIG.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -121,7 +121,7 @@ class AIG extends Segment
     }
 
     /**
-     * Set Resource QuantityUnits (OBR.7)
+     * Set Resource Quantity Units (AIG.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -135,7 +135,7 @@ class AIG extends Segment
     }
 
     /**
-     * Set Start DateTime (OBR.8)
+     * Set Start Date Time (AIG.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -149,7 +149,7 @@ class AIG extends Segment
     }
 
     /**
-     * Set Start DateTimeOffset (OBR.9)
+     * Set Start Date Time Offset (AIG.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -163,7 +163,7 @@ class AIG extends Segment
     }
 
     /**
-     * Set Start DateTimeOffsetUnits (OBR.10)
+     * Set Start Date Time Offset Units (AIG.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -177,7 +177,7 @@ class AIG extends Segment
     }
 
     /**
-     * Set Duration (OBR.11)
+     * Set Duration (AIG.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -191,7 +191,7 @@ class AIG extends Segment
     }
 
     /**
-     * Set Duration Units (OBR.12)
+     * Set Duration Units (AIG.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -205,7 +205,7 @@ class AIG extends Segment
     }
 
     /**
-     * Set Allow SubstitutionCode (OBR.13)
+     * Set Allow Substitution Code (AIG.13)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 13
@@ -219,7 +219,7 @@ class AIG extends Segment
     }
 
     /**
-     * Set Filler StatusCode (OBR.14)
+     * Set Filler Status Code (AIG.14)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 14
@@ -233,7 +233,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get ID (OBR.1)
+     * Get ID (AIG.1)
      *
      * @param int $position Defaults to 1
      *
@@ -246,7 +246,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Segment ActionCode (OBR.2)
+     * Get Segment ActionCode (AIG.2)
      *
      * @param int $position Defaults to 2
      *
@@ -259,7 +259,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Resource ID (OBR.3)
+     * Get Resource ID (AIG.3)
      *
      * @param int $position Defaults to 3
      *
@@ -272,7 +272,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Resource Type (OBR.4)
+     * Get Resource Type (AIG.4)
      *
      * @param int $position Defaults to 4
      *
@@ -285,7 +285,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Resource Group (OBR.5)
+     * Get Resource Group (AIG.5)
      *
      * @param int $position Defaults to 5
      *
@@ -298,7 +298,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Resource Quantity (OBR.6)
+     * Get Resource Quantity (AIG.6)
      *
      * @param int $position Defaults to 6
      *
@@ -311,7 +311,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Resource QuantityUnits (OBR.7)
+     * Get Resource QuantityUnits (AIG.7)
      *
      * @param int $position Defaults to 7
      *
@@ -324,7 +324,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Start DateTime (OBR.8)
+     * Get Start DateTime (AIG.8)
      *
      * @param int $position Defaults to 8
      *
@@ -337,7 +337,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Start DateTimeOffset (OBR.9)
+     * Get Start DateTimeOffset (AIG.9)
      *
      * @param int $position Defaults to 9
      *
@@ -350,7 +350,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Start DateTimeOffsetUnits (OBR.10)
+     * Get Start DateTimeOffsetUnits (AIG.10)
      *
      * @param int $position Defaults to 10
      *
@@ -363,7 +363,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Duration (OBR.11)
+     * Get Duration (AIG.11)
      *
      * @param int $position Defaults to 11
      *
@@ -376,7 +376,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Duration Units (OBR.12)
+     * Get Duration Units (AIG.12)
      *
      * @param int $position Defaults to 12
      *
@@ -389,7 +389,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Allow SubstitutionCode (OBR.13)
+     * Get Allow SubstitutionCode (AIG.13)
      *
      * @param int $position Defaults to 13
      *
@@ -402,7 +402,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Filler StatusCode (OBR.14)
+     * Get Filler StatusCode (AIG.14)
      *
      * @param int $position Defaults to 14
      *

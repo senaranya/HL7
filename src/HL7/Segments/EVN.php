@@ -17,7 +17,7 @@ class EVN extends Segment
     }
 
     /**
-     * Set Event TypeCode (OBR.1)
+     * Set Event Type Code (EVN.1)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 1
@@ -31,7 +31,7 @@ class EVN extends Segment
     }
 
     /**
-     * Set Recorded DateTime (OBR.2)
+     * Set Recorded Date Time (EVN.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -45,7 +45,7 @@ class EVN extends Segment
     }
 
     /**
-     * Set Date TimePlannedEvent (OBR.3)
+     * Set Date Time Planned Event (EVN.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -59,7 +59,7 @@ class EVN extends Segment
     }
 
     /**
-     * Set Event ReasonCode (OBR.4)
+     * Set Event Reason Code (EVN.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -73,7 +73,7 @@ class EVN extends Segment
     }
 
     /**
-     * Set Operator ID (OBR.5)
+     * Set Operator ID (EVN.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -87,7 +87,7 @@ class EVN extends Segment
     }
 
     /**
-     * Set Event Occurred (OBR.6)
+     * Set Event Occurred (EVN.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -101,7 +101,7 @@ class EVN extends Segment
     }
 
     /**
-     * Get Event TypeCode (OBR.1)
+     * Get Event TypeCode (EVN.1)
      *
      * @param int $position Defaults to 1
      *
@@ -114,7 +114,7 @@ class EVN extends Segment
     }
 
     /**
-     * Get Recorded DateTime (OBR.2)
+     * Get Recorded DateTime (EVN.2)
      *
      * @param int $position Defaults to 2
      *
@@ -127,7 +127,7 @@ class EVN extends Segment
     }
 
     /**
-     * Get Date TimePlannedEvent (OBR.3)
+     * Get Date TimePlannedEvent (EVN.3)
      *
      * @param int $position Defaults to 3
      *
@@ -140,7 +140,7 @@ class EVN extends Segment
     }
 
     /**
-     * Get Event ReasonCode (OBR.4)
+     * Get Event ReasonCode (EVN.4)
      *
      * @param int $position Defaults to 4
      *
@@ -153,7 +153,7 @@ class EVN extends Segment
     }
 
     /**
-     * Get Operator ID (OBR.5)
+     * Get Operator ID (EVN.5)
      *
      * @param int $position Defaults to 5
      *
@@ -166,7 +166,7 @@ class EVN extends Segment
     }
 
     /**
-     * Get Event Occurred (OBR.6)
+     * Get Event Occurred (EVN.6)
      *
      * @param int $position Defaults to 6
      *

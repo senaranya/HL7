@@ -45,7 +45,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Set Patient Class (OBR.2)
+     * Set Patient Class (PV1.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -59,7 +59,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Set Assigned PatientLocation (OBR.3)
+     * Set Assigned Patient Location (PV1.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -76,7 +76,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Admission Type (OBR.4)
+     * Set Admission Type (PV1.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -93,7 +93,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Pre AdmitNumber (OBR.5)
+     * Set Pre Admit Number (PV1.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -110,7 +110,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Prior PatientLocation (OBR.6)
+     * Set Prior Patient Location (PV1.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -127,7 +127,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Attending Doctor (OBR.7)
+     * Set Attending Doctor (PV1.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -144,7 +144,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Referring Doctor (OBR.8)
+     * Set Referring Doctor (PV1.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -161,7 +161,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Consulting Doctor (OBR.9)
+     * Set Consulting Doctor (PV1.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -178,7 +178,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Hospital Service (OBR.10)
+     * Set Hospital Service (PV1.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -195,7 +195,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Temporary Location (OBR.11)
+     * Set Temporary Location (PV1.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -212,7 +212,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Pre AdmitTestIndicator (OBR.12)
+     * Set Pre Admit Test Indicator (PV1.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -229,7 +229,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Re AdmissionIndicator (OBR.13)
+     * Set Re Admission Indicator (PV1.13)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 13
@@ -246,7 +246,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Admit Source (OBR.14)
+     * Set Admit Source (PV1.14)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 14
@@ -263,7 +263,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Ambulatory Status (OBR.15)
+     * Set Ambulatory Status (PV1.15)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 15
@@ -280,7 +280,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Vip Indicator (OBR.16)
+     * Set Vip Indicator (PV1.16)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 16
@@ -297,7 +297,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Admitting Doctor (OBR.17)
+     * Set Admitting Doctor (PV1.17)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 17
@@ -314,7 +314,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Patient Type (OBR.18)
+     * Set Patient Type (PV1.18)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 18
@@ -331,7 +331,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Visit Number (OBR.19)
+     * Set Visit Number (PV1.19)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 19
@@ -348,7 +348,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Financial Class (OBR.20)
+     * Set Financial Class (PV1.20)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 20
@@ -365,7 +365,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Charge PriceIndicator (OBR.21)
+     * Set Charge Price Indicator (PV1.21)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 21
@@ -382,7 +382,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Courtesy Code (OBR.22)
+     * Set Courtesy Code (PV1.22)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 22
@@ -399,7 +399,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Credit Rating (OBR.23)
+     * Set Credit Rating (PV1.23)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 23
@@ -416,7 +416,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Contract Code (OBR.24)
+     * Set Contract Code (PV1.24)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 24
@@ -433,7 +433,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Contract EffectiveDate (OBR.25)
+     * Set Contract Effective Date (PV1.25)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 25
@@ -450,7 +450,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Contract Amount (OBR.26)
+     * Set Contract Amount (PV1.26)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 26
@@ -467,7 +467,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Contract Period (OBR.27)
+     * Set Contract Period (PV1.27)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 27
@@ -484,7 +484,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Interest Code (OBR.28)
+     * Set Interest Code (PV1.28)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 28
@@ -501,7 +501,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Transfer ToBadDebtCode (OBR.29)
+     * Set Transfer To Bad Debt Code (PV1.29)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 29
@@ -518,7 +518,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Transfer ToBadDebtDate (OBR.30)
+     * Set Transfer To Bad Debt Date (PV1.30)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 30
@@ -535,7 +535,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Bad DebtAgencyCode (OBR.31)
+     * Set Bad Debt Agency Code (PV1.31)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 31
@@ -552,7 +552,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Bad DebtTransferAmount (OBR.32)
+     * Set Bad Debt Transfer Amount (PV1.32)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 32
@@ -569,7 +569,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Bad DebtRecoveryAmount (OBR.33)
+     * Set Bad Debt Recovery Amount (PV1.33)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 33
@@ -586,7 +586,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Delete AccountIndicator (OBR.34)
+     * Set Delete Account Indicator (PV1.34)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 34
@@ -603,7 +603,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Delete AccountDate (OBR.35)
+     * Set Delete Account Date (PV1.35)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 35
@@ -620,7 +620,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Discharge Disposition (OBR.36)
+     * Set Discharge Disposition (PV1.36)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 36
@@ -637,7 +637,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Discharged ToLocation (OBR.37)
+     * Set Discharged To Location (PV1.37)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 37
@@ -654,7 +654,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Diet Type (OBR.38)
+     * Set Diet Type (PV1.38)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 38
@@ -671,7 +671,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Servicing Facility (OBR.39)
+     * Set Servicing Facility (PV1.39)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 39
@@ -688,7 +688,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Bed Status (OBR.40)
+     * Set Bed Status (PV1.40)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 40
@@ -705,7 +705,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Account Status (OBR.41)
+     * Set Account Status (PV1.41)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 41
@@ -722,7 +722,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Pending Location (OBR.42)
+     * Set Pending Location (PV1.42)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 42
@@ -739,7 +739,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Prior TemporaryLocation (OBR.43)
+     * Set Prior Temporary Location (PV1.43)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 43
@@ -756,7 +756,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Admit DateTime (OBR.44)
+     * Set Admit Date Time (PV1.44)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 44
@@ -773,7 +773,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Discharge DateTime (OBR.45)
+     * Set Discharge Date Time (PV1.45)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 45
@@ -790,7 +790,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Current PatientBalance (OBR.46)
+     * Set Current Patient Balance (PV1.46)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 46
@@ -807,7 +807,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Total Charges (OBR.47)
+     * Set Total Charges (PV1.47)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 47
@@ -824,7 +824,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Total Adjustments (OBR.48)
+     * Set Total Adjustments (PV1.48)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 48
@@ -841,7 +841,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Total Payments (OBR.49)
+     * Set Total Payments (PV1.49)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 49
@@ -858,7 +858,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Alternate VisitID (OBR.50)
+     * Set Alternate Visit ID (PV1.50)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 50
@@ -875,7 +875,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Visit Indicator (OBR.51)
+     * Set Visit Indicator (PV1.51)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 51
@@ -892,7 +892,7 @@ class PV1 extends Segment
      * @return bool
      */
     /**
-     * Set Other HealthcareProvider (OBR.52)
+     * Set Other Healthcare Provider (PV1.52)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 52
@@ -906,7 +906,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get ID (OBR.1)
+     * Get ID (PV1.1)
      *
      * @param int $position Defaults to 1
      *
@@ -919,7 +919,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Patient Class (OBR.2)
+     * Get Patient Class (PV1.2)
      *
      * @param int $position Defaults to 2
      *
@@ -932,7 +932,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Assigned PatientLocation (OBR.3)
+     * Get Assigned PatientLocation (PV1.3)
      *
      * @param int $position Defaults to 3
      *
@@ -945,7 +945,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Admission Type (OBR.4)
+     * Get Admission Type (PV1.4)
      *
      * @param int $position Defaults to 4
      *
@@ -958,7 +958,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Pre AdmitNumber (OBR.5)
+     * Get Pre AdmitNumber (PV1.5)
      *
      * @param int $position Defaults to 5
      *
@@ -971,7 +971,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Prior PatientLocation (OBR.6)
+     * Get Prior PatientLocation (PV1.6)
      *
      * @param int $position Defaults to 6
      *
@@ -984,7 +984,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Attending Doctor (OBR.7)
+     * Get Attending Doctor (PV1.7)
      *
      * @param int $position Defaults to 7
      *
@@ -997,7 +997,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Referring Doctor (OBR.8)
+     * Get Referring Doctor (PV1.8)
      *
      * @param int $position Defaults to 8
      *
@@ -1010,7 +1010,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Consulting Doctor (OBR.9)
+     * Get Consulting Doctor (PV1.9)
      *
      * @param int $position Defaults to 9
      *
@@ -1023,7 +1023,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Hospital Service (OBR.10)
+     * Get Hospital Service (PV1.10)
      *
      * @param int $position Defaults to 10
      *
@@ -1036,7 +1036,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Temporary Location (OBR.11)
+     * Get Temporary Location (PV1.11)
      *
      * @param int $position Defaults to 11
      *
@@ -1049,7 +1049,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Pre AdmitTestIndicator (OBR.12)
+     * Get Pre AdmitTestIndicator (PV1.12)
      *
      * @param int $position Defaults to 12
      *
@@ -1062,7 +1062,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Re AdmissionIndicator (OBR.13)
+     * Get Re AdmissionIndicator (PV1.13)
      *
      * @param int $position Defaults to 13
      *
@@ -1075,7 +1075,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Admit Source (OBR.14)
+     * Get Admit Source (PV1.14)
      *
      * @param int $position Defaults to 14
      *
@@ -1088,7 +1088,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Ambulatory Status (OBR.15)
+     * Get Ambulatory Status (PV1.15)
      *
      * @param int $position Defaults to 15
      *
@@ -1101,7 +1101,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Vip Indicator (OBR.16)
+     * Get Vip Indicator (PV1.16)
      *
      * @param int $position Defaults to 16
      *
@@ -1114,7 +1114,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Admitting Doctor (OBR.17)
+     * Get Admitting Doctor (PV1.17)
      *
      * @param int $position Defaults to 17
      *
@@ -1127,7 +1127,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Patient Type (OBR.18)
+     * Get Patient Type (PV1.18)
      *
      * @param int $position Defaults to 18
      *
@@ -1140,7 +1140,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Visit Number (OBR.19)
+     * Get Visit Number (PV1.19)
      *
      * @param int $position Defaults to 19
      *
@@ -1153,7 +1153,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Financial Class (OBR.20)
+     * Get Financial Class (PV1.20)
      *
      * @param int $position Defaults to 20
      *
@@ -1166,7 +1166,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Charge PriceIndicator (OBR.21)
+     * Get Charge PriceIndicator (PV1.21)
      *
      * @param int $position Defaults to 21
      *
@@ -1179,7 +1179,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Courtesy Code (OBR.22)
+     * Get Courtesy Code (PV1.22)
      *
      * @param int $position Defaults to 22
      *
@@ -1192,7 +1192,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Credit Rating (OBR.23)
+     * Get Credit Rating (PV1.23)
      *
      * @param int $position Defaults to 23
      *
@@ -1205,7 +1205,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Contract Code (OBR.24)
+     * Get Contract Code (PV1.24)
      *
      * @param int $position Defaults to 24
      *
@@ -1218,7 +1218,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Contract EffectiveDate (OBR.25)
+     * Get Contract EffectiveDate (PV1.25)
      *
      * @param int $position Defaults to 25
      *
@@ -1231,7 +1231,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Contract Amount (OBR.26)
+     * Get Contract Amount (PV1.26)
      *
      * @param int $position Defaults to 26
      *
@@ -1244,7 +1244,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Contract Period (OBR.27)
+     * Get Contract Period (PV1.27)
      *
      * @param int $position Defaults to 27
      *
@@ -1257,7 +1257,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Interest Code (OBR.28)
+     * Get Interest Code (PV1.28)
      *
      * @param int $position Defaults to 28
      *
@@ -1270,7 +1270,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Transfer ToBadDebtCode (OBR.29)
+     * Get Transfer ToBadDebtCode (PV1.29)
      *
      * @param int $position Defaults to 29
      *
@@ -1283,7 +1283,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Transfer ToBadDebtDate (OBR.30)
+     * Get Transfer ToBadDebtDate (PV1.30)
      *
      * @param int $position Defaults to 30
      *
@@ -1296,7 +1296,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Bad DebtAgencyCode (OBR.31)
+     * Get Bad DebtAgencyCode (PV1.31)
      *
      * @param int $position Defaults to 31
      *
@@ -1309,7 +1309,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Bad DebtTransferAmount (OBR.32)
+     * Get Bad DebtTransferAmount (PV1.32)
      *
      * @param int $position Defaults to 32
      *
@@ -1322,7 +1322,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Bad DebtRecoveryAmount (OBR.33)
+     * Get Bad DebtRecoveryAmount (PV1.33)
      *
      * @param int $position Defaults to 33
      *
@@ -1335,7 +1335,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Delete AccountIndicator (OBR.34)
+     * Get Delete AccountIndicator (PV1.34)
      *
      * @param int $position Defaults to 34
      *
@@ -1348,7 +1348,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Delete AccountDate (OBR.35)
+     * Get Delete AccountDate (PV1.35)
      *
      * @param int $position Defaults to 35
      *
@@ -1361,7 +1361,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Discharge Disposition (OBR.36)
+     * Get Discharge Disposition (PV1.36)
      *
      * @param int $position Defaults to 36
      *
@@ -1374,7 +1374,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Discharged ToLocation (OBR.37)
+     * Get Discharged ToLocation (PV1.37)
      *
      * @param int $position Defaults to 37
      *
@@ -1387,7 +1387,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Diet Type (OBR.38)
+     * Get Diet Type (PV1.38)
      *
      * @param int $position Defaults to 38
      *
@@ -1400,7 +1400,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Servicing Facility (OBR.39)
+     * Get Servicing Facility (PV1.39)
      *
      * @param int $position Defaults to 39
      *
@@ -1413,7 +1413,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Bed Status (OBR.40)
+     * Get Bed Status (PV1.40)
      *
      * @param int $position Defaults to 40
      *
@@ -1426,7 +1426,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Account Status (OBR.41)
+     * Get Account Status (PV1.41)
      *
      * @param int $position Defaults to 41
      *
@@ -1439,7 +1439,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Pending Location (OBR.42)
+     * Get Pending Location (PV1.42)
      *
      * @param int $position Defaults to 42
      *
@@ -1452,7 +1452,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Prior TemporaryLocation (OBR.43)
+     * Get Prior TemporaryLocation (PV1.43)
      *
      * @param int $position Defaults to 43
      *
@@ -1465,7 +1465,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Admit DateTime (OBR.44)
+     * Get Admit DateTime (PV1.44)
      *
      * @param int $position Defaults to 44
      *
@@ -1478,7 +1478,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Discharge DateTime (OBR.45)
+     * Get Discharge DateTime (PV1.45)
      *
      * @param int $position Defaults to 45
      *
@@ -1491,7 +1491,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Current PatientBalance (OBR.46)
+     * Get Current PatientBalance (PV1.46)
      *
      * @param int $position Defaults to 46
      *
@@ -1504,7 +1504,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Total Charges (OBR.47)
+     * Get Total Charges (PV1.47)
      *
      * @param int $position Defaults to 47
      *
@@ -1517,7 +1517,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Total Adjustments (OBR.48)
+     * Get Total Adjustments (PV1.48)
      *
      * @param int $position Defaults to 48
      *
@@ -1530,7 +1530,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Total Payments (OBR.49)
+     * Get Total Payments (PV1.49)
      *
      * @param int $position Defaults to 49
      *
@@ -1543,7 +1543,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Alternate VisitID (OBR.50)
+     * Get Alternate VisitID (PV1.50)
      *
      * @param int $position Defaults to 50
      *
@@ -1556,7 +1556,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Visit Indicator (OBR.51)
+     * Get Visit Indicator (PV1.51)
      *
      * @param int $position Defaults to 51
      *
@@ -1569,7 +1569,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Other HealthcareProvider (OBR.52)
+     * Get Other HealthcareProvider (PV1.52)
      *
      * @param int $position Defaults to 52
      *

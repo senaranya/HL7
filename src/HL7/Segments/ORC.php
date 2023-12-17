@@ -18,7 +18,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Order Control (OBR.1)
+     * Set Order Control (ORC.1)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 1
@@ -32,7 +32,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Placer OrderNumber (OBR.2)
+     * Set Placer Order Number (ORC.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -46,7 +46,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Filler OrderNumber (OBR.3)
+     * Set Filler Order Number (ORC.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -60,7 +60,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Placer GroupNumber (OBR.4)
+     * Set Placer Group Number (ORC.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -74,7 +74,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Order Status (OBR.5)
+     * Set Order Status (ORC.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -88,7 +88,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Response Flag (OBR.6)
+     * Set Response Flag (ORC.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -102,7 +102,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Quantity Timing (OBR.7)
+     * Set Quantity Timing (ORC.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -116,7 +116,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Parent Order (OBR.8)
+     * Set Parent Order (ORC.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -130,7 +130,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Date TimeofTransaction (OBR.9)
+     * Set Date Timeof Transaction (ORC.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -144,7 +144,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Entered By (OBR.10)
+     * Set Entered By (ORC.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -158,7 +158,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Verified By (OBR.11)
+     * Set Verified By (ORC.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -172,7 +172,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Ordering Provider (OBR.12)
+     * Set Ordering Provider (ORC.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -186,7 +186,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Enterers Location (OBR.13)
+     * Set Enterers Location (ORC.13)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 13
@@ -200,7 +200,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Call BackPhoneNumber (OBR.14)
+     * Set Call Back Phone Number (ORC.14)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 14
@@ -214,7 +214,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Order EffectiveDateTime (OBR.15)
+     * Set Order Effective Date Time (ORC.15)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 15
@@ -228,7 +228,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Order ControlCodeReason (OBR.16)
+     * Set Order Control Code Reason (ORC.16)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 16
@@ -242,7 +242,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Entering Organization (OBR.17)
+     * Set Entering Organization (ORC.17)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 17
@@ -256,7 +256,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Entering Device (OBR.18)
+     * Set Entering Device (ORC.18)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 18
@@ -270,7 +270,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Action By (OBR.19)
+     * Set Action By (ORC.19)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 19
@@ -284,7 +284,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Advanced BeneficiaryNoticeCode (OBR.20)
+     * Set Advanced Beneficiary Notice Code (ORC.20)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 20
@@ -298,7 +298,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Ordering FacilityName (OBR.21)
+     * Set Ordering Facility Name (ORC.21)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 21
@@ -312,7 +312,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Ordering FacilityAddress (OBR.22)
+     * Set Ordering Facility Address (ORC.22)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 22
@@ -326,7 +326,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Ordering FacilityPhoneNumber (OBR.23)
+     * Set Ordering Facility Phone Number (ORC.23)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 23
@@ -340,7 +340,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Ordering ProviderAddress (OBR.24)
+     * Set Ordering Provider Address (ORC.24)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 24
@@ -354,7 +354,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Order StatusModifier (OBR.25)
+     * Set Order Status Modifier (ORC.25)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 25
@@ -368,7 +368,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Advanced BeneficiaryNoticeOverrideReason (OBR.26)
+     * Set Advanced Beneficiary Notice Override Reason (ORC.26)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 26
@@ -382,7 +382,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Fillers ExpectedAvailabilityDateTime (OBR.27)
+     * Set Fillers Expected Availability Date Time (ORC.27)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 27
@@ -396,7 +396,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Confidentiality Code (OBR.28)
+     * Set Confidentiality Code (ORC.28)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 28
@@ -410,7 +410,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Order Type (OBR.29)
+     * Set Order Type (ORC.29)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 29
@@ -424,7 +424,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Enterer AuthorizationMode (OBR.30)
+     * Set Enterer Authorization Mode (ORC.30)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 30
@@ -438,7 +438,7 @@ class ORC extends Segment
     }
 
     /**
-     * Set Parent UniversalServiceIdentifier (OBR.31)
+     * Set Parent Universal Service Identifier (ORC.31)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 31
@@ -452,7 +452,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Order Control (OBR.1)
+     * Get Order Control (ORC.1)
      *
      * @param int $position Defaults to 1
      *
@@ -465,7 +465,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Placer OrderNumber (OBR.2)
+     * Get Placer OrderNumber (ORC.2)
      *
      * @param int $position Defaults to 2
      *
@@ -478,7 +478,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Filler OrderNumber (OBR.3)
+     * Get Filler OrderNumber (ORC.3)
      *
      * @param int $position Defaults to 3
      *
@@ -491,7 +491,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Placer GroupNumber (OBR.4)
+     * Get Placer GroupNumber (ORC.4)
      *
      * @param int $position Defaults to 4
      *
@@ -504,7 +504,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Order Status (OBR.5)
+     * Get Order Status (ORC.5)
      *
      * @param int $position Defaults to 5
      *
@@ -517,7 +517,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Response Flag (OBR.6)
+     * Get Response Flag (ORC.6)
      *
      * @param int $position Defaults to 6
      *
@@ -530,7 +530,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Quantity Timing (OBR.7)
+     * Get Quantity Timing (ORC.7)
      *
      * @param int $position Defaults to 7
      *
@@ -543,7 +543,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Parent Order (OBR.8)
+     * Get Parent Order (ORC.8)
      *
      * @param int $position Defaults to 8
      *
@@ -556,7 +556,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Date TimeofTransaction (OBR.9)
+     * Get Date TimeofTransaction (ORC.9)
      *
      * @param int $position Defaults to 9
      *
@@ -569,7 +569,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Entered By (OBR.10)
+     * Get Entered By (ORC.10)
      *
      * @param int $position Defaults to 10
      *
@@ -582,7 +582,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Verified By (OBR.11)
+     * Get Verified By (ORC.11)
      *
      * @param int $position Defaults to 11
      *
@@ -595,7 +595,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Ordering Provider (OBR.12)
+     * Get Ordering Provider (ORC.12)
      *
      * @param int $position Defaults to 12
      *
@@ -608,7 +608,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Enterers Location (OBR.13)
+     * Get Enterers Location (ORC.13)
      *
      * @param int $position Defaults to 13
      *
@@ -621,7 +621,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Call BackPhoneNumber (OBR.14)
+     * Get Call BackPhoneNumber (ORC.14)
      *
      * @param int $position Defaults to 14
      *
@@ -634,7 +634,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Order EffectiveDateTime (OBR.15)
+     * Get Order EffectiveDateTime (ORC.15)
      *
      * @param int $position Defaults to 15
      *
@@ -647,7 +647,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Order ControlCodeReason (OBR.16)
+     * Get Order ControlCodeReason (ORC.16)
      *
      * @param int $position Defaults to 16
      *
@@ -660,7 +660,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Entering Organization (OBR.17)
+     * Get Entering Organization (ORC.17)
      *
      * @param int $position Defaults to 17
      *
@@ -673,7 +673,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Entering Device (OBR.18)
+     * Get Entering Device (ORC.18)
      *
      * @param int $position Defaults to 18
      *
@@ -686,7 +686,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Action By (OBR.19)
+     * Get Action By (ORC.19)
      *
      * @param int $position Defaults to 19
      *
@@ -699,7 +699,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Advanced BeneficiaryNoticeCode (OBR.20)
+     * Get Advanced BeneficiaryNoticeCode (ORC.20)
      *
      * @param int $position Defaults to 20
      *
@@ -712,7 +712,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Ordering FacilityName (OBR.21)
+     * Get Ordering FacilityName (ORC.21)
      *
      * @param int $position Defaults to 21
      *
@@ -725,7 +725,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Ordering FacilityAddress (OBR.22)
+     * Get Ordering FacilityAddress (ORC.22)
      *
      * @param int $position Defaults to 22
      *
@@ -738,7 +738,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Ordering FacilityPhoneNumber (OBR.23)
+     * Get Ordering FacilityPhoneNumber (ORC.23)
      *
      * @param int $position Defaults to 23
      *
@@ -751,7 +751,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Ordering ProviderAddress (OBR.24)
+     * Get Ordering ProviderAddress (ORC.24)
      *
      * @param int $position Defaults to 24
      *
@@ -764,7 +764,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Order StatusModifier (OBR.25)
+     * Get Order StatusModifier (ORC.25)
      *
      * @param int $position Defaults to 25
      *
@@ -777,7 +777,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Advanced BeneficiaryNoticeOverrideReason (OBR.26)
+     * Get Advanced BeneficiaryNoticeOverrideReason (ORC.26)
      *
      * @param int $position Defaults to 26
      *
@@ -790,7 +790,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Fillers ExpectedAvailabilityDateTime (OBR.27)
+     * Get Fillers ExpectedAvailabilityDateTime (ORC.27)
      *
      * @param int $position Defaults to 27
      *
@@ -803,7 +803,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Confidentiality Code (OBR.28)
+     * Get Confidentiality Code (ORC.28)
      *
      * @param int $position Defaults to 28
      *
@@ -816,7 +816,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Order Type (OBR.29)
+     * Get Order Type (ORC.29)
      *
      * @param int $position Defaults to 29
      *
@@ -829,7 +829,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Enterer AuthorizationMode (OBR.30)
+     * Get Enterer AuthorizationMode (ORC.30)
      *
      * @param int $position Defaults to 30
      *
@@ -842,7 +842,7 @@ class ORC extends Segment
     }
 
     /**
-     * Get Parent UniversalServiceIdentifier (OBR.31)
+     * Get Parent UniversalServiceIdentifier (ORC.31)
      *
      * @param int $position Defaults to 31
      *

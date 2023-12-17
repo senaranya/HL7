@@ -45,7 +45,7 @@ class NTE extends Segment
     }
 
     /**
-     * Set Source OfComment (OBR.2)
+     * Set Source Of Comment (NTE.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -59,7 +59,7 @@ class NTE extends Segment
     }
 
     /**
-     * Set Comment (OBR.3)
+     * Set Comment (NTE.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -73,7 +73,7 @@ class NTE extends Segment
     }
 
     /**
-     * Set Comment Type (OBR.4)
+     * Set Comment Type (NTE.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -87,7 +87,7 @@ class NTE extends Segment
     }
 
     /**
-     * Get ID (OBR.1)
+     * Get ID (NTE.1)
      *
      * @param int $position Defaults to 1
      *
@@ -100,7 +100,7 @@ class NTE extends Segment
     }
 
     /**
-     * Get Source OfComment (OBR.2)
+     * Get Source OfComment (NTE.2)
      *
      * @param int $position Defaults to 2
      *
@@ -113,7 +113,7 @@ class NTE extends Segment
     }
 
     /**
-     * Get Comment (OBR.3)
+     * Get Comment (NTE.3)
      *
      * @param int $position Defaults to 3
      *
@@ -126,7 +126,7 @@ class NTE extends Segment
     }
 
     /**
-     * Get Comment Type (OBR.4)
+     * Get Comment Type (NTE.4)
      *
      * @param int $position Defaults to 4
      *

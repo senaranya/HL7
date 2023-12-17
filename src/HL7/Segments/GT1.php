@@ -46,7 +46,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor Number (OBR.2)
+     * Set Guarantor Number (GT1.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -60,7 +60,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor Name (OBR.3)
+     * Set Guarantor Name (GT1.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -74,7 +74,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor SpouseName (OBR.4)
+     * Set Guarantor Spouse Name (GT1.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -88,7 +88,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor Address (OBR.5)
+     * Set Guarantor Address (GT1.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -102,7 +102,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor HomePhone (OBR.6)
+     * Set Guarantor Home Phone (GT1.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -116,7 +116,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor BusinessPhone (OBR.7)
+     * Set Guarantor Business Phone (GT1.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -130,7 +130,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor DateOfBirth (OBR.8)
+     * Set Guarantor Date Of Birth (GT1.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -153,7 +153,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor Type (OBR.10)
+     * Set Guarantor Type (GT1.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -167,7 +167,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor Relationship (OBR.11)
+     * Set Guarantor Relationship (GT1.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -181,7 +181,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor SSN (OBR.12)
+     * Set Guarantor SSN (GT1.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -195,7 +195,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor BeginDate (OBR.13)
+     * Set Guarantor Begin Date (GT1.13)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 13
@@ -209,7 +209,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor EndDate (OBR.14)
+     * Set Guarantor End Date (GT1.14)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 14
@@ -223,7 +223,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor Priority (OBR.15)
+     * Set Guarantor Priority (GT1.15)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 15
@@ -237,7 +237,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor EmployerName (OBR.16)
+     * Set Guarantor Employer Name (GT1.16)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 16
@@ -251,7 +251,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor EmployerAddress (OBR.17)
+     * Set Guarantor Employer Address (GT1.17)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 17
@@ -265,7 +265,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor EmployerPhone (OBR.18)
+     * Set Guarantor Employer Phone (GT1.18)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 18
@@ -279,7 +279,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor EmployeeID (OBR.19)
+     * Set Guarantor Employee ID (GT1.19)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 19
@@ -293,7 +293,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor EmploymentStatus (OBR.20)
+     * Set Guarantor Employment Status (GT1.20)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 20
@@ -307,7 +307,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor OrganizationName (OBR.21)
+     * Set Guarantor Organization Name (GT1.21)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 21
@@ -321,7 +321,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor BillingHoldFlag (OBR.22)
+     * Set Guarantor Billing Hold Flag (GT1.22)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 22
@@ -335,7 +335,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor CreditRatingCode (OBR.23)
+     * Set Guarantor Credit Rating Code (GT1.23)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 23
@@ -349,7 +349,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor DeathDateAndTime (OBR.24)
+     * Set Guarantor Death Date And Time (GT1.24)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 24
@@ -363,7 +363,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor DeathFlag (OBR.25)
+     * Set Guarantor Death Flag (GT1.25)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 25
@@ -377,7 +377,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor ChargeAdjustmentCode (OBR.26)
+     * Set Guarantor Charge Adjustment Code (GT1.26)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 26
@@ -391,7 +391,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor AnnualIncome (OBR.27)
+     * Set Guarantor Annual Income (GT1.27)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 27
@@ -405,7 +405,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor HouseholdSize (OBR.28)
+     * Set Guarantor Household Size (GT1.28)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 28
@@ -419,7 +419,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor EmployerID (OBR.29)
+     * Set Guarantor Employer ID (GT1.29)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 29
@@ -433,7 +433,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor MaritalStatusCode (OBR.30)
+     * Set Guarantor Marital Status Code (GT1.30)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 30
@@ -447,7 +447,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor HireEffectiveDate (OBR.31)
+     * Set Guarantor Hire Effective Date (GT1.31)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 31
@@ -461,7 +461,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Employment StopDate (OBR.32)
+     * Set Employment Stop Date (GT1.32)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 32
@@ -475,7 +475,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Living Dependency (OBR.33)
+     * Set Living Dependency (GT1.33)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 33
@@ -489,7 +489,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Ambulatory Status (OBR.34)
+     * Set Ambulatory Status (GT1.34)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 34
@@ -503,7 +503,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Citizenship (OBR.35)
+     * Set Citizenship (GT1.35)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 35
@@ -517,7 +517,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Primary Language (OBR.36)
+     * Set Primary Language (GT1.36)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 36
@@ -531,7 +531,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Living Arrangement (OBR.37)
+     * Set Living Arrangement (GT1.37)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 37
@@ -545,7 +545,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Publicity Code (OBR.38)
+     * Set Publicity Code (GT1.38)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 38
@@ -559,7 +559,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Protection Indicator (OBR.39)
+     * Set Protection Indicator (GT1.39)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 39
@@ -573,7 +573,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Student Indicator (OBR.40)
+     * Set Student Indicator (GT1.40)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 40
@@ -587,7 +587,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Religion (OBR.41)
+     * Set Religion (GT1.41)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 41
@@ -601,7 +601,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Mother MaidenName (OBR.42)
+     * Set Mother Maiden Name (GT1.42)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 42
@@ -615,7 +615,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Nationality (OBR.43)
+     * Set Nationality (GT1.43)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 43
@@ -629,7 +629,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Ethnic Group (OBR.44)
+     * Set Ethnic Group (GT1.44)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 44
@@ -643,7 +643,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Contact PersonsName (OBR.45)
+     * Set Contact Persons Name (GT1.45)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 45
@@ -657,7 +657,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Contact PersonsPhone (OBR.46)
+     * Set Contact Persons Phone (GT1.46)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 46
@@ -671,7 +671,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Contact Reason (OBR.47)
+     * Set Contact Reason (GT1.47)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 47
@@ -685,7 +685,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Contact Relationship (OBR.48)
+     * Set Contact Relationship (GT1.48)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 48
@@ -699,7 +699,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Job Title (OBR.49)
+     * Set Job Title (GT1.49)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 49
@@ -713,7 +713,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Job Class (OBR.50)
+     * Set Job Class (GT1.50)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 50
@@ -727,7 +727,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor EmployersOrganizationName (OBR.51)
+     * Set Guarantor Employers Organization Name (GT1.51)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 51
@@ -741,7 +741,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Handicap (OBR.52)
+     * Set Handicap (GT1.52)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 52
@@ -755,7 +755,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Job Status (OBR.53)
+     * Set Job Status (GT1.53)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 53
@@ -769,7 +769,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor FinancialClass (OBR.54)
+     * Set Guarantor Financial Class (GT1.54)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 54
@@ -783,7 +783,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor Race (OBR.55)
+     * Set Guarantor Race (GT1.55)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 55
@@ -797,7 +797,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Guarantor BirthPlace (OBR.56)
+     * Set Guarantor Birth Place (GT1.56)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 56
@@ -811,7 +811,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Set Vip Indicator (OBR.57)
+     * Set Vip Indicator (GT1.57)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 57
@@ -825,7 +825,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get ID (OBR.1)
+     * Get ID (GT1.1)
      *
      * @param int $position Defaults to 1
      *
@@ -838,7 +838,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor Number (OBR.2)
+     * Get Guarantor Number (GT1.2)
      *
      * @param int $position Defaults to 2
      *
@@ -851,7 +851,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor Name (OBR.3)
+     * Get Guarantor Name (GT1.3)
      *
      * @param int $position Defaults to 3
      *
@@ -864,7 +864,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor SpouseName (OBR.4)
+     * Get Guarantor SpouseName (GT1.4)
      *
      * @param int $position Defaults to 4
      *
@@ -877,7 +877,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor Address (OBR.5)
+     * Get Guarantor Address (GT1.5)
      *
      * @param int $position Defaults to 5
      *
@@ -890,7 +890,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor HomePhone (OBR.6)
+     * Get Guarantor HomePhone (GT1.6)
      *
      * @param int $position Defaults to 6
      *
@@ -903,7 +903,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor BusinessPhone (OBR.7)
+     * Get Guarantor BusinessPhone (GT1.7)
      *
      * @param int $position Defaults to 7
      *
@@ -916,7 +916,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor DateOfBirth (OBR.8)
+     * Get Guarantor DateOfBirth (GT1.8)
      *
      * @param int $position Defaults to 8
      *
@@ -929,7 +929,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor Sex (OBR.9)
+     * Get Guarantor Sex (GT1.9)
      *
      * @param int $position Defaults to 9
      *
@@ -942,7 +942,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor Type (OBR.10)
+     * Get Guarantor Type (GT1.10)
      *
      * @param int $position Defaults to 10
      *
@@ -955,7 +955,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor Relationship (OBR.11)
+     * Get Guarantor Relationship (GT1.11)
      *
      * @param int $position Defaults to 11
      *
@@ -968,7 +968,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor SSN (OBR.12)
+     * Get Guarantor SSN (GT1.12)
      *
      * @param int $position Defaults to 12
      *
@@ -981,7 +981,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor BeginDate (OBR.13)
+     * Get Guarantor BeginDate (GT1.13)
      *
      * @param int $position Defaults to 13
      *
@@ -994,7 +994,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EndDate (OBR.14)
+     * Get Guarantor EndDate (GT1.14)
      *
      * @param int $position Defaults to 14
      *
@@ -1007,7 +1007,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor Priority (OBR.15)
+     * Get Guarantor Priority (GT1.15)
      *
      * @param int $position Defaults to 15
      *
@@ -1020,7 +1020,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EmployerName (OBR.16)
+     * Get Guarantor EmployerName (GT1.16)
      *
      * @param int $position Defaults to 16
      *
@@ -1033,7 +1033,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EmployerAddress (OBR.17)
+     * Get Guarantor EmployerAddress (GT1.17)
      *
      * @param int $position Defaults to 17
      *
@@ -1046,7 +1046,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EmployerPhone (OBR.18)
+     * Get Guarantor EmployerPhone (GT1.18)
      *
      * @param int $position Defaults to 18
      *
@@ -1059,7 +1059,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EmployeeID (OBR.19)
+     * Get Guarantor EmployeeID (GT1.19)
      *
      * @param int $position Defaults to 19
      *
@@ -1072,7 +1072,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EmploymentStatus (OBR.20)
+     * Get Guarantor EmploymentStatus (GT1.20)
      *
      * @param int $position Defaults to 20
      *
@@ -1085,7 +1085,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor OrganizationName (OBR.21)
+     * Get Guarantor OrganizationName (GT1.21)
      *
      * @param int $position Defaults to 21
      *
@@ -1098,7 +1098,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor BillingHoldFlag (OBR.22)
+     * Get Guarantor BillingHoldFlag (GT1.22)
      *
      * @param int $position Defaults to 22
      *
@@ -1111,7 +1111,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor CreditRatingCode (OBR.23)
+     * Get Guarantor CreditRatingCode (GT1.23)
      *
      * @param int $position Defaults to 23
      *
@@ -1124,7 +1124,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor DeathDateAndTime (OBR.24)
+     * Get Guarantor DeathDateAndTime (GT1.24)
      *
      * @param int $position Defaults to 24
      *
@@ -1137,7 +1137,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor DeathFlag (OBR.25)
+     * Get Guarantor DeathFlag (GT1.25)
      *
      * @param int $position Defaults to 25
      *
@@ -1150,7 +1150,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor ChargeAdjustmentCode (OBR.26)
+     * Get Guarantor ChargeAdjustmentCode (GT1.26)
      *
      * @param int $position Defaults to 26
      *
@@ -1163,7 +1163,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor AnnualIncome (OBR.27)
+     * Get Guarantor AnnualIncome (GT1.27)
      *
      * @param int $position Defaults to 27
      *
@@ -1176,7 +1176,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor HouseholdSize (OBR.28)
+     * Get Guarantor HouseholdSize (GT1.28)
      *
      * @param int $position Defaults to 28
      *
@@ -1189,7 +1189,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EmployerID (OBR.29)
+     * Get Guarantor EmployerID (GT1.29)
      *
      * @param int $position Defaults to 29
      *
@@ -1202,7 +1202,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor MaritalStatusCode (OBR.30)
+     * Get Guarantor MaritalStatusCode (GT1.30)
      *
      * @param int $position Defaults to 30
      *
@@ -1215,7 +1215,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor HireEffectiveDate (OBR.31)
+     * Get Guarantor HireEffectiveDate (GT1.31)
      *
      * @param int $position Defaults to 31
      *
@@ -1228,7 +1228,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Employment StopDate (OBR.32)
+     * Get Employment StopDate (GT1.32)
      *
      * @param int $position Defaults to 32
      *
@@ -1241,7 +1241,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Living Dependency (OBR.33)
+     * Get Living Dependency (GT1.33)
      *
      * @param int $position Defaults to 33
      *
@@ -1254,7 +1254,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Ambulatory Status (OBR.34)
+     * Get Ambulatory Status (GT1.34)
      *
      * @param int $position Defaults to 34
      *
@@ -1267,7 +1267,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Citizenship (OBR.35)
+     * Get Citizenship (GT1.35)
      *
      * @param int $position Defaults to 35
      *
@@ -1280,7 +1280,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Primary Language (OBR.36)
+     * Get Primary Language (GT1.36)
      *
      * @param int $position Defaults to 36
      *
@@ -1293,7 +1293,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Living Arrangement (OBR.37)
+     * Get Living Arrangement (GT1.37)
      *
      * @param int $position Defaults to 37
      *
@@ -1306,7 +1306,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Publicity Code (OBR.38)
+     * Get Publicity Code (GT1.38)
      *
      * @param int $position Defaults to 38
      *
@@ -1319,7 +1319,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Protection Indicator (OBR.39)
+     * Get Protection Indicator (GT1.39)
      *
      * @param int $position Defaults to 39
      *
@@ -1332,7 +1332,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Student Indicator (OBR.40)
+     * Get Student Indicator (GT1.40)
      *
      * @param int $position Defaults to 40
      *
@@ -1345,7 +1345,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Religion (OBR.41)
+     * Get Religion (GT1.41)
      *
      * @param int $position Defaults to 41
      *
@@ -1358,7 +1358,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Mother MaidenName (OBR.42)
+     * Get Mother MaidenName (GT1.42)
      *
      * @param int $position Defaults to 42
      *
@@ -1371,7 +1371,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Nationality (OBR.43)
+     * Get Nationality (GT1.43)
      *
      * @param int $position Defaults to 43
      *
@@ -1384,7 +1384,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Ethnic Group (OBR.44)
+     * Get Ethnic Group (GT1.44)
      *
      * @param int $position Defaults to 44
      *
@@ -1397,7 +1397,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Contact PersonsName (OBR.45)
+     * Get Contact PersonsName (GT1.45)
      *
      * @param int $position Defaults to 45
      *
@@ -1410,7 +1410,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Contact PersonsPhone (OBR.46)
+     * Get Contact PersonsPhone (GT1.46)
      *
      * @param int $position Defaults to 46
      *
@@ -1423,7 +1423,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Contact Reason (OBR.47)
+     * Get Contact Reason (GT1.47)
      *
      * @param int $position Defaults to 47
      *
@@ -1436,7 +1436,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Contact Relationship (OBR.48)
+     * Get Contact Relationship (GT1.48)
      *
      * @param int $position Defaults to 48
      *
@@ -1449,7 +1449,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Job Title (OBR.49)
+     * Get Job Title (GT1.49)
      *
      * @param int $position Defaults to 49
      *
@@ -1462,7 +1462,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Job Class (OBR.50)
+     * Get Job Class (GT1.50)
      *
      * @param int $position Defaults to 50
      *
@@ -1475,7 +1475,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EmployersOrganizationName (OBR.51)
+     * Get Guarantor EmployersOrganizationName (GT1.51)
      *
      * @param int $position Defaults to 51
      *
@@ -1488,7 +1488,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Handicap (OBR.52)
+     * Get Handicap (GT1.52)
      *
      * @param int $position Defaults to 52
      *
@@ -1501,7 +1501,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Job Status (OBR.53)
+     * Get Job Status (GT1.53)
      *
      * @param int $position Defaults to 53
      *
@@ -1514,7 +1514,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor FinancialClass (OBR.54)
+     * Get Guarantor FinancialClass (GT1.54)
      *
      * @param int $position Defaults to 54
      *
@@ -1527,7 +1527,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor Race (OBR.55)
+     * Get Guarantor Race (GT1.55)
      *
      * @param int $position Defaults to 55
      *
@@ -1540,7 +1540,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor BirthPlace (OBR.56)
+     * Get Guarantor BirthPlace (GT1.56)
      *
      * @param int $position Defaults to 56
      *
@@ -1553,7 +1553,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Vip Indicator (OBR.57)
+     * Get Vip Indicator (GT1.57)
      *
      * @param int $position Defaults to 57
      *

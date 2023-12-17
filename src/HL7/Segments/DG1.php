@@ -44,7 +44,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Diagnosis CodingMethod (OBR.2)
+     * Set Diagnosis Coding Method (DG1.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -63,7 +63,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Diagnosis Description (OBR.4)
+     * Set Diagnosis Description (DG1.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -77,7 +77,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Diagnosis DateTime (OBR.5)
+     * Set Diagnosis Date Time (DG1.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -91,7 +91,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Diagnosis Type (OBR.6)
+     * Set Diagnosis Type (DG1.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -105,7 +105,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Major DiagnosticCategory (OBR.7)
+     * Set Major Diagnostic Category (DG1.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -119,7 +119,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Diagnostic RelatedGroup (OBR.8)
+     * Set Diagnostic Related Group (DG1.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -133,7 +133,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set DRGApproval Indicator (OBR.9)
+     * Set DRGApproval Indicator (DG1.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -147,7 +147,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set DRGGrouper ReviewCode (OBR.10)
+     * Set DRGGrouper Review Code (DG1.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -161,7 +161,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Outlier Type (OBR.11)
+     * Set Outlier Type (DG1.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -175,7 +175,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Outlier Days (OBR.12)
+     * Set Outlier Days (DG1.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -189,7 +189,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Outlier Cost (OBR.13)
+     * Set Outlier Cost (DG1.13)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 13
@@ -203,7 +203,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Grouper VersionAndType (OBR.14)
+     * Set Grouper Version And Type (DG1.14)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 14
@@ -217,7 +217,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Diagnosis Priority (OBR.15)
+     * Set Diagnosis Priority (DG1.15)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 15
@@ -231,7 +231,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Diagnosing Clinician (OBR.16)
+     * Set Diagnosing Clinician (DG1.16)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 16
@@ -245,7 +245,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Diagnosis Classification (OBR.17)
+     * Set Diagnosis Classification (DG1.17)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 17
@@ -259,7 +259,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Confidential Indicator (OBR.18)
+     * Set Confidential Indicator (DG1.18)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 18
@@ -273,7 +273,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Set Attestation DateTime (OBR.19)
+     * Set Attestation Date Time (DG1.19)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 19
@@ -287,7 +287,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get ID (OBR.1)
+     * Get ID (DG1.1)
      *
      * @param int $position Defaults to 1
      *
@@ -300,7 +300,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Diagnosis CodingMethod (OBR.2)
+     * Get Diagnosis CodingMethod (DG1.2)
      *
      * @param int $position Defaults to 2
      *
@@ -318,7 +318,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Diagnosis Description (OBR.4)
+     * Get Diagnosis Description (DG1.4)
      *
      * @param int $position Defaults to 4
      *
@@ -331,7 +331,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Diagnosis DateTime (OBR.5)
+     * Get Diagnosis DateTime (DG1.5)
      *
      * @param int $position Defaults to 5
      *
@@ -344,7 +344,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Diagnosis Type (OBR.6)
+     * Get Diagnosis Type (DG1.6)
      *
      * @param int $position Defaults to 6
      *
@@ -357,7 +357,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Major DiagnosticCategory (OBR.7)
+     * Get Major DiagnosticCategory (DG1.7)
      *
      * @param int $position Defaults to 7
      *
@@ -370,7 +370,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Diagnostic RelatedGroup (OBR.8)
+     * Get Diagnostic RelatedGroup (DG1.8)
      *
      * @param int $position Defaults to 8
      *
@@ -383,7 +383,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get DRGApproval Indicator (OBR.9)
+     * Get DRGApproval Indicator (DG1.9)
      *
      * @param int $position Defaults to 9
      *
@@ -396,7 +396,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get DRGGrouper ReviewCode (OBR.10)
+     * Get DRGGrouper ReviewCode (DG1.10)
      *
      * @param int $position Defaults to 10
      *
@@ -409,7 +409,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Outlier Type (OBR.11)
+     * Get Outlier Type (DG1.11)
      *
      * @param int $position Defaults to 11
      *
@@ -422,7 +422,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Outlier Days (OBR.12)
+     * Get Outlier Days (DG1.12)
      *
      * @param int $position Defaults to 12
      *
@@ -435,7 +435,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Outlier Cost (OBR.13)
+     * Get Outlier Cost (DG1.13)
      *
      * @param int $position Defaults to 13
      *
@@ -448,7 +448,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Grouper VersionAndType (OBR.14)
+     * Get Grouper VersionAndType (DG1.14)
      *
      * @param int $position Defaults to 14
      *
@@ -461,7 +461,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Diagnosis Priority (OBR.15)
+     * Get Diagnosis Priority (DG1.15)
      *
      * @param int $position Defaults to 15
      *
@@ -474,7 +474,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Diagnosing Clinician (OBR.16)
+     * Get Diagnosing Clinician (DG1.16)
      *
      * @param int $position Defaults to 16
      *
@@ -487,7 +487,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Diagnosis Classification (OBR.17)
+     * Get Diagnosis Classification (DG1.17)
      *
      * @param int $position Defaults to 17
      *
@@ -500,7 +500,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Confidential Indicator (OBR.18)
+     * Get Confidential Indicator (DG1.18)
      *
      * @param int $position Defaults to 18
      *
@@ -513,7 +513,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Attestation DateTime (OBR.19)
+     * Get Attestation DateTime (DG1.19)
      *
      * @param int $position Defaults to 19
      *

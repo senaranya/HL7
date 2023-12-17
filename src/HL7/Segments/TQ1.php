@@ -23,7 +23,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Set Quantity (OBR.2)
+     * Set Quantity (TQ1.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -37,7 +37,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Set Repeat Pattern (OBR.3)
+     * Set Repeat Pattern (TQ1.3)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 3
@@ -51,7 +51,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Set Explicit Time (OBR.4)
+     * Set Explicit Time (TQ1.4)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 4
@@ -65,7 +65,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Set Relative TimeAndUnits (OBR.5)
+     * Set Relative Time And Units (TQ1.5)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 5
@@ -79,7 +79,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Set Service Duration (OBR.6)
+     * Set Service Duration (TQ1.6)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 6
@@ -93,7 +93,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Set Start DateTime (OBR.7)
+     * Set Start Date Time (TQ1.7)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 7
@@ -107,7 +107,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Set End DateTime (OBR.8)
+     * Set End Date Time (TQ1.8)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 8
@@ -121,7 +121,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Set Priority (OBR.9)
+     * Set Priority (TQ1.9)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 9
@@ -135,7 +135,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Set Condition Text (OBR.10)
+     * Set Condition Text (TQ1.10)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 10
@@ -149,7 +149,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Set Text Instruction (OBR.11)
+     * Set Text Instruction (TQ1.11)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 11
@@ -163,7 +163,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Set Conjunction (OBR.12)
+     * Set Conjunction (TQ1.12)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 12
@@ -177,7 +177,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Set Occurrence Duration (OBR.13)
+     * Set Occurrence Duration (TQ1.13)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 13
@@ -191,7 +191,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Set Total Occurrences (OBR.14)
+     * Set Total Occurrences (TQ1.14)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 14
@@ -210,7 +210,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get Quantity (OBR.2)
+     * Get Quantity (TQ1.2)
      *
      * @param int $position Defaults to 2
      *
@@ -223,7 +223,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get Repeat Pattern (OBR.3)
+     * Get Repeat Pattern (TQ1.3)
      *
      * @param int $position Defaults to 3
      *
@@ -236,7 +236,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get Explicit Time (OBR.4)
+     * Get Explicit Time (TQ1.4)
      *
      * @param int $position Defaults to 4
      *
@@ -249,7 +249,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get Relative TimeAndUnits (OBR.5)
+     * Get Relative TimeAndUnits (TQ1.5)
      *
      * @param int $position Defaults to 5
      *
@@ -262,7 +262,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get Service Duration (OBR.6)
+     * Get Service Duration (TQ1.6)
      *
      * @param int $position Defaults to 6
      *
@@ -275,7 +275,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get Start DateTime (OBR.7)
+     * Get Start DateTime (TQ1.7)
      *
      * @param int $position Defaults to 7
      *
@@ -288,7 +288,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get End DateTime (OBR.8)
+     * Get End DateTime (TQ1.8)
      *
      * @param int $position Defaults to 8
      *
@@ -301,7 +301,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get Priority (OBR.9)
+     * Get Priority (TQ1.9)
      *
      * @param int $position Defaults to 9
      *
@@ -314,7 +314,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get Condition Text (OBR.10)
+     * Get Condition Text (TQ1.10)
      *
      * @param int $position Defaults to 10
      *
@@ -327,7 +327,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get Text Instruction (OBR.11)
+     * Get Text Instruction (TQ1.11)
      *
      * @param int $position Defaults to 11
      *
@@ -340,7 +340,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get Conjunction (OBR.12)
+     * Get Conjunction (TQ1.12)
      *
      * @param int $position Defaults to 12
      *
@@ -353,7 +353,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get Occurrence Duration (OBR.13)
+     * Get Occurrence Duration (TQ1.13)
      *
      * @param int $position Defaults to 13
      *
@@ -366,7 +366,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get Total Occurrences (OBR.14)
+     * Get Total Occurrences (TQ1.14)
      *
      * @param int $position Defaults to 14
      *

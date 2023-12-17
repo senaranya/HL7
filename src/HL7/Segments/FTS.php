@@ -18,7 +18,7 @@ class FTS extends Segment
     }
 
     /**
-     * Set File BatchCount (OBR.1)
+     * Set File Batch Count (FTS.1)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 1
@@ -32,7 +32,7 @@ class FTS extends Segment
     }
 
     /**
-     * Set File TrailerComment (OBR.2)
+     * Set File Trailer Comment (FTS.2)
      *
      * @param string|int|array|null $value
      * @param int $position Defaults to 2
@@ -48,7 +48,7 @@ class FTS extends Segment
     // -------------------- Getter Methods ------------------------------
 
     /**
-     * Get File BatchCount (OBR.1)
+     * Get File BatchCount (FTS.1)
      *
      * @param int $position Defaults to 1
      *
@@ -61,7 +61,7 @@ class FTS extends Segment
     }
 
     /**
-     * Get File TrailerComment (OBR.2)
+     * Get File TrailerComment (FTS.2)
      *
      * @param int $position Defaults to 2
      *
