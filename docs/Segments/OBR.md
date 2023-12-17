@@ -58,49 +58,49 @@ Aranyasen\HL7\Segment
 |[getTransportationMode](#obrgettransportationmode)|Get Transportation Mode (OBR.30)|
 |[getUniversalServiceID](#obrgetuniversalserviceid)|Get Universal ServiceID (OBR.4)|
 |[resetIndex](#obrresetindex)|Reset index of this segment|
-|[setAssistantResultInterpreter](#obrsetassistantresultinterpreter)|Set Assistant ResultInterpreter (OBR.33)|
+|[setAssistantResultInterpreter](#obrsetassistantresultinterpreter)|Set Assistant Result Interpreter (OBR.33)|
 |[setChargetoPractice](#obrsetchargetopractice)|Set Chargeto Practice (OBR.23)|
 |[setCollectionVolume](#obrsetcollectionvolume)|Set Collection Volume (OBR.9)|
 |[setCollectorIdentifier](#obrsetcollectoridentifier)|Set Collector Identifier (OBR.10)|
 |[setCollectorsComment](#obrsetcollectorscomment)|Set Collectors Comment (OBR.39)|
 |[setDangerCode](#obrsetdangercode)|Set Danger Code (OBR.12)|
-|[setDiagnosticServSectID](#obrsetdiagnosticservsectid)|Set Diagnostic ServSectID (OBR.24)|
+|[setDiagnosticServSectID](#obrsetdiagnosticservsectid)|Set Diagnostic Serv Sect ID (OBR.24)|
 |[setEscortRequired](#obrsetescortrequired)|Set Escort Required (OBR.42)|
 |[setFillerField1](#obrsetfillerfield1)||
 |[setFillerField2](#obrsetfillerfield2)||
-|[setFillerOrderNumber](#obrsetfillerordernumber)|Set Filler OrderNumber (OBR.3)|
+|[setFillerOrderNumber](#obrsetfillerordernumber)|Set Filler Order Number (OBR.3)|
 |[setID](#obrsetid)||
-|[setNumberofSampleContainers](#obrsetnumberofsamplecontainers)|Set Numberof SampleContainers (OBR.37)|
-|[setObservationDateTime](#obrsetobservationdatetime)|Set Observation DateTime (OBR.7)|
-|[setObservationEndDateTime](#obrsetobservationenddatetime)|Set Observation EndDateTime (OBR.8)|
-|[setOrderCallbackPhoneNumber](#obrsetordercallbackphonenumber)|Set Order CallbackPhoneNumber (OBR.17)|
+|[setNumberofSampleContainers](#obrsetnumberofsamplecontainers)|Set Numberof Sample Containers (OBR.37)|
+|[setObservationDateTime](#obrsetobservationdatetime)|Set Observation Date Time (OBR.7)|
+|[setObservationEndDateTime](#obrsetobservationenddatetime)|Set Observation End Date Time (OBR.8)|
+|[setOrderCallbackPhoneNumber](#obrsetordercallbackphonenumber)|Set Order Callback Phone Number (OBR.17)|
 |[setOrderingProvider](#obrsetorderingprovider)|Set Ordering Provider (OBR.16)|
 |[setParent](#obrsetparent)|Set Parent (OBR.29)|
 |[setParentResult](#obrsetparentresult)|Set Parent Result (OBR.26)|
-|[setPlacerOrderNumber](#obrsetplacerordernumber)|Set Placer OrderNumber (OBR.2)|
+|[setPlacerOrderNumber](#obrsetplacerordernumber)|Set Placer Order Number (OBR.2)|
 |[setPlacerfield1](#obrsetplacerfield1)||
 |[setPlacerfield2](#obrsetplacerfield2)||
-|[setPlannedPatientTransportComment](#obrsetplannedpatienttransportcomment)|Set Planned PatientTransportComment (OBR.43)|
-|[setPrincipalResultInterpreter](#obrsetprincipalresultinterpreter)|Set Principal ResultInterpreter (OBR.32)|
+|[setPlannedPatientTransportComment](#obrsetplannedpatienttransportcomment)|Set Planned Patient Transport Comment (OBR.43)|
+|[setPrincipalResultInterpreter](#obrsetprincipalresultinterpreter)|Set Principal Result Interpreter (OBR.32)|
 |[setPriority](#obrsetpriority)|Set Priority (OBR.5)|
 |[setQuantityTiming](#obrsetquantitytiming)|Set Quantity Timing (OBR.27)|
 |[setReasonforStudy](#obrsetreasonforstudy)|Set Reasonfor Study (OBR.31)|
-|[setRelevantClinicalInfo](#obrsetrelevantclinicalinfo)|Set Relevant ClinicalInfo (OBR.13)|
+|[setRelevantClinicalInfo](#obrsetrelevantclinicalinfo)|Set Relevant Clinical Info (OBR.13)|
 |[setRequestedDatetime](#obrsetrequesteddatetime)|Set Requested Datetime (OBR.6)|
-|[setResultCopiesTo](#obrsetresultcopiesto)|Set Result CopiesTo (OBR.28)|
+|[setResultCopiesTo](#obrsetresultcopiesto)|Set Result Copies To (OBR.28)|
 |[setResultStatus](#obrsetresultstatus)|Set Result Status (OBR.25)|
-|[setResultsRptStatusChngDateTime](#obrsetresultsrptstatuschngdatetime)|Set Results RptStatusChngDateTime (OBR.22)|
-|[setScheduledDateTime](#obrsetscheduleddatetime)|Set Scheduled DateTime (OBR.36)|
-|[setSpecimenActionCode](#obrsetspecimenactioncode)|Set Specimen ActionCode (OBR.11)|
-|[setSpecimenReceivedDateTime](#obrsetspecimenreceiveddatetime)|Set Specimen ReceivedDateTime (OBR.14)|
+|[setResultsRptStatusChngDateTime](#obrsetresultsrptstatuschngdatetime)|Set Results Rpt Status Chng Date Time (OBR.22)|
+|[setScheduledDateTime](#obrsetscheduleddatetime)|Set Scheduled Date Time (OBR.36)|
+|[setSpecimenActionCode](#obrsetspecimenactioncode)|Set Specimen Action Code (OBR.11)|
+|[setSpecimenReceivedDateTime](#obrsetspecimenreceiveddatetime)|Set Specimen Received Date Time (OBR.14)|
 |[setSpecimenSource](#obrsetspecimensource)|Set Specimen Source (OBR.15)|
 |[setTechnician](#obrsettechnician)|Set Technician (OBR.34)|
 |[setTranscriptionist](#obrsettranscriptionist)|Set Transcriptionist (OBR.35)|
 |[setTransportArranged](#obrsettransportarranged)|Set Transport Arranged (OBR.41)|
-|[setTransportArrangementResponsibility](#obrsettransportarrangementresponsibility)|Set Transport ArrangementResponsibility (OBR.40)|
-|[setTransportLogisticsofCollectedSample](#obrsettransportlogisticsofcollectedsample)|Set Transport LogisticsofCollectedSample (OBR.38)|
+|[setTransportArrangementResponsibility](#obrsettransportarrangementresponsibility)|Set Transport Arrangement Responsibility (OBR.40)|
+|[setTransportLogisticsofCollectedSample](#obrsettransportlogisticsofcollectedsample)|Set Transport Logisticsof Collected Sample (OBR.38)|
 |[setTransportationMode](#obrsettransportationmode)|Set Transportation Mode (OBR.30)|
-|[setUniversalServiceID](#obrsetuniversalserviceid)|Set Universal ServiceID (OBR.4)|
+|[setUniversalServiceID](#obrsetuniversalserviceid)|Set Universal Service ID (OBR.4)|
 
 ## Inherited methods
 
@@ -1321,7 +1321,7 @@ Reset index of this segment
 public setAssistantResultInterpreter (string|int|array|null $value, int $position)
 ```
 
-Set Assistant ResultInterpreter (OBR.33) 
+Set Assistant Result Interpreter (OBR.33) 
 
  
 
@@ -1489,7 +1489,7 @@ Set Danger Code (OBR.12)
 public setDiagnosticServSectID (string|int|array|null $value, int $position)
 ```
 
-Set Diagnostic ServSectID (OBR.24) 
+Set Diagnostic Serv Sect ID (OBR.24) 
 
  
 
@@ -1593,7 +1593,7 @@ Set Escort Required (OBR.42)
 public setFillerOrderNumber (string|int|array|null $value, int $position)
 ```
 
-Set Filler OrderNumber (OBR.3) 
+Set Filler Order Number (OBR.3) 
 
  
 
@@ -1645,7 +1645,7 @@ Set Filler OrderNumber (OBR.3)
 public setNumberofSampleContainers (string|int|array|null $value, int $position)
 ```
 
-Set Numberof SampleContainers (OBR.37) 
+Set Numberof Sample Containers (OBR.37) 
 
  
 
@@ -1673,7 +1673,7 @@ Set Numberof SampleContainers (OBR.37)
 public setObservationDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Observation DateTime (OBR.7) 
+Set Observation Date Time (OBR.7) 
 
  
 
@@ -1701,7 +1701,7 @@ Set Observation DateTime (OBR.7)
 public setObservationEndDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Observation EndDateTime (OBR.8) 
+Set Observation End Date Time (OBR.8) 
 
  
 
@@ -1729,7 +1729,7 @@ Set Observation EndDateTime (OBR.8)
 public setOrderCallbackPhoneNumber (string|int|array|null $value, int $position)
 ```
 
-Set Order CallbackPhoneNumber (OBR.17) 
+Set Order Callback Phone Number (OBR.17) 
 
  
 
@@ -1841,7 +1841,7 @@ Set Parent Result (OBR.26)
 public setPlacerOrderNumber (string|int|array|null $value, int $position)
 ```
 
-Set Placer OrderNumber (OBR.2) 
+Set Placer Order Number (OBR.2) 
 
  
 
@@ -1917,7 +1917,7 @@ Set Placer OrderNumber (OBR.2)
 public setPlannedPatientTransportComment (string|int|array|null $value, int $position)
 ```
 
-Set Planned PatientTransportComment (OBR.43) 
+Set Planned Patient Transport Comment (OBR.43) 
 
  
 
@@ -1945,7 +1945,7 @@ Set Planned PatientTransportComment (OBR.43)
 public setPrincipalResultInterpreter (string|int|array|null $value, int $position)
 ```
 
-Set Principal ResultInterpreter (OBR.32) 
+Set Principal Result Interpreter (OBR.32) 
 
  
 
@@ -2057,7 +2057,7 @@ Set Reasonfor Study (OBR.31)
 public setRelevantClinicalInfo (string|int|array|null $value, int $position)
 ```
 
-Set Relevant ClinicalInfo (OBR.13) 
+Set Relevant Clinical Info (OBR.13) 
 
  
 
@@ -2113,7 +2113,7 @@ Set Requested Datetime (OBR.6)
 public setResultCopiesTo (string|int|array|null $value, int $position)
 ```
 
-Set Result CopiesTo (OBR.28) 
+Set Result Copies To (OBR.28) 
 
  
 
@@ -2169,7 +2169,7 @@ Set Result Status (OBR.25)
 public setResultsRptStatusChngDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Results RptStatusChngDateTime (OBR.22) 
+Set Results Rpt Status Chng Date Time (OBR.22) 
 
  
 
@@ -2197,7 +2197,7 @@ Set Results RptStatusChngDateTime (OBR.22)
 public setScheduledDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Scheduled DateTime (OBR.36) 
+Set Scheduled Date Time (OBR.36) 
 
  
 
@@ -2225,7 +2225,7 @@ Set Scheduled DateTime (OBR.36)
 public setSpecimenActionCode (string|int|array|null $value, int $position)
 ```
 
-Set Specimen ActionCode (OBR.11) 
+Set Specimen Action Code (OBR.11) 
 
  
 
@@ -2253,7 +2253,7 @@ Set Specimen ActionCode (OBR.11)
 public setSpecimenReceivedDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Specimen ReceivedDateTime (OBR.14) 
+Set Specimen Received Date Time (OBR.14) 
 
  
 
@@ -2393,7 +2393,7 @@ Set Transport Arranged (OBR.41)
 public setTransportArrangementResponsibility (string|int|array|null $value, int $position)
 ```
 
-Set Transport ArrangementResponsibility (OBR.40) 
+Set Transport Arrangement Responsibility (OBR.40) 
 
  
 
@@ -2421,7 +2421,7 @@ Set Transport ArrangementResponsibility (OBR.40)
 public setTransportLogisticsofCollectedSample (string|int|array|null $value, int $position)
 ```
 
-Set Transport LogisticsofCollectedSample (OBR.38) 
+Set Transport Logisticsof Collected Sample (OBR.38) 
 
  
 
@@ -2477,7 +2477,7 @@ Set Transportation Mode (OBR.30)
 public setUniversalServiceID (string|int|array|null $value, int $position)
 ```
 
-Set Universal ServiceID (OBR.4) 
+Set Universal Service ID (OBR.4) 
 
  
 

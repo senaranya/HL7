@@ -14,45 +14,45 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[__destruct](#obx__destruct)||
-|[getAbnormalFlags](#obxgetabnormalflags)|Get Abnormal Flags (OBR.8)|
-|[getDataLastObsNormalValues](#obxgetdatalastobsnormalvalues)|Get Data LastObsNormalValues (OBR.12)|
-|[getDateTimeOfAnalysis](#obxgetdatetimeofanalysis)|Get Date TimeOfAnalysis (OBR.19)|
-|[getDateTimeOfTheObservation](#obxgetdatetimeoftheobservation)|Get Date TimeOfTheObservation (OBR.14)|
-|[getEquipmentInstanceIdentifier](#obxgetequipmentinstanceidentifier)|Get Equipment InstanceIdentifier (OBR.18)|
-|[getID](#obxgetid)|Get ID (OBR.1)|
-|[getNatureOfAbnormalTest](#obxgetnatureofabnormaltest)|Get Nature OfAbnormalTest (OBR.10)|
-|[getObservationIdentifier](#obxgetobservationidentifier)|Get Observation Identifier (OBR.3)|
-|[getObservationMethod](#obxgetobservationmethod)|Get Observation Method (OBR.17)|
-|[getObservationSubId](#obxgetobservationsubid)|Get Observation SubId (OBR.4)|
-|[getObservationValue](#obxgetobservationvalue)|Get Observation Value (OBR.5)|
-|[getObserveResultStatus](#obxgetobserveresultstatus)|Get Observe ResultStatus (OBR.11)|
-|[getProbability](#obxgetprobability)|Get Probability (OBR.9)|
-|[getProducersId](#obxgetproducersid)|Get Producers Id (OBR.15)|
-|[getReferenceRange](#obxgetreferencerange)|Get Reference Range (OBR.7)|
-|[getResponsibleObserver](#obxgetresponsibleobserver)|Get Responsible Observer (OBR.16)|
-|[getUnits](#obxgetunits)|Get Units (OBR.6)|
-|[getUserDefinedAccessChecks](#obxgetuserdefinedaccesschecks)|Get User DefinedAccessChecks (OBR.13)|
-|[getValueType](#obxgetvaluetype)|Get Value Type (OBR.2)|
+|[getAbnormalFlags](#obxgetabnormalflags)|Get Abnormal Flags (OBX.8)|
+|[getDataLastObsNormalValues](#obxgetdatalastobsnormalvalues)|Get Data LastObsNormalValues (OBX.12)|
+|[getDateTimeOfAnalysis](#obxgetdatetimeofanalysis)|Get Date TimeOfAnalysis (OBX.19)|
+|[getDateTimeOfTheObservation](#obxgetdatetimeoftheobservation)|Get Date TimeOfTheObservation (OBX.14)|
+|[getEquipmentInstanceIdentifier](#obxgetequipmentinstanceidentifier)|Get Equipment InstanceIdentifier (OBX.18)|
+|[getID](#obxgetid)|Get ID (OBX.1)|
+|[getNatureOfAbnormalTest](#obxgetnatureofabnormaltest)|Get Nature OfAbnormalTest (OBX.10)|
+|[getObservationIdentifier](#obxgetobservationidentifier)|Get Observation Identifier (OBX.3)|
+|[getObservationMethod](#obxgetobservationmethod)|Get Observation Method (OBX.17)|
+|[getObservationSubId](#obxgetobservationsubid)|Get Observation SubId (OBX.4)|
+|[getObservationValue](#obxgetobservationvalue)|Get Observation Value (OBX.5)|
+|[getObserveResultStatus](#obxgetobserveresultstatus)|Get Observe ResultStatus (OBX.11)|
+|[getProbability](#obxgetprobability)|Get Probability (OBX.9)|
+|[getProducersId](#obxgetproducersid)|Get Producers Id (OBX.15)|
+|[getReferenceRange](#obxgetreferencerange)|Get Reference Range (OBX.7)|
+|[getResponsibleObserver](#obxgetresponsibleobserver)|Get Responsible Observer (OBX.16)|
+|[getUnits](#obxgetunits)|Get Units (OBX.6)|
+|[getUserDefinedAccessChecks](#obxgetuserdefinedaccesschecks)|Get User DefinedAccessChecks (OBX.13)|
+|[getValueType](#obxgetvaluetype)|Get Value Type (OBX.2)|
 |[resetIndex](#obxresetindex)|Reset index of this segment|
-|[setAbnormalFlags](#obxsetabnormalflags)|Set Abnormal Flags (OBR.8)|
-|[setDataLastObsNormalValues](#obxsetdatalastobsnormalvalues)|Set Data LastObsNormalValues (OBR.12)|
-|[setDateTimeOfAnalysis](#obxsetdatetimeofanalysis)|Set Date TimeOfAnalysis (OBR.19)|
-|[setDateTimeOfTheObservation](#obxsetdatetimeoftheobservation)|Set Date TimeOfTheObservation (OBR.14)|
-|[setEquipmentInstanceIdentifier](#obxsetequipmentinstanceidentifier)|Set Equipment InstanceIdentifier (OBR.18)|
+|[setAbnormalFlags](#obxsetabnormalflags)|Set Abnormal Flags (OBX.8)|
+|[setDataLastObsNormalValues](#obxsetdatalastobsnormalvalues)|Set Data Last Obs Normal Values (OBX.12)|
+|[setDateTimeOfAnalysis](#obxsetdatetimeofanalysis)|Set Date Time Of Analysis (OBX.19)|
+|[setDateTimeOfTheObservation](#obxsetdatetimeoftheobservation)|Set Date Time Of The Observation (OBX.14)|
+|[setEquipmentInstanceIdentifier](#obxsetequipmentinstanceidentifier)|Set Equipment Instance Identifier (OBX.18)|
 |[setID](#obxsetid)||
-|[setNatureOfAbnormalTest](#obxsetnatureofabnormaltest)|Set Nature OfAbnormalTest (OBR.10)|
-|[setObservationIdentifier](#obxsetobservationidentifier)|Set Observation Identifier (OBR.3)|
-|[setObservationMethod](#obxsetobservationmethod)|Set Observation Method (OBR.17)|
-|[setObservationSubId](#obxsetobservationsubid)|Set Observation SubId (OBR.4)|
-|[setObservationValue](#obxsetobservationvalue)|Set Observation Value (OBR.5)|
-|[setObserveResultStatus](#obxsetobserveresultstatus)|Set Observe ResultStatus (OBR.11)|
-|[setProbability](#obxsetprobability)|Set Probability (OBR.9)|
-|[setProducersId](#obxsetproducersid)|Set Producers Id (OBR.15)|
-|[setReferenceRange](#obxsetreferencerange)|Set Reference Range (OBR.7)|
-|[setResponsibleObserver](#obxsetresponsibleobserver)|Set Responsible Observer (OBR.16)|
-|[setUnits](#obxsetunits)|Set Units (OBR.6)|
-|[setUserDefinedAccessChecks](#obxsetuserdefinedaccesschecks)|Set User DefinedAccessChecks (OBR.13)|
-|[setValueType](#obxsetvaluetype)|Set Value Type (OBR.2)|
+|[setNatureOfAbnormalTest](#obxsetnatureofabnormaltest)|Set Nature Of Abnormal Test (OBX.10)|
+|[setObservationIdentifier](#obxsetobservationidentifier)|Set Observation Identifier (OBX.3)|
+|[setObservationMethod](#obxsetobservationmethod)|Set Observation Method (OBX.17)|
+|[setObservationSubId](#obxsetobservationsubid)|Set Observation Sub Id (OBX.4)|
+|[setObservationValue](#obxsetobservationvalue)|Set Observation Value (OBX.5)|
+|[setObserveResultStatus](#obxsetobserveresultstatus)|Set Observe Result Status (OBX.11)|
+|[setProbability](#obxsetprobability)|Set Probability (OBX.9)|
+|[setProducersId](#obxsetproducersid)|Set Producers Id (OBX.15)|
+|[setReferenceRange](#obxsetreferencerange)|Set Reference Range (OBX.7)|
+|[setResponsibleObserver](#obxsetresponsibleobserver)|Set Responsible Observer (OBX.16)|
+|[setUnits](#obxsetunits)|Set Units (OBX.6)|
+|[setUserDefinedAccessChecks](#obxsetuserdefinedaccesschecks)|Set User Defined Access Checks (OBX.13)|
+|[setValueType](#obxsetvaluetype)|Set Value Type (OBX.2)|
 
 ## Inherited methods
 
@@ -100,7 +100,7 @@ Aranyasen\HL7\Segment
 public getAbnormalFlags (int $position)
 ```
 
-Get Abnormal Flags (OBR.8) 
+Get Abnormal Flags (OBX.8) 
 
  
 
@@ -127,7 +127,7 @@ Get Abnormal Flags (OBR.8)
 public getDataLastObsNormalValues (int $position)
 ```
 
-Get Data LastObsNormalValues (OBR.12) 
+Get Data LastObsNormalValues (OBX.12) 
 
  
 
@@ -154,7 +154,7 @@ Get Data LastObsNormalValues (OBR.12)
 public getDateTimeOfAnalysis (int $position)
 ```
 
-Get Date TimeOfAnalysis (OBR.19) 
+Get Date TimeOfAnalysis (OBX.19) 
 
  
 
@@ -181,7 +181,7 @@ Get Date TimeOfAnalysis (OBR.19)
 public getDateTimeOfTheObservation (int $position)
 ```
 
-Get Date TimeOfTheObservation (OBR.14) 
+Get Date TimeOfTheObservation (OBX.14) 
 
  
 
@@ -208,7 +208,7 @@ Get Date TimeOfTheObservation (OBR.14)
 public getEquipmentInstanceIdentifier (int $position)
 ```
 
-Get Equipment InstanceIdentifier (OBR.18) 
+Get Equipment InstanceIdentifier (OBX.18) 
 
  
 
@@ -235,7 +235,7 @@ Get Equipment InstanceIdentifier (OBR.18)
 public getID (int $position)
 ```
 
-Get ID (OBR.1) 
+Get ID (OBX.1) 
 
  
 
@@ -262,7 +262,7 @@ Get ID (OBR.1)
 public getNatureOfAbnormalTest (int $position)
 ```
 
-Get Nature OfAbnormalTest (OBR.10) 
+Get Nature OfAbnormalTest (OBX.10) 
 
  
 
@@ -289,7 +289,7 @@ Get Nature OfAbnormalTest (OBR.10)
 public getObservationIdentifier (int $position)
 ```
 
-Get Observation Identifier (OBR.3) 
+Get Observation Identifier (OBX.3) 
 
  
 
@@ -316,7 +316,7 @@ Get Observation Identifier (OBR.3)
 public getObservationMethod (int $position)
 ```
 
-Get Observation Method (OBR.17) 
+Get Observation Method (OBX.17) 
 
  
 
@@ -343,7 +343,7 @@ Get Observation Method (OBR.17)
 public getObservationSubId (int $position)
 ```
 
-Get Observation SubId (OBR.4) 
+Get Observation SubId (OBX.4) 
 
  
 
@@ -370,7 +370,7 @@ Get Observation SubId (OBR.4)
 public getObservationValue (int $position)
 ```
 
-Get Observation Value (OBR.5) 
+Get Observation Value (OBX.5) 
 
  
 
@@ -397,7 +397,7 @@ Get Observation Value (OBR.5)
 public getObserveResultStatus (int $position)
 ```
 
-Get Observe ResultStatus (OBR.11) 
+Get Observe ResultStatus (OBX.11) 
 
  
 
@@ -424,7 +424,7 @@ Get Observe ResultStatus (OBR.11)
 public getProbability (int $position)
 ```
 
-Get Probability (OBR.9) 
+Get Probability (OBX.9) 
 
  
 
@@ -451,7 +451,7 @@ Get Probability (OBR.9)
 public getProducersId (int $position)
 ```
 
-Get Producers Id (OBR.15) 
+Get Producers Id (OBX.15) 
 
  
 
@@ -478,7 +478,7 @@ Get Producers Id (OBR.15)
 public getReferenceRange (int $position)
 ```
 
-Get Reference Range (OBR.7) 
+Get Reference Range (OBX.7) 
 
  
 
@@ -505,7 +505,7 @@ Get Reference Range (OBR.7)
 public getResponsibleObserver (int $position)
 ```
 
-Get Responsible Observer (OBR.16) 
+Get Responsible Observer (OBX.16) 
 
  
 
@@ -532,7 +532,7 @@ Get Responsible Observer (OBR.16)
 public getUnits (int $position)
 ```
 
-Get Units (OBR.6) 
+Get Units (OBX.6) 
 
  
 
@@ -559,7 +559,7 @@ Get Units (OBR.6)
 public getUserDefinedAccessChecks (int $position)
 ```
 
-Get User DefinedAccessChecks (OBR.13) 
+Get User DefinedAccessChecks (OBX.13) 
 
  
 
@@ -586,7 +586,7 @@ Get User DefinedAccessChecks (OBR.13)
 public getValueType (int $position)
 ```
 
-Get Value Type (OBR.2) 
+Get Value Type (OBX.2) 
 
  
 
@@ -637,7 +637,7 @@ Reset index of this segment
 public setAbnormalFlags (string|int|array|null $value, int $position)
 ```
 
-Set Abnormal Flags (OBR.8) 
+Set Abnormal Flags (OBX.8) 
 
  
 
@@ -665,7 +665,7 @@ Set Abnormal Flags (OBR.8)
 public setDataLastObsNormalValues (string|int|array|null $value, int $position)
 ```
 
-Set Data LastObsNormalValues (OBR.12) 
+Set Data Last Obs Normal Values (OBX.12) 
 
  
 
@@ -693,7 +693,7 @@ Set Data LastObsNormalValues (OBR.12)
 public setDateTimeOfAnalysis (string|int|array|null $value, int $position)
 ```
 
-Set Date TimeOfAnalysis (OBR.19) 
+Set Date Time Of Analysis (OBX.19) 
 
  
 
@@ -721,7 +721,7 @@ Set Date TimeOfAnalysis (OBR.19)
 public setDateTimeOfTheObservation (string|int|array|null $value, int $position)
 ```
 
-Set Date TimeOfTheObservation (OBR.14) 
+Set Date Time Of The Observation (OBX.14) 
 
  
 
@@ -749,7 +749,7 @@ Set Date TimeOfTheObservation (OBR.14)
 public setEquipmentInstanceIdentifier (string|int|array|null $value, int $position)
 ```
 
-Set Equipment InstanceIdentifier (OBR.18) 
+Set Equipment Instance Identifier (OBX.18) 
 
  
 
@@ -801,7 +801,7 @@ Set Equipment InstanceIdentifier (OBR.18)
 public setNatureOfAbnormalTest (string|int|array|null $value, int $position)
 ```
 
-Set Nature OfAbnormalTest (OBR.10) 
+Set Nature Of Abnormal Test (OBX.10) 
 
  
 
@@ -829,7 +829,7 @@ Set Nature OfAbnormalTest (OBR.10)
 public setObservationIdentifier (string|int|array|null $value, int $position)
 ```
 
-Set Observation Identifier (OBR.3) 
+Set Observation Identifier (OBX.3) 
 
  
 
@@ -857,7 +857,7 @@ Set Observation Identifier (OBR.3)
 public setObservationMethod (string|int|array|null $value, int $position)
 ```
 
-Set Observation Method (OBR.17) 
+Set Observation Method (OBX.17) 
 
  
 
@@ -885,7 +885,7 @@ Set Observation Method (OBR.17)
 public setObservationSubId (string|int|array|null $value, int $position)
 ```
 
-Set Observation SubId (OBR.4) 
+Set Observation Sub Id (OBX.4) 
 
  
 
@@ -913,7 +913,7 @@ Set Observation SubId (OBR.4)
 public setObservationValue (string|int|array|null $value, int $position)
 ```
 
-Set Observation Value (OBR.5) 
+Set Observation Value (OBX.5) 
 
  
 
@@ -941,7 +941,7 @@ Set Observation Value (OBR.5)
 public setObserveResultStatus (string|int|array|null $value, int $position)
 ```
 
-Set Observe ResultStatus (OBR.11) 
+Set Observe Result Status (OBX.11) 
 
  
 
@@ -969,7 +969,7 @@ Set Observe ResultStatus (OBR.11)
 public setProbability (string|int|array|null $value, int $position)
 ```
 
-Set Probability (OBR.9) 
+Set Probability (OBX.9) 
 
  
 
@@ -997,7 +997,7 @@ Set Probability (OBR.9)
 public setProducersId (string|int|array|null $value, int $position)
 ```
 
-Set Producers Id (OBR.15) 
+Set Producers Id (OBX.15) 
 
  
 
@@ -1025,7 +1025,7 @@ Set Producers Id (OBR.15)
 public setReferenceRange (string|int|array|null $value, int $position)
 ```
 
-Set Reference Range (OBR.7) 
+Set Reference Range (OBX.7) 
 
  
 
@@ -1053,7 +1053,7 @@ Set Reference Range (OBR.7)
 public setResponsibleObserver (string|int|array|null $value, int $position)
 ```
 
-Set Responsible Observer (OBR.16) 
+Set Responsible Observer (OBX.16) 
 
  
 
@@ -1081,7 +1081,7 @@ Set Responsible Observer (OBR.16)
 public setUnits (string|int|array|null $value, int $position)
 ```
 
-Set Units (OBR.6) 
+Set Units (OBX.6) 
 
  
 
@@ -1109,7 +1109,7 @@ Set Units (OBR.6)
 public setUserDefinedAccessChecks (string|int|array|null $value, int $position)
 ```
 
-Set User DefinedAccessChecks (OBR.13) 
+Set User Defined Access Checks (OBX.13) 
 
  
 
@@ -1137,7 +1137,7 @@ Set User DefinedAccessChecks (OBR.13)
 public setValueType (string|int|array|null $value, int $position)
 ```
 
-Set Value Type (OBR.2) 
+Set Value Type (OBX.2) 
 
  
 

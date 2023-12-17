@@ -28,34 +28,34 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getDateTimeOfMessage](#mshgetdatetimeofmessage)|Get Date TimeOfMessage (OBR.7)|
-|[getMessageControlId](#mshgetmessagecontrolid)|Get Message ControlId (OBR.10)|
-|[getMessageType](#mshgetmessagetype)|Get Message Type (OBR.9)|
-|[getProcessingId](#mshgetprocessingid)|Get Processing Id (OBR.11)|
-|[getReceivingApplication](#mshgetreceivingapplication)|Get Receiving Application (OBR.5)|
-|[getReceivingFacility](#mshgetreceivingfacility)|Get Receiving Facility (OBR.6)|
-|[getSendingApplication](#mshgetsendingapplication)|Get Sending Application (OBR.3)|
-|[getSendingFacility](#mshgetsendingfacility)|Get Sending Facility (OBR.4)|
-|[getTriggerEvent](#mshgettriggerevent)|Get Trigger Event (OBR.9)|
-|[getVersionId](#mshgetversionid)|Get Version Id (OBR.12)|
-|[setAcceptAcknowledgementType](#mshsetacceptacknowledgementtype)|Set Accept AcknowledgementType (OBR.15)|
-|[setApplicationAcknowledgementType](#mshsetapplicationacknowledgementtype)|Set Application AcknowledgementType (OBR.16)|
-|[setCharacterSet](#mshsetcharacterset)|Set Character Set (OBR.18)|
-|[setContinuationPointer](#mshsetcontinuationpointer)|Set Continuation Pointer (OBR.14)|
-|[setCountryCode](#mshsetcountrycode)|Set Country Code (OBR.17)|
-|[setDateTimeOfMessage](#mshsetdatetimeofmessage)|Set Date TimeOfMessage (OBR.7)|
-|[setMessageControlId](#mshsetmessagecontrolid)|Set Message ControlId (OBR.10)|
-|[setMessageType](#mshsetmessagetype)|Sets message type to MSH segment. (OBR.9)|
-|[setPrincipalLanguage](#mshsetprincipallanguage)|Set Principal Language (OBR.19)|
-|[setProcessingId](#mshsetprocessingid)|Set Processing Id (OBR.11)|
-|[setReceivingApplication](#mshsetreceivingapplication)|Set Receiving Application (OBR.5)|
-|[setReceivingFacility](#mshsetreceivingfacility)|Set Receiving Facility (OBR.6)|
-|[setSecurity](#mshsetsecurity)|Set Security (OBR.8)|
-|[setSendingApplication](#mshsetsendingapplication)|Set Sending Application (OBR.3)|
-|[setSendingFacility](#mshsetsendingfacility)|Set Sending Facility (OBR.4)|
-|[setSequenceNumber](#mshsetsequencenumber)|Set Sequence Number (OBR.13)|
-|[setTriggerEvent](#mshsettriggerevent)|Sets trigger event to MSH segment. (OBR.9)|
-|[setVersionId](#mshsetversionid)|Set Version Id (OBR.12)|
+|[getDateTimeOfMessage](#mshgetdatetimeofmessage)|Get Date TimeOfMessage (MSH.7)|
+|[getMessageControlId](#mshgetmessagecontrolid)|Get Message ControlId (MSH.10)|
+|[getMessageType](#mshgetmessagetype)|Get Message Type (MSH.9)|
+|[getProcessingId](#mshgetprocessingid)|Get Processing Id (MSH.11)|
+|[getReceivingApplication](#mshgetreceivingapplication)|Get Receiving Application (MSH.5)|
+|[getReceivingFacility](#mshgetreceivingfacility)|Get Receiving Facility (MSH.6)|
+|[getSendingApplication](#mshgetsendingapplication)|Get Sending Application (MSH.3)|
+|[getSendingFacility](#mshgetsendingfacility)|Get Sending Facility (MSH.4)|
+|[getTriggerEvent](#mshgettriggerevent)|Get Trigger Event (MSH.9)|
+|[getVersionId](#mshgetversionid)|Get Version Id (MSH.12)|
+|[setAcceptAcknowledgementType](#mshsetacceptacknowledgementtype)|Set Accept Acknowledgement Type (MSH.15)|
+|[setApplicationAcknowledgementType](#mshsetapplicationacknowledgementtype)|Set Application Acknowledgement Type (MSH.16)|
+|[setCharacterSet](#mshsetcharacterset)|Set Character Set (MSH.18)|
+|[setContinuationPointer](#mshsetcontinuationpointer)|Set Continuation Pointer (MSH.14)|
+|[setCountryCode](#mshsetcountrycode)|Set Country Code (MSH.17)|
+|[setDateTimeOfMessage](#mshsetdatetimeofmessage)|Set Date Time Of Message (MSH.7)|
+|[setMessageControlId](#mshsetmessagecontrolid)|Set Message Control Id (MSH.10)|
+|[setMessageType](#mshsetmessagetype)|Sets message type to MSH segment. (MSH.9)|
+|[setPrincipalLanguage](#mshsetprincipallanguage)|Set Principal Language (MSH.19)|
+|[setProcessingId](#mshsetprocessingid)|Set Processing Id (MSH.11)|
+|[setReceivingApplication](#mshsetreceivingapplication)|Set Receiving Application (MSH.5)|
+|[setReceivingFacility](#mshsetreceivingfacility)|Set Receiving Facility (MSH.6)|
+|[setSecurity](#mshsetsecurity)|Set Security (MSH.8)|
+|[setSendingApplication](#mshsetsendingapplication)|Set Sending Application (MSH.3)|
+|[setSendingFacility](#mshsetsendingfacility)|Set Sending Facility (MSH.4)|
+|[setSequenceNumber](#mshsetsequencenumber)|Set Sequence Number (MSH.13)|
+|[setTriggerEvent](#mshsettriggerevent)|Sets trigger event to MSH segment. (MSH.9)|
+|[setVersionId](#mshsetversionid)|Set Version Id (MSH.12)|
 
 ## Inherited methods
 
@@ -79,7 +79,7 @@ Aranyasen\HL7\Segment
 public getDateTimeOfMessage (int $position)
 ```
 
-Get Date TimeOfMessage (OBR.7) 
+Get Date TimeOfMessage (MSH.7) 
 
  
 
@@ -106,7 +106,7 @@ Get Date TimeOfMessage (OBR.7)
 public getMessageControlId (int $position)
 ```
 
-Get Message ControlId (OBR.10) 
+Get Message ControlId (MSH.10) 
 
  
 
@@ -133,7 +133,7 @@ Get Message ControlId (OBR.10)
 public getMessageType (int $position)
 ```
 
-Get Message Type (OBR.9) 
+Get Message Type (MSH.9) 
 
  
 
@@ -160,7 +160,7 @@ Get Message Type (OBR.9)
 public getProcessingId (int $position)
 ```
 
-Get Processing Id (OBR.11) 
+Get Processing Id (MSH.11) 
 
  
 
@@ -187,7 +187,7 @@ Get Processing Id (OBR.11)
 public getReceivingApplication (int $position)
 ```
 
-Get Receiving Application (OBR.5) 
+Get Receiving Application (MSH.5) 
 
  
 
@@ -214,7 +214,7 @@ Get Receiving Application (OBR.5)
 public getReceivingFacility (int $position)
 ```
 
-Get Receiving Facility (OBR.6) 
+Get Receiving Facility (MSH.6) 
 
  
 
@@ -241,7 +241,7 @@ Get Receiving Facility (OBR.6)
 public getSendingApplication (int $position)
 ```
 
-Get Sending Application (OBR.3) 
+Get Sending Application (MSH.3) 
 
  
 
@@ -268,7 +268,7 @@ Get Sending Application (OBR.3)
 public getSendingFacility (int $position)
 ```
 
-Get Sending Facility (OBR.4) 
+Get Sending Facility (MSH.4) 
 
  
 
@@ -295,7 +295,7 @@ Get Sending Facility (OBR.4)
 public getTriggerEvent (int $position)
 ```
 
-Get Trigger Event (OBR.9) 
+Get Trigger Event (MSH.9) 
 
  
 
@@ -322,7 +322,7 @@ Get Trigger Event (OBR.9)
 public getVersionId (int $position)
 ```
 
-Get Version Id (OBR.12) 
+Get Version Id (MSH.12) 
 
  
 
@@ -349,7 +349,7 @@ Get Version Id (OBR.12)
 public setAcceptAcknowledgementType (string|int|array|null $value, int $position)
 ```
 
-Set Accept AcknowledgementType (OBR.15) 
+Set Accept Acknowledgement Type (MSH.15) 
 
  
 
@@ -377,7 +377,7 @@ Set Accept AcknowledgementType (OBR.15)
 public setApplicationAcknowledgementType (string|int|array|null $value, int $position)
 ```
 
-Set Application AcknowledgementType (OBR.16) 
+Set Application Acknowledgement Type (MSH.16) 
 
  
 
@@ -405,7 +405,7 @@ Set Application AcknowledgementType (OBR.16)
 public setCharacterSet (string|int|array|null $value, int $position)
 ```
 
-Set Character Set (OBR.18) 
+Set Character Set (MSH.18) 
 
  
 
@@ -433,7 +433,7 @@ Set Character Set (OBR.18)
 public setContinuationPointer (string|int|array|null $value, int $position)
 ```
 
-Set Continuation Pointer (OBR.14) 
+Set Continuation Pointer (MSH.14) 
 
  
 
@@ -461,7 +461,7 @@ Set Continuation Pointer (OBR.14)
 public setCountryCode (string|int|array|null $value, int $position)
 ```
 
-Set Country Code (OBR.17) 
+Set Country Code (MSH.17) 
 
  
 
@@ -489,7 +489,7 @@ Set Country Code (OBR.17)
 public setDateTimeOfMessage (string|int|array|null $value, int $position)
 ```
 
-Set Date TimeOfMessage (OBR.7) 
+Set Date Time Of Message (MSH.7) 
 
  
 
@@ -517,7 +517,7 @@ Set Date TimeOfMessage (OBR.7)
 public setMessageControlId (string|int|array|null $value, int $position)
 ```
 
-Set Message ControlId (OBR.10) 
+Set Message Control Id (MSH.10) 
 
  
 
@@ -545,7 +545,7 @@ Set Message ControlId (OBR.10)
 public setMessageType (string|int|array|null $value, int $position)
 ```
 
-Sets message type to MSH segment. (OBR.9) 
+Sets message type to MSH segment. (MSH.9) 
 
 If trigger event is already set, then it is preserved  
   
@@ -584,7 +584,7 @@ If it was empty then the new value will be just ORM.
 public setPrincipalLanguage (string|int|array|null $value, int $position)
 ```
 
-Set Principal Language (OBR.19) 
+Set Principal Language (MSH.19) 
 
  
 
@@ -612,7 +612,7 @@ Set Principal Language (OBR.19)
 public setProcessingId (string|int|array|null $value, int $position)
 ```
 
-Set Processing Id (OBR.11) 
+Set Processing Id (MSH.11) 
 
  
 
@@ -640,7 +640,7 @@ Set Processing Id (OBR.11)
 public setReceivingApplication (string|int|array|null $value, int $position)
 ```
 
-Set Receiving Application (OBR.5) 
+Set Receiving Application (MSH.5) 
 
  
 
@@ -668,7 +668,7 @@ Set Receiving Application (OBR.5)
 public setReceivingFacility (string|int|array|null $value, int $position)
 ```
 
-Set Receiving Facility (OBR.6) 
+Set Receiving Facility (MSH.6) 
 
  
 
@@ -696,7 +696,7 @@ Set Receiving Facility (OBR.6)
 public setSecurity (string|int|array|null $value, int $position)
 ```
 
-Set Security (OBR.8) 
+Set Security (MSH.8) 
 
  
 
@@ -724,7 +724,7 @@ Set Security (OBR.8)
 public setSendingApplication (string|int|array|null $value, int $position)
 ```
 
-Set Sending Application (OBR.3) 
+Set Sending Application (MSH.3) 
 
  
 
@@ -752,7 +752,7 @@ Set Sending Application (OBR.3)
 public setSendingFacility (string|int|array|null $value, int $position)
 ```
 
-Set Sending Facility (OBR.4) 
+Set Sending Facility (MSH.4) 
 
  
 
@@ -780,7 +780,7 @@ Set Sending Facility (OBR.4)
 public setSequenceNumber (string|int|array|null $value, int $position)
 ```
 
-Set Sequence Number (OBR.13) 
+Set Sequence Number (MSH.13) 
 
  
 
@@ -808,7 +808,7 @@ Set Sequence Number (OBR.13)
 public setTriggerEvent (string|int|array|null $value, int $position)
 ```
 
-Sets trigger event to MSH segment. (OBR.9) 
+Sets trigger event to MSH segment. (MSH.9) 
 
 If meessage type is already set, then it is preserved  
   
@@ -847,7 +847,7 @@ If trigger event was not set then it will set the new value.
 public setVersionId (string|int|array|null $value, int $position)
 ```
 
-Set Version Id (OBR.12) 
+Set Version Id (MSH.12) 
 
  
 

@@ -13,95 +13,95 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getAccessionIdentifier](#sacgetaccessionidentifier)|Get Accession Identifier (OBR.2)|
-|[getAdditive](#sacgetadditive)|Get Additive (OBR.27)|
-|[getArtificialBlood](#sacgetartificialblood)|Get Artificial Blood (OBR.42)|
-|[getAvailableSpecimenVolume](#sacgetavailablespecimenvolume)|Get Available SpecimenVolume (OBR.22)|
-|[getBarrierDelta](#sacgetbarrierdelta)|Get Barrier Delta (OBR.18)|
-|[getBottomDelta](#sacgetbottomdelta)|Get Bottom Delta (OBR.19)|
-|[getCapType](#sacgetcaptype)|Get Cap Type (OBR.26)|
-|[getCarrierIdentifier](#sacgetcarrieridentifier)|Get Carrier Identifier (OBR.10)|
-|[getCarrierType](#sacgetcarriertype)|Get Carrier Type (OBR.9)|
-|[getContainerDiameter](#sacgetcontainerdiameter)|Get Container Diameter (OBR.17)|
-|[getContainerHeight](#sacgetcontainerheight)|Get Container Height (OBR.16)|
-|[getContainerIdentifier](#sacgetcontaineridentifier)|Get Container Identifier (OBR.3)|
-|[getContainerSizeUnits](#sacgetcontainersizeunits)|Get Container SizeUnits (OBR.20)|
-|[getContainerStatus](#sacgetcontainerstatus)|Get Container Status (OBR.8)|
-|[getContainerVolume](#sacgetcontainervolume)|Get Container Volume (OBR.21)|
-|[getDilutionFactor](#sacgetdilutionfactor)|Get Dilution Factor (OBR.29)|
-|[getDrugInterference](#sacgetdruginterference)|Get Drug Interference (OBR.41)|
-|[getEquipmentContainerIdentifier](#sacgetequipmentcontaineridentifier)|Get Equipment ContainerIdentifier (OBR.5)|
-|[getExternalAccessionIdentifier](#sacgetexternalaccessionidentifier)|Get External AccessionIdentifier (OBR.1)|
-|[getFibrinIndex](#sacgetfibrinindex)|Get Fibrin Index (OBR.38)|
-|[getFibrinIndexUnits](#sacgetfibrinindexunits)|Get Fibrin IndexUnits (OBR.39)|
-|[getHemolysisIndex](#sacgethemolysisindex)|Get Hemolysis Index (OBR.32)|
-|[getHemolysisIndexUnits](#sacgethemolysisindexunits)|Get Hemolysis IndexUnits (OBR.33)|
-|[getIcterusIndex](#sacgeticterusindex)|Get Icterus Index (OBR.36)|
-|[getIcterusIndexUnits](#sacgeticterusindexunits)|Get Icterus IndexUnits (OBR.37)|
-|[getInitialSpecimenVolume](#sacgetinitialspecimenvolume)|Get Initial SpecimenVolume (OBR.23)|
-|[getLepemiaIndex](#sacgetlepemiaindex)|Get Lepemia Index (OBR.34)|
-|[getLepemiaIndexUnits](#sacgetlepemiaindexunits)|Get Lepemia IndexUnits (OBR.35)|
-|[getLocation](#sacgetlocation)|Get Location (OBR.15)|
-|[getOtherEnvironmentalFactors](#sacgetotherenvironmentalfactors)|Get Other EnvironmentalFactors (OBR.44)|
-|[getPositionInCarrier](#sacgetpositionincarrier)|Get Position InCarrier (OBR.11)|
-|[getPositionInTray](#sacgetpositionintray)|Get Position InTray (OBR.14)|
-|[getPrimaryContainerIdentifier](#sacgetprimarycontaineridentifier)|Get Primary ContainerIdentifier (OBR.4)|
-|[getRegistrationDateTime](#sacgetregistrationdatetime)|Get Registration DateTime (OBR.7)|
-|[getSeparatorType](#sacgetseparatortype)|Get Separator Type (OBR.25)|
-|[getSpecialHandlingCode](#sacgetspecialhandlingcode)|Get Special HandlingCode (OBR.43)|
-|[getSpecimenComponent](#sacgetspecimencomponent)|Get Specimen Component (OBR.28)|
-|[getSpecimenSource](#sacgetspecimensource)|Get Specimen Source (OBR.6)|
-|[getSystemInducedContaminants](#sacgetsysteminducedcontaminants)|Get System InducedContaminants (OBR.40)|
-|[getTemperature](#sacgettemperature)|Get Temperature (OBR.31)|
-|[getTrayIdentifier](#sacgettrayidentifier)|Get Tray Identifier (OBR.13)|
-|[getTrayTypeSAC](#sacgettraytypesac)|Get Tray TypeSAC (OBR.12)|
-|[getTreatment](#sacgettreatment)|Get Treatment (OBR.30)|
-|[getVolumeUnits](#sacgetvolumeunits)|Get Volume Units (OBR.24)|
+|[getAccessionIdentifier](#sacgetaccessionidentifier)|Get Accession Identifier (SAC.2)|
+|[getAdditive](#sacgetadditive)|Get Additive (SAC.27)|
+|[getArtificialBlood](#sacgetartificialblood)|Get Artificial Blood (SAC.42)|
+|[getAvailableSpecimenVolume](#sacgetavailablespecimenvolume)|Get Available SpecimenVolume (SAC.22)|
+|[getBarrierDelta](#sacgetbarrierdelta)|Get Barrier Delta (SAC.18)|
+|[getBottomDelta](#sacgetbottomdelta)|Get Bottom Delta (SAC.19)|
+|[getCapType](#sacgetcaptype)|Get Cap Type (SAC.26)|
+|[getCarrierIdentifier](#sacgetcarrieridentifier)|Get Carrier Identifier (SAC.10)|
+|[getCarrierType](#sacgetcarriertype)|Get Carrier Type (SAC.9)|
+|[getContainerDiameter](#sacgetcontainerdiameter)|Get Container Diameter (SAC.17)|
+|[getContainerHeight](#sacgetcontainerheight)|Get Container Height (SAC.16)|
+|[getContainerIdentifier](#sacgetcontaineridentifier)|Get Container Identifier (SAC.3)|
+|[getContainerSizeUnits](#sacgetcontainersizeunits)|Get Container SizeUnits (SAC.20)|
+|[getContainerStatus](#sacgetcontainerstatus)|Get Container Status (SAC.8)|
+|[getContainerVolume](#sacgetcontainervolume)|Get Container Volume (SAC.21)|
+|[getDilutionFactor](#sacgetdilutionfactor)|Get Dilution Factor (SAC.29)|
+|[getDrugInterference](#sacgetdruginterference)|Get Drug Interference (SAC.41)|
+|[getEquipmentContainerIdentifier](#sacgetequipmentcontaineridentifier)|Get Equipment ContainerIdentifier (SAC.5)|
+|[getExternalAccessionIdentifier](#sacgetexternalaccessionidentifier)|Get External AccessionIdentifier (SAC.1)|
+|[getFibrinIndex](#sacgetfibrinindex)|Get Fibrin Index (SAC.38)|
+|[getFibrinIndexUnits](#sacgetfibrinindexunits)|Get Fibrin IndexUnits (SAC.39)|
+|[getHemolysisIndex](#sacgethemolysisindex)|Get Hemolysis Index (SAC.32)|
+|[getHemolysisIndexUnits](#sacgethemolysisindexunits)|Get Hemolysis IndexUnits (SAC.33)|
+|[getIcterusIndex](#sacgeticterusindex)|Get Icterus Index (SAC.36)|
+|[getIcterusIndexUnits](#sacgeticterusindexunits)|Get Icterus IndexUnits (SAC.37)|
+|[getInitialSpecimenVolume](#sacgetinitialspecimenvolume)|Get Initial SpecimenVolume (SAC.23)|
+|[getLepemiaIndex](#sacgetlepemiaindex)|Get Lepemia Index (SAC.34)|
+|[getLepemiaIndexUnits](#sacgetlepemiaindexunits)|Get Lepemia IndexUnits (SAC.35)|
+|[getLocation](#sacgetlocation)|Get Location (SAC.15)|
+|[getOtherEnvironmentalFactors](#sacgetotherenvironmentalfactors)|Get Other EnvironmentalFactors (SAC.44)|
+|[getPositionInCarrier](#sacgetpositionincarrier)|Get Position InCarrier (SAC.11)|
+|[getPositionInTray](#sacgetpositionintray)|Get Position InTray (SAC.14)|
+|[getPrimaryContainerIdentifier](#sacgetprimarycontaineridentifier)|Get Primary ContainerIdentifier (SAC.4)|
+|[getRegistrationDateTime](#sacgetregistrationdatetime)|Get Registration DateTime (SAC.7)|
+|[getSeparatorType](#sacgetseparatortype)|Get Separator Type (SAC.25)|
+|[getSpecialHandlingCode](#sacgetspecialhandlingcode)|Get Special HandlingCode (SAC.43)|
+|[getSpecimenComponent](#sacgetspecimencomponent)|Get Specimen Component (SAC.28)|
+|[getSpecimenSource](#sacgetspecimensource)|Get Specimen Source (SAC.6)|
+|[getSystemInducedContaminants](#sacgetsysteminducedcontaminants)|Get System InducedContaminants (SAC.40)|
+|[getTemperature](#sacgettemperature)|Get Temperature (SAC.31)|
+|[getTrayIdentifier](#sacgettrayidentifier)|Get Tray Identifier (SAC.13)|
+|[getTrayTypeSAC](#sacgettraytypesac)|Get Tray TypeSAC (SAC.12)|
+|[getTreatment](#sacgettreatment)|Get Treatment (SAC.30)|
+|[getVolumeUnits](#sacgetvolumeunits)|Get Volume Units (SAC.24)|
 |[resetIndex](#sacresetindex)|Reset index of this segment|
-|[setAccessionIdentifier](#sacsetaccessionidentifier)|Set Accession Identifier (OBR.2)|
-|[setAdditive](#sacsetadditive)|Set Additive (OBR.27)|
-|[setArtificialBlood](#sacsetartificialblood)|Set Artificial Blood (OBR.42)|
-|[setAvailableSpecimenVolume](#sacsetavailablespecimenvolume)|Set Available SpecimenVolume (OBR.22)|
-|[setBarrierDelta](#sacsetbarrierdelta)|Set Barrier Delta (OBR.18)|
-|[setBottomDelta](#sacsetbottomdelta)|Set Bottom Delta (OBR.19)|
-|[setCapType](#sacsetcaptype)|Set Cap Type (OBR.26)|
-|[setCarrierIdentifier](#sacsetcarrieridentifier)|Set Carrier Identifier (OBR.10)|
-|[setCarrierType](#sacsetcarriertype)|Set Carrier Type (OBR.9)|
-|[setContainerDiameter](#sacsetcontainerdiameter)|Set Container Diameter (OBR.17)|
-|[setContainerHeight](#sacsetcontainerheight)|Set Container Height (OBR.16)|
-|[setContainerIdentifier](#sacsetcontaineridentifier)|Set Container Identifier (OBR.3)|
-|[setContainerSizeUnits](#sacsetcontainersizeunits)|Set Container SizeUnits (OBR.20)|
-|[setContainerStatus](#sacsetcontainerstatus)|Set Container Status (OBR.8)|
-|[setContainerVolume](#sacsetcontainervolume)|Set Container Volume (OBR.21)|
-|[setDilutionFactor](#sacsetdilutionfactor)|Set Dilution Factor (OBR.29)|
-|[setDrugInterference](#sacsetdruginterference)|Set Drug Interference (OBR.41)|
-|[setEquipmentContainerIdentifier](#sacsetequipmentcontaineridentifier)|Set Equipment ContainerIdentifier (OBR.5)|
+|[setAccessionIdentifier](#sacsetaccessionidentifier)|Set Accession Identifier (SAC.2)|
+|[setAdditive](#sacsetadditive)|Set Additive (SAC.27)|
+|[setArtificialBlood](#sacsetartificialblood)|Set Artificial Blood (SAC.42)|
+|[setAvailableSpecimenVolume](#sacsetavailablespecimenvolume)|Set Available Specimen Volume (SAC.22)|
+|[setBarrierDelta](#sacsetbarrierdelta)|Set Barrier Delta (SAC.18)|
+|[setBottomDelta](#sacsetbottomdelta)|Set Bottom Delta (SAC.19)|
+|[setCapType](#sacsetcaptype)|Set Cap Type (SAC.26)|
+|[setCarrierIdentifier](#sacsetcarrieridentifier)|Set Carrier Identifier (SAC.10)|
+|[setCarrierType](#sacsetcarriertype)|Set Carrier Type (SAC.9)|
+|[setContainerDiameter](#sacsetcontainerdiameter)|Set Container Diameter (SAC.17)|
+|[setContainerHeight](#sacsetcontainerheight)|Set Container Height (SAC.16)|
+|[setContainerIdentifier](#sacsetcontaineridentifier)|Set Container Identifier (SAC.3)|
+|[setContainerSizeUnits](#sacsetcontainersizeunits)|Set Container Size Units (SAC.20)|
+|[setContainerStatus](#sacsetcontainerstatus)|Set Container Status (SAC.8)|
+|[setContainerVolume](#sacsetcontainervolume)|Set Container Volume (SAC.21)|
+|[setDilutionFactor](#sacsetdilutionfactor)|Set Dilution Factor (SAC.29)|
+|[setDrugInterference](#sacsetdruginterference)|Set Drug Interference (SAC.41)|
+|[setEquipmentContainerIdentifier](#sacsetequipmentcontaineridentifier)|Set Equipment Container Identifier (SAC.5)|
 |[setExternalAccessionIdentifier](#sacsetexternalaccessionidentifier)||
-|[setFibrinIndex](#sacsetfibrinindex)|Set Fibrin Index (OBR.38)|
-|[setFibrinIndexUnits](#sacsetfibrinindexunits)|Set Fibrin IndexUnits (OBR.39)|
-|[setHemolysisIndex](#sacsethemolysisindex)|Set Hemolysis Index (OBR.32)|
-|[setHemolysisIndexUnits](#sacsethemolysisindexunits)|Set Hemolysis IndexUnits (OBR.33)|
-|[setIcterusIndex](#sacseticterusindex)|Set Icterus Index (OBR.36)|
-|[setIcterusIndexUnits](#sacseticterusindexunits)|Set Icterus IndexUnits (OBR.37)|
-|[setInitialSpecimenVolume](#sacsetinitialspecimenvolume)|Set Initial SpecimenVolume (OBR.23)|
-|[setLepemiaIndex](#sacsetlepemiaindex)|Set Lepemia Index (OBR.34)|
-|[setLepemiaIndexUnits](#sacsetlepemiaindexunits)|Set Lepemia IndexUnits (OBR.35)|
-|[setLocation](#sacsetlocation)|Set Location (OBR.15)|
-|[setOtherEnvironmentalFactors](#sacsetotherenvironmentalfactors)|Set Other EnvironmentalFactors (OBR.44)|
-|[setPositionInCarrier](#sacsetpositionincarrier)|Set Position InCarrier (OBR.11)|
-|[setPositionInTray](#sacsetpositionintray)|Set Position InTray (OBR.14)|
-|[setPrimaryContainerIdentifier](#sacsetprimarycontaineridentifier)|Set Primary ContainerIdentifier (OBR.4)|
-|[setRegistrationDateTime](#sacsetregistrationdatetime)|Set Registration DateTime (OBR.7)|
-|[setSeparatorType](#sacsetseparatortype)|Set Separator Type (OBR.25)|
-|[setSpecialHandlingCode](#sacsetspecialhandlingcode)|Set Special HandlingCode (OBR.43)|
-|[setSpecimenComponent](#sacsetspecimencomponent)|Set Specimen Component (OBR.28)|
-|[setSpecimenSource](#sacsetspecimensource)|Set Specimen Source (OBR.6)|
-|[setSystemInducedContaminants](#sacsetsysteminducedcontaminants)|Set System InducedContaminants (OBR.40)|
-|[setTemperature](#sacsettemperature)|Set Temperature (OBR.31)|
-|[setTrayIdentifier](#sacsettrayidentifier)|Set Tray Identifier (OBR.13)|
-|[setTrayTypeSAC](#sacsettraytypesac)|Set Tray TypeSAC (OBR.12)|
-|[setTreatment](#sacsettreatment)|Set Treatment (OBR.30)|
-|[setVolumeUnits](#sacsetvolumeunits)|Set Volume Units (OBR.24)|
+|[setFibrinIndex](#sacsetfibrinindex)|Set Fibrin Index (SAC.38)|
+|[setFibrinIndexUnits](#sacsetfibrinindexunits)|Set Fibrin Index Units (SAC.39)|
+|[setHemolysisIndex](#sacsethemolysisindex)|Set Hemolysis Index (SAC.32)|
+|[setHemolysisIndexUnits](#sacsethemolysisindexunits)|Set Hemolysis Index Units (SAC.33)|
+|[setIcterusIndex](#sacseticterusindex)|Set Icterus Index (SAC.36)|
+|[setIcterusIndexUnits](#sacseticterusindexunits)|Set Icterus Index Units (SAC.37)|
+|[setInitialSpecimenVolume](#sacsetinitialspecimenvolume)|Set Initial Specimen Volume (SAC.23)|
+|[setLepemiaIndex](#sacsetlepemiaindex)|Set Lepemia Index (SAC.34)|
+|[setLepemiaIndexUnits](#sacsetlepemiaindexunits)|Set Lepemia Index Units (SAC.35)|
+|[setLocation](#sacsetlocation)|Set Location (SAC.15)|
+|[setOtherEnvironmentalFactors](#sacsetotherenvironmentalfactors)|Set Other Environmental Factors (SAC.44)|
+|[setPositionInCarrier](#sacsetpositionincarrier)|Set Position In Carrier (SAC.11)|
+|[setPositionInTray](#sacsetpositionintray)|Set Position In Tray (SAC.14)|
+|[setPrimaryContainerIdentifier](#sacsetprimarycontaineridentifier)|Set Primary Container Identifier (SAC.4)|
+|[setRegistrationDateTime](#sacsetregistrationdatetime)|Set Registration Date Time (SAC.7)|
+|[setSeparatorType](#sacsetseparatortype)|Set Separator Type (SAC.25)|
+|[setSpecialHandlingCode](#sacsetspecialhandlingcode)|Set Special Handling Code (SAC.43)|
+|[setSpecimenComponent](#sacsetspecimencomponent)|Set Specimen Component (SAC.28)|
+|[setSpecimenSource](#sacsetspecimensource)|Set Specimen Source (SAC.6)|
+|[setSystemInducedContaminants](#sacsetsysteminducedcontaminants)|Set System Induced Contaminants (SAC.40)|
+|[setTemperature](#sacsettemperature)|Set Temperature (SAC.31)|
+|[setTrayIdentifier](#sacsettrayidentifier)|Set Tray Identifier (SAC.13)|
+|[setTrayTypeSAC](#sacsettraytypesac)|Set Tray Type SAC (SAC.12)|
+|[setTreatment](#sacsettreatment)|Set Treatment (SAC.30)|
+|[setVolumeUnits](#sacsetvolumeunits)|Set Volume Units (SAC.24)|
 
 ## Inherited methods
 
@@ -125,7 +125,7 @@ Aranyasen\HL7\Segment
 public getAccessionIdentifier (int $position)
 ```
 
-Get Accession Identifier (OBR.2) 
+Get Accession Identifier (SAC.2) 
 
  
 
@@ -152,7 +152,7 @@ Get Accession Identifier (OBR.2)
 public getAdditive (int $position)
 ```
 
-Get Additive (OBR.27) 
+Get Additive (SAC.27) 
 
  
 
@@ -179,7 +179,7 @@ Get Additive (OBR.27)
 public getArtificialBlood (int $position)
 ```
 
-Get Artificial Blood (OBR.42) 
+Get Artificial Blood (SAC.42) 
 
  
 
@@ -206,7 +206,7 @@ Get Artificial Blood (OBR.42)
 public getAvailableSpecimenVolume (int $position)
 ```
 
-Get Available SpecimenVolume (OBR.22) 
+Get Available SpecimenVolume (SAC.22) 
 
  
 
@@ -233,7 +233,7 @@ Get Available SpecimenVolume (OBR.22)
 public getBarrierDelta (int $position)
 ```
 
-Get Barrier Delta (OBR.18) 
+Get Barrier Delta (SAC.18) 
 
  
 
@@ -260,7 +260,7 @@ Get Barrier Delta (OBR.18)
 public getBottomDelta (int $position)
 ```
 
-Get Bottom Delta (OBR.19) 
+Get Bottom Delta (SAC.19) 
 
  
 
@@ -287,7 +287,7 @@ Get Bottom Delta (OBR.19)
 public getCapType (int $position)
 ```
 
-Get Cap Type (OBR.26) 
+Get Cap Type (SAC.26) 
 
  
 
@@ -314,7 +314,7 @@ Get Cap Type (OBR.26)
 public getCarrierIdentifier (int $position)
 ```
 
-Get Carrier Identifier (OBR.10) 
+Get Carrier Identifier (SAC.10) 
 
  
 
@@ -341,7 +341,7 @@ Get Carrier Identifier (OBR.10)
 public getCarrierType (int $position)
 ```
 
-Get Carrier Type (OBR.9) 
+Get Carrier Type (SAC.9) 
 
  
 
@@ -368,7 +368,7 @@ Get Carrier Type (OBR.9)
 public getContainerDiameter (int $position)
 ```
 
-Get Container Diameter (OBR.17) 
+Get Container Diameter (SAC.17) 
 
  
 
@@ -395,7 +395,7 @@ Get Container Diameter (OBR.17)
 public getContainerHeight (int $position)
 ```
 
-Get Container Height (OBR.16) 
+Get Container Height (SAC.16) 
 
  
 
@@ -422,7 +422,7 @@ Get Container Height (OBR.16)
 public getContainerIdentifier (int $position)
 ```
 
-Get Container Identifier (OBR.3) 
+Get Container Identifier (SAC.3) 
 
  
 
@@ -449,7 +449,7 @@ Get Container Identifier (OBR.3)
 public getContainerSizeUnits (int $position)
 ```
 
-Get Container SizeUnits (OBR.20) 
+Get Container SizeUnits (SAC.20) 
 
  
 
@@ -476,7 +476,7 @@ Get Container SizeUnits (OBR.20)
 public getContainerStatus (int $position)
 ```
 
-Get Container Status (OBR.8) 
+Get Container Status (SAC.8) 
 
  
 
@@ -503,7 +503,7 @@ Get Container Status (OBR.8)
 public getContainerVolume (int $position)
 ```
 
-Get Container Volume (OBR.21) 
+Get Container Volume (SAC.21) 
 
  
 
@@ -530,7 +530,7 @@ Get Container Volume (OBR.21)
 public getDilutionFactor (int $position)
 ```
 
-Get Dilution Factor (OBR.29) 
+Get Dilution Factor (SAC.29) 
 
  
 
@@ -557,7 +557,7 @@ Get Dilution Factor (OBR.29)
 public getDrugInterference (int $position)
 ```
 
-Get Drug Interference (OBR.41) 
+Get Drug Interference (SAC.41) 
 
  
 
@@ -584,7 +584,7 @@ Get Drug Interference (OBR.41)
 public getEquipmentContainerIdentifier (int $position)
 ```
 
-Get Equipment ContainerIdentifier (OBR.5) 
+Get Equipment ContainerIdentifier (SAC.5) 
 
  
 
@@ -611,7 +611,7 @@ Get Equipment ContainerIdentifier (OBR.5)
 public getExternalAccessionIdentifier (int $position)
 ```
 
-Get External AccessionIdentifier (OBR.1) 
+Get External AccessionIdentifier (SAC.1) 
 
  
 
@@ -638,7 +638,7 @@ Get External AccessionIdentifier (OBR.1)
 public getFibrinIndex (int $position)
 ```
 
-Get Fibrin Index (OBR.38) 
+Get Fibrin Index (SAC.38) 
 
  
 
@@ -665,7 +665,7 @@ Get Fibrin Index (OBR.38)
 public getFibrinIndexUnits (int $position)
 ```
 
-Get Fibrin IndexUnits (OBR.39) 
+Get Fibrin IndexUnits (SAC.39) 
 
  
 
@@ -692,7 +692,7 @@ Get Fibrin IndexUnits (OBR.39)
 public getHemolysisIndex (int $position)
 ```
 
-Get Hemolysis Index (OBR.32) 
+Get Hemolysis Index (SAC.32) 
 
  
 
@@ -719,7 +719,7 @@ Get Hemolysis Index (OBR.32)
 public getHemolysisIndexUnits (int $position)
 ```
 
-Get Hemolysis IndexUnits (OBR.33) 
+Get Hemolysis IndexUnits (SAC.33) 
 
  
 
@@ -746,7 +746,7 @@ Get Hemolysis IndexUnits (OBR.33)
 public getIcterusIndex (int $position)
 ```
 
-Get Icterus Index (OBR.36) 
+Get Icterus Index (SAC.36) 
 
  
 
@@ -773,7 +773,7 @@ Get Icterus Index (OBR.36)
 public getIcterusIndexUnits (int $position)
 ```
 
-Get Icterus IndexUnits (OBR.37) 
+Get Icterus IndexUnits (SAC.37) 
 
  
 
@@ -800,7 +800,7 @@ Get Icterus IndexUnits (OBR.37)
 public getInitialSpecimenVolume (int $position)
 ```
 
-Get Initial SpecimenVolume (OBR.23) 
+Get Initial SpecimenVolume (SAC.23) 
 
  
 
@@ -827,7 +827,7 @@ Get Initial SpecimenVolume (OBR.23)
 public getLepemiaIndex (int $position)
 ```
 
-Get Lepemia Index (OBR.34) 
+Get Lepemia Index (SAC.34) 
 
  
 
@@ -854,7 +854,7 @@ Get Lepemia Index (OBR.34)
 public getLepemiaIndexUnits (int $position)
 ```
 
-Get Lepemia IndexUnits (OBR.35) 
+Get Lepemia IndexUnits (SAC.35) 
 
  
 
@@ -881,7 +881,7 @@ Get Lepemia IndexUnits (OBR.35)
 public getLocation (int $position)
 ```
 
-Get Location (OBR.15) 
+Get Location (SAC.15) 
 
  
 
@@ -908,7 +908,7 @@ Get Location (OBR.15)
 public getOtherEnvironmentalFactors (int $position)
 ```
 
-Get Other EnvironmentalFactors (OBR.44) 
+Get Other EnvironmentalFactors (SAC.44) 
 
  
 
@@ -935,7 +935,7 @@ Get Other EnvironmentalFactors (OBR.44)
 public getPositionInCarrier (int $position)
 ```
 
-Get Position InCarrier (OBR.11) 
+Get Position InCarrier (SAC.11) 
 
  
 
@@ -962,7 +962,7 @@ Get Position InCarrier (OBR.11)
 public getPositionInTray (int $position)
 ```
 
-Get Position InTray (OBR.14) 
+Get Position InTray (SAC.14) 
 
  
 
@@ -989,7 +989,7 @@ Get Position InTray (OBR.14)
 public getPrimaryContainerIdentifier (int $position)
 ```
 
-Get Primary ContainerIdentifier (OBR.4) 
+Get Primary ContainerIdentifier (SAC.4) 
 
  
 
@@ -1016,7 +1016,7 @@ Get Primary ContainerIdentifier (OBR.4)
 public getRegistrationDateTime (int $position)
 ```
 
-Get Registration DateTime (OBR.7) 
+Get Registration DateTime (SAC.7) 
 
  
 
@@ -1043,7 +1043,7 @@ Get Registration DateTime (OBR.7)
 public getSeparatorType (int $position)
 ```
 
-Get Separator Type (OBR.25) 
+Get Separator Type (SAC.25) 
 
  
 
@@ -1070,7 +1070,7 @@ Get Separator Type (OBR.25)
 public getSpecialHandlingCode (int $position)
 ```
 
-Get Special HandlingCode (OBR.43) 
+Get Special HandlingCode (SAC.43) 
 
  
 
@@ -1097,7 +1097,7 @@ Get Special HandlingCode (OBR.43)
 public getSpecimenComponent (int $position)
 ```
 
-Get Specimen Component (OBR.28) 
+Get Specimen Component (SAC.28) 
 
  
 
@@ -1124,7 +1124,7 @@ Get Specimen Component (OBR.28)
 public getSpecimenSource (int $position)
 ```
 
-Get Specimen Source (OBR.6) 
+Get Specimen Source (SAC.6) 
 
  
 
@@ -1151,7 +1151,7 @@ Get Specimen Source (OBR.6)
 public getSystemInducedContaminants (int $position)
 ```
 
-Get System InducedContaminants (OBR.40) 
+Get System InducedContaminants (SAC.40) 
 
  
 
@@ -1178,7 +1178,7 @@ Get System InducedContaminants (OBR.40)
 public getTemperature (int $position)
 ```
 
-Get Temperature (OBR.31) 
+Get Temperature (SAC.31) 
 
  
 
@@ -1205,7 +1205,7 @@ Get Temperature (OBR.31)
 public getTrayIdentifier (int $position)
 ```
 
-Get Tray Identifier (OBR.13) 
+Get Tray Identifier (SAC.13) 
 
  
 
@@ -1232,7 +1232,7 @@ Get Tray Identifier (OBR.13)
 public getTrayTypeSAC (int $position)
 ```
 
-Get Tray TypeSAC (OBR.12) 
+Get Tray TypeSAC (SAC.12) 
 
  
 
@@ -1259,7 +1259,7 @@ Get Tray TypeSAC (OBR.12)
 public getTreatment (int $position)
 ```
 
-Get Treatment (OBR.30) 
+Get Treatment (SAC.30) 
 
  
 
@@ -1286,7 +1286,7 @@ Get Treatment (OBR.30)
 public getVolumeUnits (int $position)
 ```
 
-Get Volume Units (OBR.24) 
+Get Volume Units (SAC.24) 
 
  
 
@@ -1337,7 +1337,7 @@ Reset index of this segment
 public setAccessionIdentifier (string|int|array|null $value, int $position)
 ```
 
-Set Accession Identifier (OBR.2) 
+Set Accession Identifier (SAC.2) 
 
  
 
@@ -1365,7 +1365,7 @@ Set Accession Identifier (OBR.2)
 public setAdditive (string|int|array|null $value, int $position)
 ```
 
-Set Additive (OBR.27) 
+Set Additive (SAC.27) 
 
  
 
@@ -1393,7 +1393,7 @@ Set Additive (OBR.27)
 public setArtificialBlood (string|int|array|null $value, int $position)
 ```
 
-Set Artificial Blood (OBR.42) 
+Set Artificial Blood (SAC.42) 
 
  
 
@@ -1421,7 +1421,7 @@ Set Artificial Blood (OBR.42)
 public setAvailableSpecimenVolume (string|int|array|null $value, int $position)
 ```
 
-Set Available SpecimenVolume (OBR.22) 
+Set Available Specimen Volume (SAC.22) 
 
  
 
@@ -1449,7 +1449,7 @@ Set Available SpecimenVolume (OBR.22)
 public setBarrierDelta (string|int|array|null $value, int $position)
 ```
 
-Set Barrier Delta (OBR.18) 
+Set Barrier Delta (SAC.18) 
 
  
 
@@ -1477,7 +1477,7 @@ Set Barrier Delta (OBR.18)
 public setBottomDelta (string|int|array|null $value, int $position)
 ```
 
-Set Bottom Delta (OBR.19) 
+Set Bottom Delta (SAC.19) 
 
  
 
@@ -1505,7 +1505,7 @@ Set Bottom Delta (OBR.19)
 public setCapType (string|int|array|null $value, int $position)
 ```
 
-Set Cap Type (OBR.26) 
+Set Cap Type (SAC.26) 
 
  
 
@@ -1533,7 +1533,7 @@ Set Cap Type (OBR.26)
 public setCarrierIdentifier (string|int|array|null $value, int $position)
 ```
 
-Set Carrier Identifier (OBR.10) 
+Set Carrier Identifier (SAC.10) 
 
  
 
@@ -1561,7 +1561,7 @@ Set Carrier Identifier (OBR.10)
 public setCarrierType (string|int|array|null $value, int $position)
 ```
 
-Set Carrier Type (OBR.9) 
+Set Carrier Type (SAC.9) 
 
  
 
@@ -1589,7 +1589,7 @@ Set Carrier Type (OBR.9)
 public setContainerDiameter (string|int|array|null $value, int $position)
 ```
 
-Set Container Diameter (OBR.17) 
+Set Container Diameter (SAC.17) 
 
  
 
@@ -1617,7 +1617,7 @@ Set Container Diameter (OBR.17)
 public setContainerHeight (string|int|array|null $value, int $position)
 ```
 
-Set Container Height (OBR.16) 
+Set Container Height (SAC.16) 
 
  
 
@@ -1645,7 +1645,7 @@ Set Container Height (OBR.16)
 public setContainerIdentifier (string|int|array|null $value, int $position)
 ```
 
-Set Container Identifier (OBR.3) 
+Set Container Identifier (SAC.3) 
 
  
 
@@ -1673,7 +1673,7 @@ Set Container Identifier (OBR.3)
 public setContainerSizeUnits (string|int|array|null $value, int $position)
 ```
 
-Set Container SizeUnits (OBR.20) 
+Set Container Size Units (SAC.20) 
 
  
 
@@ -1701,7 +1701,7 @@ Set Container SizeUnits (OBR.20)
 public setContainerStatus (string|int|array|null $value, int $position)
 ```
 
-Set Container Status (OBR.8) 
+Set Container Status (SAC.8) 
 
  
 
@@ -1729,7 +1729,7 @@ Set Container Status (OBR.8)
 public setContainerVolume (string|int|array|null $value, int $position)
 ```
 
-Set Container Volume (OBR.21) 
+Set Container Volume (SAC.21) 
 
  
 
@@ -1757,7 +1757,7 @@ Set Container Volume (OBR.21)
 public setDilutionFactor (string|int|array|null $value, int $position)
 ```
 
-Set Dilution Factor (OBR.29) 
+Set Dilution Factor (SAC.29) 
 
  
 
@@ -1785,7 +1785,7 @@ Set Dilution Factor (OBR.29)
 public setDrugInterference (string|int|array|null $value, int $position)
 ```
 
-Set Drug Interference (OBR.41) 
+Set Drug Interference (SAC.41) 
 
  
 
@@ -1813,7 +1813,7 @@ Set Drug Interference (OBR.41)
 public setEquipmentContainerIdentifier (string|int|array|null $value, int $position)
 ```
 
-Set Equipment ContainerIdentifier (OBR.5) 
+Set Equipment Container Identifier (SAC.5) 
 
  
 
@@ -1865,7 +1865,7 @@ Set Equipment ContainerIdentifier (OBR.5)
 public setFibrinIndex (string|int|array|null $value, int $position)
 ```
 
-Set Fibrin Index (OBR.38) 
+Set Fibrin Index (SAC.38) 
 
  
 
@@ -1893,7 +1893,7 @@ Set Fibrin Index (OBR.38)
 public setFibrinIndexUnits (string|int|array|null $value, int $position)
 ```
 
-Set Fibrin IndexUnits (OBR.39) 
+Set Fibrin Index Units (SAC.39) 
 
  
 
@@ -1921,7 +1921,7 @@ Set Fibrin IndexUnits (OBR.39)
 public setHemolysisIndex (string|int|array|null $value, int $position)
 ```
 
-Set Hemolysis Index (OBR.32) 
+Set Hemolysis Index (SAC.32) 
 
  
 
@@ -1949,7 +1949,7 @@ Set Hemolysis Index (OBR.32)
 public setHemolysisIndexUnits (string|int|array|null $value, int $position)
 ```
 
-Set Hemolysis IndexUnits (OBR.33) 
+Set Hemolysis Index Units (SAC.33) 
 
  
 
@@ -1977,7 +1977,7 @@ Set Hemolysis IndexUnits (OBR.33)
 public setIcterusIndex (string|int|array|null $value, int $position)
 ```
 
-Set Icterus Index (OBR.36) 
+Set Icterus Index (SAC.36) 
 
  
 
@@ -2005,7 +2005,7 @@ Set Icterus Index (OBR.36)
 public setIcterusIndexUnits (string|int|array|null $value, int $position)
 ```
 
-Set Icterus IndexUnits (OBR.37) 
+Set Icterus Index Units (SAC.37) 
 
  
 
@@ -2033,7 +2033,7 @@ Set Icterus IndexUnits (OBR.37)
 public setInitialSpecimenVolume (string|int|array|null $value, int $position)
 ```
 
-Set Initial SpecimenVolume (OBR.23) 
+Set Initial Specimen Volume (SAC.23) 
 
  
 
@@ -2061,7 +2061,7 @@ Set Initial SpecimenVolume (OBR.23)
 public setLepemiaIndex (string|int|array|null $value, int $position)
 ```
 
-Set Lepemia Index (OBR.34) 
+Set Lepemia Index (SAC.34) 
 
  
 
@@ -2089,7 +2089,7 @@ Set Lepemia Index (OBR.34)
 public setLepemiaIndexUnits (string|int|array|null $value, int $position)
 ```
 
-Set Lepemia IndexUnits (OBR.35) 
+Set Lepemia Index Units (SAC.35) 
 
  
 
@@ -2117,7 +2117,7 @@ Set Lepemia IndexUnits (OBR.35)
 public setLocation (string|int|array|null $value, int $position)
 ```
 
-Set Location (OBR.15) 
+Set Location (SAC.15) 
 
  
 
@@ -2145,7 +2145,7 @@ Set Location (OBR.15)
 public setOtherEnvironmentalFactors (string|int|array|null $value, int $position)
 ```
 
-Set Other EnvironmentalFactors (OBR.44) 
+Set Other Environmental Factors (SAC.44) 
 
  
 
@@ -2173,7 +2173,7 @@ Set Other EnvironmentalFactors (OBR.44)
 public setPositionInCarrier (string|int|array|null $value, int $position)
 ```
 
-Set Position InCarrier (OBR.11) 
+Set Position In Carrier (SAC.11) 
 
  
 
@@ -2201,7 +2201,7 @@ Set Position InCarrier (OBR.11)
 public setPositionInTray (string|int|array|null $value, int $position)
 ```
 
-Set Position InTray (OBR.14) 
+Set Position In Tray (SAC.14) 
 
  
 
@@ -2229,7 +2229,7 @@ Set Position InTray (OBR.14)
 public setPrimaryContainerIdentifier (string|int|array|null $value, int $position)
 ```
 
-Set Primary ContainerIdentifier (OBR.4) 
+Set Primary Container Identifier (SAC.4) 
 
  
 
@@ -2257,7 +2257,7 @@ Set Primary ContainerIdentifier (OBR.4)
 public setRegistrationDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Registration DateTime (OBR.7) 
+Set Registration Date Time (SAC.7) 
 
  
 
@@ -2285,7 +2285,7 @@ Set Registration DateTime (OBR.7)
 public setSeparatorType (string|int|array|null $value, int $position)
 ```
 
-Set Separator Type (OBR.25) 
+Set Separator Type (SAC.25) 
 
  
 
@@ -2313,7 +2313,7 @@ Set Separator Type (OBR.25)
 public setSpecialHandlingCode (string|int|array|null $value, int $position)
 ```
 
-Set Special HandlingCode (OBR.43) 
+Set Special Handling Code (SAC.43) 
 
  
 
@@ -2341,7 +2341,7 @@ Set Special HandlingCode (OBR.43)
 public setSpecimenComponent (string|int|array|null $value, int $position)
 ```
 
-Set Specimen Component (OBR.28) 
+Set Specimen Component (SAC.28) 
 
  
 
@@ -2369,7 +2369,7 @@ Set Specimen Component (OBR.28)
 public setSpecimenSource (string|int|array|null $value, int $position)
 ```
 
-Set Specimen Source (OBR.6) 
+Set Specimen Source (SAC.6) 
 
  
 
@@ -2397,7 +2397,7 @@ Set Specimen Source (OBR.6)
 public setSystemInducedContaminants (string|int|array|null $value, int $position)
 ```
 
-Set System InducedContaminants (OBR.40) 
+Set System Induced Contaminants (SAC.40) 
 
  
 
@@ -2425,7 +2425,7 @@ Set System InducedContaminants (OBR.40)
 public setTemperature (string|int|array|null $value, int $position)
 ```
 
-Set Temperature (OBR.31) 
+Set Temperature (SAC.31) 
 
  
 
@@ -2453,7 +2453,7 @@ Set Temperature (OBR.31)
 public setTrayIdentifier (string|int|array|null $value, int $position)
 ```
 
-Set Tray Identifier (OBR.13) 
+Set Tray Identifier (SAC.13) 
 
  
 
@@ -2481,7 +2481,7 @@ Set Tray Identifier (OBR.13)
 public setTrayTypeSAC (string|int|array|null $value, int $position)
 ```
 
-Set Tray TypeSAC (OBR.12) 
+Set Tray Type SAC (SAC.12) 
 
  
 
@@ -2509,7 +2509,7 @@ Set Tray TypeSAC (OBR.12)
 public setTreatment (string|int|array|null $value, int $position)
 ```
 
-Set Treatment (OBR.30) 
+Set Treatment (SAC.30) 
 
  
 
@@ -2537,7 +2537,7 @@ Set Treatment (OBR.30)
 public setVolumeUnits (string|int|array|null $value, int $position)
 ```
 
-Set Volume Units (OBR.24) 
+Set Volume Units (SAC.24) 
 
  
 

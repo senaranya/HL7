@@ -14,15 +14,15 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[__destruct](#nte__destruct)||
-|[getComment](#ntegetcomment)|Get Comment (OBR.3)|
-|[getCommentType](#ntegetcommenttype)|Get Comment Type (OBR.4)|
-|[getID](#ntegetid)|Get ID (OBR.1)|
-|[getSourceOfComment](#ntegetsourceofcomment)|Get Source OfComment (OBR.2)|
+|[getComment](#ntegetcomment)|Get Comment (NTE.3)|
+|[getCommentType](#ntegetcommenttype)|Get Comment Type (NTE.4)|
+|[getID](#ntegetid)|Get ID (NTE.1)|
+|[getSourceOfComment](#ntegetsourceofcomment)|Get Source OfComment (NTE.2)|
 |[resetIndex](#nteresetindex)|Reset index of this segment|
-|[setComment](#ntesetcomment)|Set Comment (OBR.3)|
-|[setCommentType](#ntesetcommenttype)|Set Comment Type (OBR.4)|
+|[setComment](#ntesetcomment)|Set Comment (NTE.3)|
+|[setCommentType](#ntesetcommenttype)|Set Comment Type (NTE.4)|
 |[setID](#ntesetid)||
-|[setSourceOfComment](#ntesetsourceofcomment)|Set Source OfComment (OBR.2)|
+|[setSourceOfComment](#ntesetsourceofcomment)|Set Source Of Comment (NTE.2)|
 
 ## Inherited methods
 
@@ -70,7 +70,7 @@ Aranyasen\HL7\Segment
 public getComment (int $position)
 ```
 
-Get Comment (OBR.3) 
+Get Comment (NTE.3) 
 
  
 
@@ -97,7 +97,7 @@ Get Comment (OBR.3)
 public getCommentType (int $position)
 ```
 
-Get Comment Type (OBR.4) 
+Get Comment Type (NTE.4) 
 
  
 
@@ -124,7 +124,7 @@ Get Comment Type (OBR.4)
 public getID (int $position)
 ```
 
-Get ID (OBR.1) 
+Get ID (NTE.1) 
 
  
 
@@ -151,7 +151,7 @@ Get ID (OBR.1)
 public getSourceOfComment (int $position)
 ```
 
-Get Source OfComment (OBR.2) 
+Get Source OfComment (NTE.2) 
 
  
 
@@ -202,7 +202,7 @@ Reset index of this segment
 public setComment (string|int|array|null $value, int $position)
 ```
 
-Set Comment (OBR.3) 
+Set Comment (NTE.3) 
 
  
 
@@ -230,7 +230,7 @@ Set Comment (OBR.3)
 public setCommentType (string|int|array|null $value, int $position)
 ```
 
-Set Comment Type (OBR.4) 
+Set Comment Type (NTE.4) 
 
  
 
@@ -282,7 +282,7 @@ Set Comment Type (OBR.4)
 public setSourceOfComment (string|int|array|null $value, int $position)
 ```
 
-Set Source OfComment (OBR.2) 
+Set Source Of Comment (NTE.2) 
 
  
 

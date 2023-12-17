@@ -14,67 +14,67 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[__destruct](#pid__destruct)||
-|[getAlternatePatientID](#pidgetalternatepatientid)|Get Alternate PatientID (OBR.4)|
-|[getBirthOrder](#pidgetbirthorder)|Get Birth Order (OBR.25)|
-|[getBirthPlace](#pidgetbirthplace)|Get Birth Place (OBR.23)|
-|[getCitizenship](#pidgetcitizenship)|Get Citizenship (OBR.26)|
-|[getCountryCode](#pidgetcountrycode)|Get Country Code (OBR.12)|
-|[getDateTimeOfBirth](#pidgetdatetimeofbirth)|Get Date TimeOfBirth (OBR.7)|
-|[getDriversLicenseNumber](#pidgetdriverslicensenumber)|Get Drivers LicenseNumber (OBR.20)|
-|[getEthnicGroup](#pidgetethnicgroup)|Get Ethnic Group (OBR.22)|
-|[getID](#pidgetid)|Get ID (OBR.1)|
-|[getMaritalStatus](#pidgetmaritalstatus)|Get Marital Status (OBR.16)|
-|[getMothersIdentifier](#pidgetmothersidentifier)|Get Mothers Identifier (OBR.21)|
-|[getMothersMaidenName](#pidgetmothersmaidenname)|Get Mothers MaidenName (OBR.6)|
-|[getMultipleBirthIndicator](#pidgetmultiplebirthindicator)|Get Multiple BirthIndicator (OBR.24)|
-|[getNationality](#pidgetnationality)|Get Nationality (OBR.28)|
-|[getPatientAccountNumber](#pidgetpatientaccountnumber)|Get Patient AccountNumber (OBR.18)|
-|[getPatientAddress](#pidgetpatientaddress)|Get Patient Address (OBR.11)|
-|[getPatientAlias](#pidgetpatientalias)|Get Patient Alias (OBR.9)|
-|[getPatientDeathDateAndTime](#pidgetpatientdeathdateandtime)|Get Patient DeathDateAndTime (OBR.29)|
-|[getPatientDeathIndicator](#pidgetpatientdeathindicator)|Get Patient DeathIndicator (OBR.30)|
-|[getPatientID](#pidgetpatientid)|Get Patient ID (OBR.2)|
-|[getPatientIdentifierList](#pidgetpatientidentifierlist)|Get Patient IdentifierList (OBR.3)|
-|[getPatientName](#pidgetpatientname)|Get Patient Name (OBR.5)|
-|[getPhoneNumberBusiness](#pidgetphonenumberbusiness)|Get Phone NumberBusiness (OBR.14)|
-|[getPhoneNumberHome](#pidgetphonenumberhome)|Get Phone NumberHome (OBR.13)|
-|[getPrimaryLanguage](#pidgetprimarylanguage)|Get Primary Language (OBR.15)|
-|[getRace](#pidgetrace)|Get Race (OBR.10)|
-|[getReligion](#pidgetreligion)|Get Religion (OBR.17)|
-|[getSSNNumber](#pidgetssnnumber)|Get SSNNumber (OBR.19)|
-|[getSex](#pidgetsex)|Get Sex (OBR.8)|
-|[getVeteransMilitaryStatus](#pidgetveteransmilitarystatus)|Get Veterans MilitaryStatus (OBR.27)|
+|[getAlternatePatientID](#pidgetalternatepatientid)|Get Alternate PatientID (PID.4)|
+|[getBirthOrder](#pidgetbirthorder)|Get Birth Order (PID.25)|
+|[getBirthPlace](#pidgetbirthplace)|Get Birth Place (PID.23)|
+|[getCitizenship](#pidgetcitizenship)|Get Citizenship (PID.26)|
+|[getCountryCode](#pidgetcountrycode)|Get Country Code (PID.12)|
+|[getDateTimeOfBirth](#pidgetdatetimeofbirth)|Get Date TimeOfBirth (PID.7)|
+|[getDriversLicenseNumber](#pidgetdriverslicensenumber)|Get Drivers LicenseNumber (PID.20)|
+|[getEthnicGroup](#pidgetethnicgroup)|Get Ethnic Group (PID.22)|
+|[getID](#pidgetid)|Get ID (PID.1)|
+|[getMaritalStatus](#pidgetmaritalstatus)|Get Marital Status (PID.16)|
+|[getMothersIdentifier](#pidgetmothersidentifier)|Get Mothers Identifier (PID.21)|
+|[getMothersMaidenName](#pidgetmothersmaidenname)|Get Mothers MaidenName (PID.6)|
+|[getMultipleBirthIndicator](#pidgetmultiplebirthindicator)|Get Multiple BirthIndicator (PID.24)|
+|[getNationality](#pidgetnationality)|Get Nationality (PID.28)|
+|[getPatientAccountNumber](#pidgetpatientaccountnumber)|Get Patient AccountNumber (PID.18)|
+|[getPatientAddress](#pidgetpatientaddress)|Get Patient Address (PID.11)|
+|[getPatientAlias](#pidgetpatientalias)|Get Patient Alias (PID.9)|
+|[getPatientDeathDateAndTime](#pidgetpatientdeathdateandtime)|Get Patient DeathDateAndTime (PID.29)|
+|[getPatientDeathIndicator](#pidgetpatientdeathindicator)|Get Patient DeathIndicator (PID.30)|
+|[getPatientID](#pidgetpatientid)|Get Patient ID (PID.2)|
+|[getPatientIdentifierList](#pidgetpatientidentifierlist)|Get Patient IdentifierList (PID.3)|
+|[getPatientName](#pidgetpatientname)|Get Patient Name (PID.5)|
+|[getPhoneNumberBusiness](#pidgetphonenumberbusiness)|Get Phone NumberBusiness (PID.14)|
+|[getPhoneNumberHome](#pidgetphonenumberhome)|Get Phone NumberHome (PID.13)|
+|[getPrimaryLanguage](#pidgetprimarylanguage)|Get Primary Language (PID.15)|
+|[getRace](#pidgetrace)|Get Race (PID.10)|
+|[getReligion](#pidgetreligion)|Get Religion (PID.17)|
+|[getSSNNumber](#pidgetssnnumber)|Get SSNNumber (PID.19)|
+|[getSex](#pidgetsex)|Get Sex (PID.8)|
+|[getVeteransMilitaryStatus](#pidgetveteransmilitarystatus)|Get Veterans MilitaryStatus (PID.27)|
 |[resetIndex](#pidresetindex)|Reset index of this segment|
-|[setAlternatePatientID](#pidsetalternatepatientid)|Set Alternate PatientID (OBR.4)|
-|[setBirthOrder](#pidsetbirthorder)|Set Birth Order (OBR.25)|
-|[setBirthPlace](#pidsetbirthplace)|Set Birth Place (OBR.23)|
-|[setCitizenship](#pidsetcitizenship)|Set Citizenship (OBR.26)|
-|[setCountryCode](#pidsetcountrycode)|Set Country Code (OBR.12)|
-|[setDateTimeOfBirth](#pidsetdatetimeofbirth)|Set Date TimeOfBirth (OBR.7)|
-|[setDriversLicenseNumber](#pidsetdriverslicensenumber)|Set Drivers LicenseNumber (OBR.20)|
-|[setEthnicGroup](#pidsetethnicgroup)|Set Ethnic Group (OBR.22)|
+|[setAlternatePatientID](#pidsetalternatepatientid)|Set Alternate Patient ID (PID.4)|
+|[setBirthOrder](#pidsetbirthorder)|Set Birth Order (PID.25)|
+|[setBirthPlace](#pidsetbirthplace)|Set Birth Place (PID.23)|
+|[setCitizenship](#pidsetcitizenship)|Set Citizenship (PID.26)|
+|[setCountryCode](#pidsetcountrycode)|Set Country Code (PID.12)|
+|[setDateTimeOfBirth](#pidsetdatetimeofbirth)|Set Date Time Of Birth (PID.7)|
+|[setDriversLicenseNumber](#pidsetdriverslicensenumber)|Set Drivers License Number (PID.20)|
+|[setEthnicGroup](#pidsetethnicgroup)|Set Ethnic Group (PID.22)|
 |[setID](#pidsetid)||
-|[setMaritalStatus](#pidsetmaritalstatus)|Set Marital Status (OBR.16)|
-|[setMothersIdentifier](#pidsetmothersidentifier)|Set Mothers Identifier (OBR.21)|
-|[setMothersMaidenName](#pidsetmothersmaidenname)|Set Mothers MaidenName (OBR.6)|
-|[setMultipleBirthIndicator](#pidsetmultiplebirthindicator)|Set Multiple BirthIndicator (OBR.24)|
-|[setNationality](#pidsetnationality)|Set Nationality (OBR.28)|
-|[setPatientAccountNumber](#pidsetpatientaccountnumber)|Set Patient AccountNumber (OBR.18)|
-|[setPatientAddress](#pidsetpatientaddress)|Set Patient Address (OBR.11)|
-|[setPatientAlias](#pidsetpatientalias)|Set Patient Alias (OBR.9)|
-|[setPatientDeathDateAndTime](#pidsetpatientdeathdateandtime)|Set Patient DeathDateAndTime (OBR.29)|
-|[setPatientDeathIndicator](#pidsetpatientdeathindicator)|Set Patient DeathIndicator (OBR.30)|
-|[setPatientID](#pidsetpatientid)|Set Patient ID (OBR.2)|
-|[setPatientIdentifierList](#pidsetpatientidentifierlist)|Set Patient IdentifierList (OBR.3)|
-|[setPatientName](#pidsetpatientname)|Set Patient Name (OBR.5)|
-|[setPhoneNumberBusiness](#pidsetphonenumberbusiness)|Set Phone NumberBusiness (OBR.14)|
-|[setPhoneNumberHome](#pidsetphonenumberhome)|Set Phone NumberHome (OBR.13)|
-|[setPrimaryLanguage](#pidsetprimarylanguage)|Set Primary Language (OBR.15)|
-|[setRace](#pidsetrace)|Set Race (OBR.10)|
-|[setReligion](#pidsetreligion)|Set Religion (OBR.17)|
-|[setSSNNumber](#pidsetssnnumber)|Set SSNNumber (OBR.19)|
+|[setMaritalStatus](#pidsetmaritalstatus)|Set Marital Status (PID.16)|
+|[setMothersIdentifier](#pidsetmothersidentifier)|Set Mothers Identifier (PID.21)|
+|[setMothersMaidenName](#pidsetmothersmaidenname)|Set Mothers Maiden Name (PID.6)|
+|[setMultipleBirthIndicator](#pidsetmultiplebirthindicator)|Set Multiple Birth Indicator (PID.24)|
+|[setNationality](#pidsetnationality)|Set Nationality (PID.28)|
+|[setPatientAccountNumber](#pidsetpatientaccountnumber)|Set Patient Account Number (PID.18)|
+|[setPatientAddress](#pidsetpatientaddress)|Set Patient Address (PID.11)|
+|[setPatientAlias](#pidsetpatientalias)|Set Patient Alias (PID.9)|
+|[setPatientDeathDateAndTime](#pidsetpatientdeathdateandtime)|Set Patient Death Date And Time (PID.29)|
+|[setPatientDeathIndicator](#pidsetpatientdeathindicator)|Set Patient Death Indicator (PID.30)|
+|[setPatientID](#pidsetpatientid)|Set Patient ID (PID.2)|
+|[setPatientIdentifierList](#pidsetpatientidentifierlist)|Set Patient Identifier List (PID.3)|
+|[setPatientName](#pidsetpatientname)|Set Patient Name (PID.5)|
+|[setPhoneNumberBusiness](#pidsetphonenumberbusiness)|Set Phone Number Business (PID.14)|
+|[setPhoneNumberHome](#pidsetphonenumberhome)|Set Phone Number Home (PID.13)|
+|[setPrimaryLanguage](#pidsetprimarylanguage)|Set Primary Language (PID.15)|
+|[setRace](#pidsetrace)|Set Race (PID.10)|
+|[setReligion](#pidsetreligion)|Set Religion (PID.17)|
+|[setSSNNumber](#pidsetssnnumber)|Set SSNNumber (PID.19)|
 |[setSex](#pidsetsex)||
-|[setVeteransMilitaryStatus](#pidsetveteransmilitarystatus)|Set Veterans MilitaryStatus (OBR.27)|
+|[setVeteransMilitaryStatus](#pidsetveteransmilitarystatus)|Set Veterans Military Status (PID.27)|
 
 ## Inherited methods
 
@@ -122,7 +122,7 @@ Aranyasen\HL7\Segment
 public getAlternatePatientID (int $position)
 ```
 
-Get Alternate PatientID (OBR.4) 
+Get Alternate PatientID (PID.4) 
 
  
 
@@ -149,7 +149,7 @@ Get Alternate PatientID (OBR.4)
 public getBirthOrder (int $position)
 ```
 
-Get Birth Order (OBR.25) 
+Get Birth Order (PID.25) 
 
  
 
@@ -176,7 +176,7 @@ Get Birth Order (OBR.25)
 public getBirthPlace (int $position)
 ```
 
-Get Birth Place (OBR.23) 
+Get Birth Place (PID.23) 
 
  
 
@@ -203,7 +203,7 @@ Get Birth Place (OBR.23)
 public getCitizenship (int $position)
 ```
 
-Get Citizenship (OBR.26) 
+Get Citizenship (PID.26) 
 
  
 
@@ -230,7 +230,7 @@ Get Citizenship (OBR.26)
 public getCountryCode (int $position)
 ```
 
-Get Country Code (OBR.12) 
+Get Country Code (PID.12) 
 
  
 
@@ -257,7 +257,7 @@ Get Country Code (OBR.12)
 public getDateTimeOfBirth (int $position)
 ```
 
-Get Date TimeOfBirth (OBR.7) 
+Get Date TimeOfBirth (PID.7) 
 
  
 
@@ -284,7 +284,7 @@ Get Date TimeOfBirth (OBR.7)
 public getDriversLicenseNumber (int $position)
 ```
 
-Get Drivers LicenseNumber (OBR.20) 
+Get Drivers LicenseNumber (PID.20) 
 
  
 
@@ -311,7 +311,7 @@ Get Drivers LicenseNumber (OBR.20)
 public getEthnicGroup (int $position)
 ```
 
-Get Ethnic Group (OBR.22) 
+Get Ethnic Group (PID.22) 
 
  
 
@@ -338,7 +338,7 @@ Get Ethnic Group (OBR.22)
 public getID (int $position)
 ```
 
-Get ID (OBR.1) 
+Get ID (PID.1) 
 
  
 
@@ -365,7 +365,7 @@ Get ID (OBR.1)
 public getMaritalStatus (int $position)
 ```
 
-Get Marital Status (OBR.16) 
+Get Marital Status (PID.16) 
 
  
 
@@ -392,7 +392,7 @@ Get Marital Status (OBR.16)
 public getMothersIdentifier (int $position)
 ```
 
-Get Mothers Identifier (OBR.21) 
+Get Mothers Identifier (PID.21) 
 
  
 
@@ -419,7 +419,7 @@ Get Mothers Identifier (OBR.21)
 public getMothersMaidenName (int $position)
 ```
 
-Get Mothers MaidenName (OBR.6) 
+Get Mothers MaidenName (PID.6) 
 
  
 
@@ -446,7 +446,7 @@ Get Mothers MaidenName (OBR.6)
 public getMultipleBirthIndicator (int $position)
 ```
 
-Get Multiple BirthIndicator (OBR.24) 
+Get Multiple BirthIndicator (PID.24) 
 
  
 
@@ -473,7 +473,7 @@ Get Multiple BirthIndicator (OBR.24)
 public getNationality (int $position)
 ```
 
-Get Nationality (OBR.28) 
+Get Nationality (PID.28) 
 
  
 
@@ -500,7 +500,7 @@ Get Nationality (OBR.28)
 public getPatientAccountNumber (int $position)
 ```
 
-Get Patient AccountNumber (OBR.18) 
+Get Patient AccountNumber (PID.18) 
 
  
 
@@ -527,7 +527,7 @@ Get Patient AccountNumber (OBR.18)
 public getPatientAddress (int $position)
 ```
 
-Get Patient Address (OBR.11) 
+Get Patient Address (PID.11) 
 
  
 
@@ -554,7 +554,7 @@ Get Patient Address (OBR.11)
 public getPatientAlias (int $position)
 ```
 
-Get Patient Alias (OBR.9) 
+Get Patient Alias (PID.9) 
 
  
 
@@ -581,7 +581,7 @@ Get Patient Alias (OBR.9)
 public getPatientDeathDateAndTime (int $position)
 ```
 
-Get Patient DeathDateAndTime (OBR.29) 
+Get Patient DeathDateAndTime (PID.29) 
 
  
 
@@ -608,7 +608,7 @@ Get Patient DeathDateAndTime (OBR.29)
 public getPatientDeathIndicator (int $position)
 ```
 
-Get Patient DeathIndicator (OBR.30) 
+Get Patient DeathIndicator (PID.30) 
 
  
 
@@ -635,7 +635,7 @@ Get Patient DeathIndicator (OBR.30)
 public getPatientID (int $position)
 ```
 
-Get Patient ID (OBR.2) 
+Get Patient ID (PID.2) 
 
  
 
@@ -662,7 +662,7 @@ Get Patient ID (OBR.2)
 public getPatientIdentifierList (int $position)
 ```
 
-Get Patient IdentifierList (OBR.3) 
+Get Patient IdentifierList (PID.3) 
 
  
 
@@ -689,7 +689,7 @@ Get Patient IdentifierList (OBR.3)
 public getPatientName (int $position)
 ```
 
-Get Patient Name (OBR.5) 
+Get Patient Name (PID.5) 
 
  
 
@@ -716,7 +716,7 @@ Get Patient Name (OBR.5)
 public getPhoneNumberBusiness (int $position)
 ```
 
-Get Phone NumberBusiness (OBR.14) 
+Get Phone NumberBusiness (PID.14) 
 
  
 
@@ -743,7 +743,7 @@ Get Phone NumberBusiness (OBR.14)
 public getPhoneNumberHome (int $position)
 ```
 
-Get Phone NumberHome (OBR.13) 
+Get Phone NumberHome (PID.13) 
 
  
 
@@ -770,7 +770,7 @@ Get Phone NumberHome (OBR.13)
 public getPrimaryLanguage (int $position)
 ```
 
-Get Primary Language (OBR.15) 
+Get Primary Language (PID.15) 
 
  
 
@@ -797,7 +797,7 @@ Get Primary Language (OBR.15)
 public getRace (int $position)
 ```
 
-Get Race (OBR.10) 
+Get Race (PID.10) 
 
  
 
@@ -824,7 +824,7 @@ Get Race (OBR.10)
 public getReligion (int $position)
 ```
 
-Get Religion (OBR.17) 
+Get Religion (PID.17) 
 
  
 
@@ -851,7 +851,7 @@ Get Religion (OBR.17)
 public getSSNNumber (int $position)
 ```
 
-Get SSNNumber (OBR.19) 
+Get SSNNumber (PID.19) 
 
  
 
@@ -878,7 +878,7 @@ Get SSNNumber (OBR.19)
 public getSex (int $position)
 ```
 
-Get Sex (OBR.8) 
+Get Sex (PID.8) 
 
  
 
@@ -905,7 +905,7 @@ Get Sex (OBR.8)
 public getVeteransMilitaryStatus (int $position)
 ```
 
-Get Veterans MilitaryStatus (OBR.27) 
+Get Veterans MilitaryStatus (PID.27) 
 
  
 
@@ -956,7 +956,7 @@ Reset index of this segment
 public setAlternatePatientID (string|int|array|null $value, int $position)
 ```
 
-Set Alternate PatientID (OBR.4) 
+Set Alternate Patient ID (PID.4) 
 
  
 
@@ -984,7 +984,7 @@ Set Alternate PatientID (OBR.4)
 public setBirthOrder (string|int|array|null $value, int $position)
 ```
 
-Set Birth Order (OBR.25) 
+Set Birth Order (PID.25) 
 
  
 
@@ -1012,7 +1012,7 @@ Set Birth Order (OBR.25)
 public setBirthPlace (string|int|array|null $value, int $position)
 ```
 
-Set Birth Place (OBR.23) 
+Set Birth Place (PID.23) 
 
  
 
@@ -1040,7 +1040,7 @@ Set Birth Place (OBR.23)
 public setCitizenship (string|int|array|null $value, int $position)
 ```
 
-Set Citizenship (OBR.26) 
+Set Citizenship (PID.26) 
 
  
 
@@ -1068,7 +1068,7 @@ Set Citizenship (OBR.26)
 public setCountryCode (string|int|array|null $value, int $position)
 ```
 
-Set Country Code (OBR.12) 
+Set Country Code (PID.12) 
 
  
 
@@ -1096,7 +1096,7 @@ Set Country Code (OBR.12)
 public setDateTimeOfBirth (string|int|array|null $value, int $position)
 ```
 
-Set Date TimeOfBirth (OBR.7) 
+Set Date Time Of Birth (PID.7) 
 
  
 
@@ -1124,7 +1124,7 @@ Set Date TimeOfBirth (OBR.7)
 public setDriversLicenseNumber (string|int|array|null $value, int $position)
 ```
 
-Set Drivers LicenseNumber (OBR.20) 
+Set Drivers License Number (PID.20) 
 
  
 
@@ -1152,7 +1152,7 @@ Set Drivers LicenseNumber (OBR.20)
 public setEthnicGroup (string|int|array|null $value, int $position)
 ```
 
-Set Ethnic Group (OBR.22) 
+Set Ethnic Group (PID.22) 
 
  
 
@@ -1204,7 +1204,7 @@ Set Ethnic Group (OBR.22)
 public setMaritalStatus (string|int|array|null $value, int $position)
 ```
 
-Set Marital Status (OBR.16) 
+Set Marital Status (PID.16) 
 
  
 
@@ -1232,7 +1232,7 @@ Set Marital Status (OBR.16)
 public setMothersIdentifier (string|int|array|null $value, int $position)
 ```
 
-Set Mothers Identifier (OBR.21) 
+Set Mothers Identifier (PID.21) 
 
  
 
@@ -1260,7 +1260,7 @@ Set Mothers Identifier (OBR.21)
 public setMothersMaidenName (string|int|array|null $value, int $position)
 ```
 
-Set Mothers MaidenName (OBR.6) 
+Set Mothers Maiden Name (PID.6) 
 
  
 
@@ -1288,7 +1288,7 @@ Set Mothers MaidenName (OBR.6)
 public setMultipleBirthIndicator (string|int|array|null $value, int $position)
 ```
 
-Set Multiple BirthIndicator (OBR.24) 
+Set Multiple Birth Indicator (PID.24) 
 
  
 
@@ -1316,7 +1316,7 @@ Set Multiple BirthIndicator (OBR.24)
 public setNationality (string|int|array|null $value, int $position)
 ```
 
-Set Nationality (OBR.28) 
+Set Nationality (PID.28) 
 
  
 
@@ -1344,7 +1344,7 @@ Set Nationality (OBR.28)
 public setPatientAccountNumber (string|int|array|null $value, int $position)
 ```
 
-Set Patient AccountNumber (OBR.18) 
+Set Patient Account Number (PID.18) 
 
  
 
@@ -1372,7 +1372,7 @@ Set Patient AccountNumber (OBR.18)
 public setPatientAddress (string|int|array|null $value, int $position)
 ```
 
-Set Patient Address (OBR.11) 
+Set Patient Address (PID.11) 
 
  
 
@@ -1400,7 +1400,7 @@ Set Patient Address (OBR.11)
 public setPatientAlias (string|int|array|null $value, int $position)
 ```
 
-Set Patient Alias (OBR.9) 
+Set Patient Alias (PID.9) 
 
  
 
@@ -1428,7 +1428,7 @@ Set Patient Alias (OBR.9)
 public setPatientDeathDateAndTime (string|int|array|null $value, int $position)
 ```
 
-Set Patient DeathDateAndTime (OBR.29) 
+Set Patient Death Date And Time (PID.29) 
 
  
 
@@ -1456,7 +1456,7 @@ Set Patient DeathDateAndTime (OBR.29)
 public setPatientDeathIndicator (string|int|array|null $value, int $position)
 ```
 
-Set Patient DeathIndicator (OBR.30) 
+Set Patient Death Indicator (PID.30) 
 
  
 
@@ -1484,7 +1484,7 @@ Set Patient DeathIndicator (OBR.30)
 public setPatientID (string|int|array|null $value, int $position)
 ```
 
-Set Patient ID (OBR.2) 
+Set Patient ID (PID.2) 
 
  
 
@@ -1512,7 +1512,7 @@ Set Patient ID (OBR.2)
 public setPatientIdentifierList (string|int|array|null $value, int $position)
 ```
 
-Set Patient IdentifierList (OBR.3) 
+Set Patient Identifier List (PID.3) 
 
  
 
@@ -1540,7 +1540,7 @@ Set Patient IdentifierList (OBR.3)
 public setPatientName (string|int|array|null $value, int $position)
 ```
 
-Set Patient Name (OBR.5) 
+Set Patient Name (PID.5) 
 
  
 
@@ -1568,7 +1568,7 @@ Set Patient Name (OBR.5)
 public setPhoneNumberBusiness (string|int|array|null $value, int $position)
 ```
 
-Set Phone NumberBusiness (OBR.14) 
+Set Phone Number Business (PID.14) 
 
  
 
@@ -1596,7 +1596,7 @@ Set Phone NumberBusiness (OBR.14)
 public setPhoneNumberHome (string|int|array|null $value, int $position)
 ```
 
-Set Phone NumberHome (OBR.13) 
+Set Phone Number Home (PID.13) 
 
  
 
@@ -1624,7 +1624,7 @@ Set Phone NumberHome (OBR.13)
 public setPrimaryLanguage (string|int|array|null $value, int $position)
 ```
 
-Set Primary Language (OBR.15) 
+Set Primary Language (PID.15) 
 
  
 
@@ -1652,7 +1652,7 @@ Set Primary Language (OBR.15)
 public setRace (string|int|array|null $value, int $position)
 ```
 
-Set Race (OBR.10) 
+Set Race (PID.10) 
 
  
 
@@ -1680,7 +1680,7 @@ Set Race (OBR.10)
 public setReligion (string|int|array|null $value, int $position)
 ```
 
-Set Religion (OBR.17) 
+Set Religion (PID.17) 
 
  
 
@@ -1708,7 +1708,7 @@ Set Religion (OBR.17)
 public setSSNNumber (string|int|array|null $value, int $position)
 ```
 
-Set SSNNumber (OBR.19) 
+Set SSNNumber (PID.19) 
 
  
 
@@ -1760,7 +1760,7 @@ Set SSNNumber (OBR.19)
 public setVeteransMilitaryStatus (string|int|array|null $value, int $position)
 ```
 
-Set Veterans MilitaryStatus (OBR.27) 
+Set Veterans Military Status (PID.27) 
 
  
 

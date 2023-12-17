@@ -13,68 +13,68 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getActionBy](#orcgetactionby)|Get Action By (OBR.19)|
-|[getAdvancedBeneficiaryNoticeCode](#orcgetadvancedbeneficiarynoticecode)|Get Advanced BeneficiaryNoticeCode (OBR.20)|
-|[getAdvancedBeneficiaryNoticeOverrideReason](#orcgetadvancedbeneficiarynoticeoverridereason)|Get Advanced BeneficiaryNoticeOverrideReason (OBR.26)|
-|[getCallBackPhoneNumber](#orcgetcallbackphonenumber)|Get Call BackPhoneNumber (OBR.14)|
-|[getConfidentialityCode](#orcgetconfidentialitycode)|Get Confidentiality Code (OBR.28)|
-|[getDateTimeofTransaction](#orcgetdatetimeoftransaction)|Get Date TimeofTransaction (OBR.9)|
-|[getEnteredBy](#orcgetenteredby)|Get Entered By (OBR.10)|
-|[getEntererAuthorizationMode](#orcgetentererauthorizationmode)|Get Enterer AuthorizationMode (OBR.30)|
-|[getEnterersLocation](#orcgetentererslocation)|Get Enterers Location (OBR.13)|
-|[getEnteringDevice](#orcgetenteringdevice)|Get Entering Device (OBR.18)|
-|[getEnteringOrganization](#orcgetenteringorganization)|Get Entering Organization (OBR.17)|
-|[getFillerOrderNumber](#orcgetfillerordernumber)|Get Filler OrderNumber (OBR.3)|
-|[getFillersExpectedAvailabilityDateTime](#orcgetfillersexpectedavailabilitydatetime)|Get Fillers ExpectedAvailabilityDateTime (OBR.27)|
-|[getOrderControl](#orcgetordercontrol)|Get Order Control (OBR.1)|
-|[getOrderControlCodeReason](#orcgetordercontrolcodereason)|Get Order ControlCodeReason (OBR.16)|
-|[getOrderEffectiveDateTime](#orcgetordereffectivedatetime)|Get Order EffectiveDateTime (OBR.15)|
-|[getOrderStatus](#orcgetorderstatus)|Get Order Status (OBR.5)|
-|[getOrderStatusModifier](#orcgetorderstatusmodifier)|Get Order StatusModifier (OBR.25)|
-|[getOrderType](#orcgetordertype)|Get Order Type (OBR.29)|
-|[getOrderingFacilityAddress](#orcgetorderingfacilityaddress)|Get Ordering FacilityAddress (OBR.22)|
-|[getOrderingFacilityName](#orcgetorderingfacilityname)|Get Ordering FacilityName (OBR.21)|
-|[getOrderingFacilityPhoneNumber](#orcgetorderingfacilityphonenumber)|Get Ordering FacilityPhoneNumber (OBR.23)|
-|[getOrderingProvider](#orcgetorderingprovider)|Get Ordering Provider (OBR.12)|
-|[getOrderingProviderAddress](#orcgetorderingprovideraddress)|Get Ordering ProviderAddress (OBR.24)|
-|[getParentOrder](#orcgetparentorder)|Get Parent Order (OBR.8)|
-|[getParentUniversalServiceIdentifier](#orcgetparentuniversalserviceidentifier)|Get Parent UniversalServiceIdentifier (OBR.31)|
-|[getPlacerGroupNumber](#orcgetplacergroupnumber)|Get Placer GroupNumber (OBR.4)|
-|[getPlacerOrderNumber](#orcgetplacerordernumber)|Get Placer OrderNumber (OBR.2)|
-|[getQuantityTiming](#orcgetquantitytiming)|Get Quantity Timing (OBR.7)|
-|[getResponseFlag](#orcgetresponseflag)|Get Response Flag (OBR.6)|
-|[getVerifiedBy](#orcgetverifiedby)|Get Verified By (OBR.11)|
-|[setActionBy](#orcsetactionby)|Set Action By (OBR.19)|
-|[setAdvancedBeneficiaryNoticeCode](#orcsetadvancedbeneficiarynoticecode)|Set Advanced BeneficiaryNoticeCode (OBR.20)|
-|[setAdvancedBeneficiaryNoticeOverrideReason](#orcsetadvancedbeneficiarynoticeoverridereason)|Set Advanced BeneficiaryNoticeOverrideReason (OBR.26)|
-|[setCallBackPhoneNumber](#orcsetcallbackphonenumber)|Set Call BackPhoneNumber (OBR.14)|
-|[setConfidentialityCode](#orcsetconfidentialitycode)|Set Confidentiality Code (OBR.28)|
-|[setDateTimeofTransaction](#orcsetdatetimeoftransaction)|Set Date TimeofTransaction (OBR.9)|
-|[setEnteredBy](#orcsetenteredby)|Set Entered By (OBR.10)|
-|[setEntererAuthorizationMode](#orcsetentererauthorizationmode)|Set Enterer AuthorizationMode (OBR.30)|
-|[setEnterersLocation](#orcsetentererslocation)|Set Enterers Location (OBR.13)|
-|[setEnteringDevice](#orcsetenteringdevice)|Set Entering Device (OBR.18)|
-|[setEnteringOrganization](#orcsetenteringorganization)|Set Entering Organization (OBR.17)|
-|[setFillerOrderNumber](#orcsetfillerordernumber)|Set Filler OrderNumber (OBR.3)|
-|[setFillersExpectedAvailabilityDateTime](#orcsetfillersexpectedavailabilitydatetime)|Set Fillers ExpectedAvailabilityDateTime (OBR.27)|
-|[setOrderControl](#orcsetordercontrol)|Set Order Control (OBR.1)|
-|[setOrderControlCodeReason](#orcsetordercontrolcodereason)|Set Order ControlCodeReason (OBR.16)|
-|[setOrderEffectiveDateTime](#orcsetordereffectivedatetime)|Set Order EffectiveDateTime (OBR.15)|
-|[setOrderStatus](#orcsetorderstatus)|Set Order Status (OBR.5)|
-|[setOrderStatusModifier](#orcsetorderstatusmodifier)|Set Order StatusModifier (OBR.25)|
-|[setOrderType](#orcsetordertype)|Set Order Type (OBR.29)|
-|[setOrderingFacilityAddress](#orcsetorderingfacilityaddress)|Set Ordering FacilityAddress (OBR.22)|
-|[setOrderingFacilityName](#orcsetorderingfacilityname)|Set Ordering FacilityName (OBR.21)|
-|[setOrderingFacilityPhoneNumber](#orcsetorderingfacilityphonenumber)|Set Ordering FacilityPhoneNumber (OBR.23)|
-|[setOrderingProvider](#orcsetorderingprovider)|Set Ordering Provider (OBR.12)|
-|[setOrderingProviderAddress](#orcsetorderingprovideraddress)|Set Ordering ProviderAddress (OBR.24)|
-|[setParentOrder](#orcsetparentorder)|Set Parent Order (OBR.8)|
-|[setParentUniversalServiceIdentifier](#orcsetparentuniversalserviceidentifier)|Set Parent UniversalServiceIdentifier (OBR.31)|
-|[setPlacerGroupNumber](#orcsetplacergroupnumber)|Set Placer GroupNumber (OBR.4)|
-|[setPlacerOrderNumber](#orcsetplacerordernumber)|Set Placer OrderNumber (OBR.2)|
-|[setQuantityTiming](#orcsetquantitytiming)|Set Quantity Timing (OBR.7)|
-|[setResponseFlag](#orcsetresponseflag)|Set Response Flag (OBR.6)|
-|[setVerifiedBy](#orcsetverifiedby)|Set Verified By (OBR.11)|
+|[getActionBy](#orcgetactionby)|Get Action By (ORC.19)|
+|[getAdvancedBeneficiaryNoticeCode](#orcgetadvancedbeneficiarynoticecode)|Get Advanced BeneficiaryNoticeCode (ORC.20)|
+|[getAdvancedBeneficiaryNoticeOverrideReason](#orcgetadvancedbeneficiarynoticeoverridereason)|Get Advanced BeneficiaryNoticeOverrideReason (ORC.26)|
+|[getCallBackPhoneNumber](#orcgetcallbackphonenumber)|Get Call BackPhoneNumber (ORC.14)|
+|[getConfidentialityCode](#orcgetconfidentialitycode)|Get Confidentiality Code (ORC.28)|
+|[getDateTimeofTransaction](#orcgetdatetimeoftransaction)|Get Date TimeofTransaction (ORC.9)|
+|[getEnteredBy](#orcgetenteredby)|Get Entered By (ORC.10)|
+|[getEntererAuthorizationMode](#orcgetentererauthorizationmode)|Get Enterer AuthorizationMode (ORC.30)|
+|[getEnterersLocation](#orcgetentererslocation)|Get Enterers Location (ORC.13)|
+|[getEnteringDevice](#orcgetenteringdevice)|Get Entering Device (ORC.18)|
+|[getEnteringOrganization](#orcgetenteringorganization)|Get Entering Organization (ORC.17)|
+|[getFillerOrderNumber](#orcgetfillerordernumber)|Get Filler OrderNumber (ORC.3)|
+|[getFillersExpectedAvailabilityDateTime](#orcgetfillersexpectedavailabilitydatetime)|Get Fillers ExpectedAvailabilityDateTime (ORC.27)|
+|[getOrderControl](#orcgetordercontrol)|Get Order Control (ORC.1)|
+|[getOrderControlCodeReason](#orcgetordercontrolcodereason)|Get Order ControlCodeReason (ORC.16)|
+|[getOrderEffectiveDateTime](#orcgetordereffectivedatetime)|Get Order EffectiveDateTime (ORC.15)|
+|[getOrderStatus](#orcgetorderstatus)|Get Order Status (ORC.5)|
+|[getOrderStatusModifier](#orcgetorderstatusmodifier)|Get Order StatusModifier (ORC.25)|
+|[getOrderType](#orcgetordertype)|Get Order Type (ORC.29)|
+|[getOrderingFacilityAddress](#orcgetorderingfacilityaddress)|Get Ordering FacilityAddress (ORC.22)|
+|[getOrderingFacilityName](#orcgetorderingfacilityname)|Get Ordering FacilityName (ORC.21)|
+|[getOrderingFacilityPhoneNumber](#orcgetorderingfacilityphonenumber)|Get Ordering FacilityPhoneNumber (ORC.23)|
+|[getOrderingProvider](#orcgetorderingprovider)|Get Ordering Provider (ORC.12)|
+|[getOrderingProviderAddress](#orcgetorderingprovideraddress)|Get Ordering ProviderAddress (ORC.24)|
+|[getParentOrder](#orcgetparentorder)|Get Parent Order (ORC.8)|
+|[getParentUniversalServiceIdentifier](#orcgetparentuniversalserviceidentifier)|Get Parent UniversalServiceIdentifier (ORC.31)|
+|[getPlacerGroupNumber](#orcgetplacergroupnumber)|Get Placer GroupNumber (ORC.4)|
+|[getPlacerOrderNumber](#orcgetplacerordernumber)|Get Placer OrderNumber (ORC.2)|
+|[getQuantityTiming](#orcgetquantitytiming)|Get Quantity Timing (ORC.7)|
+|[getResponseFlag](#orcgetresponseflag)|Get Response Flag (ORC.6)|
+|[getVerifiedBy](#orcgetverifiedby)|Get Verified By (ORC.11)|
+|[setActionBy](#orcsetactionby)|Set Action By (ORC.19)|
+|[setAdvancedBeneficiaryNoticeCode](#orcsetadvancedbeneficiarynoticecode)|Set Advanced Beneficiary Notice Code (ORC.20)|
+|[setAdvancedBeneficiaryNoticeOverrideReason](#orcsetadvancedbeneficiarynoticeoverridereason)|Set Advanced Beneficiary Notice Override Reason (ORC.26)|
+|[setCallBackPhoneNumber](#orcsetcallbackphonenumber)|Set Call Back Phone Number (ORC.14)|
+|[setConfidentialityCode](#orcsetconfidentialitycode)|Set Confidentiality Code (ORC.28)|
+|[setDateTimeofTransaction](#orcsetdatetimeoftransaction)|Set Date Timeof Transaction (ORC.9)|
+|[setEnteredBy](#orcsetenteredby)|Set Entered By (ORC.10)|
+|[setEntererAuthorizationMode](#orcsetentererauthorizationmode)|Set Enterer Authorization Mode (ORC.30)|
+|[setEnterersLocation](#orcsetentererslocation)|Set Enterers Location (ORC.13)|
+|[setEnteringDevice](#orcsetenteringdevice)|Set Entering Device (ORC.18)|
+|[setEnteringOrganization](#orcsetenteringorganization)|Set Entering Organization (ORC.17)|
+|[setFillerOrderNumber](#orcsetfillerordernumber)|Set Filler Order Number (ORC.3)|
+|[setFillersExpectedAvailabilityDateTime](#orcsetfillersexpectedavailabilitydatetime)|Set Fillers Expected Availability Date Time (ORC.27)|
+|[setOrderControl](#orcsetordercontrol)|Set Order Control (ORC.1)|
+|[setOrderControlCodeReason](#orcsetordercontrolcodereason)|Set Order Control Code Reason (ORC.16)|
+|[setOrderEffectiveDateTime](#orcsetordereffectivedatetime)|Set Order Effective Date Time (ORC.15)|
+|[setOrderStatus](#orcsetorderstatus)|Set Order Status (ORC.5)|
+|[setOrderStatusModifier](#orcsetorderstatusmodifier)|Set Order Status Modifier (ORC.25)|
+|[setOrderType](#orcsetordertype)|Set Order Type (ORC.29)|
+|[setOrderingFacilityAddress](#orcsetorderingfacilityaddress)|Set Ordering Facility Address (ORC.22)|
+|[setOrderingFacilityName](#orcsetorderingfacilityname)|Set Ordering Facility Name (ORC.21)|
+|[setOrderingFacilityPhoneNumber](#orcsetorderingfacilityphonenumber)|Set Ordering Facility Phone Number (ORC.23)|
+|[setOrderingProvider](#orcsetorderingprovider)|Set Ordering Provider (ORC.12)|
+|[setOrderingProviderAddress](#orcsetorderingprovideraddress)|Set Ordering Provider Address (ORC.24)|
+|[setParentOrder](#orcsetparentorder)|Set Parent Order (ORC.8)|
+|[setParentUniversalServiceIdentifier](#orcsetparentuniversalserviceidentifier)|Set Parent Universal Service Identifier (ORC.31)|
+|[setPlacerGroupNumber](#orcsetplacergroupnumber)|Set Placer Group Number (ORC.4)|
+|[setPlacerOrderNumber](#orcsetplacerordernumber)|Set Placer Order Number (ORC.2)|
+|[setQuantityTiming](#orcsetquantitytiming)|Set Quantity Timing (ORC.7)|
+|[setResponseFlag](#orcsetresponseflag)|Set Response Flag (ORC.6)|
+|[setVerifiedBy](#orcsetverifiedby)|Set Verified By (ORC.11)|
 
 ## Inherited methods
 
@@ -98,7 +98,7 @@ Aranyasen\HL7\Segment
 public getActionBy (int $position)
 ```
 
-Get Action By (OBR.19) 
+Get Action By (ORC.19) 
 
  
 
@@ -125,7 +125,7 @@ Get Action By (OBR.19)
 public getAdvancedBeneficiaryNoticeCode (int $position)
 ```
 
-Get Advanced BeneficiaryNoticeCode (OBR.20) 
+Get Advanced BeneficiaryNoticeCode (ORC.20) 
 
  
 
@@ -152,7 +152,7 @@ Get Advanced BeneficiaryNoticeCode (OBR.20)
 public getAdvancedBeneficiaryNoticeOverrideReason (int $position)
 ```
 
-Get Advanced BeneficiaryNoticeOverrideReason (OBR.26) 
+Get Advanced BeneficiaryNoticeOverrideReason (ORC.26) 
 
  
 
@@ -179,7 +179,7 @@ Get Advanced BeneficiaryNoticeOverrideReason (OBR.26)
 public getCallBackPhoneNumber (int $position)
 ```
 
-Get Call BackPhoneNumber (OBR.14) 
+Get Call BackPhoneNumber (ORC.14) 
 
  
 
@@ -206,7 +206,7 @@ Get Call BackPhoneNumber (OBR.14)
 public getConfidentialityCode (int $position)
 ```
 
-Get Confidentiality Code (OBR.28) 
+Get Confidentiality Code (ORC.28) 
 
  
 
@@ -233,7 +233,7 @@ Get Confidentiality Code (OBR.28)
 public getDateTimeofTransaction (int $position)
 ```
 
-Get Date TimeofTransaction (OBR.9) 
+Get Date TimeofTransaction (ORC.9) 
 
  
 
@@ -260,7 +260,7 @@ Get Date TimeofTransaction (OBR.9)
 public getEnteredBy (int $position)
 ```
 
-Get Entered By (OBR.10) 
+Get Entered By (ORC.10) 
 
  
 
@@ -287,7 +287,7 @@ Get Entered By (OBR.10)
 public getEntererAuthorizationMode (int $position)
 ```
 
-Get Enterer AuthorizationMode (OBR.30) 
+Get Enterer AuthorizationMode (ORC.30) 
 
  
 
@@ -314,7 +314,7 @@ Get Enterer AuthorizationMode (OBR.30)
 public getEnterersLocation (int $position)
 ```
 
-Get Enterers Location (OBR.13) 
+Get Enterers Location (ORC.13) 
 
  
 
@@ -341,7 +341,7 @@ Get Enterers Location (OBR.13)
 public getEnteringDevice (int $position)
 ```
 
-Get Entering Device (OBR.18) 
+Get Entering Device (ORC.18) 
 
  
 
@@ -368,7 +368,7 @@ Get Entering Device (OBR.18)
 public getEnteringOrganization (int $position)
 ```
 
-Get Entering Organization (OBR.17) 
+Get Entering Organization (ORC.17) 
 
  
 
@@ -395,7 +395,7 @@ Get Entering Organization (OBR.17)
 public getFillerOrderNumber (int $position)
 ```
 
-Get Filler OrderNumber (OBR.3) 
+Get Filler OrderNumber (ORC.3) 
 
  
 
@@ -422,7 +422,7 @@ Get Filler OrderNumber (OBR.3)
 public getFillersExpectedAvailabilityDateTime (int $position)
 ```
 
-Get Fillers ExpectedAvailabilityDateTime (OBR.27) 
+Get Fillers ExpectedAvailabilityDateTime (ORC.27) 
 
  
 
@@ -449,7 +449,7 @@ Get Fillers ExpectedAvailabilityDateTime (OBR.27)
 public getOrderControl (int $position)
 ```
 
-Get Order Control (OBR.1) 
+Get Order Control (ORC.1) 
 
  
 
@@ -476,7 +476,7 @@ Get Order Control (OBR.1)
 public getOrderControlCodeReason (int $position)
 ```
 
-Get Order ControlCodeReason (OBR.16) 
+Get Order ControlCodeReason (ORC.16) 
 
  
 
@@ -503,7 +503,7 @@ Get Order ControlCodeReason (OBR.16)
 public getOrderEffectiveDateTime (int $position)
 ```
 
-Get Order EffectiveDateTime (OBR.15) 
+Get Order EffectiveDateTime (ORC.15) 
 
  
 
@@ -530,7 +530,7 @@ Get Order EffectiveDateTime (OBR.15)
 public getOrderStatus (int $position)
 ```
 
-Get Order Status (OBR.5) 
+Get Order Status (ORC.5) 
 
  
 
@@ -557,7 +557,7 @@ Get Order Status (OBR.5)
 public getOrderStatusModifier (int $position)
 ```
 
-Get Order StatusModifier (OBR.25) 
+Get Order StatusModifier (ORC.25) 
 
  
 
@@ -584,7 +584,7 @@ Get Order StatusModifier (OBR.25)
 public getOrderType (int $position)
 ```
 
-Get Order Type (OBR.29) 
+Get Order Type (ORC.29) 
 
  
 
@@ -611,7 +611,7 @@ Get Order Type (OBR.29)
 public getOrderingFacilityAddress (int $position)
 ```
 
-Get Ordering FacilityAddress (OBR.22) 
+Get Ordering FacilityAddress (ORC.22) 
 
  
 
@@ -638,7 +638,7 @@ Get Ordering FacilityAddress (OBR.22)
 public getOrderingFacilityName (int $position)
 ```
 
-Get Ordering FacilityName (OBR.21) 
+Get Ordering FacilityName (ORC.21) 
 
  
 
@@ -665,7 +665,7 @@ Get Ordering FacilityName (OBR.21)
 public getOrderingFacilityPhoneNumber (int $position)
 ```
 
-Get Ordering FacilityPhoneNumber (OBR.23) 
+Get Ordering FacilityPhoneNumber (ORC.23) 
 
  
 
@@ -692,7 +692,7 @@ Get Ordering FacilityPhoneNumber (OBR.23)
 public getOrderingProvider (int $position)
 ```
 
-Get Ordering Provider (OBR.12) 
+Get Ordering Provider (ORC.12) 
 
  
 
@@ -719,7 +719,7 @@ Get Ordering Provider (OBR.12)
 public getOrderingProviderAddress (int $position)
 ```
 
-Get Ordering ProviderAddress (OBR.24) 
+Get Ordering ProviderAddress (ORC.24) 
 
  
 
@@ -746,7 +746,7 @@ Get Ordering ProviderAddress (OBR.24)
 public getParentOrder (int $position)
 ```
 
-Get Parent Order (OBR.8) 
+Get Parent Order (ORC.8) 
 
  
 
@@ -773,7 +773,7 @@ Get Parent Order (OBR.8)
 public getParentUniversalServiceIdentifier (int $position)
 ```
 
-Get Parent UniversalServiceIdentifier (OBR.31) 
+Get Parent UniversalServiceIdentifier (ORC.31) 
 
  
 
@@ -800,7 +800,7 @@ Get Parent UniversalServiceIdentifier (OBR.31)
 public getPlacerGroupNumber (int $position)
 ```
 
-Get Placer GroupNumber (OBR.4) 
+Get Placer GroupNumber (ORC.4) 
 
  
 
@@ -827,7 +827,7 @@ Get Placer GroupNumber (OBR.4)
 public getPlacerOrderNumber (int $position)
 ```
 
-Get Placer OrderNumber (OBR.2) 
+Get Placer OrderNumber (ORC.2) 
 
  
 
@@ -854,7 +854,7 @@ Get Placer OrderNumber (OBR.2)
 public getQuantityTiming (int $position)
 ```
 
-Get Quantity Timing (OBR.7) 
+Get Quantity Timing (ORC.7) 
 
  
 
@@ -881,7 +881,7 @@ Get Quantity Timing (OBR.7)
 public getResponseFlag (int $position)
 ```
 
-Get Response Flag (OBR.6) 
+Get Response Flag (ORC.6) 
 
  
 
@@ -908,7 +908,7 @@ Get Response Flag (OBR.6)
 public getVerifiedBy (int $position)
 ```
 
-Get Verified By (OBR.11) 
+Get Verified By (ORC.11) 
 
  
 
@@ -935,7 +935,7 @@ Get Verified By (OBR.11)
 public setActionBy (string|int|array|null $value, int $position)
 ```
 
-Set Action By (OBR.19) 
+Set Action By (ORC.19) 
 
  
 
@@ -963,7 +963,7 @@ Set Action By (OBR.19)
 public setAdvancedBeneficiaryNoticeCode (string|int|array|null $value, int $position)
 ```
 
-Set Advanced BeneficiaryNoticeCode (OBR.20) 
+Set Advanced Beneficiary Notice Code (ORC.20) 
 
  
 
@@ -991,7 +991,7 @@ Set Advanced BeneficiaryNoticeCode (OBR.20)
 public setAdvancedBeneficiaryNoticeOverrideReason (string|int|array|null $value, int $position)
 ```
 
-Set Advanced BeneficiaryNoticeOverrideReason (OBR.26) 
+Set Advanced Beneficiary Notice Override Reason (ORC.26) 
 
  
 
@@ -1019,7 +1019,7 @@ Set Advanced BeneficiaryNoticeOverrideReason (OBR.26)
 public setCallBackPhoneNumber (string|int|array|null $value, int $position)
 ```
 
-Set Call BackPhoneNumber (OBR.14) 
+Set Call Back Phone Number (ORC.14) 
 
  
 
@@ -1047,7 +1047,7 @@ Set Call BackPhoneNumber (OBR.14)
 public setConfidentialityCode (string|int|array|null $value, int $position)
 ```
 
-Set Confidentiality Code (OBR.28) 
+Set Confidentiality Code (ORC.28) 
 
  
 
@@ -1075,7 +1075,7 @@ Set Confidentiality Code (OBR.28)
 public setDateTimeofTransaction (string|int|array|null $value, int $position)
 ```
 
-Set Date TimeofTransaction (OBR.9) 
+Set Date Timeof Transaction (ORC.9) 
 
  
 
@@ -1103,7 +1103,7 @@ Set Date TimeofTransaction (OBR.9)
 public setEnteredBy (string|int|array|null $value, int $position)
 ```
 
-Set Entered By (OBR.10) 
+Set Entered By (ORC.10) 
 
  
 
@@ -1131,7 +1131,7 @@ Set Entered By (OBR.10)
 public setEntererAuthorizationMode (string|int|array|null $value, int $position)
 ```
 
-Set Enterer AuthorizationMode (OBR.30) 
+Set Enterer Authorization Mode (ORC.30) 
 
  
 
@@ -1159,7 +1159,7 @@ Set Enterer AuthorizationMode (OBR.30)
 public setEnterersLocation (string|int|array|null $value, int $position)
 ```
 
-Set Enterers Location (OBR.13) 
+Set Enterers Location (ORC.13) 
 
  
 
@@ -1187,7 +1187,7 @@ Set Enterers Location (OBR.13)
 public setEnteringDevice (string|int|array|null $value, int $position)
 ```
 
-Set Entering Device (OBR.18) 
+Set Entering Device (ORC.18) 
 
  
 
@@ -1215,7 +1215,7 @@ Set Entering Device (OBR.18)
 public setEnteringOrganization (string|int|array|null $value, int $position)
 ```
 
-Set Entering Organization (OBR.17) 
+Set Entering Organization (ORC.17) 
 
  
 
@@ -1243,7 +1243,7 @@ Set Entering Organization (OBR.17)
 public setFillerOrderNumber (string|int|array|null $value, int $position)
 ```
 
-Set Filler OrderNumber (OBR.3) 
+Set Filler Order Number (ORC.3) 
 
  
 
@@ -1271,7 +1271,7 @@ Set Filler OrderNumber (OBR.3)
 public setFillersExpectedAvailabilityDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Fillers ExpectedAvailabilityDateTime (OBR.27) 
+Set Fillers Expected Availability Date Time (ORC.27) 
 
  
 
@@ -1299,7 +1299,7 @@ Set Fillers ExpectedAvailabilityDateTime (OBR.27)
 public setOrderControl (string|int|array|null $value, int $position)
 ```
 
-Set Order Control (OBR.1) 
+Set Order Control (ORC.1) 
 
  
 
@@ -1327,7 +1327,7 @@ Set Order Control (OBR.1)
 public setOrderControlCodeReason (string|int|array|null $value, int $position)
 ```
 
-Set Order ControlCodeReason (OBR.16) 
+Set Order Control Code Reason (ORC.16) 
 
  
 
@@ -1355,7 +1355,7 @@ Set Order ControlCodeReason (OBR.16)
 public setOrderEffectiveDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Order EffectiveDateTime (OBR.15) 
+Set Order Effective Date Time (ORC.15) 
 
  
 
@@ -1383,7 +1383,7 @@ Set Order EffectiveDateTime (OBR.15)
 public setOrderStatus (string|int|array|null $value, int $position)
 ```
 
-Set Order Status (OBR.5) 
+Set Order Status (ORC.5) 
 
  
 
@@ -1411,7 +1411,7 @@ Set Order Status (OBR.5)
 public setOrderStatusModifier (string|int|array|null $value, int $position)
 ```
 
-Set Order StatusModifier (OBR.25) 
+Set Order Status Modifier (ORC.25) 
 
  
 
@@ -1439,7 +1439,7 @@ Set Order StatusModifier (OBR.25)
 public setOrderType (string|int|array|null $value, int $position)
 ```
 
-Set Order Type (OBR.29) 
+Set Order Type (ORC.29) 
 
  
 
@@ -1467,7 +1467,7 @@ Set Order Type (OBR.29)
 public setOrderingFacilityAddress (string|int|array|null $value, int $position)
 ```
 
-Set Ordering FacilityAddress (OBR.22) 
+Set Ordering Facility Address (ORC.22) 
 
  
 
@@ -1495,7 +1495,7 @@ Set Ordering FacilityAddress (OBR.22)
 public setOrderingFacilityName (string|int|array|null $value, int $position)
 ```
 
-Set Ordering FacilityName (OBR.21) 
+Set Ordering Facility Name (ORC.21) 
 
  
 
@@ -1523,7 +1523,7 @@ Set Ordering FacilityName (OBR.21)
 public setOrderingFacilityPhoneNumber (string|int|array|null $value, int $position)
 ```
 
-Set Ordering FacilityPhoneNumber (OBR.23) 
+Set Ordering Facility Phone Number (ORC.23) 
 
  
 
@@ -1551,7 +1551,7 @@ Set Ordering FacilityPhoneNumber (OBR.23)
 public setOrderingProvider (string|int|array|null $value, int $position)
 ```
 
-Set Ordering Provider (OBR.12) 
+Set Ordering Provider (ORC.12) 
 
  
 
@@ -1579,7 +1579,7 @@ Set Ordering Provider (OBR.12)
 public setOrderingProviderAddress (string|int|array|null $value, int $position)
 ```
 
-Set Ordering ProviderAddress (OBR.24) 
+Set Ordering Provider Address (ORC.24) 
 
  
 
@@ -1607,7 +1607,7 @@ Set Ordering ProviderAddress (OBR.24)
 public setParentOrder (string|int|array|null $value, int $position)
 ```
 
-Set Parent Order (OBR.8) 
+Set Parent Order (ORC.8) 
 
  
 
@@ -1635,7 +1635,7 @@ Set Parent Order (OBR.8)
 public setParentUniversalServiceIdentifier (string|int|array|null $value, int $position)
 ```
 
-Set Parent UniversalServiceIdentifier (OBR.31) 
+Set Parent Universal Service Identifier (ORC.31) 
 
  
 
@@ -1663,7 +1663,7 @@ Set Parent UniversalServiceIdentifier (OBR.31)
 public setPlacerGroupNumber (string|int|array|null $value, int $position)
 ```
 
-Set Placer GroupNumber (OBR.4) 
+Set Placer Group Number (ORC.4) 
 
  
 
@@ -1691,7 +1691,7 @@ Set Placer GroupNumber (OBR.4)
 public setPlacerOrderNumber (string|int|array|null $value, int $position)
 ```
 
-Set Placer OrderNumber (OBR.2) 
+Set Placer Order Number (ORC.2) 
 
  
 
@@ -1719,7 +1719,7 @@ Set Placer OrderNumber (OBR.2)
 public setQuantityTiming (string|int|array|null $value, int $position)
 ```
 
-Set Quantity Timing (OBR.7) 
+Set Quantity Timing (ORC.7) 
 
  
 
@@ -1747,7 +1747,7 @@ Set Quantity Timing (OBR.7)
 public setResponseFlag (string|int|array|null $value, int $position)
 ```
 
-Set Response Flag (OBR.6) 
+Set Response Flag (ORC.6) 
 
  
 
@@ -1775,7 +1775,7 @@ Set Response Flag (OBR.6)
 public setVerifiedBy (string|int|array|null $value, int $position)
 ```
 
-Set Verified By (OBR.11) 
+Set Verified By (ORC.11) 
 
  
 

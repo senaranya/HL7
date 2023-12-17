@@ -13,17 +13,17 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getAlertLevel](#equgetalertlevel)|Get Alert Level (OBR.4)|
-|[getEquipmentInstanceIdentifier](#equgetequipmentinstanceidentifier)|Get Equipment InstanceIdentifier (OBR.1)|
-|[getEquipmentState](#equgetequipmentstate)|Get Equipment State (OBR.3)|
-|[getEventDateTime](#equgeteventdatetime)|Get Event DateTime (OBR.2)|
-|[getLocalRemoteControlState](#equgetlocalremotecontrolstate)|Get Local RemoteControlState (OBR.4)|
+|[getAlertLevel](#equgetalertlevel)|Get Alert Level (EQU.4)|
+|[getEquipmentInstanceIdentifier](#equgetequipmentinstanceidentifier)|Get Equipment InstanceIdentifier (EQU.1)|
+|[getEquipmentState](#equgetequipmentstate)|Get Equipment State (EQU.3)|
+|[getEventDateTime](#equgeteventdatetime)|Get Event DateTime (EQU.2)|
+|[getLocalRemoteControlState](#equgetlocalremotecontrolstate)|Get Local RemoteControlState (EQU.4)|
 |[resetIndex](#equresetindex)|Reset index of this segment|
-|[setAlertLevel](#equsetalertlevel)|Set Alert Level (OBR.5)|
+|[setAlertLevel](#equsetalertlevel)|Set Alert Level (EQU.5)|
 |[setEquipmentInstanceIdentifier](#equsetequipmentinstanceidentifier)||
-|[setEquipmentState](#equsetequipmentstate)|Set Equipment State (OBR.3)|
-|[setEventDateTime](#equseteventdatetime)|Set Event DateTime (OBR.2)|
-|[setLocalRemoteControlState](#equsetlocalremotecontrolstate)|Set Local RemoteControlState (OBR.4)|
+|[setEquipmentState](#equsetequipmentstate)|Set Equipment State (EQU.3)|
+|[setEventDateTime](#equseteventdatetime)|Set Event Date Time (EQU.2)|
+|[setLocalRemoteControlState](#equsetlocalremotecontrolstate)|Set Local Remote Control State (EQU.4)|
 
 ## Inherited methods
 
@@ -47,7 +47,7 @@ Aranyasen\HL7\Segment
 public getAlertLevel (int $position)
 ```
 
-Get Alert Level (OBR.4) 
+Get Alert Level (EQU.4) 
 
  
 
@@ -74,7 +74,7 @@ Get Alert Level (OBR.4)
 public getEquipmentInstanceIdentifier (int $position)
 ```
 
-Get Equipment InstanceIdentifier (OBR.1) 
+Get Equipment InstanceIdentifier (EQU.1) 
 
  
 
@@ -101,7 +101,7 @@ Get Equipment InstanceIdentifier (OBR.1)
 public getEquipmentState (int $position)
 ```
 
-Get Equipment State (OBR.3) 
+Get Equipment State (EQU.3) 
 
  
 
@@ -128,7 +128,7 @@ Get Equipment State (OBR.3)
 public getEventDateTime (int $position)
 ```
 
-Get Event DateTime (OBR.2) 
+Get Event DateTime (EQU.2) 
 
  
 
@@ -155,7 +155,7 @@ Get Event DateTime (OBR.2)
 public getLocalRemoteControlState (int $position)
 ```
 
-Get Local RemoteControlState (OBR.4) 
+Get Local RemoteControlState (EQU.4) 
 
  
 
@@ -206,7 +206,7 @@ Reset index of this segment
 public setAlertLevel (string|int|array|null $value, int $position)
 ```
 
-Set Alert Level (OBR.5) 
+Set Alert Level (EQU.5) 
 
  
 
@@ -258,7 +258,7 @@ Set Alert Level (OBR.5)
 public setEquipmentState (string|int|array|null $value, int $position)
 ```
 
-Set Equipment State (OBR.3) 
+Set Equipment State (EQU.3) 
 
  
 
@@ -286,7 +286,7 @@ Set Equipment State (OBR.3)
 public setEventDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Event DateTime (OBR.2) 
+Set Event Date Time (EQU.2) 
 
  
 
@@ -314,7 +314,7 @@ Set Event DateTime (OBR.2)
 public setLocalRemoteControlState (string|int|array|null $value, int $position)
 ```
 
-Set Local RemoteControlState (OBR.4) 
+Set Local Remote Control State (EQU.4) 
 
  
 

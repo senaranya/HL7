@@ -14,105 +14,105 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[__destruct](#in1__destruct)||
-|[getAssignmentOfBenefits](#in1getassignmentofbenefits)|Get Assignment OfBenefits (OBR.20)|
-|[getAuthorizationInformation](#in1getauthorizationinformation)|Get Authorization Information (OBR.14)|
-|[getBillingStatus](#in1getbillingstatus)|Get Billing Status (OBR.32)|
-|[getCompanyPlanCode](#in1getcompanyplancode)|Get Company PlanCode (OBR.35)|
-|[getCoordOfBenPriority](#in1getcoordofbenpriority)|Get Coord OfBenPriority (OBR.22)|
-|[getCoordinationOfBenefits](#in1getcoordinationofbenefits)|Get Coordination OfBenefits (OBR.21)|
-|[getCoverageType](#in1getcoveragetype)|Get Coverage Type (OBR.47)|
-|[getDelayBeforeLRDay](#in1getdelaybeforelrday)|Get Delay BeforeLRDay (OBR.34)|
-|[getGroupName](#in1getgroupname)|Get Group Name (OBR.9)|
-|[getGroupNumber](#in1getgroupnumber)|Get Group Number (OBR.8)|
-|[getHandicap](#in1gethandicap)|Get Handicap (OBR.48)|
-|[getID](#in1getid)|Get ID (OBR.1)|
-|[getInsuranceCoContactPerson](#in1getinsurancecocontactperson)|Get Insurance CoContactPerson (OBR.6)|
-|[getInsuranceCoPhoneNumber](#in1getinsurancecophonenumber)|Get Insurance CoPhoneNumber (OBR.7)|
-|[getInsuranceCompanyAddress](#in1getinsurancecompanyaddress)|Get Insurance CompanyAddress (OBR.5)|
-|[getInsuranceCompanyID](#in1getinsurancecompanyid)|Get Insurance CompanyID (OBR.3)|
-|[getInsuranceCompanyName](#in1getinsurancecompanyname)|Get Insurance CompanyName (OBR.4)|
-|[getInsurancePlanID](#in1getinsuranceplanid)|Get Insurance PlanID (OBR.2)|
-|[getInsuredsAddress](#in1getinsuredsaddress)|Get Insureds Address (OBR.19)|
-|[getInsuredsDateOfBirth](#in1getinsuredsdateofbirth)|Get Insureds DateOfBirth (OBR.18)|
-|[getInsuredsEmployersAddress](#in1getinsuredsemployersaddress)|Get Insureds EmployersAddress (OBR.44)|
-|[getInsuredsEmploymentStatus](#in1getinsuredsemploymentstatus)|Get Insureds EmploymentStatus (OBR.42)|
-|[getInsuredsGroupEmpID](#in1getinsuredsgroupempid)|Get Insureds GroupEmpID (OBR.10)|
-|[getInsuredsGroupEmpName](#in1getinsuredsgroupempname)|Get Insureds GroupEmpName (OBR.11)|
-|[getInsuredsIDNumber](#in1getinsuredsidnumber)|Get Insureds IDNumber (OBR.49)|
-|[getInsuredsRelationshipToPatient](#in1getinsuredsrelationshiptopatient)|Get Insureds RelationshipToPatient (OBR.17)|
-|[getInsuredsSex](#in1getinsuredssex)|Get Insureds Sex (OBR.43)|
-|[getLifetimeReserveDays](#in1getlifetimereservedays)|Get Lifetime ReserveDays (OBR.33)|
-|[getNameOfInsured](#in1getnameofinsured)|Get Name OfInsured (OBR.16)|
-|[getNoticeOfAdmissionDate](#in1getnoticeofadmissiondate)|Get Notice OfAdmissionDate (OBR.24)|
-|[getNoticeOfAdmissionFlag](#in1getnoticeofadmissionflag)|Get Notice OfAdmissionFlag (OBR.23)|
-|[getPlanEffectiveDate](#in1getplaneffectivedate)|Get Plan EffectiveDate (OBR.12)|
-|[getPlanExpirationDate](#in1getplanexpirationdate)|Get Plan ExpirationDate (OBR.13)|
-|[getPlanType](#in1getplantype)|Get Plan Type (OBR.15)|
-|[getPolicyDeductible](#in1getpolicydeductible)|Get Policy Deductible (OBR.37)|
-|[getPolicyLimitAmount](#in1getpolicylimitamount)|Get Policy LimitAmount (OBR.38)|
-|[getPolicyLimitDays](#in1getpolicylimitdays)|Get Policy LimitDays (OBR.39)|
-|[getPolicyNumber](#in1getpolicynumber)|Get Policy Number (OBR.36)|
-|[getPreAdmitCertPAC](#in1getpreadmitcertpac)|Get Pre AdmitCertPAC (OBR.28)|
-|[getPriorInsurancePlanID](#in1getpriorinsuranceplanid)|Get Prior InsurancePlanID (OBR.46)|
-|[getReleaseInformationCode](#in1getreleaseinformationcode)|Get Release InformationCode (OBR.27)|
-|[getReportOfEligibilityDate](#in1getreportofeligibilitydate)|Get Report OfEligibilityDate (OBR.26)|
-|[getReportOfEligibilityFlag](#in1getreportofeligibilityflag)|Get Report OfEligibilityFlag (OBR.25)|
-|[getRoomRatePrivate](#in1getroomrateprivate)|Get Room RatePrivate (OBR.41)|
-|[getRoomRateSemiPrivate](#in1getroomratesemiprivate)|Get Room RateSemiPrivate (OBR.40)|
-|[getTypeOfAgreementCode](#in1gettypeofagreementcode)|Get Type OfAgreementCode (OBR.31)|
-|[getVerificationBy](#in1getverificationby)|Get Verification By (OBR.30)|
-|[getVerificationDateTime](#in1getverificationdatetime)|Get Verification DateTime (OBR.29)|
-|[getVerificationStatus](#in1getverificationstatus)|Get Verification Status (OBR.45)|
+|[getAssignmentOfBenefits](#in1getassignmentofbenefits)|Get Assignment OfBenefits (IN1.20)|
+|[getAuthorizationInformation](#in1getauthorizationinformation)|Get Authorization Information (IN1.14)|
+|[getBillingStatus](#in1getbillingstatus)|Get Billing Status (IN1.32)|
+|[getCompanyPlanCode](#in1getcompanyplancode)|Get Company PlanCode (IN1.35)|
+|[getCoordOfBenPriority](#in1getcoordofbenpriority)|Get Coord OfBenPriority (IN1.22)|
+|[getCoordinationOfBenefits](#in1getcoordinationofbenefits)|Get Coordination OfBenefits (IN1.21)|
+|[getCoverageType](#in1getcoveragetype)|Get Coverage Type (IN1.47)|
+|[getDelayBeforeLRDay](#in1getdelaybeforelrday)|Get Delay BeforeLRDay (IN1.34)|
+|[getGroupName](#in1getgroupname)|Get Group Name (IN1.9)|
+|[getGroupNumber](#in1getgroupnumber)|Get Group Number (IN1.8)|
+|[getHandicap](#in1gethandicap)|Get Handicap (IN1.48)|
+|[getID](#in1getid)|Get ID (IN1.1)|
+|[getInsuranceCoContactPerson](#in1getinsurancecocontactperson)|Get Insurance CoContactPerson (IN1.6)|
+|[getInsuranceCoPhoneNumber](#in1getinsurancecophonenumber)|Get Insurance CoPhoneNumber (IN1.7)|
+|[getInsuranceCompanyAddress](#in1getinsurancecompanyaddress)|Get Insurance CompanyAddress (IN1.5)|
+|[getInsuranceCompanyID](#in1getinsurancecompanyid)|Get Insurance CompanyID (IN1.3)|
+|[getInsuranceCompanyName](#in1getinsurancecompanyname)|Get Insurance CompanyName (IN1.4)|
+|[getInsurancePlanID](#in1getinsuranceplanid)|Get Insurance PlanID (IN1.2)|
+|[getInsuredsAddress](#in1getinsuredsaddress)|Get Insureds Address (IN1.19)|
+|[getInsuredsDateOfBirth](#in1getinsuredsdateofbirth)|Get Insureds DateOfBirth (IN1.18)|
+|[getInsuredsEmployersAddress](#in1getinsuredsemployersaddress)|Get Insureds EmployersAddress (IN1.44)|
+|[getInsuredsEmploymentStatus](#in1getinsuredsemploymentstatus)|Get Insureds EmploymentStatus (IN1.42)|
+|[getInsuredsGroupEmpID](#in1getinsuredsgroupempid)|Get Insureds GroupEmpID (IN1.10)|
+|[getInsuredsGroupEmpName](#in1getinsuredsgroupempname)|Get Insureds GroupEmpName (IN1.11)|
+|[getInsuredsIDNumber](#in1getinsuredsidnumber)|Get Insureds IDNumber (IN1.49)|
+|[getInsuredsRelationshipToPatient](#in1getinsuredsrelationshiptopatient)|Get Insureds RelationshipToPatient (IN1.17)|
+|[getInsuredsSex](#in1getinsuredssex)|Get Insureds Sex (IN1.43)|
+|[getLifetimeReserveDays](#in1getlifetimereservedays)|Get Lifetime ReserveDays (IN1.33)|
+|[getNameOfInsured](#in1getnameofinsured)|Get Name OfInsured (IN1.16)|
+|[getNoticeOfAdmissionDate](#in1getnoticeofadmissiondate)|Get Notice OfAdmissionDate (IN1.24)|
+|[getNoticeOfAdmissionFlag](#in1getnoticeofadmissionflag)|Get Notice OfAdmissionFlag (IN1.23)|
+|[getPlanEffectiveDate](#in1getplaneffectivedate)|Get Plan EffectiveDate (IN1.12)|
+|[getPlanExpirationDate](#in1getplanexpirationdate)|Get Plan ExpirationDate (IN1.13)|
+|[getPlanType](#in1getplantype)|Get Plan Type (IN1.15)|
+|[getPolicyDeductible](#in1getpolicydeductible)|Get Policy Deductible (IN1.37)|
+|[getPolicyLimitAmount](#in1getpolicylimitamount)|Get Policy LimitAmount (IN1.38)|
+|[getPolicyLimitDays](#in1getpolicylimitdays)|Get Policy LimitDays (IN1.39)|
+|[getPolicyNumber](#in1getpolicynumber)|Get Policy Number (IN1.36)|
+|[getPreAdmitCertPAC](#in1getpreadmitcertpac)|Get Pre AdmitCertPAC (IN1.28)|
+|[getPriorInsurancePlanID](#in1getpriorinsuranceplanid)|Get Prior InsurancePlanID (IN1.46)|
+|[getReleaseInformationCode](#in1getreleaseinformationcode)|Get Release InformationCode (IN1.27)|
+|[getReportOfEligibilityDate](#in1getreportofeligibilitydate)|Get Report OfEligibilityDate (IN1.26)|
+|[getReportOfEligibilityFlag](#in1getreportofeligibilityflag)|Get Report OfEligibilityFlag (IN1.25)|
+|[getRoomRatePrivate](#in1getroomrateprivate)|Get Room RatePrivate (IN1.41)|
+|[getRoomRateSemiPrivate](#in1getroomratesemiprivate)|Get Room RateSemiPrivate (IN1.40)|
+|[getTypeOfAgreementCode](#in1gettypeofagreementcode)|Get Type OfAgreementCode (IN1.31)|
+|[getVerificationBy](#in1getverificationby)|Get Verification By (IN1.30)|
+|[getVerificationDateTime](#in1getverificationdatetime)|Get Verification DateTime (IN1.29)|
+|[getVerificationStatus](#in1getverificationstatus)|Get Verification Status (IN1.45)|
 |[resetIndex](#in1resetindex)|Reset index of this segment|
-|[setAssignmentOfBenefits](#in1setassignmentofbenefits)|Set Assignment OfBenefits (OBR.20)|
-|[setAuthorizationInformation](#in1setauthorizationinformation)|Set Authorization Information (OBR.14)|
-|[setBillingStatus](#in1setbillingstatus)|Set Billing Status (OBR.32)|
-|[setCompanyPlanCode](#in1setcompanyplancode)|Set Company PlanCode (OBR.35)|
-|[setCoordOfBenPriority](#in1setcoordofbenpriority)|Set Coord OfBenPriority (OBR.22)|
-|[setCoordinationOfBenefits](#in1setcoordinationofbenefits)|Set Coordination OfBenefits (OBR.21)|
-|[setCoverageType](#in1setcoveragetype)|Set Coverage Type (OBR.47)|
-|[setDelayBeforeLRDay](#in1setdelaybeforelrday)|Set Delay BeforeLRDay (OBR.34)|
-|[setGroupName](#in1setgroupname)|Set Group Name (OBR.9)|
-|[setGroupNumber](#in1setgroupnumber)|Set Group Number (OBR.8)|
-|[setHandicap](#in1sethandicap)|Set Handicap (OBR.48)|
+|[setAssignmentOfBenefits](#in1setassignmentofbenefits)|Set Assignment Of Benefits (IN1.20)|
+|[setAuthorizationInformation](#in1setauthorizationinformation)|Set Authorization Information (IN1.14)|
+|[setBillingStatus](#in1setbillingstatus)|Set Billing Status (IN1.32)|
+|[setCompanyPlanCode](#in1setcompanyplancode)|Set Company Plan Code (IN1.35)|
+|[setCoordOfBenPriority](#in1setcoordofbenpriority)|Set Coord Of Ben Priority (IN1.22)|
+|[setCoordinationOfBenefits](#in1setcoordinationofbenefits)|Set Coordination Of Benefits (IN1.21)|
+|[setCoverageType](#in1setcoveragetype)|Set Coverage Type (IN1.47)|
+|[setDelayBeforeLRDay](#in1setdelaybeforelrday)|Set Delay Before LRDay (IN1.34)|
+|[setGroupName](#in1setgroupname)|Set Group Name (IN1.9)|
+|[setGroupNumber](#in1setgroupnumber)|Set Group Number (IN1.8)|
+|[setHandicap](#in1sethandicap)|Set Handicap (IN1.48)|
 |[setID](#in1setid)||
-|[setInsuranceCoContactPerson](#in1setinsurancecocontactperson)|Set Insurance CoContactPerson (OBR.6)|
-|[setInsuranceCoPhoneNumber](#in1setinsurancecophonenumber)|Set Insurance CoPhoneNumber (OBR.7)|
-|[setInsuranceCompanyAddress](#in1setinsurancecompanyaddress)|Set Insurance CompanyAddress (OBR.5)|
-|[setInsuranceCompanyID](#in1setinsurancecompanyid)|Set Insurance CompanyID (OBR.3)|
-|[setInsuranceCompanyName](#in1setinsurancecompanyname)|Set Insurance CompanyName (OBR.4)|
-|[setInsurancePlanID](#in1setinsuranceplanid)|Set Insurance PlanID (OBR.2)|
-|[setInsuredsAddress](#in1setinsuredsaddress)|Set Insureds Address (OBR.19)|
-|[setInsuredsDateOfBirth](#in1setinsuredsdateofbirth)|Set Insureds DateOfBirth (OBR.18)|
-|[setInsuredsEmployersAddress](#in1setinsuredsemployersaddress)|Set Insureds EmployersAddress (OBR.44)|
-|[setInsuredsEmploymentStatus](#in1setinsuredsemploymentstatus)|Set Insureds EmploymentStatus (OBR.42)|
-|[setInsuredsGroupEmpID](#in1setinsuredsgroupempid)|Set Insureds GroupEmpID (OBR.10)|
-|[setInsuredsGroupEmpName](#in1setinsuredsgroupempname)|Set Insureds GroupEmpName (OBR.11)|
-|[setInsuredsIDNumber](#in1setinsuredsidnumber)|Set Insureds IDNumber (OBR.49)|
-|[setInsuredsRelationshipToPatient](#in1setinsuredsrelationshiptopatient)|Set Insureds RelationshipToPatient (OBR.17)|
-|[setInsuredsSex](#in1setinsuredssex)|Set Insureds Sex (OBR.43)|
-|[setLifetimeReserveDays](#in1setlifetimereservedays)|Set Lifetime ReserveDays (OBR.33)|
-|[setNameOfInsured](#in1setnameofinsured)|Set Name OfInsured (OBR.16)|
-|[setNoticeOfAdmissionDate](#in1setnoticeofadmissiondate)|Set Notice OfAdmissionDate (OBR.24)|
-|[setNoticeOfAdmissionFlag](#in1setnoticeofadmissionflag)|Set Notice OfAdmissionFlag (OBR.23)|
-|[setPlanEffectiveDate](#in1setplaneffectivedate)|Set Plan EffectiveDate (OBR.12)|
-|[setPlanExpirationDate](#in1setplanexpirationdate)|Set Plan ExpirationDate (OBR.13)|
-|[setPlanType](#in1setplantype)|Set Plan Type (OBR.15)|
-|[setPolicyDeductible](#in1setpolicydeductible)|Set Policy Deductible (OBR.37)|
-|[setPolicyLimitAmount](#in1setpolicylimitamount)|Set Policy LimitAmount (OBR.38)|
-|[setPolicyLimitDays](#in1setpolicylimitdays)|Set Policy LimitDays (OBR.39)|
-|[setPolicyNumber](#in1setpolicynumber)|Set Policy Number (OBR.36)|
-|[setPreAdmitCertPAC](#in1setpreadmitcertpac)|Set Pre AdmitCertPAC (OBR.28)|
-|[setPriorInsurancePlanID](#in1setpriorinsuranceplanid)|Set Prior InsurancePlanID (OBR.46)|
-|[setReleaseInformationCode](#in1setreleaseinformationcode)|Set Release InformationCode (OBR.27)|
-|[setReportOfEligibilityDate](#in1setreportofeligibilitydate)|Set Report OfEligibilityDate (OBR.26)|
-|[setReportOfEligibilityFlag](#in1setreportofeligibilityflag)|Set Report OfEligibilityFlag (OBR.25)|
-|[setRoomRatePrivate](#in1setroomrateprivate)|Set Room RatePrivate (OBR.41)|
-|[setRoomRateSemiPrivate](#in1setroomratesemiprivate)|Set Room RateSemiPrivate (OBR.40)|
-|[setTypeOfAgreementCode](#in1settypeofagreementcode)|Set Type OfAgreementCode (OBR.31)|
-|[setVerificationBy](#in1setverificationby)|Set Verification By (OBR.30)|
-|[setVerificationDateTime](#in1setverificationdatetime)|Set Verification DateTime (OBR.29)|
-|[setVerificationStatus](#in1setverificationstatus)|Set Verification Status (OBR.45)|
+|[setInsuranceCoContactPerson](#in1setinsurancecocontactperson)|Set Insurance Co Contact Person (IN1.6)|
+|[setInsuranceCoPhoneNumber](#in1setinsurancecophonenumber)|Set Insurance Co Phone Number (IN1.7)|
+|[setInsuranceCompanyAddress](#in1setinsurancecompanyaddress)|Set Insurance Company Address (IN1.5)|
+|[setInsuranceCompanyID](#in1setinsurancecompanyid)|Set Insurance Company ID (IN1.3)|
+|[setInsuranceCompanyName](#in1setinsurancecompanyname)|Set Insurance Company Name (IN1.4)|
+|[setInsurancePlanID](#in1setinsuranceplanid)|Set Insurance Plan ID (IN1.2)|
+|[setInsuredsAddress](#in1setinsuredsaddress)|Set Insureds Address (IN1.19)|
+|[setInsuredsDateOfBirth](#in1setinsuredsdateofbirth)|Set Insureds Date Of Birth (IN1.18)|
+|[setInsuredsEmployersAddress](#in1setinsuredsemployersaddress)|Set Insureds Employers Address (IN1.44)|
+|[setInsuredsEmploymentStatus](#in1setinsuredsemploymentstatus)|Set Insureds Employment Status (IN1.42)|
+|[setInsuredsGroupEmpID](#in1setinsuredsgroupempid)|Set Insureds Group Emp ID (IN1.10)|
+|[setInsuredsGroupEmpName](#in1setinsuredsgroupempname)|Set Insureds Group Emp Name (IN1.11)|
+|[setInsuredsIDNumber](#in1setinsuredsidnumber)|Set Insureds IDNumber (IN1.49)|
+|[setInsuredsRelationshipToPatient](#in1setinsuredsrelationshiptopatient)|Set Insureds Relationship To Patient (IN1.17)|
+|[setInsuredsSex](#in1setinsuredssex)|Set Insureds Sex (IN1.43)|
+|[setLifetimeReserveDays](#in1setlifetimereservedays)|Set Lifetime Reserve Days (IN1.33)|
+|[setNameOfInsured](#in1setnameofinsured)|Set Name Of Insured (IN1.16)|
+|[setNoticeOfAdmissionDate](#in1setnoticeofadmissiondate)|Set Notice Of Admission Date (IN1.24)|
+|[setNoticeOfAdmissionFlag](#in1setnoticeofadmissionflag)|Set Notice Of Admission Flag (IN1.23)|
+|[setPlanEffectiveDate](#in1setplaneffectivedate)|Set Plan Effective Date (IN1.12)|
+|[setPlanExpirationDate](#in1setplanexpirationdate)|Set Plan Expiration Date (IN1.13)|
+|[setPlanType](#in1setplantype)|Set Plan Type (IN1.15)|
+|[setPolicyDeductible](#in1setpolicydeductible)|Set Policy Deductible (IN1.37)|
+|[setPolicyLimitAmount](#in1setpolicylimitamount)|Set Policy Limit Amount (IN1.38)|
+|[setPolicyLimitDays](#in1setpolicylimitdays)|Set Policy Limit Days (IN1.39)|
+|[setPolicyNumber](#in1setpolicynumber)|Set Policy Number (IN1.36)|
+|[setPreAdmitCertPAC](#in1setpreadmitcertpac)|Set Pre Admit Cert PAC (IN1.28)|
+|[setPriorInsurancePlanID](#in1setpriorinsuranceplanid)|Set Prior Insurance Plan ID (IN1.46)|
+|[setReleaseInformationCode](#in1setreleaseinformationcode)|Set Release Information Code (IN1.27)|
+|[setReportOfEligibilityDate](#in1setreportofeligibilitydate)|Set Report Of Eligibility Date (IN1.26)|
+|[setReportOfEligibilityFlag](#in1setreportofeligibilityflag)|Set Report Of Eligibility Flag (IN1.25)|
+|[setRoomRatePrivate](#in1setroomrateprivate)|Set Room Rate Private (IN1.41)|
+|[setRoomRateSemiPrivate](#in1setroomratesemiprivate)|Set Room Rate Semi Private (IN1.40)|
+|[setTypeOfAgreementCode](#in1settypeofagreementcode)|Set Type Of Agreement Code (IN1.31)|
+|[setVerificationBy](#in1setverificationby)|Set Verification By (IN1.30)|
+|[setVerificationDateTime](#in1setverificationdatetime)|Set Verification Date Time (IN1.29)|
+|[setVerificationStatus](#in1setverificationstatus)|Set Verification Status (IN1.45)|
 
 ## Inherited methods
 
@@ -160,7 +160,7 @@ Aranyasen\HL7\Segment
 public getAssignmentOfBenefits (int $position)
 ```
 
-Get Assignment OfBenefits (OBR.20) 
+Get Assignment OfBenefits (IN1.20) 
 
  
 
@@ -187,7 +187,7 @@ Get Assignment OfBenefits (OBR.20)
 public getAuthorizationInformation (int $position)
 ```
 
-Get Authorization Information (OBR.14) 
+Get Authorization Information (IN1.14) 
 
  
 
@@ -214,7 +214,7 @@ Get Authorization Information (OBR.14)
 public getBillingStatus (int $position)
 ```
 
-Get Billing Status (OBR.32) 
+Get Billing Status (IN1.32) 
 
  
 
@@ -241,7 +241,7 @@ Get Billing Status (OBR.32)
 public getCompanyPlanCode (int $position)
 ```
 
-Get Company PlanCode (OBR.35) 
+Get Company PlanCode (IN1.35) 
 
  
 
@@ -268,7 +268,7 @@ Get Company PlanCode (OBR.35)
 public getCoordOfBenPriority (int $position)
 ```
 
-Get Coord OfBenPriority (OBR.22) 
+Get Coord OfBenPriority (IN1.22) 
 
  
 
@@ -295,7 +295,7 @@ Get Coord OfBenPriority (OBR.22)
 public getCoordinationOfBenefits (int $position)
 ```
 
-Get Coordination OfBenefits (OBR.21) 
+Get Coordination OfBenefits (IN1.21) 
 
  
 
@@ -322,7 +322,7 @@ Get Coordination OfBenefits (OBR.21)
 public getCoverageType (int $position)
 ```
 
-Get Coverage Type (OBR.47) 
+Get Coverage Type (IN1.47) 
 
  
 
@@ -349,7 +349,7 @@ Get Coverage Type (OBR.47)
 public getDelayBeforeLRDay (int $position)
 ```
 
-Get Delay BeforeLRDay (OBR.34) 
+Get Delay BeforeLRDay (IN1.34) 
 
  
 
@@ -376,7 +376,7 @@ Get Delay BeforeLRDay (OBR.34)
 public getGroupName (int $position)
 ```
 
-Get Group Name (OBR.9) 
+Get Group Name (IN1.9) 
 
  
 
@@ -403,7 +403,7 @@ Get Group Name (OBR.9)
 public getGroupNumber (int $position)
 ```
 
-Get Group Number (OBR.8) 
+Get Group Number (IN1.8) 
 
  
 
@@ -430,7 +430,7 @@ Get Group Number (OBR.8)
 public getHandicap (int $position)
 ```
 
-Get Handicap (OBR.48) 
+Get Handicap (IN1.48) 
 
  
 
@@ -457,7 +457,7 @@ Get Handicap (OBR.48)
 public getID (int $position)
 ```
 
-Get ID (OBR.1) 
+Get ID (IN1.1) 
 
  
 
@@ -484,7 +484,7 @@ Get ID (OBR.1)
 public getInsuranceCoContactPerson (int $position)
 ```
 
-Get Insurance CoContactPerson (OBR.6) 
+Get Insurance CoContactPerson (IN1.6) 
 
  
 
@@ -511,7 +511,7 @@ Get Insurance CoContactPerson (OBR.6)
 public getInsuranceCoPhoneNumber (int $position)
 ```
 
-Get Insurance CoPhoneNumber (OBR.7) 
+Get Insurance CoPhoneNumber (IN1.7) 
 
  
 
@@ -538,7 +538,7 @@ Get Insurance CoPhoneNumber (OBR.7)
 public getInsuranceCompanyAddress (int $position)
 ```
 
-Get Insurance CompanyAddress (OBR.5) 
+Get Insurance CompanyAddress (IN1.5) 
 
  
 
@@ -565,7 +565,7 @@ Get Insurance CompanyAddress (OBR.5)
 public getInsuranceCompanyID (int $position)
 ```
 
-Get Insurance CompanyID (OBR.3) 
+Get Insurance CompanyID (IN1.3) 
 
  
 
@@ -592,7 +592,7 @@ Get Insurance CompanyID (OBR.3)
 public getInsuranceCompanyName (int $position)
 ```
 
-Get Insurance CompanyName (OBR.4) 
+Get Insurance CompanyName (IN1.4) 
 
  
 
@@ -619,7 +619,7 @@ Get Insurance CompanyName (OBR.4)
 public getInsurancePlanID (int $position)
 ```
 
-Get Insurance PlanID (OBR.2) 
+Get Insurance PlanID (IN1.2) 
 
  
 
@@ -646,7 +646,7 @@ Get Insurance PlanID (OBR.2)
 public getInsuredsAddress (int $position)
 ```
 
-Get Insureds Address (OBR.19) 
+Get Insureds Address (IN1.19) 
 
  
 
@@ -673,7 +673,7 @@ Get Insureds Address (OBR.19)
 public getInsuredsDateOfBirth (int $position)
 ```
 
-Get Insureds DateOfBirth (OBR.18) 
+Get Insureds DateOfBirth (IN1.18) 
 
  
 
@@ -700,7 +700,7 @@ Get Insureds DateOfBirth (OBR.18)
 public getInsuredsEmployersAddress (int $position)
 ```
 
-Get Insureds EmployersAddress (OBR.44) 
+Get Insureds EmployersAddress (IN1.44) 
 
  
 
@@ -727,7 +727,7 @@ Get Insureds EmployersAddress (OBR.44)
 public getInsuredsEmploymentStatus (int $position)
 ```
 
-Get Insureds EmploymentStatus (OBR.42) 
+Get Insureds EmploymentStatus (IN1.42) 
 
  
 
@@ -754,7 +754,7 @@ Get Insureds EmploymentStatus (OBR.42)
 public getInsuredsGroupEmpID (int $position)
 ```
 
-Get Insureds GroupEmpID (OBR.10) 
+Get Insureds GroupEmpID (IN1.10) 
 
  
 
@@ -781,7 +781,7 @@ Get Insureds GroupEmpID (OBR.10)
 public getInsuredsGroupEmpName (int $position)
 ```
 
-Get Insureds GroupEmpName (OBR.11) 
+Get Insureds GroupEmpName (IN1.11) 
 
  
 
@@ -808,7 +808,7 @@ Get Insureds GroupEmpName (OBR.11)
 public getInsuredsIDNumber (int $position)
 ```
 
-Get Insureds IDNumber (OBR.49) 
+Get Insureds IDNumber (IN1.49) 
 
  
 
@@ -835,7 +835,7 @@ Get Insureds IDNumber (OBR.49)
 public getInsuredsRelationshipToPatient (int $position)
 ```
 
-Get Insureds RelationshipToPatient (OBR.17) 
+Get Insureds RelationshipToPatient (IN1.17) 
 
  
 
@@ -862,7 +862,7 @@ Get Insureds RelationshipToPatient (OBR.17)
 public getInsuredsSex (int $position)
 ```
 
-Get Insureds Sex (OBR.43) 
+Get Insureds Sex (IN1.43) 
 
  
 
@@ -889,7 +889,7 @@ Get Insureds Sex (OBR.43)
 public getLifetimeReserveDays (int $position)
 ```
 
-Get Lifetime ReserveDays (OBR.33) 
+Get Lifetime ReserveDays (IN1.33) 
 
  
 
@@ -916,7 +916,7 @@ Get Lifetime ReserveDays (OBR.33)
 public getNameOfInsured (int $position)
 ```
 
-Get Name OfInsured (OBR.16) 
+Get Name OfInsured (IN1.16) 
 
  
 
@@ -943,7 +943,7 @@ Get Name OfInsured (OBR.16)
 public getNoticeOfAdmissionDate (int $position)
 ```
 
-Get Notice OfAdmissionDate (OBR.24) 
+Get Notice OfAdmissionDate (IN1.24) 
 
  
 
@@ -970,7 +970,7 @@ Get Notice OfAdmissionDate (OBR.24)
 public getNoticeOfAdmissionFlag (int $position)
 ```
 
-Get Notice OfAdmissionFlag (OBR.23) 
+Get Notice OfAdmissionFlag (IN1.23) 
 
  
 
@@ -997,7 +997,7 @@ Get Notice OfAdmissionFlag (OBR.23)
 public getPlanEffectiveDate (int $position)
 ```
 
-Get Plan EffectiveDate (OBR.12) 
+Get Plan EffectiveDate (IN1.12) 
 
  
 
@@ -1024,7 +1024,7 @@ Get Plan EffectiveDate (OBR.12)
 public getPlanExpirationDate (int $position)
 ```
 
-Get Plan ExpirationDate (OBR.13) 
+Get Plan ExpirationDate (IN1.13) 
 
  
 
@@ -1051,7 +1051,7 @@ Get Plan ExpirationDate (OBR.13)
 public getPlanType (int $position)
 ```
 
-Get Plan Type (OBR.15) 
+Get Plan Type (IN1.15) 
 
  
 
@@ -1078,7 +1078,7 @@ Get Plan Type (OBR.15)
 public getPolicyDeductible (int $position)
 ```
 
-Get Policy Deductible (OBR.37) 
+Get Policy Deductible (IN1.37) 
 
  
 
@@ -1105,7 +1105,7 @@ Get Policy Deductible (OBR.37)
 public getPolicyLimitAmount (int $position)
 ```
 
-Get Policy LimitAmount (OBR.38) 
+Get Policy LimitAmount (IN1.38) 
 
  
 
@@ -1132,7 +1132,7 @@ Get Policy LimitAmount (OBR.38)
 public getPolicyLimitDays (int $position)
 ```
 
-Get Policy LimitDays (OBR.39) 
+Get Policy LimitDays (IN1.39) 
 
  
 
@@ -1159,7 +1159,7 @@ Get Policy LimitDays (OBR.39)
 public getPolicyNumber (int $position)
 ```
 
-Get Policy Number (OBR.36) 
+Get Policy Number (IN1.36) 
 
  
 
@@ -1186,7 +1186,7 @@ Get Policy Number (OBR.36)
 public getPreAdmitCertPAC (int $position)
 ```
 
-Get Pre AdmitCertPAC (OBR.28) 
+Get Pre AdmitCertPAC (IN1.28) 
 
  
 
@@ -1213,7 +1213,7 @@ Get Pre AdmitCertPAC (OBR.28)
 public getPriorInsurancePlanID (int $position)
 ```
 
-Get Prior InsurancePlanID (OBR.46) 
+Get Prior InsurancePlanID (IN1.46) 
 
  
 
@@ -1240,7 +1240,7 @@ Get Prior InsurancePlanID (OBR.46)
 public getReleaseInformationCode (int $position)
 ```
 
-Get Release InformationCode (OBR.27) 
+Get Release InformationCode (IN1.27) 
 
  
 
@@ -1267,7 +1267,7 @@ Get Release InformationCode (OBR.27)
 public getReportOfEligibilityDate (int $position)
 ```
 
-Get Report OfEligibilityDate (OBR.26) 
+Get Report OfEligibilityDate (IN1.26) 
 
  
 
@@ -1294,7 +1294,7 @@ Get Report OfEligibilityDate (OBR.26)
 public getReportOfEligibilityFlag (int $position)
 ```
 
-Get Report OfEligibilityFlag (OBR.25) 
+Get Report OfEligibilityFlag (IN1.25) 
 
  
 
@@ -1321,7 +1321,7 @@ Get Report OfEligibilityFlag (OBR.25)
 public getRoomRatePrivate (int $position)
 ```
 
-Get Room RatePrivate (OBR.41) 
+Get Room RatePrivate (IN1.41) 
 
  
 
@@ -1348,7 +1348,7 @@ Get Room RatePrivate (OBR.41)
 public getRoomRateSemiPrivate (int $position)
 ```
 
-Get Room RateSemiPrivate (OBR.40) 
+Get Room RateSemiPrivate (IN1.40) 
 
  
 
@@ -1375,7 +1375,7 @@ Get Room RateSemiPrivate (OBR.40)
 public getTypeOfAgreementCode (int $position)
 ```
 
-Get Type OfAgreementCode (OBR.31) 
+Get Type OfAgreementCode (IN1.31) 
 
  
 
@@ -1402,7 +1402,7 @@ Get Type OfAgreementCode (OBR.31)
 public getVerificationBy (int $position)
 ```
 
-Get Verification By (OBR.30) 
+Get Verification By (IN1.30) 
 
  
 
@@ -1429,7 +1429,7 @@ Get Verification By (OBR.30)
 public getVerificationDateTime (int $position)
 ```
 
-Get Verification DateTime (OBR.29) 
+Get Verification DateTime (IN1.29) 
 
  
 
@@ -1456,7 +1456,7 @@ Get Verification DateTime (OBR.29)
 public getVerificationStatus (int $position)
 ```
 
-Get Verification Status (OBR.45) 
+Get Verification Status (IN1.45) 
 
  
 
@@ -1507,7 +1507,7 @@ Reset index of this segment
 public setAssignmentOfBenefits (string|int|array|null $value, int $position)
 ```
 
-Set Assignment OfBenefits (OBR.20) 
+Set Assignment Of Benefits (IN1.20) 
 
  
 
@@ -1535,7 +1535,7 @@ Set Assignment OfBenefits (OBR.20)
 public setAuthorizationInformation (string|int|array|null $value, int $position)
 ```
 
-Set Authorization Information (OBR.14) 
+Set Authorization Information (IN1.14) 
 
  
 
@@ -1563,7 +1563,7 @@ Set Authorization Information (OBR.14)
 public setBillingStatus (string|int|array|null $value, int $position)
 ```
 
-Set Billing Status (OBR.32) 
+Set Billing Status (IN1.32) 
 
  
 
@@ -1591,7 +1591,7 @@ Set Billing Status (OBR.32)
 public setCompanyPlanCode (string|int|array|null $value, int $position)
 ```
 
-Set Company PlanCode (OBR.35) 
+Set Company Plan Code (IN1.35) 
 
  
 
@@ -1619,7 +1619,7 @@ Set Company PlanCode (OBR.35)
 public setCoordOfBenPriority (string|int|array|null $value, int $position)
 ```
 
-Set Coord OfBenPriority (OBR.22) 
+Set Coord Of Ben Priority (IN1.22) 
 
  
 
@@ -1647,7 +1647,7 @@ Set Coord OfBenPriority (OBR.22)
 public setCoordinationOfBenefits (string|int|array|null $value, int $position)
 ```
 
-Set Coordination OfBenefits (OBR.21) 
+Set Coordination Of Benefits (IN1.21) 
 
  
 
@@ -1675,7 +1675,7 @@ Set Coordination OfBenefits (OBR.21)
 public setCoverageType (string|int|array|null $value, int $position)
 ```
 
-Set Coverage Type (OBR.47) 
+Set Coverage Type (IN1.47) 
 
  
 
@@ -1703,7 +1703,7 @@ Set Coverage Type (OBR.47)
 public setDelayBeforeLRDay (string|int|array|null $value, int $position)
 ```
 
-Set Delay BeforeLRDay (OBR.34) 
+Set Delay Before LRDay (IN1.34) 
 
  
 
@@ -1731,7 +1731,7 @@ Set Delay BeforeLRDay (OBR.34)
 public setGroupName (string|int|array|null $value, int $position)
 ```
 
-Set Group Name (OBR.9) 
+Set Group Name (IN1.9) 
 
  
 
@@ -1759,7 +1759,7 @@ Set Group Name (OBR.9)
 public setGroupNumber (string|int|array|null $value, int $position)
 ```
 
-Set Group Number (OBR.8) 
+Set Group Number (IN1.8) 
 
  
 
@@ -1787,7 +1787,7 @@ Set Group Number (OBR.8)
 public setHandicap (string|int|array|null $value, int $position)
 ```
 
-Set Handicap (OBR.48) 
+Set Handicap (IN1.48) 
 
  
 
@@ -1839,7 +1839,7 @@ Set Handicap (OBR.48)
 public setInsuranceCoContactPerson (string|int|array|null $value, int $position)
 ```
 
-Set Insurance CoContactPerson (OBR.6) 
+Set Insurance Co Contact Person (IN1.6) 
 
  
 
@@ -1867,7 +1867,7 @@ Set Insurance CoContactPerson (OBR.6)
 public setInsuranceCoPhoneNumber (string|int|array|null $value, int $position)
 ```
 
-Set Insurance CoPhoneNumber (OBR.7) 
+Set Insurance Co Phone Number (IN1.7) 
 
  
 
@@ -1895,7 +1895,7 @@ Set Insurance CoPhoneNumber (OBR.7)
 public setInsuranceCompanyAddress (string|int|array|null $value, int $position)
 ```
 
-Set Insurance CompanyAddress (OBR.5) 
+Set Insurance Company Address (IN1.5) 
 
  
 
@@ -1923,7 +1923,7 @@ Set Insurance CompanyAddress (OBR.5)
 public setInsuranceCompanyID (string|int|array|null $value, int $position)
 ```
 
-Set Insurance CompanyID (OBR.3) 
+Set Insurance Company ID (IN1.3) 
 
  
 
@@ -1951,7 +1951,7 @@ Set Insurance CompanyID (OBR.3)
 public setInsuranceCompanyName (string|int|array|null $value, int $position)
 ```
 
-Set Insurance CompanyName (OBR.4) 
+Set Insurance Company Name (IN1.4) 
 
  
 
@@ -1979,7 +1979,7 @@ Set Insurance CompanyName (OBR.4)
 public setInsurancePlanID (string|int|array|null $value, int $position)
 ```
 
-Set Insurance PlanID (OBR.2) 
+Set Insurance Plan ID (IN1.2) 
 
  
 
@@ -2007,7 +2007,7 @@ Set Insurance PlanID (OBR.2)
 public setInsuredsAddress (string|int|array|null $value, int $position)
 ```
 
-Set Insureds Address (OBR.19) 
+Set Insureds Address (IN1.19) 
 
  
 
@@ -2035,7 +2035,7 @@ Set Insureds Address (OBR.19)
 public setInsuredsDateOfBirth (string|int|array|null $value, int $position)
 ```
 
-Set Insureds DateOfBirth (OBR.18) 
+Set Insureds Date Of Birth (IN1.18) 
 
  
 
@@ -2063,7 +2063,7 @@ Set Insureds DateOfBirth (OBR.18)
 public setInsuredsEmployersAddress (string|int|array|null $value, int $position)
 ```
 
-Set Insureds EmployersAddress (OBR.44) 
+Set Insureds Employers Address (IN1.44) 
 
  
 
@@ -2091,7 +2091,7 @@ Set Insureds EmployersAddress (OBR.44)
 public setInsuredsEmploymentStatus (string|int|array|null $value, int $position)
 ```
 
-Set Insureds EmploymentStatus (OBR.42) 
+Set Insureds Employment Status (IN1.42) 
 
  
 
@@ -2119,7 +2119,7 @@ Set Insureds EmploymentStatus (OBR.42)
 public setInsuredsGroupEmpID (string|int|array|null $value, int $position)
 ```
 
-Set Insureds GroupEmpID (OBR.10) 
+Set Insureds Group Emp ID (IN1.10) 
 
  
 
@@ -2147,7 +2147,7 @@ Set Insureds GroupEmpID (OBR.10)
 public setInsuredsGroupEmpName (string|int|array|null $value, int $position)
 ```
 
-Set Insureds GroupEmpName (OBR.11) 
+Set Insureds Group Emp Name (IN1.11) 
 
  
 
@@ -2175,7 +2175,7 @@ Set Insureds GroupEmpName (OBR.11)
 public setInsuredsIDNumber (string|int|array|null $value, int $position)
 ```
 
-Set Insureds IDNumber (OBR.49) 
+Set Insureds IDNumber (IN1.49) 
 
  
 
@@ -2203,7 +2203,7 @@ Set Insureds IDNumber (OBR.49)
 public setInsuredsRelationshipToPatient (string|int|array|null $value, int $position)
 ```
 
-Set Insureds RelationshipToPatient (OBR.17) 
+Set Insureds Relationship To Patient (IN1.17) 
 
  
 
@@ -2231,7 +2231,7 @@ Set Insureds RelationshipToPatient (OBR.17)
 public setInsuredsSex (string|int|array|null $value, int $position)
 ```
 
-Set Insureds Sex (OBR.43) 
+Set Insureds Sex (IN1.43) 
 
  
 
@@ -2259,7 +2259,7 @@ Set Insureds Sex (OBR.43)
 public setLifetimeReserveDays (string|int|array|null $value, int $position)
 ```
 
-Set Lifetime ReserveDays (OBR.33) 
+Set Lifetime Reserve Days (IN1.33) 
 
  
 
@@ -2287,7 +2287,7 @@ Set Lifetime ReserveDays (OBR.33)
 public setNameOfInsured (string|int|array|null $value, int $position)
 ```
 
-Set Name OfInsured (OBR.16) 
+Set Name Of Insured (IN1.16) 
 
  
 
@@ -2315,7 +2315,7 @@ Set Name OfInsured (OBR.16)
 public setNoticeOfAdmissionDate (string|int|array|null $value, int $position)
 ```
 
-Set Notice OfAdmissionDate (OBR.24) 
+Set Notice Of Admission Date (IN1.24) 
 
  
 
@@ -2343,7 +2343,7 @@ Set Notice OfAdmissionDate (OBR.24)
 public setNoticeOfAdmissionFlag (string|int|array|null $value, int $position)
 ```
 
-Set Notice OfAdmissionFlag (OBR.23) 
+Set Notice Of Admission Flag (IN1.23) 
 
  
 
@@ -2371,7 +2371,7 @@ Set Notice OfAdmissionFlag (OBR.23)
 public setPlanEffectiveDate (string|int|array|null $value, int $position)
 ```
 
-Set Plan EffectiveDate (OBR.12) 
+Set Plan Effective Date (IN1.12) 
 
  
 
@@ -2399,7 +2399,7 @@ Set Plan EffectiveDate (OBR.12)
 public setPlanExpirationDate (string|int|array|null $value, int $position)
 ```
 
-Set Plan ExpirationDate (OBR.13) 
+Set Plan Expiration Date (IN1.13) 
 
  
 
@@ -2427,7 +2427,7 @@ Set Plan ExpirationDate (OBR.13)
 public setPlanType (string|int|array|null $value, int $position)
 ```
 
-Set Plan Type (OBR.15) 
+Set Plan Type (IN1.15) 
 
  
 
@@ -2455,7 +2455,7 @@ Set Plan Type (OBR.15)
 public setPolicyDeductible (string|int|array|null $value, int $position)
 ```
 
-Set Policy Deductible (OBR.37) 
+Set Policy Deductible (IN1.37) 
 
  
 
@@ -2483,7 +2483,7 @@ Set Policy Deductible (OBR.37)
 public setPolicyLimitAmount (string|int|array|null $value, int $position)
 ```
 
-Set Policy LimitAmount (OBR.38) 
+Set Policy Limit Amount (IN1.38) 
 
  
 
@@ -2511,7 +2511,7 @@ Set Policy LimitAmount (OBR.38)
 public setPolicyLimitDays (string|int|array|null $value, int $position)
 ```
 
-Set Policy LimitDays (OBR.39) 
+Set Policy Limit Days (IN1.39) 
 
  
 
@@ -2539,7 +2539,7 @@ Set Policy LimitDays (OBR.39)
 public setPolicyNumber (string|int|array|null $value, int $position)
 ```
 
-Set Policy Number (OBR.36) 
+Set Policy Number (IN1.36) 
 
  
 
@@ -2567,7 +2567,7 @@ Set Policy Number (OBR.36)
 public setPreAdmitCertPAC (string|int|array|null $value, int $position)
 ```
 
-Set Pre AdmitCertPAC (OBR.28) 
+Set Pre Admit Cert PAC (IN1.28) 
 
  
 
@@ -2595,7 +2595,7 @@ Set Pre AdmitCertPAC (OBR.28)
 public setPriorInsurancePlanID (string|int|array|null $value, int $position)
 ```
 
-Set Prior InsurancePlanID (OBR.46) 
+Set Prior Insurance Plan ID (IN1.46) 
 
  
 
@@ -2623,7 +2623,7 @@ Set Prior InsurancePlanID (OBR.46)
 public setReleaseInformationCode (string|int|array|null $value, int $position)
 ```
 
-Set Release InformationCode (OBR.27) 
+Set Release Information Code (IN1.27) 
 
  
 
@@ -2651,7 +2651,7 @@ Set Release InformationCode (OBR.27)
 public setReportOfEligibilityDate (string|int|array|null $value, int $position)
 ```
 
-Set Report OfEligibilityDate (OBR.26) 
+Set Report Of Eligibility Date (IN1.26) 
 
  
 
@@ -2679,7 +2679,7 @@ Set Report OfEligibilityDate (OBR.26)
 public setReportOfEligibilityFlag (string|int|array|null $value, int $position)
 ```
 
-Set Report OfEligibilityFlag (OBR.25) 
+Set Report Of Eligibility Flag (IN1.25) 
 
  
 
@@ -2707,7 +2707,7 @@ Set Report OfEligibilityFlag (OBR.25)
 public setRoomRatePrivate (string|int|array|null $value, int $position)
 ```
 
-Set Room RatePrivate (OBR.41) 
+Set Room Rate Private (IN1.41) 
 
  
 
@@ -2735,7 +2735,7 @@ Set Room RatePrivate (OBR.41)
 public setRoomRateSemiPrivate (string|int|array|null $value, int $position)
 ```
 
-Set Room RateSemiPrivate (OBR.40) 
+Set Room Rate Semi Private (IN1.40) 
 
  
 
@@ -2763,7 +2763,7 @@ Set Room RateSemiPrivate (OBR.40)
 public setTypeOfAgreementCode (string|int|array|null $value, int $position)
 ```
 
-Set Type OfAgreementCode (OBR.31) 
+Set Type Of Agreement Code (IN1.31) 
 
  
 
@@ -2791,7 +2791,7 @@ Set Type OfAgreementCode (OBR.31)
 public setVerificationBy (string|int|array|null $value, int $position)
 ```
 
-Set Verification By (OBR.30) 
+Set Verification By (IN1.30) 
 
  
 
@@ -2819,7 +2819,7 @@ Set Verification By (OBR.30)
 public setVerificationDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Verification DateTime (OBR.29) 
+Set Verification Date Time (IN1.29) 
 
  
 
@@ -2847,7 +2847,7 @@ Set Verification DateTime (OBR.29)
 public setVerificationStatus (string|int|array|null $value, int $position)
 ```
 
-Set Verification Status (OBR.45) 
+Set Verification Status (IN1.45) 
 
  
 

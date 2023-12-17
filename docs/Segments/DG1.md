@@ -14,45 +14,45 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[__destruct](#dg1__destruct)||
-|[getAttestationDateTime](#dg1getattestationdatetime)|Get Attestation DateTime (OBR.19)|
-|[getConfidentialIndicator](#dg1getconfidentialindicator)|Get Confidential Indicator (OBR.18)|
-|[getDRGApprovalIndicator](#dg1getdrgapprovalindicator)|Get DRGApproval Indicator (OBR.9)|
-|[getDRGGrouperReviewCode](#dg1getdrggrouperreviewcode)|Get DRGGrouper ReviewCode (OBR.10)|
-|[getDiagnosingClinician](#dg1getdiagnosingclinician)|Get Diagnosing Clinician (OBR.16)|
-|[getDiagnosisClassification](#dg1getdiagnosisclassification)|Get Diagnosis Classification (OBR.17)|
+|[getAttestationDateTime](#dg1getattestationdatetime)|Get Attestation DateTime (DG1.19)|
+|[getConfidentialIndicator](#dg1getconfidentialindicator)|Get Confidential Indicator (DG1.18)|
+|[getDRGApprovalIndicator](#dg1getdrgapprovalindicator)|Get DRGApproval Indicator (DG1.9)|
+|[getDRGGrouperReviewCode](#dg1getdrggrouperreviewcode)|Get DRGGrouper ReviewCode (DG1.10)|
+|[getDiagnosingClinician](#dg1getdiagnosingclinician)|Get Diagnosing Clinician (DG1.16)|
+|[getDiagnosisClassification](#dg1getdiagnosisclassification)|Get Diagnosis Classification (DG1.17)|
 |[getDiagnosisCodeDG1](#dg1getdiagnosiscodedg1)||
-|[getDiagnosisCodingMethod](#dg1getdiagnosiscodingmethod)|Get Diagnosis CodingMethod (OBR.2)|
-|[getDiagnosisDateTime](#dg1getdiagnosisdatetime)|Get Diagnosis DateTime (OBR.5)|
-|[getDiagnosisDescription](#dg1getdiagnosisdescription)|Get Diagnosis Description (OBR.4)|
-|[getDiagnosisPriority](#dg1getdiagnosispriority)|Get Diagnosis Priority (OBR.15)|
-|[getDiagnosisType](#dg1getdiagnosistype)|Get Diagnosis Type (OBR.6)|
-|[getDiagnosticRelatedGroup](#dg1getdiagnosticrelatedgroup)|Get Diagnostic RelatedGroup (OBR.8)|
-|[getGrouperVersionAndType](#dg1getgrouperversionandtype)|Get Grouper VersionAndType (OBR.14)|
-|[getID](#dg1getid)|Get ID (OBR.1)|
-|[getMajorDiagnosticCategory](#dg1getmajordiagnosticcategory)|Get Major DiagnosticCategory (OBR.7)|
-|[getOutlierCost](#dg1getoutliercost)|Get Outlier Cost (OBR.13)|
-|[getOutlierDays](#dg1getoutlierdays)|Get Outlier Days (OBR.12)|
-|[getOutlierType](#dg1getoutliertype)|Get Outlier Type (OBR.11)|
+|[getDiagnosisCodingMethod](#dg1getdiagnosiscodingmethod)|Get Diagnosis CodingMethod (DG1.2)|
+|[getDiagnosisDateTime](#dg1getdiagnosisdatetime)|Get Diagnosis DateTime (DG1.5)|
+|[getDiagnosisDescription](#dg1getdiagnosisdescription)|Get Diagnosis Description (DG1.4)|
+|[getDiagnosisPriority](#dg1getdiagnosispriority)|Get Diagnosis Priority (DG1.15)|
+|[getDiagnosisType](#dg1getdiagnosistype)|Get Diagnosis Type (DG1.6)|
+|[getDiagnosticRelatedGroup](#dg1getdiagnosticrelatedgroup)|Get Diagnostic RelatedGroup (DG1.8)|
+|[getGrouperVersionAndType](#dg1getgrouperversionandtype)|Get Grouper VersionAndType (DG1.14)|
+|[getID](#dg1getid)|Get ID (DG1.1)|
+|[getMajorDiagnosticCategory](#dg1getmajordiagnosticcategory)|Get Major DiagnosticCategory (DG1.7)|
+|[getOutlierCost](#dg1getoutliercost)|Get Outlier Cost (DG1.13)|
+|[getOutlierDays](#dg1getoutlierdays)|Get Outlier Days (DG1.12)|
+|[getOutlierType](#dg1getoutliertype)|Get Outlier Type (DG1.11)|
 |[resetIndex](#dg1resetindex)|Reset index of this segment|
-|[setAttestationDateTime](#dg1setattestationdatetime)|Set Attestation DateTime (OBR.19)|
-|[setConfidentialIndicator](#dg1setconfidentialindicator)|Set Confidential Indicator (OBR.18)|
-|[setDRGApprovalIndicator](#dg1setdrgapprovalindicator)|Set DRGApproval Indicator (OBR.9)|
-|[setDRGGrouperReviewCode](#dg1setdrggrouperreviewcode)|Set DRGGrouper ReviewCode (OBR.10)|
-|[setDiagnosingClinician](#dg1setdiagnosingclinician)|Set Diagnosing Clinician (OBR.16)|
-|[setDiagnosisClassification](#dg1setdiagnosisclassification)|Set Diagnosis Classification (OBR.17)|
+|[setAttestationDateTime](#dg1setattestationdatetime)|Set Attestation Date Time (DG1.19)|
+|[setConfidentialIndicator](#dg1setconfidentialindicator)|Set Confidential Indicator (DG1.18)|
+|[setDRGApprovalIndicator](#dg1setdrgapprovalindicator)|Set DRGApproval Indicator (DG1.9)|
+|[setDRGGrouperReviewCode](#dg1setdrggrouperreviewcode)|Set DRGGrouper Review Code (DG1.10)|
+|[setDiagnosingClinician](#dg1setdiagnosingclinician)|Set Diagnosing Clinician (DG1.16)|
+|[setDiagnosisClassification](#dg1setdiagnosisclassification)|Set Diagnosis Classification (DG1.17)|
 |[setDiagnosisCodeDG1](#dg1setdiagnosiscodedg1)||
-|[setDiagnosisCodingMethod](#dg1setdiagnosiscodingmethod)|Set Diagnosis CodingMethod (OBR.2)|
-|[setDiagnosisDateTime](#dg1setdiagnosisdatetime)|Set Diagnosis DateTime (OBR.5)|
-|[setDiagnosisDescription](#dg1setdiagnosisdescription)|Set Diagnosis Description (OBR.4)|
-|[setDiagnosisPriority](#dg1setdiagnosispriority)|Set Diagnosis Priority (OBR.15)|
-|[setDiagnosisType](#dg1setdiagnosistype)|Set Diagnosis Type (OBR.6)|
-|[setDiagnosticRelatedGroup](#dg1setdiagnosticrelatedgroup)|Set Diagnostic RelatedGroup (OBR.8)|
-|[setGrouperVersionAndType](#dg1setgrouperversionandtype)|Set Grouper VersionAndType (OBR.14)|
+|[setDiagnosisCodingMethod](#dg1setdiagnosiscodingmethod)|Set Diagnosis Coding Method (DG1.2)|
+|[setDiagnosisDateTime](#dg1setdiagnosisdatetime)|Set Diagnosis Date Time (DG1.5)|
+|[setDiagnosisDescription](#dg1setdiagnosisdescription)|Set Diagnosis Description (DG1.4)|
+|[setDiagnosisPriority](#dg1setdiagnosispriority)|Set Diagnosis Priority (DG1.15)|
+|[setDiagnosisType](#dg1setdiagnosistype)|Set Diagnosis Type (DG1.6)|
+|[setDiagnosticRelatedGroup](#dg1setdiagnosticrelatedgroup)|Set Diagnostic Related Group (DG1.8)|
+|[setGrouperVersionAndType](#dg1setgrouperversionandtype)|Set Grouper Version And Type (DG1.14)|
 |[setID](#dg1setid)||
-|[setMajorDiagnosticCategory](#dg1setmajordiagnosticcategory)|Set Major DiagnosticCategory (OBR.7)|
-|[setOutlierCost](#dg1setoutliercost)|Set Outlier Cost (OBR.13)|
-|[setOutlierDays](#dg1setoutlierdays)|Set Outlier Days (OBR.12)|
-|[setOutlierType](#dg1setoutliertype)|Set Outlier Type (OBR.11)|
+|[setMajorDiagnosticCategory](#dg1setmajordiagnosticcategory)|Set Major Diagnostic Category (DG1.7)|
+|[setOutlierCost](#dg1setoutliercost)|Set Outlier Cost (DG1.13)|
+|[setOutlierDays](#dg1setoutlierdays)|Set Outlier Days (DG1.12)|
+|[setOutlierType](#dg1setoutliertype)|Set Outlier Type (DG1.11)|
 
 ## Inherited methods
 
@@ -100,7 +100,7 @@ Aranyasen\HL7\Segment
 public getAttestationDateTime (int $position)
 ```
 
-Get Attestation DateTime (OBR.19) 
+Get Attestation DateTime (DG1.19) 
 
  
 
@@ -127,7 +127,7 @@ Get Attestation DateTime (OBR.19)
 public getConfidentialIndicator (int $position)
 ```
 
-Get Confidential Indicator (OBR.18) 
+Get Confidential Indicator (DG1.18) 
 
  
 
@@ -154,7 +154,7 @@ Get Confidential Indicator (OBR.18)
 public getDRGApprovalIndicator (int $position)
 ```
 
-Get DRGApproval Indicator (OBR.9) 
+Get DRGApproval Indicator (DG1.9) 
 
  
 
@@ -181,7 +181,7 @@ Get DRGApproval Indicator (OBR.9)
 public getDRGGrouperReviewCode (int $position)
 ```
 
-Get DRGGrouper ReviewCode (OBR.10) 
+Get DRGGrouper ReviewCode (DG1.10) 
 
  
 
@@ -208,7 +208,7 @@ Get DRGGrouper ReviewCode (OBR.10)
 public getDiagnosingClinician (int $position)
 ```
 
-Get Diagnosing Clinician (OBR.16) 
+Get Diagnosing Clinician (DG1.16) 
 
  
 
@@ -235,7 +235,7 @@ Get Diagnosing Clinician (OBR.16)
 public getDiagnosisClassification (int $position)
 ```
 
-Get Diagnosis Classification (OBR.17) 
+Get Diagnosis Classification (DG1.17) 
 
  
 
@@ -286,7 +286,7 @@ Get Diagnosis Classification (OBR.17)
 public getDiagnosisCodingMethod (int $position)
 ```
 
-Get Diagnosis CodingMethod (OBR.2) 
+Get Diagnosis CodingMethod (DG1.2) 
 
  
 
@@ -313,7 +313,7 @@ Get Diagnosis CodingMethod (OBR.2)
 public getDiagnosisDateTime (int $position)
 ```
 
-Get Diagnosis DateTime (OBR.5) 
+Get Diagnosis DateTime (DG1.5) 
 
  
 
@@ -340,7 +340,7 @@ Get Diagnosis DateTime (OBR.5)
 public getDiagnosisDescription (int $position)
 ```
 
-Get Diagnosis Description (OBR.4) 
+Get Diagnosis Description (DG1.4) 
 
  
 
@@ -367,7 +367,7 @@ Get Diagnosis Description (OBR.4)
 public getDiagnosisPriority (int $position)
 ```
 
-Get Diagnosis Priority (OBR.15) 
+Get Diagnosis Priority (DG1.15) 
 
  
 
@@ -394,7 +394,7 @@ Get Diagnosis Priority (OBR.15)
 public getDiagnosisType (int $position)
 ```
 
-Get Diagnosis Type (OBR.6) 
+Get Diagnosis Type (DG1.6) 
 
  
 
@@ -421,7 +421,7 @@ Get Diagnosis Type (OBR.6)
 public getDiagnosticRelatedGroup (int $position)
 ```
 
-Get Diagnostic RelatedGroup (OBR.8) 
+Get Diagnostic RelatedGroup (DG1.8) 
 
  
 
@@ -448,7 +448,7 @@ Get Diagnostic RelatedGroup (OBR.8)
 public getGrouperVersionAndType (int $position)
 ```
 
-Get Grouper VersionAndType (OBR.14) 
+Get Grouper VersionAndType (DG1.14) 
 
  
 
@@ -475,7 +475,7 @@ Get Grouper VersionAndType (OBR.14)
 public getID (int $position)
 ```
 
-Get ID (OBR.1) 
+Get ID (DG1.1) 
 
  
 
@@ -502,7 +502,7 @@ Get ID (OBR.1)
 public getMajorDiagnosticCategory (int $position)
 ```
 
-Get Major DiagnosticCategory (OBR.7) 
+Get Major DiagnosticCategory (DG1.7) 
 
  
 
@@ -529,7 +529,7 @@ Get Major DiagnosticCategory (OBR.7)
 public getOutlierCost (int $position)
 ```
 
-Get Outlier Cost (OBR.13) 
+Get Outlier Cost (DG1.13) 
 
  
 
@@ -556,7 +556,7 @@ Get Outlier Cost (OBR.13)
 public getOutlierDays (int $position)
 ```
 
-Get Outlier Days (OBR.12) 
+Get Outlier Days (DG1.12) 
 
  
 
@@ -583,7 +583,7 @@ Get Outlier Days (OBR.12)
 public getOutlierType (int $position)
 ```
 
-Get Outlier Type (OBR.11) 
+Get Outlier Type (DG1.11) 
 
  
 
@@ -634,7 +634,7 @@ Reset index of this segment
 public setAttestationDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Attestation DateTime (OBR.19) 
+Set Attestation Date Time (DG1.19) 
 
  
 
@@ -662,7 +662,7 @@ Set Attestation DateTime (OBR.19)
 public setConfidentialIndicator (string|int|array|null $value, int $position)
 ```
 
-Set Confidential Indicator (OBR.18) 
+Set Confidential Indicator (DG1.18) 
 
  
 
@@ -690,7 +690,7 @@ Set Confidential Indicator (OBR.18)
 public setDRGApprovalIndicator (string|int|array|null $value, int $position)
 ```
 
-Set DRGApproval Indicator (OBR.9) 
+Set DRGApproval Indicator (DG1.9) 
 
  
 
@@ -718,7 +718,7 @@ Set DRGApproval Indicator (OBR.9)
 public setDRGGrouperReviewCode (string|int|array|null $value, int $position)
 ```
 
-Set DRGGrouper ReviewCode (OBR.10) 
+Set DRGGrouper Review Code (DG1.10) 
 
  
 
@@ -746,7 +746,7 @@ Set DRGGrouper ReviewCode (OBR.10)
 public setDiagnosingClinician (string|int|array|null $value, int $position)
 ```
 
-Set Diagnosing Clinician (OBR.16) 
+Set Diagnosing Clinician (DG1.16) 
 
  
 
@@ -774,7 +774,7 @@ Set Diagnosing Clinician (OBR.16)
 public setDiagnosisClassification (string|int|array|null $value, int $position)
 ```
 
-Set Diagnosis Classification (OBR.17) 
+Set Diagnosis Classification (DG1.17) 
 
  
 
@@ -826,7 +826,7 @@ Set Diagnosis Classification (OBR.17)
 public setDiagnosisCodingMethod (string|int|array|null $value, int $position)
 ```
 
-Set Diagnosis CodingMethod (OBR.2) 
+Set Diagnosis Coding Method (DG1.2) 
 
  
 
@@ -854,7 +854,7 @@ Set Diagnosis CodingMethod (OBR.2)
 public setDiagnosisDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Diagnosis DateTime (OBR.5) 
+Set Diagnosis Date Time (DG1.5) 
 
  
 
@@ -882,7 +882,7 @@ Set Diagnosis DateTime (OBR.5)
 public setDiagnosisDescription (string|int|array|null $value, int $position)
 ```
 
-Set Diagnosis Description (OBR.4) 
+Set Diagnosis Description (DG1.4) 
 
  
 
@@ -910,7 +910,7 @@ Set Diagnosis Description (OBR.4)
 public setDiagnosisPriority (string|int|array|null $value, int $position)
 ```
 
-Set Diagnosis Priority (OBR.15) 
+Set Diagnosis Priority (DG1.15) 
 
  
 
@@ -938,7 +938,7 @@ Set Diagnosis Priority (OBR.15)
 public setDiagnosisType (string|int|array|null $value, int $position)
 ```
 
-Set Diagnosis Type (OBR.6) 
+Set Diagnosis Type (DG1.6) 
 
  
 
@@ -966,7 +966,7 @@ Set Diagnosis Type (OBR.6)
 public setDiagnosticRelatedGroup (string|int|array|null $value, int $position)
 ```
 
-Set Diagnostic RelatedGroup (OBR.8) 
+Set Diagnostic Related Group (DG1.8) 
 
  
 
@@ -994,7 +994,7 @@ Set Diagnostic RelatedGroup (OBR.8)
 public setGrouperVersionAndType (string|int|array|null $value, int $position)
 ```
 
-Set Grouper VersionAndType (OBR.14) 
+Set Grouper Version And Type (DG1.14) 
 
  
 
@@ -1046,7 +1046,7 @@ Set Grouper VersionAndType (OBR.14)
 public setMajorDiagnosticCategory (string|int|array|null $value, int $position)
 ```
 
-Set Major DiagnosticCategory (OBR.7) 
+Set Major Diagnostic Category (DG1.7) 
 
  
 
@@ -1074,7 +1074,7 @@ Set Major DiagnosticCategory (OBR.7)
 public setOutlierCost (string|int|array|null $value, int $position)
 ```
 
-Set Outlier Cost (OBR.13) 
+Set Outlier Cost (DG1.13) 
 
  
 
@@ -1102,7 +1102,7 @@ Set Outlier Cost (OBR.13)
 public setOutlierDays (string|int|array|null $value, int $position)
 ```
 
-Set Outlier Days (OBR.12) 
+Set Outlier Days (DG1.12) 
 
  
 
@@ -1130,7 +1130,7 @@ Set Outlier Days (OBR.12)
 public setOutlierType (string|int|array|null $value, int $position)
 ```
 
-Set Outlier Type (OBR.11) 
+Set Outlier Type (DG1.11) 
 
  
 

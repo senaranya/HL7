@@ -14,111 +14,111 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[__destruct](#pv1__destruct)||
-|[getAccountStatus](#pv1getaccountstatus)|Get Account Status (OBR.41)|
-|[getAdmissionType](#pv1getadmissiontype)|Get Admission Type (OBR.4)|
-|[getAdmitDateTime](#pv1getadmitdatetime)|Get Admit DateTime (OBR.44)|
-|[getAdmitSource](#pv1getadmitsource)|Get Admit Source (OBR.14)|
-|[getAdmittingDoctor](#pv1getadmittingdoctor)|Get Admitting Doctor (OBR.17)|
-|[getAlternateVisitID](#pv1getalternatevisitid)|Get Alternate VisitID (OBR.50)|
-|[getAmbulatoryStatus](#pv1getambulatorystatus)|Get Ambulatory Status (OBR.15)|
-|[getAssignedPatientLocation](#pv1getassignedpatientlocation)|Get Assigned PatientLocation (OBR.3)|
-|[getAttendingDoctor](#pv1getattendingdoctor)|Get Attending Doctor (OBR.7)|
-|[getBadDebtAgencyCode](#pv1getbaddebtagencycode)|Get Bad DebtAgencyCode (OBR.31)|
-|[getBadDebtRecoveryAmount](#pv1getbaddebtrecoveryamount)|Get Bad DebtRecoveryAmount (OBR.33)|
-|[getBadDebtTransferAmount](#pv1getbaddebttransferamount)|Get Bad DebtTransferAmount (OBR.32)|
-|[getBedStatus](#pv1getbedstatus)|Get Bed Status (OBR.40)|
-|[getChargePriceIndicator](#pv1getchargepriceindicator)|Get Charge PriceIndicator (OBR.21)|
-|[getConsultingDoctor](#pv1getconsultingdoctor)|Get Consulting Doctor (OBR.9)|
-|[getContractAmount](#pv1getcontractamount)|Get Contract Amount (OBR.26)|
-|[getContractCode](#pv1getcontractcode)|Get Contract Code (OBR.24)|
-|[getContractEffectiveDate](#pv1getcontracteffectivedate)|Get Contract EffectiveDate (OBR.25)|
-|[getContractPeriod](#pv1getcontractperiod)|Get Contract Period (OBR.27)|
-|[getCourtesyCode](#pv1getcourtesycode)|Get Courtesy Code (OBR.22)|
-|[getCreditRating](#pv1getcreditrating)|Get Credit Rating (OBR.23)|
-|[getCurrentPatientBalance](#pv1getcurrentpatientbalance)|Get Current PatientBalance (OBR.46)|
-|[getDeleteAccountDate](#pv1getdeleteaccountdate)|Get Delete AccountDate (OBR.35)|
-|[getDeleteAccountIndicator](#pv1getdeleteaccountindicator)|Get Delete AccountIndicator (OBR.34)|
-|[getDietType](#pv1getdiettype)|Get Diet Type (OBR.38)|
-|[getDischargeDateTime](#pv1getdischargedatetime)|Get Discharge DateTime (OBR.45)|
-|[getDischargeDisposition](#pv1getdischargedisposition)|Get Discharge Disposition (OBR.36)|
-|[getDischargedToLocation](#pv1getdischargedtolocation)|Get Discharged ToLocation (OBR.37)|
-|[getFinancialClass](#pv1getfinancialclass)|Get Financial Class (OBR.20)|
-|[getHospitalService](#pv1gethospitalservice)|Get Hospital Service (OBR.10)|
-|[getID](#pv1getid)|Get ID (OBR.1)|
-|[getInterestCode](#pv1getinterestcode)|Get Interest Code (OBR.28)|
-|[getOtherHealthcareProvider](#pv1getotherhealthcareprovider)|Get Other HealthcareProvider (OBR.52)|
-|[getPatientClass](#pv1getpatientclass)|Get Patient Class (OBR.2)|
-|[getPatientType](#pv1getpatienttype)|Get Patient Type (OBR.18)|
-|[getPendingLocation](#pv1getpendinglocation)|Get Pending Location (OBR.42)|
-|[getPreAdmitNumber](#pv1getpreadmitnumber)|Get Pre AdmitNumber (OBR.5)|
-|[getPreAdmitTestIndicator](#pv1getpreadmittestindicator)|Get Pre AdmitTestIndicator (OBR.12)|
-|[getPriorPatientLocation](#pv1getpriorpatientlocation)|Get Prior PatientLocation (OBR.6)|
-|[getPriorTemporaryLocation](#pv1getpriortemporarylocation)|Get Prior TemporaryLocation (OBR.43)|
-|[getReAdmissionIndicator](#pv1getreadmissionindicator)|Get Re AdmissionIndicator (OBR.13)|
-|[getReferringDoctor](#pv1getreferringdoctor)|Get Referring Doctor (OBR.8)|
-|[getServicingFacility](#pv1getservicingfacility)|Get Servicing Facility (OBR.39)|
-|[getTemporaryLocation](#pv1gettemporarylocation)|Get Temporary Location (OBR.11)|
-|[getTotalAdjustments](#pv1gettotaladjustments)|Get Total Adjustments (OBR.48)|
-|[getTotalCharges](#pv1gettotalcharges)|Get Total Charges (OBR.47)|
-|[getTotalPayments](#pv1gettotalpayments)|Get Total Payments (OBR.49)|
-|[getTransferToBadDebtCode](#pv1gettransfertobaddebtcode)|Get Transfer ToBadDebtCode (OBR.29)|
-|[getTransferToBadDebtDate](#pv1gettransfertobaddebtdate)|Get Transfer ToBadDebtDate (OBR.30)|
-|[getVipIndicator](#pv1getvipindicator)|Get Vip Indicator (OBR.16)|
-|[getVisitIndicator](#pv1getvisitindicator)|Get Visit Indicator (OBR.51)|
-|[getVisitNumber](#pv1getvisitnumber)|Get Visit Number (OBR.19)|
+|[getAccountStatus](#pv1getaccountstatus)|Get Account Status (PV1.41)|
+|[getAdmissionType](#pv1getadmissiontype)|Get Admission Type (PV1.4)|
+|[getAdmitDateTime](#pv1getadmitdatetime)|Get Admit DateTime (PV1.44)|
+|[getAdmitSource](#pv1getadmitsource)|Get Admit Source (PV1.14)|
+|[getAdmittingDoctor](#pv1getadmittingdoctor)|Get Admitting Doctor (PV1.17)|
+|[getAlternateVisitID](#pv1getalternatevisitid)|Get Alternate VisitID (PV1.50)|
+|[getAmbulatoryStatus](#pv1getambulatorystatus)|Get Ambulatory Status (PV1.15)|
+|[getAssignedPatientLocation](#pv1getassignedpatientlocation)|Get Assigned PatientLocation (PV1.3)|
+|[getAttendingDoctor](#pv1getattendingdoctor)|Get Attending Doctor (PV1.7)|
+|[getBadDebtAgencyCode](#pv1getbaddebtagencycode)|Get Bad DebtAgencyCode (PV1.31)|
+|[getBadDebtRecoveryAmount](#pv1getbaddebtrecoveryamount)|Get Bad DebtRecoveryAmount (PV1.33)|
+|[getBadDebtTransferAmount](#pv1getbaddebttransferamount)|Get Bad DebtTransferAmount (PV1.32)|
+|[getBedStatus](#pv1getbedstatus)|Get Bed Status (PV1.40)|
+|[getChargePriceIndicator](#pv1getchargepriceindicator)|Get Charge PriceIndicator (PV1.21)|
+|[getConsultingDoctor](#pv1getconsultingdoctor)|Get Consulting Doctor (PV1.9)|
+|[getContractAmount](#pv1getcontractamount)|Get Contract Amount (PV1.26)|
+|[getContractCode](#pv1getcontractcode)|Get Contract Code (PV1.24)|
+|[getContractEffectiveDate](#pv1getcontracteffectivedate)|Get Contract EffectiveDate (PV1.25)|
+|[getContractPeriod](#pv1getcontractperiod)|Get Contract Period (PV1.27)|
+|[getCourtesyCode](#pv1getcourtesycode)|Get Courtesy Code (PV1.22)|
+|[getCreditRating](#pv1getcreditrating)|Get Credit Rating (PV1.23)|
+|[getCurrentPatientBalance](#pv1getcurrentpatientbalance)|Get Current PatientBalance (PV1.46)|
+|[getDeleteAccountDate](#pv1getdeleteaccountdate)|Get Delete AccountDate (PV1.35)|
+|[getDeleteAccountIndicator](#pv1getdeleteaccountindicator)|Get Delete AccountIndicator (PV1.34)|
+|[getDietType](#pv1getdiettype)|Get Diet Type (PV1.38)|
+|[getDischargeDateTime](#pv1getdischargedatetime)|Get Discharge DateTime (PV1.45)|
+|[getDischargeDisposition](#pv1getdischargedisposition)|Get Discharge Disposition (PV1.36)|
+|[getDischargedToLocation](#pv1getdischargedtolocation)|Get Discharged ToLocation (PV1.37)|
+|[getFinancialClass](#pv1getfinancialclass)|Get Financial Class (PV1.20)|
+|[getHospitalService](#pv1gethospitalservice)|Get Hospital Service (PV1.10)|
+|[getID](#pv1getid)|Get ID (PV1.1)|
+|[getInterestCode](#pv1getinterestcode)|Get Interest Code (PV1.28)|
+|[getOtherHealthcareProvider](#pv1getotherhealthcareprovider)|Get Other HealthcareProvider (PV1.52)|
+|[getPatientClass](#pv1getpatientclass)|Get Patient Class (PV1.2)|
+|[getPatientType](#pv1getpatienttype)|Get Patient Type (PV1.18)|
+|[getPendingLocation](#pv1getpendinglocation)|Get Pending Location (PV1.42)|
+|[getPreAdmitNumber](#pv1getpreadmitnumber)|Get Pre AdmitNumber (PV1.5)|
+|[getPreAdmitTestIndicator](#pv1getpreadmittestindicator)|Get Pre AdmitTestIndicator (PV1.12)|
+|[getPriorPatientLocation](#pv1getpriorpatientlocation)|Get Prior PatientLocation (PV1.6)|
+|[getPriorTemporaryLocation](#pv1getpriortemporarylocation)|Get Prior TemporaryLocation (PV1.43)|
+|[getReAdmissionIndicator](#pv1getreadmissionindicator)|Get Re AdmissionIndicator (PV1.13)|
+|[getReferringDoctor](#pv1getreferringdoctor)|Get Referring Doctor (PV1.8)|
+|[getServicingFacility](#pv1getservicingfacility)|Get Servicing Facility (PV1.39)|
+|[getTemporaryLocation](#pv1gettemporarylocation)|Get Temporary Location (PV1.11)|
+|[getTotalAdjustments](#pv1gettotaladjustments)|Get Total Adjustments (PV1.48)|
+|[getTotalCharges](#pv1gettotalcharges)|Get Total Charges (PV1.47)|
+|[getTotalPayments](#pv1gettotalpayments)|Get Total Payments (PV1.49)|
+|[getTransferToBadDebtCode](#pv1gettransfertobaddebtcode)|Get Transfer ToBadDebtCode (PV1.29)|
+|[getTransferToBadDebtDate](#pv1gettransfertobaddebtdate)|Get Transfer ToBadDebtDate (PV1.30)|
+|[getVipIndicator](#pv1getvipindicator)|Get Vip Indicator (PV1.16)|
+|[getVisitIndicator](#pv1getvisitindicator)|Get Visit Indicator (PV1.51)|
+|[getVisitNumber](#pv1getvisitnumber)|Get Visit Number (PV1.19)|
 |[resetIndex](#pv1resetindex)|Reset index of this segment|
-|[setAccountStatus](#pv1setaccountstatus)|Set Account Status (OBR.41)|
-|[setAdmissionType](#pv1setadmissiontype)|Set Admission Type (OBR.4)|
-|[setAdmitDateTime](#pv1setadmitdatetime)|Set Admit DateTime (OBR.44)|
-|[setAdmitSource](#pv1setadmitsource)|Set Admit Source (OBR.14)|
-|[setAdmittingDoctor](#pv1setadmittingdoctor)|Set Admitting Doctor (OBR.17)|
-|[setAlternateVisitID](#pv1setalternatevisitid)|Set Alternate VisitID (OBR.50)|
-|[setAmbulatoryStatus](#pv1setambulatorystatus)|Set Ambulatory Status (OBR.15)|
-|[setAssignedPatientLocation](#pv1setassignedpatientlocation)|Set Assigned PatientLocation (OBR.3)|
-|[setAttendingDoctor](#pv1setattendingdoctor)|Set Attending Doctor (OBR.7)|
-|[setBadDebtAgencyCode](#pv1setbaddebtagencycode)|Set Bad DebtAgencyCode (OBR.31)|
-|[setBadDebtRecoveryAmount](#pv1setbaddebtrecoveryamount)|Set Bad DebtRecoveryAmount (OBR.33)|
-|[setBadDebtTransferAmount](#pv1setbaddebttransferamount)|Set Bad DebtTransferAmount (OBR.32)|
-|[setBedStatus](#pv1setbedstatus)|Set Bed Status (OBR.40)|
-|[setChargePriceIndicator](#pv1setchargepriceindicator)|Set Charge PriceIndicator (OBR.21)|
-|[setConsultingDoctor](#pv1setconsultingdoctor)|Set Consulting Doctor (OBR.9)|
-|[setContractAmount](#pv1setcontractamount)|Set Contract Amount (OBR.26)|
-|[setContractCode](#pv1setcontractcode)|Set Contract Code (OBR.24)|
-|[setContractEffectiveDate](#pv1setcontracteffectivedate)|Set Contract EffectiveDate (OBR.25)|
-|[setContractPeriod](#pv1setcontractperiod)|Set Contract Period (OBR.27)|
-|[setCourtesyCode](#pv1setcourtesycode)|Set Courtesy Code (OBR.22)|
-|[setCreditRating](#pv1setcreditrating)|Set Credit Rating (OBR.23)|
-|[setCurrentPatientBalance](#pv1setcurrentpatientbalance)|Set Current PatientBalance (OBR.46)|
-|[setDeleteAccountDate](#pv1setdeleteaccountdate)|Set Delete AccountDate (OBR.35)|
-|[setDeleteAccountIndicator](#pv1setdeleteaccountindicator)|Set Delete AccountIndicator (OBR.34)|
-|[setDietType](#pv1setdiettype)|Set Diet Type (OBR.38)|
-|[setDischargeDateTime](#pv1setdischargedatetime)|Set Discharge DateTime (OBR.45)|
-|[setDischargeDisposition](#pv1setdischargedisposition)|Set Discharge Disposition (OBR.36)|
-|[setDischargedToLocation](#pv1setdischargedtolocation)|Set Discharged ToLocation (OBR.37)|
-|[setFinancialClass](#pv1setfinancialclass)|Set Financial Class (OBR.20)|
-|[setHospitalService](#pv1sethospitalservice)|Set Hospital Service (OBR.10)|
+|[setAccountStatus](#pv1setaccountstatus)|Set Account Status (PV1.41)|
+|[setAdmissionType](#pv1setadmissiontype)|Set Admission Type (PV1.4)|
+|[setAdmitDateTime](#pv1setadmitdatetime)|Set Admit Date Time (PV1.44)|
+|[setAdmitSource](#pv1setadmitsource)|Set Admit Source (PV1.14)|
+|[setAdmittingDoctor](#pv1setadmittingdoctor)|Set Admitting Doctor (PV1.17)|
+|[setAlternateVisitID](#pv1setalternatevisitid)|Set Alternate Visit ID (PV1.50)|
+|[setAmbulatoryStatus](#pv1setambulatorystatus)|Set Ambulatory Status (PV1.15)|
+|[setAssignedPatientLocation](#pv1setassignedpatientlocation)|Set Assigned Patient Location (PV1.3)|
+|[setAttendingDoctor](#pv1setattendingdoctor)|Set Attending Doctor (PV1.7)|
+|[setBadDebtAgencyCode](#pv1setbaddebtagencycode)|Set Bad Debt Agency Code (PV1.31)|
+|[setBadDebtRecoveryAmount](#pv1setbaddebtrecoveryamount)|Set Bad Debt Recovery Amount (PV1.33)|
+|[setBadDebtTransferAmount](#pv1setbaddebttransferamount)|Set Bad Debt Transfer Amount (PV1.32)|
+|[setBedStatus](#pv1setbedstatus)|Set Bed Status (PV1.40)|
+|[setChargePriceIndicator](#pv1setchargepriceindicator)|Set Charge Price Indicator (PV1.21)|
+|[setConsultingDoctor](#pv1setconsultingdoctor)|Set Consulting Doctor (PV1.9)|
+|[setContractAmount](#pv1setcontractamount)|Set Contract Amount (PV1.26)|
+|[setContractCode](#pv1setcontractcode)|Set Contract Code (PV1.24)|
+|[setContractEffectiveDate](#pv1setcontracteffectivedate)|Set Contract Effective Date (PV1.25)|
+|[setContractPeriod](#pv1setcontractperiod)|Set Contract Period (PV1.27)|
+|[setCourtesyCode](#pv1setcourtesycode)|Set Courtesy Code (PV1.22)|
+|[setCreditRating](#pv1setcreditrating)|Set Credit Rating (PV1.23)|
+|[setCurrentPatientBalance](#pv1setcurrentpatientbalance)|Set Current Patient Balance (PV1.46)|
+|[setDeleteAccountDate](#pv1setdeleteaccountdate)|Set Delete Account Date (PV1.35)|
+|[setDeleteAccountIndicator](#pv1setdeleteaccountindicator)|Set Delete Account Indicator (PV1.34)|
+|[setDietType](#pv1setdiettype)|Set Diet Type (PV1.38)|
+|[setDischargeDateTime](#pv1setdischargedatetime)|Set Discharge Date Time (PV1.45)|
+|[setDischargeDisposition](#pv1setdischargedisposition)|Set Discharge Disposition (PV1.36)|
+|[setDischargedToLocation](#pv1setdischargedtolocation)|Set Discharged To Location (PV1.37)|
+|[setFinancialClass](#pv1setfinancialclass)|Set Financial Class (PV1.20)|
+|[setHospitalService](#pv1sethospitalservice)|Set Hospital Service (PV1.10)|
 |[setID](#pv1setid)||
-|[setInterestCode](#pv1setinterestcode)|Set Interest Code (OBR.28)|
-|[setOtherHealthcareProvider](#pv1setotherhealthcareprovider)|Set Other HealthcareProvider (OBR.52)|
-|[setPatientClass](#pv1setpatientclass)|Set Patient Class (OBR.2)|
-|[setPatientType](#pv1setpatienttype)|Set Patient Type (OBR.18)|
-|[setPendingLocation](#pv1setpendinglocation)|Set Pending Location (OBR.42)|
-|[setPreAdmitNumber](#pv1setpreadmitnumber)|Set Pre AdmitNumber (OBR.5)|
-|[setPreAdmitTestIndicator](#pv1setpreadmittestindicator)|Set Pre AdmitTestIndicator (OBR.12)|
-|[setPriorPatientLocation](#pv1setpriorpatientlocation)|Set Prior PatientLocation (OBR.6)|
-|[setPriorTemporaryLocation](#pv1setpriortemporarylocation)|Set Prior TemporaryLocation (OBR.43)|
-|[setReAdmissionIndicator](#pv1setreadmissionindicator)|Set Re AdmissionIndicator (OBR.13)|
-|[setReferringDoctor](#pv1setreferringdoctor)|Set Referring Doctor (OBR.8)|
-|[setServicingFacility](#pv1setservicingfacility)|Set Servicing Facility (OBR.39)|
-|[setTemporaryLocation](#pv1settemporarylocation)|Set Temporary Location (OBR.11)|
-|[setTotalAdjustments](#pv1settotaladjustments)|Set Total Adjustments (OBR.48)|
-|[setTotalCharges](#pv1settotalcharges)|Set Total Charges (OBR.47)|
-|[setTotalPayments](#pv1settotalpayments)|Set Total Payments (OBR.49)|
-|[setTransferToBadDebtCode](#pv1settransfertobaddebtcode)|Set Transfer ToBadDebtCode (OBR.29)|
-|[setTransferToBadDebtDate](#pv1settransfertobaddebtdate)|Set Transfer ToBadDebtDate (OBR.30)|
-|[setVipIndicator](#pv1setvipindicator)|Set Vip Indicator (OBR.16)|
-|[setVisitIndicator](#pv1setvisitindicator)|Set Visit Indicator (OBR.51)|
-|[setVisitNumber](#pv1setvisitnumber)|Set Visit Number (OBR.19)|
+|[setInterestCode](#pv1setinterestcode)|Set Interest Code (PV1.28)|
+|[setOtherHealthcareProvider](#pv1setotherhealthcareprovider)|Set Other Healthcare Provider (PV1.52)|
+|[setPatientClass](#pv1setpatientclass)|Set Patient Class (PV1.2)|
+|[setPatientType](#pv1setpatienttype)|Set Patient Type (PV1.18)|
+|[setPendingLocation](#pv1setpendinglocation)|Set Pending Location (PV1.42)|
+|[setPreAdmitNumber](#pv1setpreadmitnumber)|Set Pre Admit Number (PV1.5)|
+|[setPreAdmitTestIndicator](#pv1setpreadmittestindicator)|Set Pre Admit Test Indicator (PV1.12)|
+|[setPriorPatientLocation](#pv1setpriorpatientlocation)|Set Prior Patient Location (PV1.6)|
+|[setPriorTemporaryLocation](#pv1setpriortemporarylocation)|Set Prior Temporary Location (PV1.43)|
+|[setReAdmissionIndicator](#pv1setreadmissionindicator)|Set Re Admission Indicator (PV1.13)|
+|[setReferringDoctor](#pv1setreferringdoctor)|Set Referring Doctor (PV1.8)|
+|[setServicingFacility](#pv1setservicingfacility)|Set Servicing Facility (PV1.39)|
+|[setTemporaryLocation](#pv1settemporarylocation)|Set Temporary Location (PV1.11)|
+|[setTotalAdjustments](#pv1settotaladjustments)|Set Total Adjustments (PV1.48)|
+|[setTotalCharges](#pv1settotalcharges)|Set Total Charges (PV1.47)|
+|[setTotalPayments](#pv1settotalpayments)|Set Total Payments (PV1.49)|
+|[setTransferToBadDebtCode](#pv1settransfertobaddebtcode)|Set Transfer To Bad Debt Code (PV1.29)|
+|[setTransferToBadDebtDate](#pv1settransfertobaddebtdate)|Set Transfer To Bad Debt Date (PV1.30)|
+|[setVipIndicator](#pv1setvipindicator)|Set Vip Indicator (PV1.16)|
+|[setVisitIndicator](#pv1setvisitindicator)|Set Visit Indicator (PV1.51)|
+|[setVisitNumber](#pv1setvisitnumber)|Set Visit Number (PV1.19)|
 
 ## Inherited methods
 
@@ -166,7 +166,7 @@ Aranyasen\HL7\Segment
 public getAccountStatus (int $position)
 ```
 
-Get Account Status (OBR.41) 
+Get Account Status (PV1.41) 
 
  
 
@@ -193,7 +193,7 @@ Get Account Status (OBR.41)
 public getAdmissionType (int $position)
 ```
 
-Get Admission Type (OBR.4) 
+Get Admission Type (PV1.4) 
 
  
 
@@ -220,7 +220,7 @@ Get Admission Type (OBR.4)
 public getAdmitDateTime (int $position)
 ```
 
-Get Admit DateTime (OBR.44) 
+Get Admit DateTime (PV1.44) 
 
  
 
@@ -247,7 +247,7 @@ Get Admit DateTime (OBR.44)
 public getAdmitSource (int $position)
 ```
 
-Get Admit Source (OBR.14) 
+Get Admit Source (PV1.14) 
 
  
 
@@ -274,7 +274,7 @@ Get Admit Source (OBR.14)
 public getAdmittingDoctor (int $position)
 ```
 
-Get Admitting Doctor (OBR.17) 
+Get Admitting Doctor (PV1.17) 
 
  
 
@@ -301,7 +301,7 @@ Get Admitting Doctor (OBR.17)
 public getAlternateVisitID (int $position)
 ```
 
-Get Alternate VisitID (OBR.50) 
+Get Alternate VisitID (PV1.50) 
 
  
 
@@ -328,7 +328,7 @@ Get Alternate VisitID (OBR.50)
 public getAmbulatoryStatus (int $position)
 ```
 
-Get Ambulatory Status (OBR.15) 
+Get Ambulatory Status (PV1.15) 
 
  
 
@@ -355,7 +355,7 @@ Get Ambulatory Status (OBR.15)
 public getAssignedPatientLocation (int $position)
 ```
 
-Get Assigned PatientLocation (OBR.3) 
+Get Assigned PatientLocation (PV1.3) 
 
  
 
@@ -382,7 +382,7 @@ Get Assigned PatientLocation (OBR.3)
 public getAttendingDoctor (int $position)
 ```
 
-Get Attending Doctor (OBR.7) 
+Get Attending Doctor (PV1.7) 
 
  
 
@@ -409,7 +409,7 @@ Get Attending Doctor (OBR.7)
 public getBadDebtAgencyCode (int $position)
 ```
 
-Get Bad DebtAgencyCode (OBR.31) 
+Get Bad DebtAgencyCode (PV1.31) 
 
  
 
@@ -436,7 +436,7 @@ Get Bad DebtAgencyCode (OBR.31)
 public getBadDebtRecoveryAmount (int $position)
 ```
 
-Get Bad DebtRecoveryAmount (OBR.33) 
+Get Bad DebtRecoveryAmount (PV1.33) 
 
  
 
@@ -463,7 +463,7 @@ Get Bad DebtRecoveryAmount (OBR.33)
 public getBadDebtTransferAmount (int $position)
 ```
 
-Get Bad DebtTransferAmount (OBR.32) 
+Get Bad DebtTransferAmount (PV1.32) 
 
  
 
@@ -490,7 +490,7 @@ Get Bad DebtTransferAmount (OBR.32)
 public getBedStatus (int $position)
 ```
 
-Get Bed Status (OBR.40) 
+Get Bed Status (PV1.40) 
 
  
 
@@ -517,7 +517,7 @@ Get Bed Status (OBR.40)
 public getChargePriceIndicator (int $position)
 ```
 
-Get Charge PriceIndicator (OBR.21) 
+Get Charge PriceIndicator (PV1.21) 
 
  
 
@@ -544,7 +544,7 @@ Get Charge PriceIndicator (OBR.21)
 public getConsultingDoctor (int $position)
 ```
 
-Get Consulting Doctor (OBR.9) 
+Get Consulting Doctor (PV1.9) 
 
  
 
@@ -571,7 +571,7 @@ Get Consulting Doctor (OBR.9)
 public getContractAmount (int $position)
 ```
 
-Get Contract Amount (OBR.26) 
+Get Contract Amount (PV1.26) 
 
  
 
@@ -598,7 +598,7 @@ Get Contract Amount (OBR.26)
 public getContractCode (int $position)
 ```
 
-Get Contract Code (OBR.24) 
+Get Contract Code (PV1.24) 
 
  
 
@@ -625,7 +625,7 @@ Get Contract Code (OBR.24)
 public getContractEffectiveDate (int $position)
 ```
 
-Get Contract EffectiveDate (OBR.25) 
+Get Contract EffectiveDate (PV1.25) 
 
  
 
@@ -652,7 +652,7 @@ Get Contract EffectiveDate (OBR.25)
 public getContractPeriod (int $position)
 ```
 
-Get Contract Period (OBR.27) 
+Get Contract Period (PV1.27) 
 
  
 
@@ -679,7 +679,7 @@ Get Contract Period (OBR.27)
 public getCourtesyCode (int $position)
 ```
 
-Get Courtesy Code (OBR.22) 
+Get Courtesy Code (PV1.22) 
 
  
 
@@ -706,7 +706,7 @@ Get Courtesy Code (OBR.22)
 public getCreditRating (int $position)
 ```
 
-Get Credit Rating (OBR.23) 
+Get Credit Rating (PV1.23) 
 
  
 
@@ -733,7 +733,7 @@ Get Credit Rating (OBR.23)
 public getCurrentPatientBalance (int $position)
 ```
 
-Get Current PatientBalance (OBR.46) 
+Get Current PatientBalance (PV1.46) 
 
  
 
@@ -760,7 +760,7 @@ Get Current PatientBalance (OBR.46)
 public getDeleteAccountDate (int $position)
 ```
 
-Get Delete AccountDate (OBR.35) 
+Get Delete AccountDate (PV1.35) 
 
  
 
@@ -787,7 +787,7 @@ Get Delete AccountDate (OBR.35)
 public getDeleteAccountIndicator (int $position)
 ```
 
-Get Delete AccountIndicator (OBR.34) 
+Get Delete AccountIndicator (PV1.34) 
 
  
 
@@ -814,7 +814,7 @@ Get Delete AccountIndicator (OBR.34)
 public getDietType (int $position)
 ```
 
-Get Diet Type (OBR.38) 
+Get Diet Type (PV1.38) 
 
  
 
@@ -841,7 +841,7 @@ Get Diet Type (OBR.38)
 public getDischargeDateTime (int $position)
 ```
 
-Get Discharge DateTime (OBR.45) 
+Get Discharge DateTime (PV1.45) 
 
  
 
@@ -868,7 +868,7 @@ Get Discharge DateTime (OBR.45)
 public getDischargeDisposition (int $position)
 ```
 
-Get Discharge Disposition (OBR.36) 
+Get Discharge Disposition (PV1.36) 
 
  
 
@@ -895,7 +895,7 @@ Get Discharge Disposition (OBR.36)
 public getDischargedToLocation (int $position)
 ```
 
-Get Discharged ToLocation (OBR.37) 
+Get Discharged ToLocation (PV1.37) 
 
  
 
@@ -922,7 +922,7 @@ Get Discharged ToLocation (OBR.37)
 public getFinancialClass (int $position)
 ```
 
-Get Financial Class (OBR.20) 
+Get Financial Class (PV1.20) 
 
  
 
@@ -949,7 +949,7 @@ Get Financial Class (OBR.20)
 public getHospitalService (int $position)
 ```
 
-Get Hospital Service (OBR.10) 
+Get Hospital Service (PV1.10) 
 
  
 
@@ -976,7 +976,7 @@ Get Hospital Service (OBR.10)
 public getID (int $position)
 ```
 
-Get ID (OBR.1) 
+Get ID (PV1.1) 
 
  
 
@@ -1003,7 +1003,7 @@ Get ID (OBR.1)
 public getInterestCode (int $position)
 ```
 
-Get Interest Code (OBR.28) 
+Get Interest Code (PV1.28) 
 
  
 
@@ -1030,7 +1030,7 @@ Get Interest Code (OBR.28)
 public getOtherHealthcareProvider (int $position)
 ```
 
-Get Other HealthcareProvider (OBR.52) 
+Get Other HealthcareProvider (PV1.52) 
 
  
 
@@ -1057,7 +1057,7 @@ Get Other HealthcareProvider (OBR.52)
 public getPatientClass (int $position)
 ```
 
-Get Patient Class (OBR.2) 
+Get Patient Class (PV1.2) 
 
  
 
@@ -1084,7 +1084,7 @@ Get Patient Class (OBR.2)
 public getPatientType (int $position)
 ```
 
-Get Patient Type (OBR.18) 
+Get Patient Type (PV1.18) 
 
  
 
@@ -1111,7 +1111,7 @@ Get Patient Type (OBR.18)
 public getPendingLocation (int $position)
 ```
 
-Get Pending Location (OBR.42) 
+Get Pending Location (PV1.42) 
 
  
 
@@ -1138,7 +1138,7 @@ Get Pending Location (OBR.42)
 public getPreAdmitNumber (int $position)
 ```
 
-Get Pre AdmitNumber (OBR.5) 
+Get Pre AdmitNumber (PV1.5) 
 
  
 
@@ -1165,7 +1165,7 @@ Get Pre AdmitNumber (OBR.5)
 public getPreAdmitTestIndicator (int $position)
 ```
 
-Get Pre AdmitTestIndicator (OBR.12) 
+Get Pre AdmitTestIndicator (PV1.12) 
 
  
 
@@ -1192,7 +1192,7 @@ Get Pre AdmitTestIndicator (OBR.12)
 public getPriorPatientLocation (int $position)
 ```
 
-Get Prior PatientLocation (OBR.6) 
+Get Prior PatientLocation (PV1.6) 
 
  
 
@@ -1219,7 +1219,7 @@ Get Prior PatientLocation (OBR.6)
 public getPriorTemporaryLocation (int $position)
 ```
 
-Get Prior TemporaryLocation (OBR.43) 
+Get Prior TemporaryLocation (PV1.43) 
 
  
 
@@ -1246,7 +1246,7 @@ Get Prior TemporaryLocation (OBR.43)
 public getReAdmissionIndicator (int $position)
 ```
 
-Get Re AdmissionIndicator (OBR.13) 
+Get Re AdmissionIndicator (PV1.13) 
 
  
 
@@ -1273,7 +1273,7 @@ Get Re AdmissionIndicator (OBR.13)
 public getReferringDoctor (int $position)
 ```
 
-Get Referring Doctor (OBR.8) 
+Get Referring Doctor (PV1.8) 
 
  
 
@@ -1300,7 +1300,7 @@ Get Referring Doctor (OBR.8)
 public getServicingFacility (int $position)
 ```
 
-Get Servicing Facility (OBR.39) 
+Get Servicing Facility (PV1.39) 
 
  
 
@@ -1327,7 +1327,7 @@ Get Servicing Facility (OBR.39)
 public getTemporaryLocation (int $position)
 ```
 
-Get Temporary Location (OBR.11) 
+Get Temporary Location (PV1.11) 
 
  
 
@@ -1354,7 +1354,7 @@ Get Temporary Location (OBR.11)
 public getTotalAdjustments (int $position)
 ```
 
-Get Total Adjustments (OBR.48) 
+Get Total Adjustments (PV1.48) 
 
  
 
@@ -1381,7 +1381,7 @@ Get Total Adjustments (OBR.48)
 public getTotalCharges (int $position)
 ```
 
-Get Total Charges (OBR.47) 
+Get Total Charges (PV1.47) 
 
  
 
@@ -1408,7 +1408,7 @@ Get Total Charges (OBR.47)
 public getTotalPayments (int $position)
 ```
 
-Get Total Payments (OBR.49) 
+Get Total Payments (PV1.49) 
 
  
 
@@ -1435,7 +1435,7 @@ Get Total Payments (OBR.49)
 public getTransferToBadDebtCode (int $position)
 ```
 
-Get Transfer ToBadDebtCode (OBR.29) 
+Get Transfer ToBadDebtCode (PV1.29) 
 
  
 
@@ -1462,7 +1462,7 @@ Get Transfer ToBadDebtCode (OBR.29)
 public getTransferToBadDebtDate (int $position)
 ```
 
-Get Transfer ToBadDebtDate (OBR.30) 
+Get Transfer ToBadDebtDate (PV1.30) 
 
  
 
@@ -1489,7 +1489,7 @@ Get Transfer ToBadDebtDate (OBR.30)
 public getVipIndicator (int $position)
 ```
 
-Get Vip Indicator (OBR.16) 
+Get Vip Indicator (PV1.16) 
 
  
 
@@ -1516,7 +1516,7 @@ Get Vip Indicator (OBR.16)
 public getVisitIndicator (int $position)
 ```
 
-Get Visit Indicator (OBR.51) 
+Get Visit Indicator (PV1.51) 
 
  
 
@@ -1543,7 +1543,7 @@ Get Visit Indicator (OBR.51)
 public getVisitNumber (int $position)
 ```
 
-Get Visit Number (OBR.19) 
+Get Visit Number (PV1.19) 
 
  
 
@@ -1594,7 +1594,7 @@ Reset index of this segment
 public setAccountStatus (string|int|array|null $value, int $position)
 ```
 
-Set Account Status (OBR.41) 
+Set Account Status (PV1.41) 
 
  
 
@@ -1622,7 +1622,7 @@ Set Account Status (OBR.41)
 public setAdmissionType (string|int|array|null $value, int $position)
 ```
 
-Set Admission Type (OBR.4) 
+Set Admission Type (PV1.4) 
 
  
 
@@ -1650,7 +1650,7 @@ Set Admission Type (OBR.4)
 public setAdmitDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Admit DateTime (OBR.44) 
+Set Admit Date Time (PV1.44) 
 
  
 
@@ -1678,7 +1678,7 @@ Set Admit DateTime (OBR.44)
 public setAdmitSource (string|int|array|null $value, int $position)
 ```
 
-Set Admit Source (OBR.14) 
+Set Admit Source (PV1.14) 
 
  
 
@@ -1706,7 +1706,7 @@ Set Admit Source (OBR.14)
 public setAdmittingDoctor (string|int|array|null $value, int $position)
 ```
 
-Set Admitting Doctor (OBR.17) 
+Set Admitting Doctor (PV1.17) 
 
  
 
@@ -1734,7 +1734,7 @@ Set Admitting Doctor (OBR.17)
 public setAlternateVisitID (string|int|array|null $value, int $position)
 ```
 
-Set Alternate VisitID (OBR.50) 
+Set Alternate Visit ID (PV1.50) 
 
  
 
@@ -1762,7 +1762,7 @@ Set Alternate VisitID (OBR.50)
 public setAmbulatoryStatus (string|int|array|null $value, int $position)
 ```
 
-Set Ambulatory Status (OBR.15) 
+Set Ambulatory Status (PV1.15) 
 
  
 
@@ -1790,7 +1790,7 @@ Set Ambulatory Status (OBR.15)
 public setAssignedPatientLocation (string|int|array|null $value, int $position)
 ```
 
-Set Assigned PatientLocation (OBR.3) 
+Set Assigned Patient Location (PV1.3) 
 
  
 
@@ -1818,7 +1818,7 @@ Set Assigned PatientLocation (OBR.3)
 public setAttendingDoctor (string|int|array|null $value, int $position)
 ```
 
-Set Attending Doctor (OBR.7) 
+Set Attending Doctor (PV1.7) 
 
  
 
@@ -1846,7 +1846,7 @@ Set Attending Doctor (OBR.7)
 public setBadDebtAgencyCode (string|int|array|null $value, int $position)
 ```
 
-Set Bad DebtAgencyCode (OBR.31) 
+Set Bad Debt Agency Code (PV1.31) 
 
  
 
@@ -1874,7 +1874,7 @@ Set Bad DebtAgencyCode (OBR.31)
 public setBadDebtRecoveryAmount (string|int|array|null $value, int $position)
 ```
 
-Set Bad DebtRecoveryAmount (OBR.33) 
+Set Bad Debt Recovery Amount (PV1.33) 
 
  
 
@@ -1902,7 +1902,7 @@ Set Bad DebtRecoveryAmount (OBR.33)
 public setBadDebtTransferAmount (string|int|array|null $value, int $position)
 ```
 
-Set Bad DebtTransferAmount (OBR.32) 
+Set Bad Debt Transfer Amount (PV1.32) 
 
  
 
@@ -1930,7 +1930,7 @@ Set Bad DebtTransferAmount (OBR.32)
 public setBedStatus (string|int|array|null $value, int $position)
 ```
 
-Set Bed Status (OBR.40) 
+Set Bed Status (PV1.40) 
 
  
 
@@ -1958,7 +1958,7 @@ Set Bed Status (OBR.40)
 public setChargePriceIndicator (string|int|array|null $value, int $position)
 ```
 
-Set Charge PriceIndicator (OBR.21) 
+Set Charge Price Indicator (PV1.21) 
 
  
 
@@ -1986,7 +1986,7 @@ Set Charge PriceIndicator (OBR.21)
 public setConsultingDoctor (string|int|array|null $value, int $position)
 ```
 
-Set Consulting Doctor (OBR.9) 
+Set Consulting Doctor (PV1.9) 
 
  
 
@@ -2014,7 +2014,7 @@ Set Consulting Doctor (OBR.9)
 public setContractAmount (string|int|array|null $value, int $position)
 ```
 
-Set Contract Amount (OBR.26) 
+Set Contract Amount (PV1.26) 
 
  
 
@@ -2042,7 +2042,7 @@ Set Contract Amount (OBR.26)
 public setContractCode (string|int|array|null $value, int $position)
 ```
 
-Set Contract Code (OBR.24) 
+Set Contract Code (PV1.24) 
 
  
 
@@ -2070,7 +2070,7 @@ Set Contract Code (OBR.24)
 public setContractEffectiveDate (string|int|array|null $value, int $position)
 ```
 
-Set Contract EffectiveDate (OBR.25) 
+Set Contract Effective Date (PV1.25) 
 
  
 
@@ -2098,7 +2098,7 @@ Set Contract EffectiveDate (OBR.25)
 public setContractPeriod (string|int|array|null $value, int $position)
 ```
 
-Set Contract Period (OBR.27) 
+Set Contract Period (PV1.27) 
 
  
 
@@ -2126,7 +2126,7 @@ Set Contract Period (OBR.27)
 public setCourtesyCode (string|int|array|null $value, int $position)
 ```
 
-Set Courtesy Code (OBR.22) 
+Set Courtesy Code (PV1.22) 
 
  
 
@@ -2154,7 +2154,7 @@ Set Courtesy Code (OBR.22)
 public setCreditRating (string|int|array|null $value, int $position)
 ```
 
-Set Credit Rating (OBR.23) 
+Set Credit Rating (PV1.23) 
 
  
 
@@ -2182,7 +2182,7 @@ Set Credit Rating (OBR.23)
 public setCurrentPatientBalance (string|int|array|null $value, int $position)
 ```
 
-Set Current PatientBalance (OBR.46) 
+Set Current Patient Balance (PV1.46) 
 
  
 
@@ -2210,7 +2210,7 @@ Set Current PatientBalance (OBR.46)
 public setDeleteAccountDate (string|int|array|null $value, int $position)
 ```
 
-Set Delete AccountDate (OBR.35) 
+Set Delete Account Date (PV1.35) 
 
  
 
@@ -2238,7 +2238,7 @@ Set Delete AccountDate (OBR.35)
 public setDeleteAccountIndicator (string|int|array|null $value, int $position)
 ```
 
-Set Delete AccountIndicator (OBR.34) 
+Set Delete Account Indicator (PV1.34) 
 
  
 
@@ -2266,7 +2266,7 @@ Set Delete AccountIndicator (OBR.34)
 public setDietType (string|int|array|null $value, int $position)
 ```
 
-Set Diet Type (OBR.38) 
+Set Diet Type (PV1.38) 
 
  
 
@@ -2294,7 +2294,7 @@ Set Diet Type (OBR.38)
 public setDischargeDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Discharge DateTime (OBR.45) 
+Set Discharge Date Time (PV1.45) 
 
  
 
@@ -2322,7 +2322,7 @@ Set Discharge DateTime (OBR.45)
 public setDischargeDisposition (string|int|array|null $value, int $position)
 ```
 
-Set Discharge Disposition (OBR.36) 
+Set Discharge Disposition (PV1.36) 
 
  
 
@@ -2350,7 +2350,7 @@ Set Discharge Disposition (OBR.36)
 public setDischargedToLocation (string|int|array|null $value, int $position)
 ```
 
-Set Discharged ToLocation (OBR.37) 
+Set Discharged To Location (PV1.37) 
 
  
 
@@ -2378,7 +2378,7 @@ Set Discharged ToLocation (OBR.37)
 public setFinancialClass (string|int|array|null $value, int $position)
 ```
 
-Set Financial Class (OBR.20) 
+Set Financial Class (PV1.20) 
 
  
 
@@ -2406,7 +2406,7 @@ Set Financial Class (OBR.20)
 public setHospitalService (string|int|array|null $value, int $position)
 ```
 
-Set Hospital Service (OBR.10) 
+Set Hospital Service (PV1.10) 
 
  
 
@@ -2458,7 +2458,7 @@ Set Hospital Service (OBR.10)
 public setInterestCode (string|int|array|null $value, int $position)
 ```
 
-Set Interest Code (OBR.28) 
+Set Interest Code (PV1.28) 
 
  
 
@@ -2486,7 +2486,7 @@ Set Interest Code (OBR.28)
 public setOtherHealthcareProvider (string|int|array|null $value, int $position)
 ```
 
-Set Other HealthcareProvider (OBR.52) 
+Set Other Healthcare Provider (PV1.52) 
 
  
 
@@ -2514,7 +2514,7 @@ Set Other HealthcareProvider (OBR.52)
 public setPatientClass (string|int|array|null $value, int $position)
 ```
 
-Set Patient Class (OBR.2) 
+Set Patient Class (PV1.2) 
 
  
 
@@ -2542,7 +2542,7 @@ Set Patient Class (OBR.2)
 public setPatientType (string|int|array|null $value, int $position)
 ```
 
-Set Patient Type (OBR.18) 
+Set Patient Type (PV1.18) 
 
  
 
@@ -2570,7 +2570,7 @@ Set Patient Type (OBR.18)
 public setPendingLocation (string|int|array|null $value, int $position)
 ```
 
-Set Pending Location (OBR.42) 
+Set Pending Location (PV1.42) 
 
  
 
@@ -2598,7 +2598,7 @@ Set Pending Location (OBR.42)
 public setPreAdmitNumber (string|int|array|null $value, int $position)
 ```
 
-Set Pre AdmitNumber (OBR.5) 
+Set Pre Admit Number (PV1.5) 
 
  
 
@@ -2626,7 +2626,7 @@ Set Pre AdmitNumber (OBR.5)
 public setPreAdmitTestIndicator (string|int|array|null $value, int $position)
 ```
 
-Set Pre AdmitTestIndicator (OBR.12) 
+Set Pre Admit Test Indicator (PV1.12) 
 
  
 
@@ -2654,7 +2654,7 @@ Set Pre AdmitTestIndicator (OBR.12)
 public setPriorPatientLocation (string|int|array|null $value, int $position)
 ```
 
-Set Prior PatientLocation (OBR.6) 
+Set Prior Patient Location (PV1.6) 
 
  
 
@@ -2682,7 +2682,7 @@ Set Prior PatientLocation (OBR.6)
 public setPriorTemporaryLocation (string|int|array|null $value, int $position)
 ```
 
-Set Prior TemporaryLocation (OBR.43) 
+Set Prior Temporary Location (PV1.43) 
 
  
 
@@ -2710,7 +2710,7 @@ Set Prior TemporaryLocation (OBR.43)
 public setReAdmissionIndicator (string|int|array|null $value, int $position)
 ```
 
-Set Re AdmissionIndicator (OBR.13) 
+Set Re Admission Indicator (PV1.13) 
 
  
 
@@ -2738,7 +2738,7 @@ Set Re AdmissionIndicator (OBR.13)
 public setReferringDoctor (string|int|array|null $value, int $position)
 ```
 
-Set Referring Doctor (OBR.8) 
+Set Referring Doctor (PV1.8) 
 
  
 
@@ -2766,7 +2766,7 @@ Set Referring Doctor (OBR.8)
 public setServicingFacility (string|int|array|null $value, int $position)
 ```
 
-Set Servicing Facility (OBR.39) 
+Set Servicing Facility (PV1.39) 
 
  
 
@@ -2794,7 +2794,7 @@ Set Servicing Facility (OBR.39)
 public setTemporaryLocation (string|int|array|null $value, int $position)
 ```
 
-Set Temporary Location (OBR.11) 
+Set Temporary Location (PV1.11) 
 
  
 
@@ -2822,7 +2822,7 @@ Set Temporary Location (OBR.11)
 public setTotalAdjustments (string|int|array|null $value, int $position)
 ```
 
-Set Total Adjustments (OBR.48) 
+Set Total Adjustments (PV1.48) 
 
  
 
@@ -2850,7 +2850,7 @@ Set Total Adjustments (OBR.48)
 public setTotalCharges (string|int|array|null $value, int $position)
 ```
 
-Set Total Charges (OBR.47) 
+Set Total Charges (PV1.47) 
 
  
 
@@ -2878,7 +2878,7 @@ Set Total Charges (OBR.47)
 public setTotalPayments (string|int|array|null $value, int $position)
 ```
 
-Set Total Payments (OBR.49) 
+Set Total Payments (PV1.49) 
 
  
 
@@ -2906,7 +2906,7 @@ Set Total Payments (OBR.49)
 public setTransferToBadDebtCode (string|int|array|null $value, int $position)
 ```
 
-Set Transfer ToBadDebtCode (OBR.29) 
+Set Transfer To Bad Debt Code (PV1.29) 
 
  
 
@@ -2934,7 +2934,7 @@ Set Transfer ToBadDebtCode (OBR.29)
 public setTransferToBadDebtDate (string|int|array|null $value, int $position)
 ```
 
-Set Transfer ToBadDebtDate (OBR.30) 
+Set Transfer To Bad Debt Date (PV1.30) 
 
  
 
@@ -2962,7 +2962,7 @@ Set Transfer ToBadDebtDate (OBR.30)
 public setVipIndicator (string|int|array|null $value, int $position)
 ```
 
-Set Vip Indicator (OBR.16) 
+Set Vip Indicator (PV1.16) 
 
  
 
@@ -2990,7 +2990,7 @@ Set Vip Indicator (OBR.16)
 public setVisitIndicator (string|int|array|null $value, int $position)
 ```
 
-Set Visit Indicator (OBR.51) 
+Set Visit Indicator (PV1.51) 
 
  
 
@@ -3018,7 +3018,7 @@ Set Visit Indicator (OBR.51)
 public setVisitNumber (string|int|array|null $value, int $position)
 ```
 
-Set Visit Number (OBR.19) 
+Set Visit Number (PV1.19) 
 
  
 

@@ -14,57 +14,57 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[__destruct](#in3__destruct)||
-|[getAppealReason](#in3getappealreason)|Get Appeal Reason (OBR.17)|
-|[getCaseManager](#in3getcasemanager)|Get Case Manager (OBR.21)|
-|[getCertificationAgency](#in3getcertificationagency)|Get Certification Agency (OBR.18)|
-|[getCertificationAgencyPhoneNumber](#in3getcertificationagencyphonenumber)|Get Certification AgencyPhoneNumber (OBR.19)|
-|[getCertificationBeginDate](#in3getcertificationbegindate)|Get Certification BeginDate (OBR.9)|
-|[getCertificationContact](#in3getcertificationcontact)|Get Certification Contact (OBR.15)|
-|[getCertificationContactPhoneNumber](#in3getcertificationcontactphonenumber)|Get Certification ContactPhoneNumber (OBR.16)|
-|[getCertificationDateTime](#in3getcertificationdatetime)|Get Certification DateTime (OBR.6)|
-|[getCertificationEndDate](#in3getcertificationenddate)|Get Certification EndDate (OBR.10)|
-|[getCertificationModifyDateTime](#in3getcertificationmodifydatetime)|Get Certification ModifyDateTime (OBR.7)|
-|[getCertificationNumber](#in3getcertificationnumber)|Get Certification Number (OBR.2)|
-|[getCertificationRequired](#in3getcertificationrequired)|Get Certification Required (OBR.4)|
-|[getCertifiedBy](#in3getcertifiedby)|Get Certified By (OBR.3)|
-|[getDays](#in3getdays)|Get Days (OBR.11)|
-|[getID](#in3getid)|Get ID (OBR.1)|
-|[getNonConcurCodeDescription](#in3getnonconcurcodedescription)|Get Non ConcurCodeDescription (OBR.12)|
-|[getNonConcurEffectiveDateTime](#in3getnonconcureffectivedatetime)|Get Non ConcurEffectiveDateTime (OBR.13)|
-|[getOperator](#in3getoperator)|Get Operator (OBR.8)|
-|[getPenalty](#in3getpenalty)|Get Penalty (OBR.5)|
-|[getPhysicianReviewer](#in3getphysicianreviewer)|Get Physician Reviewer (OBR.14)|
-|[getPreCertificationRequirement](#in3getprecertificationrequirement)|Get Pre CertificationRequirement (OBR.20)|
-|[getSecondOpinionDate](#in3getsecondopiniondate)|Get Second OpinionDate (OBR.22)|
-|[getSecondOpinionDocumentationReceived](#in3getsecondopiniondocumentationreceived)|Get Second OpinionDocumentationReceived (OBR.24)|
-|[getSecondOpinionPhysician](#in3getsecondopinionphysician)|Get Second OpinionPhysician (OBR.25)|
-|[getSecondOpinionStatus](#in3getsecondopinionstatus)|Get Second OpinionStatus (OBR.23)|
+|[getAppealReason](#in3getappealreason)|Get Appeal Reason (IN3.17)|
+|[getCaseManager](#in3getcasemanager)|Get Case Manager (IN3.21)|
+|[getCertificationAgency](#in3getcertificationagency)|Get Certification Agency (IN3.18)|
+|[getCertificationAgencyPhoneNumber](#in3getcertificationagencyphonenumber)|Get Certification AgencyPhoneNumber (IN3.19)|
+|[getCertificationBeginDate](#in3getcertificationbegindate)|Get Certification BeginDate (IN3.9)|
+|[getCertificationContact](#in3getcertificationcontact)|Get Certification Contact (IN3.15)|
+|[getCertificationContactPhoneNumber](#in3getcertificationcontactphonenumber)|Get Certification ContactPhoneNumber (IN3.16)|
+|[getCertificationDateTime](#in3getcertificationdatetime)|Get Certification DateTime (IN3.6)|
+|[getCertificationEndDate](#in3getcertificationenddate)|Get Certification EndDate (IN3.10)|
+|[getCertificationModifyDateTime](#in3getcertificationmodifydatetime)|Get Certification ModifyDateTime (IN3.7)|
+|[getCertificationNumber](#in3getcertificationnumber)|Get Certification Number (IN3.2)|
+|[getCertificationRequired](#in3getcertificationrequired)|Get Certification Required (IN3.4)|
+|[getCertifiedBy](#in3getcertifiedby)|Get Certified By (IN3.3)|
+|[getDays](#in3getdays)|Get Days (IN3.11)|
+|[getID](#in3getid)|Get ID (IN3.1)|
+|[getNonConcurCodeDescription](#in3getnonconcurcodedescription)|Get Non ConcurCodeDescription (IN3.12)|
+|[getNonConcurEffectiveDateTime](#in3getnonconcureffectivedatetime)|Get Non ConcurEffectiveDateTime (IN3.13)|
+|[getOperator](#in3getoperator)|Get Operator (IN3.8)|
+|[getPenalty](#in3getpenalty)|Get Penalty (IN3.5)|
+|[getPhysicianReviewer](#in3getphysicianreviewer)|Get Physician Reviewer (IN3.14)|
+|[getPreCertificationRequirement](#in3getprecertificationrequirement)|Get Pre CertificationRequirement (IN3.20)|
+|[getSecondOpinionDate](#in3getsecondopiniondate)|Get Second OpinionDate (IN3.22)|
+|[getSecondOpinionDocumentationReceived](#in3getsecondopiniondocumentationreceived)|Get Second OpinionDocumentationReceived (IN3.24)|
+|[getSecondOpinionPhysician](#in3getsecondopinionphysician)|Get Second OpinionPhysician (IN3.25)|
+|[getSecondOpinionStatus](#in3getsecondopinionstatus)|Get Second OpinionStatus (IN3.23)|
 |[resetIndex](#in3resetindex)|Reset index of this segment|
-|[setAppealReason](#in3setappealreason)|Set Appeal Reason (OBR.17)|
-|[setCaseManager](#in3setcasemanager)|Set Case Manager (OBR.21)|
-|[setCertificationAgency](#in3setcertificationagency)|Set Certification Agency (OBR.18)|
-|[setCertificationAgencyPhoneNumber](#in3setcertificationagencyphonenumber)|Set Certification AgencyPhoneNumber (OBR.19)|
-|[setCertificationBeginDate](#in3setcertificationbegindate)|Set Certification BeginDate (OBR.9)|
-|[setCertificationContact](#in3setcertificationcontact)|Set Certification Contact (OBR.15)|
-|[setCertificationContactPhoneNumber](#in3setcertificationcontactphonenumber)|Set Certification ContactPhoneNumber (OBR.16)|
-|[setCertificationDateTime](#in3setcertificationdatetime)|Set Certification DateTime (OBR.6)|
-|[setCertificationEndDate](#in3setcertificationenddate)|Set Certification EndDate (OBR.10)|
-|[setCertificationModifyDateTime](#in3setcertificationmodifydatetime)|Set Certification ModifyDateTime (OBR.7)|
-|[setCertificationNumber](#in3setcertificationnumber)|Set Certification Number (OBR.2)|
-|[setCertificationRequired](#in3setcertificationrequired)|Set Certification Required (OBR.4)|
-|[setCertifiedBy](#in3setcertifiedby)|Set Certified By (OBR.3)|
-|[setDays](#in3setdays)|Set Days (OBR.11)|
+|[setAppealReason](#in3setappealreason)|Set Appeal Reason (IN3.17)|
+|[setCaseManager](#in3setcasemanager)|Set Case Manager (IN3.21)|
+|[setCertificationAgency](#in3setcertificationagency)|Set Certification Agency (IN3.18)|
+|[setCertificationAgencyPhoneNumber](#in3setcertificationagencyphonenumber)|Set Certification Agency Phone Number (IN3.19)|
+|[setCertificationBeginDate](#in3setcertificationbegindate)|Set Certification Begin Date (IN3.9)|
+|[setCertificationContact](#in3setcertificationcontact)|Set Certification Contact (IN3.15)|
+|[setCertificationContactPhoneNumber](#in3setcertificationcontactphonenumber)|Set Certification Contact Phone Number (IN3.16)|
+|[setCertificationDateTime](#in3setcertificationdatetime)|Set Certification Date Time (IN3.6)|
+|[setCertificationEndDate](#in3setcertificationenddate)|Set Certification End Date (IN3.10)|
+|[setCertificationModifyDateTime](#in3setcertificationmodifydatetime)|Set Certification Modify Date Time (IN3.7)|
+|[setCertificationNumber](#in3setcertificationnumber)|Set Certification Number (IN3.2)|
+|[setCertificationRequired](#in3setcertificationrequired)|Set Certification Required (IN3.4)|
+|[setCertifiedBy](#in3setcertifiedby)|Set Certified By (IN3.3)|
+|[setDays](#in3setdays)|Set Days (IN3.11)|
 |[setID](#in3setid)||
-|[setNonConcurCodeDescription](#in3setnonconcurcodedescription)|Set Non ConcurCodeDescription (OBR.12)|
-|[setNonConcurEffectiveDateTime](#in3setnonconcureffectivedatetime)|Set Non ConcurEffectiveDateTime (OBR.13)|
-|[setOperator](#in3setoperator)|Set Operator (OBR.8)|
-|[setPenalty](#in3setpenalty)|Set Penalty (OBR.5)|
-|[setPhysicianReviewer](#in3setphysicianreviewer)|Set Physician Reviewer (OBR.14)|
-|[setPreCertificationRequirement](#in3setprecertificationrequirement)|Set Pre CertificationRequirement (OBR.20)|
-|[setSecondOpinionDate](#in3setsecondopiniondate)|Set Second OpinionDate (OBR.22)|
-|[setSecondOpinionDocumentationReceived](#in3setsecondopiniondocumentationreceived)|Set Second OpinionDocumentationReceived (OBR.24)|
-|[setSecondOpinionPhysician](#in3setsecondopinionphysician)|Set Second OpinionPhysician (OBR.25)|
-|[setSecondOpinionStatus](#in3setsecondopinionstatus)|Set Second OpinionStatus (OBR.23)|
+|[setNonConcurCodeDescription](#in3setnonconcurcodedescription)|Set Non Concur Code Description (IN3.12)|
+|[setNonConcurEffectiveDateTime](#in3setnonconcureffectivedatetime)|Set Non Concur Effective Date Time (IN3.13)|
+|[setOperator](#in3setoperator)|Set Operator (IN3.8)|
+|[setPenalty](#in3setpenalty)|Set Penalty (IN3.5)|
+|[setPhysicianReviewer](#in3setphysicianreviewer)|Set Physician Reviewer (IN3.14)|
+|[setPreCertificationRequirement](#in3setprecertificationrequirement)|Set Pre Certification Requirement (IN3.20)|
+|[setSecondOpinionDate](#in3setsecondopiniondate)|Set Second Opinion Date (IN3.22)|
+|[setSecondOpinionDocumentationReceived](#in3setsecondopiniondocumentationreceived)|Set Second Opinion Documentation Received (IN3.24)|
+|[setSecondOpinionPhysician](#in3setsecondopinionphysician)|Set Second Opinion Physician (IN3.25)|
+|[setSecondOpinionStatus](#in3setsecondopinionstatus)|Set Second Opinion Status (IN3.23)|
 
 ## Inherited methods
 
@@ -112,7 +112,7 @@ Aranyasen\HL7\Segment
 public getAppealReason (int $position)
 ```
 
-Get Appeal Reason (OBR.17) 
+Get Appeal Reason (IN3.17) 
 
  
 
@@ -139,7 +139,7 @@ Get Appeal Reason (OBR.17)
 public getCaseManager (int $position)
 ```
 
-Get Case Manager (OBR.21) 
+Get Case Manager (IN3.21) 
 
  
 
@@ -166,7 +166,7 @@ Get Case Manager (OBR.21)
 public getCertificationAgency (int $position)
 ```
 
-Get Certification Agency (OBR.18) 
+Get Certification Agency (IN3.18) 
 
  
 
@@ -193,7 +193,7 @@ Get Certification Agency (OBR.18)
 public getCertificationAgencyPhoneNumber (int $position)
 ```
 
-Get Certification AgencyPhoneNumber (OBR.19) 
+Get Certification AgencyPhoneNumber (IN3.19) 
 
  
 
@@ -220,7 +220,7 @@ Get Certification AgencyPhoneNumber (OBR.19)
 public getCertificationBeginDate (int $position)
 ```
 
-Get Certification BeginDate (OBR.9) 
+Get Certification BeginDate (IN3.9) 
 
  
 
@@ -247,7 +247,7 @@ Get Certification BeginDate (OBR.9)
 public getCertificationContact (int $position)
 ```
 
-Get Certification Contact (OBR.15) 
+Get Certification Contact (IN3.15) 
 
  
 
@@ -274,7 +274,7 @@ Get Certification Contact (OBR.15)
 public getCertificationContactPhoneNumber (int $position)
 ```
 
-Get Certification ContactPhoneNumber (OBR.16) 
+Get Certification ContactPhoneNumber (IN3.16) 
 
  
 
@@ -301,7 +301,7 @@ Get Certification ContactPhoneNumber (OBR.16)
 public getCertificationDateTime (int $position)
 ```
 
-Get Certification DateTime (OBR.6) 
+Get Certification DateTime (IN3.6) 
 
  
 
@@ -328,7 +328,7 @@ Get Certification DateTime (OBR.6)
 public getCertificationEndDate (int $position)
 ```
 
-Get Certification EndDate (OBR.10) 
+Get Certification EndDate (IN3.10) 
 
  
 
@@ -355,7 +355,7 @@ Get Certification EndDate (OBR.10)
 public getCertificationModifyDateTime (int $position)
 ```
 
-Get Certification ModifyDateTime (OBR.7) 
+Get Certification ModifyDateTime (IN3.7) 
 
  
 
@@ -382,7 +382,7 @@ Get Certification ModifyDateTime (OBR.7)
 public getCertificationNumber (int $position)
 ```
 
-Get Certification Number (OBR.2) 
+Get Certification Number (IN3.2) 
 
  
 
@@ -409,7 +409,7 @@ Get Certification Number (OBR.2)
 public getCertificationRequired (int $position)
 ```
 
-Get Certification Required (OBR.4) 
+Get Certification Required (IN3.4) 
 
  
 
@@ -436,7 +436,7 @@ Get Certification Required (OBR.4)
 public getCertifiedBy (int $position)
 ```
 
-Get Certified By (OBR.3) 
+Get Certified By (IN3.3) 
 
  
 
@@ -463,7 +463,7 @@ Get Certified By (OBR.3)
 public getDays (int $position)
 ```
 
-Get Days (OBR.11) 
+Get Days (IN3.11) 
 
  
 
@@ -490,7 +490,7 @@ Get Days (OBR.11)
 public getID (int $position)
 ```
 
-Get ID (OBR.1) 
+Get ID (IN3.1) 
 
  
 
@@ -517,7 +517,7 @@ Get ID (OBR.1)
 public getNonConcurCodeDescription (int $position)
 ```
 
-Get Non ConcurCodeDescription (OBR.12) 
+Get Non ConcurCodeDescription (IN3.12) 
 
  
 
@@ -544,7 +544,7 @@ Get Non ConcurCodeDescription (OBR.12)
 public getNonConcurEffectiveDateTime (int $position)
 ```
 
-Get Non ConcurEffectiveDateTime (OBR.13) 
+Get Non ConcurEffectiveDateTime (IN3.13) 
 
  
 
@@ -571,7 +571,7 @@ Get Non ConcurEffectiveDateTime (OBR.13)
 public getOperator (int $position)
 ```
 
-Get Operator (OBR.8) 
+Get Operator (IN3.8) 
 
  
 
@@ -598,7 +598,7 @@ Get Operator (OBR.8)
 public getPenalty (int $position)
 ```
 
-Get Penalty (OBR.5) 
+Get Penalty (IN3.5) 
 
  
 
@@ -625,7 +625,7 @@ Get Penalty (OBR.5)
 public getPhysicianReviewer (int $position)
 ```
 
-Get Physician Reviewer (OBR.14) 
+Get Physician Reviewer (IN3.14) 
 
  
 
@@ -652,7 +652,7 @@ Get Physician Reviewer (OBR.14)
 public getPreCertificationRequirement (int $position)
 ```
 
-Get Pre CertificationRequirement (OBR.20) 
+Get Pre CertificationRequirement (IN3.20) 
 
  
 
@@ -679,7 +679,7 @@ Get Pre CertificationRequirement (OBR.20)
 public getSecondOpinionDate (int $position)
 ```
 
-Get Second OpinionDate (OBR.22) 
+Get Second OpinionDate (IN3.22) 
 
  
 
@@ -706,7 +706,7 @@ Get Second OpinionDate (OBR.22)
 public getSecondOpinionDocumentationReceived (int $position)
 ```
 
-Get Second OpinionDocumentationReceived (OBR.24) 
+Get Second OpinionDocumentationReceived (IN3.24) 
 
  
 
@@ -733,7 +733,7 @@ Get Second OpinionDocumentationReceived (OBR.24)
 public getSecondOpinionPhysician (int $position)
 ```
 
-Get Second OpinionPhysician (OBR.25) 
+Get Second OpinionPhysician (IN3.25) 
 
  
 
@@ -760,7 +760,7 @@ Get Second OpinionPhysician (OBR.25)
 public getSecondOpinionStatus (int $position)
 ```
 
-Get Second OpinionStatus (OBR.23) 
+Get Second OpinionStatus (IN3.23) 
 
  
 
@@ -811,7 +811,7 @@ Reset index of this segment
 public setAppealReason (string|int|array|null $value, int $position)
 ```
 
-Set Appeal Reason (OBR.17) 
+Set Appeal Reason (IN3.17) 
 
  
 
@@ -839,7 +839,7 @@ Set Appeal Reason (OBR.17)
 public setCaseManager (string|int|array|null $value, int $position)
 ```
 
-Set Case Manager (OBR.21) 
+Set Case Manager (IN3.21) 
 
  
 
@@ -867,7 +867,7 @@ Set Case Manager (OBR.21)
 public setCertificationAgency (string|int|array|null $value, int $position)
 ```
 
-Set Certification Agency (OBR.18) 
+Set Certification Agency (IN3.18) 
 
  
 
@@ -895,7 +895,7 @@ Set Certification Agency (OBR.18)
 public setCertificationAgencyPhoneNumber (string|int|array|null $value, int $position)
 ```
 
-Set Certification AgencyPhoneNumber (OBR.19) 
+Set Certification Agency Phone Number (IN3.19) 
 
  
 
@@ -923,7 +923,7 @@ Set Certification AgencyPhoneNumber (OBR.19)
 public setCertificationBeginDate (string|int|array|null $value, int $position)
 ```
 
-Set Certification BeginDate (OBR.9) 
+Set Certification Begin Date (IN3.9) 
 
  
 
@@ -951,7 +951,7 @@ Set Certification BeginDate (OBR.9)
 public setCertificationContact (string|int|array|null $value, int $position)
 ```
 
-Set Certification Contact (OBR.15) 
+Set Certification Contact (IN3.15) 
 
  
 
@@ -979,7 +979,7 @@ Set Certification Contact (OBR.15)
 public setCertificationContactPhoneNumber (string|int|array|null $value, int $position)
 ```
 
-Set Certification ContactPhoneNumber (OBR.16) 
+Set Certification Contact Phone Number (IN3.16) 
 
  
 
@@ -1007,7 +1007,7 @@ Set Certification ContactPhoneNumber (OBR.16)
 public setCertificationDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Certification DateTime (OBR.6) 
+Set Certification Date Time (IN3.6) 
 
  
 
@@ -1035,7 +1035,7 @@ Set Certification DateTime (OBR.6)
 public setCertificationEndDate (string|int|array|null $value, int $position)
 ```
 
-Set Certification EndDate (OBR.10) 
+Set Certification End Date (IN3.10) 
 
  
 
@@ -1063,7 +1063,7 @@ Set Certification EndDate (OBR.10)
 public setCertificationModifyDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Certification ModifyDateTime (OBR.7) 
+Set Certification Modify Date Time (IN3.7) 
 
  
 
@@ -1091,7 +1091,7 @@ Set Certification ModifyDateTime (OBR.7)
 public setCertificationNumber (string|int|array|null $value, int $position)
 ```
 
-Set Certification Number (OBR.2) 
+Set Certification Number (IN3.2) 
 
  
 
@@ -1119,7 +1119,7 @@ Set Certification Number (OBR.2)
 public setCertificationRequired (string|int|array|null $value, int $position)
 ```
 
-Set Certification Required (OBR.4) 
+Set Certification Required (IN3.4) 
 
  
 
@@ -1147,7 +1147,7 @@ Set Certification Required (OBR.4)
 public setCertifiedBy (string|int|array|null $value, int $position)
 ```
 
-Set Certified By (OBR.3) 
+Set Certified By (IN3.3) 
 
  
 
@@ -1175,7 +1175,7 @@ Set Certified By (OBR.3)
 public setDays (string|int|array|null $value, int $position)
 ```
 
-Set Days (OBR.11) 
+Set Days (IN3.11) 
 
  
 
@@ -1227,7 +1227,7 @@ Set Days (OBR.11)
 public setNonConcurCodeDescription (string|int|array|null $value, int $position)
 ```
 
-Set Non ConcurCodeDescription (OBR.12) 
+Set Non Concur Code Description (IN3.12) 
 
  
 
@@ -1255,7 +1255,7 @@ Set Non ConcurCodeDescription (OBR.12)
 public setNonConcurEffectiveDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Non ConcurEffectiveDateTime (OBR.13) 
+Set Non Concur Effective Date Time (IN3.13) 
 
  
 
@@ -1283,7 +1283,7 @@ Set Non ConcurEffectiveDateTime (OBR.13)
 public setOperator (string|int|array|null $value, int $position)
 ```
 
-Set Operator (OBR.8) 
+Set Operator (IN3.8) 
 
  
 
@@ -1311,7 +1311,7 @@ Set Operator (OBR.8)
 public setPenalty (string|int|array|null $value, int $position)
 ```
 
-Set Penalty (OBR.5) 
+Set Penalty (IN3.5) 
 
  
 
@@ -1339,7 +1339,7 @@ Set Penalty (OBR.5)
 public setPhysicianReviewer (string|int|array|null $value, int $position)
 ```
 
-Set Physician Reviewer (OBR.14) 
+Set Physician Reviewer (IN3.14) 
 
  
 
@@ -1367,7 +1367,7 @@ Set Physician Reviewer (OBR.14)
 public setPreCertificationRequirement (string|int|array|null $value, int $position)
 ```
 
-Set Pre CertificationRequirement (OBR.20) 
+Set Pre Certification Requirement (IN3.20) 
 
  
 
@@ -1395,7 +1395,7 @@ Set Pre CertificationRequirement (OBR.20)
 public setSecondOpinionDate (string|int|array|null $value, int $position)
 ```
 
-Set Second OpinionDate (OBR.22) 
+Set Second Opinion Date (IN3.22) 
 
  
 
@@ -1423,7 +1423,7 @@ Set Second OpinionDate (OBR.22)
 public setSecondOpinionDocumentationReceived (string|int|array|null $value, int $position)
 ```
 
-Set Second OpinionDocumentationReceived (OBR.24) 
+Set Second Opinion Documentation Received (IN3.24) 
 
  
 
@@ -1451,7 +1451,7 @@ Set Second OpinionDocumentationReceived (OBR.24)
 public setSecondOpinionPhysician (string|int|array|null $value, int $position)
 ```
 
-Set Second OpinionPhysician (OBR.25) 
+Set Second Opinion Physician (IN3.25) 
 
  
 
@@ -1479,7 +1479,7 @@ Set Second OpinionPhysician (OBR.25)
 public setSecondOpinionStatus (string|int|array|null $value, int $position)
 ```
 
-Set Second OpinionStatus (OBR.23) 
+Set Second Opinion Status (IN3.23) 
 
  
 

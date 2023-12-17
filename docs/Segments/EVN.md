@@ -14,18 +14,18 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getDateTimePlannedEvent](#evngetdatetimeplannedevent)|Get Date TimePlannedEvent (OBR.3)|
-|[getEventOccurred](#evngeteventoccurred)|Get Event Occurred (OBR.6)|
-|[getEventReasonCode](#evngeteventreasoncode)|Get Event ReasonCode (OBR.4)|
-|[getEventTypeCode](#evngeteventtypecode)|Get Event TypeCode (OBR.1)|
-|[getOperatorID](#evngetoperatorid)|Get Operator ID (OBR.5)|
-|[getRecordedDateTime](#evngetrecordeddatetime)|Get Recorded DateTime (OBR.2)|
-|[setDateTimePlannedEvent](#evnsetdatetimeplannedevent)|Set Date TimePlannedEvent (OBR.3)|
-|[setEventOccurred](#evnseteventoccurred)|Set Event Occurred (OBR.6)|
-|[setEventReasonCode](#evnseteventreasoncode)|Set Event ReasonCode (OBR.4)|
-|[setEventTypeCode](#evnseteventtypecode)|Set Event TypeCode (OBR.1)|
-|[setOperatorID](#evnsetoperatorid)|Set Operator ID (OBR.5)|
-|[setRecordedDateTime](#evnsetrecordeddatetime)|Set Recorded DateTime (OBR.2)|
+|[getDateTimePlannedEvent](#evngetdatetimeplannedevent)|Get Date TimePlannedEvent (EVN.3)|
+|[getEventOccurred](#evngeteventoccurred)|Get Event Occurred (EVN.6)|
+|[getEventReasonCode](#evngeteventreasoncode)|Get Event ReasonCode (EVN.4)|
+|[getEventTypeCode](#evngeteventtypecode)|Get Event TypeCode (EVN.1)|
+|[getOperatorID](#evngetoperatorid)|Get Operator ID (EVN.5)|
+|[getRecordedDateTime](#evngetrecordeddatetime)|Get Recorded DateTime (EVN.2)|
+|[setDateTimePlannedEvent](#evnsetdatetimeplannedevent)|Set Date Time Planned Event (EVN.3)|
+|[setEventOccurred](#evnseteventoccurred)|Set Event Occurred (EVN.6)|
+|[setEventReasonCode](#evnseteventreasoncode)|Set Event Reason Code (EVN.4)|
+|[setEventTypeCode](#evnseteventtypecode)|Set Event Type Code (EVN.1)|
+|[setOperatorID](#evnsetoperatorid)|Set Operator ID (EVN.5)|
+|[setRecordedDateTime](#evnsetrecordeddatetime)|Set Recorded Date Time (EVN.2)|
 
 ## Inherited methods
 
@@ -49,7 +49,7 @@ Aranyasen\HL7\Segment
 public getDateTimePlannedEvent (int $position)
 ```
 
-Get Date TimePlannedEvent (OBR.3) 
+Get Date TimePlannedEvent (EVN.3) 
 
  
 
@@ -76,7 +76,7 @@ Get Date TimePlannedEvent (OBR.3)
 public getEventOccurred (int $position)
 ```
 
-Get Event Occurred (OBR.6) 
+Get Event Occurred (EVN.6) 
 
  
 
@@ -103,7 +103,7 @@ Get Event Occurred (OBR.6)
 public getEventReasonCode (int $position)
 ```
 
-Get Event ReasonCode (OBR.4) 
+Get Event ReasonCode (EVN.4) 
 
  
 
@@ -130,7 +130,7 @@ Get Event ReasonCode (OBR.4)
 public getEventTypeCode (int $position)
 ```
 
-Get Event TypeCode (OBR.1) 
+Get Event TypeCode (EVN.1) 
 
  
 
@@ -157,7 +157,7 @@ Get Event TypeCode (OBR.1)
 public getOperatorID (int $position)
 ```
 
-Get Operator ID (OBR.5) 
+Get Operator ID (EVN.5) 
 
  
 
@@ -184,7 +184,7 @@ Get Operator ID (OBR.5)
 public getRecordedDateTime (int $position)
 ```
 
-Get Recorded DateTime (OBR.2) 
+Get Recorded DateTime (EVN.2) 
 
  
 
@@ -211,7 +211,7 @@ Get Recorded DateTime (OBR.2)
 public setDateTimePlannedEvent (string|int|array|null $value, int $position)
 ```
 
-Set Date TimePlannedEvent (OBR.3) 
+Set Date Time Planned Event (EVN.3) 
 
  
 
@@ -239,7 +239,7 @@ Set Date TimePlannedEvent (OBR.3)
 public setEventOccurred (string|int|array|null $value, int $position)
 ```
 
-Set Event Occurred (OBR.6) 
+Set Event Occurred (EVN.6) 
 
  
 
@@ -267,7 +267,7 @@ Set Event Occurred (OBR.6)
 public setEventReasonCode (string|int|array|null $value, int $position)
 ```
 
-Set Event ReasonCode (OBR.4) 
+Set Event Reason Code (EVN.4) 
 
  
 
@@ -295,7 +295,7 @@ Set Event ReasonCode (OBR.4)
 public setEventTypeCode (string|int|array|null $value, int $position)
 ```
 
-Set Event TypeCode (OBR.1) 
+Set Event Type Code (EVN.1) 
 
  
 
@@ -323,7 +323,7 @@ Set Event TypeCode (OBR.1)
 public setOperatorID (string|int|array|null $value, int $position)
 ```
 
-Set Operator ID (OBR.5) 
+Set Operator ID (EVN.5) 
 
  
 
@@ -351,7 +351,7 @@ Set Operator ID (OBR.5)
 public setRecordedDateTime (string|int|array|null $value, int $position)
 ```
 
-Set Recorded DateTime (OBR.2) 
+Set Recorded Date Time (EVN.2) 
 
  
 
