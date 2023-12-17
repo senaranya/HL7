@@ -53,7 +53,7 @@ Aranyasen\HL7\Segment
 |[setDateTimeOfBirth](#pidsetdatetimeofbirth)|Set Date Time Of Birth (PID.7)|
 |[setDriversLicenseNumber](#pidsetdriverslicensenumber)|Set Drivers License Number (PID.20)|
 |[setEthnicGroup](#pidsetethnicgroup)|Set Ethnic Group (PID.22)|
-|[setID](#pidsetid)||
+|[setID](#pidsetid)|Set ID (PID.1)|
 |[setMaritalStatus](#pidsetmaritalstatus)|Set Marital Status (PID.16)|
 |[setMothersIdentifier](#pidsetmothersidentifier)|Set Mothers Identifier (PID.21)|
 |[setMothersMaidenName](#pidsetmothersmaidenname)|Set Mothers Maiden Name (PID.6)|
@@ -1177,20 +1177,24 @@ Set Ethnic Group (PID.22)
 **Description**
 
 ```php
- setID (void)
+public setID (int $value, int $position)
 ```
 
- 
+Set ID (PID.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $value`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />

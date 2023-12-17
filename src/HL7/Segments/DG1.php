@@ -38,6 +38,15 @@ class DG1 extends Segment
         self::$setId = $index;
     }
 
+    /**
+     * Set ID (DG1.1)
+     *
+     * @param int $value
+     * @param int $position Defaults to 1
+     *
+     * @return bool
+     *
+     */
     public function setID(int $value, int $position = 1)
     {
         return $this->setField($position, $value);
@@ -300,7 +309,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Diagnosis CodingMethod (DG1.2)
+     * Get Diagnosis Coding Method (DG1.2)
      *
      * @param int $position Defaults to 2
      *
@@ -312,6 +321,14 @@ class DG1 extends Segment
         return $this->getField($position);
     }
 
+    /**
+     * Get Diagnosis Code DG1 (DG1.3)
+     *
+     * @param int $position Defaults to 3
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getDiagnosisCodeDG1(int $position = 3)
     {
         return $this->getField($position);

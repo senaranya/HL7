@@ -38,6 +38,15 @@ class OBX extends Segment
         self::$setId = $index;
     }
 
+    /**
+     * Set ID (OBX.1)
+     *
+     * @param int $value
+     * @param int $position Defaults to 1
+     *
+     * @return bool
+     *
+     */
     public function setID(int $value, int $position = 1)
     {
         return $this->setField($position, $value);

@@ -21,7 +21,7 @@ Aranyasen\HL7\Segment
 |[resetIndex](#nteresetindex)|Reset index of this segment|
 |[setComment](#ntesetcomment)|Set Comment (NTE.3)|
 |[setCommentType](#ntesetcommenttype)|Set Comment Type (NTE.4)|
-|[setID](#ntesetid)||
+|[setID](#ntesetid)|Set ID (NTE.1)|
 |[setSourceOfComment](#ntesetsourceofcomment)|Set Source Of Comment (NTE.2)|
 
 ## Inherited methods
@@ -255,20 +255,24 @@ Set Comment Type (NTE.4)
 **Description**
 
 ```php
- setID (void)
+public setID (int $value, int $position)
 ```
 
- 
+Set ID (NTE.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $value`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />

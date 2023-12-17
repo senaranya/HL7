@@ -54,7 +54,7 @@ Aranyasen\HL7\Segment
 |[setCertificationRequired](#in3setcertificationrequired)|Set Certification Required (IN3.4)|
 |[setCertifiedBy](#in3setcertifiedby)|Set Certified By (IN3.3)|
 |[setDays](#in3setdays)|Set Days (IN3.11)|
-|[setID](#in3setid)||
+|[setID](#in3setid)|Set ID (IN3.1)|
 |[setNonConcurCodeDescription](#in3setnonconcurcodedescription)|Set Non Concur Code Description (IN3.12)|
 |[setNonConcurEffectiveDateTime](#in3setnonconcureffectivedatetime)|Set Non Concur Effective Date Time (IN3.13)|
 |[setOperator](#in3setoperator)|Set Operator (IN3.8)|
@@ -1200,20 +1200,24 @@ Set Days (IN3.11)
 **Description**
 
 ```php
- setID (void)
+public setID (int $value, int $position)
 ```
 
- 
+Set ID (IN3.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $value`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />

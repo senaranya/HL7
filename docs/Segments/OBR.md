@@ -22,8 +22,8 @@ Aranyasen\HL7\Segment
 |[getDangerCode](#obrgetdangercode)|Get Danger Code (OBR.12)|
 |[getDiagnosticServSectID](#obrgetdiagnosticservsectid)|Get Diagnostic ServSectID (OBR.24)|
 |[getEscortRequired](#obrgetescortrequired)|Get Escort Required (OBR.42)|
-|[getFillerField1](#obrgetfillerfield1)||
-|[getFillerField2](#obrgetfillerfield2)||
+|[getFillerField1](#obrgetfillerfield1)|Get Filler field 1 (OBR.20)|
+|[getFillerField2](#obrgetfillerfield2)|Get Filler field 2 (OBR.21)|
 |[getFillerOrderNumber](#obrgetfillerordernumber)|Get Filler OrderNumber (OBR.3)|
 |[getID](#obrgetid)|Get ID (OBR.1)|
 |[getNumberofSampleContainers](#obrgetnumberofsamplecontainers)|Get Numberof SampleContainers (OBR.37)|
@@ -34,8 +34,8 @@ Aranyasen\HL7\Segment
 |[getParent](#obrgetparent)|Get Parent (OBR.29)|
 |[getParentResult](#obrgetparentresult)|Get Parent Result (OBR.26)|
 |[getPlacerOrderNumber](#obrgetplacerordernumber)|Get Placer OrderNumber (OBR.2)|
-|[getPlacerfield1](#obrgetplacerfield1)||
-|[getPlacerfield2](#obrgetplacerfield2)||
+|[getPlacerfield1](#obrgetplacerfield1)|Get Placer field 1 (OBR.18)|
+|[getPlacerfield2](#obrgetplacerfield2)|Get Placer field 2 (OBR.19)|
 |[getPlannedPatientTransportComment](#obrgetplannedpatienttransportcomment)|Get Planned PatientTransportComment (OBR.43)|
 |[getPrincipalResultInterpreter](#obrgetprincipalresultinterpreter)|Get Principal ResultInterpreter (OBR.32)|
 |[getPriority](#obrgetpriority)|Get Priority (OBR.5)|
@@ -66,10 +66,10 @@ Aranyasen\HL7\Segment
 |[setDangerCode](#obrsetdangercode)|Set Danger Code (OBR.12)|
 |[setDiagnosticServSectID](#obrsetdiagnosticservsectid)|Set Diagnostic Serv Sect ID (OBR.24)|
 |[setEscortRequired](#obrsetescortrequired)|Set Escort Required (OBR.42)|
-|[setFillerField1](#obrsetfillerfield1)||
-|[setFillerField2](#obrsetfillerfield2)||
+|[setFillerField1](#obrsetfillerfield1)|Set Filler field 1 (OBR.20)|
+|[setFillerField2](#obrsetfillerfield2)|Set Filler field 2 (OBR.21)|
 |[setFillerOrderNumber](#obrsetfillerordernumber)|Set Filler Order Number (OBR.3)|
-|[setID](#obrsetid)||
+|[setID](#obrsetid)|Set ID (OBR.1)|
 |[setNumberofSampleContainers](#obrsetnumberofsamplecontainers)|Set Numberof Sample Containers (OBR.37)|
 |[setObservationDateTime](#obrsetobservationdatetime)|Set Observation Date Time (OBR.7)|
 |[setObservationEndDateTime](#obrsetobservationenddatetime)|Set Observation End Date Time (OBR.8)|
@@ -78,8 +78,8 @@ Aranyasen\HL7\Segment
 |[setParent](#obrsetparent)|Set Parent (OBR.29)|
 |[setParentResult](#obrsetparentresult)|Set Parent Result (OBR.26)|
 |[setPlacerOrderNumber](#obrsetplacerordernumber)|Set Placer Order Number (OBR.2)|
-|[setPlacerfield1](#obrsetplacerfield1)||
-|[setPlacerfield2](#obrsetplacerfield2)||
+|[setPlacerfield1](#obrsetplacerfield1)|Set Placer field 1 (OBR.18)|
+|[setPlacerfield2](#obrsetplacerfield2)|Set Placer field 1 (OBR.19)|
 |[setPlannedPatientTransportComment](#obrsetplannedpatienttransportcomment)|Set Planned Patient Transport Comment (OBR.43)|
 |[setPrincipalResultInterpreter](#obrsetprincipalresultinterpreter)|Set Principal Result Interpreter (OBR.32)|
 |[setPriority](#obrsetpriority)|Set Priority (OBR.5)|
@@ -361,20 +361,23 @@ Get Escort Required (OBR.42)
 **Description**
 
 ```php
- getFillerField1 (void)
+public getFillerField1 (int $position)
 ```
 
- 
+Get Filler field 1 (OBR.20) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 20  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -385,20 +388,23 @@ Get Escort Required (OBR.42)
 **Description**
 
 ```php
- getFillerField2 (void)
+public getFillerField2 (int $position)
 ```
 
- 
+Get Filler field 2 (OBR.21) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 21  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -679,20 +685,23 @@ Get Placer OrderNumber (OBR.2)
 **Description**
 
 ```php
- getPlacerfield1 (void)
+public getPlacerfield1 (int $position)
 ```
 
- 
+Get Placer field 1 (OBR.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -703,20 +712,23 @@ Get Placer OrderNumber (OBR.2)
 **Description**
 
 ```php
- getPlacerfield2 (void)
+public getPlacerfield2 (int $position)
 ```
 
- 
+Get Placer field 2 (OBR.19) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -1542,20 +1554,24 @@ Set Escort Required (OBR.42)
 **Description**
 
 ```php
- setFillerField1 (void)
+public setFillerField1 (string|int|array|null $value, int $position)
 ```
 
- 
+Set Filler field 1 (OBR.20) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 20  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1566,20 +1582,24 @@ Set Escort Required (OBR.42)
 **Description**
 
 ```php
- setFillerField2 (void)
+public setFillerField2 (string|int|array|null $value, int $position)
 ```
 
- 
+Set Filler field 2 (OBR.21) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 21  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1618,20 +1638,24 @@ Set Filler Order Number (OBR.3)
 **Description**
 
 ```php
- setID (void)
+public setID (int $value, int $position)
 ```
 
- 
+Set ID (OBR.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $value`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1866,20 +1890,24 @@ Set Placer Order Number (OBR.2)
 **Description**
 
 ```php
- setPlacerfield1 (void)
+public setPlacerfield1 (string|int|array|null $value, int $position)
 ```
 
- 
+Set Placer field 1 (OBR.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -1890,20 +1918,24 @@ Set Placer Order Number (OBR.2)
 **Description**
 
 ```php
- setPlacerfield2 (void)
+public setPlacerfield2 (string|int|array|null $value, int $position)
 ```
 
- 
+Set Placer field 1 (OBR.19) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />

@@ -20,8 +20,8 @@ Aranyasen\HL7\Segment
 |[getDRGGrouperReviewCode](#dg1getdrggrouperreviewcode)|Get DRGGrouper ReviewCode (DG1.10)|
 |[getDiagnosingClinician](#dg1getdiagnosingclinician)|Get Diagnosing Clinician (DG1.16)|
 |[getDiagnosisClassification](#dg1getdiagnosisclassification)|Get Diagnosis Classification (DG1.17)|
-|[getDiagnosisCodeDG1](#dg1getdiagnosiscodedg1)||
-|[getDiagnosisCodingMethod](#dg1getdiagnosiscodingmethod)|Get Diagnosis CodingMethod (DG1.2)|
+|[getDiagnosisCodeDG1](#dg1getdiagnosiscodedg1)|Get Diagnosis Code DG1 (DG1.3)|
+|[getDiagnosisCodingMethod](#dg1getdiagnosiscodingmethod)|Get Diagnosis Coding Method (DG1.2)|
 |[getDiagnosisDateTime](#dg1getdiagnosisdatetime)|Get Diagnosis DateTime (DG1.5)|
 |[getDiagnosisDescription](#dg1getdiagnosisdescription)|Get Diagnosis Description (DG1.4)|
 |[getDiagnosisPriority](#dg1getdiagnosispriority)|Get Diagnosis Priority (DG1.15)|
@@ -48,7 +48,7 @@ Aranyasen\HL7\Segment
 |[setDiagnosisType](#dg1setdiagnosistype)|Set Diagnosis Type (DG1.6)|
 |[setDiagnosticRelatedGroup](#dg1setdiagnosticrelatedgroup)|Set Diagnostic Related Group (DG1.8)|
 |[setGrouperVersionAndType](#dg1setgrouperversionandtype)|Set Grouper Version And Type (DG1.14)|
-|[setID](#dg1setid)||
+|[setID](#dg1setid)|Set ID (DG1.1)|
 |[setMajorDiagnosticCategory](#dg1setmajordiagnosticcategory)|Set Major Diagnostic Category (DG1.7)|
 |[setOutlierCost](#dg1setoutliercost)|Set Outlier Cost (DG1.13)|
 |[setOutlierDays](#dg1setoutlierdays)|Set Outlier Days (DG1.12)|
@@ -259,20 +259,23 @@ Get Diagnosis Classification (DG1.17)
 **Description**
 
 ```php
- getDiagnosisCodeDG1 (void)
+public getDiagnosisCodeDG1 (int $position)
 ```
 
- 
+Get Diagnosis Code DG1 (DG1.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -286,7 +289,7 @@ Get Diagnosis Classification (DG1.17)
 public getDiagnosisCodingMethod (int $position)
 ```
 
-Get Diagnosis CodingMethod (DG1.2) 
+Get Diagnosis Coding Method (DG1.2) 
 
  
 
@@ -1019,20 +1022,24 @@ Set Grouper Version And Type (DG1.14)
 **Description**
 
 ```php
- setID (void)
+public setID (int $value, int $position)
 ```
 
- 
+Set ID (DG1.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $value`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />

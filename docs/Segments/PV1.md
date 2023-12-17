@@ -97,7 +97,7 @@ Aranyasen\HL7\Segment
 |[setDischargedToLocation](#pv1setdischargedtolocation)|Set Discharged To Location (PV1.37)|
 |[setFinancialClass](#pv1setfinancialclass)|Set Financial Class (PV1.20)|
 |[setHospitalService](#pv1sethospitalservice)|Set Hospital Service (PV1.10)|
-|[setID](#pv1setid)||
+|[setID](#pv1setid)|Set ID (PV1.1)|
 |[setInterestCode](#pv1setinterestcode)|Set Interest Code (PV1.28)|
 |[setOtherHealthcareProvider](#pv1setotherhealthcareprovider)|Set Other Healthcare Provider (PV1.52)|
 |[setPatientClass](#pv1setpatientclass)|Set Patient Class (PV1.2)|
@@ -2431,20 +2431,24 @@ Set Hospital Service (PV1.10)
 **Description**
 
 ```php
- setID (void)
+public setID (int $value, int $position)
 ```
 
- 
+Set ID (PV1.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $value`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />

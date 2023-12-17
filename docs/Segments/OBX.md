@@ -39,7 +39,7 @@ Aranyasen\HL7\Segment
 |[setDateTimeOfAnalysis](#obxsetdatetimeofanalysis)|Set Date Time Of Analysis (OBX.19)|
 |[setDateTimeOfTheObservation](#obxsetdatetimeoftheobservation)|Set Date Time Of The Observation (OBX.14)|
 |[setEquipmentInstanceIdentifier](#obxsetequipmentinstanceidentifier)|Set Equipment Instance Identifier (OBX.18)|
-|[setID](#obxsetid)||
+|[setID](#obxsetid)|Set ID (OBX.1)|
 |[setNatureOfAbnormalTest](#obxsetnatureofabnormaltest)|Set Nature Of Abnormal Test (OBX.10)|
 |[setObservationIdentifier](#obxsetobservationidentifier)|Set Observation Identifier (OBX.3)|
 |[setObservationMethod](#obxsetobservationmethod)|Set Observation Method (OBX.17)|
@@ -774,20 +774,24 @@ Set Equipment Instance Identifier (OBX.18)
 **Description**
 
 ```php
- setID (void)
+public setID (int $value, int $position)
 ```
 
- 
+Set ID (OBX.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $value`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />

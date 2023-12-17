@@ -38,6 +38,15 @@ class RGS extends Segment
         self::$setId = $index;
     }
 
+    /**
+     * Set ID (RGS.1)
+     *
+     * @param int $value
+     * @param int $position Defaults to 1
+     *
+     * @return bool
+     *
+     */
     public function setID(int $value, int $position = 1): bool
     {
         return $this->setField($position, $value);

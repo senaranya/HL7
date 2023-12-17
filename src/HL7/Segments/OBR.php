@@ -39,6 +39,15 @@ class OBR extends Segment
         self::$setId = $index;
     }
 
+    /**
+     * Set ID (OBR.1)
+     *
+     * @param int $value
+     * @param int $position Defaults to 1
+     *
+     * @return bool
+     *
+     */
     public function setID(int $value, int $position = 1)
     {
         return $this->setField($position, $value);
@@ -268,21 +277,57 @@ class OBR extends Segment
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Placer field 1 (OBR.18)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 18
+     *
+     * @return bool
+     *
+     */
     public function setPlacerfield1($value, int $position = 18)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Placer field 1 (OBR.19)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 19
+     *
+     * @return bool
+     *
+     */
     public function setPlacerfield2($value, int $position = 19)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Filler field 1 (OBR.20)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 20
+     *
+     * @return bool
+     *
+     */
     public function setFillerField1($value, int $position = 20)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Filler field 2 (OBR.21)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 21
+     *
+     * @return bool
+     *
+     */
     public function setFillerField2($value, int $position = 21)
     {
         return $this->setField($position, $value);
@@ -828,21 +873,53 @@ class OBR extends Segment
         return $this->getField($position);
     }
 
+    /**
+     * Get Placer field 1 (OBR.18)
+     *
+     * @param int $position Defaults to 18
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getPlacerfield1(int $position = 18)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Placer field 2 (OBR.19)
+     *
+     * @param int $position Defaults to 19
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getPlacerfield2(int $position = 19)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Filler field 1 (OBR.20)
+     *
+     * @param int $position Defaults to 20
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getFillerField1(int $position = 20)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Filler field 2 (OBR.21)
+     *
+     * @param int $position Defaults to 21
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getFillerField2(int $position = 21)
     {
         return $this->getField($position);
