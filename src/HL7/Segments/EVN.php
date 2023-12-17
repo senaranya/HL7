@@ -101,7 +101,7 @@ class EVN extends Segment
     }
 
     /**
-     * Get Event TypeCode (EVN.1)
+     * Get Event Type Code (EVN.1)
      *
      * @param int $position Defaults to 1
      *
@@ -114,7 +114,7 @@ class EVN extends Segment
     }
 
     /**
-     * Get Recorded DateTime (EVN.2)
+     * Get Recorded Date Time (EVN.2)
      *
      * @param int $position Defaults to 2
      *
@@ -127,7 +127,7 @@ class EVN extends Segment
     }
 
     /**
-     * Get Date TimePlannedEvent (EVN.3)
+     * Get Date Time Planned Event (EVN.3)
      *
      * @param int $position Defaults to 3
      *
@@ -140,7 +140,7 @@ class EVN extends Segment
     }
 
     /**
-     * Get Event ReasonCode (EVN.4)
+     * Get Event Reason Code (EVN.4)
      *
      * @param int $position Defaults to 4
      *

@@ -28,8 +28,8 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getDateTimeOfMessage](#mshgetdatetimeofmessage)|Get Date TimeOfMessage (MSH.7)|
-|[getMessageControlId](#mshgetmessagecontrolid)|Get Message ControlId (MSH.10)|
+|[getDateTimeOfMessage](#mshgetdatetimeofmessage)|Get Date Time Of Message (MSH.7)|
+|[getMessageControlId](#mshgetmessagecontrolid)|Get Message Control Id (MSH.10)|
 |[getMessageType](#mshgetmessagetype)|Get Message Type (MSH.9)|
 |[getProcessingId](#mshgetprocessingid)|Get Processing Id (MSH.11)|
 |[getReceivingApplication](#mshgetreceivingapplication)|Get Receiving Application (MSH.5)|
@@ -79,7 +79,7 @@ Aranyasen\HL7\Segment
 public getDateTimeOfMessage (int $position)
 ```
 
-Get Date TimeOfMessage (MSH.7) 
+Get Date Time Of Message (MSH.7) 
 
  
 
@@ -106,7 +106,7 @@ Get Date TimeOfMessage (MSH.7)
 public getMessageControlId (int $position)
 ```
 
-Get Message ControlId (MSH.10) 
+Get Message Control Id (MSH.10) 
 
  
 

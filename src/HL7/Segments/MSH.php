@@ -442,7 +442,7 @@ class MSH extends Segment
     }
 
     /**
-     * Get Date TimeOfMessage (MSH.7)
+     * Get Date Time Of Message (MSH.7)
      *
      * @param int $position Defaults to 7
      *
@@ -492,7 +492,7 @@ class MSH extends Segment
     }
 
     /**
-     * Get Message ControlId (MSH.10)
+     * Get Message Control Id (MSH.10)
      *
      * @param int $position Defaults to 10
      *

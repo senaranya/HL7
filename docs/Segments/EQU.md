@@ -14,10 +14,10 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[getAlertLevel](#equgetalertlevel)|Get Alert Level (EQU.4)|
-|[getEquipmentInstanceIdentifier](#equgetequipmentinstanceidentifier)|Get Equipment InstanceIdentifier (EQU.1)|
+|[getEquipmentInstanceIdentifier](#equgetequipmentinstanceidentifier)|Get Equipment Instance Identifier (EQU.1)|
 |[getEquipmentState](#equgetequipmentstate)|Get Equipment State (EQU.3)|
-|[getEventDateTime](#equgeteventdatetime)|Get Event DateTime (EQU.2)|
-|[getLocalRemoteControlState](#equgetlocalremotecontrolstate)|Get Local RemoteControlState (EQU.4)|
+|[getEventDateTime](#equgeteventdatetime)|Get Event Date Time (EQU.2)|
+|[getLocalRemoteControlState](#equgetlocalremotecontrolstate)|Get Local Remote Control State (EQU.4)|
 |[resetIndex](#equresetindex)|Reset index of this segment|
 |[setAlertLevel](#equsetalertlevel)|Set Alert Level (EQU.5)|
 |[setEquipmentInstanceIdentifier](#equsetequipmentinstanceidentifier)||
@@ -74,7 +74,7 @@ Get Alert Level (EQU.4)
 public getEquipmentInstanceIdentifier (int $position)
 ```
 
-Get Equipment InstanceIdentifier (EQU.1) 
+Get Equipment Instance Identifier (EQU.1) 
 
  
 
@@ -128,7 +128,7 @@ Get Equipment State (EQU.3)
 public getEventDateTime (int $position)
 ```
 
-Get Event DateTime (EQU.2) 
+Get Event Date Time (EQU.2) 
 
  
 
@@ -155,7 +155,7 @@ Get Event DateTime (EQU.2)
 public getLocalRemoteControlState (int $position)
 ```
 
-Get Local RemoteControlState (EQU.4) 
+Get Local Remote Control State (EQU.4) 
 
  
 

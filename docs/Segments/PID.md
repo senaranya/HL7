@@ -14,36 +14,36 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[__destruct](#pid__destruct)||
-|[getAlternatePatientID](#pidgetalternatepatientid)|Get Alternate PatientID (PID.4)|
+|[getAlternatePatientID](#pidgetalternatepatientid)|Get Alternate Patient ID (PID.4)|
 |[getBirthOrder](#pidgetbirthorder)|Get Birth Order (PID.25)|
 |[getBirthPlace](#pidgetbirthplace)|Get Birth Place (PID.23)|
 |[getCitizenship](#pidgetcitizenship)|Get Citizenship (PID.26)|
 |[getCountryCode](#pidgetcountrycode)|Get Country Code (PID.12)|
-|[getDateTimeOfBirth](#pidgetdatetimeofbirth)|Get Date TimeOfBirth (PID.7)|
-|[getDriversLicenseNumber](#pidgetdriverslicensenumber)|Get Drivers LicenseNumber (PID.20)|
+|[getDateTimeOfBirth](#pidgetdatetimeofbirth)|Get Date Time Of Birth (PID.7)|
+|[getDriversLicenseNumber](#pidgetdriverslicensenumber)|Get Drivers License Number (PID.20)|
 |[getEthnicGroup](#pidgetethnicgroup)|Get Ethnic Group (PID.22)|
 |[getID](#pidgetid)|Get ID (PID.1)|
 |[getMaritalStatus](#pidgetmaritalstatus)|Get Marital Status (PID.16)|
 |[getMothersIdentifier](#pidgetmothersidentifier)|Get Mothers Identifier (PID.21)|
-|[getMothersMaidenName](#pidgetmothersmaidenname)|Get Mothers MaidenName (PID.6)|
-|[getMultipleBirthIndicator](#pidgetmultiplebirthindicator)|Get Multiple BirthIndicator (PID.24)|
+|[getMothersMaidenName](#pidgetmothersmaidenname)|Get Mothers Maiden Name (PID.6)|
+|[getMultipleBirthIndicator](#pidgetmultiplebirthindicator)|Get Multiple Birth Indicator (PID.24)|
 |[getNationality](#pidgetnationality)|Get Nationality (PID.28)|
-|[getPatientAccountNumber](#pidgetpatientaccountnumber)|Get Patient AccountNumber (PID.18)|
+|[getPatientAccountNumber](#pidgetpatientaccountnumber)|Get Patient Account Number (PID.18)|
 |[getPatientAddress](#pidgetpatientaddress)|Get Patient Address (PID.11)|
 |[getPatientAlias](#pidgetpatientalias)|Get Patient Alias (PID.9)|
-|[getPatientDeathDateAndTime](#pidgetpatientdeathdateandtime)|Get Patient DeathDateAndTime (PID.29)|
-|[getPatientDeathIndicator](#pidgetpatientdeathindicator)|Get Patient DeathIndicator (PID.30)|
+|[getPatientDeathDateAndTime](#pidgetpatientdeathdateandtime)|Get Patient Death Date And Time (PID.29)|
+|[getPatientDeathIndicator](#pidgetpatientdeathindicator)|Get Patient Death Indicator (PID.30)|
 |[getPatientID](#pidgetpatientid)|Get Patient ID (PID.2)|
-|[getPatientIdentifierList](#pidgetpatientidentifierlist)|Get Patient IdentifierList (PID.3)|
+|[getPatientIdentifierList](#pidgetpatientidentifierlist)|Get Patient Identifier List (PID.3)|
 |[getPatientName](#pidgetpatientname)|Get Patient Name (PID.5)|
-|[getPhoneNumberBusiness](#pidgetphonenumberbusiness)|Get Phone NumberBusiness (PID.14)|
-|[getPhoneNumberHome](#pidgetphonenumberhome)|Get Phone NumberHome (PID.13)|
+|[getPhoneNumberBusiness](#pidgetphonenumberbusiness)|Get Phone Number Business (PID.14)|
+|[getPhoneNumberHome](#pidgetphonenumberhome)|Get Phone Number Home (PID.13)|
 |[getPrimaryLanguage](#pidgetprimarylanguage)|Get Primary Language (PID.15)|
 |[getRace](#pidgetrace)|Get Race (PID.10)|
 |[getReligion](#pidgetreligion)|Get Religion (PID.17)|
 |[getSSNNumber](#pidgetssnnumber)|Get SSNNumber (PID.19)|
 |[getSex](#pidgetsex)|Get Sex (PID.8)|
-|[getVeteransMilitaryStatus](#pidgetveteransmilitarystatus)|Get Veterans MilitaryStatus (PID.27)|
+|[getVeteransMilitaryStatus](#pidgetveteransmilitarystatus)|Get Veterans Military Status (PID.27)|
 |[resetIndex](#pidresetindex)|Reset index of this segment|
 |[setAlternatePatientID](#pidsetalternatepatientid)|Set Alternate Patient ID (PID.4)|
 |[setBirthOrder](#pidsetbirthorder)|Set Birth Order (PID.25)|
@@ -122,7 +122,7 @@ Aranyasen\HL7\Segment
 public getAlternatePatientID (int $position)
 ```
 
-Get Alternate PatientID (PID.4) 
+Get Alternate Patient ID (PID.4) 
 
  
 
@@ -257,7 +257,7 @@ Get Country Code (PID.12)
 public getDateTimeOfBirth (int $position)
 ```
 
-Get Date TimeOfBirth (PID.7) 
+Get Date Time Of Birth (PID.7) 
 
  
 
@@ -284,7 +284,7 @@ Get Date TimeOfBirth (PID.7)
 public getDriversLicenseNumber (int $position)
 ```
 
-Get Drivers LicenseNumber (PID.20) 
+Get Drivers License Number (PID.20) 
 
  
 
@@ -419,7 +419,7 @@ Get Mothers Identifier (PID.21)
 public getMothersMaidenName (int $position)
 ```
 
-Get Mothers MaidenName (PID.6) 
+Get Mothers Maiden Name (PID.6) 
 
  
 
@@ -446,7 +446,7 @@ Get Mothers MaidenName (PID.6)
 public getMultipleBirthIndicator (int $position)
 ```
 
-Get Multiple BirthIndicator (PID.24) 
+Get Multiple Birth Indicator (PID.24) 
 
  
 
@@ -500,7 +500,7 @@ Get Nationality (PID.28)
 public getPatientAccountNumber (int $position)
 ```
 
-Get Patient AccountNumber (PID.18) 
+Get Patient Account Number (PID.18) 
 
  
 
@@ -581,7 +581,7 @@ Get Patient Alias (PID.9)
 public getPatientDeathDateAndTime (int $position)
 ```
 
-Get Patient DeathDateAndTime (PID.29) 
+Get Patient Death Date And Time (PID.29) 
 
  
 
@@ -608,7 +608,7 @@ Get Patient DeathDateAndTime (PID.29)
 public getPatientDeathIndicator (int $position)
 ```
 
-Get Patient DeathIndicator (PID.30) 
+Get Patient Death Indicator (PID.30) 
 
  
 
@@ -662,7 +662,7 @@ Get Patient ID (PID.2)
 public getPatientIdentifierList (int $position)
 ```
 
-Get Patient IdentifierList (PID.3) 
+Get Patient Identifier List (PID.3) 
 
  
 
@@ -716,7 +716,7 @@ Get Patient Name (PID.5)
 public getPhoneNumberBusiness (int $position)
 ```
 
-Get Phone NumberBusiness (PID.14) 
+Get Phone Number Business (PID.14) 
 
  
 
@@ -743,7 +743,7 @@ Get Phone NumberBusiness (PID.14)
 public getPhoneNumberHome (int $position)
 ```
 
-Get Phone NumberHome (PID.13) 
+Get Phone Number Home (PID.13) 
 
  
 
@@ -905,7 +905,7 @@ Get Sex (PID.8)
 public getVeteransMilitaryStatus (int $position)
 ```
 
-Get Veterans MilitaryStatus (PID.27) 
+Get Veterans Military Status (PID.27) 
 
  
 

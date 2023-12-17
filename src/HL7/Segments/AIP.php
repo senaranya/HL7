@@ -228,7 +228,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Segment ActionCode (AIP.2)
+     * Get Segment Action Code (AIP.2)
      *
      * @param int $position Defaults to 2
      *
@@ -241,7 +241,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Personnel ResourceID (AIP.3)
+     * Get Personnel Resource ID (AIP.3)
      *
      * @param int $position Defaults to 3
      *
@@ -280,7 +280,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Start DateTime (AIP.6)
+     * Get Start Date Time (AIP.6)
      *
      * @param int $position Defaults to 6
      *
@@ -293,7 +293,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Start DateTimeOffset (AIP.7)
+     * Get Start Date Time Offset (AIP.7)
      *
      * @param int $position Defaults to 7
      *
@@ -306,7 +306,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Start DateTimeOffsetUnits (AIP.8)
+     * Get Start Date Time Offset Units (AIP.8)
      *
      * @param int $position Defaults to 8
      *
@@ -345,7 +345,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Allow SubstitutionCode (AIP.11)
+     * Get Allow Substitution Code (AIP.11)
      *
      * @param int $position Defaults to 11
      *
@@ -358,7 +358,7 @@ class AIP extends Segment
     }
 
     /**
-     * Get Filler StatusCode (AIP.12)
+     * Get Filler Status Code (AIP.12)
      *
      * @param int $position Defaults to 12
      *

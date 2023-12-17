@@ -941,7 +941,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Assigned PatientLocation (PV1.3)
+     * Get Assigned Patient Location (PV1.3)
      *
      * @param int $position Defaults to 3
      *
@@ -967,7 +967,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Pre AdmitNumber (PV1.5)
+     * Get Pre Admit Number (PV1.5)
      *
      * @param int $position Defaults to 5
      *
@@ -980,7 +980,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Prior PatientLocation (PV1.6)
+     * Get Prior Patient Location (PV1.6)
      *
      * @param int $position Defaults to 6
      *
@@ -1058,7 +1058,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Pre AdmitTestIndicator (PV1.12)
+     * Get Pre Admit Test Indicator (PV1.12)
      *
      * @param int $position Defaults to 12
      *
@@ -1071,7 +1071,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Re AdmissionIndicator (PV1.13)
+     * Get Re Admission Indicator (PV1.13)
      *
      * @param int $position Defaults to 13
      *
@@ -1175,7 +1175,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Charge PriceIndicator (PV1.21)
+     * Get Charge Price Indicator (PV1.21)
      *
      * @param int $position Defaults to 21
      *
@@ -1227,7 +1227,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Contract EffectiveDate (PV1.25)
+     * Get Contract Effective Date (PV1.25)
      *
      * @param int $position Defaults to 25
      *
@@ -1279,7 +1279,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Transfer ToBadDebtCode (PV1.29)
+     * Get Transfer To Bad Debt Code (PV1.29)
      *
      * @param int $position Defaults to 29
      *
@@ -1292,7 +1292,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Transfer ToBadDebtDate (PV1.30)
+     * Get Transfer To Bad Debt Date (PV1.30)
      *
      * @param int $position Defaults to 30
      *
@@ -1305,7 +1305,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Bad DebtAgencyCode (PV1.31)
+     * Get Bad Debt Agency Code (PV1.31)
      *
      * @param int $position Defaults to 31
      *
@@ -1318,7 +1318,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Bad DebtTransferAmount (PV1.32)
+     * Get Bad Debt Transfer Amount (PV1.32)
      *
      * @param int $position Defaults to 32
      *
@@ -1331,7 +1331,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Bad DebtRecoveryAmount (PV1.33)
+     * Get Bad Debt Recovery Amount (PV1.33)
      *
      * @param int $position Defaults to 33
      *
@@ -1344,7 +1344,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Delete AccountIndicator (PV1.34)
+     * Get Delete Account Indicator (PV1.34)
      *
      * @param int $position Defaults to 34
      *
@@ -1357,7 +1357,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Delete AccountDate (PV1.35)
+     * Get Delete Account Date (PV1.35)
      *
      * @param int $position Defaults to 35
      *
@@ -1383,7 +1383,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Discharged ToLocation (PV1.37)
+     * Get Discharged To Location (PV1.37)
      *
      * @param int $position Defaults to 37
      *
@@ -1461,7 +1461,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Prior TemporaryLocation (PV1.43)
+     * Get Prior Temporary Location (PV1.43)
      *
      * @param int $position Defaults to 43
      *
@@ -1474,7 +1474,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Admit DateTime (PV1.44)
+     * Get Admit Date Time (PV1.44)
      *
      * @param int $position Defaults to 44
      *
@@ -1487,7 +1487,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Discharge DateTime (PV1.45)
+     * Get Discharge Date Time (PV1.45)
      *
      * @param int $position Defaults to 45
      *
@@ -1500,7 +1500,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Current PatientBalance (PV1.46)
+     * Get Current Patient Balance (PV1.46)
      *
      * @param int $position Defaults to 46
      *
@@ -1552,7 +1552,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Alternate VisitID (PV1.50)
+     * Get Alternate Visit ID (PV1.50)
      *
      * @param int $position Defaults to 50
      *
@@ -1578,7 +1578,7 @@ class PV1 extends Segment
     }
 
     /**
-     * Get Other HealthcareProvider (PV1.52)
+     * Get Other Healthcare Provider (PV1.52)
      *
      * @param int $position Defaults to 52
      *

@@ -94,7 +94,7 @@ class RGS extends Segment
     }
 
     /**
-     * Get Segment ActionCode (RGS.2)
+     * Get Segment Action Code (RGS.2)
      *
      * @param int $position Defaults to 2
      *
@@ -107,7 +107,7 @@ class RGS extends Segment
     }
 
     /**
-     * Get Resource GroupID (RGS.3)
+     * Get Resource Group ID (RGS.3)
      *
      * @param int $position Defaults to 3
      *

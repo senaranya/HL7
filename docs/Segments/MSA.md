@@ -14,10 +14,10 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[getAcknowledgementCode](#msagetacknowledgementcode)|Get Acknowledgement Code (MSA.1)|
-|[getDelayedAcknowledgementType](#msagetdelayedacknowledgementtype)|Get Delayed AcknowledgementType (MSA.5)|
+|[getDelayedAcknowledgementType](#msagetdelayedacknowledgementtype)|Get Delayed Acknowledgement Type (MSA.5)|
 |[getErrorCondition](#msageterrorcondition)|Get Error Condition (MSA.6)|
-|[getExpectedSequenceNumber](#msagetexpectedsequencenumber)|Get Expected SequenceNumber (MSA.4)|
-|[getMessageControlID](#msagetmessagecontrolid)|Get Message ControlID (MSA.2)|
+|[getExpectedSequenceNumber](#msagetexpectedsequencenumber)|Get Expected Sequence Number (MSA.4)|
+|[getMessageControlID](#msagetmessagecontrolid)|Get Message Control ID (MSA.2)|
 |[getTextMessage](#msagettextmessage)|Get Text Message (MSA.3)|
 |[setAcknowledgementCode](#msasetacknowledgementcode)|Set Acknowledgement Code (MSA.1)|
 |[setDelayedAcknowledgementType](#msasetdelayedacknowledgementtype)|Set Delayed Acknowledgement Type (MSA.5)|
@@ -75,7 +75,7 @@ Get Acknowledgement Code (MSA.1)
 public getDelayedAcknowledgementType (int $position)
 ```
 
-Get Delayed AcknowledgementType (MSA.5) 
+Get Delayed Acknowledgement Type (MSA.5) 
 
  
 
@@ -129,7 +129,7 @@ Get Error Condition (MSA.6)
 public getExpectedSequenceNumber (int $position)
 ```
 
-Get Expected SequenceNumber (MSA.4) 
+Get Expected Sequence Number (MSA.4) 
 
  
 
@@ -156,7 +156,7 @@ Get Expected SequenceNumber (MSA.4)
 public getMessageControlID (int $position)
 ```
 
-Get Message ControlID (MSA.2) 
+Get Message Control ID (MSA.2) 
 
  
 

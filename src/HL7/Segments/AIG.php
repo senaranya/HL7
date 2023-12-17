@@ -255,7 +255,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Segment ActionCode (AIG.2)
+     * Get Segment Action Code (AIG.2)
      *
      * @param int $position Defaults to 2
      *
@@ -320,7 +320,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Resource QuantityUnits (AIG.7)
+     * Get Resource Quantity Units (AIG.7)
      *
      * @param int $position Defaults to 7
      *
@@ -333,7 +333,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Start DateTime (AIG.8)
+     * Get Start Date Time (AIG.8)
      *
      * @param int $position Defaults to 8
      *
@@ -346,7 +346,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Start DateTimeOffset (AIG.9)
+     * Get Start Date Time Offset (AIG.9)
      *
      * @param int $position Defaults to 9
      *
@@ -359,7 +359,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Start DateTimeOffsetUnits (AIG.10)
+     * Get Start Date Time Offset Units (AIG.10)
      *
      * @param int $position Defaults to 10
      *
@@ -398,7 +398,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Allow SubstitutionCode (AIG.13)
+     * Get Allow Substitution Code (AIG.13)
      *
      * @param int $position Defaults to 13
      *
@@ -411,7 +411,7 @@ class AIG extends Segment
     }
 
     /**
-     * Get Filler StatusCode (AIG.14)
+     * Get Filler Status Code (AIG.14)
      *
      * @param int $position Defaults to 14
      *

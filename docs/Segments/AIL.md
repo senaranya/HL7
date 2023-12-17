@@ -23,18 +23,18 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[__destruct](#ail__destruct)||
-|[getAllowSubstitutionCode](#ailgetallowsubstitutioncode)|Get Allow SubstitutionCode (AIL.11)|
+|[getAllowSubstitutionCode](#ailgetallowsubstitutioncode)|Get Allow Substitution Code (AIL.11)|
 |[getDuration](#ailgetduration)|Get Duration (AIL.9)|
 |[getDurationUnits](#ailgetdurationunits)|Get Duration Units (AIL.10)|
-|[getFillerStatusCode](#ailgetfillerstatuscode)|Get Filler StatusCode (AIL.12)|
+|[getFillerStatusCode](#ailgetfillerstatuscode)|Get Filler Status Code (AIL.12)|
 |[getID](#ailgetid)|Get ID (AIL.1)|
 |[getLocationGroup](#ailgetlocationgroup)|Get Location Group (AIL.5)|
-|[getLocationResourceID](#ailgetlocationresourceid)|Get Location ResourceID (AIL.3)|
-|[getLocationTypeAIL](#ailgetlocationtypeail)|Get Location TypeAIL (AIL.4)|
-|[getSegmentActionCode](#ailgetsegmentactioncode)|Get Segment ActionCode (AIL.2)|
-|[getStartDateTime](#ailgetstartdatetime)|Get Start DateTime (AIL.6)|
-|[getStartDateTimeOffset](#ailgetstartdatetimeoffset)|Get Start DateTimeOffset (AIL.7)|
-|[getStartDateTimeOffsetUnits](#ailgetstartdatetimeoffsetunits)|Get Start DateTimeOffsetUnits (AIL.8)|
+|[getLocationResourceID](#ailgetlocationresourceid)|Get Location Resource ID (AIL.3)|
+|[getLocationTypeAIL](#ailgetlocationtypeail)|Get Location Type AIL (AIL.4)|
+|[getSegmentActionCode](#ailgetsegmentactioncode)|Get Segment Action Code (AIL.2)|
+|[getStartDateTime](#ailgetstartdatetime)|Get Start Date Time (AIL.6)|
+|[getStartDateTimeOffset](#ailgetstartdatetimeoffset)|Get Start Date Time Offset (AIL.7)|
+|[getStartDateTimeOffsetUnits](#ailgetstartdatetimeoffsetunits)|Get Start Date Time Offset Units (AIL.8)|
 |[resetIndex](#ailresetindex)|Reset index of this segment|
 |[setAllowSubstitutionCode](#ailsetallowsubstitutioncode)|Set Allow Substitution Code (AIL.11)|
 |[setDuration](#ailsetduration)|Set Duration (AIL.9)|
@@ -95,7 +95,7 @@ Aranyasen\HL7\Segment
 public getAllowSubstitutionCode (int $position)
 ```
 
-Get Allow SubstitutionCode (AIL.11) 
+Get Allow Substitution Code (AIL.11) 
 
  
 
@@ -176,7 +176,7 @@ Get Duration Units (AIL.10)
 public getFillerStatusCode (int $position)
 ```
 
-Get Filler StatusCode (AIL.12) 
+Get Filler Status Code (AIL.12) 
 
  
 
@@ -257,7 +257,7 @@ Get Location Group (AIL.5)
 public getLocationResourceID (int $position)
 ```
 
-Get Location ResourceID (AIL.3) 
+Get Location Resource ID (AIL.3) 
 
  
 
@@ -284,7 +284,7 @@ Get Location ResourceID (AIL.3)
 public getLocationTypeAIL (int $position)
 ```
 
-Get Location TypeAIL (AIL.4) 
+Get Location Type AIL (AIL.4) 
 
  
 
@@ -311,7 +311,7 @@ Get Location TypeAIL (AIL.4)
 public getSegmentActionCode (int $position)
 ```
 
-Get Segment ActionCode (AIL.2) 
+Get Segment Action Code (AIL.2) 
 
  
 
@@ -338,7 +338,7 @@ Get Segment ActionCode (AIL.2)
 public getStartDateTime (int $position)
 ```
 
-Get Start DateTime (AIL.6) 
+Get Start Date Time (AIL.6) 
 
  
 
@@ -365,7 +365,7 @@ Get Start DateTime (AIL.6)
 public getStartDateTimeOffset (int $position)
 ```
 
-Get Start DateTimeOffset (AIL.7) 
+Get Start Date Time Offset (AIL.7) 
 
  
 
@@ -392,7 +392,7 @@ Get Start DateTimeOffset (AIL.7)
 public getStartDateTimeOffsetUnits (int $position)
 ```
 
-Get Start DateTimeOffsetUnits (AIL.8) 
+Get Start Date Time Offset Units (AIL.8) 
 
  
 

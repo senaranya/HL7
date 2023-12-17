@@ -14,51 +14,51 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[getAccommodationCode](#pv2getaccommodationcode)|Get Accommodation Code (PV2.2)|
-|[getActualLengthOfInpatientStay](#pv2getactuallengthofinpatientstay)|Get Actual LengthOfInpatientStay (PV2.11)|
-|[getAdmissionLevelOfCareCode](#pv2getadmissionlevelofcarecode)|Get Admission LevelOfCareCode (PV2.40)|
+|[getActualLengthOfInpatientStay](#pv2getactuallengthofinpatientstay)|Get Actual Length Of Inpatient Stay (PV2.11)|
+|[getAdmissionLevelOfCareCode](#pv2getadmissionlevelofcarecode)|Get Admission Level Of Care Code (PV2.40)|
 |[getAdmitReason](#pv2getadmitreason)|Get Admit Reason (PV2.3)|
-|[getAdvanceDirectiveCode](#pv2getadvancedirectivecode)|Get Advance DirectiveCode (PV2.45)|
-|[getBabyDetainedIndicator](#pv2getbabydetainedindicator)|Get Baby DetainedIndicator (PV2.37)|
-|[getBillingMediaCode](#pv2getbillingmediacode)|Get Billing MediaCode (PV2.32)|
-|[getClinicOrganizationName](#pv2getclinicorganizationname)|Get Clinic OrganizationName (PV2.23)|
-|[getEmploymentIllnessRelatedIndicator](#pv2getemploymentillnessrelatedindicator)|Get Employment IllnessRelatedIndicator (PV2.15)|
-|[getEstimatedLengthofInpatientStay](#pv2getestimatedlengthofinpatientstay)|Get Estimated LengthofInpatientStay (PV2.10)|
-|[getExpectedAdmitDateTime](#pv2getexpectedadmitdatetime)|Get Expected AdmitDateTime (PV2.8)|
-|[getExpectedDischargeDateTime](#pv2getexpecteddischargedatetime)|Get Expected DischargeDateTime (PV2.9)|
-|[getExpectedDischargeDisposition](#pv2getexpecteddischargedisposition)|Get Expected DischargeDisposition (PV2.27)|
-|[getExpectedLOAReturnDateTime](#pv2getexpectedloareturndatetime)|Get Expected LOAReturnDateTime (PV2.47)|
-|[getExpectedNumberOfInsurancePlans](#pv2getexpectednumberofinsuranceplans)|Get Expected NumberOfInsurancePlans (PV2.20)|
-|[getExpectedSurgeryDateAndTime](#pv2getexpectedsurgerydateandtime)|Get Expected SurgeryDateAndTime (PV2.33)|
-|[getFirstSimilarIllnessDate](#pv2getfirstsimilarillnessdate)|Get First SimilarIllnessDate (PV2.29)|
-|[getLivingWillCode](#pv2getlivingwillcode)|Get Living WillCode (PV2.43)|
-|[getMilitaryNonAvailabilityCode](#pv2getmilitarynonavailabilitycode)|Get Military NonAvailabilityCode (PV2.35)|
-|[getMilitaryPartnershipCode](#pv2getmilitarypartnershipcode)|Get Military PartnershipCode (PV2.34)|
-|[getModeOfArrivalCode](#pv2getmodeofarrivalcode)|Get Mode OfArrivalCode (PV2.38)|
-|[getNewbornBabyIndicator](#pv2getnewbornbabyindicator)|Get Newborn BabyIndicator (PV2.36)|
-|[getOrganDonorCode](#pv2getorgandonorcode)|Get Organ DonorCode (PV2.44)|
-|[getPatientChargeAdjustmentCode](#pv2getpatientchargeadjustmentcode)|Get Patient ChargeAdjustmentCode (PV2.30)|
-|[getPatientConditionCode](#pv2getpatientconditioncode)|Get Patient ConditionCode (PV2.42)|
-|[getPatientStatusCode](#pv2getpatientstatuscode)|Get Patient StatusCode (PV2.24)|
-|[getPatientStatusEffectiveDate](#pv2getpatientstatuseffectivedate)|Get Patient StatusEffectiveDate (PV2.46)|
+|[getAdvanceDirectiveCode](#pv2getadvancedirectivecode)|Get Advance Directive Code (PV2.45)|
+|[getBabyDetainedIndicator](#pv2getbabydetainedindicator)|Get Baby Detained Indicator (PV2.37)|
+|[getBillingMediaCode](#pv2getbillingmediacode)|Get Billing Media Code (PV2.32)|
+|[getClinicOrganizationName](#pv2getclinicorganizationname)|Get Clinic Organization Name (PV2.23)|
+|[getEmploymentIllnessRelatedIndicator](#pv2getemploymentillnessrelatedindicator)|Get Employment Illness Related Indicator (PV2.15)|
+|[getEstimatedLengthofInpatientStay](#pv2getestimatedlengthofinpatientstay)|Get Estimated Lengthof Inpatient Stay (PV2.10)|
+|[getExpectedAdmitDateTime](#pv2getexpectedadmitdatetime)|Get Expected Admit Date Time (PV2.8)|
+|[getExpectedDischargeDateTime](#pv2getexpecteddischargedatetime)|Get Expected Discharge Date Time (PV2.9)|
+|[getExpectedDischargeDisposition](#pv2getexpecteddischargedisposition)|Get Expected Discharge Disposition (PV2.27)|
+|[getExpectedLOAReturnDateTime](#pv2getexpectedloareturndatetime)|Get Expected LOAReturn Date Time (PV2.47)|
+|[getExpectedNumberOfInsurancePlans](#pv2getexpectednumberofinsuranceplans)|Get Expected Number Of Insurance Plans (PV2.20)|
+|[getExpectedSurgeryDateAndTime](#pv2getexpectedsurgerydateandtime)|Get Expected Surgery Date And Time (PV2.33)|
+|[getFirstSimilarIllnessDate](#pv2getfirstsimilarillnessdate)|Get First Similar Illness Date (PV2.29)|
+|[getLivingWillCode](#pv2getlivingwillcode)|Get Living Will Code (PV2.43)|
+|[getMilitaryNonAvailabilityCode](#pv2getmilitarynonavailabilitycode)|Get Military Non Availability Code (PV2.35)|
+|[getMilitaryPartnershipCode](#pv2getmilitarypartnershipcode)|Get Military Partnership Code (PV2.34)|
+|[getModeOfArrivalCode](#pv2getmodeofarrivalcode)|Get Mode Of Arrival Code (PV2.38)|
+|[getNewbornBabyIndicator](#pv2getnewbornbabyindicator)|Get Newborn Baby Indicator (PV2.36)|
+|[getOrganDonorCode](#pv2getorgandonorcode)|Get Organ Donor Code (PV2.44)|
+|[getPatientChargeAdjustmentCode](#pv2getpatientchargeadjustmentcode)|Get Patient Charge Adjustment Code (PV2.30)|
+|[getPatientConditionCode](#pv2getpatientconditioncode)|Get Patient Condition Code (PV2.42)|
+|[getPatientStatusCode](#pv2getpatientstatuscode)|Get Patient Status Code (PV2.24)|
+|[getPatientStatusEffectiveDate](#pv2getpatientstatuseffectivedate)|Get Patient Status Effective Date (PV2.46)|
 |[getPatientValuables](#pv2getpatientvaluables)|Get Patient Valuables (PV2.5)|
-|[getPatientValuablesLocation](#pv2getpatientvaluableslocation)|Get Patient ValuablesLocation (PV2.6)|
+|[getPatientValuablesLocation](#pv2getpatientvaluableslocation)|Get Patient Valuables Location (PV2.6)|
 |[getPrecautionCode](#pv2getprecautioncode)|Get Precaution Code (PV2.41)|
-|[getPreviousServiceDate](#pv2getpreviousservicedate)|Get Previous ServiceDate (PV2.14)|
-|[getPreviousTreatmentDate](#pv2getprevioustreatmentdate)|Get Previous TreatmentDate (PV2.26)|
-|[getPurgeStatusCode](#pv2getpurgestatuscode)|Get Purge StatusCode (PV2.16)|
-|[getPurgeStatusDate](#pv2getpurgestatusdate)|Get Purge StatusDate (PV2.17)|
-|[getRecreationalDrugUseCode](#pv2getrecreationaldrugusecode)|Get Recreational DrugUseCode (PV2.39)|
-|[getRecurringServiceCode](#pv2getrecurringservicecode)|Get Recurring ServiceCode (PV2.31)|
-|[getReferralSourceCode](#pv2getreferralsourcecode)|Get Referral SourceCode (PV2.13)|
+|[getPreviousServiceDate](#pv2getpreviousservicedate)|Get Previous Service Date (PV2.14)|
+|[getPreviousTreatmentDate](#pv2getprevioustreatmentdate)|Get Previous Treatment Date (PV2.26)|
+|[getPurgeStatusCode](#pv2getpurgestatuscode)|Get Purge Status Code (PV2.16)|
+|[getPurgeStatusDate](#pv2getpurgestatusdate)|Get Purge Status Date (PV2.17)|
+|[getRecreationalDrugUseCode](#pv2getrecreationaldrugusecode)|Get Recreational Drug Use Code (PV2.39)|
+|[getRecurringServiceCode](#pv2getrecurringservicecode)|Get Recurring Service Code (PV2.31)|
+|[getReferralSourceCode](#pv2getreferralsourcecode)|Get Referral Source Code (PV2.13)|
 |[getRetentionIndicator](#pv2getretentionindicator)|Get Retention Indicator (PV2.19)|
-|[getSignatureOnFileDate](#pv2getsignatureonfiledate)|Get Signature OnFileDate (PV2.28)|
-|[getSpecialProgramCode](#pv2getspecialprogramcode)|Get Special ProgramCode (PV2.18)|
+|[getSignatureOnFileDate](#pv2getsignatureonfiledate)|Get Signature On File Date (PV2.28)|
+|[getSpecialProgramCode](#pv2getspecialprogramcode)|Get Special Program Code (PV2.18)|
 |[getTransferReason](#pv2gettransferreason)|Get Transfer Reason (PV2.4)|
 |[getVisitDescription](#pv2getvisitdescription)|Get Visit Description (PV2.12)|
-|[getVisitPriorityCode](#pv2getvisitprioritycode)|Get Visit PriorityCode (PV2.25)|
-|[getVisitProtectionIndicator](#pv2getvisitprotectionindicator)|Get Visit ProtectionIndicator (PV2.22)|
-|[getVisitPublicityCode](#pv2getvisitpublicitycode)|Get Visit PublicityCode (PV2.21)|
-|[getVisitUserCode](#pv2getvisitusercode)|Get Visit UserCode (PV2.7)|
+|[getVisitPriorityCode](#pv2getvisitprioritycode)|Get Visit Priority Code (PV2.25)|
+|[getVisitProtectionIndicator](#pv2getvisitprotectionindicator)|Get Visit Protection Indicator (PV2.22)|
+|[getVisitPublicityCode](#pv2getvisitpublicitycode)|Get Visit Publicity Code (PV2.21)|
+|[getVisitUserCode](#pv2getvisitusercode)|Get Visit User Code (PV2.7)|
 |[setAccommodationCode](#pv2setaccommodationcode)|Set Accommodation Code (PV2.2)|
 |[setActualLengthOfInpatientStay](#pv2setactuallengthofinpatientstay)|Set Actual Length Of Inpatient Stay (PV2.11)|
 |[setAdmissionLevelOfCareCode](#pv2setadmissionlevelofcarecode)|Set Admission Level Of Care Code (PV2.40)|
@@ -156,7 +156,7 @@ Get Accommodation Code (PV2.2)
 public getActualLengthOfInpatientStay (int $position)
 ```
 
-Get Actual LengthOfInpatientStay (PV2.11) 
+Get Actual Length Of Inpatient Stay (PV2.11) 
 
  
 
@@ -183,7 +183,7 @@ Get Actual LengthOfInpatientStay (PV2.11)
 public getAdmissionLevelOfCareCode (int $position)
 ```
 
-Get Admission LevelOfCareCode (PV2.40) 
+Get Admission Level Of Care Code (PV2.40) 
 
  
 
@@ -237,7 +237,7 @@ Get Admit Reason (PV2.3)
 public getAdvanceDirectiveCode (int $position)
 ```
 
-Get Advance DirectiveCode (PV2.45) 
+Get Advance Directive Code (PV2.45) 
 
  
 
@@ -264,7 +264,7 @@ Get Advance DirectiveCode (PV2.45)
 public getBabyDetainedIndicator (int $position)
 ```
 
-Get Baby DetainedIndicator (PV2.37) 
+Get Baby Detained Indicator (PV2.37) 
 
  
 
@@ -291,7 +291,7 @@ Get Baby DetainedIndicator (PV2.37)
 public getBillingMediaCode (int $position)
 ```
 
-Get Billing MediaCode (PV2.32) 
+Get Billing Media Code (PV2.32) 
 
  
 
@@ -318,7 +318,7 @@ Get Billing MediaCode (PV2.32)
 public getClinicOrganizationName (int $position)
 ```
 
-Get Clinic OrganizationName (PV2.23) 
+Get Clinic Organization Name (PV2.23) 
 
  
 
@@ -345,7 +345,7 @@ Get Clinic OrganizationName (PV2.23)
 public getEmploymentIllnessRelatedIndicator (int $position)
 ```
 
-Get Employment IllnessRelatedIndicator (PV2.15) 
+Get Employment Illness Related Indicator (PV2.15) 
 
  
 
@@ -372,7 +372,7 @@ Get Employment IllnessRelatedIndicator (PV2.15)
 public getEstimatedLengthofInpatientStay (int $position)
 ```
 
-Get Estimated LengthofInpatientStay (PV2.10) 
+Get Estimated Lengthof Inpatient Stay (PV2.10) 
 
  
 
@@ -399,7 +399,7 @@ Get Estimated LengthofInpatientStay (PV2.10)
 public getExpectedAdmitDateTime (int $position)
 ```
 
-Get Expected AdmitDateTime (PV2.8) 
+Get Expected Admit Date Time (PV2.8) 
 
  
 
@@ -426,7 +426,7 @@ Get Expected AdmitDateTime (PV2.8)
 public getExpectedDischargeDateTime (int $position)
 ```
 
-Get Expected DischargeDateTime (PV2.9) 
+Get Expected Discharge Date Time (PV2.9) 
 
  
 
@@ -453,7 +453,7 @@ Get Expected DischargeDateTime (PV2.9)
 public getExpectedDischargeDisposition (int $position)
 ```
 
-Get Expected DischargeDisposition (PV2.27) 
+Get Expected Discharge Disposition (PV2.27) 
 
  
 
@@ -480,7 +480,7 @@ Get Expected DischargeDisposition (PV2.27)
 public getExpectedLOAReturnDateTime (int $position)
 ```
 
-Get Expected LOAReturnDateTime (PV2.47) 
+Get Expected LOAReturn Date Time (PV2.47) 
 
  
 
@@ -507,7 +507,7 @@ Get Expected LOAReturnDateTime (PV2.47)
 public getExpectedNumberOfInsurancePlans (int $position)
 ```
 
-Get Expected NumberOfInsurancePlans (PV2.20) 
+Get Expected Number Of Insurance Plans (PV2.20) 
 
  
 
@@ -534,7 +534,7 @@ Get Expected NumberOfInsurancePlans (PV2.20)
 public getExpectedSurgeryDateAndTime (int $position)
 ```
 
-Get Expected SurgeryDateAndTime (PV2.33) 
+Get Expected Surgery Date And Time (PV2.33) 
 
  
 
@@ -561,7 +561,7 @@ Get Expected SurgeryDateAndTime (PV2.33)
 public getFirstSimilarIllnessDate (int $position)
 ```
 
-Get First SimilarIllnessDate (PV2.29) 
+Get First Similar Illness Date (PV2.29) 
 
  
 
@@ -588,7 +588,7 @@ Get First SimilarIllnessDate (PV2.29)
 public getLivingWillCode (int $position)
 ```
 
-Get Living WillCode (PV2.43) 
+Get Living Will Code (PV2.43) 
 
  
 
@@ -615,7 +615,7 @@ Get Living WillCode (PV2.43)
 public getMilitaryNonAvailabilityCode (int $position)
 ```
 
-Get Military NonAvailabilityCode (PV2.35) 
+Get Military Non Availability Code (PV2.35) 
 
  
 
@@ -642,7 +642,7 @@ Get Military NonAvailabilityCode (PV2.35)
 public getMilitaryPartnershipCode (int $position)
 ```
 
-Get Military PartnershipCode (PV2.34) 
+Get Military Partnership Code (PV2.34) 
 
  
 
@@ -669,7 +669,7 @@ Get Military PartnershipCode (PV2.34)
 public getModeOfArrivalCode (int $position)
 ```
 
-Get Mode OfArrivalCode (PV2.38) 
+Get Mode Of Arrival Code (PV2.38) 
 
  
 
@@ -696,7 +696,7 @@ Get Mode OfArrivalCode (PV2.38)
 public getNewbornBabyIndicator (int $position)
 ```
 
-Get Newborn BabyIndicator (PV2.36) 
+Get Newborn Baby Indicator (PV2.36) 
 
  
 
@@ -723,7 +723,7 @@ Get Newborn BabyIndicator (PV2.36)
 public getOrganDonorCode (int $position)
 ```
 
-Get Organ DonorCode (PV2.44) 
+Get Organ Donor Code (PV2.44) 
 
  
 
@@ -750,7 +750,7 @@ Get Organ DonorCode (PV2.44)
 public getPatientChargeAdjustmentCode (int $position)
 ```
 
-Get Patient ChargeAdjustmentCode (PV2.30) 
+Get Patient Charge Adjustment Code (PV2.30) 
 
  
 
@@ -777,7 +777,7 @@ Get Patient ChargeAdjustmentCode (PV2.30)
 public getPatientConditionCode (int $position)
 ```
 
-Get Patient ConditionCode (PV2.42) 
+Get Patient Condition Code (PV2.42) 
 
  
 
@@ -804,7 +804,7 @@ Get Patient ConditionCode (PV2.42)
 public getPatientStatusCode (int $position)
 ```
 
-Get Patient StatusCode (PV2.24) 
+Get Patient Status Code (PV2.24) 
 
  
 
@@ -831,7 +831,7 @@ Get Patient StatusCode (PV2.24)
 public getPatientStatusEffectiveDate (int $position)
 ```
 
-Get Patient StatusEffectiveDate (PV2.46) 
+Get Patient Status Effective Date (PV2.46) 
 
  
 
@@ -885,7 +885,7 @@ Get Patient Valuables (PV2.5)
 public getPatientValuablesLocation (int $position)
 ```
 
-Get Patient ValuablesLocation (PV2.6) 
+Get Patient Valuables Location (PV2.6) 
 
  
 
@@ -939,7 +939,7 @@ Get Precaution Code (PV2.41)
 public getPreviousServiceDate (int $position)
 ```
 
-Get Previous ServiceDate (PV2.14) 
+Get Previous Service Date (PV2.14) 
 
  
 
@@ -966,7 +966,7 @@ Get Previous ServiceDate (PV2.14)
 public getPreviousTreatmentDate (int $position)
 ```
 
-Get Previous TreatmentDate (PV2.26) 
+Get Previous Treatment Date (PV2.26) 
 
  
 
@@ -993,7 +993,7 @@ Get Previous TreatmentDate (PV2.26)
 public getPurgeStatusCode (int $position)
 ```
 
-Get Purge StatusCode (PV2.16) 
+Get Purge Status Code (PV2.16) 
 
  
 
@@ -1020,7 +1020,7 @@ Get Purge StatusCode (PV2.16)
 public getPurgeStatusDate (int $position)
 ```
 
-Get Purge StatusDate (PV2.17) 
+Get Purge Status Date (PV2.17) 
 
  
 
@@ -1047,7 +1047,7 @@ Get Purge StatusDate (PV2.17)
 public getRecreationalDrugUseCode (int $position)
 ```
 
-Get Recreational DrugUseCode (PV2.39) 
+Get Recreational Drug Use Code (PV2.39) 
 
  
 
@@ -1074,7 +1074,7 @@ Get Recreational DrugUseCode (PV2.39)
 public getRecurringServiceCode (int $position)
 ```
 
-Get Recurring ServiceCode (PV2.31) 
+Get Recurring Service Code (PV2.31) 
 
  
 
@@ -1101,7 +1101,7 @@ Get Recurring ServiceCode (PV2.31)
 public getReferralSourceCode (int $position)
 ```
 
-Get Referral SourceCode (PV2.13) 
+Get Referral Source Code (PV2.13) 
 
  
 
@@ -1155,7 +1155,7 @@ Get Retention Indicator (PV2.19)
 public getSignatureOnFileDate (int $position)
 ```
 
-Get Signature OnFileDate (PV2.28) 
+Get Signature On File Date (PV2.28) 
 
  
 
@@ -1182,7 +1182,7 @@ Get Signature OnFileDate (PV2.28)
 public getSpecialProgramCode (int $position)
 ```
 
-Get Special ProgramCode (PV2.18) 
+Get Special Program Code (PV2.18) 
 
  
 
@@ -1263,7 +1263,7 @@ Get Visit Description (PV2.12)
 public getVisitPriorityCode (int $position)
 ```
 
-Get Visit PriorityCode (PV2.25) 
+Get Visit Priority Code (PV2.25) 
 
  
 
@@ -1290,7 +1290,7 @@ Get Visit PriorityCode (PV2.25)
 public getVisitProtectionIndicator (int $position)
 ```
 
-Get Visit ProtectionIndicator (PV2.22) 
+Get Visit Protection Indicator (PV2.22) 
 
  
 
@@ -1317,7 +1317,7 @@ Get Visit ProtectionIndicator (PV2.22)
 public getVisitPublicityCode (int $position)
 ```
 
-Get Visit PublicityCode (PV2.21) 
+Get Visit Publicity Code (PV2.21) 
 
  
 
@@ -1344,7 +1344,7 @@ Get Visit PublicityCode (PV2.21)
 public getVisitUserCode (int $position)
 ```
 
-Get Visit UserCode (PV2.7) 
+Get Visit User Code (PV2.7) 
 
  
 

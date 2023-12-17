@@ -48,7 +48,7 @@ class FTS extends Segment
     // -------------------- Getter Methods ------------------------------
 
     /**
-     * Get File BatchCount (FTS.1)
+     * Get File Batch Count (FTS.1)
      *
      * @param int $position Defaults to 1
      *
@@ -61,7 +61,7 @@ class FTS extends Segment
     }
 
     /**
-     * Get File TrailerComment (FTS.2)
+     * Get File Trailer Comment (FTS.2)
      *
      * @param int $position Defaults to 2
      *

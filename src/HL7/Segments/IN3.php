@@ -455,7 +455,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification DateTime (IN3.6)
+     * Get Certification Date Time (IN3.6)
      *
      * @param int $position Defaults to 6
      *
@@ -468,7 +468,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification ModifyDateTime (IN3.7)
+     * Get Certification Modify Date Time (IN3.7)
      *
      * @param int $position Defaults to 7
      *
@@ -494,7 +494,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification BeginDate (IN3.9)
+     * Get Certification Begin Date (IN3.9)
      *
      * @param int $position Defaults to 9
      *
@@ -507,7 +507,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification EndDate (IN3.10)
+     * Get Certification End Date (IN3.10)
      *
      * @param int $position Defaults to 10
      *
@@ -533,7 +533,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Non ConcurCodeDescription (IN3.12)
+     * Get Non Concur Code Description (IN3.12)
      *
      * @param int $position Defaults to 12
      *
@@ -546,7 +546,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Non ConcurEffectiveDateTime (IN3.13)
+     * Get Non Concur Effective Date Time (IN3.13)
      *
      * @param int $position Defaults to 13
      *
@@ -585,7 +585,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification ContactPhoneNumber (IN3.16)
+     * Get Certification Contact Phone Number (IN3.16)
      *
      * @param int $position Defaults to 16
      *
@@ -624,7 +624,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Certification AgencyPhoneNumber (IN3.19)
+     * Get Certification Agency Phone Number (IN3.19)
      *
      * @param int $position Defaults to 19
      *
@@ -637,7 +637,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Pre CertificationRequirement (IN3.20)
+     * Get Pre Certification Requirement (IN3.20)
      *
      * @param int $position Defaults to 20
      *
@@ -663,7 +663,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Second OpinionDate (IN3.22)
+     * Get Second Opinion Date (IN3.22)
      *
      * @param int $position Defaults to 22
      *
@@ -676,7 +676,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Second OpinionStatus (IN3.23)
+     * Get Second Opinion Status (IN3.23)
      *
      * @param int $position Defaults to 23
      *
@@ -689,7 +689,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Second OpinionDocumentationReceived (IN3.24)
+     * Get Second Opinion Documentation Received (IN3.24)
      *
      * @param int $position Defaults to 24
      *
@@ -702,7 +702,7 @@ class IN3 extends Segment
     }
 
     /**
-     * Get Second OpinionPhysician (IN3.25)
+     * Get Second Opinion Physician (IN3.25)
      *
      * @param int $position Defaults to 25
      *

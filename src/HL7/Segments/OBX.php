@@ -344,7 +344,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Observation SubId (OBX.4)
+     * Get Observation Sub Id (OBX.4)
      *
      * @param int $position Defaults to 4
      *
@@ -422,7 +422,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Nature OfAbnormalTest (OBX.10)
+     * Get Nature Of Abnormal Test (OBX.10)
      *
      * @param int $position Defaults to 10
      *
@@ -435,7 +435,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Observe ResultStatus (OBX.11)
+     * Get Observe Result Status (OBX.11)
      *
      * @param int $position Defaults to 11
      *
@@ -448,7 +448,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Data LastObsNormalValues (OBX.12)
+     * Get Data Last Obs Normal Values (OBX.12)
      *
      * @param int $position Defaults to 12
      *
@@ -461,7 +461,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get User DefinedAccessChecks (OBX.13)
+     * Get User Defined Access Checks (OBX.13)
      *
      * @param int $position Defaults to 13
      *
@@ -474,7 +474,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Date TimeOfTheObservation (OBX.14)
+     * Get Date Time Of The Observation (OBX.14)
      *
      * @param int $position Defaults to 14
      *
@@ -526,7 +526,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Equipment InstanceIdentifier (OBX.18)
+     * Get Equipment Instance Identifier (OBX.18)
      *
      * @param int $position Defaults to 18
      *
@@ -539,7 +539,7 @@ class OBX extends Segment
     }
 
     /**
-     * Get Date TimeOfAnalysis (OBX.19)
+     * Get Date Time Of Analysis (OBX.19)
      *
      * @param int $position Defaults to 19
      *

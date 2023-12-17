@@ -874,7 +874,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Patient ValuablesLocation (PV2.6)
+     * Get Patient Valuables Location (PV2.6)
      *
      * @param int $position Defaults to 6
      *
@@ -887,7 +887,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Visit UserCode (PV2.7)
+     * Get Visit User Code (PV2.7)
      *
      * @param int $position Defaults to 7
      *
@@ -900,7 +900,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Expected AdmitDateTime (PV2.8)
+     * Get Expected Admit Date Time (PV2.8)
      *
      * @param int $position Defaults to 8
      *
@@ -913,7 +913,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Expected DischargeDateTime (PV2.9)
+     * Get Expected Discharge Date Time (PV2.9)
      *
      * @param int $position Defaults to 9
      *
@@ -926,7 +926,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Estimated LengthofInpatientStay (PV2.10)
+     * Get Estimated Lengthof Inpatient Stay (PV2.10)
      *
      * @param int $position Defaults to 10
      *
@@ -939,7 +939,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Actual LengthOfInpatientStay (PV2.11)
+     * Get Actual Length Of Inpatient Stay (PV2.11)
      *
      * @param int $position Defaults to 11
      *
@@ -965,7 +965,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Referral SourceCode (PV2.13)
+     * Get Referral Source Code (PV2.13)
      *
      * @param int $position Defaults to 13
      *
@@ -978,7 +978,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Previous ServiceDate (PV2.14)
+     * Get Previous Service Date (PV2.14)
      *
      * @param int $position Defaults to 14
      *
@@ -991,7 +991,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Employment IllnessRelatedIndicator (PV2.15)
+     * Get Employment Illness Related Indicator (PV2.15)
      *
      * @param int $position Defaults to 15
      *
@@ -1004,7 +1004,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Purge StatusCode (PV2.16)
+     * Get Purge Status Code (PV2.16)
      *
      * @param int $position Defaults to 16
      *
@@ -1017,7 +1017,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Purge StatusDate (PV2.17)
+     * Get Purge Status Date (PV2.17)
      *
      * @param int $position Defaults to 17
      *
@@ -1030,7 +1030,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Special ProgramCode (PV2.18)
+     * Get Special Program Code (PV2.18)
      *
      * @param int $position Defaults to 18
      *
@@ -1056,7 +1056,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Expected NumberOfInsurancePlans (PV2.20)
+     * Get Expected Number Of Insurance Plans (PV2.20)
      *
      * @param int $position Defaults to 20
      *
@@ -1069,7 +1069,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Visit PublicityCode (PV2.21)
+     * Get Visit Publicity Code (PV2.21)
      *
      * @param int $position Defaults to 21
      *
@@ -1082,7 +1082,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Visit ProtectionIndicator (PV2.22)
+     * Get Visit Protection Indicator (PV2.22)
      *
      * @param int $position Defaults to 22
      *
@@ -1095,7 +1095,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Clinic OrganizationName (PV2.23)
+     * Get Clinic Organization Name (PV2.23)
      *
      * @param int $position Defaults to 23
      *
@@ -1108,7 +1108,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Patient StatusCode (PV2.24)
+     * Get Patient Status Code (PV2.24)
      *
      * @param int $position Defaults to 24
      *
@@ -1121,7 +1121,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Visit PriorityCode (PV2.25)
+     * Get Visit Priority Code (PV2.25)
      *
      * @param int $position Defaults to 25
      *
@@ -1134,7 +1134,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Previous TreatmentDate (PV2.26)
+     * Get Previous Treatment Date (PV2.26)
      *
      * @param int $position Defaults to 26
      *
@@ -1147,7 +1147,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Expected DischargeDisposition (PV2.27)
+     * Get Expected Discharge Disposition (PV2.27)
      *
      * @param int $position Defaults to 27
      *
@@ -1160,7 +1160,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Signature OnFileDate (PV2.28)
+     * Get Signature On File Date (PV2.28)
      *
      * @param int $position Defaults to 28
      *
@@ -1173,7 +1173,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get First SimilarIllnessDate (PV2.29)
+     * Get First Similar Illness Date (PV2.29)
      *
      * @param int $position Defaults to 29
      *
@@ -1186,7 +1186,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Patient ChargeAdjustmentCode (PV2.30)
+     * Get Patient Charge Adjustment Code (PV2.30)
      *
      * @param int $position Defaults to 30
      *
@@ -1199,7 +1199,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Recurring ServiceCode (PV2.31)
+     * Get Recurring Service Code (PV2.31)
      *
      * @param int $position Defaults to 31
      *
@@ -1212,7 +1212,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Billing MediaCode (PV2.32)
+     * Get Billing Media Code (PV2.32)
      *
      * @param int $position Defaults to 32
      *
@@ -1225,7 +1225,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Expected SurgeryDateAndTime (PV2.33)
+     * Get Expected Surgery Date And Time (PV2.33)
      *
      * @param int $position Defaults to 33
      *
@@ -1238,7 +1238,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Military PartnershipCode (PV2.34)
+     * Get Military Partnership Code (PV2.34)
      *
      * @param int $position Defaults to 34
      *
@@ -1251,7 +1251,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Military NonAvailabilityCode (PV2.35)
+     * Get Military Non Availability Code (PV2.35)
      *
      * @param int $position Defaults to 35
      *
@@ -1264,7 +1264,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Newborn BabyIndicator (PV2.36)
+     * Get Newborn Baby Indicator (PV2.36)
      *
      * @param int $position Defaults to 36
      *
@@ -1277,7 +1277,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Baby DetainedIndicator (PV2.37)
+     * Get Baby Detained Indicator (PV2.37)
      *
      * @param int $position Defaults to 37
      *
@@ -1290,7 +1290,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Mode OfArrivalCode (PV2.38)
+     * Get Mode Of Arrival Code (PV2.38)
      *
      * @param int $position Defaults to 38
      *
@@ -1303,7 +1303,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Recreational DrugUseCode (PV2.39)
+     * Get Recreational Drug Use Code (PV2.39)
      *
      * @param int $position Defaults to 39
      *
@@ -1316,7 +1316,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Admission LevelOfCareCode (PV2.40)
+     * Get Admission Level Of Care Code (PV2.40)
      *
      * @param int $position Defaults to 40
      *
@@ -1342,7 +1342,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Patient ConditionCode (PV2.42)
+     * Get Patient Condition Code (PV2.42)
      *
      * @param int $position Defaults to 42
      *
@@ -1355,7 +1355,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Living WillCode (PV2.43)
+     * Get Living Will Code (PV2.43)
      *
      * @param int $position Defaults to 43
      *
@@ -1368,7 +1368,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Organ DonorCode (PV2.44)
+     * Get Organ Donor Code (PV2.44)
      *
      * @param int $position Defaults to 44
      *
@@ -1381,7 +1381,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Advance DirectiveCode (PV2.45)
+     * Get Advance Directive Code (PV2.45)
      *
      * @param int $position Defaults to 45
      *
@@ -1394,7 +1394,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Patient StatusEffectiveDate (PV2.46)
+     * Get Patient Status Effective Date (PV2.46)
      *
      * @param int $position Defaults to 46
      *
@@ -1407,7 +1407,7 @@ class PV2 extends Segment
     }
 
     /**
-     * Get Expected LOAReturnDateTime (PV2.47)
+     * Get Expected LOAReturn Date Time (PV2.47)
      *
      * @param int $position Defaults to 47
      *

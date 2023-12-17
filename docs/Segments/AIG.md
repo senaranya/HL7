@@ -22,20 +22,20 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[__destruct](#aig__destruct)||
-|[getAllowSubstitutionCode](#aiggetallowsubstitutioncode)|Get Allow SubstitutionCode (AIG.13)|
+|[getAllowSubstitutionCode](#aiggetallowsubstitutioncode)|Get Allow Substitution Code (AIG.13)|
 |[getDuration](#aiggetduration)|Get Duration (AIG.11)|
 |[getDurationUnits](#aiggetdurationunits)|Get Duration Units (AIG.12)|
-|[getFillerStatusCode](#aiggetfillerstatuscode)|Get Filler StatusCode (AIG.14)|
+|[getFillerStatusCode](#aiggetfillerstatuscode)|Get Filler Status Code (AIG.14)|
 |[getID](#aiggetid)|Get ID (AIG.1)|
 |[getResourceGroup](#aiggetresourcegroup)|Get Resource Group (AIG.5)|
 |[getResourceID](#aiggetresourceid)|Get Resource ID (AIG.3)|
 |[getResourceQuantity](#aiggetresourcequantity)|Get Resource Quantity (AIG.6)|
-|[getResourceQuantityUnits](#aiggetresourcequantityunits)|Get Resource QuantityUnits (AIG.7)|
+|[getResourceQuantityUnits](#aiggetresourcequantityunits)|Get Resource Quantity Units (AIG.7)|
 |[getResourceType](#aiggetresourcetype)|Get Resource Type (AIG.4)|
-|[getSegmentActionCode](#aiggetsegmentactioncode)|Get Segment ActionCode (AIG.2)|
-|[getStartDateTime](#aiggetstartdatetime)|Get Start DateTime (AIG.8)|
-|[getStartDateTimeOffset](#aiggetstartdatetimeoffset)|Get Start DateTimeOffset (AIG.9)|
-|[getStartDateTimeOffsetUnits](#aiggetstartdatetimeoffsetunits)|Get Start DateTimeOffsetUnits (AIG.10)|
+|[getSegmentActionCode](#aiggetsegmentactioncode)|Get Segment Action Code (AIG.2)|
+|[getStartDateTime](#aiggetstartdatetime)|Get Start Date Time (AIG.8)|
+|[getStartDateTimeOffset](#aiggetstartdatetimeoffset)|Get Start Date Time Offset (AIG.9)|
+|[getStartDateTimeOffsetUnits](#aiggetstartdatetimeoffsetunits)|Get Start Date Time Offset Units (AIG.10)|
 |[resetIndex](#aigresetindex)|Reset index of this segment|
 |[setAllowSubstitutionCode](#aigsetallowsubstitutioncode)|Set Allow Substitution Code (AIG.13)|
 |[setDuration](#aigsetduration)|Set Duration (AIG.11)|
@@ -98,7 +98,7 @@ Aranyasen\HL7\Segment
 public getAllowSubstitutionCode (int $position)
 ```
 
-Get Allow SubstitutionCode (AIG.13) 
+Get Allow Substitution Code (AIG.13) 
 
  
 
@@ -179,7 +179,7 @@ Get Duration Units (AIG.12)
 public getFillerStatusCode (int $position)
 ```
 
-Get Filler StatusCode (AIG.14) 
+Get Filler Status Code (AIG.14) 
 
  
 
@@ -314,7 +314,7 @@ Get Resource Quantity (AIG.6)
 public getResourceQuantityUnits (int $position)
 ```
 
-Get Resource QuantityUnits (AIG.7) 
+Get Resource Quantity Units (AIG.7) 
 
  
 
@@ -368,7 +368,7 @@ Get Resource Type (AIG.4)
 public getSegmentActionCode (int $position)
 ```
 
-Get Segment ActionCode (AIG.2) 
+Get Segment Action Code (AIG.2) 
 
  
 
@@ -395,7 +395,7 @@ Get Segment ActionCode (AIG.2)
 public getStartDateTime (int $position)
 ```
 
-Get Start DateTime (AIG.8) 
+Get Start Date Time (AIG.8) 
 
  
 
@@ -422,7 +422,7 @@ Get Start DateTime (AIG.8)
 public getStartDateTimeOffset (int $position)
 ```
 
-Get Start DateTimeOffset (AIG.9) 
+Get Start Date Time Offset (AIG.9) 
 
  
 
@@ -449,7 +449,7 @@ Get Start DateTimeOffset (AIG.9)
 public getStartDateTimeOffsetUnits (int $position)
 ```
 
-Get Start DateTimeOffsetUnits (AIG.10) 
+Get Start Date Time Offset Units (AIG.10) 
 
  
 

@@ -493,7 +493,7 @@ class PID extends Segment
      * @return array|null|string
      */
     /**
-     * Get Patient IdentifierList (PID.3)
+     * Get Patient Identifier List (PID.3)
      *
      * @param int $position Defaults to 3
      *
@@ -506,7 +506,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Alternate PatientID (PID.4)
+     * Get Alternate Patient ID (PID.4)
      *
      * @param int $position Defaults to 4
      *
@@ -532,7 +532,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Mothers MaidenName (PID.6)
+     * Get Mothers Maiden Name (PID.6)
      *
      * @param int $position Defaults to 6
      *
@@ -545,7 +545,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Date TimeOfBirth (PID.7)
+     * Get Date Time Of Birth (PID.7)
      *
      * @param int $position Defaults to 7
      *
@@ -623,7 +623,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Phone NumberHome (PID.13)
+     * Get Phone Number Home (PID.13)
      *
      * @param int $position Defaults to 13
      *
@@ -636,7 +636,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Phone NumberBusiness (PID.14)
+     * Get Phone Number Business (PID.14)
      *
      * @param int $position Defaults to 14
      *
@@ -688,7 +688,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Patient AccountNumber (PID.18)
+     * Get Patient Account Number (PID.18)
      *
      * @param int $position Defaults to 18
      *
@@ -714,7 +714,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Drivers LicenseNumber (PID.20)
+     * Get Drivers License Number (PID.20)
      *
      * @param int $position Defaults to 20
      *
@@ -766,7 +766,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Multiple BirthIndicator (PID.24)
+     * Get Multiple Birth Indicator (PID.24)
      *
      * @param int $position Defaults to 24
      *
@@ -805,7 +805,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Veterans MilitaryStatus (PID.27)
+     * Get Veterans Military Status (PID.27)
      *
      * @param int $position Defaults to 27
      *
@@ -831,7 +831,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Patient DeathDateAndTime (PID.29)
+     * Get Patient Death Date And Time (PID.29)
      *
      * @param int $position Defaults to 29
      *
@@ -844,7 +844,7 @@ class PID extends Segment
     }
 
     /**
-     * Get Patient DeathIndicator (PID.30)
+     * Get Patient Death Indicator (PID.30)
      *
      * @param int $position Defaults to 30
      *

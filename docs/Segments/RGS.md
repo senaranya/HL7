@@ -15,8 +15,8 @@ Aranyasen\HL7\Segment
 |------|-------------|
 |[__destruct](#rgs__destruct)||
 |[getID](#rgsgetid)|Get ID (RGS.1)|
-|[getResourceGroupID](#rgsgetresourcegroupid)|Get Resource GroupID (RGS.3)|
-|[getSegmentActionCode](#rgsgetsegmentactioncode)|Get Segment ActionCode (RGS.2)|
+|[getResourceGroupID](#rgsgetresourcegroupid)|Get Resource Group ID (RGS.3)|
+|[getSegmentActionCode](#rgsgetsegmentactioncode)|Get Segment Action Code (RGS.2)|
 |[resetIndex](#rgsresetindex)|Reset index of this segment|
 |[setID](#rgssetid)|Set ID (RGS.1)|
 |[setResourceGroupID](#rgssetresourcegroupid)|Set Resource Group ID (RGS.3)|
@@ -95,7 +95,7 @@ Get ID (RGS.1)
 public getResourceGroupID (int $position)
 ```
 
-Get Resource GroupID (RGS.3) 
+Get Resource Group ID (RGS.3) 
 
  
 
@@ -122,7 +122,7 @@ Get Resource GroupID (RGS.3)
 public getSegmentActionCode (int $position)
 ```
 
-Get Segment ActionCode (RGS.2) 
+Get Segment Action Code (RGS.2) 
 
  
 

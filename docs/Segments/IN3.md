@@ -17,28 +17,28 @@ Aranyasen\HL7\Segment
 |[getAppealReason](#in3getappealreason)|Get Appeal Reason (IN3.17)|
 |[getCaseManager](#in3getcasemanager)|Get Case Manager (IN3.21)|
 |[getCertificationAgency](#in3getcertificationagency)|Get Certification Agency (IN3.18)|
-|[getCertificationAgencyPhoneNumber](#in3getcertificationagencyphonenumber)|Get Certification AgencyPhoneNumber (IN3.19)|
-|[getCertificationBeginDate](#in3getcertificationbegindate)|Get Certification BeginDate (IN3.9)|
+|[getCertificationAgencyPhoneNumber](#in3getcertificationagencyphonenumber)|Get Certification Agency Phone Number (IN3.19)|
+|[getCertificationBeginDate](#in3getcertificationbegindate)|Get Certification Begin Date (IN3.9)|
 |[getCertificationContact](#in3getcertificationcontact)|Get Certification Contact (IN3.15)|
-|[getCertificationContactPhoneNumber](#in3getcertificationcontactphonenumber)|Get Certification ContactPhoneNumber (IN3.16)|
-|[getCertificationDateTime](#in3getcertificationdatetime)|Get Certification DateTime (IN3.6)|
-|[getCertificationEndDate](#in3getcertificationenddate)|Get Certification EndDate (IN3.10)|
-|[getCertificationModifyDateTime](#in3getcertificationmodifydatetime)|Get Certification ModifyDateTime (IN3.7)|
+|[getCertificationContactPhoneNumber](#in3getcertificationcontactphonenumber)|Get Certification Contact Phone Number (IN3.16)|
+|[getCertificationDateTime](#in3getcertificationdatetime)|Get Certification Date Time (IN3.6)|
+|[getCertificationEndDate](#in3getcertificationenddate)|Get Certification End Date (IN3.10)|
+|[getCertificationModifyDateTime](#in3getcertificationmodifydatetime)|Get Certification Modify Date Time (IN3.7)|
 |[getCertificationNumber](#in3getcertificationnumber)|Get Certification Number (IN3.2)|
 |[getCertificationRequired](#in3getcertificationrequired)|Get Certification Required (IN3.4)|
 |[getCertifiedBy](#in3getcertifiedby)|Get Certified By (IN3.3)|
 |[getDays](#in3getdays)|Get Days (IN3.11)|
 |[getID](#in3getid)|Get ID (IN3.1)|
-|[getNonConcurCodeDescription](#in3getnonconcurcodedescription)|Get Non ConcurCodeDescription (IN3.12)|
-|[getNonConcurEffectiveDateTime](#in3getnonconcureffectivedatetime)|Get Non ConcurEffectiveDateTime (IN3.13)|
+|[getNonConcurCodeDescription](#in3getnonconcurcodedescription)|Get Non Concur Code Description (IN3.12)|
+|[getNonConcurEffectiveDateTime](#in3getnonconcureffectivedatetime)|Get Non Concur Effective Date Time (IN3.13)|
 |[getOperator](#in3getoperator)|Get Operator (IN3.8)|
 |[getPenalty](#in3getpenalty)|Get Penalty (IN3.5)|
 |[getPhysicianReviewer](#in3getphysicianreviewer)|Get Physician Reviewer (IN3.14)|
-|[getPreCertificationRequirement](#in3getprecertificationrequirement)|Get Pre CertificationRequirement (IN3.20)|
-|[getSecondOpinionDate](#in3getsecondopiniondate)|Get Second OpinionDate (IN3.22)|
-|[getSecondOpinionDocumentationReceived](#in3getsecondopiniondocumentationreceived)|Get Second OpinionDocumentationReceived (IN3.24)|
-|[getSecondOpinionPhysician](#in3getsecondopinionphysician)|Get Second OpinionPhysician (IN3.25)|
-|[getSecondOpinionStatus](#in3getsecondopinionstatus)|Get Second OpinionStatus (IN3.23)|
+|[getPreCertificationRequirement](#in3getprecertificationrequirement)|Get Pre Certification Requirement (IN3.20)|
+|[getSecondOpinionDate](#in3getsecondopiniondate)|Get Second Opinion Date (IN3.22)|
+|[getSecondOpinionDocumentationReceived](#in3getsecondopiniondocumentationreceived)|Get Second Opinion Documentation Received (IN3.24)|
+|[getSecondOpinionPhysician](#in3getsecondopinionphysician)|Get Second Opinion Physician (IN3.25)|
+|[getSecondOpinionStatus](#in3getsecondopinionstatus)|Get Second Opinion Status (IN3.23)|
 |[resetIndex](#in3resetindex)|Reset index of this segment|
 |[setAppealReason](#in3setappealreason)|Set Appeal Reason (IN3.17)|
 |[setCaseManager](#in3setcasemanager)|Set Case Manager (IN3.21)|
@@ -193,7 +193,7 @@ Get Certification Agency (IN3.18)
 public getCertificationAgencyPhoneNumber (int $position)
 ```
 
-Get Certification AgencyPhoneNumber (IN3.19) 
+Get Certification Agency Phone Number (IN3.19) 
 
  
 
@@ -220,7 +220,7 @@ Get Certification AgencyPhoneNumber (IN3.19)
 public getCertificationBeginDate (int $position)
 ```
 
-Get Certification BeginDate (IN3.9) 
+Get Certification Begin Date (IN3.9) 
 
  
 
@@ -274,7 +274,7 @@ Get Certification Contact (IN3.15)
 public getCertificationContactPhoneNumber (int $position)
 ```
 
-Get Certification ContactPhoneNumber (IN3.16) 
+Get Certification Contact Phone Number (IN3.16) 
 
  
 
@@ -301,7 +301,7 @@ Get Certification ContactPhoneNumber (IN3.16)
 public getCertificationDateTime (int $position)
 ```
 
-Get Certification DateTime (IN3.6) 
+Get Certification Date Time (IN3.6) 
 
  
 
@@ -328,7 +328,7 @@ Get Certification DateTime (IN3.6)
 public getCertificationEndDate (int $position)
 ```
 
-Get Certification EndDate (IN3.10) 
+Get Certification End Date (IN3.10) 
 
  
 
@@ -355,7 +355,7 @@ Get Certification EndDate (IN3.10)
 public getCertificationModifyDateTime (int $position)
 ```
 
-Get Certification ModifyDateTime (IN3.7) 
+Get Certification Modify Date Time (IN3.7) 
 
  
 
@@ -517,7 +517,7 @@ Get ID (IN3.1)
 public getNonConcurCodeDescription (int $position)
 ```
 
-Get Non ConcurCodeDescription (IN3.12) 
+Get Non Concur Code Description (IN3.12) 
 
  
 
@@ -544,7 +544,7 @@ Get Non ConcurCodeDescription (IN3.12)
 public getNonConcurEffectiveDateTime (int $position)
 ```
 
-Get Non ConcurEffectiveDateTime (IN3.13) 
+Get Non Concur Effective Date Time (IN3.13) 
 
  
 
@@ -652,7 +652,7 @@ Get Physician Reviewer (IN3.14)
 public getPreCertificationRequirement (int $position)
 ```
 
-Get Pre CertificationRequirement (IN3.20) 
+Get Pre Certification Requirement (IN3.20) 
 
  
 
@@ -679,7 +679,7 @@ Get Pre CertificationRequirement (IN3.20)
 public getSecondOpinionDate (int $position)
 ```
 
-Get Second OpinionDate (IN3.22) 
+Get Second Opinion Date (IN3.22) 
 
  
 
@@ -706,7 +706,7 @@ Get Second OpinionDate (IN3.22)
 public getSecondOpinionDocumentationReceived (int $position)
 ```
 
-Get Second OpinionDocumentationReceived (IN3.24) 
+Get Second Opinion Documentation Received (IN3.24) 
 
  
 
@@ -733,7 +733,7 @@ Get Second OpinionDocumentationReceived (IN3.24)
 public getSecondOpinionPhysician (int $position)
 ```
 
-Get Second OpinionPhysician (IN3.25) 
+Get Second Opinion Physician (IN3.25) 
 
  
 
@@ -760,7 +760,7 @@ Get Second OpinionPhysician (IN3.25)
 public getSecondOpinionStatus (int $position)
 ```
 
-Get Second OpinionStatus (IN3.23) 
+Get Second Opinion Status (IN3.23) 
 
  
 

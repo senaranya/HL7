@@ -14,33 +14,33 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[getActionBy](#orcgetactionby)|Get Action By (ORC.19)|
-|[getAdvancedBeneficiaryNoticeCode](#orcgetadvancedbeneficiarynoticecode)|Get Advanced BeneficiaryNoticeCode (ORC.20)|
-|[getAdvancedBeneficiaryNoticeOverrideReason](#orcgetadvancedbeneficiarynoticeoverridereason)|Get Advanced BeneficiaryNoticeOverrideReason (ORC.26)|
-|[getCallBackPhoneNumber](#orcgetcallbackphonenumber)|Get Call BackPhoneNumber (ORC.14)|
+|[getAdvancedBeneficiaryNoticeCode](#orcgetadvancedbeneficiarynoticecode)|Get Advanced Beneficiary Notice Code (ORC.20)|
+|[getAdvancedBeneficiaryNoticeOverrideReason](#orcgetadvancedbeneficiarynoticeoverridereason)|Get Advanced Beneficiary Notice Override Reason (ORC.26)|
+|[getCallBackPhoneNumber](#orcgetcallbackphonenumber)|Get Call Back Phone Number (ORC.14)|
 |[getConfidentialityCode](#orcgetconfidentialitycode)|Get Confidentiality Code (ORC.28)|
-|[getDateTimeofTransaction](#orcgetdatetimeoftransaction)|Get Date TimeofTransaction (ORC.9)|
+|[getDateTimeofTransaction](#orcgetdatetimeoftransaction)|Get Date Timeof Transaction (ORC.9)|
 |[getEnteredBy](#orcgetenteredby)|Get Entered By (ORC.10)|
-|[getEntererAuthorizationMode](#orcgetentererauthorizationmode)|Get Enterer AuthorizationMode (ORC.30)|
+|[getEntererAuthorizationMode](#orcgetentererauthorizationmode)|Get Enterer Authorization Mode (ORC.30)|
 |[getEnterersLocation](#orcgetentererslocation)|Get Enterers Location (ORC.13)|
 |[getEnteringDevice](#orcgetenteringdevice)|Get Entering Device (ORC.18)|
 |[getEnteringOrganization](#orcgetenteringorganization)|Get Entering Organization (ORC.17)|
-|[getFillerOrderNumber](#orcgetfillerordernumber)|Get Filler OrderNumber (ORC.3)|
-|[getFillersExpectedAvailabilityDateTime](#orcgetfillersexpectedavailabilitydatetime)|Get Fillers ExpectedAvailabilityDateTime (ORC.27)|
+|[getFillerOrderNumber](#orcgetfillerordernumber)|Get Filler Order Number (ORC.3)|
+|[getFillersExpectedAvailabilityDateTime](#orcgetfillersexpectedavailabilitydatetime)|Get Fillers Expected Availability Date Time (ORC.27)|
 |[getOrderControl](#orcgetordercontrol)|Get Order Control (ORC.1)|
-|[getOrderControlCodeReason](#orcgetordercontrolcodereason)|Get Order ControlCodeReason (ORC.16)|
-|[getOrderEffectiveDateTime](#orcgetordereffectivedatetime)|Get Order EffectiveDateTime (ORC.15)|
+|[getOrderControlCodeReason](#orcgetordercontrolcodereason)|Get Order Control Code Reason (ORC.16)|
+|[getOrderEffectiveDateTime](#orcgetordereffectivedatetime)|Get Order Effective Date Time (ORC.15)|
 |[getOrderStatus](#orcgetorderstatus)|Get Order Status (ORC.5)|
-|[getOrderStatusModifier](#orcgetorderstatusmodifier)|Get Order StatusModifier (ORC.25)|
+|[getOrderStatusModifier](#orcgetorderstatusmodifier)|Get Order Status Modifier (ORC.25)|
 |[getOrderType](#orcgetordertype)|Get Order Type (ORC.29)|
-|[getOrderingFacilityAddress](#orcgetorderingfacilityaddress)|Get Ordering FacilityAddress (ORC.22)|
-|[getOrderingFacilityName](#orcgetorderingfacilityname)|Get Ordering FacilityName (ORC.21)|
-|[getOrderingFacilityPhoneNumber](#orcgetorderingfacilityphonenumber)|Get Ordering FacilityPhoneNumber (ORC.23)|
+|[getOrderingFacilityAddress](#orcgetorderingfacilityaddress)|Get Ordering Facility Address (ORC.22)|
+|[getOrderingFacilityName](#orcgetorderingfacilityname)|Get Ordering Facility Name (ORC.21)|
+|[getOrderingFacilityPhoneNumber](#orcgetorderingfacilityphonenumber)|Get Ordering Facility Phone Number (ORC.23)|
 |[getOrderingProvider](#orcgetorderingprovider)|Get Ordering Provider (ORC.12)|
-|[getOrderingProviderAddress](#orcgetorderingprovideraddress)|Get Ordering ProviderAddress (ORC.24)|
+|[getOrderingProviderAddress](#orcgetorderingprovideraddress)|Get Ordering Provider Address (ORC.24)|
 |[getParentOrder](#orcgetparentorder)|Get Parent Order (ORC.8)|
-|[getParentUniversalServiceIdentifier](#orcgetparentuniversalserviceidentifier)|Get Parent UniversalServiceIdentifier (ORC.31)|
-|[getPlacerGroupNumber](#orcgetplacergroupnumber)|Get Placer GroupNumber (ORC.4)|
-|[getPlacerOrderNumber](#orcgetplacerordernumber)|Get Placer OrderNumber (ORC.2)|
+|[getParentUniversalServiceIdentifier](#orcgetparentuniversalserviceidentifier)|Get Parent Universal Service Identifier (ORC.31)|
+|[getPlacerGroupNumber](#orcgetplacergroupnumber)|Get Placer Group Number (ORC.4)|
+|[getPlacerOrderNumber](#orcgetplacerordernumber)|Get Placer Order Number (ORC.2)|
 |[getQuantityTiming](#orcgetquantitytiming)|Get Quantity Timing (ORC.7)|
 |[getResponseFlag](#orcgetresponseflag)|Get Response Flag (ORC.6)|
 |[getVerifiedBy](#orcgetverifiedby)|Get Verified By (ORC.11)|
@@ -125,7 +125,7 @@ Get Action By (ORC.19)
 public getAdvancedBeneficiaryNoticeCode (int $position)
 ```
 
-Get Advanced BeneficiaryNoticeCode (ORC.20) 
+Get Advanced Beneficiary Notice Code (ORC.20) 
 
  
 
@@ -152,7 +152,7 @@ Get Advanced BeneficiaryNoticeCode (ORC.20)
 public getAdvancedBeneficiaryNoticeOverrideReason (int $position)
 ```
 
-Get Advanced BeneficiaryNoticeOverrideReason (ORC.26) 
+Get Advanced Beneficiary Notice Override Reason (ORC.26) 
 
  
 
@@ -179,7 +179,7 @@ Get Advanced BeneficiaryNoticeOverrideReason (ORC.26)
 public getCallBackPhoneNumber (int $position)
 ```
 
-Get Call BackPhoneNumber (ORC.14) 
+Get Call Back Phone Number (ORC.14) 
 
  
 
@@ -233,7 +233,7 @@ Get Confidentiality Code (ORC.28)
 public getDateTimeofTransaction (int $position)
 ```
 
-Get Date TimeofTransaction (ORC.9) 
+Get Date Timeof Transaction (ORC.9) 
 
  
 
@@ -287,7 +287,7 @@ Get Entered By (ORC.10)
 public getEntererAuthorizationMode (int $position)
 ```
 
-Get Enterer AuthorizationMode (ORC.30) 
+Get Enterer Authorization Mode (ORC.30) 
 
  
 
@@ -395,7 +395,7 @@ Get Entering Organization (ORC.17)
 public getFillerOrderNumber (int $position)
 ```
 
-Get Filler OrderNumber (ORC.3) 
+Get Filler Order Number (ORC.3) 
 
  
 
@@ -422,7 +422,7 @@ Get Filler OrderNumber (ORC.3)
 public getFillersExpectedAvailabilityDateTime (int $position)
 ```
 
-Get Fillers ExpectedAvailabilityDateTime (ORC.27) 
+Get Fillers Expected Availability Date Time (ORC.27) 
 
  
 
@@ -476,7 +476,7 @@ Get Order Control (ORC.1)
 public getOrderControlCodeReason (int $position)
 ```
 
-Get Order ControlCodeReason (ORC.16) 
+Get Order Control Code Reason (ORC.16) 
 
  
 
@@ -503,7 +503,7 @@ Get Order ControlCodeReason (ORC.16)
 public getOrderEffectiveDateTime (int $position)
 ```
 
-Get Order EffectiveDateTime (ORC.15) 
+Get Order Effective Date Time (ORC.15) 
 
  
 
@@ -557,7 +557,7 @@ Get Order Status (ORC.5)
 public getOrderStatusModifier (int $position)
 ```
 
-Get Order StatusModifier (ORC.25) 
+Get Order Status Modifier (ORC.25) 
 
  
 
@@ -611,7 +611,7 @@ Get Order Type (ORC.29)
 public getOrderingFacilityAddress (int $position)
 ```
 
-Get Ordering FacilityAddress (ORC.22) 
+Get Ordering Facility Address (ORC.22) 
 
  
 
@@ -638,7 +638,7 @@ Get Ordering FacilityAddress (ORC.22)
 public getOrderingFacilityName (int $position)
 ```
 
-Get Ordering FacilityName (ORC.21) 
+Get Ordering Facility Name (ORC.21) 
 
  
 
@@ -665,7 +665,7 @@ Get Ordering FacilityName (ORC.21)
 public getOrderingFacilityPhoneNumber (int $position)
 ```
 
-Get Ordering FacilityPhoneNumber (ORC.23) 
+Get Ordering Facility Phone Number (ORC.23) 
 
  
 
@@ -719,7 +719,7 @@ Get Ordering Provider (ORC.12)
 public getOrderingProviderAddress (int $position)
 ```
 
-Get Ordering ProviderAddress (ORC.24) 
+Get Ordering Provider Address (ORC.24) 
 
  
 
@@ -773,7 +773,7 @@ Get Parent Order (ORC.8)
 public getParentUniversalServiceIdentifier (int $position)
 ```
 
-Get Parent UniversalServiceIdentifier (ORC.31) 
+Get Parent Universal Service Identifier (ORC.31) 
 
  
 
@@ -800,7 +800,7 @@ Get Parent UniversalServiceIdentifier (ORC.31)
 public getPlacerGroupNumber (int $position)
 ```
 
-Get Placer GroupNumber (ORC.4) 
+Get Placer Group Number (ORC.4) 
 
  
 
@@ -827,7 +827,7 @@ Get Placer GroupNumber (ORC.4)
 public getPlacerOrderNumber (int $position)
 ```
 
-Get Placer OrderNumber (ORC.2) 
+Get Placer Order Number (ORC.2) 
 
  
 

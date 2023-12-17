@@ -14,12 +14,12 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getDateTimePlannedEvent](#evngetdatetimeplannedevent)|Get Date TimePlannedEvent (EVN.3)|
+|[getDateTimePlannedEvent](#evngetdatetimeplannedevent)|Get Date Time Planned Event (EVN.3)|
 |[getEventOccurred](#evngeteventoccurred)|Get Event Occurred (EVN.6)|
-|[getEventReasonCode](#evngeteventreasoncode)|Get Event ReasonCode (EVN.4)|
-|[getEventTypeCode](#evngeteventtypecode)|Get Event TypeCode (EVN.1)|
+|[getEventReasonCode](#evngeteventreasoncode)|Get Event Reason Code (EVN.4)|
+|[getEventTypeCode](#evngeteventtypecode)|Get Event Type Code (EVN.1)|
 |[getOperatorID](#evngetoperatorid)|Get Operator ID (EVN.5)|
-|[getRecordedDateTime](#evngetrecordeddatetime)|Get Recorded DateTime (EVN.2)|
+|[getRecordedDateTime](#evngetrecordeddatetime)|Get Recorded Date Time (EVN.2)|
 |[setDateTimePlannedEvent](#evnsetdatetimeplannedevent)|Set Date Time Planned Event (EVN.3)|
 |[setEventOccurred](#evnseteventoccurred)|Set Event Occurred (EVN.6)|
 |[setEventReasonCode](#evnseteventreasoncode)|Set Event Reason Code (EVN.4)|
@@ -49,7 +49,7 @@ Aranyasen\HL7\Segment
 public getDateTimePlannedEvent (int $position)
 ```
 
-Get Date TimePlannedEvent (EVN.3) 
+Get Date Time Planned Event (EVN.3) 
 
  
 
@@ -103,7 +103,7 @@ Get Event Occurred (EVN.6)
 public getEventReasonCode (int $position)
 ```
 
-Get Event ReasonCode (EVN.4) 
+Get Event Reason Code (EVN.4) 
 
  
 
@@ -130,7 +130,7 @@ Get Event ReasonCode (EVN.4)
 public getEventTypeCode (int $position)
 ```
 
-Get Event TypeCode (EVN.1) 
+Get Event Type Code (EVN.1) 
 
  
 
@@ -184,7 +184,7 @@ Get Operator ID (EVN.5)
 public getRecordedDateTime (int $position)
 ```
 
-Get Recorded DateTime (EVN.2) 
+Get Recorded Date Time (EVN.2) 
 
  
 

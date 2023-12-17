@@ -369,7 +369,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Placer AppointmentID (SCH.1)
+     * Get Placer Appointment ID (SCH.1)
      *
      * @param int $position Defaults to 1
      *
@@ -382,7 +382,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Filler AppointmentID (SCH.2)
+     * Get Filler Appointment ID (SCH.2)
      *
      * @param int $position Defaults to 2
      *
@@ -408,7 +408,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Placer GroupNumber (SCH.4)
+     * Get Placer Group Number (SCH.4)
      *
      * @param int $position Defaults to 4
      *
@@ -486,7 +486,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Appointment DurationUnits (SCH.10)
+     * Get Appointment Duration Units (SCH.10)
      *
      * @param int $position Defaults to 10
      *
@@ -499,7 +499,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Appointment TimingQuantity (SCH.11)
+     * Get Appointment Timing Quantity (SCH.11)
      *
      * @param int $position Defaults to 11
      *
@@ -512,7 +512,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Placer ContactPerson (SCH.12)
+     * Get Placer Contact Person (SCH.12)
      *
      * @param int $position Defaults to 12
      *
@@ -525,7 +525,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Placer ContactPhoneNumber (SCH.13)
+     * Get Placer Contact Phone Number (SCH.13)
      *
      * @param int $position Defaults to 13
      *
@@ -538,7 +538,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Placer ContactAddress (SCH.14)
+     * Get Placer Contact Address (SCH.14)
      *
      * @param int $position Defaults to 14
      *
@@ -551,7 +551,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Placer ContactLocation (SCH.15)
+     * Get Placer Contact Location (SCH.15)
      *
      * @param int $position Defaults to 15
      *
@@ -564,7 +564,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Filler ContactPerson (SCH.16)
+     * Get Filler Contact Person (SCH.16)
      *
      * @param int $position Defaults to 16
      *
@@ -577,7 +577,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Filler ContactPhoneNumber (SCH.17)
+     * Get Filler Contact Phone Number (SCH.17)
      *
      * @param int $position Defaults to 17
      *
@@ -590,7 +590,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Filler ContactAddress (SCH.18)
+     * Get Filler Contact Address (SCH.18)
      *
      * @param int $position Defaults to 18
      *
@@ -603,7 +603,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Filler ContactLocation (SCH.19)
+     * Get Filler Contact Location (SCH.19)
      *
      * @param int $position Defaults to 19
      *
@@ -629,7 +629,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Enteredby PhoneNumber (SCH.21)
+     * Get Enteredby Phone Number (SCH.21)
      *
      * @param int $position Defaults to 21
      *
@@ -655,7 +655,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Parent PlacerAppointmentID (SCH.23)
+     * Get Parent Placer Appointment ID (SCH.23)
      *
      * @param int $position Defaults to 23
      *
@@ -668,7 +668,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Parent FillerAppointmentID (SCH.24)
+     * Get Parent Filler Appointment ID (SCH.24)
      *
      * @param int $position Defaults to 24
      *
@@ -681,7 +681,7 @@ class SCH extends Segment
     }
 
     /**
-     * Get Filler StatusCode (SCH.25)
+     * Get Filler Status Code (SCH.25)
      *
      * @param int $position Defaults to 25
      *

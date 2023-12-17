@@ -15,23 +15,23 @@ Aranyasen\HL7\Segment
 |------|-------------|
 |[__destruct](#obx__destruct)||
 |[getAbnormalFlags](#obxgetabnormalflags)|Get Abnormal Flags (OBX.8)|
-|[getDataLastObsNormalValues](#obxgetdatalastobsnormalvalues)|Get Data LastObsNormalValues (OBX.12)|
-|[getDateTimeOfAnalysis](#obxgetdatetimeofanalysis)|Get Date TimeOfAnalysis (OBX.19)|
-|[getDateTimeOfTheObservation](#obxgetdatetimeoftheobservation)|Get Date TimeOfTheObservation (OBX.14)|
-|[getEquipmentInstanceIdentifier](#obxgetequipmentinstanceidentifier)|Get Equipment InstanceIdentifier (OBX.18)|
+|[getDataLastObsNormalValues](#obxgetdatalastobsnormalvalues)|Get Data Last Obs Normal Values (OBX.12)|
+|[getDateTimeOfAnalysis](#obxgetdatetimeofanalysis)|Get Date Time Of Analysis (OBX.19)|
+|[getDateTimeOfTheObservation](#obxgetdatetimeoftheobservation)|Get Date Time Of The Observation (OBX.14)|
+|[getEquipmentInstanceIdentifier](#obxgetequipmentinstanceidentifier)|Get Equipment Instance Identifier (OBX.18)|
 |[getID](#obxgetid)|Get ID (OBX.1)|
-|[getNatureOfAbnormalTest](#obxgetnatureofabnormaltest)|Get Nature OfAbnormalTest (OBX.10)|
+|[getNatureOfAbnormalTest](#obxgetnatureofabnormaltest)|Get Nature Of Abnormal Test (OBX.10)|
 |[getObservationIdentifier](#obxgetobservationidentifier)|Get Observation Identifier (OBX.3)|
 |[getObservationMethod](#obxgetobservationmethod)|Get Observation Method (OBX.17)|
-|[getObservationSubId](#obxgetobservationsubid)|Get Observation SubId (OBX.4)|
+|[getObservationSubId](#obxgetobservationsubid)|Get Observation Sub Id (OBX.4)|
 |[getObservationValue](#obxgetobservationvalue)|Get Observation Value (OBX.5)|
-|[getObserveResultStatus](#obxgetobserveresultstatus)|Get Observe ResultStatus (OBX.11)|
+|[getObserveResultStatus](#obxgetobserveresultstatus)|Get Observe Result Status (OBX.11)|
 |[getProbability](#obxgetprobability)|Get Probability (OBX.9)|
 |[getProducersId](#obxgetproducersid)|Get Producers Id (OBX.15)|
 |[getReferenceRange](#obxgetreferencerange)|Get Reference Range (OBX.7)|
 |[getResponsibleObserver](#obxgetresponsibleobserver)|Get Responsible Observer (OBX.16)|
 |[getUnits](#obxgetunits)|Get Units (OBX.6)|
-|[getUserDefinedAccessChecks](#obxgetuserdefinedaccesschecks)|Get User DefinedAccessChecks (OBX.13)|
+|[getUserDefinedAccessChecks](#obxgetuserdefinedaccesschecks)|Get User Defined Access Checks (OBX.13)|
 |[getValueType](#obxgetvaluetype)|Get Value Type (OBX.2)|
 |[resetIndex](#obxresetindex)|Reset index of this segment|
 |[setAbnormalFlags](#obxsetabnormalflags)|Set Abnormal Flags (OBX.8)|
@@ -127,7 +127,7 @@ Get Abnormal Flags (OBX.8)
 public getDataLastObsNormalValues (int $position)
 ```
 
-Get Data LastObsNormalValues (OBX.12) 
+Get Data Last Obs Normal Values (OBX.12) 
 
  
 
@@ -154,7 +154,7 @@ Get Data LastObsNormalValues (OBX.12)
 public getDateTimeOfAnalysis (int $position)
 ```
 
-Get Date TimeOfAnalysis (OBX.19) 
+Get Date Time Of Analysis (OBX.19) 
 
  
 
@@ -181,7 +181,7 @@ Get Date TimeOfAnalysis (OBX.19)
 public getDateTimeOfTheObservation (int $position)
 ```
 
-Get Date TimeOfTheObservation (OBX.14) 
+Get Date Time Of The Observation (OBX.14) 
 
  
 
@@ -208,7 +208,7 @@ Get Date TimeOfTheObservation (OBX.14)
 public getEquipmentInstanceIdentifier (int $position)
 ```
 
-Get Equipment InstanceIdentifier (OBX.18) 
+Get Equipment Instance Identifier (OBX.18) 
 
  
 
@@ -262,7 +262,7 @@ Get ID (OBX.1)
 public getNatureOfAbnormalTest (int $position)
 ```
 
-Get Nature OfAbnormalTest (OBX.10) 
+Get Nature Of Abnormal Test (OBX.10) 
 
  
 
@@ -343,7 +343,7 @@ Get Observation Method (OBX.17)
 public getObservationSubId (int $position)
 ```
 
-Get Observation SubId (OBX.4) 
+Get Observation Sub Id (OBX.4) 
 
  
 
@@ -397,7 +397,7 @@ Get Observation Value (OBX.5)
 public getObserveResultStatus (int $position)
 ```
 
-Get Observe ResultStatus (OBX.11) 
+Get Observe Result Status (OBX.11) 
 
  
 
@@ -559,7 +559,7 @@ Get Units (OBX.6)
 public getUserDefinedAccessChecks (int $position)
 ```
 
-Get User DefinedAccessChecks (OBX.13) 
+Get User Defined Access Checks (OBX.13) 
 
  
 

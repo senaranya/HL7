@@ -16,53 +16,53 @@ Aranyasen\HL7\Segment
 |[__destruct](#pv1__destruct)||
 |[getAccountStatus](#pv1getaccountstatus)|Get Account Status (PV1.41)|
 |[getAdmissionType](#pv1getadmissiontype)|Get Admission Type (PV1.4)|
-|[getAdmitDateTime](#pv1getadmitdatetime)|Get Admit DateTime (PV1.44)|
+|[getAdmitDateTime](#pv1getadmitdatetime)|Get Admit Date Time (PV1.44)|
 |[getAdmitSource](#pv1getadmitsource)|Get Admit Source (PV1.14)|
 |[getAdmittingDoctor](#pv1getadmittingdoctor)|Get Admitting Doctor (PV1.17)|
-|[getAlternateVisitID](#pv1getalternatevisitid)|Get Alternate VisitID (PV1.50)|
+|[getAlternateVisitID](#pv1getalternatevisitid)|Get Alternate Visit ID (PV1.50)|
 |[getAmbulatoryStatus](#pv1getambulatorystatus)|Get Ambulatory Status (PV1.15)|
-|[getAssignedPatientLocation](#pv1getassignedpatientlocation)|Get Assigned PatientLocation (PV1.3)|
+|[getAssignedPatientLocation](#pv1getassignedpatientlocation)|Get Assigned Patient Location (PV1.3)|
 |[getAttendingDoctor](#pv1getattendingdoctor)|Get Attending Doctor (PV1.7)|
-|[getBadDebtAgencyCode](#pv1getbaddebtagencycode)|Get Bad DebtAgencyCode (PV1.31)|
-|[getBadDebtRecoveryAmount](#pv1getbaddebtrecoveryamount)|Get Bad DebtRecoveryAmount (PV1.33)|
-|[getBadDebtTransferAmount](#pv1getbaddebttransferamount)|Get Bad DebtTransferAmount (PV1.32)|
+|[getBadDebtAgencyCode](#pv1getbaddebtagencycode)|Get Bad Debt Agency Code (PV1.31)|
+|[getBadDebtRecoveryAmount](#pv1getbaddebtrecoveryamount)|Get Bad Debt Recovery Amount (PV1.33)|
+|[getBadDebtTransferAmount](#pv1getbaddebttransferamount)|Get Bad Debt Transfer Amount (PV1.32)|
 |[getBedStatus](#pv1getbedstatus)|Get Bed Status (PV1.40)|
-|[getChargePriceIndicator](#pv1getchargepriceindicator)|Get Charge PriceIndicator (PV1.21)|
+|[getChargePriceIndicator](#pv1getchargepriceindicator)|Get Charge Price Indicator (PV1.21)|
 |[getConsultingDoctor](#pv1getconsultingdoctor)|Get Consulting Doctor (PV1.9)|
 |[getContractAmount](#pv1getcontractamount)|Get Contract Amount (PV1.26)|
 |[getContractCode](#pv1getcontractcode)|Get Contract Code (PV1.24)|
-|[getContractEffectiveDate](#pv1getcontracteffectivedate)|Get Contract EffectiveDate (PV1.25)|
+|[getContractEffectiveDate](#pv1getcontracteffectivedate)|Get Contract Effective Date (PV1.25)|
 |[getContractPeriod](#pv1getcontractperiod)|Get Contract Period (PV1.27)|
 |[getCourtesyCode](#pv1getcourtesycode)|Get Courtesy Code (PV1.22)|
 |[getCreditRating](#pv1getcreditrating)|Get Credit Rating (PV1.23)|
-|[getCurrentPatientBalance](#pv1getcurrentpatientbalance)|Get Current PatientBalance (PV1.46)|
-|[getDeleteAccountDate](#pv1getdeleteaccountdate)|Get Delete AccountDate (PV1.35)|
-|[getDeleteAccountIndicator](#pv1getdeleteaccountindicator)|Get Delete AccountIndicator (PV1.34)|
+|[getCurrentPatientBalance](#pv1getcurrentpatientbalance)|Get Current Patient Balance (PV1.46)|
+|[getDeleteAccountDate](#pv1getdeleteaccountdate)|Get Delete Account Date (PV1.35)|
+|[getDeleteAccountIndicator](#pv1getdeleteaccountindicator)|Get Delete Account Indicator (PV1.34)|
 |[getDietType](#pv1getdiettype)|Get Diet Type (PV1.38)|
-|[getDischargeDateTime](#pv1getdischargedatetime)|Get Discharge DateTime (PV1.45)|
+|[getDischargeDateTime](#pv1getdischargedatetime)|Get Discharge Date Time (PV1.45)|
 |[getDischargeDisposition](#pv1getdischargedisposition)|Get Discharge Disposition (PV1.36)|
-|[getDischargedToLocation](#pv1getdischargedtolocation)|Get Discharged ToLocation (PV1.37)|
+|[getDischargedToLocation](#pv1getdischargedtolocation)|Get Discharged To Location (PV1.37)|
 |[getFinancialClass](#pv1getfinancialclass)|Get Financial Class (PV1.20)|
 |[getHospitalService](#pv1gethospitalservice)|Get Hospital Service (PV1.10)|
 |[getID](#pv1getid)|Get ID (PV1.1)|
 |[getInterestCode](#pv1getinterestcode)|Get Interest Code (PV1.28)|
-|[getOtherHealthcareProvider](#pv1getotherhealthcareprovider)|Get Other HealthcareProvider (PV1.52)|
+|[getOtherHealthcareProvider](#pv1getotherhealthcareprovider)|Get Other Healthcare Provider (PV1.52)|
 |[getPatientClass](#pv1getpatientclass)|Get Patient Class (PV1.2)|
 |[getPatientType](#pv1getpatienttype)|Get Patient Type (PV1.18)|
 |[getPendingLocation](#pv1getpendinglocation)|Get Pending Location (PV1.42)|
-|[getPreAdmitNumber](#pv1getpreadmitnumber)|Get Pre AdmitNumber (PV1.5)|
-|[getPreAdmitTestIndicator](#pv1getpreadmittestindicator)|Get Pre AdmitTestIndicator (PV1.12)|
-|[getPriorPatientLocation](#pv1getpriorpatientlocation)|Get Prior PatientLocation (PV1.6)|
-|[getPriorTemporaryLocation](#pv1getpriortemporarylocation)|Get Prior TemporaryLocation (PV1.43)|
-|[getReAdmissionIndicator](#pv1getreadmissionindicator)|Get Re AdmissionIndicator (PV1.13)|
+|[getPreAdmitNumber](#pv1getpreadmitnumber)|Get Pre Admit Number (PV1.5)|
+|[getPreAdmitTestIndicator](#pv1getpreadmittestindicator)|Get Pre Admit Test Indicator (PV1.12)|
+|[getPriorPatientLocation](#pv1getpriorpatientlocation)|Get Prior Patient Location (PV1.6)|
+|[getPriorTemporaryLocation](#pv1getpriortemporarylocation)|Get Prior Temporary Location (PV1.43)|
+|[getReAdmissionIndicator](#pv1getreadmissionindicator)|Get Re Admission Indicator (PV1.13)|
 |[getReferringDoctor](#pv1getreferringdoctor)|Get Referring Doctor (PV1.8)|
 |[getServicingFacility](#pv1getservicingfacility)|Get Servicing Facility (PV1.39)|
 |[getTemporaryLocation](#pv1gettemporarylocation)|Get Temporary Location (PV1.11)|
 |[getTotalAdjustments](#pv1gettotaladjustments)|Get Total Adjustments (PV1.48)|
 |[getTotalCharges](#pv1gettotalcharges)|Get Total Charges (PV1.47)|
 |[getTotalPayments](#pv1gettotalpayments)|Get Total Payments (PV1.49)|
-|[getTransferToBadDebtCode](#pv1gettransfertobaddebtcode)|Get Transfer ToBadDebtCode (PV1.29)|
-|[getTransferToBadDebtDate](#pv1gettransfertobaddebtdate)|Get Transfer ToBadDebtDate (PV1.30)|
+|[getTransferToBadDebtCode](#pv1gettransfertobaddebtcode)|Get Transfer To Bad Debt Code (PV1.29)|
+|[getTransferToBadDebtDate](#pv1gettransfertobaddebtdate)|Get Transfer To Bad Debt Date (PV1.30)|
 |[getVipIndicator](#pv1getvipindicator)|Get Vip Indicator (PV1.16)|
 |[getVisitIndicator](#pv1getvisitindicator)|Get Visit Indicator (PV1.51)|
 |[getVisitNumber](#pv1getvisitnumber)|Get Visit Number (PV1.19)|
@@ -220,7 +220,7 @@ Get Admission Type (PV1.4)
 public getAdmitDateTime (int $position)
 ```
 
-Get Admit DateTime (PV1.44) 
+Get Admit Date Time (PV1.44) 
 
  
 
@@ -301,7 +301,7 @@ Get Admitting Doctor (PV1.17)
 public getAlternateVisitID (int $position)
 ```
 
-Get Alternate VisitID (PV1.50) 
+Get Alternate Visit ID (PV1.50) 
 
  
 
@@ -355,7 +355,7 @@ Get Ambulatory Status (PV1.15)
 public getAssignedPatientLocation (int $position)
 ```
 
-Get Assigned PatientLocation (PV1.3) 
+Get Assigned Patient Location (PV1.3) 
 
  
 
@@ -409,7 +409,7 @@ Get Attending Doctor (PV1.7)
 public getBadDebtAgencyCode (int $position)
 ```
 
-Get Bad DebtAgencyCode (PV1.31) 
+Get Bad Debt Agency Code (PV1.31) 
 
  
 
@@ -436,7 +436,7 @@ Get Bad DebtAgencyCode (PV1.31)
 public getBadDebtRecoveryAmount (int $position)
 ```
 
-Get Bad DebtRecoveryAmount (PV1.33) 
+Get Bad Debt Recovery Amount (PV1.33) 
 
  
 
@@ -463,7 +463,7 @@ Get Bad DebtRecoveryAmount (PV1.33)
 public getBadDebtTransferAmount (int $position)
 ```
 
-Get Bad DebtTransferAmount (PV1.32) 
+Get Bad Debt Transfer Amount (PV1.32) 
 
  
 
@@ -517,7 +517,7 @@ Get Bed Status (PV1.40)
 public getChargePriceIndicator (int $position)
 ```
 
-Get Charge PriceIndicator (PV1.21) 
+Get Charge Price Indicator (PV1.21) 
 
  
 
@@ -625,7 +625,7 @@ Get Contract Code (PV1.24)
 public getContractEffectiveDate (int $position)
 ```
 
-Get Contract EffectiveDate (PV1.25) 
+Get Contract Effective Date (PV1.25) 
 
  
 
@@ -733,7 +733,7 @@ Get Credit Rating (PV1.23)
 public getCurrentPatientBalance (int $position)
 ```
 
-Get Current PatientBalance (PV1.46) 
+Get Current Patient Balance (PV1.46) 
 
  
 
@@ -760,7 +760,7 @@ Get Current PatientBalance (PV1.46)
 public getDeleteAccountDate (int $position)
 ```
 
-Get Delete AccountDate (PV1.35) 
+Get Delete Account Date (PV1.35) 
 
  
 
@@ -787,7 +787,7 @@ Get Delete AccountDate (PV1.35)
 public getDeleteAccountIndicator (int $position)
 ```
 
-Get Delete AccountIndicator (PV1.34) 
+Get Delete Account Indicator (PV1.34) 
 
  
 
@@ -841,7 +841,7 @@ Get Diet Type (PV1.38)
 public getDischargeDateTime (int $position)
 ```
 
-Get Discharge DateTime (PV1.45) 
+Get Discharge Date Time (PV1.45) 
 
  
 
@@ -895,7 +895,7 @@ Get Discharge Disposition (PV1.36)
 public getDischargedToLocation (int $position)
 ```
 
-Get Discharged ToLocation (PV1.37) 
+Get Discharged To Location (PV1.37) 
 
  
 
@@ -1030,7 +1030,7 @@ Get Interest Code (PV1.28)
 public getOtherHealthcareProvider (int $position)
 ```
 
-Get Other HealthcareProvider (PV1.52) 
+Get Other Healthcare Provider (PV1.52) 
 
  
 
@@ -1138,7 +1138,7 @@ Get Pending Location (PV1.42)
 public getPreAdmitNumber (int $position)
 ```
 
-Get Pre AdmitNumber (PV1.5) 
+Get Pre Admit Number (PV1.5) 
 
  
 
@@ -1165,7 +1165,7 @@ Get Pre AdmitNumber (PV1.5)
 public getPreAdmitTestIndicator (int $position)
 ```
 
-Get Pre AdmitTestIndicator (PV1.12) 
+Get Pre Admit Test Indicator (PV1.12) 
 
  
 
@@ -1192,7 +1192,7 @@ Get Pre AdmitTestIndicator (PV1.12)
 public getPriorPatientLocation (int $position)
 ```
 
-Get Prior PatientLocation (PV1.6) 
+Get Prior Patient Location (PV1.6) 
 
  
 
@@ -1219,7 +1219,7 @@ Get Prior PatientLocation (PV1.6)
 public getPriorTemporaryLocation (int $position)
 ```
 
-Get Prior TemporaryLocation (PV1.43) 
+Get Prior Temporary Location (PV1.43) 
 
  
 
@@ -1246,7 +1246,7 @@ Get Prior TemporaryLocation (PV1.43)
 public getReAdmissionIndicator (int $position)
 ```
 
-Get Re AdmissionIndicator (PV1.13) 
+Get Re Admission Indicator (PV1.13) 
 
  
 
@@ -1435,7 +1435,7 @@ Get Total Payments (PV1.49)
 public getTransferToBadDebtCode (int $position)
 ```
 
-Get Transfer ToBadDebtCode (PV1.29) 
+Get Transfer To Bad Debt Code (PV1.29) 
 
  
 
@@ -1462,7 +1462,7 @@ Get Transfer ToBadDebtCode (PV1.29)
 public getTransferToBadDebtDate (int $position)
 ```
 
-Get Transfer ToBadDebtDate (PV1.30) 
+Get Transfer To Bad Debt Date (PV1.30) 
 
  
 

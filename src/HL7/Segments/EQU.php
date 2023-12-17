@@ -93,7 +93,7 @@ class EQU extends Segment
     }
 
     /**
-     * Get Equipment InstanceIdentifier (EQU.1)
+     * Get Equipment Instance Identifier (EQU.1)
      *
      * @param int $position Defaults to 1
      *
@@ -106,7 +106,7 @@ class EQU extends Segment
     }
 
     /**
-     * Get Event DateTime (EQU.2)
+     * Get Event Date Time (EQU.2)
      *
      * @param int $position Defaults to 2
      *
@@ -132,7 +132,7 @@ class EQU extends Segment
     }
 
     /**
-     * Get Local RemoteControlState (EQU.4)
+     * Get Local Remote Control State (EQU.4)
      *
      * @param int $position Defaults to 4
      *

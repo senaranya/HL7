@@ -14,22 +14,22 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[__destruct](#dg1__destruct)||
-|[getAttestationDateTime](#dg1getattestationdatetime)|Get Attestation DateTime (DG1.19)|
+|[getAttestationDateTime](#dg1getattestationdatetime)|Get Attestation Date Time (DG1.19)|
 |[getConfidentialIndicator](#dg1getconfidentialindicator)|Get Confidential Indicator (DG1.18)|
 |[getDRGApprovalIndicator](#dg1getdrgapprovalindicator)|Get DRGApproval Indicator (DG1.9)|
-|[getDRGGrouperReviewCode](#dg1getdrggrouperreviewcode)|Get DRGGrouper ReviewCode (DG1.10)|
+|[getDRGGrouperReviewCode](#dg1getdrggrouperreviewcode)|Get DRGGrouper Review Code (DG1.10)|
 |[getDiagnosingClinician](#dg1getdiagnosingclinician)|Get Diagnosing Clinician (DG1.16)|
 |[getDiagnosisClassification](#dg1getdiagnosisclassification)|Get Diagnosis Classification (DG1.17)|
 |[getDiagnosisCodeDG1](#dg1getdiagnosiscodedg1)|Get Diagnosis Code DG1 (DG1.3)|
 |[getDiagnosisCodingMethod](#dg1getdiagnosiscodingmethod)|Get Diagnosis Coding Method (DG1.2)|
-|[getDiagnosisDateTime](#dg1getdiagnosisdatetime)|Get Diagnosis DateTime (DG1.5)|
+|[getDiagnosisDateTime](#dg1getdiagnosisdatetime)|Get Diagnosis Date Time (DG1.5)|
 |[getDiagnosisDescription](#dg1getdiagnosisdescription)|Get Diagnosis Description (DG1.4)|
 |[getDiagnosisPriority](#dg1getdiagnosispriority)|Get Diagnosis Priority (DG1.15)|
 |[getDiagnosisType](#dg1getdiagnosistype)|Get Diagnosis Type (DG1.6)|
-|[getDiagnosticRelatedGroup](#dg1getdiagnosticrelatedgroup)|Get Diagnostic RelatedGroup (DG1.8)|
-|[getGrouperVersionAndType](#dg1getgrouperversionandtype)|Get Grouper VersionAndType (DG1.14)|
+|[getDiagnosticRelatedGroup](#dg1getdiagnosticrelatedgroup)|Get Diagnostic Related Group (DG1.8)|
+|[getGrouperVersionAndType](#dg1getgrouperversionandtype)|Get Grouper Version And Type (DG1.14)|
 |[getID](#dg1getid)|Get ID (DG1.1)|
-|[getMajorDiagnosticCategory](#dg1getmajordiagnosticcategory)|Get Major DiagnosticCategory (DG1.7)|
+|[getMajorDiagnosticCategory](#dg1getmajordiagnosticcategory)|Get Major Diagnostic Category (DG1.7)|
 |[getOutlierCost](#dg1getoutliercost)|Get Outlier Cost (DG1.13)|
 |[getOutlierDays](#dg1getoutlierdays)|Get Outlier Days (DG1.12)|
 |[getOutlierType](#dg1getoutliertype)|Get Outlier Type (DG1.11)|
@@ -100,7 +100,7 @@ Aranyasen\HL7\Segment
 public getAttestationDateTime (int $position)
 ```
 
-Get Attestation DateTime (DG1.19) 
+Get Attestation Date Time (DG1.19) 
 
  
 
@@ -181,7 +181,7 @@ Get DRGApproval Indicator (DG1.9)
 public getDRGGrouperReviewCode (int $position)
 ```
 
-Get DRGGrouper ReviewCode (DG1.10) 
+Get DRGGrouper Review Code (DG1.10) 
 
  
 
@@ -316,7 +316,7 @@ Get Diagnosis Coding Method (DG1.2)
 public getDiagnosisDateTime (int $position)
 ```
 
-Get Diagnosis DateTime (DG1.5) 
+Get Diagnosis Date Time (DG1.5) 
 
  
 
@@ -424,7 +424,7 @@ Get Diagnosis Type (DG1.6)
 public getDiagnosticRelatedGroup (int $position)
 ```
 
-Get Diagnostic RelatedGroup (DG1.8) 
+Get Diagnostic Related Group (DG1.8) 
 
  
 
@@ -451,7 +451,7 @@ Get Diagnostic RelatedGroup (DG1.8)
 public getGrouperVersionAndType (int $position)
 ```
 
-Get Grouper VersionAndType (DG1.14) 
+Get Grouper Version And Type (DG1.14) 
 
  
 
@@ -505,7 +505,7 @@ Get ID (DG1.1)
 public getMajorDiagnosticCategory (int $position)
 ```
 
-Get Major DiagnosticCategory (DG1.7) 
+Get Major Diagnostic Category (DG1.7) 
 
  
 

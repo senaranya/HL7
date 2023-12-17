@@ -20,15 +20,15 @@ Aranyasen\HL7\Segment
 |[getAddress](#nk1getaddress)|Get Address (NK1.4)|
 |[getAdministrativeSex](#nk1getadministrativesex)|Get Administrative Sex (NK1.15)|
 |[getAmbulatoryStatus](#nk1getambulatorystatus)|Get Ambulatory Status (NK1.18)|
-|[getBusinessPhoneNumber](#nk1getbusinessphonenumber)|Get Business PhoneNumber (NK1.6)|
+|[getBusinessPhoneNumber](#nk1getbusinessphonenumber)|Get Business Phone Number (NK1.6)|
 |[getCitizenship](#nk1getcitizenship)|Get Citizenship (NK1.19)|
-|[getContactPersonSocialSecurityNumber](#nk1getcontactpersonsocialsecuritynumber)|Get Contact PersonSocialSecurityNumber (NK1.37)|
-|[getContactPersonsAddress](#nk1getcontactpersonsaddress)|Get Contact PersonsAddress (NK1.32)|
-|[getContactPersonsName](#nk1getcontactpersonsname)|Get Contact PersonsName (NK1.30)|
-|[getContactPersonsTelephoneNumber](#nk1getcontactpersonstelephonenumber)|Get Contact PersonsTelephoneNumber (NK1.31)|
+|[getContactPersonSocialSecurityNumber](#nk1getcontactpersonsocialsecuritynumber)|Get Contact Person Social Security Number (NK1.37)|
+|[getContactPersonsAddress](#nk1getcontactpersonsaddress)|Get Contact Persons Address (NK1.32)|
+|[getContactPersonsName](#nk1getcontactpersonsname)|Get Contact Persons Name (NK1.30)|
+|[getContactPersonsTelephoneNumber](#nk1getcontactpersonstelephonenumber)|Get Contact Persons Telephone Number (NK1.31)|
 |[getContactReason](#nk1getcontactreason)|Get Contact Reason (NK1.29)|
 |[getContactRole](#nk1getcontactrole)|Get Contact Role (NK1.7)|
-|[getDateTimeOfBirth](#nk1getdatetimeofbirth)|Get Date TimeOfBirth (NK1.16)|
+|[getDateTimeOfBirth](#nk1getdatetimeofbirth)|Get Date Time Of Birth (NK1.16)|
 |[getEndDate](#nk1getenddate)|Get End Date (NK1.9)|
 |[getEthnicGroup](#nk1getethnicgroup)|Get Ethnic Group (NK1.28)|
 |[getHandicap](#nk1gethandicap)|Get Handicap (NK1.36)|
@@ -37,14 +37,14 @@ Aranyasen\HL7\Segment
 |[getLivingArrangement](#nk1getlivingarrangement)|Get Living Arrangement (NK1.21)|
 |[getLivingDependency](#nk1getlivingdependency)|Get Living Dependency (NK1.17)|
 |[getMaritalStatus](#nk1getmaritalstatus)|Get Marital Status (NK1.14)|
-|[getMothersMaidenName](#nk1getmothersmaidenname)|Get Mothers MaidenName (NK1.26)|
+|[getMothersMaidenName](#nk1getmothersmaidenname)|Get Mothers Maiden Name (NK1.26)|
 |[getNKName](#nk1getnkname)|Get NKName (NK1.2)|
 |[getNationality](#nk1getnationality)|Get Nationality (NK1.27)|
-|[getNextOfKinBirthPlace](#nk1getnextofkinbirthplace)|Get Next OfKinBirthPlace (NK1.38)|
-|[getNextOfKinOrAssociatedPartiesEmployeeNumber](#nk1getnextofkinorassociatedpartiesemployeenumber)|Get Next OfKinOrAssociatedPartiesEmployeeNumber (NK1.12)|
-|[getNextOfKinOrAssociatedPartiesJobCodeOrClass](#nk1getnextofkinorassociatedpartiesjobcodeorclass)|Get Next OfKinOrAssociatedPartiesJobCodeOrClass (NK1.11)|
-|[getNextOfKinOrAssociatedPartiesJobTitle](#nk1getnextofkinorassociatedpartiesjobtitle)|Get Next OfKinOrAssociatedPartiesJobTitle (NK1.10)|
-|[getNextOfKinOrAssociatedPartysIdentifiers](#nk1getnextofkinorassociatedpartysidentifiers)|Get Next OfKinOrAssociatedPartysIdentifiers (NK1.33)|
+|[getNextOfKinBirthPlace](#nk1getnextofkinbirthplace)|Get Next Of Kin Birth Place (NK1.38)|
+|[getNextOfKinOrAssociatedPartiesEmployeeNumber](#nk1getnextofkinorassociatedpartiesemployeenumber)|Get Next Of Kin Or Associated Parties Employee Number (NK1.12)|
+|[getNextOfKinOrAssociatedPartiesJobCodeOrClass](#nk1getnextofkinorassociatedpartiesjobcodeorclass)|Get Next Of Kin Or Associated Parties Job Code Or Class (NK1.11)|
+|[getNextOfKinOrAssociatedPartiesJobTitle](#nk1getnextofkinorassociatedpartiesjobtitle)|Get Next Of Kin Or Associated Parties Job Title (NK1.10)|
+|[getNextOfKinOrAssociatedPartysIdentifiers](#nk1getnextofkinorassociatedpartysidentifiers)|Get Next Of Kin Or Associated Partys Identifiers (NK1.33)|
 |[getOrganizationName](#nk1getorganizationname)|Get Organization Name (NK1.13)|
 |[getPhoneNumber](#nk1getphonenumber)|Get Phone Number (NK1.5)|
 |[getPrimaryLanguage](#nk1getprimarylanguage)|Get Primary Language (NK1.20)|
@@ -224,7 +224,7 @@ Get Ambulatory Status (NK1.18)
 public getBusinessPhoneNumber (int $position)
 ```
 
-Get Business PhoneNumber (NK1.6) 
+Get Business Phone Number (NK1.6) 
 
  
 
@@ -278,7 +278,7 @@ Get Citizenship (NK1.19)
 public getContactPersonSocialSecurityNumber (int $position)
 ```
 
-Get Contact PersonSocialSecurityNumber (NK1.37) 
+Get Contact Person Social Security Number (NK1.37) 
 
  
 
@@ -305,7 +305,7 @@ Get Contact PersonSocialSecurityNumber (NK1.37)
 public getContactPersonsAddress (int $position)
 ```
 
-Get Contact PersonsAddress (NK1.32) 
+Get Contact Persons Address (NK1.32) 
 
  
 
@@ -332,7 +332,7 @@ Get Contact PersonsAddress (NK1.32)
 public getContactPersonsName (int $position)
 ```
 
-Get Contact PersonsName (NK1.30) 
+Get Contact Persons Name (NK1.30) 
 
  
 
@@ -359,7 +359,7 @@ Get Contact PersonsName (NK1.30)
 public getContactPersonsTelephoneNumber (int $position)
 ```
 
-Get Contact PersonsTelephoneNumber (NK1.31) 
+Get Contact Persons Telephone Number (NK1.31) 
 
  
 
@@ -440,7 +440,7 @@ Get Contact Role (NK1.7)
 public getDateTimeOfBirth (int $position)
 ```
 
-Get Date TimeOfBirth (NK1.16) 
+Get Date Time Of Birth (NK1.16) 
 
  
 
@@ -683,7 +683,7 @@ Get Marital Status (NK1.14)
 public getMothersMaidenName (int $position)
 ```
 
-Get Mothers MaidenName (NK1.26) 
+Get Mothers Maiden Name (NK1.26) 
 
  
 
@@ -764,7 +764,7 @@ Get Nationality (NK1.27)
 public getNextOfKinBirthPlace (int $position)
 ```
 
-Get Next OfKinBirthPlace (NK1.38) 
+Get Next Of Kin Birth Place (NK1.38) 
 
  
 
@@ -791,7 +791,7 @@ Get Next OfKinBirthPlace (NK1.38)
 public getNextOfKinOrAssociatedPartiesEmployeeNumber (int $position)
 ```
 
-Get Next OfKinOrAssociatedPartiesEmployeeNumber (NK1.12) 
+Get Next Of Kin Or Associated Parties Employee Number (NK1.12) 
 
  
 
@@ -818,7 +818,7 @@ Get Next OfKinOrAssociatedPartiesEmployeeNumber (NK1.12)
 public getNextOfKinOrAssociatedPartiesJobCodeOrClass (int $position)
 ```
 
-Get Next OfKinOrAssociatedPartiesJobCodeOrClass (NK1.11) 
+Get Next Of Kin Or Associated Parties Job Code Or Class (NK1.11) 
 
  
 
@@ -845,7 +845,7 @@ Get Next OfKinOrAssociatedPartiesJobCodeOrClass (NK1.11)
 public getNextOfKinOrAssociatedPartiesJobTitle (int $position)
 ```
 
-Get Next OfKinOrAssociatedPartiesJobTitle (NK1.10) 
+Get Next Of Kin Or Associated Parties Job Title (NK1.10) 
 
  
 
@@ -872,7 +872,7 @@ Get Next OfKinOrAssociatedPartiesJobTitle (NK1.10)
 public getNextOfKinOrAssociatedPartysIdentifiers (int $position)
 ```
 
-Get Next OfKinOrAssociatedPartysIdentifiers (NK1.33) 
+Get Next Of Kin Or Associated Partys Identifiers (NK1.33) 
 
  
 

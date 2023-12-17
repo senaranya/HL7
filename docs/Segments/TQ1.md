@@ -15,16 +15,16 @@ Aranyasen\HL7\Segment
 |------|-------------|
 |[getConditionText](#tq1getconditiontext)|Get Condition Text (TQ1.10)|
 |[getConjunction](#tq1getconjunction)|Get Conjunction (TQ1.12)|
-|[getEndDateTime](#tq1getenddatetime)|Get End DateTime (TQ1.8)|
+|[getEndDateTime](#tq1getenddatetime)|Get End Date Time (TQ1.8)|
 |[getExplicitTime](#tq1getexplicittime)|Get Explicit Time (TQ1.4)|
 |[getOccurrenceDuration](#tq1getoccurrenceduration)|Get Occurrence Duration (TQ1.13)|
 |[getPriority](#tq1getpriority)|Get Priority (TQ1.9)|
 |[getQuantity](#tq1getquantity)|Get Quantity (TQ1.2)|
-|[getRelativeTimeAndUnits](#tq1getrelativetimeandunits)|Get Relative TimeAndUnits (TQ1.5)|
+|[getRelativeTimeAndUnits](#tq1getrelativetimeandunits)|Get Relative Time And Units (TQ1.5)|
 |[getRepeatPattern](#tq1getrepeatpattern)|Get Repeat Pattern (TQ1.3)|
 |[getServiceDuration](#tq1getserviceduration)|Get Service Duration (TQ1.6)|
 |[getSetIdTQ1](#tq1getsetidtq1)||
-|[getStartDateTime](#tq1getstartdatetime)|Get Start DateTime (TQ1.7)|
+|[getStartDateTime](#tq1getstartdatetime)|Get Start Date Time (TQ1.7)|
 |[getTextInstruction](#tq1gettextinstruction)|Get Text Instruction (TQ1.11)|
 |[getTotalOccurrences](#tq1gettotaloccurrences)|Get Total Occurrences (TQ1.14)|
 |[setConditionText](#tq1setconditiontext)|Set Condition Text (TQ1.10)|
@@ -118,7 +118,7 @@ Get Conjunction (TQ1.12)
 public getEndDateTime (int $position)
 ```
 
-Get End DateTime (TQ1.8) 
+Get End Date Time (TQ1.8) 
 
  
 
@@ -253,7 +253,7 @@ Get Quantity (TQ1.2)
 public getRelativeTimeAndUnits (int $position)
 ```
 
-Get Relative TimeAndUnits (TQ1.5) 
+Get Relative Time And Units (TQ1.5) 
 
  
 
@@ -358,7 +358,7 @@ Get Service Duration (TQ1.6)
 public getStartDateTime (int $position)
 ```
 
-Get Start DateTime (TQ1.7) 
+Get Start Date Time (TQ1.7) 
 
  
 

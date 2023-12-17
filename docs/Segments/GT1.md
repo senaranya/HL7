@@ -16,45 +16,45 @@ Aranyasen\HL7\Segment
 |[__destruct](#gt1__destruct)||
 |[getAmbulatoryStatus](#gt1getambulatorystatus)|Get Ambulatory Status (GT1.34)|
 |[getCitizenship](#gt1getcitizenship)|Get Citizenship (GT1.35)|
-|[getContactPersonsName](#gt1getcontactpersonsname)|Get Contact PersonsName (GT1.45)|
-|[getContactPersonsPhone](#gt1getcontactpersonsphone)|Get Contact PersonsPhone (GT1.46)|
+|[getContactPersonsName](#gt1getcontactpersonsname)|Get Contact Persons Name (GT1.45)|
+|[getContactPersonsPhone](#gt1getcontactpersonsphone)|Get Contact Persons Phone (GT1.46)|
 |[getContactReason](#gt1getcontactreason)|Get Contact Reason (GT1.47)|
 |[getContactRelationship](#gt1getcontactrelationship)|Get Contact Relationship (GT1.48)|
-|[getEmploymentStopDate](#gt1getemploymentstopdate)|Get Employment StopDate (GT1.32)|
+|[getEmploymentStopDate](#gt1getemploymentstopdate)|Get Employment Stop Date (GT1.32)|
 |[getEthnicGroup](#gt1getethnicgroup)|Get Ethnic Group (GT1.44)|
 |[getGuarantorAddress](#gt1getguarantoraddress)|Get Guarantor Address (GT1.5)|
-|[getGuarantorAnnualIncome](#gt1getguarantorannualincome)|Get Guarantor AnnualIncome (GT1.27)|
-|[getGuarantorBeginDate](#gt1getguarantorbegindate)|Get Guarantor BeginDate (GT1.13)|
-|[getGuarantorBillingHoldFlag](#gt1getguarantorbillingholdflag)|Get Guarantor BillingHoldFlag (GT1.22)|
-|[getGuarantorBirthPlace](#gt1getguarantorbirthplace)|Get Guarantor BirthPlace (GT1.56)|
-|[getGuarantorBusinessPhone](#gt1getguarantorbusinessphone)|Get Guarantor BusinessPhone (GT1.7)|
-|[getGuarantorChargeAdjustmentCode](#gt1getguarantorchargeadjustmentcode)|Get Guarantor ChargeAdjustmentCode (GT1.26)|
-|[getGuarantorCreditRatingCode](#gt1getguarantorcreditratingcode)|Get Guarantor CreditRatingCode (GT1.23)|
-|[getGuarantorDateOfBirth](#gt1getguarantordateofbirth)|Get Guarantor DateOfBirth (GT1.8)|
-|[getGuarantorDeathDateAndTime](#gt1getguarantordeathdateandtime)|Get Guarantor DeathDateAndTime (GT1.24)|
-|[getGuarantorDeathFlag](#gt1getguarantordeathflag)|Get Guarantor DeathFlag (GT1.25)|
-|[getGuarantorEmployeeID](#gt1getguarantoremployeeid)|Get Guarantor EmployeeID (GT1.19)|
-|[getGuarantorEmployerAddress](#gt1getguarantoremployeraddress)|Get Guarantor EmployerAddress (GT1.17)|
-|[getGuarantorEmployerID](#gt1getguarantoremployerid)|Get Guarantor EmployerID (GT1.29)|
-|[getGuarantorEmployerName](#gt1getguarantoremployername)|Get Guarantor EmployerName (GT1.16)|
-|[getGuarantorEmployerPhone](#gt1getguarantoremployerphone)|Get Guarantor EmployerPhone (GT1.18)|
-|[getGuarantorEmployersOrganizationName](#gt1getguarantoremployersorganizationname)|Get Guarantor EmployersOrganizationName (GT1.51)|
-|[getGuarantorEmploymentStatus](#gt1getguarantoremploymentstatus)|Get Guarantor EmploymentStatus (GT1.20)|
-|[getGuarantorEndDate](#gt1getguarantorenddate)|Get Guarantor EndDate (GT1.14)|
-|[getGuarantorFinancialClass](#gt1getguarantorfinancialclass)|Get Guarantor FinancialClass (GT1.54)|
-|[getGuarantorHireEffectiveDate](#gt1getguarantorhireeffectivedate)|Get Guarantor HireEffectiveDate (GT1.31)|
-|[getGuarantorHomePhone](#gt1getguarantorhomephone)|Get Guarantor HomePhone (GT1.6)|
-|[getGuarantorHouseholdSize](#gt1getguarantorhouseholdsize)|Get Guarantor HouseholdSize (GT1.28)|
-|[getGuarantorMaritalStatusCode](#gt1getguarantormaritalstatuscode)|Get Guarantor MaritalStatusCode (GT1.30)|
+|[getGuarantorAnnualIncome](#gt1getguarantorannualincome)|Get Guarantor Annual Income (GT1.27)|
+|[getGuarantorBeginDate](#gt1getguarantorbegindate)|Get Guarantor Begin Date (GT1.13)|
+|[getGuarantorBillingHoldFlag](#gt1getguarantorbillingholdflag)|Get Guarantor Billing Hold Flag (GT1.22)|
+|[getGuarantorBirthPlace](#gt1getguarantorbirthplace)|Get Guarantor Birth Place (GT1.56)|
+|[getGuarantorBusinessPhone](#gt1getguarantorbusinessphone)|Get Guarantor Business Phone (GT1.7)|
+|[getGuarantorChargeAdjustmentCode](#gt1getguarantorchargeadjustmentcode)|Get Guarantor Charge Adjustment Code (GT1.26)|
+|[getGuarantorCreditRatingCode](#gt1getguarantorcreditratingcode)|Get Guarantor Credit Rating Code (GT1.23)|
+|[getGuarantorDateOfBirth](#gt1getguarantordateofbirth)|Get Guarantor Date Of Birth (GT1.8)|
+|[getGuarantorDeathDateAndTime](#gt1getguarantordeathdateandtime)|Get Guarantor Death Date And Time (GT1.24)|
+|[getGuarantorDeathFlag](#gt1getguarantordeathflag)|Get Guarantor Death Flag (GT1.25)|
+|[getGuarantorEmployeeID](#gt1getguarantoremployeeid)|Get Guarantor Employee ID (GT1.19)|
+|[getGuarantorEmployerAddress](#gt1getguarantoremployeraddress)|Get Guarantor Employer Address (GT1.17)|
+|[getGuarantorEmployerID](#gt1getguarantoremployerid)|Get Guarantor Employer ID (GT1.29)|
+|[getGuarantorEmployerName](#gt1getguarantoremployername)|Get Guarantor Employer Name (GT1.16)|
+|[getGuarantorEmployerPhone](#gt1getguarantoremployerphone)|Get Guarantor Employer Phone (GT1.18)|
+|[getGuarantorEmployersOrganizationName](#gt1getguarantoremployersorganizationname)|Get Guarantor Employers Organization Name (GT1.51)|
+|[getGuarantorEmploymentStatus](#gt1getguarantoremploymentstatus)|Get Guarantor Employment Status (GT1.20)|
+|[getGuarantorEndDate](#gt1getguarantorenddate)|Get Guarantor End Date (GT1.14)|
+|[getGuarantorFinancialClass](#gt1getguarantorfinancialclass)|Get Guarantor Financial Class (GT1.54)|
+|[getGuarantorHireEffectiveDate](#gt1getguarantorhireeffectivedate)|Get Guarantor Hire Effective Date (GT1.31)|
+|[getGuarantorHomePhone](#gt1getguarantorhomephone)|Get Guarantor Home Phone (GT1.6)|
+|[getGuarantorHouseholdSize](#gt1getguarantorhouseholdsize)|Get Guarantor Household Size (GT1.28)|
+|[getGuarantorMaritalStatusCode](#gt1getguarantormaritalstatuscode)|Get Guarantor Marital Status Code (GT1.30)|
 |[getGuarantorName](#gt1getguarantorname)|Get Guarantor Name (GT1.3)|
 |[getGuarantorNumber](#gt1getguarantornumber)|Get Guarantor Number (GT1.2)|
-|[getGuarantorOrganizationName](#gt1getguarantororganizationname)|Get Guarantor OrganizationName (GT1.21)|
+|[getGuarantorOrganizationName](#gt1getguarantororganizationname)|Get Guarantor Organization Name (GT1.21)|
 |[getGuarantorPriority](#gt1getguarantorpriority)|Get Guarantor Priority (GT1.15)|
 |[getGuarantorRace](#gt1getguarantorrace)|Get Guarantor Race (GT1.55)|
 |[getGuarantorRelationship](#gt1getguarantorrelationship)|Get Guarantor Relationship (GT1.11)|
 |[getGuarantorSSN](#gt1getguarantorssn)|Get Guarantor SSN (GT1.12)|
 |[getGuarantorSex](#gt1getguarantorsex)|Get Guarantor Sex (GT1.9)|
-|[getGuarantorSpouseName](#gt1getguarantorspousename)|Get Guarantor SpouseName (GT1.4)|
+|[getGuarantorSpouseName](#gt1getguarantorspousename)|Get Guarantor Spouse Name (GT1.4)|
 |[getGuarantorType](#gt1getguarantortype)|Get Guarantor Type (GT1.10)|
 |[getHandicap](#gt1gethandicap)|Get Handicap (GT1.52)|
 |[getID](#gt1getid)|Get ID (GT1.1)|
@@ -63,7 +63,7 @@ Aranyasen\HL7\Segment
 |[getJobTitle](#gt1getjobtitle)|Get Job Title (GT1.49)|
 |[getLivingArrangement](#gt1getlivingarrangement)|Get Living Arrangement (GT1.37)|
 |[getLivingDependency](#gt1getlivingdependency)|Get Living Dependency (GT1.33)|
-|[getMotherMaidenName](#gt1getmothermaidenname)|Get Mother MaidenName (GT1.42)|
+|[getMotherMaidenName](#gt1getmothermaidenname)|Get Mother Maiden Name (GT1.42)|
 |[getNationality](#gt1getnationality)|Get Nationality (GT1.43)|
 |[getPrimaryLanguage](#gt1getprimarylanguage)|Get Primary Language (GT1.36)|
 |[getProtectionIndicator](#gt1getprotectionindicator)|Get Protection Indicator (GT1.39)|
@@ -230,7 +230,7 @@ Get Citizenship (GT1.35)
 public getContactPersonsName (int $position)
 ```
 
-Get Contact PersonsName (GT1.45) 
+Get Contact Persons Name (GT1.45) 
 
  
 
@@ -257,7 +257,7 @@ Get Contact PersonsName (GT1.45)
 public getContactPersonsPhone (int $position)
 ```
 
-Get Contact PersonsPhone (GT1.46) 
+Get Contact Persons Phone (GT1.46) 
 
  
 
@@ -338,7 +338,7 @@ Get Contact Relationship (GT1.48)
 public getEmploymentStopDate (int $position)
 ```
 
-Get Employment StopDate (GT1.32) 
+Get Employment Stop Date (GT1.32) 
 
  
 
@@ -419,7 +419,7 @@ Get Guarantor Address (GT1.5)
 public getGuarantorAnnualIncome (int $position)
 ```
 
-Get Guarantor AnnualIncome (GT1.27) 
+Get Guarantor Annual Income (GT1.27) 
 
  
 
@@ -446,7 +446,7 @@ Get Guarantor AnnualIncome (GT1.27)
 public getGuarantorBeginDate (int $position)
 ```
 
-Get Guarantor BeginDate (GT1.13) 
+Get Guarantor Begin Date (GT1.13) 
 
  
 
@@ -473,7 +473,7 @@ Get Guarantor BeginDate (GT1.13)
 public getGuarantorBillingHoldFlag (int $position)
 ```
 
-Get Guarantor BillingHoldFlag (GT1.22) 
+Get Guarantor Billing Hold Flag (GT1.22) 
 
  
 
@@ -500,7 +500,7 @@ Get Guarantor BillingHoldFlag (GT1.22)
 public getGuarantorBirthPlace (int $position)
 ```
 
-Get Guarantor BirthPlace (GT1.56) 
+Get Guarantor Birth Place (GT1.56) 
 
  
 
@@ -527,7 +527,7 @@ Get Guarantor BirthPlace (GT1.56)
 public getGuarantorBusinessPhone (int $position)
 ```
 
-Get Guarantor BusinessPhone (GT1.7) 
+Get Guarantor Business Phone (GT1.7) 
 
  
 
@@ -554,7 +554,7 @@ Get Guarantor BusinessPhone (GT1.7)
 public getGuarantorChargeAdjustmentCode (int $position)
 ```
 
-Get Guarantor ChargeAdjustmentCode (GT1.26) 
+Get Guarantor Charge Adjustment Code (GT1.26) 
 
  
 
@@ -581,7 +581,7 @@ Get Guarantor ChargeAdjustmentCode (GT1.26)
 public getGuarantorCreditRatingCode (int $position)
 ```
 
-Get Guarantor CreditRatingCode (GT1.23) 
+Get Guarantor Credit Rating Code (GT1.23) 
 
  
 
@@ -608,7 +608,7 @@ Get Guarantor CreditRatingCode (GT1.23)
 public getGuarantorDateOfBirth (int $position)
 ```
 
-Get Guarantor DateOfBirth (GT1.8) 
+Get Guarantor Date Of Birth (GT1.8) 
 
  
 
@@ -635,7 +635,7 @@ Get Guarantor DateOfBirth (GT1.8)
 public getGuarantorDeathDateAndTime (int $position)
 ```
 
-Get Guarantor DeathDateAndTime (GT1.24) 
+Get Guarantor Death Date And Time (GT1.24) 
 
  
 
@@ -662,7 +662,7 @@ Get Guarantor DeathDateAndTime (GT1.24)
 public getGuarantorDeathFlag (int $position)
 ```
 
-Get Guarantor DeathFlag (GT1.25) 
+Get Guarantor Death Flag (GT1.25) 
 
  
 
@@ -689,7 +689,7 @@ Get Guarantor DeathFlag (GT1.25)
 public getGuarantorEmployeeID (int $position)
 ```
 
-Get Guarantor EmployeeID (GT1.19) 
+Get Guarantor Employee ID (GT1.19) 
 
  
 
@@ -716,7 +716,7 @@ Get Guarantor EmployeeID (GT1.19)
 public getGuarantorEmployerAddress (int $position)
 ```
 
-Get Guarantor EmployerAddress (GT1.17) 
+Get Guarantor Employer Address (GT1.17) 
 
  
 
@@ -743,7 +743,7 @@ Get Guarantor EmployerAddress (GT1.17)
 public getGuarantorEmployerID (int $position)
 ```
 
-Get Guarantor EmployerID (GT1.29) 
+Get Guarantor Employer ID (GT1.29) 
 
  
 
@@ -770,7 +770,7 @@ Get Guarantor EmployerID (GT1.29)
 public getGuarantorEmployerName (int $position)
 ```
 
-Get Guarantor EmployerName (GT1.16) 
+Get Guarantor Employer Name (GT1.16) 
 
  
 
@@ -797,7 +797,7 @@ Get Guarantor EmployerName (GT1.16)
 public getGuarantorEmployerPhone (int $position)
 ```
 
-Get Guarantor EmployerPhone (GT1.18) 
+Get Guarantor Employer Phone (GT1.18) 
 
  
 
@@ -824,7 +824,7 @@ Get Guarantor EmployerPhone (GT1.18)
 public getGuarantorEmployersOrganizationName (int $position)
 ```
 
-Get Guarantor EmployersOrganizationName (GT1.51) 
+Get Guarantor Employers Organization Name (GT1.51) 
 
  
 
@@ -851,7 +851,7 @@ Get Guarantor EmployersOrganizationName (GT1.51)
 public getGuarantorEmploymentStatus (int $position)
 ```
 
-Get Guarantor EmploymentStatus (GT1.20) 
+Get Guarantor Employment Status (GT1.20) 
 
  
 
@@ -878,7 +878,7 @@ Get Guarantor EmploymentStatus (GT1.20)
 public getGuarantorEndDate (int $position)
 ```
 
-Get Guarantor EndDate (GT1.14) 
+Get Guarantor End Date (GT1.14) 
 
  
 
@@ -905,7 +905,7 @@ Get Guarantor EndDate (GT1.14)
 public getGuarantorFinancialClass (int $position)
 ```
 
-Get Guarantor FinancialClass (GT1.54) 
+Get Guarantor Financial Class (GT1.54) 
 
  
 
@@ -932,7 +932,7 @@ Get Guarantor FinancialClass (GT1.54)
 public getGuarantorHireEffectiveDate (int $position)
 ```
 
-Get Guarantor HireEffectiveDate (GT1.31) 
+Get Guarantor Hire Effective Date (GT1.31) 
 
  
 
@@ -959,7 +959,7 @@ Get Guarantor HireEffectiveDate (GT1.31)
 public getGuarantorHomePhone (int $position)
 ```
 
-Get Guarantor HomePhone (GT1.6) 
+Get Guarantor Home Phone (GT1.6) 
 
  
 
@@ -986,7 +986,7 @@ Get Guarantor HomePhone (GT1.6)
 public getGuarantorHouseholdSize (int $position)
 ```
 
-Get Guarantor HouseholdSize (GT1.28) 
+Get Guarantor Household Size (GT1.28) 
 
  
 
@@ -1013,7 +1013,7 @@ Get Guarantor HouseholdSize (GT1.28)
 public getGuarantorMaritalStatusCode (int $position)
 ```
 
-Get Guarantor MaritalStatusCode (GT1.30) 
+Get Guarantor Marital Status Code (GT1.30) 
 
  
 
@@ -1094,7 +1094,7 @@ Get Guarantor Number (GT1.2)
 public getGuarantorOrganizationName (int $position)
 ```
 
-Get Guarantor OrganizationName (GT1.21) 
+Get Guarantor Organization Name (GT1.21) 
 
  
 
@@ -1256,7 +1256,7 @@ Get Guarantor Sex (GT1.9)
 public getGuarantorSpouseName (int $position)
 ```
 
-Get Guarantor SpouseName (GT1.4) 
+Get Guarantor Spouse Name (GT1.4) 
 
  
 
@@ -1499,7 +1499,7 @@ Get Living Dependency (GT1.33)
 public getMotherMaidenName (int $position)
 ```
 
-Get Mother MaidenName (GT1.42) 
+Get Mother Maiden Name (GT1.42) 
 
  
 

@@ -873,7 +873,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor SpouseName (GT1.4)
+     * Get Guarantor Spouse Name (GT1.4)
      *
      * @param int $position Defaults to 4
      *
@@ -899,7 +899,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor HomePhone (GT1.6)
+     * Get Guarantor Home Phone (GT1.6)
      *
      * @param int $position Defaults to 6
      *
@@ -912,7 +912,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor BusinessPhone (GT1.7)
+     * Get Guarantor Business Phone (GT1.7)
      *
      * @param int $position Defaults to 7
      *
@@ -925,7 +925,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor DateOfBirth (GT1.8)
+     * Get Guarantor Date Of Birth (GT1.8)
      *
      * @param int $position Defaults to 8
      *
@@ -990,7 +990,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor BeginDate (GT1.13)
+     * Get Guarantor Begin Date (GT1.13)
      *
      * @param int $position Defaults to 13
      *
@@ -1003,7 +1003,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EndDate (GT1.14)
+     * Get Guarantor End Date (GT1.14)
      *
      * @param int $position Defaults to 14
      *
@@ -1029,7 +1029,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EmployerName (GT1.16)
+     * Get Guarantor Employer Name (GT1.16)
      *
      * @param int $position Defaults to 16
      *
@@ -1042,7 +1042,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EmployerAddress (GT1.17)
+     * Get Guarantor Employer Address (GT1.17)
      *
      * @param int $position Defaults to 17
      *
@@ -1055,7 +1055,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EmployerPhone (GT1.18)
+     * Get Guarantor Employer Phone (GT1.18)
      *
      * @param int $position Defaults to 18
      *
@@ -1068,7 +1068,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EmployeeID (GT1.19)
+     * Get Guarantor Employee ID (GT1.19)
      *
      * @param int $position Defaults to 19
      *
@@ -1081,7 +1081,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EmploymentStatus (GT1.20)
+     * Get Guarantor Employment Status (GT1.20)
      *
      * @param int $position Defaults to 20
      *
@@ -1094,7 +1094,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor OrganizationName (GT1.21)
+     * Get Guarantor Organization Name (GT1.21)
      *
      * @param int $position Defaults to 21
      *
@@ -1107,7 +1107,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor BillingHoldFlag (GT1.22)
+     * Get Guarantor Billing Hold Flag (GT1.22)
      *
      * @param int $position Defaults to 22
      *
@@ -1120,7 +1120,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor CreditRatingCode (GT1.23)
+     * Get Guarantor Credit Rating Code (GT1.23)
      *
      * @param int $position Defaults to 23
      *
@@ -1133,7 +1133,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor DeathDateAndTime (GT1.24)
+     * Get Guarantor Death Date And Time (GT1.24)
      *
      * @param int $position Defaults to 24
      *
@@ -1146,7 +1146,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor DeathFlag (GT1.25)
+     * Get Guarantor Death Flag (GT1.25)
      *
      * @param int $position Defaults to 25
      *
@@ -1159,7 +1159,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor ChargeAdjustmentCode (GT1.26)
+     * Get Guarantor Charge Adjustment Code (GT1.26)
      *
      * @param int $position Defaults to 26
      *
@@ -1172,7 +1172,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor AnnualIncome (GT1.27)
+     * Get Guarantor Annual Income (GT1.27)
      *
      * @param int $position Defaults to 27
      *
@@ -1185,7 +1185,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor HouseholdSize (GT1.28)
+     * Get Guarantor Household Size (GT1.28)
      *
      * @param int $position Defaults to 28
      *
@@ -1198,7 +1198,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EmployerID (GT1.29)
+     * Get Guarantor Employer ID (GT1.29)
      *
      * @param int $position Defaults to 29
      *
@@ -1211,7 +1211,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor MaritalStatusCode (GT1.30)
+     * Get Guarantor Marital Status Code (GT1.30)
      *
      * @param int $position Defaults to 30
      *
@@ -1224,7 +1224,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor HireEffectiveDate (GT1.31)
+     * Get Guarantor Hire Effective Date (GT1.31)
      *
      * @param int $position Defaults to 31
      *
@@ -1237,7 +1237,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Employment StopDate (GT1.32)
+     * Get Employment Stop Date (GT1.32)
      *
      * @param int $position Defaults to 32
      *
@@ -1367,7 +1367,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Mother MaidenName (GT1.42)
+     * Get Mother Maiden Name (GT1.42)
      *
      * @param int $position Defaults to 42
      *
@@ -1406,7 +1406,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Contact PersonsName (GT1.45)
+     * Get Contact Persons Name (GT1.45)
      *
      * @param int $position Defaults to 45
      *
@@ -1419,7 +1419,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Contact PersonsPhone (GT1.46)
+     * Get Contact Persons Phone (GT1.46)
      *
      * @param int $position Defaults to 46
      *
@@ -1484,7 +1484,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor EmployersOrganizationName (GT1.51)
+     * Get Guarantor Employers Organization Name (GT1.51)
      *
      * @param int $position Defaults to 51
      *
@@ -1523,7 +1523,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor FinancialClass (GT1.54)
+     * Get Guarantor Financial Class (GT1.54)
      *
      * @param int $position Defaults to 54
      *
@@ -1549,7 +1549,7 @@ class GT1 extends Segment
     }
 
     /**
-     * Get Guarantor BirthPlace (GT1.56)
+     * Get Guarantor Birth Place (GT1.56)
      *
      * @param int $position Defaults to 56
      *

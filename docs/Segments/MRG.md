@@ -13,13 +13,13 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getPriorAlternatePatientID](#mrggetprioralternatepatientid)|Get Prior AlternatePatientID (MRG.2)|
-|[getPriorAlternateVisitID](#mrggetprioralternatevisitid)|Get Prior AlternateVisitID (MRG.6)|
-|[getPriorPatientAccountNumber](#mrggetpriorpatientaccountnumber)|Get Prior PatientAccountNumber (MRG.3)|
-|[getPriorPatientID](#mrggetpriorpatientid)|Get Prior PatientID (MRG.4)|
-|[getPriorPatientIdentifierList](#mrggetpriorpatientidentifierlist)|Get Prior PatientIdentifierList (MRG.1)|
-|[getPriorPatientName](#mrggetpriorpatientname)|Get Prior PatientName (MRG.7)|
-|[getPriorVisitNumber](#mrggetpriorvisitnumber)|Get Prior VisitNumber (MRG.5)|
+|[getPriorAlternatePatientID](#mrggetprioralternatepatientid)|Get Prior Alternate Patient ID (MRG.2)|
+|[getPriorAlternateVisitID](#mrggetprioralternatevisitid)|Get Prior Alternate Visit ID (MRG.6)|
+|[getPriorPatientAccountNumber](#mrggetpriorpatientaccountnumber)|Get Prior Patient Account Number (MRG.3)|
+|[getPriorPatientID](#mrggetpriorpatientid)|Get Prior Patient ID (MRG.4)|
+|[getPriorPatientIdentifierList](#mrggetpriorpatientidentifierlist)|Get Prior Patient Identifier List (MRG.1)|
+|[getPriorPatientName](#mrggetpriorpatientname)|Get Prior Patient Name (MRG.7)|
+|[getPriorVisitNumber](#mrggetpriorvisitnumber)|Get Prior Visit Number (MRG.5)|
 |[setPriorAlternatePatientID](#mrgsetprioralternatepatientid)|Set Prior Alternate Patient ID (MRG.2)|
 |[setPriorAlternateVisitID](#mrgsetprioralternatevisitid)|Set Prior Alternate Visit ID (MRG.6)|
 |[setPriorPatientAccountNumber](#mrgsetpriorpatientaccountnumber)|Set Prior Patient Account Number (MRG.3)|
@@ -50,7 +50,7 @@ Aranyasen\HL7\Segment
 public getPriorAlternatePatientID (int $position)
 ```
 
-Get Prior AlternatePatientID (MRG.2) 
+Get Prior Alternate Patient ID (MRG.2) 
 
  
 
@@ -77,7 +77,7 @@ Get Prior AlternatePatientID (MRG.2)
 public getPriorAlternateVisitID (int $position)
 ```
 
-Get Prior AlternateVisitID (MRG.6) 
+Get Prior Alternate Visit ID (MRG.6) 
 
  
 
@@ -104,7 +104,7 @@ Get Prior AlternateVisitID (MRG.6)
 public getPriorPatientAccountNumber (int $position)
 ```
 
-Get Prior PatientAccountNumber (MRG.3) 
+Get Prior Patient Account Number (MRG.3) 
 
  
 
@@ -131,7 +131,7 @@ Get Prior PatientAccountNumber (MRG.3)
 public getPriorPatientID (int $position)
 ```
 
-Get Prior PatientID (MRG.4) 
+Get Prior Patient ID (MRG.4) 
 
  
 
@@ -158,7 +158,7 @@ Get Prior PatientID (MRG.4)
 public getPriorPatientIdentifierList (int $position)
 ```
 
-Get Prior PatientIdentifierList (MRG.1) 
+Get Prior Patient Identifier List (MRG.1) 
 
  
 
@@ -185,7 +185,7 @@ Get Prior PatientIdentifierList (MRG.1)
 public getPriorPatientName (int $position)
 ```
 
-Get Prior PatientName (MRG.7) 
+Get Prior Patient Name (MRG.7) 
 
  
 
@@ -212,7 +212,7 @@ Get Prior PatientName (MRG.7)
 public getPriorVisitNumber (int $position)
 ```
 
-Get Prior VisitNumber (MRG.5) 
+Get Prior Visit Number (MRG.5) 
 
  
 

@@ -654,7 +654,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Business PhoneNumber (NK1.6)
+     * Get Business Phone Number (NK1.6)
      *
      * @param int $position Defaults to 6
      *
@@ -706,7 +706,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Next OfKinOrAssociatedPartiesJobTitle (NK1.10)
+     * Get Next Of Kin Or Associated Parties Job Title (NK1.10)
      *
      * @param int $position Defaults to 10
      *
@@ -719,7 +719,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Next OfKinOrAssociatedPartiesJobCodeOrClass (NK1.11)
+     * Get Next Of Kin Or Associated Parties Job Code Or Class (NK1.11)
      *
      * @param int $position Defaults to 11
      *
@@ -732,7 +732,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Next OfKinOrAssociatedPartiesEmployeeNumber (NK1.12)
+     * Get Next Of Kin Or Associated Parties Employee Number (NK1.12)
      *
      * @param int $position Defaults to 12
      *
@@ -784,7 +784,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Date TimeOfBirth (NK1.16)
+     * Get Date Time Of Birth (NK1.16)
      *
      * @param int $position Defaults to 16
      *
@@ -914,7 +914,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Mothers MaidenName (NK1.26)
+     * Get Mothers Maiden Name (NK1.26)
      *
      * @param int $position Defaults to 26
      *
@@ -966,7 +966,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Contact PersonsName (NK1.30)
+     * Get Contact Persons Name (NK1.30)
      *
      * @param int $position Defaults to 30
      *
@@ -979,7 +979,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Contact PersonsTelephoneNumber (NK1.31)
+     * Get Contact Persons Telephone Number (NK1.31)
      *
      * @param int $position Defaults to 31
      *
@@ -992,7 +992,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Contact PersonsAddress (NK1.32)
+     * Get Contact Persons Address (NK1.32)
      *
      * @param int $position Defaults to 32
      *
@@ -1005,7 +1005,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Next OfKinOrAssociatedPartysIdentifiers (NK1.33)
+     * Get Next Of Kin Or Associated Partys Identifiers (NK1.33)
      *
      * @param int $position Defaults to 33
      *
@@ -1057,7 +1057,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Contact PersonSocialSecurityNumber (NK1.37)
+     * Get Contact Person Social Security Number (NK1.37)
      *
      * @param int $position Defaults to 37
      *
@@ -1070,7 +1070,7 @@ class NK1 extends Segment
     }
 
     /**
-     * Get Next OfKinBirthPlace (NK1.38)
+     * Get Next Of Kin Birth Place (NK1.38)
      *
      * @param int $position Defaults to 38
      *

@@ -23,18 +23,18 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[__destruct](#aip__destruct)||
-|[getAllowSubstitutionCode](#aipgetallowsubstitutioncode)|Get Allow SubstitutionCode (AIP.11)|
+|[getAllowSubstitutionCode](#aipgetallowsubstitutioncode)|Get Allow Substitution Code (AIP.11)|
 |[getDuration](#aipgetduration)|Get Duration (AIP.9)|
 |[getDurationUnits](#aipgetdurationunits)|Get Duration Units (AIP.10)|
-|[getFillerStatusCode](#aipgetfillerstatuscode)|Get Filler StatusCode (AIP.12)|
+|[getFillerStatusCode](#aipgetfillerstatuscode)|Get Filler Status Code (AIP.12)|
 |[getID](#aipgetid)|Get ID (AIP.1)|
-|[getPersonnelResourceID](#aipgetpersonnelresourceid)|Get Personnel ResourceID (AIP.3)|
+|[getPersonnelResourceID](#aipgetpersonnelresourceid)|Get Personnel Resource ID (AIP.3)|
 |[getResourceGroup](#aipgetresourcegroup)|Get Resource Group (AIP.5)|
 |[getResourceType](#aipgetresourcetype)|Get Resource Type (AIP.4)|
-|[getSegmentActionCode](#aipgetsegmentactioncode)|Get Segment ActionCode (AIP.2)|
-|[getStartDateTime](#aipgetstartdatetime)|Get Start DateTime (AIP.6)|
-|[getStartDateTimeOffset](#aipgetstartdatetimeoffset)|Get Start DateTimeOffset (AIP.7)|
-|[getStartDateTimeOffsetUnits](#aipgetstartdatetimeoffsetunits)|Get Start DateTimeOffsetUnits (AIP.8)|
+|[getSegmentActionCode](#aipgetsegmentactioncode)|Get Segment Action Code (AIP.2)|
+|[getStartDateTime](#aipgetstartdatetime)|Get Start Date Time (AIP.6)|
+|[getStartDateTimeOffset](#aipgetstartdatetimeoffset)|Get Start Date Time Offset (AIP.7)|
+|[getStartDateTimeOffsetUnits](#aipgetstartdatetimeoffsetunits)|Get Start Date Time Offset Units (AIP.8)|
 |[resetIndex](#aipresetindex)|Reset index of this segment|
 |[setAllowSubstitutionCode](#aipsetallowsubstitutioncode)|Set Allow Substitution Code (AIP.11)|
 |[setDuration](#aipsetduration)|Set Duration (AIP.9)|
@@ -95,7 +95,7 @@ Aranyasen\HL7\Segment
 public getAllowSubstitutionCode (int $position)
 ```
 
-Get Allow SubstitutionCode (AIP.11) 
+Get Allow Substitution Code (AIP.11) 
 
  
 
@@ -176,7 +176,7 @@ Get Duration Units (AIP.10)
 public getFillerStatusCode (int $position)
 ```
 
-Get Filler StatusCode (AIP.12) 
+Get Filler Status Code (AIP.12) 
 
  
 
@@ -230,7 +230,7 @@ Get ID (AIP.1)
 public getPersonnelResourceID (int $position)
 ```
 
-Get Personnel ResourceID (AIP.3) 
+Get Personnel Resource ID (AIP.3) 
 
  
 
@@ -311,7 +311,7 @@ Get Resource Type (AIP.4)
 public getSegmentActionCode (int $position)
 ```
 
-Get Segment ActionCode (AIP.2) 
+Get Segment Action Code (AIP.2) 
 
  
 
@@ -338,7 +338,7 @@ Get Segment ActionCode (AIP.2)
 public getStartDateTime (int $position)
 ```
 
-Get Start DateTime (AIP.6) 
+Get Start Date Time (AIP.6) 
 
  
 
@@ -365,7 +365,7 @@ Get Start DateTime (AIP.6)
 public getStartDateTimeOffset (int $position)
 ```
 
-Get Start DateTimeOffset (AIP.7) 
+Get Start Date Time Offset (AIP.7) 
 
  
 
@@ -392,7 +392,7 @@ Get Start DateTimeOffset (AIP.7)
 public getStartDateTimeOffsetUnits (int $position)
 ```
 
-Get Start DateTimeOffsetUnits (AIP.8) 
+Get Start Date Time Offset Units (AIP.8) 
 
  
 

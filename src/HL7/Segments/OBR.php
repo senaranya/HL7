@@ -666,7 +666,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Placer OrderNumber (OBR.2)
+     * Get Placer Order Number (OBR.2)
      *
      * @param int $position Defaults to 2
      *
@@ -679,7 +679,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Filler OrderNumber (OBR.3)
+     * Get Filler Order Number (OBR.3)
      *
      * @param int $position Defaults to 3
      *
@@ -692,7 +692,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Universal ServiceID (OBR.4)
+     * Get Universal Service ID (OBR.4)
      *
      * @param int $position Defaults to 4
      *
@@ -731,7 +731,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Observation DateTime (OBR.7)
+     * Get Observation Date Time (OBR.7)
      *
      * @param int $position Defaults to 7
      *
@@ -744,7 +744,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Observation EndDateTime (OBR.8)
+     * Get Observation End Date Time (OBR.8)
      *
      * @param int $position Defaults to 8
      *
@@ -783,7 +783,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Specimen ActionCode (OBR.11)
+     * Get Specimen Action Code (OBR.11)
      *
      * @param int $position Defaults to 11
      *
@@ -809,7 +809,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Relevant ClinicalInfo (OBR.13)
+     * Get Relevant Clinical Info (OBR.13)
      *
      * @param int $position Defaults to 13
      *
@@ -822,7 +822,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Specimen ReceivedDateTime (OBR.14)
+     * Get Specimen Received Date Time (OBR.14)
      *
      * @param int $position Defaults to 14
      *
@@ -861,7 +861,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Order CallbackPhoneNumber (OBR.17)
+     * Get Order Callback Phone Number (OBR.17)
      *
      * @param int $position Defaults to 17
      *
@@ -926,7 +926,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Results RptStatusChngDateTime (OBR.22)
+     * Get Results Rpt Status Chng Date Time (OBR.22)
      *
      * @param int $position Defaults to 22
      *
@@ -952,7 +952,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Diagnostic ServSectID (OBR.24)
+     * Get Diagnostic Serv Sect ID (OBR.24)
      *
      * @param int $position Defaults to 24
      *
@@ -1004,7 +1004,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Result CopiesTo (OBR.28)
+     * Get Result Copies To (OBR.28)
      *
      * @param int $position Defaults to 28
      *
@@ -1056,7 +1056,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Principal ResultInterpreter (OBR.32)
+     * Get Principal Result Interpreter (OBR.32)
      *
      * @param int $position Defaults to 32
      *
@@ -1069,7 +1069,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Assistant ResultInterpreter (OBR.33)
+     * Get Assistant Result Interpreter (OBR.33)
      *
      * @param int $position Defaults to 33
      *
@@ -1108,7 +1108,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Scheduled DateTime (OBR.36)
+     * Get Scheduled Date Time (OBR.36)
      *
      * @param int $position Defaults to 36
      *
@@ -1121,7 +1121,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Numberof SampleContainers (OBR.37)
+     * Get Numberof Sample Containers (OBR.37)
      *
      * @param int $position Defaults to 37
      *
@@ -1134,7 +1134,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Transport LogisticsofCollectedSample (OBR.38)
+     * Get Transport Logisticsof Collected Sample (OBR.38)
      *
      * @param int $position Defaults to 38
      *
@@ -1160,7 +1160,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Transport ArrangementResponsibility (OBR.40)
+     * Get Transport Arrangement Responsibility (OBR.40)
      *
      * @param int $position Defaults to 40
      *
@@ -1199,7 +1199,7 @@ class OBR extends Segment
     }
 
     /**
-     * Get Planned PatientTransportComment (OBR.43)
+     * Get Planned Patient Transport Comment (OBR.43)
      *
      * @param int $position Defaults to 43
      *

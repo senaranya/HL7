@@ -188,7 +188,7 @@ class FHS extends Segment
     // -------------------- Getter Methods ------------------------------
 
     /**
-     * Get File FieldSeparator (FHS.1)
+     * Get File Field Separator (FHS.1)
      *
      * @param int $position Defaults to 1
      *
@@ -201,7 +201,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File EncodingCharacters (FHS.2)
+     * Get File Encoding Characters (FHS.2)
      *
      * @param int $position Defaults to 2
      *
@@ -214,7 +214,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File SendingApplication (FHS.3)
+     * Get File Sending Application (FHS.3)
      *
      * @param int $position Defaults to 3
      *
@@ -227,7 +227,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File SendingFacility (FHS.4)
+     * Get File Sending Facility (FHS.4)
      *
      * @param int $position Defaults to 4
      *
@@ -240,7 +240,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File RecievingApplication (FHS.5)
+     * Get File Recieving Application (FHS.5)
      *
      * @param int $position Defaults to 5
      *
@@ -253,7 +253,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File RecievingFacility (FHS.6)
+     * Get File Recieving Facility (FHS.6)
      *
      * @param int $position Defaults to 6
      *
@@ -266,7 +266,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File CreationDateTime (FHS.7)
+     * Get File Creation Date Time (FHS.7)
      *
      * @param int $position Defaults to 7
      *
@@ -292,7 +292,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File NameId (FHS.9)
+     * Get File Name Id (FHS.9)
      *
      * @param int $position Defaults to 9
      *
@@ -305,7 +305,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File HeaderComment (FHS.10)
+     * Get File Header Comment (FHS.10)
      *
      * @param int $position Defaults to 10
      *
@@ -318,7 +318,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get File ControlId (FHS.11)
+     * Get File Control Id (FHS.11)
      *
      * @param int $position Defaults to 11
      *
@@ -331,7 +331,7 @@ class FHS extends Segment
     }
 
     /**
-     * Get Reference FileControlId (FHS.12)
+     * Get Reference File Control Id (FHS.12)
      *
      * @param int $position Defaults to 12
      *

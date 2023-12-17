@@ -13,18 +13,18 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getFileControlId](#fhsgetfilecontrolid)|Get File ControlId (FHS.11)|
-|[getFileCreationDateTime](#fhsgetfilecreationdatetime)|Get File CreationDateTime (FHS.7)|
-|[getFileEncodingCharacters](#fhsgetfileencodingcharacters)|Get File EncodingCharacters (FHS.2)|
-|[getFileFieldSeparator](#fhsgetfilefieldseparator)|Get File FieldSeparator (FHS.1)|
-|[getFileHeaderComment](#fhsgetfileheadercomment)|Get File HeaderComment (FHS.10)|
-|[getFileNameId](#fhsgetfilenameid)|Get File NameId (FHS.9)|
-|[getFileRecievingApplication](#fhsgetfilerecievingapplication)|Get File RecievingApplication (FHS.5)|
-|[getFileRecievingFacility](#fhsgetfilerecievingfacility)|Get File RecievingFacility (FHS.6)|
+|[getFileControlId](#fhsgetfilecontrolid)|Get File Control Id (FHS.11)|
+|[getFileCreationDateTime](#fhsgetfilecreationdatetime)|Get File Creation Date Time (FHS.7)|
+|[getFileEncodingCharacters](#fhsgetfileencodingcharacters)|Get File Encoding Characters (FHS.2)|
+|[getFileFieldSeparator](#fhsgetfilefieldseparator)|Get File Field Separator (FHS.1)|
+|[getFileHeaderComment](#fhsgetfileheadercomment)|Get File Header Comment (FHS.10)|
+|[getFileNameId](#fhsgetfilenameid)|Get File Name Id (FHS.9)|
+|[getFileRecievingApplication](#fhsgetfilerecievingapplication)|Get File Recieving Application (FHS.5)|
+|[getFileRecievingFacility](#fhsgetfilerecievingfacility)|Get File Recieving Facility (FHS.6)|
 |[getFileSecurity](#fhsgetfilesecurity)|Get File Security (FHS.8)|
-|[getFileSendingApplication](#fhsgetfilesendingapplication)|Get File SendingApplication (FHS.3)|
-|[getFileSendingFacility](#fhsgetfilesendingfacility)|Get File SendingFacility (FHS.4)|
-|[getReferenceFileControlId](#fhsgetreferencefilecontrolid)|Get Reference FileControlId (FHS.12)|
+|[getFileSendingApplication](#fhsgetfilesendingapplication)|Get File Sending Application (FHS.3)|
+|[getFileSendingFacility](#fhsgetfilesendingfacility)|Get File Sending Facility (FHS.4)|
+|[getReferenceFileControlId](#fhsgetreferencefilecontrolid)|Get Reference File Control Id (FHS.12)|
 |[setFileControlId](#fhssetfilecontrolid)|Set File Control Id (FHS.11)|
 |[setFileCreationDateTime](#fhssetfilecreationdatetime)|Set File Creation Date Time (FHS.7)|
 |[setFileEncodingCharacters](#fhssetfileencodingcharacters)|Set File Encoding Characters (FHS.2)|
@@ -60,7 +60,7 @@ Aranyasen\HL7\Segment
 public getFileControlId (int $position)
 ```
 
-Get File ControlId (FHS.11) 
+Get File Control Id (FHS.11) 
 
  
 
@@ -87,7 +87,7 @@ Get File ControlId (FHS.11)
 public getFileCreationDateTime (int $position)
 ```
 
-Get File CreationDateTime (FHS.7) 
+Get File Creation Date Time (FHS.7) 
 
  
 
@@ -114,7 +114,7 @@ Get File CreationDateTime (FHS.7)
 public getFileEncodingCharacters (int $position)
 ```
 
-Get File EncodingCharacters (FHS.2) 
+Get File Encoding Characters (FHS.2) 
 
  
 
@@ -141,7 +141,7 @@ Get File EncodingCharacters (FHS.2)
 public getFileFieldSeparator (int $position)
 ```
 
-Get File FieldSeparator (FHS.1) 
+Get File Field Separator (FHS.1) 
 
  
 
@@ -168,7 +168,7 @@ Get File FieldSeparator (FHS.1)
 public getFileHeaderComment (int $position)
 ```
 
-Get File HeaderComment (FHS.10) 
+Get File Header Comment (FHS.10) 
 
  
 
@@ -195,7 +195,7 @@ Get File HeaderComment (FHS.10)
 public getFileNameId (int $position)
 ```
 
-Get File NameId (FHS.9) 
+Get File Name Id (FHS.9) 
 
  
 
@@ -222,7 +222,7 @@ Get File NameId (FHS.9)
 public getFileRecievingApplication (int $position)
 ```
 
-Get File RecievingApplication (FHS.5) 
+Get File Recieving Application (FHS.5) 
 
  
 
@@ -249,7 +249,7 @@ Get File RecievingApplication (FHS.5)
 public getFileRecievingFacility (int $position)
 ```
 
-Get File RecievingFacility (FHS.6) 
+Get File Recieving Facility (FHS.6) 
 
  
 
@@ -303,7 +303,7 @@ Get File Security (FHS.8)
 public getFileSendingApplication (int $position)
 ```
 
-Get File SendingApplication (FHS.3) 
+Get File Sending Application (FHS.3) 
 
  
 
@@ -330,7 +330,7 @@ Get File SendingApplication (FHS.3)
 public getFileSendingFacility (int $position)
 ```
 
-Get File SendingFacility (FHS.4) 
+Get File Sending Facility (FHS.4) 
 
  
 
@@ -357,7 +357,7 @@ Get File SendingFacility (FHS.4)
 public getReferenceFileControlId (int $position)
 ```
 
-Get Reference FileControlId (FHS.12) 
+Get Reference File Control Id (FHS.12) 
 
  
 

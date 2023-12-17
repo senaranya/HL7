@@ -228,7 +228,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Segment ActionCode (AIL.2)
+     * Get Segment Action Code (AIL.2)
      *
      * @param int $position Defaults to 2
      *
@@ -241,7 +241,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Location ResourceID (AIL.3)
+     * Get Location Resource ID (AIL.3)
      *
      * @param int $position Defaults to 3
      *
@@ -254,7 +254,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Location TypeAIL (AIL.4)
+     * Get Location Type AIL (AIL.4)
      *
      * @param int $position Defaults to 4
      *
@@ -280,7 +280,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Start DateTime (AIL.6)
+     * Get Start Date Time (AIL.6)
      *
      * @param int $position Defaults to 6
      *
@@ -293,7 +293,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Start DateTimeOffset (AIL.7)
+     * Get Start Date Time Offset (AIL.7)
      *
      * @param int $position Defaults to 7
      *
@@ -306,7 +306,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Start DateTimeOffsetUnits (AIL.8)
+     * Get Start Date Time Offset Units (AIL.8)
      *
      * @param int $position Defaults to 8
      *
@@ -345,7 +345,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Allow SubstitutionCode (AIL.11)
+     * Get Allow Substitution Code (AIL.11)
      *
      * @param int $position Defaults to 11
      *
@@ -358,7 +358,7 @@ class AIL extends Segment
     }
 
     /**
-     * Get Filler StatusCode (AIL.12)
+     * Get Filler Status Code (AIL.12)
      *
      * @param int $position Defaults to 12
      *

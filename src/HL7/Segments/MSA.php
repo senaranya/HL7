@@ -117,7 +117,7 @@ class MSA extends Segment
     }
 
     /**
-     * Get Message ControlID (MSA.2)
+     * Get Message Control ID (MSA.2)
      *
      * @param int $position Defaults to 2
      *
@@ -143,7 +143,7 @@ class MSA extends Segment
     }
 
     /**
-     * Get Expected SequenceNumber (MSA.4)
+     * Get Expected Sequence Number (MSA.4)
      *
      * @param int $position Defaults to 4
      *
@@ -156,7 +156,7 @@ class MSA extends Segment
     }
 
     /**
-     * Get Delayed AcknowledgementType (MSA.5)
+     * Get Delayed Acknowledgement Type (MSA.5)
      *
      * @param int $position Defaults to 5
      *

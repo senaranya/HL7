@@ -17,7 +17,7 @@ Aranyasen\HL7\Segment
 |[getComment](#ntegetcomment)|Get Comment (NTE.3)|
 |[getCommentType](#ntegetcommenttype)|Get Comment Type (NTE.4)|
 |[getID](#ntegetid)|Get ID (NTE.1)|
-|[getSourceOfComment](#ntegetsourceofcomment)|Get Source OfComment (NTE.2)|
+|[getSourceOfComment](#ntegetsourceofcomment)|Get Source Of Comment (NTE.2)|
 |[resetIndex](#nteresetindex)|Reset index of this segment|
 |[setComment](#ntesetcomment)|Set Comment (NTE.3)|
 |[setCommentType](#ntesetcommenttype)|Set Comment Type (NTE.4)|
@@ -151,7 +151,7 @@ Get ID (NTE.1)
 public getSourceOfComment (int $position)
 ```
 
-Get Source OfComment (NTE.2) 
+Get Source Of Comment (NTE.2) 
 
  
 

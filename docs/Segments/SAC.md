@@ -16,7 +16,7 @@ Aranyasen\HL7\Segment
 |[getAccessionIdentifier](#sacgetaccessionidentifier)|Get Accession Identifier (SAC.2)|
 |[getAdditive](#sacgetadditive)|Get Additive (SAC.27)|
 |[getArtificialBlood](#sacgetartificialblood)|Get Artificial Blood (SAC.42)|
-|[getAvailableSpecimenVolume](#sacgetavailablespecimenvolume)|Get Available SpecimenVolume (SAC.22)|
+|[getAvailableSpecimenVolume](#sacgetavailablespecimenvolume)|Get Available Specimen Volume (SAC.22)|
 |[getBarrierDelta](#sacgetbarrierdelta)|Get Barrier Delta (SAC.18)|
 |[getBottomDelta](#sacgetbottomdelta)|Get Bottom Delta (SAC.19)|
 |[getCapType](#sacgetcaptype)|Get Cap Type (SAC.26)|
@@ -25,36 +25,36 @@ Aranyasen\HL7\Segment
 |[getContainerDiameter](#sacgetcontainerdiameter)|Get Container Diameter (SAC.17)|
 |[getContainerHeight](#sacgetcontainerheight)|Get Container Height (SAC.16)|
 |[getContainerIdentifier](#sacgetcontaineridentifier)|Get Container Identifier (SAC.3)|
-|[getContainerSizeUnits](#sacgetcontainersizeunits)|Get Container SizeUnits (SAC.20)|
+|[getContainerSizeUnits](#sacgetcontainersizeunits)|Get Container Size Units (SAC.20)|
 |[getContainerStatus](#sacgetcontainerstatus)|Get Container Status (SAC.8)|
 |[getContainerVolume](#sacgetcontainervolume)|Get Container Volume (SAC.21)|
 |[getDilutionFactor](#sacgetdilutionfactor)|Get Dilution Factor (SAC.29)|
 |[getDrugInterference](#sacgetdruginterference)|Get Drug Interference (SAC.41)|
-|[getEquipmentContainerIdentifier](#sacgetequipmentcontaineridentifier)|Get Equipment ContainerIdentifier (SAC.5)|
-|[getExternalAccessionIdentifier](#sacgetexternalaccessionidentifier)|Get External AccessionIdentifier (SAC.1)|
+|[getEquipmentContainerIdentifier](#sacgetequipmentcontaineridentifier)|Get Equipment Container Identifier (SAC.5)|
+|[getExternalAccessionIdentifier](#sacgetexternalaccessionidentifier)|Get External Accession Identifier (SAC.1)|
 |[getFibrinIndex](#sacgetfibrinindex)|Get Fibrin Index (SAC.38)|
-|[getFibrinIndexUnits](#sacgetfibrinindexunits)|Get Fibrin IndexUnits (SAC.39)|
+|[getFibrinIndexUnits](#sacgetfibrinindexunits)|Get Fibrin Index Units (SAC.39)|
 |[getHemolysisIndex](#sacgethemolysisindex)|Get Hemolysis Index (SAC.32)|
-|[getHemolysisIndexUnits](#sacgethemolysisindexunits)|Get Hemolysis IndexUnits (SAC.33)|
+|[getHemolysisIndexUnits](#sacgethemolysisindexunits)|Get Hemolysis Index Units (SAC.33)|
 |[getIcterusIndex](#sacgeticterusindex)|Get Icterus Index (SAC.36)|
-|[getIcterusIndexUnits](#sacgeticterusindexunits)|Get Icterus IndexUnits (SAC.37)|
-|[getInitialSpecimenVolume](#sacgetinitialspecimenvolume)|Get Initial SpecimenVolume (SAC.23)|
+|[getIcterusIndexUnits](#sacgeticterusindexunits)|Get Icterus Index Units (SAC.37)|
+|[getInitialSpecimenVolume](#sacgetinitialspecimenvolume)|Get Initial Specimen Volume (SAC.23)|
 |[getLepemiaIndex](#sacgetlepemiaindex)|Get Lepemia Index (SAC.34)|
-|[getLepemiaIndexUnits](#sacgetlepemiaindexunits)|Get Lepemia IndexUnits (SAC.35)|
+|[getLepemiaIndexUnits](#sacgetlepemiaindexunits)|Get Lepemia Index Units (SAC.35)|
 |[getLocation](#sacgetlocation)|Get Location (SAC.15)|
-|[getOtherEnvironmentalFactors](#sacgetotherenvironmentalfactors)|Get Other EnvironmentalFactors (SAC.44)|
-|[getPositionInCarrier](#sacgetpositionincarrier)|Get Position InCarrier (SAC.11)|
-|[getPositionInTray](#sacgetpositionintray)|Get Position InTray (SAC.14)|
-|[getPrimaryContainerIdentifier](#sacgetprimarycontaineridentifier)|Get Primary ContainerIdentifier (SAC.4)|
-|[getRegistrationDateTime](#sacgetregistrationdatetime)|Get Registration DateTime (SAC.7)|
+|[getOtherEnvironmentalFactors](#sacgetotherenvironmentalfactors)|Get Other Environmental Factors (SAC.44)|
+|[getPositionInCarrier](#sacgetpositionincarrier)|Get Position In Carrier (SAC.11)|
+|[getPositionInTray](#sacgetpositionintray)|Get Position In Tray (SAC.14)|
+|[getPrimaryContainerIdentifier](#sacgetprimarycontaineridentifier)|Get Primary Container Identifier (SAC.4)|
+|[getRegistrationDateTime](#sacgetregistrationdatetime)|Get Registration Date Time (SAC.7)|
 |[getSeparatorType](#sacgetseparatortype)|Get Separator Type (SAC.25)|
-|[getSpecialHandlingCode](#sacgetspecialhandlingcode)|Get Special HandlingCode (SAC.43)|
+|[getSpecialHandlingCode](#sacgetspecialhandlingcode)|Get Special Handling Code (SAC.43)|
 |[getSpecimenComponent](#sacgetspecimencomponent)|Get Specimen Component (SAC.28)|
 |[getSpecimenSource](#sacgetspecimensource)|Get Specimen Source (SAC.6)|
-|[getSystemInducedContaminants](#sacgetsysteminducedcontaminants)|Get System InducedContaminants (SAC.40)|
+|[getSystemInducedContaminants](#sacgetsysteminducedcontaminants)|Get System Induced Contaminants (SAC.40)|
 |[getTemperature](#sacgettemperature)|Get Temperature (SAC.31)|
 |[getTrayIdentifier](#sacgettrayidentifier)|Get Tray Identifier (SAC.13)|
-|[getTrayTypeSAC](#sacgettraytypesac)|Get Tray TypeSAC (SAC.12)|
+|[getTrayTypeSAC](#sacgettraytypesac)|Get Tray Type SAC (SAC.12)|
 |[getTreatment](#sacgettreatment)|Get Treatment (SAC.30)|
 |[getVolumeUnits](#sacgetvolumeunits)|Get Volume Units (SAC.24)|
 |[resetIndex](#sacresetindex)|Reset index of this segment|
@@ -206,7 +206,7 @@ Get Artificial Blood (SAC.42)
 public getAvailableSpecimenVolume (int $position)
 ```
 
-Get Available SpecimenVolume (SAC.22) 
+Get Available Specimen Volume (SAC.22) 
 
  
 
@@ -449,7 +449,7 @@ Get Container Identifier (SAC.3)
 public getContainerSizeUnits (int $position)
 ```
 
-Get Container SizeUnits (SAC.20) 
+Get Container Size Units (SAC.20) 
 
  
 
@@ -584,7 +584,7 @@ Get Drug Interference (SAC.41)
 public getEquipmentContainerIdentifier (int $position)
 ```
 
-Get Equipment ContainerIdentifier (SAC.5) 
+Get Equipment Container Identifier (SAC.5) 
 
  
 
@@ -611,7 +611,7 @@ Get Equipment ContainerIdentifier (SAC.5)
 public getExternalAccessionIdentifier (int $position)
 ```
 
-Get External AccessionIdentifier (SAC.1) 
+Get External Accession Identifier (SAC.1) 
 
  
 
@@ -665,7 +665,7 @@ Get Fibrin Index (SAC.38)
 public getFibrinIndexUnits (int $position)
 ```
 
-Get Fibrin IndexUnits (SAC.39) 
+Get Fibrin Index Units (SAC.39) 
 
  
 
@@ -719,7 +719,7 @@ Get Hemolysis Index (SAC.32)
 public getHemolysisIndexUnits (int $position)
 ```
 
-Get Hemolysis IndexUnits (SAC.33) 
+Get Hemolysis Index Units (SAC.33) 
 
  
 
@@ -773,7 +773,7 @@ Get Icterus Index (SAC.36)
 public getIcterusIndexUnits (int $position)
 ```
 
-Get Icterus IndexUnits (SAC.37) 
+Get Icterus Index Units (SAC.37) 
 
  
 
@@ -800,7 +800,7 @@ Get Icterus IndexUnits (SAC.37)
 public getInitialSpecimenVolume (int $position)
 ```
 
-Get Initial SpecimenVolume (SAC.23) 
+Get Initial Specimen Volume (SAC.23) 
 
  
 
@@ -854,7 +854,7 @@ Get Lepemia Index (SAC.34)
 public getLepemiaIndexUnits (int $position)
 ```
 
-Get Lepemia IndexUnits (SAC.35) 
+Get Lepemia Index Units (SAC.35) 
 
  
 
@@ -908,7 +908,7 @@ Get Location (SAC.15)
 public getOtherEnvironmentalFactors (int $position)
 ```
 
-Get Other EnvironmentalFactors (SAC.44) 
+Get Other Environmental Factors (SAC.44) 
 
  
 
@@ -935,7 +935,7 @@ Get Other EnvironmentalFactors (SAC.44)
 public getPositionInCarrier (int $position)
 ```
 
-Get Position InCarrier (SAC.11) 
+Get Position In Carrier (SAC.11) 
 
  
 
@@ -962,7 +962,7 @@ Get Position InCarrier (SAC.11)
 public getPositionInTray (int $position)
 ```
 
-Get Position InTray (SAC.14) 
+Get Position In Tray (SAC.14) 
 
  
 
@@ -989,7 +989,7 @@ Get Position InTray (SAC.14)
 public getPrimaryContainerIdentifier (int $position)
 ```
 
-Get Primary ContainerIdentifier (SAC.4) 
+Get Primary Container Identifier (SAC.4) 
 
  
 
@@ -1016,7 +1016,7 @@ Get Primary ContainerIdentifier (SAC.4)
 public getRegistrationDateTime (int $position)
 ```
 
-Get Registration DateTime (SAC.7) 
+Get Registration Date Time (SAC.7) 
 
  
 
@@ -1070,7 +1070,7 @@ Get Separator Type (SAC.25)
 public getSpecialHandlingCode (int $position)
 ```
 
-Get Special HandlingCode (SAC.43) 
+Get Special Handling Code (SAC.43) 
 
  
 
@@ -1151,7 +1151,7 @@ Get Specimen Source (SAC.6)
 public getSystemInducedContaminants (int $position)
 ```
 
-Get System InducedContaminants (SAC.40) 
+Get System Induced Contaminants (SAC.40) 
 
  
 
@@ -1232,7 +1232,7 @@ Get Tray Identifier (SAC.13)
 public getTrayTypeSAC (int $position)
 ```
 
-Get Tray TypeSAC (SAC.12) 
+Get Tray Type SAC (SAC.12) 
 
  
 

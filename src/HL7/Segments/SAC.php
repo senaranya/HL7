@@ -652,7 +652,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get External AccessionIdentifier (SAC.1)
+     * Get External Accession Identifier (SAC.1)
      *
      * @param int $position Defaults to 1
      *
@@ -691,7 +691,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Primary ContainerIdentifier (SAC.4)
+     * Get Primary Container Identifier (SAC.4)
      *
      * @param int $position Defaults to 4
      *
@@ -704,7 +704,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Equipment ContainerIdentifier (SAC.5)
+     * Get Equipment Container Identifier (SAC.5)
      *
      * @param int $position Defaults to 5
      *
@@ -730,7 +730,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Registration DateTime (SAC.7)
+     * Get Registration Date Time (SAC.7)
      *
      * @param int $position Defaults to 7
      *
@@ -782,7 +782,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Position InCarrier (SAC.11)
+     * Get Position In Carrier (SAC.11)
      *
      * @param int $position Defaults to 11
      *
@@ -795,7 +795,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Tray TypeSAC (SAC.12)
+     * Get Tray Type SAC (SAC.12)
      *
      * @param int $position Defaults to 12
      *
@@ -821,7 +821,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Position InTray (SAC.14)
+     * Get Position In Tray (SAC.14)
      *
      * @param int $position Defaults to 14
      *
@@ -899,7 +899,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Container SizeUnits (SAC.20)
+     * Get Container Size Units (SAC.20)
      *
      * @param int $position Defaults to 20
      *
@@ -925,7 +925,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Available SpecimenVolume (SAC.22)
+     * Get Available Specimen Volume (SAC.22)
      *
      * @param int $position Defaults to 22
      *
@@ -938,7 +938,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Initial SpecimenVolume (SAC.23)
+     * Get Initial Specimen Volume (SAC.23)
      *
      * @param int $position Defaults to 23
      *
@@ -1068,7 +1068,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Hemolysis IndexUnits (SAC.33)
+     * Get Hemolysis Index Units (SAC.33)
      *
      * @param int $position Defaults to 33
      *
@@ -1094,7 +1094,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Lepemia IndexUnits (SAC.35)
+     * Get Lepemia Index Units (SAC.35)
      *
      * @param int $position Defaults to 35
      *
@@ -1120,7 +1120,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Icterus IndexUnits (SAC.37)
+     * Get Icterus Index Units (SAC.37)
      *
      * @param int $position Defaults to 37
      *
@@ -1146,7 +1146,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Fibrin IndexUnits (SAC.39)
+     * Get Fibrin Index Units (SAC.39)
      *
      * @param int $position Defaults to 39
      *
@@ -1159,7 +1159,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get System InducedContaminants (SAC.40)
+     * Get System Induced Contaminants (SAC.40)
      *
      * @param int $position Defaults to 40
      *
@@ -1198,7 +1198,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Special HandlingCode (SAC.43)
+     * Get Special Handling Code (SAC.43)
      *
      * @param int $position Defaults to 43
      *
@@ -1211,7 +1211,7 @@ class SAC extends Segment
     }
 
     /**
-     * Get Other EnvironmentalFactors (SAC.44)
+     * Get Other Environmental Factors (SAC.44)
      *
      * @param int $position Defaults to 44
      *

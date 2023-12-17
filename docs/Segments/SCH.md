@@ -15,29 +15,29 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[getAppointmentDuration](#schgetappointmentduration)|Get Appointment Duration (SCH.9)|
-|[getAppointmentDurationUnits](#schgetappointmentdurationunits)|Get Appointment DurationUnits (SCH.10)|
+|[getAppointmentDurationUnits](#schgetappointmentdurationunits)|Get Appointment Duration Units (SCH.10)|
 |[getAppointmentReason](#schgetappointmentreason)|Get Appointment Reason (SCH.7)|
-|[getAppointmentTimingQuantity](#schgetappointmenttimingquantity)|Get Appointment TimingQuantity (SCH.11)|
+|[getAppointmentTimingQuantity](#schgetappointmenttimingquantity)|Get Appointment Timing Quantity (SCH.11)|
 |[getAppointmentType](#schgetappointmenttype)|Get Appointment Type (SCH.8)|
 |[getEnteredbyLocation](#schgetenteredbylocation)|Get Enteredby Location (SCH.22)|
 |[getEnteredbyPerson](#schgetenteredbyperson)|Get Enteredby Person (SCH.20)|
-|[getEnteredbyPhoneNumber](#schgetenteredbyphonenumber)|Get Enteredby PhoneNumber (SCH.21)|
+|[getEnteredbyPhoneNumber](#schgetenteredbyphonenumber)|Get Enteredby Phone Number (SCH.21)|
 |[getEventReason](#schgeteventreason)|Get Event Reason (SCH.6)|
-|[getFillerAppointmentID](#schgetfillerappointmentid)|Get Filler AppointmentID (SCH.2)|
-|[getFillerContactAddress](#schgetfillercontactaddress)|Get Filler ContactAddress (SCH.18)|
-|[getFillerContactLocation](#schgetfillercontactlocation)|Get Filler ContactLocation (SCH.19)|
-|[getFillerContactPerson](#schgetfillercontactperson)|Get Filler ContactPerson (SCH.16)|
-|[getFillerContactPhoneNumber](#schgetfillercontactphonenumber)|Get Filler ContactPhoneNumber (SCH.17)|
-|[getFillerStatusCode](#schgetfillerstatuscode)|Get Filler StatusCode (SCH.25)|
+|[getFillerAppointmentID](#schgetfillerappointmentid)|Get Filler Appointment ID (SCH.2)|
+|[getFillerContactAddress](#schgetfillercontactaddress)|Get Filler Contact Address (SCH.18)|
+|[getFillerContactLocation](#schgetfillercontactlocation)|Get Filler Contact Location (SCH.19)|
+|[getFillerContactPerson](#schgetfillercontactperson)|Get Filler Contact Person (SCH.16)|
+|[getFillerContactPhoneNumber](#schgetfillercontactphonenumber)|Get Filler Contact Phone Number (SCH.17)|
+|[getFillerStatusCode](#schgetfillerstatuscode)|Get Filler Status Code (SCH.25)|
 |[getOccurrenceNumber](#schgetoccurrencenumber)|Get Occurrence Number (SCH.3)|
-|[getParentFillerAppointmentID](#schgetparentfillerappointmentid)|Get Parent FillerAppointmentID (SCH.24)|
-|[getParentPlacerAppointmentID](#schgetparentplacerappointmentid)|Get Parent PlacerAppointmentID (SCH.23)|
-|[getPlacerAppointmentID](#schgetplacerappointmentid)|Get Placer AppointmentID (SCH.1)|
-|[getPlacerContactAddress](#schgetplacercontactaddress)|Get Placer ContactAddress (SCH.14)|
-|[getPlacerContactLocation](#schgetplacercontactlocation)|Get Placer ContactLocation (SCH.15)|
-|[getPlacerContactPerson](#schgetplacercontactperson)|Get Placer ContactPerson (SCH.12)|
-|[getPlacerContactPhoneNumber](#schgetplacercontactphonenumber)|Get Placer ContactPhoneNumber (SCH.13)|
-|[getPlacerGroupNumber](#schgetplacergroupnumber)|Get Placer GroupNumber (SCH.4)|
+|[getParentFillerAppointmentID](#schgetparentfillerappointmentid)|Get Parent Filler Appointment ID (SCH.24)|
+|[getParentPlacerAppointmentID](#schgetparentplacerappointmentid)|Get Parent Placer Appointment ID (SCH.23)|
+|[getPlacerAppointmentID](#schgetplacerappointmentid)|Get Placer Appointment ID (SCH.1)|
+|[getPlacerContactAddress](#schgetplacercontactaddress)|Get Placer Contact Address (SCH.14)|
+|[getPlacerContactLocation](#schgetplacercontactlocation)|Get Placer Contact Location (SCH.15)|
+|[getPlacerContactPerson](#schgetplacercontactperson)|Get Placer Contact Person (SCH.12)|
+|[getPlacerContactPhoneNumber](#schgetplacercontactphonenumber)|Get Placer Contact Phone Number (SCH.13)|
+|[getPlacerGroupNumber](#schgetplacergroupnumber)|Get Placer Group Number (SCH.4)|
 |[getScheduleID](#schgetscheduleid)|Get Schedule ID (SCH.5)|
 |[setAppointmentDuration](#schsetappointmentduration)|Set Appointment Duration (SCH.9)|
 |[setAppointmentDurationUnits](#schsetappointmentdurationunits)|Set Appointment Duration Units (SCH.10)|
@@ -114,7 +114,7 @@ Get Appointment Duration (SCH.9)
 public getAppointmentDurationUnits (int $position)
 ```
 
-Get Appointment DurationUnits (SCH.10) 
+Get Appointment Duration Units (SCH.10) 
 
  
 
@@ -168,7 +168,7 @@ Get Appointment Reason (SCH.7)
 public getAppointmentTimingQuantity (int $position)
 ```
 
-Get Appointment TimingQuantity (SCH.11) 
+Get Appointment Timing Quantity (SCH.11) 
 
  
 
@@ -276,7 +276,7 @@ Get Enteredby Person (SCH.20)
 public getEnteredbyPhoneNumber (int $position)
 ```
 
-Get Enteredby PhoneNumber (SCH.21) 
+Get Enteredby Phone Number (SCH.21) 
 
  
 
@@ -330,7 +330,7 @@ Get Event Reason (SCH.6)
 public getFillerAppointmentID (int $position)
 ```
 
-Get Filler AppointmentID (SCH.2) 
+Get Filler Appointment ID (SCH.2) 
 
  
 
@@ -357,7 +357,7 @@ Get Filler AppointmentID (SCH.2)
 public getFillerContactAddress (int $position)
 ```
 
-Get Filler ContactAddress (SCH.18) 
+Get Filler Contact Address (SCH.18) 
 
  
 
@@ -384,7 +384,7 @@ Get Filler ContactAddress (SCH.18)
 public getFillerContactLocation (int $position)
 ```
 
-Get Filler ContactLocation (SCH.19) 
+Get Filler Contact Location (SCH.19) 
 
  
 
@@ -411,7 +411,7 @@ Get Filler ContactLocation (SCH.19)
 public getFillerContactPerson (int $position)
 ```
 
-Get Filler ContactPerson (SCH.16) 
+Get Filler Contact Person (SCH.16) 
 
  
 
@@ -438,7 +438,7 @@ Get Filler ContactPerson (SCH.16)
 public getFillerContactPhoneNumber (int $position)
 ```
 
-Get Filler ContactPhoneNumber (SCH.17) 
+Get Filler Contact Phone Number (SCH.17) 
 
  
 
@@ -465,7 +465,7 @@ Get Filler ContactPhoneNumber (SCH.17)
 public getFillerStatusCode (int $position)
 ```
 
-Get Filler StatusCode (SCH.25) 
+Get Filler Status Code (SCH.25) 
 
  
 
@@ -519,7 +519,7 @@ Get Occurrence Number (SCH.3)
 public getParentFillerAppointmentID (int $position)
 ```
 
-Get Parent FillerAppointmentID (SCH.24) 
+Get Parent Filler Appointment ID (SCH.24) 
 
  
 
@@ -546,7 +546,7 @@ Get Parent FillerAppointmentID (SCH.24)
 public getParentPlacerAppointmentID (int $position)
 ```
 
-Get Parent PlacerAppointmentID (SCH.23) 
+Get Parent Placer Appointment ID (SCH.23) 
 
  
 
@@ -573,7 +573,7 @@ Get Parent PlacerAppointmentID (SCH.23)
 public getPlacerAppointmentID (int $position)
 ```
 
-Get Placer AppointmentID (SCH.1) 
+Get Placer Appointment ID (SCH.1) 
 
  
 
@@ -600,7 +600,7 @@ Get Placer AppointmentID (SCH.1)
 public getPlacerContactAddress (int $position)
 ```
 
-Get Placer ContactAddress (SCH.14) 
+Get Placer Contact Address (SCH.14) 
 
  
 
@@ -627,7 +627,7 @@ Get Placer ContactAddress (SCH.14)
 public getPlacerContactLocation (int $position)
 ```
 
-Get Placer ContactLocation (SCH.15) 
+Get Placer Contact Location (SCH.15) 
 
  
 
@@ -654,7 +654,7 @@ Get Placer ContactLocation (SCH.15)
 public getPlacerContactPerson (int $position)
 ```
 
-Get Placer ContactPerson (SCH.12) 
+Get Placer Contact Person (SCH.12) 
 
  
 
@@ -681,7 +681,7 @@ Get Placer ContactPerson (SCH.12)
 public getPlacerContactPhoneNumber (int $position)
 ```
 
-Get Placer ContactPhoneNumber (SCH.13) 
+Get Placer Contact Phone Number (SCH.13) 
 
  
 
@@ -708,7 +708,7 @@ Get Placer ContactPhoneNumber (SCH.13)
 public getPlacerGroupNumber (int $position)
 ```
 
-Get Placer GroupNumber (SCH.4) 
+Get Placer Group Number (SCH.4) 
 
  
 

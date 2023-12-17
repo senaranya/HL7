@@ -13,8 +13,8 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getFileBatchCount](#ftsgetfilebatchcount)|Get File BatchCount (FTS.1)|
-|[getFileTrailerComment](#ftsgetfiletrailercomment)|Get File TrailerComment (FTS.2)|
+|[getFileBatchCount](#ftsgetfilebatchcount)|Get File Batch Count (FTS.1)|
+|[getFileTrailerComment](#ftsgetfiletrailercomment)|Get File Trailer Comment (FTS.2)|
 |[setFileBatchCount](#ftssetfilebatchcount)|Set File Batch Count (FTS.1)|
 |[setFileTrailerComment](#ftssetfiletrailercomment)|Set File Trailer Comment (FTS.2)|
 
@@ -40,7 +40,7 @@ Aranyasen\HL7\Segment
 public getFileBatchCount (int $position)
 ```
 
-Get File BatchCount (FTS.1) 
+Get File Batch Count (FTS.1) 
 
  
 
@@ -67,7 +67,7 @@ Get File BatchCount (FTS.1)
 public getFileTrailerComment (int $position)
 ```
 
-Get File TrailerComment (FTS.2) 
+Get File Trailer Comment (FTS.2) 
 
  
 

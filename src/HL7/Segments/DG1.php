@@ -348,7 +348,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Diagnosis DateTime (DG1.5)
+     * Get Diagnosis Date Time (DG1.5)
      *
      * @param int $position Defaults to 5
      *
@@ -374,7 +374,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Major DiagnosticCategory (DG1.7)
+     * Get Major Diagnostic Category (DG1.7)
      *
      * @param int $position Defaults to 7
      *
@@ -387,7 +387,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Diagnostic RelatedGroup (DG1.8)
+     * Get Diagnostic Related Group (DG1.8)
      *
      * @param int $position Defaults to 8
      *
@@ -413,7 +413,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get DRGGrouper ReviewCode (DG1.10)
+     * Get DRGGrouper Review Code (DG1.10)
      *
      * @param int $position Defaults to 10
      *
@@ -465,7 +465,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Grouper VersionAndType (DG1.14)
+     * Get Grouper Version And Type (DG1.14)
      *
      * @param int $position Defaults to 14
      *
@@ -530,7 +530,7 @@ class DG1 extends Segment
     }
 
     /**
-     * Get Attestation DateTime (DG1.19)
+     * Get Attestation Date Time (DG1.19)
      *
      * @param int $position Defaults to 19
      *

@@ -14,49 +14,49 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |[__destruct](#obr__destruct)||
-|[getAssistantResultInterpreter](#obrgetassistantresultinterpreter)|Get Assistant ResultInterpreter (OBR.33)|
+|[getAssistantResultInterpreter](#obrgetassistantresultinterpreter)|Get Assistant Result Interpreter (OBR.33)|
 |[getChargetoPractice](#obrgetchargetopractice)|Get Chargeto Practice (OBR.23)|
 |[getCollectionVolume](#obrgetcollectionvolume)|Get Collection Volume (OBR.9)|
 |[getCollectorIdentifier](#obrgetcollectoridentifier)|Get Collector Identifier (OBR.10)|
 |[getCollectorsComment](#obrgetcollectorscomment)|Get Collectors Comment (OBR.39)|
 |[getDangerCode](#obrgetdangercode)|Get Danger Code (OBR.12)|
-|[getDiagnosticServSectID](#obrgetdiagnosticservsectid)|Get Diagnostic ServSectID (OBR.24)|
+|[getDiagnosticServSectID](#obrgetdiagnosticservsectid)|Get Diagnostic Serv Sect ID (OBR.24)|
 |[getEscortRequired](#obrgetescortrequired)|Get Escort Required (OBR.42)|
 |[getFillerField1](#obrgetfillerfield1)|Get Filler field 1 (OBR.20)|
 |[getFillerField2](#obrgetfillerfield2)|Get Filler field 2 (OBR.21)|
-|[getFillerOrderNumber](#obrgetfillerordernumber)|Get Filler OrderNumber (OBR.3)|
+|[getFillerOrderNumber](#obrgetfillerordernumber)|Get Filler Order Number (OBR.3)|
 |[getID](#obrgetid)|Get ID (OBR.1)|
-|[getNumberofSampleContainers](#obrgetnumberofsamplecontainers)|Get Numberof SampleContainers (OBR.37)|
-|[getObservationDateTime](#obrgetobservationdatetime)|Get Observation DateTime (OBR.7)|
-|[getObservationEndDateTime](#obrgetobservationenddatetime)|Get Observation EndDateTime (OBR.8)|
-|[getOrderCallbackPhoneNumber](#obrgetordercallbackphonenumber)|Get Order CallbackPhoneNumber (OBR.17)|
+|[getNumberofSampleContainers](#obrgetnumberofsamplecontainers)|Get Numberof Sample Containers (OBR.37)|
+|[getObservationDateTime](#obrgetobservationdatetime)|Get Observation Date Time (OBR.7)|
+|[getObservationEndDateTime](#obrgetobservationenddatetime)|Get Observation End Date Time (OBR.8)|
+|[getOrderCallbackPhoneNumber](#obrgetordercallbackphonenumber)|Get Order Callback Phone Number (OBR.17)|
 |[getOrderingProvider](#obrgetorderingprovider)|Get Ordering Provider (OBR.16)|
 |[getParent](#obrgetparent)|Get Parent (OBR.29)|
 |[getParentResult](#obrgetparentresult)|Get Parent Result (OBR.26)|
-|[getPlacerOrderNumber](#obrgetplacerordernumber)|Get Placer OrderNumber (OBR.2)|
+|[getPlacerOrderNumber](#obrgetplacerordernumber)|Get Placer Order Number (OBR.2)|
 |[getPlacerfield1](#obrgetplacerfield1)|Get Placer field 1 (OBR.18)|
 |[getPlacerfield2](#obrgetplacerfield2)|Get Placer field 2 (OBR.19)|
-|[getPlannedPatientTransportComment](#obrgetplannedpatienttransportcomment)|Get Planned PatientTransportComment (OBR.43)|
-|[getPrincipalResultInterpreter](#obrgetprincipalresultinterpreter)|Get Principal ResultInterpreter (OBR.32)|
+|[getPlannedPatientTransportComment](#obrgetplannedpatienttransportcomment)|Get Planned Patient Transport Comment (OBR.43)|
+|[getPrincipalResultInterpreter](#obrgetprincipalresultinterpreter)|Get Principal Result Interpreter (OBR.32)|
 |[getPriority](#obrgetpriority)|Get Priority (OBR.5)|
 |[getQuantityTiming](#obrgetquantitytiming)|Get Quantity Timing (OBR.27)|
 |[getReasonforStudy](#obrgetreasonforstudy)|Get Reasonfor Study (OBR.31)|
-|[getRelevantClinicalInfo](#obrgetrelevantclinicalinfo)|Get Relevant ClinicalInfo (OBR.13)|
+|[getRelevantClinicalInfo](#obrgetrelevantclinicalinfo)|Get Relevant Clinical Info (OBR.13)|
 |[getRequestedDatetime](#obrgetrequesteddatetime)|Get Requested Datetime (OBR.6)|
-|[getResultCopiesTo](#obrgetresultcopiesto)|Get Result CopiesTo (OBR.28)|
+|[getResultCopiesTo](#obrgetresultcopiesto)|Get Result Copies To (OBR.28)|
 |[getResultStatus](#obrgetresultstatus)|Get Result Status (OBR.25)|
-|[getResultsRptStatusChngDateTime](#obrgetresultsrptstatuschngdatetime)|Get Results RptStatusChngDateTime (OBR.22)|
-|[getScheduledDateTime](#obrgetscheduleddatetime)|Get Scheduled DateTime (OBR.36)|
-|[getSpecimenActionCode](#obrgetspecimenactioncode)|Get Specimen ActionCode (OBR.11)|
-|[getSpecimenReceivedDateTime](#obrgetspecimenreceiveddatetime)|Get Specimen ReceivedDateTime (OBR.14)|
+|[getResultsRptStatusChngDateTime](#obrgetresultsrptstatuschngdatetime)|Get Results Rpt Status Chng Date Time (OBR.22)|
+|[getScheduledDateTime](#obrgetscheduleddatetime)|Get Scheduled Date Time (OBR.36)|
+|[getSpecimenActionCode](#obrgetspecimenactioncode)|Get Specimen Action Code (OBR.11)|
+|[getSpecimenReceivedDateTime](#obrgetspecimenreceiveddatetime)|Get Specimen Received Date Time (OBR.14)|
 |[getSpecimenSource](#obrgetspecimensource)|Get Specimen Source (OBR.15)|
 |[getTechnician](#obrgettechnician)|Get Technician (OBR.34)|
 |[getTranscriptionist](#obrgettranscriptionist)|Get Transcriptionist (OBR.35)|
 |[getTransportArranged](#obrgettransportarranged)|Get Transport Arranged (OBR.41)|
-|[getTransportArrangementResponsibility](#obrgettransportarrangementresponsibility)|Get Transport ArrangementResponsibility (OBR.40)|
-|[getTransportLogisticsofCollectedSample](#obrgettransportlogisticsofcollectedsample)|Get Transport LogisticsofCollectedSample (OBR.38)|
+|[getTransportArrangementResponsibility](#obrgettransportarrangementresponsibility)|Get Transport Arrangement Responsibility (OBR.40)|
+|[getTransportLogisticsofCollectedSample](#obrgettransportlogisticsofcollectedsample)|Get Transport Logisticsof Collected Sample (OBR.38)|
 |[getTransportationMode](#obrgettransportationmode)|Get Transportation Mode (OBR.30)|
-|[getUniversalServiceID](#obrgetuniversalserviceid)|Get Universal ServiceID (OBR.4)|
+|[getUniversalServiceID](#obrgetuniversalserviceid)|Get Universal Service ID (OBR.4)|
 |[resetIndex](#obrresetindex)|Reset index of this segment|
 |[setAssistantResultInterpreter](#obrsetassistantresultinterpreter)|Set Assistant Result Interpreter (OBR.33)|
 |[setChargetoPractice](#obrsetchargetopractice)|Set Chargeto Practice (OBR.23)|
@@ -148,7 +148,7 @@ Aranyasen\HL7\Segment
 public getAssistantResultInterpreter (int $position)
 ```
 
-Get Assistant ResultInterpreter (OBR.33) 
+Get Assistant Result Interpreter (OBR.33) 
 
  
 
@@ -310,7 +310,7 @@ Get Danger Code (OBR.12)
 public getDiagnosticServSectID (int $position)
 ```
 
-Get Diagnostic ServSectID (OBR.24) 
+Get Diagnostic Serv Sect ID (OBR.24) 
 
  
 
@@ -418,7 +418,7 @@ Get Filler field 2 (OBR.21)
 public getFillerOrderNumber (int $position)
 ```
 
-Get Filler OrderNumber (OBR.3) 
+Get Filler Order Number (OBR.3) 
 
  
 
@@ -472,7 +472,7 @@ Get ID (OBR.1)
 public getNumberofSampleContainers (int $position)
 ```
 
-Get Numberof SampleContainers (OBR.37) 
+Get Numberof Sample Containers (OBR.37) 
 
  
 
@@ -499,7 +499,7 @@ Get Numberof SampleContainers (OBR.37)
 public getObservationDateTime (int $position)
 ```
 
-Get Observation DateTime (OBR.7) 
+Get Observation Date Time (OBR.7) 
 
  
 
@@ -526,7 +526,7 @@ Get Observation DateTime (OBR.7)
 public getObservationEndDateTime (int $position)
 ```
 
-Get Observation EndDateTime (OBR.8) 
+Get Observation End Date Time (OBR.8) 
 
  
 
@@ -553,7 +553,7 @@ Get Observation EndDateTime (OBR.8)
 public getOrderCallbackPhoneNumber (int $position)
 ```
 
-Get Order CallbackPhoneNumber (OBR.17) 
+Get Order Callback Phone Number (OBR.17) 
 
  
 
@@ -661,7 +661,7 @@ Get Parent Result (OBR.26)
 public getPlacerOrderNumber (int $position)
 ```
 
-Get Placer OrderNumber (OBR.2) 
+Get Placer Order Number (OBR.2) 
 
  
 
@@ -742,7 +742,7 @@ Get Placer field 2 (OBR.19)
 public getPlannedPatientTransportComment (int $position)
 ```
 
-Get Planned PatientTransportComment (OBR.43) 
+Get Planned Patient Transport Comment (OBR.43) 
 
  
 
@@ -769,7 +769,7 @@ Get Planned PatientTransportComment (OBR.43)
 public getPrincipalResultInterpreter (int $position)
 ```
 
-Get Principal ResultInterpreter (OBR.32) 
+Get Principal Result Interpreter (OBR.32) 
 
  
 
@@ -877,7 +877,7 @@ Get Reasonfor Study (OBR.31)
 public getRelevantClinicalInfo (int $position)
 ```
 
-Get Relevant ClinicalInfo (OBR.13) 
+Get Relevant Clinical Info (OBR.13) 
 
  
 
@@ -931,7 +931,7 @@ Get Requested Datetime (OBR.6)
 public getResultCopiesTo (int $position)
 ```
 
-Get Result CopiesTo (OBR.28) 
+Get Result Copies To (OBR.28) 
 
  
 
@@ -985,7 +985,7 @@ Get Result Status (OBR.25)
 public getResultsRptStatusChngDateTime (int $position)
 ```
 
-Get Results RptStatusChngDateTime (OBR.22) 
+Get Results Rpt Status Chng Date Time (OBR.22) 
 
  
 
@@ -1012,7 +1012,7 @@ Get Results RptStatusChngDateTime (OBR.22)
 public getScheduledDateTime (int $position)
 ```
 
-Get Scheduled DateTime (OBR.36) 
+Get Scheduled Date Time (OBR.36) 
 
  
 
@@ -1039,7 +1039,7 @@ Get Scheduled DateTime (OBR.36)
 public getSpecimenActionCode (int $position)
 ```
 
-Get Specimen ActionCode (OBR.11) 
+Get Specimen Action Code (OBR.11) 
 
  
 
@@ -1066,7 +1066,7 @@ Get Specimen ActionCode (OBR.11)
 public getSpecimenReceivedDateTime (int $position)
 ```
 
-Get Specimen ReceivedDateTime (OBR.14) 
+Get Specimen Received Date Time (OBR.14) 
 
  
 
@@ -1201,7 +1201,7 @@ Get Transport Arranged (OBR.41)
 public getTransportArrangementResponsibility (int $position)
 ```
 
-Get Transport ArrangementResponsibility (OBR.40) 
+Get Transport Arrangement Responsibility (OBR.40) 
 
  
 
@@ -1228,7 +1228,7 @@ Get Transport ArrangementResponsibility (OBR.40)
 public getTransportLogisticsofCollectedSample (int $position)
 ```
 
-Get Transport LogisticsofCollectedSample (OBR.38) 
+Get Transport Logisticsof Collected Sample (OBR.38) 
 
  
 
@@ -1282,7 +1282,7 @@ Get Transportation Mode (OBR.30)
 public getUniversalServiceID (int $position)
 ```
 
-Get Universal ServiceID (OBR.4) 
+Get Universal Service ID (OBR.4) 
 
  
 

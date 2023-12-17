@@ -249,7 +249,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get Relative TimeAndUnits (TQ1.5)
+     * Get Relative Time And Units (TQ1.5)
      *
      * @param int $position Defaults to 5
      *
@@ -275,7 +275,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get Start DateTime (TQ1.7)
+     * Get Start Date Time (TQ1.7)
      *
      * @param int $position Defaults to 7
      *
@@ -288,7 +288,7 @@ class TQ1 extends Segment
     }
 
     /**
-     * Get End DateTime (TQ1.8)
+     * Get End Date Time (TQ1.8)
      *
      * @param int $position Defaults to 8
      *

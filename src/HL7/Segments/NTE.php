@@ -109,7 +109,7 @@ class NTE extends Segment
     }
 
     /**
-     * Get Source OfComment (NTE.2)
+     * Get Source Of Comment (NTE.2)
      *
      * @param int $position Defaults to 2
      *
