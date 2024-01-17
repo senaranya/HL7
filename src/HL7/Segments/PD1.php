@@ -124,107 +124,107 @@ class PD1 extends Segment
         return $this->setField($position, $value);
     }
 
-    public function getLivingDependency(int $position = 1): int|array|string|null
+    public function getLivingDependency(int $position = 1): string|null
     {
         return $this->getField($position);
     }
 
-    public function getLivingArrangement(int $position = 2): int|array|string|null
+    public function getLivingArrangement(int $position = 2): string|null
     {
         return $this->getField($position);
     }
 
-    public function getPatientPrimaryFacility(int $position = 3): int|array|string|null
+    public function getPatientPrimaryFacility(int $position = 3): array|null
     {
         return $this->getField($position);
     }
 
-    public function getPatientPrimaryCareProviderNameAndIDNo(int $position = 4): int|array|string|null
+    public function getPatientPrimaryCareProviderNameAndIDNo(int $position = 4): array|null
     {
         return $this->getField($position);
     }
 
-    public function getStudentIndicator(int $position = 5): int|array|string|null
+    public function getStudentIndicator(int $position = 5): string|null
     {
         return $this->getField($position);
     }
 
-    public function getHandicap(int $position = 6): int|array|string|null
+    public function getHandicap(int $position = 6): string|null
     {
         return $this->getField($position);
     }
 
-    public function getLivingWillCode(int $position = 7): int|array|string|null
+    public function getLivingWillCode(int $position = 7): string|null
     {
         return $this->getField($position);
     }
 
-    public function getOrganDonorCode(int $position = 8): int|array|string|null
+    public function getOrganDonorCode(int $position = 8): string|null
     {
         return $this->getField($position);
     }
 
-    public function getSeparateBill(int $position = 9): int|array|string|null
+    public function getSeparateBill(int $position = 9): string|null
     {
         return $this->getField($position);
     }
 
-    public function getDuplicatePatient(int $position = 10): int|array|string|null
+    public function getDuplicatePatient(int $position = 10): array|null
     {
         return $this->getField($position);
     }
 
-    public function getPublicityCode(int $position = 11): int|array|string|null
+    public function getPublicityCode(int $position = 11): array|null
     {
         return $this->getField($position);
     }
 
-    public function getProtectionIndicator(int $position = 12): int|array|string|null
+    public function getProtectionIndicator(int $position = 12): string|null
     {
         return $this->getField($position);
     }
 
-    public function getProtectionIndicatorEffectiveDate(int $position = 13): int|array|string|null
+    public function getProtectionIndicatorEffectiveDate(int $position = 13): string|null
     {
         return $this->getField($position);
     }
 
-    public function getPlaceOfWorship(int $position = 14): int|array|string|null
+    public function getPlaceOfWorship(int $position = 14): array|null
     {
         return $this->getField($position);
     }
 
-    public function getAdvanceDirectiveCode(int $position = 15): int|array|string|null
+    public function getAdvanceDirectiveCode(int $position = 15): array|null
     {
         return $this->getField($position);
     }
 
-    public function getImmunizationRegistryStatus(int $position = 16): int|array|string|null
+    public function getImmunizationRegistryStatus(int $position = 16): string|null
     {
         return $this->getField($position);
     }
 
-    public function getImmunizationRegistryStatusEffectiveDate(int $position = 17): int|array|string|null
+    public function getImmunizationRegistryStatusEffectiveDate(int $position = 17): string|null
     {
         return $this->getField($position);
     }
 
-    public function getPublicityCodeEffectiveDate(int $position = 18): int|array|string|null
+    public function getPublicityCodeEffectiveDate(int $position = 18): string|null
     {
         return $this->getField($position);
     }
 
-    public function getMilitaryBranch(int $position = 19): int|array|string|null
+    public function getMilitaryBranch(int $position = 19): string|null
     {
         return $this->getField($position);
     }
 
-    public function getMilitaryRankGrade(int $position = 20): int|array|string|null
+    public function getMilitaryRankGrade(int $position = 20): string|null
     {
         return $this->getField($position);
     }
 
-    public function getMilitaryStatus(int $position = 21): int|array|string|null
+    public function getMilitaryStatus(int $position = 21): string|null
     {
         return $this->getField($position);
     }
