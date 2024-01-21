@@ -21,62 +21,62 @@ class RXR extends Segment
         parent::__construct('RXR', $fields);
     }
 
-    public function setRoute($value, int $position = 1): bool
+    public function setRoute(array $value, int $position = 1): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministrationSite($value, int $position = 2): bool
+    public function setAdministrationSite(array $value, int $position = 2): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministrationDevice($value, int $position = 3): bool
+    public function setAdministrationDevice(array $value, int $position = 3): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministrationMethod($value, int $position = 4): bool
+    public function setAdministrationMethod(array $value, int $position = 4): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setRoutingInstruction($value, int $position = 5): bool
+    public function setRoutingInstruction(array $value, int $position = 5): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministrationSiteModifier($value, int $position = 6): bool
+    public function setAdministrationSiteModifier(array $value, int $position = 6): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function getRoute(int $position = 1): array|int|string|null
+    public function getRoute(int $position = 1): array
     {
         return $this->getField($position);
     }
 
-    public function getAdministrationSite(int $position = 2): array|int|string|null
+    public function getAdministrationSite(int $position = 2): array|null
     {
         return $this->getField($position);
     }
 
-    public function getAdministrationDevice(int $position = 3): array|int|string|null
+    public function getAdministrationDevice(int $position = 3): array|null
     {
         return $this->getField($position);
     }
 
-    public function getAdministrationMethod(int $position = 4): array|int|string|null
+    public function getAdministrationMethod(int $position = 4): array|null
     {
         return $this->getField($position);
     }
 
-    public function getRoutingInstruction(int $position = 5): array|int|string|null
+    public function getRoutingInstruction(int $position = 5): array|null
     {
         return $this->getField($position);
     }
 
-    public function getAdministrationSiteModifier(int $position = 6): array|int|string|null
+    public function getAdministrationSiteModifier(int $position = 6): array|null
     {
         return $this->getField($position);
     }
