@@ -19,107 +19,107 @@ class PD1 extends Segment
         parent::__construct('PD1', $fields);
     }
 
-    public function setLivingDependency($value, int $position = 1): bool
+    public function setLivingDependency(string|null $value, int $position = 1): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setLivingArrangement($value, int $position = 2): bool
+    public function setLivingArrangement(string|null $value, int $position = 2): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setPatientPrimaryFacility($value, int $position = 3): bool
+    public function setPatientPrimaryFacility(array|null $value, int $position = 3): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setPatientPrimaryCareProviderNameAndIDNo($value, int $position = 4): bool
+    public function setPatientPrimaryCareProviderNameAndIDNo(array|null $value, int $position = 4): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setStudentIndicator($value, int $position = 5): bool
+    public function setStudentIndicator(string|null $value, int $position = 5): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setHandicap($value, int $position = 6): bool
+    public function setHandicap(string|null $value, int $position = 6): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setLivingWillCode($value, int $position = 7): bool
+    public function setLivingWillCode(string|null $value, int $position = 7): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setOrganDonorCode($value, int $position = 8): bool
+    public function setOrganDonorCode(string|null $value, int $position = 8): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setSeparateBill($value, int $position = 9): bool
+    public function setSeparateBill(string|null $value, int $position = 9): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setDuplicatePatient($value, int $position = 10): bool
+    public function setDuplicatePatient(array|null $value, int $position = 10): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setPublicityCode($value, int $position = 11): bool
+    public function setPublicityCode(array|null $value, int $position = 11): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setProtectionIndicator($value, int $position = 12): bool
+    public function setProtectionIndicator(string|null $value, int $position = 12): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setProtectionIndicatorEffectiveDate($value, int $position = 13): bool
+    public function setProtectionIndicatorEffectiveDate(string|null $value, int $position = 13): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setPlaceOfWorship($value, int $position = 14): bool
+    public function setPlaceOfWorship(array|null $value, int $position = 14): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdvanceDirectiveCode($value, int $position = 15): bool
+    public function setAdvanceDirectiveCode(array|null $value, int $position = 15): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setImmunizationRegistryStatus($value, int $position = 16): bool
+    public function setImmunizationRegistryStatus(string|null $value, int $position = 16): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setImmunizationRegistryStatusEffectiveDate($value, int $position = 17): bool
+    public function setImmunizationRegistryStatusEffectiveDate(string|null $value, int $position = 17): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setPublicityCodeEffectiveDate($value, int $position = 18): bool
+    public function setPublicityCodeEffectiveDate(string|null $value, int $position = 18): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setMilitaryBranch($value, int $position = 19): bool
+    public function setMilitaryBranch(string|null $value, int $position = 19): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setMilitaryRankGrade($value, int $position = 20): bool
+    public function setMilitaryRankGrade(string|null $value, int $position = 20): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setMilitaryStatus($value, int $position = 21): bool
+    public function setMilitaryStatus(string|null $value, int $position = 21): bool
     {
         return $this->setField($position, $value);
     }
