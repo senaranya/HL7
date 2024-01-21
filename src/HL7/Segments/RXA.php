@@ -150,132 +150,132 @@ class RXA extends Segment
         return $this->setField($position, $value);
     }
 
-    public function getGiveSubIdCounter(int $position = 1): int|array|string|null
+    public function getGiveSubIdCounter(int $position = 1): int
     {
         return $this->getField($position);
     }
 
-    public function getAdministrationSubIdCounter(int $position = 2): int|array|string|null
+    public function getAdministrationSubIdCounter(int $position = 2): int
     {
         return $this->getField($position);
     }
 
-    public function getDateTimeStartAdministration(int $position = 3): int|array|string|null
+    public function getDateTimeStartAdministration(int $position = 3): string
     {
         return $this->getField($position);
     }
 
-    public function getDateTimeEndAdministration(int $position = 4): int|array|string|null
+    public function getDateTimeEndAdministration(int $position = 4): string
     {
         return $this->getField($position);
     }
 
-    public function getAdministeredCode(int $position = 5): int|array|string|null
+    public function getAdministeredCode(int $position = 5): array
     {
         return $this->getField($position);
     }
 
-    public function getAdministeredAmount(int $position = 6): int|array|string|null
+    public function getAdministeredAmount(int $position = 6): string
     {
         return $this->getField($position);
     }
 
-    public function getAdministeredUnits(int $position = 7): int|array|string|null
+    public function getAdministeredUnits(int $position = 7): array|null
     {
         return $this->getField($position);
     }
 
-    public function getAdministeredDosageForm(int $position = 8): int|array|string|null
+    public function getAdministeredDosageForm(int $position = 8): array|null
     {
         return $this->getField($position);
     }
 
-    public function getAdministrationNotes(int $position = 9): int|array|string|null
+    public function getAdministrationNotes(int $position = 9): array|null
     {
         return $this->getField($position);
     }
 
-    public function getAdministeringProvider(int $position = 10): int|array|string|null
+    public function getAdministeringProvider(int $position = 10): array|null
     {
         return $this->getField($position);
     }
 
-    public function getAdministeredAtLocation(int $position = 11): int|array|string|null
+    public function getAdministeredAtLocation(int $position = 11): array|null
     {
         return $this->getField($position);
     }
 
-    public function getAdministeredPerTimeUnit(int $position = 12): int|array|string|null
+    public function getAdministeredPerTimeUnit(int $position = 12): string|null
     {
         return $this->getField($position);
     }
 
-    public function getAdministeredStrength(int $position = 13): int|array|string|null
+    public function getAdministeredStrength(int $position = 13): string|null
     {
         return $this->getField($position);
     }
 
-    public function getAdministeredStrengthUnits(int $position = 14): int|array|string|null
+    public function getAdministeredStrengthUnits(int $position = 14): array|null
     {
         return $this->getField($position);
     }
 
-    public function getSubstanceLotNumber(int $position = 15): int|array|string|null
+    public function getSubstanceLotNumber(int $position = 15): string|null
     {
         return $this->getField($position);
     }
 
-    public function getSubstanceExpirationDate(int $position = 16): int|array|string|null
+    public function getSubstanceExpirationDate(int $position = 16): string|null
     {
         return $this->getField($position);
     }
 
-    public function getSubstanceManufacturerName(int $position = 17): int|array|string|null
+    public function getSubstanceManufacturerName(int $position = 17): array|null
     {
         return $this->getField($position);
     }
 
-    public function getSubstanceTreatmentRefusalReason(int $position = 18): int|array|string|null
+    public function getSubstanceTreatmentRefusalReason(int $position = 18): array|null
     {
         return $this->getField($position);
     }
 
-    public function getIndication(int $position = 19): int|array|string|null
+    public function getIndication(int $position = 19): array|null
     {
         return $this->getField($position);
     }
 
-    public function getCompletionStatus(int $position = 20): int|array|string|null
+    public function getCompletionStatus(int $position = 20): string|null
     {
         return $this->getField($position);
     }
 
-    public function getActionCode(int $position = 21): int|array|string|null
+    public function getActionCode(int $position = 21): string|null
     {
         return $this->getField($position);
     }
 
-    public function getSystemEntryDateTime(int $position = 22): int|array|string|null
+    public function getSystemEntryDateTime(int $position = 22): string|null
     {
         return $this->getField($position);
     }
 
-    public function getAdministeredDrugStrengthVolume(int $position = 23): int|array|string|null
+    public function getAdministeredDrugStrengthVolume(int $position = 23): string|null
     {
         return $this->getField($position);
     }
 
-    public function getAdministeredDrugStrengthVolumeUnits(int $position = 24): int|array|string|null
+    public function getAdministeredDrugStrengthVolumeUnits(int $position = 24): array|null
     {
         return $this->getField($position);
     }
 
-    public function getAdministeredBarcodeIdentifier(int $position = 25): int|array|string|null
+    public function getAdministeredBarcodeIdentifier(int $position = 25): array|null
     {
         return $this->getField($position);
     }
 
-    public function getPharmacyOrderType(int $position = 26): int|array|string|null
+    public function getPharmacyOrderType(int $position = 26): string|null
     {
         return $this->getField($position);
     }
