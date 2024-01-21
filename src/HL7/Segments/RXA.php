@@ -20,132 +20,132 @@ class RXA extends Segment
         parent::__construct('RXA', $fields);
     }
 
-    public function setGiveSubIdCounter($value, int $position = 1): bool
+    public function setGiveSubIdCounter(int $value, int $position = 1): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministrationSubIdCounter($value, int $position = 2): bool
+    public function setAdministrationSubIdCounter(int $value, int $position = 2): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setDateTimeStartAdministration($value, int $position = 3): bool
+    public function setDateTimeStartAdministration(string|array $value, int $position = 3): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setDateTimeEndAdministration($value, int $position = 4): bool
+    public function setDateTimeEndAdministration(string|array $value, int $position = 4): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministeredCode($value, int $position = 5): bool
+    public function setAdministeredCode(array $value, int $position = 5): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministeredAmount($value, int $position = 6): bool
+    public function setAdministeredAmount(string $value, int $position = 6): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministeredUnits($value, int $position = 7): bool
+    public function setAdministeredUnits(array|null $value, int $position = 7): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministeredDosageForm($value, int $position = 8): bool
+    public function setAdministeredDosageForm(array|null $value, int $position = 8): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministrationNotes($value, int $position = 9): bool
+    public function setAdministrationNotes(array|null $value, int $position = 9): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministeringProvider($value, int $position = 10): bool
+    public function setAdministeringProvider(array|null $value, int $position = 10): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministeredAtLocation($value, int $position = 11): bool
+    public function setAdministeredAtLocation(array|null $value, int $position = 11): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministeredPerTimeUnit($value, int $position = 12): bool
+    public function setAdministeredPerTimeUnit(string|null $value, int $position = 12): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministeredStrength($value, int $position = 13): bool
+    public function setAdministeredStrength(string|null $value, int $position = 13): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministeredStrengthUnits($value, int $position = 14): bool
+    public function setAdministeredStrengthUnits(array|null $value, int $position = 14): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setSubstanceLotNumber($value, int $position = 15): bool
+    public function setSubstanceLotNumber(string|null $value, int $position = 15): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setSubstanceExpirationDate($value, int $position = 16): bool
+    public function setSubstanceExpirationDate(string|array|null $value, int $position = 16): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setSubstanceManufacturerName($value, int $position = 17): bool
+    public function setSubstanceManufacturerName(array|null $value, int $position = 17): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setSubstanceTreatmentRefusalReason($value, int $position = 18): bool
+    public function setSubstanceTreatmentRefusalReason(array|null $value, int $position = 18): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setIndication($value, int $position = 19): bool
+    public function setIndication(array|null $value, int $position = 19): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setCompletionStatus($value, int $position = 20): bool
+    public function setCompletionStatus(string|null $value, int $position = 20): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setActionCode($value, int $position = 21): bool
+    public function setActionCode(string|null $value, int $position = 21): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setSystemEntryDateTime($value, int $position = 22): bool
+    public function setSystemEntryDateTime(string|array|null $value, int $position = 22): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministeredDrugStrengthVolume($value, int $position = 23): bool
+    public function setAdministeredDrugStrengthVolume(string|null $value, int $position = 23): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministeredDrugStrengthVolumeUnits($value, int $position = 24): bool
+    public function setAdministeredDrugStrengthVolumeUnits(array|null $value, int $position = 24): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAdministeredBarcodeIdentifier($value, int $position = 25): bool
+    public function setAdministeredBarcodeIdentifier(array|null $value, int $position = 25): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setPharmacyOrderType($value, int $position = 26): bool
+    public function setPharmacyOrderType(string|null $value, int $position = 26): bool
     {
         return $this->setField($position, $value);
     }
@@ -160,12 +160,12 @@ class RXA extends Segment
         return $this->getField($position);
     }
 
-    public function getDateTimeStartAdministration(int $position = 3): string
+    public function getDateTimeStartAdministration(int $position = 3): string|array
     {
         return $this->getField($position);
     }
 
-    public function getDateTimeEndAdministration(int $position = 4): string
+    public function getDateTimeEndAdministration(int $position = 4): string|array
     {
         return $this->getField($position);
     }
@@ -225,7 +225,7 @@ class RXA extends Segment
         return $this->getField($position);
     }
 
-    public function getSubstanceExpirationDate(int $position = 16): string|null
+    public function getSubstanceExpirationDate(int $position = 16): string|array|null
     {
         return $this->getField($position);
     }
@@ -255,7 +255,7 @@ class RXA extends Segment
         return $this->getField($position);
     }
 
-    public function getSystemEntryDateTime(int $position = 22): string|null
+    public function getSystemEntryDateTime(int $position = 22): string|array|null
     {
         return $this->getField($position);
     }
