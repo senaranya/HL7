@@ -51,7 +51,7 @@ class PID extends Segment
 
     /**
      * Patient ID (Internal ID)
-     * @param string $value
+     * @param string|array $value
      */
     public function setPatientIdentifierList($value, int $position = 3): bool
     {
