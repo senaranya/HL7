@@ -128,26 +128,23 @@ class MSH extends Segment
      *
      * Sets message type to MSH segment.
      *
-     * If trigger event is already set, then it is preserved
+     * Note: If trigger event is already set, then it is preserved
      *
-     * Example:
+     * Example: If field value is ORU^R01 and you call $msh->setMessageType('ORM'), then the new field value will be
+     * ORM^R01. If it was empty then the new value will be just ORM.
      *
-     * If field value is ORU^R01 and you call
-     *
-     * ```
-     * $msh->setMessageType('ORM');
-     * ```
-     *
-     * Then the new field value will be ORM^R01.
-     * If it was empty then the new value will be just ORM.
-     *
-     * @param string $value
+     * Ref: https://hl7-definition.caristix.com/v2/HL7v2.5/Fields/MSH.9
+     * @param string|array<int, string> $value
      */
     public function setMessageType($value, int $position = 9): bool
     {
         $typeField = $this->getField($position);
-        if (is_array($typeField) && !empty($typeField[1])) {
-            $value = [$value, $typeField[1]];
+        if (is_array($typeField)) {
+            if (!empty($typeField[2])) {
+                $value = [$value, $typeField[1], $typeField[2]];
+            } elseif (!empty($typeField[1])) {
+                $value = [$value, $typeField[1]];
+            }
         }
         return $this->setField($position, $value);
     }
