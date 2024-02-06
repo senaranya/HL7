@@ -18,15 +18,27 @@ The segment separator defaults to \015. To change this, set the global variable 
 |------|-------------|
 |[__construct](#message__construct)|Constructor for Message. Consider using the HL7 factory to obtain a message instead.|
 |[addSegment](#messageaddsegment)|Append a segment to the end of the message|
+|[getFirstSegmentInstance](#messagegetfirstsegmentinstance)|Return the first segment with given name in the message|
 |[getSegmentAsString](#messagegetsegmentasstring)|Get the segment identified by index as string, using the messages separators.|
 |[getSegmentByIndex](#messagegetsegmentbyindex)|Return the segment specified by $index.|
 |[getSegmentFieldAsString](#messagegetsegmentfieldasstring)|Get the field identified by $fieldIndex from segment $segmentIndex.|
+|[getSegmentIndex](#messagegetsegmentindex)||
 |[getSegments](#messagegetsegments)|Return an array containing all segments in the right order.|
 |[getSegmentsByName](#messagegetsegmentsbyname)|Return an array of all segments with the given name|
+|[hasSegment](#messagehassegment)|Check if given segment is present in the message object|
 |[insertSegment](#messageinsertsegment)|Insert a segment.|
+|[isAdt](#messageisadt)||
+|[isEmpty](#messageisempty)||
+|[isOrm](#messageisorm)||
+|[isOru](#messageisoru)||
+|[isSiu](#messageissiu)||
+|[removeSegment](#messageremovesegment)||
 |[removeSegmentByIndex](#messageremovesegmentbyindex)|Remove the segment indexed by $index.|
+|[removeSegmentsByName](#messageremovesegmentsbyname)|Remove given segment|
+|[resetSegmentIndices](#messageresetsegmentindices)|Reset index attribute of each given segment, so when those are added the indices start from 1|
 |[segmentToString](#messagesegmenttostring)|Convert Segment object to string|
 |[setSegment](#messagesetsegment)|Set the segment on index.|
+|[toFile](#messagetofile)|Write HL7 to a file|
 |[toString](#messagetostring)|Return a string representation of this message.|
 
 
@@ -37,7 +49,7 @@ The segment separator defaults to \015. To change this, set the global variable 
 **Description**
 
 ```php
-public __construct (string $msgStr, array $hl7Globals)
+public __construct (string|null $msgStr, array|null $hl7Globals, bool $keepEmptySubFields, bool $resetIndices, bool $autoIncrementIndices, bool|null $doNotSplitRepetition)
 ```
 
 Constructor for Message. Consider using the HL7 factory to obtain a message instead. 
@@ -56,12 +68,29 @@ If the message couldn't be created, for example due to a erroneous HL7 message s
 
 **Parameters**
 
-* `(string) $msgStr`
-* `(array) $hl7Globals`
+* `(string|null) $msgStr`
+* `(array|null) $hl7Globals`
+: Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']  
+* `(bool) $keepEmptySubFields`
+: Set this to true to retain empty sub-fields  
+* `(bool) $resetIndices`
+: Reset Indices of each segment to 1.  
+* `(bool) $autoIncrementIndices`
+: True: auto-increment for each instance of same segment.  
+* `(bool|null) $doNotSplitRepetition`
+: If true, repeated segments will be in single array instead of sub-arrays.  
+Note: Since this is non-standard, it may be removed in future!  
 
 **Return Values**
 
 `void`
+
+
+**Throws Exceptions**
+
+
+`\HL7Exception`
+
 
 <hr />
 
@@ -71,7 +100,7 @@ If the message couldn't be created, for example due to a erroneous HL7 message s
 **Description**
 
 ```php
-public addSegment (\Segment $segment)
+public addSegment (void)
 ```
 
 Append a segment to the end of the message 
@@ -80,11 +109,36 @@ Append a segment to the end of the message
 
 **Parameters**
 
-* `(\Segment) $segment`
+`This function has no parameters.`
 
 **Return Values**
 
-`bool`
+`void`
+
+
+<hr />
+
+
+### Message::getFirstSegmentInstance  
+
+**Description**
+
+```php
+public getFirstSegmentInstance (void)
+```
+
+Return the first segment with given name in the message 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`mixed|null`
+
 
 
 
@@ -114,6 +168,7 @@ Get the segment identified by index as string, using the messages separators.
 
 > String representation of segment
 
+
 <hr />
 
 
@@ -136,8 +191,7 @@ Note: Segment count within the message starts at 0.
 
 **Return Values**
 
-`\Segment`
-
+`void`
 
 
 <hr />
@@ -164,9 +218,34 @@ Returns empty string if field is not set.
 
 **Return Values**
 
-`mixed`
+`null|string`
 
 > String representation of field
+
+
+<hr />
+
+
+### Message::getSegmentIndex  
+
+**Description**
+
+```php
+ getSegmentIndex (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -192,6 +271,7 @@ Return an array containing all segments in the right order.
 `array`
 
 > List of all segments
+
 
 <hr />
 
@@ -219,6 +299,31 @@ Return an array of all segments with the given name
 
 > List of segments identified by name
 
+
+<hr />
+
+
+### Message::hasSegment  
+
+**Description**
+
+```php
+public hasSegment (void)
+```
+
+Check if given segment is present in the message object 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
 <hr />
 
 
@@ -227,7 +332,7 @@ Return an array of all segments with the given name
 **Description**
 
 ```php
-public insertSegment (\Segment $segment, null|int $index)
+public insertSegment (null|int $index)
 ```
 
 Insert a segment. 
@@ -236,13 +341,163 @@ Insert a segment.
 
 **Parameters**
 
-* `(\Segment) $segment`
 * `(null|int) $index`
 : Index where segment is inserted  
 
 **Return Values**
 
 `void`
+
+
+**Throws Exceptions**
+
+
+`\InvalidArgumentException`
+
+
+<hr />
+
+
+### Message::isAdt  
+
+**Description**
+
+```php
+ isAdt (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### Message::isEmpty  
+
+**Description**
+
+```php
+ isEmpty (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### Message::isOrm  
+
+**Description**
+
+```php
+ isOrm (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### Message::isOru  
+
+**Description**
+
+```php
+ isOru (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### Message::isSiu  
+
+**Description**
+
+```php
+ isSiu (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### Message::removeSegment  
+
+**Description**
+
+```php
+ removeSegment (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -267,8 +522,57 @@ after this one will be moved one index up.
 
 **Return Values**
 
-`boolean`
+`void`
 
+
+<hr />
+
+
+### Message::removeSegmentsByName  
+
+**Description**
+
+```php
+public removeSegmentsByName (void)
+```
+
+Remove given segment 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`int`
+
+> Count of segments removed
+
+
+<hr />
+
+
+### Message::resetSegmentIndices  
+
+**Description**
+
+```php
+public resetSegmentIndices (void)
+```
+
+Reset index attribute of each given segment, so when those are added the indices start from 1 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
 
 
 <hr />
@@ -279,7 +583,7 @@ after this one will be moved one index up.
 **Description**
 
 ```php
-public segmentToString ( $seg)
+public segmentToString (void)
 ```
 
 Convert Segment object to string 
@@ -288,12 +592,11 @@ Convert Segment object to string
 
 **Parameters**
 
-* `() $seg`
+`This function has no parameters.`
 
 **Return Values**
 
-`string`
-
+`void`
 
 
 <hr />
@@ -304,7 +607,7 @@ Convert Segment object to string
 **Description**
 
 ```php
-public setSegment (\Segment $segment, int $index)
+public setSegment (int $index)
 ```
 
 Set the segment on index. 
@@ -314,14 +617,48 @@ control characters and hl7 version, based on MSH(1), MSH(2) and MSH(12).
 
 **Parameters**
 
-* `(\Segment) $segment`
 * `(int) $index`
 : Index where segment is set  
 
 **Return Values**
 
-`boolean`
+`void`
 
+
+**Throws Exceptions**
+
+
+`\InvalidArgumentException`
+
+
+<hr />
+
+
+### Message::toFile  
+
+**Description**
+
+```php
+public toFile (void)
+```
+
+Write HL7 to a file 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+**Throws Exceptions**
+
+
+`\HL7Exception`
 
 
 <hr />
@@ -332,7 +669,7 @@ control characters and hl7 version, based on MSH(1), MSH(2) and MSH(12).
 **Description**
 
 ```php
-public toString (boolean $pretty)
+public toString (bool $pretty)
 ```
 
 Return a string representation of this message. 
@@ -342,7 +679,7 @@ argument as some true value. This will not use the default segment separator, bu
 
 **Parameters**
 
-* `(boolean) $pretty`
+* `(bool) $pretty`
 : Whether to use \n as separator or default (\r).  
 
 **Return Values**
@@ -350,6 +687,13 @@ argument as some true value. This will not use the default segment separator, bu
 `mixed`
 
 > String representation of HL7 message
+
+
+**Throws Exceptions**
+
+
+`\HL7Exception`
+
 
 <hr />
 

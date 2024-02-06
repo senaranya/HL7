@@ -1,23 +1,36 @@
 <?php
 
 use Aranyasen\HL7;
-use Aranyasen\HL7\Segments\PV1;
-use Aranyasen\HL7\Segments\ORC;
-use Aranyasen\HL7\Segments\OBX;
-use Aranyasen\HL7\Segments\OBR;
-use Aranyasen\HL7\Segments\DG1;
-use Aranyasen\HL7\Segments\NTE;
-use Aranyasen\HL7\Segments\IN3;
-use Aranyasen\HL7\Segments\IN1;
-use Aranyasen\HL7\Segments\PID;
-use Aranyasen\HL7\Segments\MSH;
-use Aranyasen\HL7\Segments\EVN;
-use Aranyasen\HL7\Segments\EQU;
-use Aranyasen\HL7\Segments\SAC;
-use Aranyasen\HL7\Segment;
-use Aranyasen\HL7\Messages\ACK;
-use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Connection;
+use Aranyasen\HL7\Message;
+use Aranyasen\HL7\Messages\ACK;
+use Aranyasen\HL7\Segment;
+use Aranyasen\HL7\Segments\AIG;
+use Aranyasen\HL7\Segments\AIL;
+use Aranyasen\HL7\Segments\AIP;
+use Aranyasen\HL7\Segments\DG1;
+use Aranyasen\HL7\Segments\EQU;
+use Aranyasen\HL7\Segments\EVN;
+use Aranyasen\HL7\Segments\FHS;
+use Aranyasen\HL7\Segments\FTS;
+use Aranyasen\HL7\Segments\GT1;
+use Aranyasen\HL7\Segments\IN1;
+use Aranyasen\HL7\Segments\IN3;
+use Aranyasen\HL7\Segments\MRG;
+use Aranyasen\HL7\Segments\MSA;
+use Aranyasen\HL7\Segments\MSH;
+use Aranyasen\HL7\Segments\NK1;
+use Aranyasen\HL7\Segments\NTE;
+use Aranyasen\HL7\Segments\OBR;
+use Aranyasen\HL7\Segments\OBX;
+use Aranyasen\HL7\Segments\ORC;
+use Aranyasen\HL7\Segments\PID;
+use Aranyasen\HL7\Segments\PV1;
+use Aranyasen\HL7\Segments\PV2;
+use Aranyasen\HL7\Segments\RGS;
+use Aranyasen\HL7\Segments\SAC;
+use Aranyasen\HL7\Segments\SCH;
+use Aranyasen\HL7\Segments\TQ1;
 
 return (object)[
     'rootNamespace' => HL7::class,
@@ -28,18 +41,31 @@ return (object)[
         Message::class,
         ACK::class,
         Segment::class,
-        MSH::class,
-        PID::class,
+        AIG::class,
+        AIL::class,
+        AIP::class,
+        DG1::class,
+        EQU::class,
+        EVN::class,
+        FHS::class,
+        FTS::class,
+        GT1::class,
         IN1::class,
         IN3::class,
+        MRG::class,
+        MSA::class,
+        MSH::class,
+        NK1::class,
         NTE::class,
-        DG1::class,
         OBR::class,
         OBX::class,
         ORC::class,
+        PID::class,
         PV1::class,
-        EVN::class,
-        EQU::class,
+        PV2::class,
+        RGS::class,
         SAC::class,
+        SCH::class,
+        TQ1::class,
     ],
 ];
