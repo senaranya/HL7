@@ -62,6 +62,7 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -75,7 +76,7 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
-public getDateTimeOfMessage (void)
+ getDateTimeOfMessage (void)
 ```
 
  
@@ -89,6 +90,7 @@ public getDateTimeOfMessage (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -98,7 +100,7 @@ public getDateTimeOfMessage (void)
 **Description**
 
 ```php
-public getMessageControlId (void)
+ getMessageControlId (void)
 ```
 
  
@@ -113,6 +115,7 @@ public getMessageControlId (void)
 
 `void`
 
+
 <hr />
 
 
@@ -121,7 +124,7 @@ public getMessageControlId (void)
 **Description**
 
 ```php
-public getMessageType (int $position)
+public getMessageType (void)
 ```
 
 ORM / ORU etc. 
@@ -130,12 +133,11 @@ ORM / ORU etc.
 
 **Parameters**
 
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`string`
-
+`void`
 
 
 <hr />
@@ -146,7 +148,7 @@ ORM / ORU etc.
 **Description**
 
 ```php
-public getProcessingId (void)
+ getProcessingId (void)
 ```
 
  
@@ -160,6 +162,7 @@ public getProcessingId (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -169,7 +172,7 @@ public getProcessingId (void)
 **Description**
 
 ```php
-public getReceivingApplication (void)
+ getReceivingApplication (void)
 ```
 
  
@@ -183,6 +186,7 @@ public getReceivingApplication (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -192,7 +196,7 @@ public getReceivingApplication (void)
 **Description**
 
 ```php
-public getReceivingFacility (void)
+ getReceivingFacility (void)
 ```
 
  
@@ -206,6 +210,7 @@ public getReceivingFacility (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -215,7 +220,7 @@ public getReceivingFacility (void)
 **Description**
 
 ```php
-public getSendingApplication (void)
+ getSendingApplication (void)
 ```
 
  
@@ -229,6 +234,7 @@ public getSendingApplication (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -238,7 +244,7 @@ public getSendingApplication (void)
 **Description**
 
 ```php
-public getSendingFacility (void)
+ getSendingFacility (void)
 ```
 
  
@@ -252,6 +258,7 @@ public getSendingFacility (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -261,7 +268,7 @@ public getSendingFacility (void)
 **Description**
 
 ```php
-public getTriggerEvent (void)
+ getTriggerEvent (void)
 ```
 
  
@@ -276,6 +283,7 @@ public getTriggerEvent (void)
 
 `void`
 
+
 <hr />
 
 
@@ -284,7 +292,7 @@ public getTriggerEvent (void)
 **Description**
 
 ```php
-public getVersionId (int $position)
+public getVersionId (void)
 ```
 
 Get HL7 version, e.g. 2.1, 2.3, 3.0 etc. 
@@ -293,12 +301,11 @@ Get HL7 version, e.g. 2.1, 2.3, 3.0 etc.
 
 **Parameters**
 
-* `(int) $position`
+`This function has no parameters.`
 
 **Return Values**
 
-`array|null|string`
-
+`void`
 
 
 <hr />
@@ -309,7 +316,7 @@ Get HL7 version, e.g. 2.1, 2.3, 3.0 etc.
 **Description**
 
 ```php
-public setAcceptAcknowledgementType (void)
+ setAcceptAcknowledgementType (void)
 ```
 
  
@@ -323,6 +330,7 @@ public setAcceptAcknowledgementType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -332,7 +340,7 @@ public setAcceptAcknowledgementType (void)
 **Description**
 
 ```php
-public setApplicationAcknowledgementType (void)
+ setApplicationAcknowledgementType (void)
 ```
 
  
@@ -346,6 +354,7 @@ public setApplicationAcknowledgementType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -355,7 +364,7 @@ public setApplicationAcknowledgementType (void)
 **Description**
 
 ```php
-public setCharacterSet (void)
+ setCharacterSet (void)
 ```
 
  
@@ -369,6 +378,7 @@ public setCharacterSet (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -378,7 +388,7 @@ public setCharacterSet (void)
 **Description**
 
 ```php
-public setContinuationPointer (void)
+ setContinuationPointer (void)
 ```
 
  
@@ -392,6 +402,7 @@ public setContinuationPointer (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -401,7 +412,7 @@ public setContinuationPointer (void)
 **Description**
 
 ```php
-public setCountryCode (void)
+ setCountryCode (void)
 ```
 
  
@@ -415,6 +426,7 @@ public setCountryCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -424,7 +436,7 @@ public setCountryCode (void)
 **Description**
 
 ```php
-public setDateTimeOfMessage (void)
+ setDateTimeOfMessage (void)
 ```
 
  
@@ -438,6 +450,7 @@ public setDateTimeOfMessage (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -447,7 +460,7 @@ public setDateTimeOfMessage (void)
 **Description**
 
 ```php
-public setMessageControlId (void)
+ setMessageControlId (void)
 ```
 
  
@@ -462,6 +475,7 @@ public setMessageControlId (void)
 
 `void`
 
+
 <hr />
 
 
@@ -470,7 +484,7 @@ public setMessageControlId (void)
 **Description**
 
 ```php
-public setMessageType (string $value, int $position)
+public setMessageType (string $value)
 ```
 
 Sets message type to MSH segment. 
@@ -491,12 +505,10 @@ If it was empty then the new value will be just ORM.
 **Parameters**
 
 * `(string) $value`
-* `(int) $position`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -507,7 +519,7 @@ If it was empty then the new value will be just ORM.
 **Description**
 
 ```php
-public setPrincipalLanguage (void)
+ setPrincipalLanguage (void)
 ```
 
  
@@ -521,6 +533,7 @@ public setPrincipalLanguage (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -530,7 +543,7 @@ public setPrincipalLanguage (void)
 **Description**
 
 ```php
-public setProcessingId (void)
+ setProcessingId (void)
 ```
 
  
@@ -544,6 +557,7 @@ public setProcessingId (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -553,7 +567,7 @@ public setProcessingId (void)
 **Description**
 
 ```php
-public setReceivingApplication (void)
+ setReceivingApplication (void)
 ```
 
  
@@ -567,6 +581,7 @@ public setReceivingApplication (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -576,7 +591,7 @@ public setReceivingApplication (void)
 **Description**
 
 ```php
-public setReceivingFacility (void)
+ setReceivingFacility (void)
 ```
 
  
@@ -590,6 +605,7 @@ public setReceivingFacility (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -599,7 +615,7 @@ public setReceivingFacility (void)
 **Description**
 
 ```php
-public setSecurity (void)
+ setSecurity (void)
 ```
 
  
@@ -613,6 +629,7 @@ public setSecurity (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -622,7 +639,7 @@ public setSecurity (void)
 **Description**
 
 ```php
-public setSendingApplication (void)
+ setSendingApplication (void)
 ```
 
  
@@ -636,6 +653,7 @@ public setSendingApplication (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -645,7 +663,7 @@ public setSendingApplication (void)
 **Description**
 
 ```php
-public setSendingFacility (void)
+ setSendingFacility (void)
 ```
 
  
@@ -659,6 +677,7 @@ public setSendingFacility (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -668,7 +687,7 @@ public setSendingFacility (void)
 **Description**
 
 ```php
-public setSequenceNumber (void)
+ setSequenceNumber (void)
 ```
 
  
@@ -683,6 +702,7 @@ public setSequenceNumber (void)
 
 `void`
 
+
 <hr />
 
 
@@ -691,7 +711,7 @@ public setSequenceNumber (void)
 **Description**
 
 ```php
-public setTriggerEvent (string $value, int $position)
+public setTriggerEvent (string $value)
 ```
 
 Sets trigger event to MSH segment. 
@@ -712,12 +732,10 @@ If trigger event was not set then it will set the new value.
 **Parameters**
 
 * `(string) $value`
-* `(int) $position`
 
 **Return Values**
 
-`bool`
-
+`void`
 
 
 <hr />
@@ -728,7 +746,7 @@ If trigger event was not set then it will set the new value.
 **Description**
 
 ```php
-public setVersionId (void)
+ setVersionId (void)
 ```
 
  
@@ -742,6 +760,7 @@ public setVersionId (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 

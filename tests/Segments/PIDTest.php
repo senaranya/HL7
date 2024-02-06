@@ -8,7 +8,6 @@ use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Segments\PID;
 use Aranyasen\HL7\Tests\TestCase;
-use InvalidArgumentException;
 
 class PIDTest extends TestCase
 {
@@ -32,7 +31,7 @@ class PIDTest extends TestCase
     public function PID_8_should_not_accept_non_standard_values_for_sex(string $invalidSexValue): void
     {
         $pidSegment = (new PID());
-        $this->expectException(InvalidArgumentException::class);
+        $this->expectException(HL7Exception::class);
         $this->expectExceptionMessage("Sex should one of 'A', 'F', 'M', 'N', 'O' or 'U'. Given: '$invalidSexValue'");
         $pidSegment->setSex($invalidSexValue);
         self::assertEmpty($pidSegment->getSex(), "Sex should not have been set with value: $invalidSexValue");
