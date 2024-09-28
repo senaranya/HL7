@@ -17,13 +17,13 @@ trait MessageHelpersTrait
      */
     public function getSegmentAsString(int $index): ?string
     {
-        $seg = $this->getSegmentByIndex($index);
+        $segment = $this->getSegmentByIndex($index);
 
-        if ($seg === null) {
+        if ($segment === null) {
             return null;
         }
 
-        return $this->segmentToString($seg);
+        return $this->segmentToString($segment);
     }
 
     /**
@@ -118,6 +118,22 @@ trait MessageHelpersTrait
     }
 
     /**
+     * Check if given segment is present in the message object by class name
+     */
+    public function hasSegmentOfClass(string $segmentClass): bool
+    {
+        return count($this->getSegmentsByClass($segmentClass)) > 0;
+    }
+
+    /**
+     * Check if given segment is present in the message object by class name
+     */
+    public function hasSegmentByClass(string $segmentClass): bool
+    {
+        return count($this->getSegmentsByClass($segmentClass)) > 0;
+    }
+
+    /**
      * Return the first segment with given name in the message
      *
      * @return mixed|null
@@ -128,6 +144,19 @@ trait MessageHelpersTrait
             return null;
         }
         return $this->getSegmentsByName($segment)[0];
+    }
+
+    /**
+     * Return the first segment of the given class in the message
+     *
+     * @return mixed|null
+     */
+    public function getFirstSegmentInstanceByClass(string $segmentClass)
+    {
+        if (!$this->hasSegmentOfClass($segmentClass)) {
+            return null;
+        }
+        return $this->getSegmentsByClass($segmentClass)[0];
     }
 
     /**
@@ -145,9 +174,9 @@ trait MessageHelpersTrait
 
         $segments = $this->getSegmentsByName($segment->getName());
         $index = 1;
-        /** @var Segment $seg */
-        foreach ($segments as $seg) {
-            $seg->setField(1, $index++);
+        /** @var Segment $segment */
+        foreach ($segments as $segment) {
+            $segment->setField(1, $index++);
         }
     }
 
