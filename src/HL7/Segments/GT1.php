@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Aranyasen\HL7\Segments;
 
 use Aranyasen\HL7\Segment;
+use InvalidArgumentException;
 
 /**
  * GT1 segment class

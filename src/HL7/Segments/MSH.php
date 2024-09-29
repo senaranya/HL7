@@ -79,13 +79,13 @@ class MSH extends Segment
      * @param int $index Index of field
      * @param string $value
      */
-    public function setField(int $index, $value = ''): bool
+    public function setField(int $index, string|int|array|null $value = ''): bool
     {
-        if (($index === 1) && strlen($value) !== 1) {
+        if (($index === 1) && (!is_string($value) || strlen($value) !== 1)) {
             return false;
         }
 
-        if (($index === 2) && strlen($value) !== 4) {
+        if (($index === 2) && (!is_string($value) || strlen($value) !== 4)) {
             return false;
         }
 
