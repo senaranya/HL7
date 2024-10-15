@@ -8,6 +8,7 @@ use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7;
 use Aranyasen\HL7\Segments\PID;
 use DMS\PHPUnitExtensions\ArraySubset\Assert;
+use Exception;
 
 class HL7Test extends TestCase
 {
