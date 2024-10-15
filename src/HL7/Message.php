@@ -187,13 +187,35 @@ class Message
     {
         $segmentsByName = [];
 
-        foreach ($this->segments as $seg) {
-            if ($seg->getName() === $name) {
-                $segmentsByName[] = $seg;
+        foreach ($this->segments as $segment) {
+            if ($segment->getName() === $name) {
+                $segmentsByName[] = $segment;
             }
         }
 
         return $segmentsByName;
+    }
+
+    /**
+     * Return an array of all segments with the given subclass of Segment
+     *
+     * @param string $name Segment class
+     * @return array List of segments identified by class
+     */
+    public function getSegmentsByClass(string $segmentClass): array
+    {
+        if (!is_subclass_of($segmentClass, Segment::class)) {
+            throw new HL7Exception("$segmentClass is not a subclass of " . Segment::class);
+        }
+        $segmentsByClass = [];
+
+        foreach ($this->segments as $segment) {
+            if ($segment instanceof $segmentClass) {
+                $segmentsByClass[] = $segment;
+            }
+        }
+
+        return $segmentsByClass;
     }
 
     /**
@@ -222,6 +244,24 @@ class Message
     {
         $count = 0;
         foreach ($this->getSegmentsByName($segmentName) as $segment) {
+            $this->removeSegmentByIndex($this->getSegmentIndex($segment));
+            $count++;
+        }
+        return $count;
+    }
+
+    /**
+     * Remove given segment
+     *
+     * @return int Count of segments removed
+     */
+    public function removeSegmentsByClass(string $segmentClass): int
+    {
+        if (!is_subclass_of($segmentClass, Segment::class)) {
+            throw new HL7Exception("$segmentClass is not a subclass of " . Segment::class);
+        }
+        $count = 0;
+        foreach ($this->getSegmentsByClass($segmentClass) as $segment) {
             $this->removeSegmentByIndex($this->getSegmentIndex($segment));
             $count++;
         }
@@ -323,11 +363,11 @@ class Message
     /**
      * Convert Segment object to string
      */
-    public function segmentToString(Segment $seg): string
+    public function segmentToString(Segment $segment): string
     {
-        $segmentName = $seg->getName();
+        $segmentName = $segment->getName();
         $segmentString = $segmentName . $this->fieldSeparator;
-        $fields = $seg->getFields(($segmentName === 'MSH' ? 2 : 1));
+        $fields = $segment->getFields(($segmentName === 'MSH' ? 2 : 1));
 
         foreach ($fields as $field) {
             if (is_array($field)) {
