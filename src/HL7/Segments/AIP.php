@@ -27,7 +27,7 @@ class AIP extends Segment
      */
     protected static $setId = 1;
 
-    public function __construct(array $fields = null)
+    public function __construct(?array $fields = null)
     {
         parent::__construct('AIP', $fields);
         $this->setID($this::$setId++);

@@ -12,7 +12,7 @@ use Aranyasen\HL7\Segment;
  */
 class ORC extends Segment
 {
-    public function __construct(array $fields = null)
+    public function __construct(?array $fields = null)
     {
         parent::__construct('ORC', $fields);
     }
