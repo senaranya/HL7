@@ -12,7 +12,7 @@ use Aranyasen\HL7\Segment;
  */
 class TQ1 extends Segment
 {
-    public function __construct(array $fields = null)
+    public function __construct(?array $fields = null)
     {
         parent::__construct('TQ1', $fields);
     }

@@ -40,7 +40,7 @@ class MSH extends Segment
      * @param null|array $hl7Globals
      * @throws InvalidArgumentException|Exception
      */
-    public function __construct(array $fields = null, array $hl7Globals = null)
+    public function __construct(?array $fields = null, ?array $hl7Globals = null)
     {
         parent::__construct('MSH', $fields);
 

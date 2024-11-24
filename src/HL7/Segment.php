@@ -32,7 +32,7 @@ class Segment
      * @param array|null $fields Fields for segment
      * @throws InvalidArgumentException
      */
-    public function __construct(string $name, array $fields = null)
+    public function __construct(string $name, ?array $fields = null)
     {
         // Is the name 3 upper case characters?
         if ((!$name) || (strlen($name) !== 3) || (strtoupper($name) !== $name)) {
@@ -144,7 +144,7 @@ class Segment
      * @param int|null $to Stop range at this index
      * @return array List of fields
      */
-    public function getFields(int $from = 0, int $to = null): array
+    public function getFields(int $from = 0, ?int $to = null): array
     {
         if (!$to) {
             $to = count($this->fields);

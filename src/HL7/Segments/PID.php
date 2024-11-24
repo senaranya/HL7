@@ -18,7 +18,7 @@ class PID extends Segment
      */
     protected static int $setId = 1;
 
-    public function __construct(array $fields = null, bool $autoIncrementIndices = true)
+    public function __construct(?array $fields = null, bool $autoIncrementIndices = true)
     {
         parent::__construct('PID', $fields);
         if ($autoIncrementIndices) {

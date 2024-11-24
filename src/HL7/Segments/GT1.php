@@ -19,7 +19,7 @@ class GT1 extends Segment
      */
     protected static $setId = 1;
 
-    public function __construct(array $fields = null, bool $autoIncrementIndices = true)
+    public function __construct(?array $fields = null, bool $autoIncrementIndices = true)
     {
         parent::__construct('GT1', $fields);
         if ($autoIncrementIndices) {

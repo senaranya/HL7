@@ -29,7 +29,7 @@ class ACK extends Message
      * @throws Exception
      * @throws InvalidArgumentException
      */
-    public function __construct(Message $req = null, MSH $reqMsh = null, array $hl7Globals = null)
+    public function __construct(?Message $req = null, ?MSH $reqMsh = null, ?array $hl7Globals = null)
     {
         parent::__construct(null, $hl7Globals);
 
@@ -82,7 +82,7 @@ class ACK extends Message
      * @param  string  $code  Code to use in acknowledgement
      * @param  string|null  $msg  Acknowledgement message
      */
-    public function setAckCode(string $code, string $msg = null): bool
+    public function setAckCode(string $code, ?string $msg = null): bool
     {
         $mode = 'A';
 

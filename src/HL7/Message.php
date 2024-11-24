@@ -58,12 +58,12 @@ class Message
      * @throws HL7Exception
      */
     public function __construct(
-        string $msgStr = null,
-        array $hl7Globals = null,
+        ?string $msgStr = null,
+        ?array $hl7Globals = null,
         bool $keepEmptySubFields = false,
         bool $resetIndices = false,
         bool $autoIncrementIndices = true,
-        bool $doNotSplitRepetition = null
+        ?bool $doNotSplitRepetition = null
     ) {
         // Control characters and other HL7 properties
         $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] ?? '\n';
@@ -129,7 +129,7 @@ class Message
      * @param null|int $index Index where segment is inserted
      * @throws InvalidArgumentException
      */
-    public function insertSegment(Segment $segment, int $index = null): void
+    public function insertSegment(Segment $segment, ?int $index = null): void
     {
         if ($index > count($this->segments)) {
             throw new InvalidArgumentException("Index out of range. Index: $index, Total segments: " .

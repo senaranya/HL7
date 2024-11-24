@@ -18,7 +18,7 @@ class IN1 extends Segment
      */
     protected static $setId = 1;
 
-    public function __construct(array $fields = null, bool $autoIncrementIndices = true)
+    public function __construct(?array $fields = null, bool $autoIncrementIndices = true)
     {
         parent::__construct('IN1', $fields);
         if ($autoIncrementIndices) {
