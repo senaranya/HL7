@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Aranyasen\HL7;
 
 use Aranyasen\Exceptions\HL7Exception;
+use Aranyasen\HL7\Segments\MSH;
 use InvalidArgumentException;
 
 /**
@@ -323,6 +324,25 @@ class Message
     public function getSegments(): array
     {
         return $this->segments;
+    }
+
+    /**
+     * Reindex all of the segments in the message
+     */
+    public function reindexSegments(): void
+    {
+        $indexes = [];
+        foreach ($this->segments as $segment) {
+            if (is_a($segment, MSH::class)) {
+                continue;
+            }
+
+            if (!array_key_exists(get_class($segment), $indexes)) {
+                $indexes[get_class($segment)] = 1;
+            }
+
+            $segment->setId($indexes[get_class($segment)]++);
+        }
     }
 
     /**
