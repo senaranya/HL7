@@ -333,15 +333,12 @@ class Message
     {
         $indexes = [];
         foreach ($this->segments as $segment) {
-            if (!method_exists($segment, "setID")) {
-                continue;
+            if (method_exists($segment, "setID")) {
+                if (!array_key_exists($segment->getName(), $indexes)) {
+                    $indexes[$segment->getName()] = 1;
+                }
+                $segment->setId($indexes[$segment->getName()]++);
             }
-
-            if (!array_key_exists(get_class($segment), $indexes)) {
-                $indexes[get_class($segment)] = 1;
-            }
-
-            $segment->setId($indexes[get_class($segment)]++);
         }
     }
 
