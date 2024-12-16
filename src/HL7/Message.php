@@ -333,7 +333,7 @@ class Message
     {
         $indexes = [];
         foreach ($this->segments as $segment) {
-            if (is_a($segment, MSH::class)) {
+            if (!method_exists($segment, "setID")) {
                 continue;
             }
 
