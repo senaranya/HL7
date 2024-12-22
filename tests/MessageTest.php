@@ -635,4 +635,32 @@ class MessageTest extends TestCase
         $OBRs = $message->getSegmentsByClass(OBR::class);
         self::assertCount(0, $OBRs);
     }
+
+    /** @test */
+    public function reindex_message_segments(): void
+    {
+        $message = new Message(autoIncrementIndices: false);
+        $pid = new PID();
+        $pid->setId(2);
+        $message->addSegment($pid);
+
+        $obx1 = new OBX();
+        $obx1->setId(3);
+        $obx1->setValueType("ST");
+        $message->addSegment($obx1);
+
+        $obx2 = new OBX();
+        $obx2->setId(1);
+        $obx2->setValueType("CWE");
+        $message->addSegment($obx2);
+
+        $message->reindexSegments();
+        $PIDs = $message->getSegmentsByClass(PID::class);
+        self::assertSame(1, $PIDs[0]->getId());
+        $OBXs = $message->getSegmentsByClass(OBX::class);
+        self::assertSame(1, $OBXs[0]->getId());
+        self::assertSame("ST", $OBXs[0]->getValueType());
+        self::assertSame(2, $OBXs[1]->getId());
+        self::assertSame("CWE", $OBXs[1]->getValueType());
+    }
 }
