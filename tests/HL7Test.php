@@ -65,7 +65,21 @@ class HL7Test extends TestCase
             ->withEscapeCharacter('=')
             ->withHL7Version('555.666')
             ->createMessage();
+        /**
+         * Tests:
+         *  - Field separator
+         *  - Component separator
+         *  - Subcomponent separator
+         *  - Repetition separator
+         *  - Escape character
+         */
         self::assertStringContainsString('MSH#*`=}#', $msg->toString(true));
+        /**
+         * Tests:
+         *  - Segment separator
+         *  - HL7 version
+         */
+        self::assertStringEndsWith('555.666#[', $msg->toString(true));
     }
 
     /**
