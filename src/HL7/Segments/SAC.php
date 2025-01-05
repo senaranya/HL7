@@ -18,7 +18,7 @@ class SAC extends Segment
      */
     protected static $setId = 1;
 
-    public function __construct(array $fields = null)
+    public function __construct(?array $fields = null)
     {
         parent::__construct('SAC', $fields);
     }

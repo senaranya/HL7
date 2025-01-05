@@ -18,7 +18,7 @@ class PID extends Segment
      */
     protected static int $setId = 1;
 
-    public function __construct(array $fields = null, bool $autoIncrementIndices = true)
+    public function __construct(?array $fields = null, bool $autoIncrementIndices = true)
     {
         parent::__construct('PID', $fields);
         if ($autoIncrementIndices) {
@@ -51,7 +51,7 @@ class PID extends Segment
 
     /**
      * Patient ID (Internal ID)
-     * @param string $value
+     * @param string|array $value
      */
     public function setPatientIdentifierList($value, int $position = 3): bool
     {

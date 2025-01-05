@@ -59,12 +59,12 @@ class Message
      * @deprecated Use HL7 factory class instead. Check readme
      */
     public function __construct(
-        string $msgString = null,
-        array $hl7Globals = null,
+        ?string $msgString = null,
+        ?array $hl7Globals = null,
         bool $keepEmptySubFields = false,
         bool $resetIndices = false,
         bool $autoIncrementIndices = true,
-        bool $doNotSplitRepetition = null
+        ?bool $doNotSplitRepetition = null
     ) {
         // Control characters and other HL7 properties
         $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] ?? '\n';

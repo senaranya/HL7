@@ -27,7 +27,7 @@ class ACK extends Message
      * @param  array|null  $hl7Globals  Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
      * @throws HL7Exception
      */
-    public function __construct(Message $req = null, MSH $reqMsh = null, array $hl7Globals = null)
+    public function __construct(?Message $req = null, ?MSH $reqMsh = null, ?array $hl7Globals = null)
     {
         parent::__construct(null, $hl7Globals);
 
@@ -80,7 +80,7 @@ class ACK extends Message
      * @param  string  $code  Code to use in acknowledgement
      * @param  string|null  $msg  Acknowledgement message
      */
-    public function setAckCode(string $code, string $msg = null): bool
+    public function setAckCode(string $code, ?string $msg = null): bool
     {
         $mode = 'A';
 

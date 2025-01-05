@@ -8,6 +8,8 @@ use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Segment;
 use Aranyasen\HL7\Segments\MSH;
+use Aranyasen\HL7\Segments\OBR;
+use Aranyasen\HL7\Segments\OBX;
 use Aranyasen\HL7\Segments\PID;
 use Exception;
 use DMS\PHPUnitExtensions\ArraySubset\Assert;
@@ -208,6 +210,11 @@ class MessageTest extends TestCase
             $msg->toString(true),
             'Should reset index of subsequent segments'
         );
+
+        $msg = new Message("MSH|^~\\&|1|\nAAA|1||xxx|\nPID|1|\nBBB|2|");
+        $segment = $msg->getFirstSegmentInstanceByClass(PID::class);
+        $msg->removeSegment($segment);
+        self::assertSame("MSH|^~\\&|1|\nAAA|1||xxx|\nBBB|2|\n", $msg->toString(true));
     }
 
     /** @test */
@@ -576,6 +583,11 @@ class MessageTest extends TestCase
         self::assertIsObject($firstPidSegment);
         self::assertInstanceOf(PID::class, $firstPidSegment);
 
+        $firstPidSegment = $message->getFirstSegmentInstanceByClass(PID::class);
+        self::assertNotNull($firstPidSegment);
+        self::assertIsObject($firstPidSegment);
+        self::assertInstanceOf(PID::class, $firstPidSegment);
+
         self::assertNull($message->getFirstSegmentInstance('XXX'), 'Non existing segment should return null');
     }
 
@@ -631,5 +643,53 @@ class MessageTest extends TestCase
         if (file_exists($hl7File)) {
             unlink($hl7File);
         }
+    }
+
+    /** @test */
+    public function segments_can_be_retrieved_by_class(): void
+    {
+        $message = new Message(
+            "MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1\nOBX|1|||\nOBX|2|||",
+            doNotSplitRepetition: true
+        );
+        $MSHs = $message->getSegmentsByClass(MSH::class);
+        self::assertCount(1, $MSHs);
+        self::assertInstanceOf(MSH::class, $MSHs[0]);
+        $PIDs = $message->getSegmentsByClass(PID::class);
+        self::assertCount(1, $PIDs);
+        self::assertInstanceOf(PID::class, $PIDs[0]);
+        $OBXs = $message->getSegmentsByClass(OBX::class);
+        self::assertCount(2, $OBXs);
+        self::assertInstanceOf(OBX::class, $OBXs[0]);
+        $OBRs = $message->getSegmentsByClass(OBR::class);
+        self::assertCount(0, $OBRs);
+    }
+
+    /** @test */
+    public function reindex_message_segments(): void
+    {
+        $message = new Message(autoIncrementIndices: false);
+        $pid = new PID();
+        $pid->setId(2);
+        $message->addSegment($pid);
+
+        $obx1 = new OBX();
+        $obx1->setId(3);
+        $obx1->setValueType("ST");
+        $message->addSegment($obx1);
+
+        $obx2 = new OBX();
+        $obx2->setId(1);
+        $obx2->setValueType("CWE");
+        $message->addSegment($obx2);
+
+        $message->reindexSegments();
+        $PIDs = $message->getSegmentsByClass(PID::class);
+        self::assertSame(1, $PIDs[0]->getId());
+        $OBXs = $message->getSegmentsByClass(OBX::class);
+        self::assertSame(1, $OBXs[0]->getId());
+        self::assertSame("ST", $OBXs[0]->getValueType());
+        self::assertSame(2, $OBXs[1]->getId());
+        self::assertSame("CWE", $OBXs[1]->getValueType());
     }
 }

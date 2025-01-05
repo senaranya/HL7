@@ -13,9 +13,9 @@ use Aranyasen\HL7\Segment;
 class PV2 extends Segment
 {
     /**
-     * @param array|null $fields
+     * @param ?array $fields
      */
-    public function __construct(array $fields = null)
+    public function __construct(?array $fields = null)
     {
         parent::__construct('PV2', $fields);
     }

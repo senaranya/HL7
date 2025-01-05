@@ -39,7 +39,7 @@ class MSH extends Segment
      * @param  null|array  $hl7Globals
      * @throws HL7Exception
      */
-    public function __construct(array $fields = null, array $hl7Globals = null)
+    public function __construct(?array $fields = null, ?array $hl7Globals = null)
     {
         parent::__construct('MSH', $fields);
 
@@ -292,7 +292,7 @@ class MSH extends Segment
     /**
      * Get HL7 version, e.g. 2.1, 2.3, 3.0 etc.
      */
-    public function getVersionId(int $position = 12): string
+    public function getVersionId(int $position = 12): string|array
     {
         return $this->getField($position);
     }
