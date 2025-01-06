@@ -6,40 +6,36 @@ namespace Aranyasen\HL7\Tests;
 
 use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Segment;
+use PHPUnit\Framework\Attributes\Test;
 
 class SegmentTest extends TestCase
 {
-    /** @test */
-    public function it_throws_error_when_segment_name_has_less_than_3_characters(): void
+    #[Test] public function it_throws_error_when_segment_name_has_less_than_3_characters(): void
     {
         $this->expectException(HL7Exception::class);
         new Segment('XX');
     }
 
-    /** @test */
-    public function it_throws_exception_when_a_blank_string_is_passed_as_segment_name(): void
+    #[Test] public function it_throws_exception_when_a_blank_string_is_passed_as_segment_name(): void
     {
         $this->expectException(HL7Exception::class);
         new Segment('');
     }
 
-    /** @test */
-    public function it_throws_exception_when_segment_name_is_not_in_upper_case(): void
+    #[Test] public function it_throws_exception_when_segment_name_is_not_in_upper_case(): void
     {
         $this->expectException(HL7Exception::class);
         new Segment('xxx');
     }
 
-    /** @test */
-    public function field_at_a_given_nonzero_index_can_be_set(): void
+    #[Test] public function field_at_a_given_nonzero_index_can_be_set(): void
     {
         $seg = new Segment('XXX');
         $seg->setField(1, 'YYY');
         self::assertSame('YYY', $seg->getField(1), 'Field 1 is YYY');
     }
 
-    /** @test */
-    public function field_at_index_0_can_not_be_changed(): void
+    #[Test] public function field_at_index_0_can_not_be_changed(): void
     {
         $seg = new Segment('XXX');
         $seg->setField(0, 'YYY');
@@ -48,16 +44,14 @@ class SegmentTest extends TestCase
         self::assertSame('XXX', $seg->getName(), 'Segment name is still the same');
     }
 
-    /** @test */
-    public function a_segment_can_be_constructed_from_an_array(): void
+    #[Test] public function a_segment_can_be_constructed_from_an_array(): void
     {
         $seg = new Segment('XXX', ['a', 'b', 'c', ['p', 'q', 'r'], 'd']);
         self::assertSame('c', $seg->getField(3), 'Constructor with array');
         self::assertSame('r', $seg->getField(4)[2], 'Constructor with array for composed fields');
     }
 
-    /** @test */
-    public function field_can_be_cleared(): void
+    #[Test] public function field_can_be_cleared(): void
     {
         $segment = new Segment('XXX', ['a']);
         self::assertSame('a', $segment->getField(1));
@@ -65,8 +59,7 @@ class SegmentTest extends TestCase
         self::assertNull($segment->getField(1), 'Field 1 should be NULL');
     }
 
-    /** @test */
-    public function field_can_be_set_using_array(): void
+    #[Test] public function field_can_be_set_using_array(): void
     {
         $seg = new Segment('XXX');
         $seg->setField(3, ['1', '2', '3']);
@@ -75,32 +68,28 @@ class SegmentTest extends TestCase
         self::assertSame('2', $seg->getField(3)[1], 'Getting single value from composed field');
     }
 
-    /** @test */
-    public function fields_from_a_given_position_to_end_can_be_retrieved_in_an_array(): void
+    #[Test] public function fields_from_a_given_position_to_end_can_be_retrieved_in_an_array(): void
     {
         $seg = new Segment('XXX');
         $seg->setField(8, 'aaa');
         self::assertCount(7, $seg->getFields(2), 'Getting all fields from 2nd index');
     }
 
-    /** @test */
-    public function a_chunk_of_fields_can_be_retrieved_from_a_segment(): void
+    #[Test] public function a_chunk_of_fields_can_be_retrieved_from_a_segment(): void
     {
         $seg = new Segment('XXX');
         $seg->setField(8, 'aaa');
         self::assertCount(3, $seg->getFields(2, 4), 'Getting fields from 2 till 4');
     }
 
-    /** @test */
-    public function setting_field_beyond_last_index_creates_empty_fields_in_between(): void
+    #[Test] public function setting_field_beyond_last_index_creates_empty_fields_in_between(): void
     {
         $seg = new Segment('XXX');
         $seg->setField(8, 'aaa');
         self::assertCount(9, $seg->getFields(), 'Number of fields in segment');
     }
 
-    /** @test */
-    public function total_size_of_a_segment_can_be_obtained(): void
+    #[Test] public function total_size_of_a_segment_can_be_obtained(): void
     {
         $seg = new Segment('XXX');
         $seg->setField(8, ['']);
@@ -109,8 +98,7 @@ class SegmentTest extends TestCase
         self::assertSame(12, $seg->size(), 'Size operator');
     }
 
-    /** @test */
-    public function a_field_can_have_0_as_a_value(): void
+    #[Test] public function a_field_can_have_0_as_a_value(): void
     {
         $segment = new Segment('XXX');
 
