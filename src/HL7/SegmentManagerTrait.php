@@ -17,13 +17,13 @@ trait SegmentManagerTrait
      */
     public function getSegmentAsString(int $index): ?string
     {
-        $seg = $this->getSegmentByIndex($index);
+        $segment = $this->getSegmentByIndex($index);
 
-        if ($seg === null) {
+        if ($segment === null) {
             return null;
         }
 
-        return $this->segmentToString($seg);
+        return $this->segmentToString($segment);
     }
 
     /**
@@ -134,7 +134,7 @@ trait SegmentManagerTrait
      * @param bool $replace  Replace the current segment in given $index
      * @throws HL7Exception
      */
-    public function insertSegment(Segment $segment, int $index = null, bool $replace = false): void
+    public function insertSegment(Segment $segment, ?int $index = null, bool $replace = false): void
     {
         if ($index > count($this->segments)) {
             throw new HL7Exception("Index '$index' greater than the number of total segments " .
@@ -290,15 +290,14 @@ trait SegmentManagerTrait
         return $this->segments;
     }
 
-
     /**
      * Convert Segment object to string
      */
-    public function segmentToString(Segment $seg): string
+    public function segmentToString(Segment $segment): string
     {
-        $segmentName = $seg->getName();
+        $segmentName = $segment->getName();
         $segmentString = $segmentName . $this->fieldSeparator;
-        $fields = $seg->getFields(($segmentName === 'MSH' ? 2 : 1));
+        $fields = $segment->getFields(($segmentName === 'MSH' ? 2 : 1));
 
         foreach ($fields as $field) {
             if (is_array($field)) {
@@ -355,5 +354,95 @@ trait SegmentManagerTrait
         }
 
         return new $className($fields, $autoIncrementIndices);
+    }
+
+    /**
+     * Return an array of all segments with the given subclass of Segment
+     *
+     * @param  string  $segmentClass  Segment class
+     * @return array List of segments identified by class
+     * @throws HL7Exception
+     */
+    public function getSegmentsByClass(string $segmentClass): array
+    {
+        if (!is_subclass_of($segmentClass, Segment::class)) {
+            throw new HL7Exception("$segmentClass is not a subclass of " . Segment::class);
+        }
+        $segmentsByClass = [];
+
+        foreach ($this->segments as $segment) {
+            if ($segment instanceof $segmentClass) {
+                $segmentsByClass[] = $segment;
+            }
+        }
+
+        return $segmentsByClass;
+    }
+
+    /**
+     * Remove given segment
+     *
+     * @return int Count of segments removed
+     * @throws HL7Exception
+     */
+    public function removeSegmentsByClass(string $segmentClass): int
+    {
+        if (!is_subclass_of($segmentClass, Segment::class)) {
+            throw new HL7Exception("$segmentClass is not a subclass of " . Segment::class);
+        }
+        $count = 0;
+        foreach ($this->getSegmentsByClass($segmentClass) as $segment) {
+            $this->removeSegmentByIndex($this->getSegmentIndex($segment));
+            $count++;
+        }
+        return $count;
+    }
+
+    /**
+     * Reindex all the segments in the message
+     */
+    public function reindexSegments(): void
+    {
+        $indexes = [];
+        foreach ($this->segments as $segment) {
+            if (method_exists($segment, "setID")) {
+                if (!array_key_exists($segment->getName(), $indexes)) {
+                    $indexes[$segment->getName()] = 1;
+                }
+                $segment->setId($indexes[$segment->getName()]++);
+            }
+        }
+    }
+
+    /**
+     * Return the first segment of the given class in the message
+     *
+     * @return mixed|null
+     * @throws HL7Exception
+     */
+    public function getFirstSegmentInstanceByClass(string $segmentClass): Segment|null
+    {
+        if (!$this->hasSegmentOfClass($segmentClass)) {
+            return null;
+        }
+        return $this->getSegmentsByClass($segmentClass)[0];
+    }
+
+    /**
+     * Check if given segment is present in the message object by class name
+     * @throws HL7Exception
+     */
+    public function hasSegmentOfClass(string $segmentClass): bool
+    {
+        return count($this->getSegmentsByClass($segmentClass)) > 0;
+    }
+
+    /**
+     * Check if given segment is present in the message object by class name
+     * @throws HL7Exception
+     */
+    public function hasSegmentByClass(string $segmentClass): bool
+    {
+        return count($this->getSegmentsByClass($segmentClass)) > 0;
     }
 }

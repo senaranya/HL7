@@ -668,7 +668,7 @@ class MessageTest extends TestCase
     /** @test */
     public function reindex_message_segments(): void
     {
-        $message = new Message(autoIncrementIndices: false);
+        $message = new Message('MSH|^~\&|||||||', autoIncrementIndices: false);
         $pid = new PID();
         $pid->setId(2);
         $message->addSegment($pid);
