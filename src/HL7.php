@@ -149,7 +149,10 @@ class HL7
      */
     public function withSegmentSeparator(string $value): self
     {
-        $this->checkIfSingleCharacter($value);
+        $value = str_replace(['\r', '\n'], ["\r", "\n"], $value);
+        if ($value !== "\r\n") {
+            $this->checkIfSingleCharacter($value);
+        }
 
         return $this->setGlobal('SEGMENT_SEPARATOR', $value);
     }

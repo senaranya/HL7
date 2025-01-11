@@ -166,8 +166,7 @@ class HL7Test extends TestCase
      */
     #[Test] public function repetition_separation_character_can_be_ignored(): void
     {
-        $message = Hl7::from("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1")
-            ->create();
+        $message = Hl7::from("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1")->create();
         self::assertIsArray(
             $message->getSegmentByIndex(1)->getField(3),
             'By default repetition should be split into array'
@@ -185,6 +184,30 @@ class HL7Test extends TestCase
     {
         $this->expectException(HL7Exception::class);
         $this->expectExceptionMessage("Parameter should be a single character. Received: 'aa'");
-        HL7::build()->withSegmentSeparator('aa');
+        HL7::build()->withEscapeCharacter('aa')->create();
+    }
+
+    /** @throws HL7Exception */
+    #[Test] public function it_accepts_crlf_as_segment_separator(): void
+    {
+        $message = HL7::from("MSH|^~\\&|1|")
+            ->withSegmentSeparator("\r\n") // With double-quotes
+            ->create();
+        $this->assertSame($message->toString(true), "MSH|^~\\&|1|\r\n");
+
+        $message = HL7::from("MSH|^~\\&|1|")
+            ->withSegmentSeparator('\r\n') // With single-quotes
+            ->create();
+        $this->assertSame($message->toString(true), "MSH|^~\\&|1|\r\n");
+    }
+
+    /** @throws HL7Exception */
+    #[Test] public function any_other_multi_char_segment_separator_throws_exception(): void
+    {
+        $this->expectException(HL7Exception::class);
+        $this->expectExceptionMessage("Parameter should be a single character. Received: 'aa'");
+        HL7::from("MSH|^~\\&|1|")
+            ->withSegmentSeparator('aa')
+            ->create();
     }
 }

@@ -5,13 +5,13 @@
 <a href="https://packagist.org/packages/aranyasen/hl7"><img src="https://poser.pugx.org/aranyasen/hl7/license" alt="License"></a>
 </p>
 
-**Important: "new Message()" is deprecated and could be removed in a future release. Use HL7 factory class instead. See documents below <br><br>
+**Important: "new Message()" is deprecated and could be removed in a future release. Use HL7 factory class instead. See documents below** <br><br>
 
 Final releases for old PHP versions: <br>
 -> PHP 7.0/7.1 => [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)<br>
 -> PHP 7.2 => [2.0.2](https://github.com/senaranya/HL7/tree/2.0.2)<br>
--> PHP 7.4 => [2.1.7](https://github.com/senaranya/HL7/tree/2.1.7)**
--> PHP 8.1 => [3.1.7](https://github.com/senaranya/HL7/tree/3.1.7)**
+-> PHP 7.4 => [2.1.7](https://github.com/senaranya/HL7/tree/2.1.7)<br>
+-> PHP 8.1 => [3.1.7](https://github.com/senaranya/HL7/tree/3.1.7)
 
 ## Introduction
 
@@ -24,19 +24,11 @@ composer require aranyasen/hl7
 ```
 
 ## Usage
-### Import library
-```php
-// First, import classes from the library as needed...
-use Aranyasen\HL7; // HL7 factory class
-use Aranyasen\HL7\Message; // If Message is used
-use Aranyasen\HL7\Segment; // If Segment is used
-use Aranyasen\HL7\Segments\MSH; // If MSH is used
-// ... and so on
-```
 
 ### Parsing
 ```php
 // Create a Message object from a HL7 string
+use Aranyasen\HL7;
 $message = HL7::from("MSH|^~\\&|1|")->create();
 $message = HL7::from("MSH|^~\\&|1|\rPID|||abcd|\r")->create(); // Creates Message object with two segments with \r as segment ending (\n can also be used)
 
@@ -52,22 +44,27 @@ $message->getFirstSegmentInstance('ABC'); // Returns the first ABC segment. Same
 $message->hasSegment('ABC'); // return true or false based on whether PID is present in the $message object
 
 // Check if a message is empty
-$message = HL7::create();
-$message->isempty(); // Returns true
+$message = HL7::build()->create();
+$message->removeSegmentsByName('MSH')
+$message->isEmpty(); // Returns true
 ```
 
 ### Composing new messages
 ```php
 // The class `HL7` can be used to build HL7 object. It is a factory class with various helper methods to help build a hl7.
-$message = HL7::build()->create(); // Creates an empty message
-
-// The HL7 factory class provides methods that can be chained together in a fluent fashion
-$message = HL7::build()
-    ->withComponentSeparator('#')
-    ->withFieldSeparator('-')
-    ->create();
+$message = HL7::build()->create(); // Creates a Message containing MSH segment with default separators, version etc.
 ```
 #### Configuring HL7 messages
+```php
+// The HL7 factory class provides methods that can be chained together in a fluent fashion. These can be used to
+// override the defaults
+$message = HL7::build()
+    ->withComponentSeparator('#') // Use # as the component separator instead of the default ^ 
+    ->withFieldSeparator('-') // Use - as the field separator instead of the default |
+    ->withSegmentSeparator('\r\n') // Override segment separator
+    ->withHL7Version('2.3') // Use HL7 version 2.3
+    ->create();
+```
 ```php
 // Creating multiple message objects may have an unexpected side effect: segments start with wrong index values (Check tests/MessageTest for explanation)...
 // So to reset segment indices to 1:
@@ -81,7 +78,7 @@ $hl7String = "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OB
 $message = HL7::from($hl7String)
     ->autoIncrementIndices(false)
     ->create();
-// $message now contains both OBXs with given indexes in the string
+// $message now contains both OBXs with 1 as the index, instead of 1 and 2
 ```
 ```php
 // Ensure empty sub-fields are not removed
@@ -91,16 +88,12 @@ $pv1 = $message->getSegmentByIndex(1);
 $fields = $pv1->getField(3); // $fields is ['', 'AAAA1', '', '', 'BB']
 
 // Create/send message with segment-ending bar character (|) removed
+use Aranyasen\HL7\Message;
 $message = new Message("MSH|^~\\&|1|\nABC|||xxx\n", ['SEGMENT_ENDING_BAR' => false]);
 $message->toString(true); // Returns "MSH|^~\&|1\nABC|||xxx\n"
 (new Connection($ip, $port))->send($message); // Sends the message without ending bar-characters (details on Connection below)
-
-// Specify custom values for separators, HL7 version etc.
-$message = HL7::from("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|")
-    ->withSegmentSeparator('\r\n')
-    ->withHL7Version('2.3')
-    ->create();
-
+```
+```php
 // Segment with separator character (~) creates sub-arrays containing each sub-segment
 $message = HL7::from("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1")->create(); // Creates [[3,0], [4,1]]
 
@@ -116,10 +109,12 @@ $message = HL7::from("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1")
 // Once a message object is created, we can now add, insert, set segments and fields.
 
 // Create a MSH segment and add to message object
+use Aranyasen\HL7\Segments\MSH;
 $msh = new MSH();
 $message->addSegment($msh); // Message is: "MSH|^~\&|||||20171116140058|||2017111614005840157||2.3|\n"
 
 // Create a custom segment
+use Aranyasen\HL7\Segment;
 $abc = new Segment('ABC');
 $abc->setField(1, 'xyz');
 $abc->setField(2, 0);
@@ -129,6 +124,7 @@ $message->insertSegment($abc, 1); // Message is now: "MSH|^~\&|||||2017111614005
 
 // Create a defined segment (To know which segments are defined in this package, look into Segments/ directory)
 // Advantages of defined segments over custom ones (shown above) are 1) Helpful setter methods, 2) Auto-incrementing segment index
+use Aranyasen\HL7\Segments\PID;
 $pid = new PID(); // Automatically creates PID segment, and adds segment index at PID.1
 $pid->setPatientName([$lastname, $firstname, $middlename, $suffix]); // Use a setter method to add patient's name at standard position (PID.5)
 $pid->setField('abcd', 5); // Apart from standard setter methods, you can manually set a value at any position too
@@ -156,6 +152,7 @@ echo $response->toString(true); // Prints ACK from the listener
 ### ACK
 Handle ACK message returned from a remote HL7 listener...
 ```php
+use Aranyasen\HL7\Connection;
 $ack = (new Connection($ip, $port))->send($message); // Send a HL7 to remote listener
 $returnString = $ack->toString(true);
 if (strpos($returnString, 'MSH') === false) {
@@ -173,6 +170,7 @@ else {
 ```
 Create an ACK response from a given HL7 message:
 ```php
+use Aranyasen\HL7\Messages\ACK;
 $msg = HL7::from("MSH|^~\\&|1|\rABC|1||^AAAA1^^^BB|")->keepEmptySubfields()->create();
 $ackResponse = new ACK($msg);
 ```
