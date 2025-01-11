@@ -6,10 +6,12 @@
 </p>
 
 **Important: "new Message()" is deprecated and could be removed in a future release. Use HL7 factory class instead. See documents below <br><br>
+
 Final releases for old PHP versions: <br>
 -> PHP 7.0/7.1 => [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)<br>
 -> PHP 7.2 => [2.0.2](https://github.com/senaranya/HL7/tree/2.0.2)<br>
 -> PHP 7.4 => [2.1.7](https://github.com/senaranya/HL7/tree/2.1.7)**
+-> PHP 8.1 => [3.1.7](https://github.com/senaranya/HL7/tree/3.1.7)**
 
 ## Introduction
 
@@ -35,10 +37,8 @@ use Aranyasen\HL7\Segments\MSH; // If MSH is used
 ### Parsing
 ```php
 // Create a Message object from a HL7 string
-$message = HL7::from("MSH|^~\\&|1|")->createMessage(); // Returns Message object
-
-// Or, using Message class...
-$message = new Message("MSH|^~\\&|1|\rPID|||abcd|\r"); // Either \n or \r can be used as segment endings
+$message = HL7::from("MSH|^~\\&|1|")->create();
+$message = HL7::from("MSH|^~\\&|1|\rPID|||abcd|\r")->create(); // Creates Message object with two segments with \r as segment ending (\n can also be used)
 
 // Get string form of the message
 echo $message->toString(true);
@@ -52,43 +52,41 @@ $message->getFirstSegmentInstance('ABC'); // Returns the first ABC segment. Same
 $message->hasSegment('ABC'); // return true or false based on whether PID is present in the $message object
 
 // Check if a message is empty
-$message = new Message();
+$message = HL7::create();
 $message->isempty(); // Returns true
 ```
 
 ### Composing new messages
 ```php
 // The class `HL7` can be used to build HL7 object. It is a factory class with various helper methods to help build a hl7.
-$message = HL7::build()->createMessage(); // Creates an empty message
+$message = HL7::build()->create(); // Creates an empty message
 
 // The HL7 factory class provides methods that can be chained together in a fluent fashion
 $message = HL7::build()
     ->withComponentSeparator('#')
     ->withFieldSeparator('-')
-    ->createMessage();
-
-// Or, using Message class...
-$message = new Message();
+    ->create();
 ```
-#### Message constructor parameters
+#### Configuring HL7 messages
 ```php
-// When a message is composed using Message class, there are multiple parameters available to define the properties of the HL7.
-// Note: All of these properties are available as fluent methods in HL7 factory class (shown above). So it's recommended to use that for readability
-
 // Creating multiple message objects may have an unexpected side effect: segments start with wrong index values (Check tests/MessageTest for explanation)...
-// Use 4th argument as true, or call resetSegmentIndices() on $message object to reset segment indices to 1
-$message = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|", null, true, true);
+// So to reset segment indices to 1:
+HL7::from("MSH|^~\&|||||||ORM^O01||P|2.3.1|")->resetIndices()->create(); // Use resetIndices() while creating a new message
+$message->resetSegmentIndices(); // or call resetSegmentIndices() on an existing $message object
 // ... any segments added here will now start index from 1, as expected.
 ```
 ```php
 // Sometimes you may want to have exact index values, rather than auto-incrementing for each instance of a segment
-// Use 5th argument as false...
 $hl7String = "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|1||22^BB|\n";
-$message = new Message($hl7String, null, true, true, false); $// $message contains both OBXs with given indexes in the string
+$message = HL7::from($hl7String)
+    ->autoIncrementIndices(false)
+    ->create();
+// $message now contains both OBXs with given indexes in the string
 ```
 ```php
-// Create a segment with empty sub-fields retained
-$message = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", null, true); // Third argument 'true' forces to keep all sub-fields
+// Ensure empty sub-fields are not removed
+// Note: We should perhaps _always_ use this while creating a message object, as we don't want empty subfields removed. In future versions, this will be the default
+$message = HL7::from("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|")->keepEmptySubfields()->create();
 $pv1 = $message->getSegmentByIndex(1);
 $fields = $pv1->getField(3); // $fields is ['', 'AAAA1', '', '', 'BB']
 
@@ -98,16 +96,19 @@ $message->toString(true); // Returns "MSH|^~\&|1\nABC|||xxx\n"
 (new Connection($ip, $port))->send($message); // Sends the message without ending bar-characters (details on Connection below)
 
 // Specify custom values for separators, HL7 version etc.
-$message = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", ['SEGMENT_SEPARATOR' => '\r\n', 'HL7_VERSION' => '2.3']);
+$message = HL7::from("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|")
+    ->withSegmentSeparator('\r\n')
+    ->withHL7Version('2.3')
+    ->create();
 
 // Segment with separator character (~) creates sub-arrays containing each sub-segment
-$message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1"); // Creates [[3,0], [4,1]]
+$message = HL7::from("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1")->create(); // Creates [[3,0], [4,1]]
 
-// To create a single array instead, pass 'true' as 6th argument. This may be used to retain behavior from previous releases
-// Notice: Since this leads to a non-standard behavior, it may be removed in future
-$message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1", null, false, false, true, true); // Creates ['3', '0~4', '1']
-// or
-$message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1", doNotSplitRepetition: true); // Creates ['3', '0~4', '1']
+// To create a single array instead, use doNotSplitRepetition()
+// Note: Since this leads to a non-standard behavior, it may be removed in future
+$message = HL7::from("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1")
+    ->doNotSplitRepetition()
+    ->create(); // Creates ['3', '0~4', '1']
 ```
 
 #### Handling segments and fields
@@ -124,7 +125,7 @@ $abc->setField(1, 'xyz');
 $abc->setField(2, 0);
 $abc->setField(4, ['']); // Set an empty field at 4th position. 2nd and 3rd positions will be automatically set to empty
 $abc->clearField(2); // Clear the value from field 2
-$message->setSegment($abc, 1); // Message is now: "MSH|^~\&|||||20171116140058|||2017111614005840157||2.3|\nABC|xyz|\n"
+$message->insertSegment($abc, 1); // Message is now: "MSH|^~\&|||||20171116140058|||2017111614005840157||2.3|\nABC|xyz|\n"
 
 // Create a defined segment (To know which segments are defined in this package, look into Segments/ directory)
 // Advantages of defined segments over custom ones (shown above) are 1) Helpful setter methods, 2) Auto-incrementing segment index
@@ -145,7 +146,7 @@ Side note: In order to run Connection you need to install PHP ext-sockets [https
 ```php
 $ip = '127.0.0.1'; // An IP
 $port = '12001'; // And Port where a HL7 listener is listening
-$message = new Message($hl7String); // Create a Message object from your HL7 string
+$message = HL7::from($hl7String)->create(); // Create a Message object from your HL7 string. See above for details
 
 // Create a Socket and get ready to send message. Optionally add timeout in seconds as 3rd argument (default: 10 sec)
 $connection = new Connection($ip, $port);
@@ -172,12 +173,12 @@ else {
 ```
 Create an ACK response from a given HL7 message:
 ```php
-$msg = new Message("MSH|^~\\&|1|\rABC|1||^AAAA1^^^BB|", null, true);
+$msg = HL7::from("MSH|^~\\&|1|\rABC|1||^AAAA1^^^BB|")->keepEmptySubfields()->create();
 $ackResponse = new ACK($msg);
 ```
 Options can be passed while creating ACK object:
 ```php
-$msg = new Message("MSH|^~\\&|1|\rABC|1||^AAAA1^^^BB|", null, true);
+$msg = HL7::from("MSH|^~\\&|1|\rABC|1||^AAAA1^^^BB|")->keepEmptySubfields()->create();
 $ackResponse = new ACK($msg, null, ['SEGMENT_SEPARATOR' => '\r\n', 'HL7_VERSION' => '2.5']);
 ```
 

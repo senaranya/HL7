@@ -16,7 +16,17 @@ class HL7Test extends TestCase
      */
     #[Test] public function hl7_message_can_be_created_using_factory_class(): void
     {
-        $msg = HL7::build()->createMessage();
+        $msg = HL7::build()->create();
+        self::assertIsObject($msg);
+        self::assertSame(HL7\Message::class, $msg::class);
+    }
+
+    /**
+     * @throws HL7Exception
+     */
+    #[Test] public function hl7_message_can_be_created_using_create_alias_method(): void
+    {
+        $msg = HL7::build()->create();
         self::assertIsObject($msg);
         self::assertSame(HL7\Message::class, $msg::class);
     }
@@ -26,7 +36,7 @@ class HL7Test extends TestCase
      */
     #[Test] public function factory_creates_a_msh_segment_with_defaults_when_no_message_string_provided(): void
     {
-        $msg = HL7::build()->createMessage();
+        $msg = HL7::build()->create();
         self::assertStringContainsString('MSH|^~\&|||||', $msg->toString(true));
     }
 
@@ -35,7 +45,7 @@ class HL7Test extends TestCase
      */
     #[Test] public function a_message_can_be_built_from_a_provided_hl7_string(): void
     {
-        $msg = HL7::from("MSH|^~\\&|1|\rABC|||xxx|\r")->createMessage();
+        $msg = HL7::from("MSH|^~\\&|1|\rABC|||xxx|\r")->create();
         self::assertSame("MSH|^~\\&|1|\nABC|||xxx|\n", $msg->toString(true));
     }
 
@@ -47,7 +57,7 @@ class HL7Test extends TestCase
         self::markTestSkipped('property cannot be overridden yet in Message() constructor');
         $msg = HL7::from("MSH|^~\\&|1|\rABC|||xxx|\r")
             ->withEscapeCharacter('=')
-            ->createMessage();
+            ->create();
         self::assertSame("MSH|^~=&|1|\nABC|||xxx|\n", $msg->toString(true));
     }
     /**
@@ -63,13 +73,13 @@ class HL7Test extends TestCase
             ->withRepetitionSeparator('`')
             ->withEscapeCharacter('=')
             ->withHL7Version('555.666')
-            ->createMessage();
+            ->create();
         self::assertStringContainsString('MSH#*`=}#', $msg->toString(true));
     }
 
     #[Test] public function empty_subfields_can_be_retained_if_needed(): void
     {
-        $msg = HL7::from("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|")->keepEmptySubfields()->createMessage();
+        $msg = HL7::from("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|")->keepEmptySubfields()->create();
         $this->assertSame(['', 'AAAA1', '', '', 'BB'], $msg->getSegmentByIndex(1)->getField(3));
     }
 
@@ -79,7 +89,7 @@ class HL7Test extends TestCase
     #[Test] public function indices_of_each_segment_can_be_reset_when_message_is_composed(): void
     {
         // Create a message with a PID segment
-        $msg1 = HL7::from("MSH|^~\&|||||||ORM^O01||P|2.3.1|")->createMessage();
+        $msg1 = HL7::from("MSH|^~\&|||||||ORM^O01||P|2.3.1|")->create();
         $msg1->addSegment(new PID());
         self::assertSame(
             "MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|1|\n",
@@ -88,7 +98,7 @@ class HL7Test extends TestCase
         );
 
         // Create another message with a PID segment
-        $msg2 = Hl7::from("MSH|^~\&|||||||ORM^O01||P|2.3.1|")->createMessage();
+        $msg2 = Hl7::from("MSH|^~\&|||||||ORM^O01||P|2.3.1|")->create();
         $msg2->addSegment(new PID());
         self::assertSame(
             "MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|2|\n",
@@ -99,12 +109,12 @@ class HL7Test extends TestCase
         // Create another message with a PID segment, this time with resetIndices()
         $msg3 = Hl7::from("MSH|^~\&|||||||ORM^O01||P|2.3.1|")
             ->resetIndices()
-            ->createMessage();
+            ->create();
         $msg3->addSegment(new PID());
         self::assertSame("MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|1|\n", $msg3->toString(true), 'PID index resets to 1');
 
         // Create a message with a PID segment
-        $msg4 = Hl7::from("MSH|^~\&|||||||ORM^O01||P|2.3.1|")->createMessage();
+        $msg4 = Hl7::from("MSH|^~\&|||||||ORM^O01||P|2.3.1|")->create();
         $msg4->addSegment(new PID());
         self::assertSame(
             "MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|2|\n",
@@ -112,7 +122,7 @@ class HL7Test extends TestCase
             'PID index gets incremented'
         );
 
-        $msg5 = Hl7::from("MSH|^~\&|||||||ORM^O01||P|2.3.1|")->createMessage();
+        $msg5 = Hl7::from("MSH|^~\&|||||||ORM^O01||P|2.3.1|")->create();
         $msg5->resetSegmentIndices();
         $msg5->addSegment(new PID());
         self::assertSame("MSH|^~\&|||||||ORM^O01||P|2.3.1|\nPID|1|\n", $msg5->toString(true), 'PID index resets to 1');
@@ -126,7 +136,7 @@ class HL7Test extends TestCase
         $hl7String = "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|1||22^BB|\n";
 
         $msg = Hl7::from($hl7String)
-            ->createMessage();
+            ->create();
         self::assertSame(
             "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|2||22^BB|\n",
             $msg->toString(true),
@@ -135,7 +145,7 @@ class HL7Test extends TestCase
 
         $msg = Hl7::from($hl7String)
             ->autoIncrementIndices(false)
-            ->createMessage();
+            ->create();
         self::assertSame(
             "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|1||22^BB|\n",
             $msg->toString(true)
@@ -143,7 +153,7 @@ class HL7Test extends TestCase
 
         $msg = Hl7::from("MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "PID|||3^0\n")
             ->autoIncrementIndices(false)
-            ->createMessage();
+            ->create();
         self::assertSame(
             "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "PID|||3^0|\n",
             $msg->toString(true),
@@ -157,7 +167,7 @@ class HL7Test extends TestCase
     #[Test] public function repetition_separation_character_can_be_ignored(): void
     {
         $message = Hl7::from("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1")
-            ->createMessage();
+            ->create();
         self::assertIsArray(
             $message->getSegmentByIndex(1)->getField(3),
             'By default repetition should be split into array'
@@ -165,7 +175,7 @@ class HL7Test extends TestCase
 
         $message = Hl7::from("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1")
             ->doNotSplitRepetition() // Ignore repetition separator character
-            ->createMessage();
+            ->create();
         $patientIdentifierList = $message->getSegmentByIndex(1)->getField(3);
         self::assertIsArray($patientIdentifierList);
         self::assertSame(['3', '0~4', '1'], $patientIdentifierList);

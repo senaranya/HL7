@@ -77,6 +77,14 @@ class HL7
     }
 
     /**
+     * @throws HL7Exception
+     */
+    public function create(): Message
+    {
+        return $this->createMessage();
+    }
+
+    /**
      * Create a new MSH segment, using the global HL7 variables as defaults.
      * @throws Exception
      */
