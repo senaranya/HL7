@@ -92,10 +92,10 @@ $message = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", null, true); // Thi
 $pv1 = $message->getSegmentByIndex(1);
 $fields = $pv1->getField(3); // $fields is ['', 'AAAA1', '', '', 'BB']
 
-// Create/send message with segment-ending bar character (|) removed
-$message = new Message("MSH|^~\\&|1|\nABC|||xxx\n", ['SEGMENT_ENDING_BAR' => false]);
+// Create/send message with segment-ending field-separator character (default "|") removed
+$message = new Message("MSH|^~\\&|1|\nABC|||xxx\n", ['WITH_SEGMENT_ENDING_FIELD_SEPARATOR' => false]);
 $message->toString(true); // Returns "MSH|^~\&|1\nABC|||xxx\n"
-(new Connection($ip, $port))->send($message); // Sends the message without ending bar-characters (details on Connection below)
+(new Connection($ip, $port))->send($message); // Sends the message without ending field-separator character (details on Connection below)
 
 // Specify custom values for separators, HL7 version etc.
 $message = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", ['SEGMENT_SEPARATOR' => '\r\n', 'HL7_VERSION' => '2.3']);
