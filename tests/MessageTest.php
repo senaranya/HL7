@@ -400,12 +400,19 @@ class MessageTest extends TestCase
         self::assertSame("MSH|^~\\&|1|\nABC|||xxx|\n", $msg->toString(true), 'Ending bar retains by default');
 
         $msg = new Message("MSH|^~\\&|1|\nABC|||xxx|\n", ['SEGMENT_ENDING_BAR' => false]);
-        self::assertSame("MSH|^~\\&|1\nABC|||xxx\n", $msg->toString(true), 'No ending bar on each segment with deprecated SEGMENT_ENDING_BAR');
+        self::assertSame(
+            "MSH|^~\\&|1\nABC|||xxx\n",
+            $msg->toString(true),
+            'No ending bar on each segment with deprecated SEGMENT_ENDING_BAR'
+        );
 
         $msg = new Message("MSH|^~\\&|1|\nABC|||xxx|\n", ['WITH_SEGMENT_ENDING_FIELD_SEPARATOR' => false]);
         self::assertSame("MSH|^~\\&|1\nABC|||xxx\n", $msg->toString(true), 'No ending bar on each segment');
 
-        $msg = new Message("MSH#^~\\&#1#\nABC###xxx#\n", ['WITH_SEGMENT_ENDING_FIELD_SEPARATOR' => false, 'FIELD_SEPARATOR' => '#']);
+        $msg = new Message(
+            "MSH#^~\\&#1#\nABC###xxx#\n",
+            ['WITH_SEGMENT_ENDING_FIELD_SEPARATOR' => false, 'FIELD_SEPARATOR' => '#']
+        );
         self::assertSame("MSH#^~\\&#1\nABC###xxx\n", $msg->toString(true), 'No ending field separator on each segment');
     }
 
