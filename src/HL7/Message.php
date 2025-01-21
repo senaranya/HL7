@@ -367,7 +367,7 @@ class Message
         foreach ($this->segments as $segment) {
             $segmentString = $this->segmentToString($segment);
             if (! $this->withSegmentEndingFieldSeparator) {
-                $segmentString = substr($segmentString, 0, -1);
+                $segmentString = preg_replace('/' . preg_quote($this->fieldSeparator, '/') . '$/', '', $segmentString);
             }
             $message .= $segmentString;
             $message .= $pretty
