@@ -5,11 +5,14 @@
 <a href="https://packagist.org/packages/aranyasen/hl7"><img src="https://poser.pugx.org/aranyasen/hl7/license" alt="License"></a>
 </p>
 
-**Important: Minimum supported PHP version has been updated to 8.0 <br>
-Last supported versions: <br>
--> PHP 7.0 or 7.1 => [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)<br>
--> PHP 7.2 => [2.0.2](https://github.com/senaranya/HL7/tree/2.0.2)<br>
--> PHP 7.4 => [2.1.7](https://github.com/senaranya/HL7/tree/2.1.7)**
+## Important
+- Minimum supported PHP version has been updated to 8.0 <br>
+    Last supported versions: <br>
+    - PHP 7.0 or 7.1 => [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)<br>
+    - PHP 7.2 => [2.0.2](https://github.com/senaranya/HL7/tree/2.0.2)<br>
+    - PHP 7.4 => [2.1.7](https://github.com/senaranya/HL7/tree/2.1.7)
+- The global setting _SEGMENT_ENDING_BAR_ is deprecated and will be removed in a future release. Use _WITH_SEGMENT_ENDING_FIELD_SEPARATOR_
+instead.
 
 ## Introduction
 
