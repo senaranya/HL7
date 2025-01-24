@@ -24,7 +24,7 @@ class Message
     protected array $segments = [];
 
     protected string $segmentSeparator;
-    protected bool $segmentEndingBar; # true, if '|' at end of each segment is needed
+    protected bool $withSegmentEndingFieldSeparator; # true, if '|' at end of each segment is needed
     protected $fieldSeparator;
     protected string $componentSeparator;
     protected string $subcomponentSeparator;
@@ -68,7 +68,8 @@ class Message
     ) {
         // Control characters and other HL7 properties
         $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] ?? '\n';
-        $this->segmentEndingBar = $hl7Globals['SEGMENT_ENDING_BAR'] ?? true;
+        $this->withSegmentEndingFieldSeparator =
+            $hl7Globals['WITH_SEGMENT_ENDING_FIELD_SEPARATOR'] ?? $hl7Globals['SEGMENT_ENDING_BAR'] ?? true;
         $this->fieldSeparator = $hl7Globals['FIELD_SEPARATOR'] ?? '|';
         $this->componentSeparator = $hl7Globals['COMPONENT_SEPARATOR'] ?? '^';
         $this->subcomponentSeparator = $hl7Globals['SUBCOMPONENT_SEPARATOR'] ?? '&';
@@ -365,8 +366,8 @@ class Message
         $message = '';
         foreach ($this->segments as $segment) {
             $segmentString = $this->segmentToString($segment);
-            if (!$this->segmentEndingBar) {
-                $segmentString = preg_replace('/\|$/', '', $segmentString);
+            if (! $this->withSegmentEndingFieldSeparator) {
+                $segmentString = preg_replace('/' . preg_quote($this->fieldSeparator, '/') . '$/', '', $segmentString);
             }
             $message .= $segmentString;
             $message .= $pretty
