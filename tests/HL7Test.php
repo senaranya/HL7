@@ -8,6 +8,7 @@ use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7;
 use Aranyasen\HL7\Segments\PID;
 use DMS\PHPUnitExtensions\ArraySubset\Assert;
+use Exception;
 
 class HL7Test extends TestCase
 {
@@ -71,6 +72,7 @@ class HL7Test extends TestCase
     /**
      * @test
      * @throws Exception
+     * @throws HL7Exception
      */
     public function empty_subfields_can_be_retained_if_needed(): void
     {
