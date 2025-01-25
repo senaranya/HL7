@@ -5,13 +5,16 @@
 <a href="https://packagist.org/packages/aranyasen/hl7"><img src="https://poser.pugx.org/aranyasen/hl7/license" alt="License"></a>
 </p>
 
-**Important: "new Message()" is deprecated and could be removed in a future release. Use HL7 factory class instead. See documents below** <br><br>
-
-Final releases for old PHP versions: <br>
--> PHP 7.0/7.1 => [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)<br>
--> PHP 7.2 => [2.0.2](https://github.com/senaranya/HL7/tree/2.0.2)<br>
--> PHP 7.4 => [2.1.7](https://github.com/senaranya/HL7/tree/2.1.7)<br>
--> PHP 8.1 => [3.1.7](https://github.com/senaranya/HL7/tree/3.1.7)
+## Important
+- "new Message()" is deprecated and could be removed in a future release. Use HL7 factory class instead. See documents below** <br><br>
+- Minimum supported PHP version has been updated to 8.0 <br>
+    Last supported versions: <br>
+    - PHP 7.0 or 7.1 => [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)<br>
+    - PHP 7.2 => [2.0.2](https://github.com/senaranya/HL7/tree/2.0.2)<br>
+    - PHP 7.4 => [2.1.7](https://github.com/senaranya/HL7/tree/2.1.7)
+    - PHP 8.1 => [3.1.7](https://github.com/senaranya/HL7/tree/3.1.8)
+- The global setting `SEGMENT_ENDING_BAR` is deprecated and will be removed in a future release. Use
+`WITH_SEGMENT_ENDING_FIELD_SEPARATOR` instead.
 
 ## Introduction
 
@@ -87,11 +90,11 @@ $message = HL7::from("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|")->keepEmptySubfields()
 $pv1 = $message->getSegmentByIndex(1);
 $fields = $pv1->getField(3); // $fields is ['', 'AAAA1', '', '', 'BB']
 
-// Create/send message with segment-ending bar character (|) removed
+// Create/send message with segment-ending field-separator character (default "|") removed
 use Aranyasen\HL7\Message;
-$message = new Message("MSH|^~\\&|1|\nABC|||xxx\n", ['SEGMENT_ENDING_BAR' => false]);
+$message = new Message("MSH|^~\\&|1|\nABC|||xxx\n", ['WITH_SEGMENT_ENDING_FIELD_SEPARATOR' => false]);
 $message->toString(true); // Returns "MSH|^~\&|1\nABC|||xxx\n"
-(new Connection($ip, $port))->send($message); // Sends the message without ending bar-characters (details on Connection below)
+(new Connection($ip, $port))->send($message); // Sends the message without ending field-separator character (details on Connection below)
 ```
 ```php
 // Segment with separator character (~) creates sub-arrays containing each sub-segment
