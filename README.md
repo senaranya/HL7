@@ -6,15 +6,14 @@
 </p>
 
 ## Important
-- "new Message()" is deprecated and could be removed in a future release. Use HL7 factory class instead. See documents below** <br><br>
+- "_**new Message()**_" is deprecated and could be removed in a future release. Use _**HL7 factory**_ class instead. See documents below <br><br>
+- The global setting `SEGMENT_ENDING_BAR` is deprecated and will be removed in a future release. If you're using this in your code, replace it with `WITH_SEGMENT_ENDING_FIELD_SEPARATOR`.
 - Minimum supported PHP version has been updated to 8.0 <br>
     Last supported versions: <br>
     - PHP 7.0 or 7.1 => [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)<br>
     - PHP 7.2 => [2.0.2](https://github.com/senaranya/HL7/tree/2.0.2)<br>
     - PHP 7.4 => [2.1.7](https://github.com/senaranya/HL7/tree/2.1.7)
     - PHP 8.1 => [3.1.7](https://github.com/senaranya/HL7/tree/3.1.8)
-- The global setting `SEGMENT_ENDING_BAR` is deprecated and will be removed in a future release. Use
-`WITH_SEGMENT_ENDING_FIELD_SEPARATOR` instead.
 
 ## Introduction
 
@@ -158,7 +157,7 @@ Handle ACK message returned from a remote HL7 listener...
 use Aranyasen\HL7\Connection;
 $ack = (new Connection($ip, $port))->send($message); // Send a HL7 to remote listener
 $returnString = $ack->toString(true);
-if (strpos($returnString, 'MSH') === false) {
+if (str_contains($returnString, 'MSH') === false) {
     echo "Failed to send HL7 to 'IP' => $ip, 'Port' => $port";
 }
 $msa = $ack->getFirstSegmentInstance('MSA');

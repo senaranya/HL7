@@ -9,5 +9,8 @@
     - Using `new Message()` is deprecated, and might be removed in a future version. Use HL7 factory to create a new HL7 object instead. See readme on how to use it
     - `setSegment` method is deprecated. Use `insertSegment` instead
     - In `insertSegment`, added a replace parameter to replace a current segment in place
+    - Updated API docs 
     - Added `replaceSegment` method
+    - PhpUnit bumped to v11    
     - Added `create` method in HL7 factory that is an alias to `createMessage`
+    - Code has been significantly cleaned up, especially in Message class
