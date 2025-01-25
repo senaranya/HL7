@@ -64,6 +64,7 @@ class HL7Test extends TestCase
             ->withRepetitionSeparator('`')
             ->withEscapeCharacter('=')
             ->withHL7Version('555.666')
+            ->withSegmentEndingFieldSeparator(false)
             ->createMessage();
         /**
          * Tests:
@@ -79,7 +80,7 @@ class HL7Test extends TestCase
          *  - Segment separator
          *  - HL7 version
          */
-        self::assertStringEndsWith('555.666#[', $msg->toString(true));
+        self::assertStringEndsWith('555.666[', $msg->toString(true));
     }
 
     /**
