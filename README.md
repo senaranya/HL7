@@ -6,7 +6,7 @@
 </p>
 
 ## Important
-- "_**new Message()**_" is deprecated and could be removed in a future release. Use _**HL7 factory**_ class instead. See documents below <br><br>
+- "_**new Message()**_" is deprecated and could be removed in a future release. Use _**HL7**_ factory class instead. See documents below <br><br>
 - The global setting `SEGMENT_ENDING_BAR` is deprecated and will be removed in a future release. If you're using this in your code, replace it with `WITH_SEGMENT_ENDING_FIELD_SEPARATOR`.
 - Minimum supported PHP version has been updated to 8.0 <br>
     Last supported versions: <br>
@@ -17,7 +17,7 @@
 
 ## Introduction
 
-A PHP-based HL7 v2.x Parsing, Generation and Sending library, inspired from the famous Perl Net-HL7 package.
+This is a PHP package to create, parse and send HL7 v2 messages. This was originally inspired from Net-HL7 Perl package.
 
 ## Installation
 
