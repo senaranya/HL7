@@ -137,7 +137,7 @@ class HL7
     /**
      * Set whether the field separator should be added to the end of each segment. Default: true
      */
-    public function withSegmentEndingFieldSeparator(bool $value): self
+    public function withSegmentEndingFieldSeparator(bool $value = true): self
     {
         return $this->setGlobal('WITH_SEGMENT_ENDING_FIELD_SEPARATOR', $value);
     }
