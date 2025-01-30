@@ -72,6 +72,18 @@ class HL7Test extends TestCase
 
     /**
      * @test
+     * @throws HL7Exception
+     */
+    public function withSegmentEndingFieldSeparator_defaults_to_true(): void
+    {
+        $msg = HL7::build()
+            ->withSegmentEndingFieldSeparator()
+            ->createMessage();
+        self::assertStringEndsWith('|\n', $msg->toString());
+    }
+
+    /**
+     * @test
      * @throws Exception
      */
     public function empty_subfields_can_be_retained_if_needed(): void
