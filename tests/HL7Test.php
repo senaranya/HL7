@@ -64,8 +64,42 @@ class HL7Test extends TestCase
             ->withRepetitionSeparator('`')
             ->withEscapeCharacter('=')
             ->withHL7Version('555.666')
+            ->withSegmentEndingFieldSeparator(false)
             ->createMessage();
         self::assertStringContainsString('MSH#*`=}#', $msg->toString(true));
+        self::assertStringEndsWith('555.666[', $msg->toString(true));
+    }
+
+    /**
+     * @test
+     * @throws HL7Exception
+     */
+    public function withSegmentEndingFieldSeparator_defaults_to_true(): void
+    {
+        $msg = HL7::build()
+            ->withHL7Version('555.666')
+            ->withSegmentEndingFieldSeparator()
+            ->createMessage();
+        self::assertStringEndsWith('555.666|\n', $msg->toString());
+    }
+
+    /**
+     * @test
+     * @throws HL7Exception
+     */
+    public function withSegmentEndingFieldSeparator_works_with_values(): void
+    {
+        $msg = HL7::build()
+            ->withHL7Version('555.666')
+            ->withSegmentEndingFieldSeparator(true)
+            ->createMessage();
+        self::assertStringEndsWith('555.666|\n', $msg->toString());
+
+        $msg = HL7::build()
+            ->withHL7Version('555.666')
+            ->withSegmentEndingFieldSeparator(false)
+            ->createMessage();
+        self::assertStringEndsWith('555.666\n', $msg->toString());
     }
 
     /**
