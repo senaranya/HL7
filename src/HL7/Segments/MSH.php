@@ -94,31 +94,85 @@ class MSH extends Segment
 
     // -------------------- Setter Methods ------------------------------
 
+    /**
+     * Set Sending Application (MSH.3)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 3
+     *
+     * @return bool
+     *
+     */
     public function setSendingApplication($value, int $position = 3)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Sending Facility (MSH.4)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 4
+     *
+     * @return bool
+     *
+     */
     public function setSendingFacility($value, int $position = 4)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Receiving Application (MSH.5)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 5
+     *
+     * @return bool
+     *
+     */
     public function setReceivingApplication($value, int $position = 5)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Receiving Facility (MSH.6)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 6
+     *
+     * @return bool
+     *
+     */
     public function setReceivingFacility($value, int $position = 6)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Date Time Of Message (MSH.7)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 7
+     *
+     * @return bool
+     *
+     */
     public function setDateTimeOfMessage($value, int $position = 7)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Security (MSH.8)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 8
+     *
+     * @return bool
+     *
+     */
     public function setSecurity($value, int $position = 8)
     {
         return $this->setField($position, $value);
@@ -126,7 +180,11 @@ class MSH extends Segment
 
     /**
      *
-     * Sets message type to MSH segment.
+     *
+     * @param string $value
+     */
+    /**
+     * Sets message type to MSH segment. (MSH.9)
      *
      * If trigger event is already set, then it is preserved
      *
@@ -141,7 +199,11 @@ class MSH extends Segment
      * Then the new field value will be ORM^R01.
      * If it was empty then the new value will be just ORM.
      *
-     * @param string $value
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 9
+     *
+     * @return bool
+     *
      */
     public function setMessageType($value, int $position = 9): bool
     {
@@ -153,8 +215,7 @@ class MSH extends Segment
     }
 
     /**
-     *
-     * Sets trigger event to MSH segment.
+     * Sets trigger event to MSH segment. (MSH.9)
      *
      * If meessage type is already set, then it is preserved
      *
@@ -169,7 +230,11 @@ class MSH extends Segment
      * Then the new field value will be ORU^R30.
      * If trigger event was not set then it will set the new value.
      *
-     * @param string $value
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 9
+     *
+     * @return bool
+     *
      */
     public function setTriggerEvent($value, int $position = 9): bool
     {
@@ -182,51 +247,141 @@ class MSH extends Segment
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Message Control Id (MSH.10)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 10
+     *
+     * @return bool
+     *
+     */
     public function setMessageControlId($value, int $position = 10)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Processing Id (MSH.11)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 11
+     *
+     * @return bool
+     *
+     */
     public function setProcessingId($value, int $position = 11)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Version Id (MSH.12)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 12
+     *
+     * @return bool
+     *
+     */
     public function setVersionId($value, int $position = 12)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Sequence Number (MSH.13)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 13
+     *
+     * @return bool
+     *
+     */
     public function setSequenceNumber($value, int $position = 13)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Continuation Pointer (MSH.14)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 14
+     *
+     * @return bool
+     *
+     */
     public function setContinuationPointer($value, int $position = 14)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Accept Acknowledgement Type (MSH.15)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 15
+     *
+     * @return bool
+     *
+     */
     public function setAcceptAcknowledgementType($value, int $position = 15)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Application Acknowledgement Type (MSH.16)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 16
+     *
+     * @return bool
+     *
+     */
     public function setApplicationAcknowledgementType($value, int $position = 16)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Country Code (MSH.17)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 17
+     *
+     * @return bool
+     *
+     */
     public function setCountryCode($value, int $position = 17)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Character Set (MSH.18)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 18
+     *
+     * @return bool
+     *
+     */
     public function setCharacterSet($value, int $position = 18)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Principal Language (MSH.19)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 19
+     *
+     * @return bool
+     *
+     */
     public function setPrincipalLanguage($value, int $position = 19)
     {
         return $this->setField($position, $value);
@@ -234,26 +389,66 @@ class MSH extends Segment
 
     // -------------------- Getter Methods ------------------------------
 
+    /**
+     * Get Sending Application (MSH.3)
+     *
+     * @param int $position Defaults to 3
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getSendingApplication(int $position = 3)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Sending Facility (MSH.4)
+     *
+     * @param int $position Defaults to 4
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getSendingFacility(int $position = 4)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Receiving Application (MSH.5)
+     *
+     * @param int $position Defaults to 5
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getReceivingApplication(int $position = 5)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Receiving Facility (MSH.6)
+     *
+     * @param int $position Defaults to 6
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getReceivingFacility(int $position = 6)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Date Time Of Message (MSH.7)
+     *
+     * @param int $position Defaults to 7
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getDateTimeOfMessage(int $position = 7)
     {
         return $this->getField($position);
@@ -261,6 +456,14 @@ class MSH extends Segment
 
     /**
      * ORM / ORU etc.
+     */
+    /**
+     * Get Message Type (MSH.9)
+     *
+     * @param int $position Defaults to 9
+     *
+     * @return array|string|int|null
+     *
      */
     public function getMessageType(int $position = 9): string
     {
@@ -271,6 +474,14 @@ class MSH extends Segment
         return (string) $typeField;
     }
 
+    /**
+     * Get Trigger Event (MSH.9)
+     *
+     * @param int $position Defaults to 9
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getTriggerEvent(int $position = 9): string|bool
     {
         $triggerField = $this->getField($position);
@@ -280,11 +491,27 @@ class MSH extends Segment
         return false;
     }
 
+    /**
+     * Get Message Control Id (MSH.10)
+     *
+     * @param int $position Defaults to 10
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getMessageControlId(int $position = 10): string
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Processing Id (MSH.11)
+     *
+     * @param int $position Defaults to 11
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getProcessingId(int $position = 11)
     {
         return $this->getField($position);
@@ -292,6 +519,14 @@ class MSH extends Segment
 
     /**
      * Get HL7 version, e.g. 2.1, 2.3, 3.0 etc.
+     */
+    /**
+     * Get Version Id (MSH.12)
+     *
+     * @param int $position Defaults to 12
+     *
+     * @return array|string|int|null
+     *
      */
     public function getVersionId(int $position = 12): string|array
     {

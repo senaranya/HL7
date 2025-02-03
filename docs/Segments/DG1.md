@@ -13,50 +13,53 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getAttestationDateTime](#dg1getattestationdatetime)||
-|[getConfidentialIndicator](#dg1getconfidentialindicator)||
-|[getDRGApprovalIndicator](#dg1getdrgapprovalindicator)||
-|[getDRGGrouperReviewCode](#dg1getdrggrouperreviewcode)||
-|[getDiagnosingClinician](#dg1getdiagnosingclinician)||
-|[getDiagnosisClassification](#dg1getdiagnosisclassification)||
-|[getDiagnosisCodeDG1](#dg1getdiagnosiscodedg1)||
-|[getDiagnosisCodingMethod](#dg1getdiagnosiscodingmethod)||
-|[getDiagnosisDateTime](#dg1getdiagnosisdatetime)||
-|[getDiagnosisDescription](#dg1getdiagnosisdescription)||
-|[getDiagnosisPriority](#dg1getdiagnosispriority)||
-|[getDiagnosisType](#dg1getdiagnosistype)||
-|[getDiagnosticRelatedGroup](#dg1getdiagnosticrelatedgroup)||
-|[getGrouperVersionAndType](#dg1getgrouperversionandtype)||
-|[getID](#dg1getid)||
-|[getMajorDiagnosticCategory](#dg1getmajordiagnosticcategory)||
-|[getOutlierCost](#dg1getoutliercost)||
-|[getOutlierDays](#dg1getoutlierdays)||
-|[getOutlierType](#dg1getoutliertype)||
-|[setAttestationDateTime](#dg1setattestationdatetime)||
-|[setConfidentialIndicator](#dg1setconfidentialindicator)||
-|[setDRGApprovalIndicator](#dg1setdrgapprovalindicator)||
-|[setDRGGrouperReviewCode](#dg1setdrggrouperreviewcode)||
-|[setDiagnosingClinician](#dg1setdiagnosingclinician)||
-|[setDiagnosisClassification](#dg1setdiagnosisclassification)||
+|[__destruct](#dg1__destruct)||
+|[getAttestationDateTime](#dg1getattestationdatetime)|Get Attestation Date Time (DG1.19)|
+|[getConfidentialIndicator](#dg1getconfidentialindicator)|Get Confidential Indicator (DG1.18)|
+|[getDRGApprovalIndicator](#dg1getdrgapprovalindicator)|Get DRGApproval Indicator (DG1.9)|
+|[getDRGGrouperReviewCode](#dg1getdrggrouperreviewcode)|Get DRGGrouper Review Code (DG1.10)|
+|[getDiagnosingClinician](#dg1getdiagnosingclinician)|Get Diagnosing Clinician (DG1.16)|
+|[getDiagnosisClassification](#dg1getdiagnosisclassification)|Get Diagnosis Classification (DG1.17)|
+|[getDiagnosisCodeDG1](#dg1getdiagnosiscodedg1)|Get Diagnosis Code DG1 (DG1.3)|
+|[getDiagnosisCodingMethod](#dg1getdiagnosiscodingmethod)|Get Diagnosis Coding Method (DG1.2)|
+|[getDiagnosisDateTime](#dg1getdiagnosisdatetime)|Get Diagnosis Date Time (DG1.5)|
+|[getDiagnosisDescription](#dg1getdiagnosisdescription)|Get Diagnosis Description (DG1.4)|
+|[getDiagnosisPriority](#dg1getdiagnosispriority)|Get Diagnosis Priority (DG1.15)|
+|[getDiagnosisType](#dg1getdiagnosistype)|Get Diagnosis Type (DG1.6)|
+|[getDiagnosticRelatedGroup](#dg1getdiagnosticrelatedgroup)|Get Diagnostic Related Group (DG1.8)|
+|[getGrouperVersionAndType](#dg1getgrouperversionandtype)|Get Grouper Version And Type (DG1.14)|
+|[getID](#dg1getid)|Get ID (DG1.1)|
+|[getMajorDiagnosticCategory](#dg1getmajordiagnosticcategory)|Get Major Diagnostic Category (DG1.7)|
+|[getOutlierCost](#dg1getoutliercost)|Get Outlier Cost (DG1.13)|
+|[getOutlierDays](#dg1getoutlierdays)|Get Outlier Days (DG1.12)|
+|[getOutlierType](#dg1getoutliertype)|Get Outlier Type (DG1.11)|
+|[resetIndex](#dg1resetindex)|Reset index of this segment|
+|[setAttestationDateTime](#dg1setattestationdatetime)|Set Attestation Date Time (DG1.19)|
+|[setConfidentialIndicator](#dg1setconfidentialindicator)|Set Confidential Indicator (DG1.18)|
+|[setDRGApprovalIndicator](#dg1setdrgapprovalindicator)|Set DRGApproval Indicator (DG1.9)|
+|[setDRGGrouperReviewCode](#dg1setdrggrouperreviewcode)|Set DRGGrouper Review Code (DG1.10)|
+|[setDiagnosingClinician](#dg1setdiagnosingclinician)|Set Diagnosing Clinician (DG1.16)|
+|[setDiagnosisClassification](#dg1setdiagnosisclassification)|Set Diagnosis Classification (DG1.17)|
 |[setDiagnosisCodeDG1](#dg1setdiagnosiscodedg1)||
-|[setDiagnosisCodingMethod](#dg1setdiagnosiscodingmethod)||
-|[setDiagnosisDateTime](#dg1setdiagnosisdatetime)||
-|[setDiagnosisDescription](#dg1setdiagnosisdescription)||
-|[setDiagnosisPriority](#dg1setdiagnosispriority)||
-|[setDiagnosisType](#dg1setdiagnosistype)||
-|[setDiagnosticRelatedGroup](#dg1setdiagnosticrelatedgroup)||
-|[setGrouperVersionAndType](#dg1setgrouperversionandtype)||
-|[setID](#dg1setid)||
-|[setMajorDiagnosticCategory](#dg1setmajordiagnosticcategory)||
-|[setOutlierCost](#dg1setoutliercost)||
-|[setOutlierDays](#dg1setoutlierdays)||
-|[setOutlierType](#dg1setoutliertype)||
+|[setDiagnosisCodingMethod](#dg1setdiagnosiscodingmethod)|Set Diagnosis Coding Method (DG1.2)|
+|[setDiagnosisDateTime](#dg1setdiagnosisdatetime)|Set Diagnosis Date Time (DG1.5)|
+|[setDiagnosisDescription](#dg1setdiagnosisdescription)|Set Diagnosis Description (DG1.4)|
+|[setDiagnosisPriority](#dg1setdiagnosispriority)|Set Diagnosis Priority (DG1.15)|
+|[setDiagnosisType](#dg1setdiagnosistype)|Set Diagnosis Type (DG1.6)|
+|[setDiagnosticRelatedGroup](#dg1setdiagnosticrelatedgroup)|Set Diagnostic Related Group (DG1.8)|
+|[setGrouperVersionAndType](#dg1setgrouperversionandtype)|Set Grouper Version And Type (DG1.14)|
+|[setID](#dg1setid)|Set ID (DG1.1)|
+|[setMajorDiagnosticCategory](#dg1setmajordiagnosticcategory)|Set Major Diagnostic Category (DG1.7)|
+|[setOutlierCost](#dg1setoutliercost)|Set Outlier Cost (DG1.13)|
+|[setOutlierDays](#dg1setoutlierdays)|Set Outlier Days (DG1.12)|
+|[setOutlierType](#dg1setoutliertype)|Set Outlier Type (DG1.11)|
 
 ## Inherited methods
 
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -65,12 +68,12 @@ Aranyasen\HL7\Segment
 
 
 
-### DG1::getAttestationDateTime  
+### DG1::__destruct  
 
 **Description**
 
 ```php
-public getAttestationDateTime (void)
+ __destruct (void)
 ```
 
  
@@ -84,6 +87,34 @@ public getAttestationDateTime (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### DG1::getAttestationDateTime  
+
+**Description**
+
+```php
+public getAttestationDateTime (int $position)
+```
+
+Get Attestation Date Time (DG1.19) 
+
+ 
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 19  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -93,20 +124,24 @@ public getAttestationDateTime (void)
 **Description**
 
 ```php
-public getConfidentialIndicator (void)
+public getConfidentialIndicator (int $position)
 ```
 
- 
+Get Confidential Indicator (DG1.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -116,20 +151,24 @@ public getConfidentialIndicator (void)
 **Description**
 
 ```php
-public getDRGApprovalIndicator (void)
+public getDRGApprovalIndicator (int $position)
 ```
 
- 
+Get DRGApproval Indicator (DG1.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -139,20 +178,24 @@ public getDRGApprovalIndicator (void)
 **Description**
 
 ```php
-public getDRGGrouperReviewCode (void)
+public getDRGGrouperReviewCode (int $position)
 ```
 
- 
+Get DRGGrouper Review Code (DG1.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -162,20 +205,24 @@ public getDRGGrouperReviewCode (void)
 **Description**
 
 ```php
-public getDiagnosingClinician (void)
+public getDiagnosingClinician (int $position)
 ```
 
- 
+Get Diagnosing Clinician (DG1.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -185,20 +232,24 @@ public getDiagnosingClinician (void)
 **Description**
 
 ```php
-public getDiagnosisClassification (void)
+public getDiagnosisClassification (int $position)
 ```
 
- 
+Get Diagnosis Classification (DG1.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -208,20 +259,24 @@ public getDiagnosisClassification (void)
 **Description**
 
 ```php
-public getDiagnosisCodeDG1 (void)
+public getDiagnosisCodeDG1 (int $position)
 ```
 
- 
+Get Diagnosis Code DG1 (DG1.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -231,20 +286,24 @@ public getDiagnosisCodeDG1 (void)
 **Description**
 
 ```php
-public getDiagnosisCodingMethod (void)
+public getDiagnosisCodingMethod (int $position)
 ```
 
- 
+Get Diagnosis Coding Method (DG1.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -254,20 +313,24 @@ public getDiagnosisCodingMethod (void)
 **Description**
 
 ```php
-public getDiagnosisDateTime (void)
+public getDiagnosisDateTime (int $position)
 ```
 
- 
+Get Diagnosis Date Time (DG1.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -277,20 +340,24 @@ public getDiagnosisDateTime (void)
 **Description**
 
 ```php
-public getDiagnosisDescription (void)
+public getDiagnosisDescription (int $position)
 ```
 
- 
+Get Diagnosis Description (DG1.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -300,20 +367,24 @@ public getDiagnosisDescription (void)
 **Description**
 
 ```php
-public getDiagnosisPriority (void)
+public getDiagnosisPriority (int $position)
 ```
 
- 
+Get Diagnosis Priority (DG1.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -323,20 +394,24 @@ public getDiagnosisPriority (void)
 **Description**
 
 ```php
-public getDiagnosisType (void)
+public getDiagnosisType (int $position)
 ```
 
- 
+Get Diagnosis Type (DG1.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -346,20 +421,24 @@ public getDiagnosisType (void)
 **Description**
 
 ```php
-public getDiagnosticRelatedGroup (void)
+public getDiagnosticRelatedGroup (int $position)
 ```
 
- 
+Get Diagnostic Related Group (DG1.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -369,20 +448,24 @@ public getDiagnosticRelatedGroup (void)
 **Description**
 
 ```php
-public getGrouperVersionAndType (void)
+public getGrouperVersionAndType (int $position)
 ```
 
- 
+Get Grouper Version And Type (DG1.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -392,20 +475,24 @@ public getGrouperVersionAndType (void)
 **Description**
 
 ```php
-public getID (void)
+public getID (int $position)
 ```
 
- 
+Get ID (DG1.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -415,20 +502,24 @@ public getID (void)
 **Description**
 
 ```php
-public getMajorDiagnosticCategory (void)
+public getMajorDiagnosticCategory (int $position)
 ```
 
- 
+Get Major Diagnostic Category (DG1.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -438,20 +529,24 @@ public getMajorDiagnosticCategory (void)
 **Description**
 
 ```php
-public getOutlierCost (void)
+public getOutlierCost (int $position)
 ```
 
- 
+Get Outlier Cost (DG1.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -461,20 +556,24 @@ public getOutlierCost (void)
 **Description**
 
 ```php
-public getOutlierDays (void)
+public getOutlierDays (int $position)
 ```
 
- 
+Get Outlier Days (DG1.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -484,10 +583,37 @@ public getOutlierDays (void)
 **Description**
 
 ```php
-public getOutlierType (void)
+public getOutlierType (int $position)
 ```
 
+Get Outlier Type (DG1.11) 
+
  
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 11  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
+
+<hr />
+
+
+### DG1::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (void)
+```
+
+Reset index of this segment 
 
  
 
@@ -498,6 +624,7 @@ public getOutlierType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -507,20 +634,25 @@ public getOutlierType (void)
 **Description**
 
 ```php
-public setAttestationDateTime (void)
+public setAttestationDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Attestation Date Time (DG1.19) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -530,20 +662,25 @@ public setAttestationDateTime (void)
 **Description**
 
 ```php
-public setConfidentialIndicator (void)
+public setConfidentialIndicator (string|int|array|null $value, int $position)
 ```
 
- 
+Set Confidential Indicator (DG1.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -553,20 +690,25 @@ public setConfidentialIndicator (void)
 **Description**
 
 ```php
-public setDRGApprovalIndicator (void)
+public setDRGApprovalIndicator (string|int|array|null $value, int $position)
 ```
 
- 
+Set DRGApproval Indicator (DG1.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -576,20 +718,25 @@ public setDRGApprovalIndicator (void)
 **Description**
 
 ```php
-public setDRGGrouperReviewCode (void)
+public setDRGGrouperReviewCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set DRGGrouper Review Code (DG1.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -599,20 +746,25 @@ public setDRGGrouperReviewCode (void)
 **Description**
 
 ```php
-public setDiagnosingClinician (void)
+public setDiagnosingClinician (string|int|array|null $value, int $position)
 ```
 
- 
+Set Diagnosing Clinician (DG1.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -622,20 +774,25 @@ public setDiagnosingClinician (void)
 **Description**
 
 ```php
-public setDiagnosisClassification (void)
+public setDiagnosisClassification (string|int|array|null $value, int $position)
 ```
 
- 
+Set Diagnosis Classification (DG1.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -645,7 +802,7 @@ public setDiagnosisClassification (void)
 **Description**
 
 ```php
-public setDiagnosisCodeDG1 (void)
+ setDiagnosisCodeDG1 (void)
 ```
 
  
@@ -659,6 +816,7 @@ public setDiagnosisCodeDG1 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -668,20 +826,25 @@ public setDiagnosisCodeDG1 (void)
 **Description**
 
 ```php
-public setDiagnosisCodingMethod (void)
+public setDiagnosisCodingMethod (string|int|array|null $value, int $position)
 ```
 
- 
+Set Diagnosis Coding Method (DG1.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -691,20 +854,25 @@ public setDiagnosisCodingMethod (void)
 **Description**
 
 ```php
-public setDiagnosisDateTime (void)
+public setDiagnosisDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Diagnosis Date Time (DG1.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -714,20 +882,25 @@ public setDiagnosisDateTime (void)
 **Description**
 
 ```php
-public setDiagnosisDescription (void)
+public setDiagnosisDescription (string|int|array|null $value, int $position)
 ```
 
- 
+Set Diagnosis Description (DG1.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -737,20 +910,25 @@ public setDiagnosisDescription (void)
 **Description**
 
 ```php
-public setDiagnosisPriority (void)
+public setDiagnosisPriority (string|int|array|null $value, int $position)
 ```
 
- 
+Set Diagnosis Priority (DG1.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -760,20 +938,25 @@ public setDiagnosisPriority (void)
 **Description**
 
 ```php
-public setDiagnosisType (void)
+public setDiagnosisType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Diagnosis Type (DG1.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -783,20 +966,25 @@ public setDiagnosisType (void)
 **Description**
 
 ```php
-public setDiagnosticRelatedGroup (void)
+public setDiagnosticRelatedGroup (string|int|array|null $value, int $position)
 ```
 
- 
+Set Diagnostic Related Group (DG1.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -806,20 +994,25 @@ public setDiagnosticRelatedGroup (void)
 **Description**
 
 ```php
-public setGrouperVersionAndType (void)
+public setGrouperVersionAndType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Grouper Version And Type (DG1.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -829,20 +1022,25 @@ public setGrouperVersionAndType (void)
 **Description**
 
 ```php
-public setID (void)
+public setID (int $value, int $position)
 ```
 
- 
+Set ID (DG1.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $value`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -852,20 +1050,25 @@ public setID (void)
 **Description**
 
 ```php
-public setMajorDiagnosticCategory (void)
+public setMajorDiagnosticCategory (string|int|array|null $value, int $position)
 ```
 
- 
+Set Major Diagnostic Category (DG1.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -875,20 +1078,25 @@ public setMajorDiagnosticCategory (void)
 **Description**
 
 ```php
-public setOutlierCost (void)
+public setOutlierCost (string|int|array|null $value, int $position)
 ```
 
- 
+Set Outlier Cost (DG1.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -898,20 +1106,25 @@ public setOutlierCost (void)
 **Description**
 
 ```php
-public setOutlierDays (void)
+public setOutlierDays (string|int|array|null $value, int $position)
 ```
 
- 
+Set Outlier Days (DG1.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -921,20 +1134,25 @@ public setOutlierDays (void)
 **Description**
 
 ```php
-public setOutlierType (void)
+public setOutlierType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Outlier Type (DG1.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 

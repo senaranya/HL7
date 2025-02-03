@@ -39,41 +39,109 @@ class NTE extends Segment
         self::$setId = $index;
     }
 
+    /**
+     * Set ID (NTE.1)
+     *
+     * @param int $value
+     * @param int $position Defaults to 1
+     *
+     * @return bool
+     *
+     */
     public function setID(int $value, int $position = 1)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Source Of Comment (NTE.2)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 2
+     *
+     * @return bool
+     *
+     */
     public function setSourceOfComment($value, int $position = 2)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Comment (NTE.3)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 3
+     *
+     * @return bool
+     *
+     */
     public function setComment($value, int $position = 3)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Comment Type (NTE.4)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 4
+     *
+     * @return bool
+     *
+     */
     public function setCommentType($value, int $position = 4)
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Get ID (NTE.1)
+     *
+     * @param int $position Defaults to 1
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getID(int $position = 1)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Source Of Comment (NTE.2)
+     *
+     * @param int $position Defaults to 2
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getSourceOfComment(int $position = 2)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Comment (NTE.3)
+     *
+     * @param int $position Defaults to 3
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getComment(int $position = 3)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Comment Type (NTE.4)
+     *
+     * @param int $position Defaults to 4
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getCommentType(int $position = 4)
     {
         return $this->getField($position);

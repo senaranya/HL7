@@ -13,23 +13,24 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getAlertLevel](#equgetalertlevel)||
-|[getEquipmentInstanceIdentifier](#equgetequipmentinstanceidentifier)||
-|[getEquipmentState](#equgetequipmentstate)||
-|[getEventDateTime](#equgeteventdatetime)||
-|[getLocalRemoteControlState](#equgetlocalremotecontrolstate)||
+|[getAlertLevel](#equgetalertlevel)|Get Alert Level (EQU.4)|
+|[getEquipmentInstanceIdentifier](#equgetequipmentinstanceidentifier)|Get Equipment Instance Identifier (EQU.1)|
+|[getEquipmentState](#equgetequipmentstate)|Get Equipment State (EQU.3)|
+|[getEventDateTime](#equgeteventdatetime)|Get Event Date Time (EQU.2)|
+|[getLocalRemoteControlState](#equgetlocalremotecontrolstate)|Get Local Remote Control State (EQU.4)|
 |[resetIndex](#equresetindex)|Reset index of this segment|
-|[setAlertLevel](#equsetalertlevel)||
+|[setAlertLevel](#equsetalertlevel)|Set Alert Level (EQU.5)|
 |[setEquipmentInstanceIdentifier](#equsetequipmentinstanceidentifier)||
-|[setEquipmentState](#equsetequipmentstate)||
-|[setEventDateTime](#equseteventdatetime)||
-|[setLocalRemoteControlState](#equsetlocalremotecontrolstate)||
+|[setEquipmentState](#equsetequipmentstate)|Set Equipment State (EQU.3)|
+|[setEventDateTime](#equseteventdatetime)|Set Event Date Time (EQU.2)|
+|[setLocalRemoteControlState](#equsetlocalremotecontrolstate)|Set Local Remote Control State (EQU.4)|
 
 ## Inherited methods
 
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -43,20 +44,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getAlertLevel (void)
+public getAlertLevel (int $position)
 ```
 
- 
+Get Alert Level (EQU.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -67,20 +71,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getEquipmentInstanceIdentifier (void)
+public getEquipmentInstanceIdentifier (int $position)
 ```
 
- 
+Get Equipment Instance Identifier (EQU.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -91,20 +98,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getEquipmentState (void)
+public getEquipmentState (int $position)
 ```
 
- 
+Get Equipment State (EQU.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -115,20 +125,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getEventDateTime (void)
+public getEventDateTime (int $position)
 ```
 
- 
+Get Event Date Time (EQU.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -139,20 +152,23 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
- getLocalRemoteControlState (void)
+public getLocalRemoteControlState (int $position)
 ```
 
- 
+Get Local Remote Control State (EQU.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
 
 
 <hr />
@@ -163,7 +179,7 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
-public static resetIndex (int $index)
+public static resetIndex (void)
 ```
 
 Reset index of this segment 
@@ -172,7 +188,7 @@ Reset index of this segment
 
 **Parameters**
 
-* `(int) $index`
+`This function has no parameters.`
 
 **Return Values**
 
@@ -187,20 +203,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setAlertLevel (void)
+public setAlertLevel (string|int|array|null $value, int $position)
 ```
 
- 
+Set Alert Level (EQU.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -235,20 +255,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setEquipmentState (void)
+public setEquipmentState (string|int|array|null $value, int $position)
 ```
 
- 
+Set Equipment State (EQU.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -259,20 +283,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setEventDateTime (void)
+public setEventDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Event Date Time (EQU.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />
@@ -283,20 +311,24 @@ Reset index of this segment
 **Description**
 
 ```php
- setLocalRemoteControlState (void)
+public setLocalRemoteControlState (string|int|array|null $value, int $position)
 ```
 
- 
+Set Local Remote Control State (EQU.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`bool`
+
+
 
 
 <hr />

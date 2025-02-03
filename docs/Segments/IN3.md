@@ -13,62 +13,65 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getAppealReason](#in3getappealreason)||
-|[getCaseManager](#in3getcasemanager)||
-|[getCertificationAgency](#in3getcertificationagency)||
-|[getCertificationAgencyPhoneNumber](#in3getcertificationagencyphonenumber)||
-|[getCertificationBeginDate](#in3getcertificationbegindate)||
-|[getCertificationContact](#in3getcertificationcontact)||
-|[getCertificationContactPhoneNumber](#in3getcertificationcontactphonenumber)||
-|[getCertificationDateTime](#in3getcertificationdatetime)||
-|[getCertificationEndDate](#in3getcertificationenddate)||
-|[getCertificationModifyDateTime](#in3getcertificationmodifydatetime)||
-|[getCertificationNumber](#in3getcertificationnumber)||
-|[getCertificationRequired](#in3getcertificationrequired)||
-|[getCertifiedBy](#in3getcertifiedby)||
-|[getDays](#in3getdays)||
-|[getID](#in3getid)||
-|[getNonConcurCodeDescription](#in3getnonconcurcodedescription)||
-|[getNonConcurEffectiveDateTime](#in3getnonconcureffectivedatetime)||
-|[getOperator](#in3getoperator)||
-|[getPenalty](#in3getpenalty)||
-|[getPhysicianReviewer](#in3getphysicianreviewer)||
-|[getPreCertificationRequirement](#in3getprecertificationrequirement)||
-|[getSecondOpinionDate](#in3getsecondopiniondate)||
-|[getSecondOpinionDocumentationReceived](#in3getsecondopiniondocumentationreceived)||
-|[getSecondOpinionPhysician](#in3getsecondopinionphysician)||
-|[getSecondOpinionStatus](#in3getsecondopinionstatus)||
-|[setAppealReason](#in3setappealreason)||
-|[setCaseManager](#in3setcasemanager)||
-|[setCertificationAgency](#in3setcertificationagency)||
-|[setCertificationAgencyPhoneNumber](#in3setcertificationagencyphonenumber)||
-|[setCertificationBeginDate](#in3setcertificationbegindate)||
-|[setCertificationContact](#in3setcertificationcontact)||
-|[setCertificationContactPhoneNumber](#in3setcertificationcontactphonenumber)||
-|[setCertificationDateTime](#in3setcertificationdatetime)||
-|[setCertificationEndDate](#in3setcertificationenddate)||
-|[setCertificationModifyDateTime](#in3setcertificationmodifydatetime)||
-|[setCertificationNumber](#in3setcertificationnumber)||
-|[setCertificationRequired](#in3setcertificationrequired)||
-|[setCertifiedBy](#in3setcertifiedby)||
-|[setDays](#in3setdays)||
-|[setID](#in3setid)||
-|[setNonConcurCodeDescription](#in3setnonconcurcodedescription)||
-|[setNonConcurEffectiveDateTime](#in3setnonconcureffectivedatetime)||
-|[setOperator](#in3setoperator)||
-|[setPenalty](#in3setpenalty)||
-|[setPhysicianReviewer](#in3setphysicianreviewer)||
-|[setPreCertificationRequirement](#in3setprecertificationrequirement)||
-|[setSecondOpinionDate](#in3setsecondopiniondate)||
-|[setSecondOpinionDocumentationReceived](#in3setsecondopiniondocumentationreceived)||
-|[setSecondOpinionPhysician](#in3setsecondopinionphysician)||
-|[setSecondOpinionStatus](#in3setsecondopinionstatus)||
+|[__destruct](#in3__destruct)||
+|[getAppealReason](#in3getappealreason)|Get Appeal Reason (IN3.17)|
+|[getCaseManager](#in3getcasemanager)|Get Case Manager (IN3.21)|
+|[getCertificationAgency](#in3getcertificationagency)|Get Certification Agency (IN3.18)|
+|[getCertificationAgencyPhoneNumber](#in3getcertificationagencyphonenumber)|Get Certification Agency Phone Number (IN3.19)|
+|[getCertificationBeginDate](#in3getcertificationbegindate)|Get Certification Begin Date (IN3.9)|
+|[getCertificationContact](#in3getcertificationcontact)|Get Certification Contact (IN3.15)|
+|[getCertificationContactPhoneNumber](#in3getcertificationcontactphonenumber)|Get Certification Contact Phone Number (IN3.16)|
+|[getCertificationDateTime](#in3getcertificationdatetime)|Get Certification Date Time (IN3.6)|
+|[getCertificationEndDate](#in3getcertificationenddate)|Get Certification End Date (IN3.10)|
+|[getCertificationModifyDateTime](#in3getcertificationmodifydatetime)|Get Certification Modify Date Time (IN3.7)|
+|[getCertificationNumber](#in3getcertificationnumber)|Get Certification Number (IN3.2)|
+|[getCertificationRequired](#in3getcertificationrequired)|Get Certification Required (IN3.4)|
+|[getCertifiedBy](#in3getcertifiedby)|Get Certified By (IN3.3)|
+|[getDays](#in3getdays)|Get Days (IN3.11)|
+|[getID](#in3getid)|Get ID (IN3.1)|
+|[getNonConcurCodeDescription](#in3getnonconcurcodedescription)|Get Non Concur Code Description (IN3.12)|
+|[getNonConcurEffectiveDateTime](#in3getnonconcureffectivedatetime)|Get Non Concur Effective Date Time (IN3.13)|
+|[getOperator](#in3getoperator)|Get Operator (IN3.8)|
+|[getPenalty](#in3getpenalty)|Get Penalty (IN3.5)|
+|[getPhysicianReviewer](#in3getphysicianreviewer)|Get Physician Reviewer (IN3.14)|
+|[getPreCertificationRequirement](#in3getprecertificationrequirement)|Get Pre Certification Requirement (IN3.20)|
+|[getSecondOpinionDate](#in3getsecondopiniondate)|Get Second Opinion Date (IN3.22)|
+|[getSecondOpinionDocumentationReceived](#in3getsecondopiniondocumentationreceived)|Get Second Opinion Documentation Received (IN3.24)|
+|[getSecondOpinionPhysician](#in3getsecondopinionphysician)|Get Second Opinion Physician (IN3.25)|
+|[getSecondOpinionStatus](#in3getsecondopinionstatus)|Get Second Opinion Status (IN3.23)|
+|[resetIndex](#in3resetindex)|Reset index of this segment|
+|[setAppealReason](#in3setappealreason)|Set Appeal Reason (IN3.17)|
+|[setCaseManager](#in3setcasemanager)|Set Case Manager (IN3.21)|
+|[setCertificationAgency](#in3setcertificationagency)|Set Certification Agency (IN3.18)|
+|[setCertificationAgencyPhoneNumber](#in3setcertificationagencyphonenumber)|Set Certification Agency Phone Number (IN3.19)|
+|[setCertificationBeginDate](#in3setcertificationbegindate)|Set Certification Begin Date (IN3.9)|
+|[setCertificationContact](#in3setcertificationcontact)|Set Certification Contact (IN3.15)|
+|[setCertificationContactPhoneNumber](#in3setcertificationcontactphonenumber)|Set Certification Contact Phone Number (IN3.16)|
+|[setCertificationDateTime](#in3setcertificationdatetime)|Set Certification Date Time (IN3.6)|
+|[setCertificationEndDate](#in3setcertificationenddate)|Set Certification End Date (IN3.10)|
+|[setCertificationModifyDateTime](#in3setcertificationmodifydatetime)|Set Certification Modify Date Time (IN3.7)|
+|[setCertificationNumber](#in3setcertificationnumber)|Set Certification Number (IN3.2)|
+|[setCertificationRequired](#in3setcertificationrequired)|Set Certification Required (IN3.4)|
+|[setCertifiedBy](#in3setcertifiedby)|Set Certified By (IN3.3)|
+|[setDays](#in3setdays)|Set Days (IN3.11)|
+|[setID](#in3setid)|Set ID (IN3.1)|
+|[setNonConcurCodeDescription](#in3setnonconcurcodedescription)|Set Non Concur Code Description (IN3.12)|
+|[setNonConcurEffectiveDateTime](#in3setnonconcureffectivedatetime)|Set Non Concur Effective Date Time (IN3.13)|
+|[setOperator](#in3setoperator)|Set Operator (IN3.8)|
+|[setPenalty](#in3setpenalty)|Set Penalty (IN3.5)|
+|[setPhysicianReviewer](#in3setphysicianreviewer)|Set Physician Reviewer (IN3.14)|
+|[setPreCertificationRequirement](#in3setprecertificationrequirement)|Set Pre Certification Requirement (IN3.20)|
+|[setSecondOpinionDate](#in3setsecondopiniondate)|Set Second Opinion Date (IN3.22)|
+|[setSecondOpinionDocumentationReceived](#in3setsecondopiniondocumentationreceived)|Set Second Opinion Documentation Received (IN3.24)|
+|[setSecondOpinionPhysician](#in3setsecondopinionphysician)|Set Second Opinion Physician (IN3.25)|
+|[setSecondOpinionStatus](#in3setsecondopinionstatus)|Set Second Opinion Status (IN3.23)|
 
 ## Inherited methods
 
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -77,12 +80,12 @@ Aranyasen\HL7\Segment
 
 
 
-### IN3::getAppealReason  
+### IN3::__destruct  
 
 **Description**
 
 ```php
-public getAppealReason (void)
+ __destruct (void)
 ```
 
  
@@ -96,6 +99,34 @@ public getAppealReason (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### IN3::getAppealReason  
+
+**Description**
+
+```php
+public getAppealReason (int $position)
+```
+
+Get Appeal Reason (IN3.17) 
+
+ 
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 17  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -105,20 +136,24 @@ public getAppealReason (void)
 **Description**
 
 ```php
-public getCaseManager (void)
+public getCaseManager (int $position)
 ```
 
- 
+Get Case Manager (IN3.21) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 21  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -128,20 +163,24 @@ public getCaseManager (void)
 **Description**
 
 ```php
-public getCertificationAgency (void)
+public getCertificationAgency (int $position)
 ```
 
- 
+Get Certification Agency (IN3.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -151,20 +190,24 @@ public getCertificationAgency (void)
 **Description**
 
 ```php
-public getCertificationAgencyPhoneNumber (void)
+public getCertificationAgencyPhoneNumber (int $position)
 ```
 
- 
+Get Certification Agency Phone Number (IN3.19) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -174,20 +217,24 @@ public getCertificationAgencyPhoneNumber (void)
 **Description**
 
 ```php
-public getCertificationBeginDate (void)
+public getCertificationBeginDate (int $position)
 ```
 
- 
+Get Certification Begin Date (IN3.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -197,20 +244,24 @@ public getCertificationBeginDate (void)
 **Description**
 
 ```php
-public getCertificationContact (void)
+public getCertificationContact (int $position)
 ```
 
- 
+Get Certification Contact (IN3.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -220,20 +271,24 @@ public getCertificationContact (void)
 **Description**
 
 ```php
-public getCertificationContactPhoneNumber (void)
+public getCertificationContactPhoneNumber (int $position)
 ```
 
- 
+Get Certification Contact Phone Number (IN3.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -243,20 +298,24 @@ public getCertificationContactPhoneNumber (void)
 **Description**
 
 ```php
-public getCertificationDateTime (void)
+public getCertificationDateTime (int $position)
 ```
 
- 
+Get Certification Date Time (IN3.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -266,20 +325,24 @@ public getCertificationDateTime (void)
 **Description**
 
 ```php
-public getCertificationEndDate (void)
+public getCertificationEndDate (int $position)
 ```
 
- 
+Get Certification End Date (IN3.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -289,20 +352,24 @@ public getCertificationEndDate (void)
 **Description**
 
 ```php
-public getCertificationModifyDateTime (void)
+public getCertificationModifyDateTime (int $position)
 ```
 
- 
+Get Certification Modify Date Time (IN3.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -312,20 +379,24 @@ public getCertificationModifyDateTime (void)
 **Description**
 
 ```php
-public getCertificationNumber (void)
+public getCertificationNumber (int $position)
 ```
 
- 
+Get Certification Number (IN3.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -335,20 +406,24 @@ public getCertificationNumber (void)
 **Description**
 
 ```php
-public getCertificationRequired (void)
+public getCertificationRequired (int $position)
 ```
 
- 
+Get Certification Required (IN3.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -358,20 +433,24 @@ public getCertificationRequired (void)
 **Description**
 
 ```php
-public getCertifiedBy (void)
+public getCertifiedBy (int $position)
 ```
 
- 
+Get Certified By (IN3.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -381,20 +460,24 @@ public getCertifiedBy (void)
 **Description**
 
 ```php
-public getDays (void)
+public getDays (int $position)
 ```
 
- 
+Get Days (IN3.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -404,20 +487,24 @@ public getDays (void)
 **Description**
 
 ```php
-public getID (void)
+public getID (int $position)
 ```
 
- 
+Get ID (IN3.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -427,20 +514,24 @@ public getID (void)
 **Description**
 
 ```php
-public getNonConcurCodeDescription (void)
+public getNonConcurCodeDescription (int $position)
 ```
 
- 
+Get Non Concur Code Description (IN3.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -450,20 +541,24 @@ public getNonConcurCodeDescription (void)
 **Description**
 
 ```php
-public getNonConcurEffectiveDateTime (void)
+public getNonConcurEffectiveDateTime (int $position)
 ```
 
- 
+Get Non Concur Effective Date Time (IN3.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -473,20 +568,24 @@ public getNonConcurEffectiveDateTime (void)
 **Description**
 
 ```php
-public getOperator (void)
+public getOperator (int $position)
 ```
 
- 
+Get Operator (IN3.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -496,20 +595,24 @@ public getOperator (void)
 **Description**
 
 ```php
-public getPenalty (void)
+public getPenalty (int $position)
 ```
 
- 
+Get Penalty (IN3.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -519,20 +622,24 @@ public getPenalty (void)
 **Description**
 
 ```php
-public getPhysicianReviewer (void)
+public getPhysicianReviewer (int $position)
 ```
 
- 
+Get Physician Reviewer (IN3.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -542,20 +649,24 @@ public getPhysicianReviewer (void)
 **Description**
 
 ```php
-public getPreCertificationRequirement (void)
+public getPreCertificationRequirement (int $position)
 ```
 
- 
+Get Pre Certification Requirement (IN3.20) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 20  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -565,20 +676,24 @@ public getPreCertificationRequirement (void)
 **Description**
 
 ```php
-public getSecondOpinionDate (void)
+public getSecondOpinionDate (int $position)
 ```
 
- 
+Get Second Opinion Date (IN3.22) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 22  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -588,20 +703,24 @@ public getSecondOpinionDate (void)
 **Description**
 
 ```php
-public getSecondOpinionDocumentationReceived (void)
+public getSecondOpinionDocumentationReceived (int $position)
 ```
 
- 
+Get Second Opinion Documentation Received (IN3.24) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 24  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -611,20 +730,24 @@ public getSecondOpinionDocumentationReceived (void)
 **Description**
 
 ```php
-public getSecondOpinionPhysician (void)
+public getSecondOpinionPhysician (int $position)
 ```
 
- 
+Get Second Opinion Physician (IN3.25) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 25  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -634,10 +757,37 @@ public getSecondOpinionPhysician (void)
 **Description**
 
 ```php
-public getSecondOpinionStatus (void)
+public getSecondOpinionStatus (int $position)
 ```
 
+Get Second Opinion Status (IN3.23) 
+
  
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 23  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
+
+<hr />
+
+
+### IN3::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (void)
+```
+
+Reset index of this segment 
 
  
 
@@ -648,6 +798,7 @@ public getSecondOpinionStatus (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -657,20 +808,25 @@ public getSecondOpinionStatus (void)
 **Description**
 
 ```php
-public setAppealReason (void)
+public setAppealReason (string|int|array|null $value, int $position)
 ```
 
- 
+Set Appeal Reason (IN3.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -680,20 +836,25 @@ public setAppealReason (void)
 **Description**
 
 ```php
-public setCaseManager (void)
+public setCaseManager (string|int|array|null $value, int $position)
 ```
 
- 
+Set Case Manager (IN3.21) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 21  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -703,20 +864,25 @@ public setCaseManager (void)
 **Description**
 
 ```php
-public setCertificationAgency (void)
+public setCertificationAgency (string|int|array|null $value, int $position)
 ```
 
- 
+Set Certification Agency (IN3.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -726,20 +892,25 @@ public setCertificationAgency (void)
 **Description**
 
 ```php
-public setCertificationAgencyPhoneNumber (void)
+public setCertificationAgencyPhoneNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Certification Agency Phone Number (IN3.19) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -749,20 +920,25 @@ public setCertificationAgencyPhoneNumber (void)
 **Description**
 
 ```php
-public setCertificationBeginDate (void)
+public setCertificationBeginDate (string|int|array|null $value, int $position)
 ```
 
- 
+Set Certification Begin Date (IN3.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -772,20 +948,25 @@ public setCertificationBeginDate (void)
 **Description**
 
 ```php
-public setCertificationContact (void)
+public setCertificationContact (string|int|array|null $value, int $position)
 ```
 
- 
+Set Certification Contact (IN3.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -795,20 +976,25 @@ public setCertificationContact (void)
 **Description**
 
 ```php
-public setCertificationContactPhoneNumber (void)
+public setCertificationContactPhoneNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Certification Contact Phone Number (IN3.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -818,20 +1004,25 @@ public setCertificationContactPhoneNumber (void)
 **Description**
 
 ```php
-public setCertificationDateTime (void)
+public setCertificationDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Certification Date Time (IN3.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -841,20 +1032,25 @@ public setCertificationDateTime (void)
 **Description**
 
 ```php
-public setCertificationEndDate (void)
+public setCertificationEndDate (string|int|array|null $value, int $position)
 ```
 
- 
+Set Certification End Date (IN3.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -864,20 +1060,25 @@ public setCertificationEndDate (void)
 **Description**
 
 ```php
-public setCertificationModifyDateTime (void)
+public setCertificationModifyDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Certification Modify Date Time (IN3.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -887,20 +1088,25 @@ public setCertificationModifyDateTime (void)
 **Description**
 
 ```php
-public setCertificationNumber (void)
+public setCertificationNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Certification Number (IN3.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -910,20 +1116,25 @@ public setCertificationNumber (void)
 **Description**
 
 ```php
-public setCertificationRequired (void)
+public setCertificationRequired (string|int|array|null $value, int $position)
 ```
 
- 
+Set Certification Required (IN3.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -933,20 +1144,25 @@ public setCertificationRequired (void)
 **Description**
 
 ```php
-public setCertifiedBy (void)
+public setCertifiedBy (string|int|array|null $value, int $position)
 ```
 
- 
+Set Certified By (IN3.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -956,20 +1172,25 @@ public setCertifiedBy (void)
 **Description**
 
 ```php
-public setDays (void)
+public setDays (string|int|array|null $value, int $position)
 ```
 
- 
+Set Days (IN3.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -979,20 +1200,25 @@ public setDays (void)
 **Description**
 
 ```php
-public setID (void)
+public setID (int $value, int $position)
 ```
 
- 
+Set ID (IN3.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $value`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1002,20 +1228,25 @@ public setID (void)
 **Description**
 
 ```php
-public setNonConcurCodeDescription (void)
+public setNonConcurCodeDescription (string|int|array|null $value, int $position)
 ```
 
- 
+Set Non Concur Code Description (IN3.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1025,20 +1256,25 @@ public setNonConcurCodeDescription (void)
 **Description**
 
 ```php
-public setNonConcurEffectiveDateTime (void)
+public setNonConcurEffectiveDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Non Concur Effective Date Time (IN3.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1048,20 +1284,25 @@ public setNonConcurEffectiveDateTime (void)
 **Description**
 
 ```php
-public setOperator (void)
+public setOperator (string|int|array|null $value, int $position)
 ```
 
- 
+Set Operator (IN3.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1071,20 +1312,25 @@ public setOperator (void)
 **Description**
 
 ```php
-public setPenalty (void)
+public setPenalty (string|int|array|null $value, int $position)
 ```
 
- 
+Set Penalty (IN3.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1094,20 +1340,25 @@ public setPenalty (void)
 **Description**
 
 ```php
-public setPhysicianReviewer (void)
+public setPhysicianReviewer (string|int|array|null $value, int $position)
 ```
 
- 
+Set Physician Reviewer (IN3.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1117,20 +1368,25 @@ public setPhysicianReviewer (void)
 **Description**
 
 ```php
-public setPreCertificationRequirement (void)
+public setPreCertificationRequirement (string|int|array|null $value, int $position)
 ```
 
- 
+Set Pre Certification Requirement (IN3.20) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 20  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1140,20 +1396,25 @@ public setPreCertificationRequirement (void)
 **Description**
 
 ```php
-public setSecondOpinionDate (void)
+public setSecondOpinionDate (string|int|array|null $value, int $position)
 ```
 
- 
+Set Second Opinion Date (IN3.22) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 22  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1163,20 +1424,25 @@ public setSecondOpinionDate (void)
 **Description**
 
 ```php
-public setSecondOpinionDocumentationReceived (void)
+public setSecondOpinionDocumentationReceived (string|int|array|null $value, int $position)
 ```
 
- 
+Set Second Opinion Documentation Received (IN3.24) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 24  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1186,20 +1452,25 @@ public setSecondOpinionDocumentationReceived (void)
 **Description**
 
 ```php
-public setSecondOpinionPhysician (void)
+public setSecondOpinionPhysician (string|int|array|null $value, int $position)
 ```
 
- 
+Set Second Opinion Physician (IN3.25) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 25  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1209,20 +1480,25 @@ public setSecondOpinionPhysician (void)
 **Description**
 
 ```php
-public setSecondOpinionStatus (void)
+public setSecondOpinionStatus (string|int|array|null $value, int $position)
 ```
 
- 
+Set Second Opinion Status (IN3.23) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 23  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 

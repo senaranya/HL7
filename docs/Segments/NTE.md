@@ -13,20 +13,23 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getComment](#ntegetcomment)||
-|[getCommentType](#ntegetcommenttype)||
-|[getID](#ntegetid)||
-|[getSourceOfComment](#ntegetsourceofcomment)||
-|[setComment](#ntesetcomment)||
-|[setCommentType](#ntesetcommenttype)||
-|[setID](#ntesetid)||
-|[setSourceOfComment](#ntesetsourceofcomment)||
+|[__destruct](#nte__destruct)||
+|[getComment](#ntegetcomment)|Get Comment (NTE.3)|
+|[getCommentType](#ntegetcommenttype)|Get Comment Type (NTE.4)|
+|[getID](#ntegetid)|Get ID (NTE.1)|
+|[getSourceOfComment](#ntegetsourceofcomment)|Get Source Of Comment (NTE.2)|
+|[resetIndex](#nteresetindex)|Reset index of this segment|
+|[setComment](#ntesetcomment)|Set Comment (NTE.3)|
+|[setCommentType](#ntesetcommenttype)|Set Comment Type (NTE.4)|
+|[setID](#ntesetid)|Set ID (NTE.1)|
+|[setSourceOfComment](#ntesetsourceofcomment)|Set Source Of Comment (NTE.2)|
 
 ## Inherited methods
 
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -35,12 +38,12 @@ Aranyasen\HL7\Segment
 
 
 
-### NTE::getComment  
+### NTE::__destruct  
 
 **Description**
 
 ```php
-public getComment (void)
+ __destruct (void)
 ```
 
  
@@ -54,6 +57,34 @@ public getComment (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### NTE::getComment  
+
+**Description**
+
+```php
+public getComment (int $position)
+```
+
+Get Comment (NTE.3) 
+
+ 
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 3  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -63,20 +94,24 @@ public getComment (void)
 **Description**
 
 ```php
-public getCommentType (void)
+public getCommentType (int $position)
 ```
 
- 
+Get Comment Type (NTE.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -86,20 +121,24 @@ public getCommentType (void)
 **Description**
 
 ```php
-public getID (void)
+public getID (int $position)
 ```
 
- 
+Get ID (NTE.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -109,10 +148,37 @@ public getID (void)
 **Description**
 
 ```php
-public getSourceOfComment (void)
+public getSourceOfComment (int $position)
 ```
 
+Get Source Of Comment (NTE.2) 
+
  
+
+**Parameters**
+
+* `(int) $position`
+: Defaults to 2  
+
+**Return Values**
+
+`array|string|int|null`
+
+
+
+
+<hr />
+
+
+### NTE::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (void)
+```
+
+Reset index of this segment 
 
  
 
@@ -123,6 +189,7 @@ public getSourceOfComment (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -132,20 +199,25 @@ public getSourceOfComment (void)
 **Description**
 
 ```php
-public setComment (void)
+public setComment (string|int|array|null $value, int $position)
 ```
 
- 
+Set Comment (NTE.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -155,20 +227,25 @@ public setComment (void)
 **Description**
 
 ```php
-public setCommentType (void)
+public setCommentType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Comment Type (NTE.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -178,20 +255,25 @@ public setCommentType (void)
 **Description**
 
 ```php
-public setID (void)
+public setID (int $value, int $position)
 ```
 
- 
+Set ID (NTE.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $value`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -201,20 +283,25 @@ public setID (void)
 **Description**
 
 ```php
-public setSourceOfComment (void)
+public setSourceOfComment (string|int|array|null $value, int $position)
 ```
 
- 
+Set Source Of Comment (NTE.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 

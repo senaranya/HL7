@@ -38,31 +38,82 @@ class RGS extends Segment
         self::$setId = $index;
     }
 
+    /**
+     * Set ID (RGS.1)
+     *
+     * @param int $value
+     * @param int $position Defaults to 1
+     *
+     * @return bool
+     *
+     */
     public function setID(int $value, int $position = 1): bool
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Segment Action Code (RGS.2)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 2
+     *
+     * @return bool
+     *
+     */
     public function setSegmentActionCode($value, int $position = 2): bool
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Set Resource Group ID (RGS.3)
+     *
+     * @param string|int|array|null $value
+     * @param int $position Defaults to 3
+     *
+     * @return bool
+     *
+     */
     public function setResourceGroupID($value, int $position = 3): bool
     {
         return $this->setField($position, $value);
     }
 
+    /**
+     * Get ID (RGS.1)
+     *
+     * @param int $position Defaults to 1
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getID(int $position = 1)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Segment Action Code (RGS.2)
+     *
+     * @param int $position Defaults to 2
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getSegmentActionCode(int $position = 2)
     {
         return $this->getField($position);
     }
 
+    /**
+     * Get Resource Group ID (RGS.3)
+     *
+     * @param int $position Defaults to 3
+     *
+     * @return array|string|int|null
+     *
+     */
     public function getResourceGroupID(int $position = 3)
     {
         return $this->getField($position);
