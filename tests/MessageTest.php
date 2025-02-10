@@ -681,7 +681,7 @@ class MessageTest extends TestCase
         self::assertSame("CWE", $OBXs[1]->getValueType());
     }
 
-    #[Test] public function it_can_reset_segment_array_values_if_segments_are_removed(): void
+    #[Test] public function it_can_reset_segment_array_keys_after_segments_are_removed(): void
     {
         $msgObj = new Message("MSH|^~\&|||||||ORU^01||P|2.3.1|\nABC|1|||\nABC|2|||\nABC|3|||");
         $segments = $msgObj->getSegmentsByName('ABC');
