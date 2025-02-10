@@ -344,6 +344,15 @@ class Message
     }
 
     /**
+     * After removing segments from the middle of the message, $msg->getSemgnets() returns an array with gaps in the
+     * keys. This method can be used to re-key the segments array
+     */
+    public function rekeySegmentsInArray(): void
+    {
+        $this->segments = array_values($this->segments);
+    }
+
+    /**
      * Return a string representation of this message.
      *
      * This can be used to send the message over a socket to an HL7 server. To print to other output, use the $pretty
