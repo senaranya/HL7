@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Aranyasen\HL7\Segments;
 
+use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Segment;
 
 /**
@@ -84,7 +85,7 @@ class GT1 extends Segment
     {
         // Ref: https://hl7-definition.caristix.com/v2/HL7v2.4/Tables/0001
         if (!in_array($value, ['A', 'F', 'M', 'N', 'O', 'U'], true)) {
-            throw new InvalidArgumentException("Sex should one of 'A', 'F', 'M', 'N', 'O' or 'U'. Given: '$value'");
+            throw new HL7Exception("Sex should one of 'A', 'F', 'M', 'N', 'O' or 'U'. Given: '$value'");
         }
         return $this->setField($position, $value);
     }

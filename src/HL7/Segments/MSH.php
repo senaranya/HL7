@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace Aranyasen\HL7\Segments;
 
+use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Segment;
-use Exception;
-use InvalidArgumentException;
 
 /**
  * MSH (message header) segment class
@@ -36,9 +35,9 @@ class MSH extends Segment
      * sub-components, the array may hold sub-arrays and sub-sub-arrays. If the reference is not given, the MSH segment
      * will be created with the MSH 1,2,7,10 and 12 fields filled in for convenience.
      *
-     * @param null|array $fields
-     * @param null|array $hl7Globals
-     * @throws InvalidArgumentException|Exception
+     * @param  null|array  $fields
+     * @param  null|array  $hl7Globals
+     * @throws HL7Exception
      */
     public function __construct(?array $fields = null, ?array $hl7Globals = null)
     {

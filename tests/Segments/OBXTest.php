@@ -6,11 +6,11 @@ namespace Aranyasen\HL7\Tests\Segments;
 
 use Aranyasen\HL7\Segments\OBX;
 use Aranyasen\HL7\Tests\TestCase;
+use PHPUnit\Framework\Attributes\Test;
 
 class OBXTest extends TestCase
 {
-    /** @test */
-    public function segment_id_automatically_increments_when_a_new_instance_is_created(): void
+    #[Test] public function segment_id_automatically_increments_when_a_new_instance_is_created(): void
     {
         OBX::resetIndex(); // Previous tests would have incremented the static $index variable
 

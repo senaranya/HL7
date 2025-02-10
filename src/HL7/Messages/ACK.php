@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace Aranyasen\HL7\Messages;
 
+use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Segments\MSA;
 use Aranyasen\HL7\Segments\MSH;
-use Exception;
-use InvalidArgumentException;
 
 class ACK extends Message
 {
@@ -23,11 +22,10 @@ class ACK extends Message
      * Convenience module implementing an acknowledgement (ACK) message. This can be used in HL7 servers to create an
      * acknowledgement for an incoming message.
      *
-     * @param Message|null $req
-     * @param MSH|null $reqMsh
-     * @param array|null $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
-     * @throws Exception
-     * @throws InvalidArgumentException
+     * @param  Message|null  $req
+     * @param  MSH|null  $reqMsh
+     * @param  array|null  $hl7Globals  Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
+     * @throws HL7Exception
      */
     public function __construct(?Message $req = null, ?MSH $reqMsh = null, ?array $hl7Globals = null)
     {
@@ -87,21 +85,20 @@ class ACK extends Message
         $mode = 'A';
 
         // Determine acknowledge mode: normal or enhanced
-        //
         if ($this->ACK_TYPE === 'E') {
             $mode = 'C';
         }
 
-        if (\strlen($code) === 1) {
+        if (strlen($code) === 1) {
             $code = "$mode$code";
         }
 
-        $seg1 = $this->getSegmentByIndex(1);
-        if (!empty($seg1)) {
-            $seg1->setField(1, $code);
+        $segment = $this->getSegmentByIndex(1);
+        if (!empty($segment)) {
+            $segment->setField(1, $code);
         }
         if ($msg) {
-            $seg1->setField(3, $msg);
+            $segment->setField(3, $msg);
         }
 
         return true;

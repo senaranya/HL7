@@ -8,6 +8,7 @@ use Aranyasen\Exceptions\HL7ConnectionException;
 use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Connection;
+use PHPUnit\Framework\Attributes\Test;
 use RuntimeException;
 
 class ConnectionTest extends TestCase
@@ -23,11 +24,10 @@ class ConnectionTest extends TestCase
     }
 
     /**
-     * @test
      * @throws HL7ConnectionException
      * @throws HL7Exception
      */
-    public function a_message_can_be_sent_to_a_hl7_server(): void
+    #[Test] public function a_message_can_be_sent_to_a_hl7_server(): void
     {
         if (!extension_loaded('pcntl')) {
             self::markTestSkipped("Extension pcntl_fork is not loaded");
@@ -56,11 +56,10 @@ class ConnectionTest extends TestCase
     }
 
     /**
-     * @test
      * @throws HL7ConnectionException
      * @throws HL7Exception
      */
-    public function do_not_wait_for_ack_after_sending_if_corresponding_parameter_is_set(): void
+    #[Test] public function do_not_wait_for_ack_after_sending_if_corresponding_parameter_is_set(): void
     {
         if (!extension_loaded('pcntl')) {
             self::markTestSkipped("Extension pcntl_fork is not loaded");

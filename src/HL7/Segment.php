@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Aranyasen\HL7;
 
-use InvalidArgumentException;
+use Aranyasen\Exceptions\HL7Exception;
 
 class Segment
 {
@@ -27,16 +27,15 @@ class Segment
      * echo $seg->getField(1);
      * ```
      *
-     * @author     Aranya Sen
      * @param string $name Name of the segment
      * @param array|null $fields Fields for segment
-     * @throws InvalidArgumentException
+     * @throws HL7Exception
      */
     public function __construct(string $name, ?array $fields = null)
     {
         // Is the name 3 upper case characters?
         if ((!$name) || (strlen($name) !== 3) || (strtoupper($name) !== $name)) {
-            throw new InvalidArgumentException("Segment name '$name' should be 3 characters and in uppercase");
+            throw new HL7Exception("Segment name '$name' should be 3 characters and in uppercase");
         }
 
         $this->fields[0] = $name;

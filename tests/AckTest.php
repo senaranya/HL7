@@ -8,6 +8,7 @@ use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Messages\ACK;
 use Aranyasen\HL7\Segments\MSH;
 use Exception;
+use PHPUnit\Framework\Attributes\Test;
 
 class AckTest extends TestCase
 {
@@ -82,10 +83,10 @@ class AckTest extends TestCase
         self::assertSame('CE', $seg1->getField(1), 'Code CE after setting message');
     }
 
-    /** @test
+    /**
      * @throws Exception
      */
-    public function a_MSH_can_be_provided_to_get_the_fields_from(): void
+    #[Test] public function a_MSH_can_be_provided_to_get_the_fields_from(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|");
         $msh = new MSH(
@@ -99,10 +100,9 @@ class AckTest extends TestCase
     }
 
     /**
-     * @test
      * @throws Exception
      */
-    public function globals_can_be_passed_to_constructor(): void
+    #[Test] public function globals_can_be_passed_to_constructor(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|");
         $ack = new ACK($msg, null, ['SEGMENT_SEPARATOR' => '\r\n']);

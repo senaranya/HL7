@@ -1,7 +1,8 @@
-# Aranyasen\HL7\Segments\NTE  
+# Aranyasen\HL7\Segments\EVN  
 
-NTE segment class
-Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-nte-notes-comments
+EVN segment class
+Ref: http://hl7-definition.caristix.com:9010/HL7%20v2.3.1/segment/EVN
+     https://corepointhealth.com/resource-center/hl7-resources/hl7-evn-event-type-segment
 
 
 
@@ -13,16 +14,18 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[__destruct](#nte__destruct)||
-|[getComment](#ntegetcomment)||
-|[getCommentType](#ntegetcommenttype)||
-|[getID](#ntegetid)||
-|[getSourceOfComment](#ntegetsourceofcomment)||
-|[resetIndex](#nteresetindex)|Reset index of this segment|
-|[setComment](#ntesetcomment)||
-|[setCommentType](#ntesetcommenttype)||
-|[setID](#ntesetid)||
-|[setSourceOfComment](#ntesetsourceofcomment)||
+|[getDateTimePlannedEvent](#evngetdatetimeplannedevent)||
+|[getEventOccurred](#evngeteventoccurred)||
+|[getEventReasonCode](#evngeteventreasoncode)||
+|[getEventTypeCode](#evngeteventtypecode)||
+|[getOperatorID](#evngetoperatorid)||
+|[getRecordedDateTime](#evngetrecordeddatetime)||
+|[setDateTimePlannedEvent](#evnsetdatetimeplannedevent)||
+|[setEventOccurred](#evnseteventoccurred)||
+|[setEventReasonCode](#evnseteventreasoncode)||
+|[setEventTypeCode](#evnseteventtypecode)||
+|[setOperatorID](#evnsetoperatorid)||
+|[setRecordedDateTime](#evnsetrecordeddatetime)||
 
 ## Inherited methods
 
@@ -38,12 +41,12 @@ Aranyasen\HL7\Segment
 
 
 
-### NTE::__destruct  
+### EVN::getDateTimePlannedEvent  
 
 **Description**
 
 ```php
- __destruct (void)
+ getDateTimePlannedEvent (void)
 ```
 
  
@@ -62,12 +65,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### NTE::getComment  
+### EVN::getEventOccurred  
 
 **Description**
 
 ```php
- getComment (void)
+ getEventOccurred (void)
 ```
 
  
@@ -86,12 +89,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### NTE::getCommentType  
+### EVN::getEventReasonCode  
 
 **Description**
 
 ```php
- getCommentType (void)
+ getEventReasonCode (void)
 ```
 
  
@@ -110,12 +113,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### NTE::getID  
+### EVN::getEventTypeCode  
 
 **Description**
 
 ```php
- getID (void)
+ getEventTypeCode (void)
 ```
 
  
@@ -134,12 +137,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### NTE::getSourceOfComment  
+### EVN::getOperatorID  
 
 **Description**
 
 ```php
- getSourceOfComment (void)
+ getOperatorID (void)
 ```
 
  
@@ -158,36 +161,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### NTE::resetIndex  
+### EVN::getRecordedDateTime  
 
 **Description**
 
 ```php
-public static resetIndex (void)
-```
-
-Reset index of this segment 
-
- 
-
-**Parameters**
-
-`This function has no parameters.`
-
-**Return Values**
-
-`void`
-
-
-<hr />
-
-
-### NTE::setComment  
-
-**Description**
-
-```php
- setComment (void)
+ getRecordedDateTime (void)
 ```
 
  
@@ -206,12 +185,12 @@ Reset index of this segment
 <hr />
 
 
-### NTE::setCommentType  
+### EVN::setDateTimePlannedEvent  
 
 **Description**
 
 ```php
- setCommentType (void)
+ setDateTimePlannedEvent (void)
 ```
 
  
@@ -230,12 +209,12 @@ Reset index of this segment
 <hr />
 
 
-### NTE::setID  
+### EVN::setEventOccurred  
 
 **Description**
 
 ```php
- setID (void)
+ setEventOccurred (void)
 ```
 
  
@@ -254,12 +233,84 @@ Reset index of this segment
 <hr />
 
 
-### NTE::setSourceOfComment  
+### EVN::setEventReasonCode  
 
 **Description**
 
 ```php
- setSourceOfComment (void)
+ setEventReasonCode (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### EVN::setEventTypeCode  
+
+**Description**
+
+```php
+ setEventTypeCode (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### EVN::setOperatorID  
+
+**Description**
+
+```php
+ setOperatorID (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### EVN::setRecordedDateTime  
+
+**Description**
+
+```php
+ setRecordedDateTime (void)
 ```
 
  

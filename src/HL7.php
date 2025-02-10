@@ -77,6 +77,14 @@ class HL7
     }
 
     /**
+     * @throws HL7Exception
+     */
+    public function create(): Message
+    {
+        return $this->createMessage();
+    }
+
+    /**
      * Create a new MSH segment, using the global HL7 variables as defaults.
      * @throws Exception
      */
@@ -149,7 +157,10 @@ class HL7
      */
     public function withSegmentSeparator(string $value): self
     {
-        $this->checkIfSingleCharacter($value);
+        $value = str_replace(['\r', '\n'], ["\r", "\n"], $value);
+        if ($value !== "\r\n") {
+            $this->checkIfSingleCharacter($value);
+        }
 
         return $this->setGlobal('SEGMENT_SEPARATOR', $value);
     }
