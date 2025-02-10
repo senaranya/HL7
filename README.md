@@ -13,7 +13,7 @@
     - PHP 7.0 or 7.1 => [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)<br>
     - PHP 7.2 => [2.0.2](https://github.com/senaranya/HL7/tree/2.0.2)<br>
     - PHP 7.4 => [2.1.7](https://github.com/senaranya/HL7/tree/2.1.7)
-    - PHP 8.1 => [3.1.7](https://github.com/senaranya/HL7/tree/3.1.8)
+    - PHP 8.1 => [3.2.0](https://github.com/senaranya/HL7/tree/3.2.0)
 
 ## Introduction
 
