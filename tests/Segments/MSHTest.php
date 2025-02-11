@@ -79,4 +79,38 @@ class MSHTest extends TestCase
         $msh->setField(2, 'yyyyy');
         self::assertSame('xxxx', $msh->getField(2), 'Special fields not changed');
     }
+
+    /** @test */
+    public function messageType_can_be_set_in_message(): void
+    {
+        $msh = new MSH();
+        $msh->setMessageType('ORM');
+        self::assertSame('ORM', $msh->getField(9));
+        $msh->setMessageType('ORM^O01');
+        self::assertSame('ORM^O01', $msh->getField(9));
+
+        $msh = new MSH();
+        $msh->setMessageType(['ORU', 'R01']); // For v2.3
+        self::assertSame(['ORU', 'R01'], $msh->getField(9));
+
+        $msh = new MSH();
+        $msh->setMessageType(['ORU', 'R01', 'ORU_R01']); // For 2.5
+        self::assertSame(['ORU', 'R01', 'ORU_R01'], $msh->getField(9));
+    }
+
+    /** @test */
+    public function messageType_can_be_changed_in_message(): void
+    {
+        // For v2.3...
+        $msh = new MSH();
+        $msh->setMessageType(['ORU', 'R01']);
+        $msh->setMessageType('ORM');
+        self::assertSame(['ORM', 'R01'], $msh->getField(9));
+
+        // For v2.5...
+        $msh = new MSH();
+        $msh->setMessageType(['ORU', 'R01', 'ORU_R01']);
+        $msh->setMessageType('ORM');
+        self::assertSame(['ORM', 'R01', 'ORU_R01'], $msh->getField(9));
+    }
 }
