@@ -15,81 +15,99 @@ use Aranyasen\HL7\Segment;
  * This information updates other healthcare systems and allows them to identify reports that are available in the transcription system.
  * By maintaining the TXA message information in these systems, the information is available when constructing queries to the transcription system requesting the full document text.
  *
- * Ref: https://hl7-definition.caristix.com/v2/HL7v2.6/Segments/TXA
+ * Ref: https://hl7-definition.caristix.com/v2/HL7v2.7/Segments/TXA
  */
 class TXA extends Segment
 {
+    private static int $setId = 1;
+
     public function __construct(?array $fields = null)
     {
         parent::__construct('TXA', $fields);
+        $this->setID($this::$setId++);
     }
 
-    public function setID(string|null $value, int $position = 2): bool
+    public function __destruct()
+    {
+        $this->setID($this::$setId--);
+    }
+
+    public static function resetIndex(int $index = 1): void
+    {
+        self::$setId = $index;
+    }
+
+    public function setID(int $value, int $position = 1): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setDocumentType(string|null $value, int $position = 3): bool
+    public function setDocumentType(string|null $value, int $position = 2): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setDocumentContentPurpose(string|null $value, int $position = 4): bool
+    public function setDocumentContentPresentation(string|null $value, int $position = 3): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setDocumentCompletionStatus(string|null $value, int $position = 5): bool
+    public function setActivityDateTime(string|int|null $value, int $position = 4): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setDocumentConfidentialityStatus(string|null $value, int $position = 6): bool
+    public function setPrimaryActivityProviderCode(array|string|null $value, int $position = 5): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setDocumentAvailabilityStatus(string|null $value, int $position = 7): bool
+    public function setOriginationDateTime(string|int|null $value, int $position = 6): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setDocumentStorageStatus(string|null $value, int $position = 8): bool
+    public function setTranscriptionDateTime(string|int|null $value, int $position = 7): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setDocumentChangeReason(string|null $value, int $position = 9): bool
+    public function setEditDateTime(string|int|null $value, int $position = 8): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setDocumentTemplateVersion(string|null $value, int $position = 10): bool
+    public function setOriginatorCode(array|string|null $value, int $position = 9): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setDocumentIdentifierList(array|string|null $value, int $position = 11): bool
+    public function setAssignedDocumentAuthenticator(array|string|null $value, int $position = 10): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setParentDocumentIdentifier(array|string|null $value, int $position = 12): bool
+    public function setTranscriptionistCode(array|string|null $value, int $position = 11): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setPlacerOrderNumber(array|string|null $value, int $position = 13): bool
+    public function setUniqueDocumentNumber(string|int|null $value, int $position = 12): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setFillerOrderNumber(array|string|null $value, int $position = 14): bool
+    public function setParentDocumentNumber(string|int|null $value, int $position = 13): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setUniqueDocumentNumber(string|null $value, int $position = 15): bool
+    public function setPlacerOrderNumber(array|int|string|null $value, int $position = 14): bool
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setFillerOrderNumber(string|int|null $value, int $position = 15): bool
     {
         return $this->setField($position, $value);
     }
@@ -99,102 +117,127 @@ class TXA extends Segment
         return $this->setField($position, $value);
     }
 
-    public function setDocumentCreationDateTime(string|null $value, int $position = 17): bool
+    public function setDocumentCompletionStatus(array|string|null $value, int $position = 17): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setTranscriptionStartDateTime(string|null $value, int $position = 18): bool
+    public function setDocumentConfidentialityStatus(string|null $value, int $position = 18): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setTranscriptionCompletionDateTime(string|null $value, int $position = 19): bool
+    public function setDocumentAvailabilityStatus(string|null $value, int $position = 19): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setOriginatorCodeName(array|string|null $value, int $position = 20): bool
+    public function setDocumentStorageStatus(string|null $value, int $position = 20): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setAssignedDocumentAuthenticator(array|string|null $value, int $position = 21): bool
+    public function setDocumentChangeReason(string|null $value, int $position = 21): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setUniqueDocumentRecipient(array|string|null $value, int $position = 22): bool
+    public function setAuthenticationPerson(array|string|null $value, int $position = 22): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function setParentDocumentType(string|null $value, int $position = 23): bool
+    public function setDistributedCopies(array|int|string|null $value, int $position = 23): bool
     {
         return $this->setField($position, $value);
     }
 
-    public function getDocumentType(int $position = 3): string|null
+    public function setFolderAssignment(array|int|string|null $value, int $position = 24): bool
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setDocumentTitle(array|string|null $value, int $position = 25): bool
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function setAgreedDueDateTime(array|int|string|null $value, int $position = 26): bool
+    {
+        return $this->setField($position, $value);
+    }
+
+    public function getID(int $position = 1): int|null
     {
         return $this->getField($position);
     }
 
-    public function getDocumentContentPurpose(int $position = 4): string|null
+    public function getDocumentType(int $position = 2): string|null
     {
         return $this->getField($position);
     }
 
-    public function getDocumentCompletionStatus(int $position = 5): string|null
+    public function getDocumentContentPresentation(int $position = 3): string|null
     {
         return $this->getField($position);
     }
 
-    public function getDocumentConfidentialityStatus(int $position = 6): string|null
+    public function getActivityDateTime(int $position = 4): string|int|null
     {
         return $this->getField($position);
     }
 
-    public function getDocumentAvailabilityStatus(int $position = 7): string|null
+    public function getPrimaryActivityProviderCode(int $position = 5): array|string|null
     {
         return $this->getField($position);
     }
 
-    public function getDocumentStorageStatus(int $position = 8): string|null
+    public function getOriginationDateTime(int $position = 6): string|int|null
     {
         return $this->getField($position);
     }
 
-    public function getDocumentChangeReason(int $position = 9): string|null
+    public function getTranscriptionDateTime(int $position = 7): string|int|null
     {
         return $this->getField($position);
     }
 
-    public function getDocumentTemplateVersion(int $position = 10): string|null
+    public function getEditDateTime(int $position = 8): string|int|null
     {
         return $this->getField($position);
     }
 
-    public function getDocumentIdentifierList(int $position = 11): array|string|null
+    public function getOriginatorCode(int $position = 9): array|string|null
     {
         return $this->getField($position);
     }
 
-    public function getParentDocumentIdentifier(int $position = 12): array|string|null
+    public function getAssignedDocumentAuthenticator(int $position = 10): array|string|null
     {
         return $this->getField($position);
     }
 
-    public function getPlacerOrderNumber(int $position = 13): array|string|null
+    public function getTranscriptionistCode(int $position = 11): array|string|null
     {
         return $this->getField($position);
     }
 
-    public function getFillerOrderNumber(int $position = 14): array|string|null
+    public function getUniqueDocumentNumber(int $position = 12): string|int|null
     {
         return $this->getField($position);
     }
 
-    public function getUniqueDocumentNumber(int $position = 15): string|null
+    public function getParentDocumentNumber(int $position = 13): string|int|null
+    {
+        return $this->getField($position);
+    }
+
+    public function getPlacerOrderNumber(int $position = 14): array|int|string|null
+    {
+        return $this->getField($position);
+    }
+
+    public function getFillerOrderNumber(int $position = 15): string|int|null
     {
         return $this->getField($position);
     }
@@ -204,37 +247,52 @@ class TXA extends Segment
         return $this->getField($position);
     }
 
-    public function getDocumentCreationDateTime(int $position = 17): string|null
+    public function getDocumentCompletionStatus(int $position = 17): array|string|null
     {
         return $this->getField($position);
     }
 
-    public function getTranscriptionStartDateTime(int $position = 18): string|null
+    public function getDocumentConfidentialityStatus(int $position = 18): string|null
     {
         return $this->getField($position);
     }
 
-    public function getTranscriptionCompletionDateTime(int $position = 19): string|null
+    public function getDocumentAvailabilityStatus(int $position = 19): string|null
     {
         return $this->getField($position);
     }
 
-    public function getOriginatorCodeName(int $position = 20): array|string|null
+    public function getDocumentStorageStatus(int $position = 20): string|null
     {
         return $this->getField($position);
     }
 
-    public function getAssignedDocumentAuthenticator(int $position = 21): array|string|null
+    public function getDocumentChangeReason(int $position = 21): string|null
     {
         return $this->getField($position);
     }
 
-    public function getUniqueDocumentRecipient(int $position = 22): array|string|null
+    public function getAuthenticationPerson(int $position = 22): array|string|null
     {
         return $this->getField($position);
     }
 
-    public function getParentDocumentType(int $position = 23): string|null
+    public function getDistributedCopies(int $position = 23): array|int|string|null
+    {
+        return $this->getField($position);
+    }
+
+    public function getFolderAssignment(int $position = 24): array|int|string|null
+    {
+        return $this->getField($position);
+    }
+
+    public function getDocumentTitle(int $position = 25): array|string|null
+    {
+        return $this->getField($position);
+    }
+
+    public function getAgreedDueDateTime(int $position = 26): array|int|string|null
     {
         return $this->getField($position);
     }
