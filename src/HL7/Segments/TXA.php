@@ -10,10 +10,11 @@ use Aranyasen\HL7\Segment;
  * TXA segment class
  *
  * TXA: Transcription Document Header
- * The TXA segment contains information specific to a transcribed document but does not include the text of the document.
- * The message is created as a result of a document status change.
- * This information updates other healthcare systems and allows them to identify reports that are available in the transcription system.
- * By maintaining the TXA message information in these systems, the information is available when constructing queries to the transcription system requesting the full document text.
+ * The TXA segment contains information specific to a transcribed document but does not include
+ * the text of the document. The message is created as a result of a document status change.
+ * This information updates other healthcare systems and allows them to identify reports that
+ * are available in the transcription system. By maintaining the TXA message information in these systems,
+ * the information is available when constructing queries to the transcription system requesting the full document text.
  *
  * Ref: https://hl7-definition.caristix.com/v2/HL7v2.7/Segments/TXA
  */
