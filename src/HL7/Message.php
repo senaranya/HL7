@@ -49,6 +49,7 @@ class Message
      * been added to the message will result in setting these values for the message.
      *
      * If the message couldn't be created, for example due to a erroneous HL7 message string, an error is raised.
+     *
      * @param string|null $msgStr
      * @param array|null $hl7Globals Set control characters or HL7 properties. e.g., ['HL7_VERSION' => '2.5']
      * @param bool $keepEmptySubFields Set this to true to retain empty sub-fields
@@ -64,7 +65,8 @@ class Message
         bool $keepEmptySubFields = false,
         bool $resetIndices = false,
         bool $autoIncrementIndices = true,
-        ?bool $doNotSplitRepetition = null
+        ?bool $doNotSplitRepetition = null,
+        bool $extractRepeatableFieldAsMultiDimArray = false,
     ) {
         // Control characters and other HL7 properties
         $this->segmentSeparator = $hl7Globals['SEGMENT_SEPARATOR'] ?? '\n';
@@ -77,7 +79,7 @@ class Message
         $this->escapeChar = $hl7Globals['ESCAPE_CHARACTER'] ?? '\\';
         $this->hl7Version = $hl7Globals['HL7_VERSION'] ?? '2.3';
 
-        $this->doNotSplitRepetition = (bool) $doNotSplitRepetition;
+        $this->doNotSplitRepetition = (bool)$doNotSplitRepetition;
 
         if ($resetIndices) {
             $this->resetSegmentIndices();
@@ -102,10 +104,19 @@ class Message
                     continue;
                 }
 
-                $fields[$j] = $this->extractComponentsFromField($field, $keepEmptySubFields);
+                $fields[$j] = $this->extractComponentsFromField(
+                    $field,
+                    $keepEmptySubFields,
+                    $extractRepeatableFieldAsMultiDimArray
+                );
             }
 
-            $segment = $this->getSegmentClass($segmentName, $fields, $autoIncrementIndices);
+            $segment = $this->getSegmentClass(
+                $segmentName,
+                $fields,
+                $autoIncrementIndices,
+                $extractRepeatableFieldAsMultiDimArray
+            );
 
             $this->addSegment($segment);
         }
@@ -134,8 +145,10 @@ class Message
     public function insertSegment(Segment $segment, ?int $index = null): void
     {
         if ($index > count($this->segments)) {
-            throw new InvalidArgumentException("Index out of range. Index: $index, Total segments: " .
-                                               count($this->segments));
+            throw new InvalidArgumentException(
+                "Index out of range. Index: $index, Total segments: " .
+                count($this->segments)
+            );
         }
 
         if ($index === 0) {
@@ -303,7 +316,7 @@ class Message
             $this->fieldSeparator = $segment->getField(1);
         }
 
-        if (preg_match('/(.)(.)(.)(.)/', (string) $segment->getField(2), $matches)) {
+        if (preg_match('/(.)(.)(.)(.)/', (string)$segment->getField(2), $matches)) {
             $this->componentSeparator = $matches[1];
             $this->repetitionSeparator = $matches[2];
             $this->escapeChar = $matches[3];
@@ -375,7 +388,7 @@ class Message
         $message = '';
         foreach ($this->segments as $segment) {
             $segmentString = $this->segmentToString($segment);
-            if (! $this->withSegmentEndingFieldSeparator) {
+            if (!$this->withSegmentEndingFieldSeparator) {
                 $segmentString = preg_replace('/' . preg_quote($this->fieldSeparator, '/') . '$/', '', $segmentString);
             }
             $message .= $segmentString;
@@ -394,28 +407,66 @@ class Message
     {
         $segmentName = $segment->getName();
         $segmentString = $segmentName . $this->fieldSeparator;
-        $fields = $segment->getFields(($segmentName === 'MSH' ? 2 : 1));
+        $from = ($segmentName === 'MSH' ? 2 : 1);
+        $fields = $segment->getFields($from);
 
-        foreach ($fields as $field) {
-            if (is_array($field)) {
-                foreach ($field as $index => $value) {
-                    is_array($value)
-                        ? ($segmentString .= implode($this->subcomponentSeparator, $value))
-                        : ($segmentString .= $value);
+        foreach ($fields as $index => $field) {
+            // The field is a repetition in 3 cases :
+            // - It is set as a repeater and the extractRepeatableFieldAsMultiDimArray is set
+            // - Or if the value contains an array of arrays
+            $isRepetitionField = ($segment->isRepeater(($index + $from)) &&
+                    $segment->isExtractRepeatableFieldAsMultiDimArray())
+                || $this->isRepeaterField($field);
 
-                    if ($index < (count($field) - 1)) {
-                        $segmentString .= $this->componentSeparator;
-                    }
-                }
-            } else {
-                $segmentString .= $field;
-            }
-
+            $segmentString .= $this->fieldValueToString($field, $isRepetitionField);
             $segmentString .= $this->fieldSeparator;
         }
 
         return $segmentString;
     }
+
+    /**
+     * Convert a field value to string representation
+     */
+    private function fieldValueToString($value, bool $isRepetitionField): string|int
+    {
+        if (!is_array($value)) {
+            return $value;
+        }
+
+        if ($isRepetitionField) {
+            // Handle repetition field
+            $repetitions = [];
+            foreach ($value as $repetition) {
+                if (is_array($repetition)) {
+                    $repetitions[] = $this->componentArrayToString($repetition);
+                } else {
+                    $repetitions[] = $repetition;
+                }
+            }
+            return implode($this->repetitionSeparator, $repetitions);
+        } else {
+            // Handle component field (no repetition)
+            return $this->componentArrayToString($value);
+        }
+    }
+
+    /**
+     * Convert component array to string
+     */
+    private function componentArrayToString(array $components): string
+    {
+        $result = [];
+        foreach ($components as $component) {
+            if (is_array($component)) {
+                $result[] = implode($this->subcomponentSeparator, $component);
+            } else {
+                $result[] = $component;
+            }
+        }
+        return implode($this->componentSeparator, $result);
+    }
+
 
     /**
      * Reset index attribute of each given segment, so when those are added the indices start from 1
@@ -434,17 +485,24 @@ class Message
         }
     }
 
-    private function extractComponentsFromField(string $field, bool $keepEmptySubFields): array|string
-    {
+    private function extractComponentsFromField(
+        string $field,
+        bool $keepEmptySubFields,
+        bool $extractRepeatableFieldAsMultiDimArray
+    ): array|string {
         $pregFlags = $keepEmptySubFields
             ? 0
             : PREG_SPLIT_NO_EMPTY;
 
-        if ((str_contains($field, $this->repetitionSeparator)) && (! $this->doNotSplitRepetition)) {
+        if ((str_contains($field, $this->repetitionSeparator)) && (!$this->doNotSplitRepetition)) {
             $components = preg_split("/\\" . $this->repetitionSeparator . '/', $field, -1, $pregFlags);
             $fields = [];
             foreach ($components as $index => $component) {
-                $fields[$index] = $this->extractComponentsFromField($component, $keepEmptySubFields);
+                $fields[$index] = $this->extractComponentsFromField(
+                    $component,
+                    $keepEmptySubFields,
+                    $extractRepeatableFieldAsMultiDimArray
+                );
             }
 
             return $fields;
@@ -492,12 +550,16 @@ class Message
         $this->repetitionSeparator = $repSep;
     }
 
-    private function getSegmentClass(string $segmentName, array $fields, bool $autoIncrementIndices): Segment
-    {
+    private function getSegmentClass(
+        string $segmentName,
+        array $fields,
+        bool $autoIncrementIndices,
+        bool $extractRepeatableFieldAsMultiDimArray
+    ): Segment {
         // If a class exists for the segment under segments/, (e.g., MSH)
         $className = "Aranyasen\\HL7\\Segments\\$segmentName";
         if (!class_exists($className)) {
-            return new Segment($segmentName, $fields);
+            return new Segment($segmentName, $fields, $extractRepeatableFieldAsMultiDimArray);
         }
 
         if ($segmentName === 'MSH') {
@@ -505,6 +567,20 @@ class Message
             return new $className($fields);
         }
 
-        return new $className($fields, $autoIncrementIndices);
+        return new $className($fields, $autoIncrementIndices, $extractRepeatableFieldAsMultiDimArray);
+    }
+
+    private function isRepeaterField(mixed $array, int $recursionIndex = 0): bool
+    {
+        if (!is_array($array)) {
+            return false;
+        }
+
+        foreach ($array as $element) {
+            if (is_array($element)) {
+                return $recursionIndex === 1 || $this->isRepeaterField($element, $recursionIndex + 1);
+            }
+        }
+        return false;
     }
 }

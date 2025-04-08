@@ -120,4 +120,54 @@ class SegmentTest extends TestCase
         $segment->setField(1, '0');
         self::assertSame('0', $segment->getField(1));
     }
+
+
+    /** @test */
+    public function a_field_with_one_value_in_repeater_field_should_be_set_it_as_multidimentional_array(): void
+    {
+        $segment = new Segment('XXX', [], true);
+        $segment->setRepeaterFields([1, 3]);
+
+        $segment->setField(1, ['1', '2', '3']);
+
+        self::assertSame([['1', '2', '3']], $segment->getField(1), 'Field 1 should be set as multidimensional array');
+    }
+
+    /** @test */
+    public function a_field_with_one_value_in_non_repeater_field_should_not_be_set_it_as_multidimentional_array(): void
+    {
+        $segment = new Segment('XXX', [], true);
+        $segment->setRepeaterFields([1, 3]);
+
+        $segment->setField(2, ['1', '2', '3']);
+
+        self::assertSame(['1', '2', '3'], $segment->getField(2), 'Field 1 should be set as multidimensional array');
+    }
+
+
+    /** @test */
+    public function a_field_with_one_value_in_repeated_should_not_be_set_it_as_multidimentional_if_flag_is_false(): void
+    {
+        $segment = new Segment('XXX', [], false);
+        $segment->setRepeaterFields([1, 3]);
+
+        $segment->setField(1, ['1', '2', '3']);
+
+        self::assertSame(['1', '2', '3'], $segment->getField(1), 'Field 1 should be set as multidimensional array');
+    }
+
+    /** @test */
+    public function a_field_with_multiple_values_in_repeater_field_should_stay_the_same(): void
+    {
+        $segment = new Segment('XXX', [], true);
+        $segment->setRepeaterFields([1, 3]);
+
+        $segment->setField(1, [['1', '2', '3']]);
+
+        self::assertSame(
+            [['1', '2', '3']],
+            $segment->getField(1),
+            'Field 1 should not be updated to multidimensional array'
+        );
+    }
 }

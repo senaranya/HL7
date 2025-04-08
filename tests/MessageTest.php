@@ -681,7 +681,8 @@ class MessageTest extends TestCase
         self::assertSame("CWE", $OBXs[1]->getValueType());
     }
 
-    #[Test] public function it_can_reset_segment_array_keys_after_segments_are_removed(): void
+    /** @test */
+    public function it_can_reset_segment_array_keys_after_segments_are_removed(): void
     {
         $msgObj = new Message("MSH|^~\&|||||||ORU^01||P|2.3.1|\nABC|1|||\nABC|2|||\nABC|3|||");
         $segments = $msgObj->getSegmentsByName('ABC');
@@ -691,5 +692,41 @@ class MessageTest extends TestCase
         $msgObj->rekeySegmentsInArray();
 
         self::assertSame([0, 1, 2], array_keys($msgObj->getSegments()));
+    }
+
+    /** @test */
+    public function it_can_handle_a_segment_with_repetition_and_multi_level_arrays(): void
+    {
+        // phpcs:disable Generic.Files.LineLength
+        $msgStr = "MSH|^~\&|ACME||||20250403123507||SIU^S12|2025040312350786994||2.5.1|\nPID|1||181015456787531^^^ASIP-SANTE-INS-NIR&1.2.250.1.213.1.4.8&ISO^INS~30174^^^INSTAMED^PI||ALERTE^Paul^^^M.^^B||19810101000000|F|||||||fr|||30644^^^ACME^PI|1 81 01 54 567 875 31|";
+
+        $msgObject = new Message(
+            $msgStr,
+            keepEmptySubFields: true,
+            autoIncrementIndices: true,
+            extractRepeatableFieldAsMultiDimArray: true
+        );
+
+        $result = str_replace('\n', "\n", $msgObject->toString(true));
+        $result = trim($result);
+        self::assertEquals(trim($msgStr), $result);
+    }
+
+    /** @test */
+    public function it_can_handle_a_segment_with_repetition(): void
+    {
+        // phpcs:disable Generic.Files.LineLength
+        $msgStr = "MSH|^~\&|ACME||||20250403123507||SIU^S12|2025040312350786994||2.5.1|\nPID|1||181015456787531^^^ASIP-SANTE-INS-NIR^INS~30174^^^INSTAMED^PI||ALERTE^Paul^^^M.^^B~D'USAGE^Paul^^^M.^^D||19810101000000|F|||||||fr|||30644^^^ACME^PI|1 81 01 54 567 875 31|";
+
+        $msgObject = new Message(
+            $msgStr,
+            keepEmptySubFields: true,
+            autoIncrementIndices: true,
+            extractRepeatableFieldAsMultiDimArray: true
+        );
+
+        $result = str_replace('\n', "\n", $msgObject->toString(true));
+        $result = trim($result);
+        self::assertEquals(trim($msgStr), $result);
     }
 }

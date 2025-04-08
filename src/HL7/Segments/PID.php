@@ -18,9 +18,14 @@ class PID extends Segment
      */
     protected static int $setId = 1;
 
-    public function __construct(?array $fields = null, bool $autoIncrementIndices = true)
-    {
-        parent::__construct('PID', $fields);
+    protected array $repeaterFields = [3, 5, 6, 10, 11, 13, 14, 21, 22, 26, 32, 38, 39, 40];
+
+    public function __construct(
+        ?array $fields = null,
+        bool $autoIncrementIndices = true,
+        bool $extractRepeatableFieldAsMultiDimArray = false
+    ) {
+        parent::__construct('PID', $fields, $extractRepeatableFieldAsMultiDimArray);
         if ($autoIncrementIndices) {
             $this->setID($this::$setId++);
         }
@@ -51,6 +56,7 @@ class PID extends Segment
 
     /**
      * Patient ID (Internal ID)
+     *
      * @param string|array $value
      */
     public function setPatientIdentifierList($value, int $position = 3): bool
@@ -213,6 +219,7 @@ class PID extends Segment
 
     /**
      * Patient ID (Internal ID)
+     *
      * @return array|null|string
      */
     public function getPatientIdentifierList(int $position = 3)
