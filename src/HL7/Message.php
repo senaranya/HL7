@@ -359,11 +359,11 @@ class Message
      * argument as some true value. This will not use the default segment separator, but '\n' instead.
      *
      * @param boolean $pretty Whether to use \n as separator or default (\r).
-     * @return mixed String representation of HL7 message
+     * @return string String representation of HL7 message
      * @access public
      * @throws HL7Exception
      */
-    public function toString(bool $pretty = false)
+    public function toString(bool $pretty = false): string
     {
         if (empty($this->segments)) {
             throw new HL7Exception('Message contains no data. Can not convert to string');
