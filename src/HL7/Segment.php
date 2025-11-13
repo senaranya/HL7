@@ -8,7 +8,18 @@ use InvalidArgumentException;
 
 class Segment
 {
+    /**
+     *
+     * If this value is set, then all the fields set as repeatable will be stored in a multi-dimensional array.
+     * This is useful to do a distinction between subcomponents and repeatable fields
+     *
+     * @var bool
+     */
+    protected bool $extractRepeatableFieldAsMultiDimArray = false;
+
     protected array $fields = [];
+
+    protected array $repeaterFields = [];
 
     /**
      * Create a segment.
@@ -27,13 +38,18 @@ class Segment
      * echo $seg->getField(1);
      * ```
      *
-     * @author     Aranya Sen
      * @param string $name Name of the segment
      * @param array|null $fields Fields for segment
      * @throws InvalidArgumentException
+     * @author     Aranya Sen
      */
-    public function __construct(string $name, ?array $fields = null)
-    {
+    public function __construct(
+        string $name,
+        ?array $fields = null,
+        bool $extractRepeatableFieldAsMultiDimArray = false
+    ) {
+        $this->extractRepeatableFieldAsMultiDimArray = $extractRepeatableFieldAsMultiDimArray;
+
         // Is the name 3 upper case characters?
         if ((!$name) || (strlen($name) !== 3) || (strtoupper($name) !== $name)) {
             throw new InvalidArgumentException("Segment name '$name' should be 3 characters and in uppercase");
@@ -82,6 +98,9 @@ class Segment
             $this->fields[$i] = '';
         }
 
+        if ($this->extractRepeatableFieldAsMultiDimArray && $this->isRepeater($index) && !is_array($value[0] ?? [])) {
+            $value = [$value];
+        }
         $this->fields[$index] = $value;
 
         return true;
@@ -93,11 +112,11 @@ class Segment
             return empty($value);
         }
 
-        if ((string) $value === '0') { // Allow 0
+        if ((string)$value === '0') { // Allow 0
             return false;
         }
 
-        return ! $value;
+        return !$value;
     }
 
     /**
@@ -160,5 +179,20 @@ class Segment
     public function getName(): string
     {
         return $this->fields[0];
+    }
+
+    public function isRepeater(int $field): bool
+    {
+        return in_array($field, $this->repeaterFields);
+    }
+
+    public function isExtractRepeatableFieldAsMultiDimArray(): bool
+    {
+        return $this->extractRepeatableFieldAsMultiDimArray;
+    }
+
+    public function setRepeaterFields(array $fields): void
+    {
+        $this->repeaterFields = $fields;
     }
 }
