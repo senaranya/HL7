@@ -28,40 +28,41 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getDateTimeOfMessage](#mshgetdatetimeofmessage)||
-|[getMessageControlId](#mshgetmessagecontrolid)||
-|[getMessageType](#mshgetmessagetype)|ORM / ORU etc.|
-|[getProcessingId](#mshgetprocessingid)||
-|[getReceivingApplication](#mshgetreceivingapplication)||
-|[getReceivingFacility](#mshgetreceivingfacility)||
-|[getSendingApplication](#mshgetsendingapplication)||
-|[getSendingFacility](#mshgetsendingfacility)||
-|[getTriggerEvent](#mshgettriggerevent)||
-|[getVersionId](#mshgetversionid)|Get HL7 version, e.g. 2.1, 2.3, 3.0 etc.|
-|[setAcceptAcknowledgementType](#mshsetacceptacknowledgementtype)||
-|[setApplicationAcknowledgementType](#mshsetapplicationacknowledgementtype)||
-|[setCharacterSet](#mshsetcharacterset)||
-|[setContinuationPointer](#mshsetcontinuationpointer)||
-|[setCountryCode](#mshsetcountrycode)||
-|[setDateTimeOfMessage](#mshsetdatetimeofmessage)||
-|[setMessageControlId](#mshsetmessagecontrolid)||
-|[setMessageType](#mshsetmessagetype)|Sets message type to MSH segment.|
-|[setPrincipalLanguage](#mshsetprincipallanguage)||
-|[setProcessingId](#mshsetprocessingid)||
-|[setReceivingApplication](#mshsetreceivingapplication)||
-|[setReceivingFacility](#mshsetreceivingfacility)||
-|[setSecurity](#mshsetsecurity)||
-|[setSendingApplication](#mshsetsendingapplication)||
-|[setSendingFacility](#mshsetsendingfacility)||
-|[setSequenceNumber](#mshsetsequencenumber)||
-|[setTriggerEvent](#mshsettriggerevent)|Sets trigger event to MSH segment.|
-|[setVersionId](#mshsetversionid)||
+|[getDateTimeOfMessage](#mshgetdatetimeofmessage)|Get Date Time Of Message (MSH.7)|
+|[getMessageControlId](#mshgetmessagecontrolid)|Get Message Control Id (MSH.10)|
+|[getMessageType](#mshgetmessagetype)|Get Message Type (MSH.9)|
+|[getProcessingId](#mshgetprocessingid)|Get Processing Id (MSH.11)|
+|[getReceivingApplication](#mshgetreceivingapplication)|Get Receiving Application (MSH.5)|
+|[getReceivingFacility](#mshgetreceivingfacility)|Get Receiving Facility (MSH.6)|
+|[getSendingApplication](#mshgetsendingapplication)|Get Sending Application (MSH.3)|
+|[getSendingFacility](#mshgetsendingfacility)|Get Sending Facility (MSH.4)|
+|[getTriggerEvent](#mshgettriggerevent)|Get Trigger Event (MSH.9)|
+|[getVersionId](#mshgetversionid)|Get Version Id (MSH.12)|
+|[setAcceptAcknowledgementType](#mshsetacceptacknowledgementtype)|Set Accept Acknowledgement Type (MSH.15)|
+|[setApplicationAcknowledgementType](#mshsetapplicationacknowledgementtype)|Set Application Acknowledgement Type (MSH.16)|
+|[setCharacterSet](#mshsetcharacterset)|Set Character Set (MSH.18)|
+|[setContinuationPointer](#mshsetcontinuationpointer)|Set Continuation Pointer (MSH.14)|
+|[setCountryCode](#mshsetcountrycode)|Set Country Code (MSH.17)|
+|[setDateTimeOfMessage](#mshsetdatetimeofmessage)|Set Date Time Of Message (MSH.7)|
+|[setMessageControlId](#mshsetmessagecontrolid)|Set Message Control Id (MSH.10)|
+|[setMessageType](#mshsetmessagetype)|Sets message type to MSH segment. (MSH.9)|
+|[setPrincipalLanguage](#mshsetprincipallanguage)|Set Principal Language (MSH.19)|
+|[setProcessingId](#mshsetprocessingid)|Set Processing Id (MSH.11)|
+|[setReceivingApplication](#mshsetreceivingapplication)|Set Receiving Application (MSH.5)|
+|[setReceivingFacility](#mshsetreceivingfacility)|Set Receiving Facility (MSH.6)|
+|[setSecurity](#mshsetsecurity)|Set Security (MSH.8)|
+|[setSendingApplication](#mshsetsendingapplication)|Set Sending Application (MSH.3)|
+|[setSendingFacility](#mshsetsendingfacility)|Set Sending Facility (MSH.4)|
+|[setSequenceNumber](#mshsetsequencenumber)|Set Sequence Number (MSH.13)|
+|[setTriggerEvent](#mshsettriggerevent)|Sets trigger event to MSH segment. (MSH.9)|
+|[setVersionId](#mshsetversionid)|Set Version Id (MSH.12)|
 
 ## Inherited methods
 
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -75,20 +76,24 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
-public getDateTimeOfMessage (void)
+public getDateTimeOfMessage (int $position)
 ```
 
- 
+Get Date Time Of Message (MSH.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -98,20 +103,24 @@ public getDateTimeOfMessage (void)
 **Description**
 
 ```php
-public getMessageControlId (void)
+public getMessageControlId (int $position)
 ```
 
- 
+Get Message Control Id (MSH.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -124,17 +133,19 @@ public getMessageControlId (void)
 public getMessageType (int $position)
 ```
 
-ORM / ORU etc. 
+Get Message Type (MSH.9) 
 
  
 
 **Parameters**
 
 * `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`string`
+`array|string|int|null`
+
 
 
 
@@ -146,20 +157,24 @@ ORM / ORU etc.
 **Description**
 
 ```php
-public getProcessingId (void)
+public getProcessingId (int $position)
 ```
 
- 
+Get Processing Id (MSH.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -169,20 +184,24 @@ public getProcessingId (void)
 **Description**
 
 ```php
-public getReceivingApplication (void)
+public getReceivingApplication (int $position)
 ```
 
- 
+Get Receiving Application (MSH.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -192,20 +211,24 @@ public getReceivingApplication (void)
 **Description**
 
 ```php
-public getReceivingFacility (void)
+public getReceivingFacility (int $position)
 ```
 
- 
+Get Receiving Facility (MSH.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -215,20 +238,24 @@ public getReceivingFacility (void)
 **Description**
 
 ```php
-public getSendingApplication (void)
+public getSendingApplication (int $position)
 ```
 
- 
+Get Sending Application (MSH.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -238,20 +265,24 @@ public getSendingApplication (void)
 **Description**
 
 ```php
-public getSendingFacility (void)
+public getSendingFacility (int $position)
 ```
 
- 
+Get Sending Facility (MSH.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -261,20 +292,24 @@ public getSendingFacility (void)
 **Description**
 
 ```php
-public getTriggerEvent (void)
+public getTriggerEvent (int $position)
 ```
 
- 
+Get Trigger Event (MSH.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -287,17 +322,19 @@ public getTriggerEvent (void)
 public getVersionId (int $position)
 ```
 
-Get HL7 version, e.g. 2.1, 2.3, 3.0 etc. 
+Get Version Id (MSH.12) 
 
  
 
 **Parameters**
 
 * `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`array|null|string`
+`array|string|int|null`
+
 
 
 
@@ -309,20 +346,25 @@ Get HL7 version, e.g. 2.1, 2.3, 3.0 etc.
 **Description**
 
 ```php
-public setAcceptAcknowledgementType (void)
+public setAcceptAcknowledgementType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Accept Acknowledgement Type (MSH.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -332,20 +374,25 @@ public setAcceptAcknowledgementType (void)
 **Description**
 
 ```php
-public setApplicationAcknowledgementType (void)
+public setApplicationAcknowledgementType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Application Acknowledgement Type (MSH.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -355,20 +402,25 @@ public setApplicationAcknowledgementType (void)
 **Description**
 
 ```php
-public setCharacterSet (void)
+public setCharacterSet (string|int|array|null $value, int $position)
 ```
 
- 
+Set Character Set (MSH.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -378,20 +430,25 @@ public setCharacterSet (void)
 **Description**
 
 ```php
-public setContinuationPointer (void)
+public setContinuationPointer (string|int|array|null $value, int $position)
 ```
 
- 
+Set Continuation Pointer (MSH.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -401,20 +458,25 @@ public setContinuationPointer (void)
 **Description**
 
 ```php
-public setCountryCode (void)
+public setCountryCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Country Code (MSH.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -424,20 +486,25 @@ public setCountryCode (void)
 **Description**
 
 ```php
-public setDateTimeOfMessage (void)
+public setDateTimeOfMessage (string|int|array|null $value, int $position)
 ```
 
- 
+Set Date Time Of Message (MSH.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -447,20 +514,25 @@ public setDateTimeOfMessage (void)
 **Description**
 
 ```php
-public setMessageControlId (void)
+public setMessageControlId (string|int|array|null $value, int $position)
 ```
 
- 
+Set Message Control Id (MSH.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -470,10 +542,10 @@ public setMessageControlId (void)
 **Description**
 
 ```php
-public setMessageType (string $value, int $position)
+public setMessageType (string|int|array|null $value, int $position)
 ```
 
-Sets message type to MSH segment. 
+Sets message type to MSH segment. (MSH.9) 
 
 If trigger event is already set, then it is preserved  
   
@@ -490,12 +562,14 @@ If it was empty then the new value will be just ORM.
 
 **Parameters**
 
-* `(string) $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -507,20 +581,25 @@ If it was empty then the new value will be just ORM.
 **Description**
 
 ```php
-public setPrincipalLanguage (void)
+public setPrincipalLanguage (string|int|array|null $value, int $position)
 ```
 
- 
+Set Principal Language (MSH.19) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -530,20 +609,25 @@ public setPrincipalLanguage (void)
 **Description**
 
 ```php
-public setProcessingId (void)
+public setProcessingId (string|int|array|null $value, int $position)
 ```
 
- 
+Set Processing Id (MSH.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -553,20 +637,25 @@ public setProcessingId (void)
 **Description**
 
 ```php
-public setReceivingApplication (void)
+public setReceivingApplication (string|int|array|null $value, int $position)
 ```
 
- 
+Set Receiving Application (MSH.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -576,20 +665,25 @@ public setReceivingApplication (void)
 **Description**
 
 ```php
-public setReceivingFacility (void)
+public setReceivingFacility (string|int|array|null $value, int $position)
 ```
 
- 
+Set Receiving Facility (MSH.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -599,20 +693,25 @@ public setReceivingFacility (void)
 **Description**
 
 ```php
-public setSecurity (void)
+public setSecurity (string|int|array|null $value, int $position)
 ```
 
- 
+Set Security (MSH.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -622,20 +721,25 @@ public setSecurity (void)
 **Description**
 
 ```php
-public setSendingApplication (void)
+public setSendingApplication (string|int|array|null $value, int $position)
 ```
 
- 
+Set Sending Application (MSH.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -645,20 +749,25 @@ public setSendingApplication (void)
 **Description**
 
 ```php
-public setSendingFacility (void)
+public setSendingFacility (string|int|array|null $value, int $position)
 ```
 
- 
+Set Sending Facility (MSH.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -668,20 +777,25 @@ public setSendingFacility (void)
 **Description**
 
 ```php
-public setSequenceNumber (void)
+public setSequenceNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Sequence Number (MSH.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -691,10 +805,10 @@ public setSequenceNumber (void)
 **Description**
 
 ```php
-public setTriggerEvent (string $value, int $position)
+public setTriggerEvent (string|int|array|null $value, int $position)
 ```
 
-Sets trigger event to MSH segment. 
+Sets trigger event to MSH segment. (MSH.9) 
 
 If meessage type is already set, then it is preserved  
   
@@ -711,12 +825,14 @@ If trigger event was not set then it will set the new value.
 
 **Parameters**
 
-* `(string) $value`
+* `(string|int|array|null) $value`
 * `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
 `bool`
+
 
 
 
@@ -728,20 +844,25 @@ If trigger event was not set then it will set the new value.
 **Description**
 
 ```php
-public setVersionId (void)
+public setVersionId (string|int|array|null $value, int $position)
 ```
 
- 
+Set Version Id (MSH.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 

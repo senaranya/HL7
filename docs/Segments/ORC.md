@@ -13,74 +13,75 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[getActionBy](#orcgetactionby)||
-|[getAdvancedBeneficiaryNoticeCode](#orcgetadvancedbeneficiarynoticecode)||
-|[getAdvancedBeneficiaryNoticeOverrideReason](#orcgetadvancedbeneficiarynoticeoverridereason)||
-|[getCallBackPhoneNumber](#orcgetcallbackphonenumber)||
-|[getConfidentialityCode](#orcgetconfidentialitycode)||
-|[getDateTimeofTransaction](#orcgetdatetimeoftransaction)||
-|[getEnteredBy](#orcgetenteredby)||
-|[getEntererAuthorizationMode](#orcgetentererauthorizationmode)||
-|[getEnterersLocation](#orcgetentererslocation)||
-|[getEnteringDevice](#orcgetenteringdevice)||
-|[getEnteringOrganization](#orcgetenteringorganization)||
-|[getFillerOrderNumber](#orcgetfillerordernumber)||
-|[getFillersExpectedAvailabilityDateTime](#orcgetfillersexpectedavailabilitydatetime)||
-|[getOrderControl](#orcgetordercontrol)||
-|[getOrderControlCodeReason](#orcgetordercontrolcodereason)||
-|[getOrderEffectiveDateTime](#orcgetordereffectivedatetime)||
-|[getOrderStatus](#orcgetorderstatus)||
-|[getOrderStatusModifier](#orcgetorderstatusmodifier)||
-|[getOrderType](#orcgetordertype)||
-|[getOrderingFacilityAddress](#orcgetorderingfacilityaddress)||
-|[getOrderingFacilityName](#orcgetorderingfacilityname)||
-|[getOrderingFacilityPhoneNumber](#orcgetorderingfacilityphonenumber)||
-|[getOrderingProvider](#orcgetorderingprovider)||
-|[getOrderingProviderAddress](#orcgetorderingprovideraddress)||
-|[getParentOrder](#orcgetparentorder)||
-|[getParentUniversalServiceIdentifier](#orcgetparentuniversalserviceidentifier)||
-|[getPlacerGroupNumber](#orcgetplacergroupnumber)||
-|[getPlacerOrderNumber](#orcgetplacerordernumber)||
-|[getQuantityTiming](#orcgetquantitytiming)||
-|[getResponseFlag](#orcgetresponseflag)||
-|[getVerifiedBy](#orcgetverifiedby)||
-|[setActionBy](#orcsetactionby)||
-|[setAdvancedBeneficiaryNoticeCode](#orcsetadvancedbeneficiarynoticecode)||
-|[setAdvancedBeneficiaryNoticeOverrideReason](#orcsetadvancedbeneficiarynoticeoverridereason)||
-|[setCallBackPhoneNumber](#orcsetcallbackphonenumber)||
-|[setConfidentialityCode](#orcsetconfidentialitycode)||
-|[setDateTimeofTransaction](#orcsetdatetimeoftransaction)||
-|[setEnteredBy](#orcsetenteredby)||
-|[setEntererAuthorizationMode](#orcsetentererauthorizationmode)||
-|[setEnterersLocation](#orcsetentererslocation)||
-|[setEnteringDevice](#orcsetenteringdevice)||
-|[setEnteringOrganization](#orcsetenteringorganization)||
-|[setFillerOrderNumber](#orcsetfillerordernumber)||
-|[setFillersExpectedAvailabilityDateTime](#orcsetfillersexpectedavailabilitydatetime)||
-|[setOrderControl](#orcsetordercontrol)||
-|[setOrderControlCodeReason](#orcsetordercontrolcodereason)||
-|[setOrderEffectiveDateTime](#orcsetordereffectivedatetime)||
-|[setOrderStatus](#orcsetorderstatus)||
-|[setOrderStatusModifier](#orcsetorderstatusmodifier)||
-|[setOrderType](#orcsetordertype)||
-|[setOrderingFacilityAddress](#orcsetorderingfacilityaddress)||
-|[setOrderingFacilityName](#orcsetorderingfacilityname)||
-|[setOrderingFacilityPhoneNumber](#orcsetorderingfacilityphonenumber)||
-|[setOrderingProvider](#orcsetorderingprovider)||
-|[setOrderingProviderAddress](#orcsetorderingprovideraddress)||
-|[setParentOrder](#orcsetparentorder)||
-|[setParentUniversalServiceIdentifier](#orcsetparentuniversalserviceidentifier)||
-|[setPlacerGroupNumber](#orcsetplacergroupnumber)||
-|[setPlacerOrderNumber](#orcsetplacerordernumber)||
-|[setQuantityTiming](#orcsetquantitytiming)||
-|[setResponseFlag](#orcsetresponseflag)||
-|[setVerifiedBy](#orcsetverifiedby)||
+|[getActionBy](#orcgetactionby)|Get Action By (ORC.19)|
+|[getAdvancedBeneficiaryNoticeCode](#orcgetadvancedbeneficiarynoticecode)|Get Advanced Beneficiary Notice Code (ORC.20)|
+|[getAdvancedBeneficiaryNoticeOverrideReason](#orcgetadvancedbeneficiarynoticeoverridereason)|Get Advanced Beneficiary Notice Override Reason (ORC.26)|
+|[getCallBackPhoneNumber](#orcgetcallbackphonenumber)|Get Call Back Phone Number (ORC.14)|
+|[getConfidentialityCode](#orcgetconfidentialitycode)|Get Confidentiality Code (ORC.28)|
+|[getDateTimeofTransaction](#orcgetdatetimeoftransaction)|Get Date Timeof Transaction (ORC.9)|
+|[getEnteredBy](#orcgetenteredby)|Get Entered By (ORC.10)|
+|[getEntererAuthorizationMode](#orcgetentererauthorizationmode)|Get Enterer Authorization Mode (ORC.30)|
+|[getEnterersLocation](#orcgetentererslocation)|Get Enterers Location (ORC.13)|
+|[getEnteringDevice](#orcgetenteringdevice)|Get Entering Device (ORC.18)|
+|[getEnteringOrganization](#orcgetenteringorganization)|Get Entering Organization (ORC.17)|
+|[getFillerOrderNumber](#orcgetfillerordernumber)|Get Filler Order Number (ORC.3)|
+|[getFillersExpectedAvailabilityDateTime](#orcgetfillersexpectedavailabilitydatetime)|Get Fillers Expected Availability Date Time (ORC.27)|
+|[getOrderControl](#orcgetordercontrol)|Get Order Control (ORC.1)|
+|[getOrderControlCodeReason](#orcgetordercontrolcodereason)|Get Order Control Code Reason (ORC.16)|
+|[getOrderEffectiveDateTime](#orcgetordereffectivedatetime)|Get Order Effective Date Time (ORC.15)|
+|[getOrderStatus](#orcgetorderstatus)|Get Order Status (ORC.5)|
+|[getOrderStatusModifier](#orcgetorderstatusmodifier)|Get Order Status Modifier (ORC.25)|
+|[getOrderType](#orcgetordertype)|Get Order Type (ORC.29)|
+|[getOrderingFacilityAddress](#orcgetorderingfacilityaddress)|Get Ordering Facility Address (ORC.22)|
+|[getOrderingFacilityName](#orcgetorderingfacilityname)|Get Ordering Facility Name (ORC.21)|
+|[getOrderingFacilityPhoneNumber](#orcgetorderingfacilityphonenumber)|Get Ordering Facility Phone Number (ORC.23)|
+|[getOrderingProvider](#orcgetorderingprovider)|Get Ordering Provider (ORC.12)|
+|[getOrderingProviderAddress](#orcgetorderingprovideraddress)|Get Ordering Provider Address (ORC.24)|
+|[getParentOrder](#orcgetparentorder)|Get Parent Order (ORC.8)|
+|[getParentUniversalServiceIdentifier](#orcgetparentuniversalserviceidentifier)|Get Parent Universal Service Identifier (ORC.31)|
+|[getPlacerGroupNumber](#orcgetplacergroupnumber)|Get Placer Group Number (ORC.4)|
+|[getPlacerOrderNumber](#orcgetplacerordernumber)|Get Placer Order Number (ORC.2)|
+|[getQuantityTiming](#orcgetquantitytiming)|Get Quantity Timing (ORC.7)|
+|[getResponseFlag](#orcgetresponseflag)|Get Response Flag (ORC.6)|
+|[getVerifiedBy](#orcgetverifiedby)|Get Verified By (ORC.11)|
+|[setActionBy](#orcsetactionby)|Set Action By (ORC.19)|
+|[setAdvancedBeneficiaryNoticeCode](#orcsetadvancedbeneficiarynoticecode)|Set Advanced Beneficiary Notice Code (ORC.20)|
+|[setAdvancedBeneficiaryNoticeOverrideReason](#orcsetadvancedbeneficiarynoticeoverridereason)|Set Advanced Beneficiary Notice Override Reason (ORC.26)|
+|[setCallBackPhoneNumber](#orcsetcallbackphonenumber)|Set Call Back Phone Number (ORC.14)|
+|[setConfidentialityCode](#orcsetconfidentialitycode)|Set Confidentiality Code (ORC.28)|
+|[setDateTimeofTransaction](#orcsetdatetimeoftransaction)|Set Date Timeof Transaction (ORC.9)|
+|[setEnteredBy](#orcsetenteredby)|Set Entered By (ORC.10)|
+|[setEntererAuthorizationMode](#orcsetentererauthorizationmode)|Set Enterer Authorization Mode (ORC.30)|
+|[setEnterersLocation](#orcsetentererslocation)|Set Enterers Location (ORC.13)|
+|[setEnteringDevice](#orcsetenteringdevice)|Set Entering Device (ORC.18)|
+|[setEnteringOrganization](#orcsetenteringorganization)|Set Entering Organization (ORC.17)|
+|[setFillerOrderNumber](#orcsetfillerordernumber)|Set Filler Order Number (ORC.3)|
+|[setFillersExpectedAvailabilityDateTime](#orcsetfillersexpectedavailabilitydatetime)|Set Fillers Expected Availability Date Time (ORC.27)|
+|[setOrderControl](#orcsetordercontrol)|Set Order Control (ORC.1)|
+|[setOrderControlCodeReason](#orcsetordercontrolcodereason)|Set Order Control Code Reason (ORC.16)|
+|[setOrderEffectiveDateTime](#orcsetordereffectivedatetime)|Set Order Effective Date Time (ORC.15)|
+|[setOrderStatus](#orcsetorderstatus)|Set Order Status (ORC.5)|
+|[setOrderStatusModifier](#orcsetorderstatusmodifier)|Set Order Status Modifier (ORC.25)|
+|[setOrderType](#orcsetordertype)|Set Order Type (ORC.29)|
+|[setOrderingFacilityAddress](#orcsetorderingfacilityaddress)|Set Ordering Facility Address (ORC.22)|
+|[setOrderingFacilityName](#orcsetorderingfacilityname)|Set Ordering Facility Name (ORC.21)|
+|[setOrderingFacilityPhoneNumber](#orcsetorderingfacilityphonenumber)|Set Ordering Facility Phone Number (ORC.23)|
+|[setOrderingProvider](#orcsetorderingprovider)|Set Ordering Provider (ORC.12)|
+|[setOrderingProviderAddress](#orcsetorderingprovideraddress)|Set Ordering Provider Address (ORC.24)|
+|[setParentOrder](#orcsetparentorder)|Set Parent Order (ORC.8)|
+|[setParentUniversalServiceIdentifier](#orcsetparentuniversalserviceidentifier)|Set Parent Universal Service Identifier (ORC.31)|
+|[setPlacerGroupNumber](#orcsetplacergroupnumber)|Set Placer Group Number (ORC.4)|
+|[setPlacerOrderNumber](#orcsetplacerordernumber)|Set Placer Order Number (ORC.2)|
+|[setQuantityTiming](#orcsetquantitytiming)|Set Quantity Timing (ORC.7)|
+|[setResponseFlag](#orcsetresponseflag)|Set Response Flag (ORC.6)|
+|[setVerifiedBy](#orcsetverifiedby)|Set Verified By (ORC.11)|
 
 ## Inherited methods
 
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -94,20 +95,24 @@ Aranyasen\HL7\Segment
 **Description**
 
 ```php
-public getActionBy (void)
+public getActionBy (int $position)
 ```
 
- 
+Get Action By (ORC.19) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -117,20 +122,24 @@ public getActionBy (void)
 **Description**
 
 ```php
-public getAdvancedBeneficiaryNoticeCode (void)
+public getAdvancedBeneficiaryNoticeCode (int $position)
 ```
 
- 
+Get Advanced Beneficiary Notice Code (ORC.20) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 20  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -140,20 +149,24 @@ public getAdvancedBeneficiaryNoticeCode (void)
 **Description**
 
 ```php
-public getAdvancedBeneficiaryNoticeOverrideReason (void)
+public getAdvancedBeneficiaryNoticeOverrideReason (int $position)
 ```
 
- 
+Get Advanced Beneficiary Notice Override Reason (ORC.26) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 26  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -163,20 +176,24 @@ public getAdvancedBeneficiaryNoticeOverrideReason (void)
 **Description**
 
 ```php
-public getCallBackPhoneNumber (void)
+public getCallBackPhoneNumber (int $position)
 ```
 
- 
+Get Call Back Phone Number (ORC.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -186,20 +203,24 @@ public getCallBackPhoneNumber (void)
 **Description**
 
 ```php
-public getConfidentialityCode (void)
+public getConfidentialityCode (int $position)
 ```
 
- 
+Get Confidentiality Code (ORC.28) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 28  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -209,20 +230,24 @@ public getConfidentialityCode (void)
 **Description**
 
 ```php
-public getDateTimeofTransaction (void)
+public getDateTimeofTransaction (int $position)
 ```
 
- 
+Get Date Timeof Transaction (ORC.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -232,20 +257,24 @@ public getDateTimeofTransaction (void)
 **Description**
 
 ```php
-public getEnteredBy (void)
+public getEnteredBy (int $position)
 ```
 
- 
+Get Entered By (ORC.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -255,20 +284,24 @@ public getEnteredBy (void)
 **Description**
 
 ```php
-public getEntererAuthorizationMode (void)
+public getEntererAuthorizationMode (int $position)
 ```
 
- 
+Get Enterer Authorization Mode (ORC.30) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 30  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -278,20 +311,24 @@ public getEntererAuthorizationMode (void)
 **Description**
 
 ```php
-public getEnterersLocation (void)
+public getEnterersLocation (int $position)
 ```
 
- 
+Get Enterers Location (ORC.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -301,20 +338,24 @@ public getEnterersLocation (void)
 **Description**
 
 ```php
-public getEnteringDevice (void)
+public getEnteringDevice (int $position)
 ```
 
- 
+Get Entering Device (ORC.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -324,20 +365,24 @@ public getEnteringDevice (void)
 **Description**
 
 ```php
-public getEnteringOrganization (void)
+public getEnteringOrganization (int $position)
 ```
 
- 
+Get Entering Organization (ORC.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -347,20 +392,24 @@ public getEnteringOrganization (void)
 **Description**
 
 ```php
-public getFillerOrderNumber (void)
+public getFillerOrderNumber (int $position)
 ```
 
- 
+Get Filler Order Number (ORC.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -370,20 +419,24 @@ public getFillerOrderNumber (void)
 **Description**
 
 ```php
-public getFillersExpectedAvailabilityDateTime (void)
+public getFillersExpectedAvailabilityDateTime (int $position)
 ```
 
- 
+Get Fillers Expected Availability Date Time (ORC.27) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 27  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -393,20 +446,24 @@ public getFillersExpectedAvailabilityDateTime (void)
 **Description**
 
 ```php
-public getOrderControl (void)
+public getOrderControl (int $position)
 ```
 
- 
+Get Order Control (ORC.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -416,20 +473,24 @@ public getOrderControl (void)
 **Description**
 
 ```php
-public getOrderControlCodeReason (void)
+public getOrderControlCodeReason (int $position)
 ```
 
- 
+Get Order Control Code Reason (ORC.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -439,20 +500,24 @@ public getOrderControlCodeReason (void)
 **Description**
 
 ```php
-public getOrderEffectiveDateTime (void)
+public getOrderEffectiveDateTime (int $position)
 ```
 
- 
+Get Order Effective Date Time (ORC.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -462,20 +527,24 @@ public getOrderEffectiveDateTime (void)
 **Description**
 
 ```php
-public getOrderStatus (void)
+public getOrderStatus (int $position)
 ```
 
- 
+Get Order Status (ORC.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -485,20 +554,24 @@ public getOrderStatus (void)
 **Description**
 
 ```php
-public getOrderStatusModifier (void)
+public getOrderStatusModifier (int $position)
 ```
 
- 
+Get Order Status Modifier (ORC.25) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 25  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -508,20 +581,24 @@ public getOrderStatusModifier (void)
 **Description**
 
 ```php
-public getOrderType (void)
+public getOrderType (int $position)
 ```
 
- 
+Get Order Type (ORC.29) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 29  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -531,20 +608,24 @@ public getOrderType (void)
 **Description**
 
 ```php
-public getOrderingFacilityAddress (void)
+public getOrderingFacilityAddress (int $position)
 ```
 
- 
+Get Ordering Facility Address (ORC.22) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 22  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -554,20 +635,24 @@ public getOrderingFacilityAddress (void)
 **Description**
 
 ```php
-public getOrderingFacilityName (void)
+public getOrderingFacilityName (int $position)
 ```
 
- 
+Get Ordering Facility Name (ORC.21) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 21  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -577,20 +662,24 @@ public getOrderingFacilityName (void)
 **Description**
 
 ```php
-public getOrderingFacilityPhoneNumber (void)
+public getOrderingFacilityPhoneNumber (int $position)
 ```
 
- 
+Get Ordering Facility Phone Number (ORC.23) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 23  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -600,20 +689,24 @@ public getOrderingFacilityPhoneNumber (void)
 **Description**
 
 ```php
-public getOrderingProvider (void)
+public getOrderingProvider (int $position)
 ```
 
- 
+Get Ordering Provider (ORC.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -623,20 +716,24 @@ public getOrderingProvider (void)
 **Description**
 
 ```php
-public getOrderingProviderAddress (void)
+public getOrderingProviderAddress (int $position)
 ```
 
- 
+Get Ordering Provider Address (ORC.24) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 24  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -646,20 +743,24 @@ public getOrderingProviderAddress (void)
 **Description**
 
 ```php
-public getParentOrder (void)
+public getParentOrder (int $position)
 ```
 
- 
+Get Parent Order (ORC.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -669,20 +770,24 @@ public getParentOrder (void)
 **Description**
 
 ```php
-public getParentUniversalServiceIdentifier (void)
+public getParentUniversalServiceIdentifier (int $position)
 ```
 
- 
+Get Parent Universal Service Identifier (ORC.31) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 31  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -692,20 +797,24 @@ public getParentUniversalServiceIdentifier (void)
 **Description**
 
 ```php
-public getPlacerGroupNumber (void)
+public getPlacerGroupNumber (int $position)
 ```
 
- 
+Get Placer Group Number (ORC.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -715,20 +824,24 @@ public getPlacerGroupNumber (void)
 **Description**
 
 ```php
-public getPlacerOrderNumber (void)
+public getPlacerOrderNumber (int $position)
 ```
 
- 
+Get Placer Order Number (ORC.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -738,20 +851,24 @@ public getPlacerOrderNumber (void)
 **Description**
 
 ```php
-public getQuantityTiming (void)
+public getQuantityTiming (int $position)
 ```
 
- 
+Get Quantity Timing (ORC.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -761,20 +878,24 @@ public getQuantityTiming (void)
 **Description**
 
 ```php
-public getResponseFlag (void)
+public getResponseFlag (int $position)
 ```
 
- 
+Get Response Flag (ORC.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -784,20 +905,24 @@ public getResponseFlag (void)
 **Description**
 
 ```php
-public getVerifiedBy (void)
+public getVerifiedBy (int $position)
 ```
 
- 
+Get Verified By (ORC.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`array|string|int|null`
+
+
+
 
 <hr />
 
@@ -807,20 +932,25 @@ public getVerifiedBy (void)
 **Description**
 
 ```php
-public setActionBy (void)
+public setActionBy (string|int|array|null $value, int $position)
 ```
 
- 
+Set Action By (ORC.19) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 19  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -830,20 +960,25 @@ public setActionBy (void)
 **Description**
 
 ```php
-public setAdvancedBeneficiaryNoticeCode (void)
+public setAdvancedBeneficiaryNoticeCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Advanced Beneficiary Notice Code (ORC.20) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 20  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -853,20 +988,25 @@ public setAdvancedBeneficiaryNoticeCode (void)
 **Description**
 
 ```php
-public setAdvancedBeneficiaryNoticeOverrideReason (void)
+public setAdvancedBeneficiaryNoticeOverrideReason (string|int|array|null $value, int $position)
 ```
 
- 
+Set Advanced Beneficiary Notice Override Reason (ORC.26) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 26  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -876,20 +1016,25 @@ public setAdvancedBeneficiaryNoticeOverrideReason (void)
 **Description**
 
 ```php
-public setCallBackPhoneNumber (void)
+public setCallBackPhoneNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Call Back Phone Number (ORC.14) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 14  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -899,20 +1044,25 @@ public setCallBackPhoneNumber (void)
 **Description**
 
 ```php
-public setConfidentialityCode (void)
+public setConfidentialityCode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Confidentiality Code (ORC.28) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 28  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -922,20 +1072,25 @@ public setConfidentialityCode (void)
 **Description**
 
 ```php
-public setDateTimeofTransaction (void)
+public setDateTimeofTransaction (string|int|array|null $value, int $position)
 ```
 
- 
+Set Date Timeof Transaction (ORC.9) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 9  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -945,20 +1100,25 @@ public setDateTimeofTransaction (void)
 **Description**
 
 ```php
-public setEnteredBy (void)
+public setEnteredBy (string|int|array|null $value, int $position)
 ```
 
- 
+Set Entered By (ORC.10) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 10  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -968,20 +1128,25 @@ public setEnteredBy (void)
 **Description**
 
 ```php
-public setEntererAuthorizationMode (void)
+public setEntererAuthorizationMode (string|int|array|null $value, int $position)
 ```
 
- 
+Set Enterer Authorization Mode (ORC.30) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 30  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -991,20 +1156,25 @@ public setEntererAuthorizationMode (void)
 **Description**
 
 ```php
-public setEnterersLocation (void)
+public setEnterersLocation (string|int|array|null $value, int $position)
 ```
 
- 
+Set Enterers Location (ORC.13) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 13  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1014,20 +1184,25 @@ public setEnterersLocation (void)
 **Description**
 
 ```php
-public setEnteringDevice (void)
+public setEnteringDevice (string|int|array|null $value, int $position)
 ```
 
- 
+Set Entering Device (ORC.18) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 18  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1037,20 +1212,25 @@ public setEnteringDevice (void)
 **Description**
 
 ```php
-public setEnteringOrganization (void)
+public setEnteringOrganization (string|int|array|null $value, int $position)
 ```
 
- 
+Set Entering Organization (ORC.17) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 17  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1060,20 +1240,25 @@ public setEnteringOrganization (void)
 **Description**
 
 ```php
-public setFillerOrderNumber (void)
+public setFillerOrderNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Filler Order Number (ORC.3) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 3  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1083,20 +1268,25 @@ public setFillerOrderNumber (void)
 **Description**
 
 ```php
-public setFillersExpectedAvailabilityDateTime (void)
+public setFillersExpectedAvailabilityDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Fillers Expected Availability Date Time (ORC.27) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 27  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1106,20 +1296,25 @@ public setFillersExpectedAvailabilityDateTime (void)
 **Description**
 
 ```php
-public setOrderControl (void)
+public setOrderControl (string|int|array|null $value, int $position)
 ```
 
- 
+Set Order Control (ORC.1) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 1  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1129,20 +1324,25 @@ public setOrderControl (void)
 **Description**
 
 ```php
-public setOrderControlCodeReason (void)
+public setOrderControlCodeReason (string|int|array|null $value, int $position)
 ```
 
- 
+Set Order Control Code Reason (ORC.16) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 16  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1152,20 +1352,25 @@ public setOrderControlCodeReason (void)
 **Description**
 
 ```php
-public setOrderEffectiveDateTime (void)
+public setOrderEffectiveDateTime (string|int|array|null $value, int $position)
 ```
 
- 
+Set Order Effective Date Time (ORC.15) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 15  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1175,20 +1380,25 @@ public setOrderEffectiveDateTime (void)
 **Description**
 
 ```php
-public setOrderStatus (void)
+public setOrderStatus (string|int|array|null $value, int $position)
 ```
 
- 
+Set Order Status (ORC.5) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 5  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1198,20 +1408,25 @@ public setOrderStatus (void)
 **Description**
 
 ```php
-public setOrderStatusModifier (void)
+public setOrderStatusModifier (string|int|array|null $value, int $position)
 ```
 
- 
+Set Order Status Modifier (ORC.25) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 25  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1221,20 +1436,25 @@ public setOrderStatusModifier (void)
 **Description**
 
 ```php
-public setOrderType (void)
+public setOrderType (string|int|array|null $value, int $position)
 ```
 
- 
+Set Order Type (ORC.29) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 29  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1244,20 +1464,25 @@ public setOrderType (void)
 **Description**
 
 ```php
-public setOrderingFacilityAddress (void)
+public setOrderingFacilityAddress (string|int|array|null $value, int $position)
 ```
 
- 
+Set Ordering Facility Address (ORC.22) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 22  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1267,20 +1492,25 @@ public setOrderingFacilityAddress (void)
 **Description**
 
 ```php
-public setOrderingFacilityName (void)
+public setOrderingFacilityName (string|int|array|null $value, int $position)
 ```
 
- 
+Set Ordering Facility Name (ORC.21) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 21  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1290,20 +1520,25 @@ public setOrderingFacilityName (void)
 **Description**
 
 ```php
-public setOrderingFacilityPhoneNumber (void)
+public setOrderingFacilityPhoneNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Ordering Facility Phone Number (ORC.23) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 23  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1313,20 +1548,25 @@ public setOrderingFacilityPhoneNumber (void)
 **Description**
 
 ```php
-public setOrderingProvider (void)
+public setOrderingProvider (string|int|array|null $value, int $position)
 ```
 
- 
+Set Ordering Provider (ORC.12) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 12  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1336,20 +1576,25 @@ public setOrderingProvider (void)
 **Description**
 
 ```php
-public setOrderingProviderAddress (void)
+public setOrderingProviderAddress (string|int|array|null $value, int $position)
 ```
 
- 
+Set Ordering Provider Address (ORC.24) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 24  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1359,20 +1604,25 @@ public setOrderingProviderAddress (void)
 **Description**
 
 ```php
-public setParentOrder (void)
+public setParentOrder (string|int|array|null $value, int $position)
 ```
 
- 
+Set Parent Order (ORC.8) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 8  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1382,20 +1632,25 @@ public setParentOrder (void)
 **Description**
 
 ```php
-public setParentUniversalServiceIdentifier (void)
+public setParentUniversalServiceIdentifier (string|int|array|null $value, int $position)
 ```
 
- 
+Set Parent Universal Service Identifier (ORC.31) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 31  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1405,20 +1660,25 @@ public setParentUniversalServiceIdentifier (void)
 **Description**
 
 ```php
-public setPlacerGroupNumber (void)
+public setPlacerGroupNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Placer Group Number (ORC.4) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 4  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1428,20 +1688,25 @@ public setPlacerGroupNumber (void)
 **Description**
 
 ```php
-public setPlacerOrderNumber (void)
+public setPlacerOrderNumber (string|int|array|null $value, int $position)
 ```
 
- 
+Set Placer Order Number (ORC.2) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 2  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1451,20 +1716,25 @@ public setPlacerOrderNumber (void)
 **Description**
 
 ```php
-public setQuantityTiming (void)
+public setQuantityTiming (string|int|array|null $value, int $position)
 ```
 
- 
+Set Quantity Timing (ORC.7) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 7  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1474,20 +1744,25 @@ public setQuantityTiming (void)
 **Description**
 
 ```php
-public setResponseFlag (void)
+public setResponseFlag (string|int|array|null $value, int $position)
 ```
 
- 
+Set Response Flag (ORC.6) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 6  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
@@ -1497,20 +1772,25 @@ public setResponseFlag (void)
 **Description**
 
 ```php
-public setVerifiedBy (void)
+public setVerifiedBy (string|int|array|null $value, int $position)
 ```
 
- 
+Set Verified By (ORC.11) 
 
  
 
 **Parameters**
 
-`This function has no parameters.`
+* `(string|int|array|null) $value`
+* `(int) $position`
+: Defaults to 11  
 
 **Return Values**
 
-`void`
+`bool`
+
+
+
 
 <hr />
 
