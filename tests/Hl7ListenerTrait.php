@@ -67,21 +67,22 @@ trait Hl7ListenerTrait
         }
 
         if (($ret = socket_bind($socket, "localhost", $port)) === false) {
-            throw new RuntimeException('socket_bind() failed: reason: ' . socket_strerror($ret) . "\n");
+            throw new RuntimeException(
+                'socket_bind() failed: reason: ' . socket_strerror(socket_last_error($socket)) . "\n"
+            );
         }
         if (($ret = socket_listen($socket, 5)) === false) {
-            throw new RuntimeException('socket_listen() failed: reason: ' . socket_strerror($ret) . "\n");
+            throw new RuntimeException(
+                'socket_listen() failed: reason: ' . socket_strerror(socket_last_error($socket)) . "\n"
+            );
         }
 
         $clientCount = 0;
         while (true) { // Loop over each client
             if (($clientSocket = socket_accept($socket)) === false) {
-                echo 'socket_accept() failed: reason: ' . socket_strerror(socket_last_error()) . "\n";
-                socket_close($clientSocket);
+                echo 'socket_accept() failed: reason: ' . socket_strerror(socket_last_error($socket)) . "\n";
+                socket_close($socket);
                 exit();
-            }
-            if ($clientSocket === false) {
-                continue;
             }
 
             $clientCount++;
