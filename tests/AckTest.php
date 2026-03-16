@@ -137,6 +137,7 @@ class AckTest extends TestCase
     {
         $msg = new Message();
         $hl7Globals = [
+            'HL7_VERSION' => '2.5',
             'SEGMENT_SEPARATOR' => "\r\n",
             'FIELD_SEPARATOR' => '#', // Note that this is not the default, to test that it is overridden
             'COMPONENT_SEPARATOR' => '^',
@@ -151,6 +152,7 @@ class AckTest extends TestCase
     #[Test] public function it_creates_a_default_msh_when_no_request_message_is_provided(): void
     {
         $hl7Globals = [
+            'HL7_VERSION' => '2.5',
             'SEGMENT_SEPARATOR' => "\r\n",
             'FIELD_SEPARATOR' => '#', // Note that this is not the default, to test that it is overridden
             'COMPONENT_SEPARATOR' => '^',
