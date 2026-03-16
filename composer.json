@@ -22,7 +22,7 @@
         "ext-sockets": "*",
         "squizlabs/php_codesniffer": "^3.6",
         "phpunit/phpunit": "^9",
-        "dms/phpunit-arraysubset-asserts": "^0.5.0"
+        "dms/phpunit-arraysubset-asserts": "^0.5"
     },
     "autoload": {
         "psr-4": {
