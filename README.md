@@ -5,15 +5,38 @@
 <a href="https://packagist.org/packages/aranyasen/hl7"><img src="https://poser.pugx.org/aranyasen/hl7/license" alt="License"></a>
 </p>
 
+## Release announcement: 
+### Version 4.0 (Breaking Release)
+⚠️ **This release contains breaking changes.**
+If you are upgrading from **3.x**, please read the [Guide](UPGRADE.md) before upgrading.
+
+#### Key Changes
+- Minimum supported PHP version is now **8.2**
+- `Message` must start with an `MSH` segment
+- `InvalidArgumentException` replaced with `HL7Exception`
+- `new Message()` is now **deprecated** (use `HL7` factory instead)
+- `setSegment()` is deprecated (use `insertSegment()` instead)
+- In `insertSegment()` method, only MSH can be inserted now in the 0th index
+- `withSegmentSeparator()` in HL7 factory accepts CRLF (`\r\n`) as argument. Any other multi-character separator will continue to throw exception
+
+If something breaks after upgrading:
+- Report bugs or request features at [Issues](https://github.com/senaranya/HL7/issues)
+- Submit fixes at [Pull Requests](https://github.com/senaranya/HL7/pulls)
+
+---
+
 ## Important
-- "_**new Message()**_" is deprecated and could be removed in a future release. Use _**HL7**_ factory class instead. See documents below <br><br>
-- The global setting `SEGMENT_ENDING_BAR` is deprecated and will be removed in a future release. If you're using this in your code, replace it with `WITH_SEGMENT_ENDING_FIELD_SEPARATOR`.
-- Minimum supported PHP version has been updated to 8.2 <br>
-    Last supported versions: <br>
-    - PHP 8.0-8.1 => [3.2.2](https://github.com/senaranya/HL7/tree/3.2.2)<br
-    - PHP 7.4 => [2.1.7](https://github.com/senaranya/HL7/tree/2.1.7)<br>
-    - PHP 7.2 => [2.0.2](https://github.com/senaranya/HL7/tree/2.0.2)<br>
-    - PHP 7.0-7.1 => [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)<br>
+- The global setting `SEGMENT_ENDING_BAR` is deprecated and will be removed in a future release. If you're using this in your code, replace it with `WITH_SEGMENT_ENDING_FIELD_SEPARATOR`
+
+## PHP Compatibility
+
+| PHP Version | Package Version |
+|-------------|----------------|
+| 8.2+ | 4.x |
+| 8.0 – 8.1 | [3.2.2](https://github.com/senaranya/HL7/tree/3.2.2) |
+| 7.4 | [2.1.7](https://github.com/senaranya/HL7/tree/2.1.7) |
+| 7.2 | [2.0.2](https://github.com/senaranya/HL7/tree/2.0.2) |
+| 7.0 – 7.1 | [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4) |
 
 ## Introduction
 
