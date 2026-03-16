@@ -6,11 +6,12 @@
 </p>
 
 ## Important
-- Minimum supported PHP version has been updated to 8.0 <br>
+- Minimum supported PHP version has been updated to 8.2 <br>
     Last supported versions: <br>
-    - PHP 7.0 or 7.1 => [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)<br>
-    - PHP 7.2 => [2.0.2](https://github.com/senaranya/HL7/tree/2.0.2)<br>
+    - PHP 8.0-8.1 => [3.2.2](https://github.com/senaranya/HL7/tree/3.2.2)
     - PHP 7.4 => [2.1.7](https://github.com/senaranya/HL7/tree/2.1.7)
+    - PHP 7.2 => [2.0.2](https://github.com/senaranya/HL7/tree/2.0.2)<br>
+    - PHP 7.0-7.1 => [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)<br>
 - The global setting `SEGMENT_ENDING_BAR` is deprecated and will be removed in a future release. Use
 `WITH_SEGMENT_ENDING_FIELD_SEPARATOR` instead.
 

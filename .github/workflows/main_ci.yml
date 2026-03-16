@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        php-versions: [ '8.0', '8.1', '8.2' ]
+        php-versions: [ '8.2', '8.3', '8.4', '8.5' ]
     name: PHP ${{ matrix.php-versions }} Test on ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -27,7 +27,7 @@ jobs:
 #        run: composer validate --strict
       - name: Cache Composer packages
         id: composer-cache
-        uses: actions/cache@v3
+        uses: actions/cache@v5
         with:
           path: vendor
           key: ${{ runner.os }}-php-${{ matrix.php-versions }}-${{ hashFiles('**/composer.lock') }}
