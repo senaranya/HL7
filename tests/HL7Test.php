@@ -111,6 +111,7 @@ class HL7Test extends TestCase
         self::assertStringEndsWith('555.666\n', $msg->toString());
     }
 
+    /** @throws HL7Exception */
     #[Test] public function empty_subfields_can_be_retained_if_needed(): void
     {
         $msg = HL7::from("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|")->keepEmptySubfields()->create();

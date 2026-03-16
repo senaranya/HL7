@@ -76,9 +76,8 @@ class MSH extends Segment
      * REPETITION_SEPARATOR, ESCAPE_CHARACTER and SUBCOMPONENT_SEPARATOR for the message, if the string is of length 4.
      *
      * @param int $index Index of field
-     * @param string $value
      */
-    public function setField(int $index, $value = ''): bool
+    public function setField(int $index, string|int|array|null $value = ''): bool
     {
         if (($index === 1) && strlen($value) !== 1) {
             return false;
