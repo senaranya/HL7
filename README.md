@@ -12,7 +12,7 @@ If you are upgrading from **3.x**, please read the [Guide](UPGRADE.md) before up
 
 #### Key Changes
 - Minimum supported PHP version is now **8.2**
-- `Message` must start with an `MSH` segment
+- `Message` must start with a `MSH` segment
 - `InvalidArgumentException` replaced with `HL7Exception`
 - `new Message()` is now **deprecated** (use `HL7` factory instead)
 - `setSegment()` is deprecated (use `insertSegment()` instead)

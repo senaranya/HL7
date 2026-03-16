@@ -17,8 +17,7 @@ If you encounter problems, please [open an issue](https://github.com/senaranya/H
 - `withSegmentSeparator` in HL7 accepts CRLF (\r\n) as argument. Any other multi-character separator will continue to throw exception
 ### Deprecations
 - ⚠️ Direct instantiation of `Message` is deprecated and may be removed in a future version.
-  Use the `HL7` factory instead: `$message = HL7::build()->create();`.
-  See [README.md](README.md) on how to use it
+  Use the `HL7` factory instead, e.g. `$message = HL7::build()->create()`. See [README](README.md) on how to use it
 - `setSegment()` is deprecated. Use `insertSegment()` instead
 
 ### New features 
