@@ -8,12 +8,12 @@
 ## Important
 - "_**new Message()**_" is deprecated and could be removed in a future release. Use _**HL7**_ factory class instead. See documents below <br><br>
 - The global setting `SEGMENT_ENDING_BAR` is deprecated and will be removed in a future release. If you're using this in your code, replace it with `WITH_SEGMENT_ENDING_FIELD_SEPARATOR`.
-- Minimum supported PHP version has been updated to 8.0 <br>
+- Minimum supported PHP version has been updated to 8.2 <br>
     Last supported versions: <br>
-    - PHP 7.0 or 7.1 => [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)<br>
+    - PHP 8.0-8.1 => [3.2.2](https://github.com/senaranya/HL7/tree/3.2.2)<br
+    - PHP 7.4 => [2.1.7](https://github.com/senaranya/HL7/tree/2.1.7)<br>
     - PHP 7.2 => [2.0.2](https://github.com/senaranya/HL7/tree/2.0.2)<br>
-    - PHP 7.4 => [2.1.7](https://github.com/senaranya/HL7/tree/2.1.7)
-    - PHP 8.1 => [3.2.0](https://github.com/senaranya/HL7/tree/3.2.0)
+    - PHP 7.0-7.1 => [1.5.4](https://github.com/senaranya/HL7/tree/1.5.4)<br>
 
 ## Introduction
 
