@@ -1,7 +1,7 @@
-# Aranyasen\HL7\Segments\NTE  
+# Aranyasen\HL7\Segments\RGS  
 
-NTE segment class
-Ref: https://corepointhealth.com/resource-center/hl7-resources/hl7-nte-notes-comments
+RGS segment class
+Ref: http://hl7-definition.caristix.com:9010/Default.aspx?version=HL7+v2.5.1&segment=RGS
 
 
 
@@ -13,16 +13,14 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
-|[__destruct](#nte__destruct)||
-|[getComment](#ntegetcomment)||
-|[getCommentType](#ntegetcommenttype)||
-|[getID](#ntegetid)||
-|[getSourceOfComment](#ntegetsourceofcomment)||
-|[resetIndex](#nteresetindex)|Reset index of this segment|
-|[setComment](#ntesetcomment)||
-|[setCommentType](#ntesetcommenttype)||
-|[setID](#ntesetid)||
-|[setSourceOfComment](#ntesetsourceofcomment)||
+|[__destruct](#rgs__destruct)||
+|[getID](#rgsgetid)||
+|[getResourceGroupID](#rgsgetresourcegroupid)||
+|[getSegmentActionCode](#rgsgetsegmentactioncode)||
+|[resetIndex](#rgsresetindex)|Reset index of this segment|
+|[setID](#rgssetid)||
+|[setResourceGroupID](#rgssetresourcegroupid)||
+|[setSegmentActionCode](#rgssetsegmentactioncode)||
 
 ## Inherited methods
 
@@ -38,7 +36,7 @@ Aranyasen\HL7\Segment
 
 
 
-### NTE::__destruct  
+### RGS::__destruct  
 
 **Description**
 
@@ -62,55 +60,7 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### NTE::getComment  
-
-**Description**
-
-```php
- getComment (void)
-```
-
- 
-
- 
-
-**Parameters**
-
-`This function has no parameters.`
-
-**Return Values**
-
-`void`
-
-
-<hr />
-
-
-### NTE::getCommentType  
-
-**Description**
-
-```php
- getCommentType (void)
-```
-
- 
-
- 
-
-**Parameters**
-
-`This function has no parameters.`
-
-**Return Values**
-
-`void`
-
-
-<hr />
-
-
-### NTE::getID  
+### RGS::getID  
 
 **Description**
 
@@ -134,12 +84,12 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### NTE::getSourceOfComment  
+### RGS::getResourceGroupID  
 
 **Description**
 
 ```php
- getSourceOfComment (void)
+ getResourceGroupID (void)
 ```
 
  
@@ -158,7 +108,31 @@ Aranyasen\HL7\Segment
 <hr />
 
 
-### NTE::resetIndex  
+### RGS::getSegmentActionCode  
+
+**Description**
+
+```php
+ getSegmentActionCode (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### RGS::resetIndex  
 
 **Description**
 
@@ -182,55 +156,7 @@ Reset index of this segment
 <hr />
 
 
-### NTE::setComment  
-
-**Description**
-
-```php
- setComment (void)
-```
-
- 
-
- 
-
-**Parameters**
-
-`This function has no parameters.`
-
-**Return Values**
-
-`void`
-
-
-<hr />
-
-
-### NTE::setCommentType  
-
-**Description**
-
-```php
- setCommentType (void)
-```
-
- 
-
- 
-
-**Parameters**
-
-`This function has no parameters.`
-
-**Return Values**
-
-`void`
-
-
-<hr />
-
-
-### NTE::setID  
+### RGS::setID  
 
 **Description**
 
@@ -254,12 +180,36 @@ Reset index of this segment
 <hr />
 
 
-### NTE::setSourceOfComment  
+### RGS::setResourceGroupID  
 
 **Description**
 
 ```php
- setSourceOfComment (void)
+ setResourceGroupID (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
+
+<hr />
+
+
+### RGS::setSegmentActionCode  
+
+**Description**
+
+```php
+ setSegmentActionCode (void)
 ```
 
  

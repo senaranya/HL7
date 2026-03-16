@@ -4,88 +4,170 @@ declare(strict_types=1);
 
 namespace Aranyasen\HL7\Tests;
 
+use Aranyasen\HL7;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Messages\ACK;
 use Aranyasen\HL7\Segments\MSH;
 use Exception;
+use PHPUnit\Framework\Attributes\Test;
 
 class AckTest extends TestCase
 {
-    /**
-     * @throws Exception
-     */
-    public function test()
+    #[Test] public function it_uses_CA_for_enhanced_acknowledgement_when_msh_15_or_16_is_present(): void
     {
-        $msg = new Message();
-        $msg->addSegment(new MSH());
+        $msg = HL7::build()->create();
+        $msh = $msg->getFirstSegmentInstance('MSH');
 
-        $msh = $msg->getSegmentByIndex(0);
         $msh->setField(15, 'AL');
         $msh->setField(16, 'NE');
 
         $ack = new ACK($msg);
+        $msa = $ack->getSegmentByIndex(1);
 
-        $seg1 = $ack->getSegmentByIndex(1);
+        self::assertSame('CA', $msa->getField(1));
+    }
 
-        self::assertSame('CA', $seg1->getField(1), 'Error code is CA');
-
-        $msg = new Message();
-        $msh = new MSH();
+    #[Test] public function it_uses_CA_when_only_msh_16_is_present(): void
+    {
+        $msg = HL7::build()->create();
+        $msh = $msg->getFirstSegmentInstance('MSH');
         $msh->setField(15);
         $msh->setField(16, 'NE');
-        $msg->addSegment($msh);
+
         $ack = new ACK($msg);
+        $msa = $ack->getSegmentByIndex(1);
 
-        $seg1 = $ack->getSegmentByIndex(1);
+        self::assertSame('CA', $msa->getField(1));
+    }
 
-        self::assertSame('CA', $seg1->getField(1), 'Error code is CA');
-
-        $msg = new Message();
-        $msh = new MSH();
+    #[Test] public function it_uses_AA_for_normal_acknowledgement_when_msh_15_and_16_are_missing(): void
+    {
+        $msg = HL7::build()->create();
+        $msh = $msg->getFirstSegmentInstance('MSH');
         $msh->setField(16);
         $msh->setField(15);
-        $msg->addSegment($msh);
+
         $ack = new ACK($msg);
+        $msa = $ack->getSegmentByIndex(1);
 
-        $seg1 = $ack->getSegmentByIndex(1);
+        self::assertSame('AA', $msa->getField(1));
+    }
 
-        self::assertSame('AA', $seg1->getField(1), 'Error code is AA');
+    #[Test] public function it_prefixes_single_character_ack_code_in_normal_mode(): void
+    {
+        $msg = HL7::build()->create();
+        $msh = $msg->getFirstSegmentInstance('MSH');
+        $msh->setField(16);
+        $msh->setField(15);
+
+        $ack = new ACK($msg);
+        $msa = $ack->getSegmentByIndex(1);
 
         $ack->setAckCode('E');
-        self::assertSame('AE', $seg1->getField(1), 'Error code is AE');
+
+        self::assertSame('AE', $msa->getField(1));
+    }
+
+    #[Test] public function it_keeps_explicit_two_character_ack_code(): void
+    {
+        $msg = HL7::build()->create();
+        $msh = $msg->getFirstSegmentInstance('MSH');
+        $msh->setField(16);
+        $msh->setField(15);
+
+        $ack = new ACK($msg);
+        $msa = $ack->getSegmentByIndex(1);
 
         $ack->setAckCode('CR');
-        self::assertSame('CR', $seg1->getField(1), 'Error code is CR');
+
+        self::assertSame('CR', $msa->getField(1));
+    }
+
+    #[Test] public function it_sets_acknowledgement_message_when_provided_with_ack_code(): void
+    {
+        $msg = HL7::build()->create();
+        $msh = $msg->getFirstSegmentInstance('MSH');
+        $msh->setField(16);
+        $msh->setField(15);
+
+        $ack = new ACK($msg);
+        $msa = $ack->getSegmentByIndex(1);
 
         $ack->setAckCode('CR', 'XX');
-        self::assertSame('XX', $seg1->getField(3), 'Set message and code');
 
-        $msg = new Message();
-        $msg->addSegment(new MSH());
-        $msh = $msg->getSegmentByIndex(0);
+        self::assertSame('CR', $msa->getField(1));
+        self::assertSame('XX', $msa->getField(3));
+    }
+
+    #[Test] public function it_copies_selected_msh_fields_from_request_message(): void
+    {
+        $msg = HL7::build()->create();
+        $msh = $msg->getFirstSegmentInstance('MSH');
         $msh->setField(16, 'NE');
         $msh->setField(11, 'P');
         $msh->setField(12, '2.4');
         $msh->setField(15, 'NE');
 
         $ack = new ACK($msg);
-        $seg0 = $ack->getSegmentByIndex(0);
-        self::assertSame('P', $seg0->getField(11), 'Field 11 is P');
-        self::assertSame('2.4', $seg0->getField(12), 'Field 12 is 2.4');
-        self::assertSame('NE', $seg0->getField(15), 'Field 15 is NE');
-        self::assertSame('NE', $seg0->getField(16), 'Field 16 is NE');
+        $ackMsh = $ack->getSegmentByIndex(0);
 
-        $ack = new ACK($msg);
-        $ack->setErrorMessage('Some error');
-        $seg1 = $ack->getSegmentByIndex(1);
-        self::assertSame('Some error', $seg1->getField(3), 'Setting error message');
-        self::assertSame('CE', $seg1->getField(1), 'Code CE after setting message');
+        self::assertSame('P', $ackMsh->getField(11));
+        self::assertSame('2.4', $ackMsh->getField(12));
+        self::assertSame('NE', $ackMsh->getField(15));
+        self::assertSame('NE', $ackMsh->getField(16));
     }
 
-    /** @test
+    #[Test] public function it_sets_error_message_and_uses_CE_in_enhanced_mode(): void
+    {
+        $msg = HL7::build()->create();
+        $msh = $msg->getFirstSegmentInstance('MSH');
+        $msh->setField(16, 'NE');
+        $msh->setField(15, 'NE');
+
+        $ack = new ACK($msg);
+        $msa = $ack->getSegmentByIndex(1);
+
+        $ack->setErrorMessage('Some error');
+
+        self::assertSame('Some error', $msa->getField(3));
+        self::assertSame('CE', $msa->getField(1));
+    }
+
+    #[Test] public function it_creates_a_default_msh_when_request_has_no_segments(): void
+    {
+        $msg = new Message();
+        $hl7Globals = [
+            'HL7_VERSION' => '2.5',
+            'SEGMENT_SEPARATOR' => "\r\n",
+            'FIELD_SEPARATOR' => '#', // Note that this is not the default, to test that it is overridden
+            'COMPONENT_SEPARATOR' => '^',
+            'REPETITION_SEPARATOR' => '~',
+            'ESCAPE_CHARACTER' => '\\',
+            'SUBCOMPONENT_SEPARATOR' => '&',
+        ];
+        $ack = new ACK($msg, null, $hl7Globals);
+        self::assertStringContainsString("#ACK#", $ack->toString(true));
+    }
+
+    #[Test] public function it_creates_a_default_msh_when_no_request_message_is_provided(): void
+    {
+        $hl7Globals = [
+            'HL7_VERSION' => '2.5',
+            'SEGMENT_SEPARATOR' => "\r\n",
+            'FIELD_SEPARATOR' => '#', // Note that this is not the default, to test that it is overridden
+            'COMPONENT_SEPARATOR' => '^',
+            'REPETITION_SEPARATOR' => '~',
+            'ESCAPE_CHARACTER' => '\\',
+            'SUBCOMPONENT_SEPARATOR' => '&',
+        ];
+        $ack = new ACK(null, null, $hl7Globals);
+        self::assertStringContainsString("#ACK#", $ack->toString(true));
+    }
+
+    /**
      * @throws Exception
      */
-    public function a_MSH_can_be_provided_to_get_the_fields_from(): void
+    #[Test] public function a_MSH_can_be_provided_to_get_the_fields_from(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|");
         $msh = new MSH(
@@ -99,10 +181,9 @@ class AckTest extends TestCase
     }
 
     /**
-     * @test
      * @throws Exception
      */
-    public function globals_can_be_passed_to_constructor(): void
+    #[Test] public function globals_can_be_passed_to_constructor(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|");
         $ack = new ACK($msg, null, ['SEGMENT_SEPARATOR' => '\r\n']);

@@ -12,47 +12,43 @@ use Aranyasen\HL7\Segments\OBR;
 use Aranyasen\HL7\Segments\OBX;
 use Aranyasen\HL7\Segments\PID;
 use Exception;
-use InvalidArgumentException;
-use DMS\PHPUnitExtensions\ArraySubset\Assert;
 use PHPUnit\Framework\Attributes\Test;
 
 class MessageTest extends TestCase
 {
-    /** @test */
-    public function segments_can_be_retrieved_using_index(): void
+    #[Test] public function segments_can_be_retrieved_using_index(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rABC|\r");
         self::assertSame('ABC', $msg->getSegmentByIndex(1)->getName());
     }
 
-    /** @test */
-    public function segmentByIndex_returns_null_when_target_index_is_beyond_the_total_number_of_segments(): void
+    #[Test] public function segmentByIndex_returns_null_when_target_index_is_beyond_the_total_number_of_segments(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rABC|\r");
         self::assertNull($msg->getSegmentByIndex(2));
     }
 
-    /** @test */
-    public function it_throws_error_when_field_separator_control_char_doesnt_match_the_actual_field_separators(): void
-    {
-        $this->expectException(HL7Exception::class);
-        $msg = new Message("MSH|^~\\&#\r");
-    }
-
     /**
-     * @test
      * @throws Exception
      */
-    public function subfields_can_be_retained_when_required(): void
+    #[Test] public function subfields_can_be_retained_when_required(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rPV1|1|O|^AAAA1^^^BB|", null, true);
         $pv1 = $msg->getSegmentByIndex(1);
         $fields = $pv1->getField(3);
-        Assert::assertArraySubset(['', 'AAAA1', '', '', 'BB'], $fields);
+        $this->assertSame(['', 'AAAA1', '', '', 'BB'], $fields);
     }
 
-    /** @test */
-    public function segments_can_be_added_to_existing_message(): void
+    #[Test] public function field_separator_specified_should_match_the_field_separator_in_MSH_segment(): void
+    {
+        $this->expectException(HL7Exception::class);
+        $this->expectExceptionMessage('Not a valid message: field separator invalid');
+        $fieldSeparator = '=';
+        $fieldSeparatorUsedInMsh = '|';
+        new Message("MSH$fieldSeparatorUsedInMsh^~\\&$fieldSeparator");
+    }
+
+    #[Test] public function segments_can_be_added_to_existing_message(): void
     {
         $msg = new Message();
         $msg->addSegment(new MSH());
@@ -65,8 +61,18 @@ class MessageTest extends TestCase
         self::assertSame('PID', $seg1->getName(), 'Segment 1 name PID');
     }
 
-    /** @test */
-    public function fields_can_be_added_to_existing_segments(): void
+    #[Test] public function first_segment_added_to_an_empty_message_should_be_MSH(): void
+    {
+        $msg = new Message();
+        $this->expectException(HL7Exception::class);
+        $this->expectExceptionMessage('First segment added to an empty Message should be MSH');
+        $msg->addSegment(new Segment('PID'));
+    }
+
+    /**
+     * @throws HL7Exception
+     */
+    #[Test] public function fields_can_be_added_to_existing_segments(): void
     {
         $msg = new Message();
         $msg->addSegment(new MSH());
@@ -82,18 +88,16 @@ class MessageTest extends TestCase
         self::assertSame('XXX', $msg->getSegmentByIndex(0)->getField(3), '3d field of MSH');
     }
 
-    /** @test */
-    public function control_characters_are_properly_set_from_MSH_Segment(): void
+    #[Test] public function control_characters_are_properly_set_from_MSH_Segment(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rABC|||xxx|\r");
         self::assertSame("^~\\&", $msg->getSegmentByIndex(0)->getField(2), 'Encoding characters');
     }
 
     /**
-     * @test
      * @throws Exception
      */
-    public function control_characters_can_be_customized_using_second_argument(): void
+    #[Test] public function control_characters_can_be_customized_using_second_argument(): void
     {
         $msg = new Message("MSH|^~\\&|1|\nABC|||xxx|\n", ['SEGMENT_SEPARATOR' => '\r\n']);
         self::assertSame('MSH|^~\\&|1|\r\nABC|||xxx|\r\n', $msg->toString(), 'Custom line-endings');
@@ -104,10 +108,10 @@ class MessageTest extends TestCase
         );
     }
 
-    /** @test
+    /**
      * @throws HL7Exception
      */
-    public function message_can_be_converted_to_string(): void
+    #[Test] public function message_can_be_converted_to_string(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rABC|||xxx|\r");
         self::assertSame('MSH|^~\\&|1|\nABC|||xxx|\n', $msg->toString(), 'String representation of message');
@@ -118,18 +122,17 @@ class MessageTest extends TestCase
         );
     }
 
-    /** @test
+    /**
      * @throws HL7Exception
      */
-    public function toString_method_throws_exception_when_message_empty(): void
+    #[Test] public function toString_method_throws_exception_when_message_empty(): void
     {
         $msg = new Message();
         $this->expectException(HL7Exception::class);
         $msg->toString();
     }
 
-    /** @test */
-    public function fields_and_subfields_can_be_set_properly(): void
+    #[Test] public function fields_and_subfields_can_be_set_properly(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rABC|||xx^x&y&z^yy^zz|\r");
         $segment1 = $msg->getSegmentByIndex(1);
@@ -139,8 +142,7 @@ class MessageTest extends TestCase
         self::assertSame($fields[1][1], 'y', 'Subcomposed field');
     }
 
-    /** @test */
-    public function fields_can_be_separated_by_custom_character(): void
+    #[Test] public function fields_can_be_separated_by_custom_character(): void
     {
         $msg = new Message("MSH*^~\\&*1\rABC***xxx\r"); // Use * as a field separator
 
@@ -152,32 +154,28 @@ class MessageTest extends TestCase
         self::assertSame('1', $msg->getSegmentByIndex(0)->getField(3), '3d field of MSH');
     }
 
-    /** @test */
-    public function components_of_a_field_can_be_separated_by_custom_character(): void
+    #[Test] public function components_of_a_field_can_be_separated_by_custom_character(): void
     {
         $msg = new Message("MSH|*~\\&|1\rABC|||x*y*z\r");
         $field = $msg->getSegmentByIndex(1)->getField(3);
         self::assertSame('x', $field[0], 'Composed field with * as separator between subfields');
     }
 
-    /** @test */
-    public function subcomponents_can_be_separated_by_custom_character(): void
+    #[Test] public function subcomponents_can_be_separated_by_custom_character(): void
     {
         $msg = new Message("MSH|^~\\@|1\rABC|||a^x@y@z^b\r");
         $field = $msg->getSegmentByIndex(1)->getField(3);
         self::assertSame('y', $field[1][1], 'Subcomposed field with @ as separator');
     }
 
-    /** @test */
-    public function segments_can_be_added_from_message(): void
+    #[Test] public function segments_can_be_added_to_message(): void
     {
-        $msg = new Message();
+        $msg = new Message("MSH|^~\\&|1|\r");
         $msg->addSegment(new Segment('XXX'));
-        self::assertSame('XXX', $msg->getSegmentByIndex(0)->getName(), 'Add segment');
+        self::assertSame('XXX', $msg->getSegmentByIndex(1)->getName(), 'Add segment');
     }
 
-    /** @test */
-    public function segment_can_be_removed_from_message(): void
+    #[Test] public function segment_can_be_removed_from_message(): void
     {
         $msg = new Message("MSH|^~\\&|1|\nAAA|1||xxx|\nBBB|1|\nBBB|2|");
         $segment = $msg->getFirstSegmentInstance('BBB');
@@ -199,21 +197,19 @@ class MessageTest extends TestCase
         self::assertSame("MSH|^~\\&|1|\nAAA|1||xxx|\nBBB|2|\n", $msg->toString(true));
     }
 
-    /** @test */
-    public function segments_can_be_removed_from_message_using_index(): void
+    #[Test] public function segments_can_be_removed_from_message_using_index(): void
     {
-        $msg = new Message();
+        $msg = new Message("MSH|^~\\&|1|\r");
         $msg->addSegment(new Segment('XXX'));
         $msg->addSegment(new Segment('YYY'));
-        $msg->removeSegmentByIndex(0);
-        self::assertSame('YYY', $msg->getSegmentByIndex(0)->getName(), 'Remove segment');
+        $msg->removeSegmentByIndex(1);
+        self::assertSame('YYY', $msg->getSegmentByIndex(1)->getName(), 'Remove segment');
     }
 
     /**
-     * @test
      * @throws Exception
      */
-    public function segments_can_be_removed_by_name(): void
+    #[Test] public function segments_can_be_removed_by_name(): void
     {
         $msg = new Message("MSH|^~\\&|1|\nAAA|1||xxx|\nAAA|2||\nBBB|1|\n");
         $count = $msg->removeSegmentsByName('AAA');
@@ -226,20 +222,27 @@ class MessageTest extends TestCase
         self::assertSame(2, $count);
     }
 
-    /** @test */
-    public function a_new_segment_can_be_inserted_between_two_existing_segments(): void
+    #[Test] public function a_new_segment_can_be_inserted_between_two_existing_segments(): void
     {
-        $msg = new Message();
+        $msg = new Message("MSH|^~\\&|1|\r");
         $msg->addSegment(new Segment('AAA'));
         $msg->addSegment(new Segment('BBB'));
-        $msg->insertSegment(new Segment('XXX'), 1);
+        $msg->insertSegment(new Segment('XXX'), 2);
 
-        self::assertSame('XXX', $msg->getSegmentByIndex(1)->getName(), 'Inserted segment');
-        self::assertSame('BBB', $msg->getSegmentByIndex(2)->getName(), 'Existing segment should shift');
+        self::assertSame('XXX', $msg->getSegmentByIndex(2)->getName(), 'Inserted segment');
+        self::assertSame('BBB', $msg->getSegmentByIndex(3)->getName(), 'Existing segment should shift');
     }
 
-    /** @test */
-    public function MSH_segment_can_be_inserted_with_new_control_characters(): void
+    #[Test] public function the_only_segment_that_can_be_inserted_in_0_index_is_msh(): void
+    {
+        $msg = new Message("MSH|^~\\&|1|\r");
+        $msg->insertSegment(new Segment('MSH'), 0, true); // Should be allowed
+
+        $this->expectException(HL7Exception::class);
+        $msg->insertSegment(new Segment('XXX'), 0); // Should not be allowed
+    }
+
+    #[Test] public function MSH_segment_can_be_inserted_with_new_control_characters(): void
     {
         $msg = new Message();
         $msh = new MSH(['MSH', '#~\&', '', '', '', '', '', '', ['AAA', 'BBB'], '', '', '555']);
@@ -252,43 +255,38 @@ class MessageTest extends TestCase
         );
     }
 
-    /** @test */
-    public function insertSegment_appends_when_the_target_index_is_same_as_the_count_of_total_segments(): void
+    #[Test] public function insertSegment_appends_when_the_target_index_is_same_as_the_count_of_total_segments(): void
     {
         $msg = new Message("MSH|^~\\&|1|\rAAA|1", null, true);
         $msg->insertSegment(new Segment('XXX'), 2);
         self::assertSame('MSH|^~\&|1|\nAAA|1|\nXXX|\n', $msg->toString());
     }
 
-    /** @test */
-    public function it_should_not_be_possible_to_insert_segment_beyond_last_index(): void
+    #[Test] public function it_should_not_be_possible_to_insert_segment_beyond_last_index(): void
     {
         $msg = new Message();
-        $this->expectException(InvalidArgumentException::class);
+        $this->expectException(HL7Exception::class);
         $msg->insertSegment(new Segment('ZZ1'), 3);
         self::assertEmpty($msg->getSegmentByIndex(3), 'Erroneous insert');
     }
 
-    /** @test */
-    public function a_segment_can_be_overwritten(): void
+    #[Test] public function a_segment_can_be_overwritten(): void
     {
-        $msg = new Message();
+        $msg = new Message("MSH|^~\\&|1|\r");
         $msg->addSegment(new Segment('AAA'));
-        $msg->setSegment(new Segment('BBB'), 0);
+        $msg->setSegment(new Segment('BBB'), 1);
         self::assertCount(0, $msg->getSegmentsByName('AAA'), 'No AAA segment anymore');
-        self::assertSame('BBB', $msg->getSegmentByIndex(0)->getName(), 'BBB should have replaced AAA');
+        self::assertSame('BBB', $msg->getSegmentByIndex(1)->getName(), 'BBB should have replaced AAA');
     }
 
-    /** @test */
-    public function setSegment_throws_exception_when_the_target_index_is_beyond_total_count_of_segments(): void
+    #[Test] public function setSegment_throws_exception_when_the_target_index_is_beyond_total_count_of_segments(): void
     {
-        $this->expectException(InvalidArgumentException::class);
+        $this->expectException(HL7Exception::class);
         $msg = new Message("MSH|^~\\&|1|\nAAA|1|\n");
         $msg->setSegment(new Segment('BBB'), 3);
     }
 
-    /** @test */
-    public function setSegment_resets_control_characters_when_adding_MSH_segment_at_0th_index(): void
+    #[Test] public function setSegment_resets_control_characters_when_adding_MSH_segment_at_0th_index(): void
     {
         $msg = new Message();
         $msh = new MSH(['MSH', '#~\&', '', '', '', '', '', '', ['AAA', 'BBB'], '', '', '555']);
@@ -300,19 +298,18 @@ class MessageTest extends TestCase
         );
     }
 
-    /** @test */
-    public function same_segment_type_can_be_added_multiple_times(): void
+    #[Test] public function same_segment_type_can_be_added_multiple_times(): void
     {
-        $msg = new Message();
+        $msg = new Message("MSH|^~\\&|1|\r");
         $msg->addSegment(new Segment('AAA'));
         $msg->addSegment(new Segment('AAA'));
         self::assertCount(2, $msg->getSegmentsByName('AAA'), 'Message should have 2 AAAs');
     }
 
-    /** @test
+    /**
      * @throws Exception
      */
-    public function field_separator_can_be_changed_after_message_creation(): void
+    #[Test] public function field_separator_can_be_changed_after_message_creation(): void
     {
         $msg = new Message();
         $msh = new MSH([]);
@@ -327,26 +324,23 @@ class MessageTest extends TestCase
     }
 
     /**
-     * @test
      * @throws Exception
      */
-    public function a_message_can_be_constructed_from_a_string(): void
+    #[Test] public function a_message_can_be_constructed_from_a_string(): void
     {
         $str = 'MSH|^~\&|Aranya HL7|Aranya HQ|VISION|MISYS|200404061744||DFT^P03|TC-2743|P^T|2.3|||AL|NE||ASCII||| |';
         $msg = new Message($str);
         self::assertCount(1, $msg->getSegments(), 'Message from string');
     }
 
-    /** @test */
-    public function a_message_can_be_converted_to_a_string(): void
+    #[Test] public function a_message_can_be_converted_to_a_string(): void
     {
         $str = 'MSH|^~\&|Aranya HL7|Aranya HQ|VISION|MISYS|200404061744||DFT^P03|TC-2743|P^T|2.3|||AL|NE||ASCII||| |';
         $msg = new Message($str);
         self::assertSame("$str\n", $msg->toString(true), 'Message to string with subcomponents');
     }
 
-    /** @test */
-    public function a_segment_can_be_retrieved_as_a_string(): void
+    #[Test] public function a_segment_can_be_retrieved_as_a_string(): void
     {
         $msg = new Message("MSH*^~\\&*1\rXXX*a^b^c*a^b1&b2^c*xxx\r");
         self::assertSame("MSH*^~\\&*1*", $msg->getSegmentAsString(0), 'MSH segment as string');
@@ -363,39 +357,32 @@ class MessageTest extends TestCase
         self::assertSame('a^b1&b2^c', $msg->getSegmentFieldAsString(1, 2), 'XXX(2) as string');
     }
 
-    /** @test */
-    public function getSegmentAsString_returns_null_if_the_target_segment_doesnt_exist(): void
+    #[Test] public function getSegmentAsString_returns_null_if_the_target_segment_doesnt_exist(): void
     {
         $msg = new Message("MSH|^~\\&|1|\nABC|");
         self::assertNull($msg->getSegmentAsString(5));
     }
 
-    /** @test */
-    public function getSegmentFieldAsString_returns_null_if_the_target_segment_doesnt_exist(): void
+    #[Test] public function getSegmentFieldAsString_returns_null_if_the_target_segment_doesnt_exist(): void
     {
         $msg = new Message("MSH|^~\\&|1|\nABC|");
         self::assertNull($msg->getSegmentFieldAsString(5, 1));
     }
 
-    /** @test */
-    public function getSegmentFieldAsString_returns_null_if_the_target_field_doesnt_exist(): void
+    #[Test] public function getSegmentFieldAsString_returns_null_if_the_target_field_doesnt_exist(): void
     {
         $msg = new Message("MSH|^~\\&|1|\nABC|");
         self::assertNull($msg->getSegmentFieldAsString(1, 5));
     }
 
-    /**
-     * @test
-     */
-    public function an_exception_will_be_throw_in_invalid_string(): void
+    #[Test] public function an_exception_will_be_throw_in_invalid_string(): void
     {
         $this->expectException(HL7Exception::class);
         $this->expectExceptionMessage('Not a valid message: invalid control segment');
         new Message("I'm an invalid message");
     }
 
-    /** @test */
-    public function segment_ending_bar_can_be_omitted(): void
+    #[Test] public function segment_ending_bar_can_be_omitted(): void
     {
         $msg = new Message("MSH|^~\\&|1|\nABC|||xxx|\n", ['SEGMENT_ENDING_BAR' => false]);
         self::assertSame("MSH|^~\\&|1\nABC|||xxx\n", $msg->toString(true), 'No ending bar on each segment');
@@ -404,8 +391,7 @@ class MessageTest extends TestCase
         self::assertSame("MSH|^~\\&|1|\nABC|||xxx|\n", $msg->toString(true), 'Ending bar retains by default');
     }
 
-    /** @test */
-    public function segment_ending_character_can_be_omitted(): void
+    #[Test] public function segment_ending_character_can_be_omitted(): void
     {
         $msg = new Message("MSH|^~\\&|1|\nABC|||xxx|\n");
         self::assertSame("MSH|^~\\&|1|\nABC|||xxx|\n", $msg->toString(true), 'Ending bar retains by default');
@@ -420,8 +406,7 @@ class MessageTest extends TestCase
         self::assertSame("MSH#^~\\&#1\nABC###xxx\n", $msg->toString(true), 'No ending field separator on each segment');
     }
 
-    /** @test */
-    public function segment_index_can_be_retrieved_from_a_message(): void
+    #[Test] public function segment_index_can_be_retrieved_from_a_message(): void
     {
         $message = new Message("MSH|^~\\&|1|\n");
         $pid = new PID();
@@ -434,15 +419,13 @@ class MessageTest extends TestCase
         self::assertSame(2, $message->getSegmentIndex($pid));
     }
 
-    /** @test */
-    public function segmentIndex_returns_null_if_the_target_segment_is_not_found(): void
+    #[Test] public function segmentIndex_returns_null_if_the_target_segment_is_not_found(): void
     {
         $message = new Message("MSH|^~\\&|1|\nABC|\n");
         self::assertNull($message->getSegmentIndex(new Segment('XXX')));
     }
 
-    /** @test */
-    public function message_type_can_be_checked(): void
+    #[Test] public function message_type_can_be_checked(): void
     {
         $msg = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
         self::assertTrue($msg->isOrm());
@@ -477,10 +460,9 @@ class MessageTest extends TestCase
      *
      * This test verifies both.
      *
-     * @test
      * @throws Exception
      */
-    public function segment_id_can_be_reset_on_demand(): void
+    #[Test] public function segment_id_can_be_reset_on_demand(): void
     {
         PID::resetIndex(); // Start with a clean slate
 
@@ -523,10 +505,9 @@ class MessageTest extends TestCase
     }
 
     /**
-     * @test
      * @throws Exception
      */
-    public function segment_index_autoincrement_can_be_avoided(): void
+    #[Test] public function segment_index_autoincrement_can_be_avoided(): void
     {
         $hl7String = "MSH|^~\&|||||||ORU^R01|00001|P|2.3.1|\n" . "OBX|1||11^AA|\n" . "OBX|1||22^BB|\n";
 
@@ -551,8 +532,7 @@ class MessageTest extends TestCase
         );
     }
 
-    /** @test */
-    public function a_segments_presence_can_be_checked(): void
+    #[Test] public function a_segments_presence_can_be_checked(): void
     {
         $message = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
         self::assertFalse($message->hasSegment('PID'));
@@ -561,8 +541,7 @@ class MessageTest extends TestCase
         self::assertTrue($message->hasSegment('PID'));
     }
 
-    /** @test */
-    public function first_of_the_given_segment_name_can_be_easily_obtained_using_a_helper_method(): void
+    #[Test] public function first_of_the_given_segment_name_can_be_easily_obtained_using_a_helper_method(): void
     {
         $message = new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|");
         $message->addSegment(new PID());
@@ -579,15 +558,13 @@ class MessageTest extends TestCase
         self::assertNull($message->getFirstSegmentInstance('XXX'), 'Non existing segment should return null');
     }
 
-    /** @test */
-    public function message_can_be_verified_as_empty(): void
+    #[Test] public function message_can_be_verified_as_empty(): void
     {
         self::assertTrue((new Message())->isEmpty());
         self::assertFalse((new Message("MSH|^~\&|||||||ORM^O01||P|2.3.1|"))->isEmpty());
     }
 
-    /** @test */
-    public function field_with_repetition_separator_splits_into_array_by_default(): void
+    #[Test] public function field_with_repetition_separator_splits_into_array_by_default(): void
     {
         $message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1"); // Repetition separator is ~
         $patientIdentifierList = $message->getSegmentByIndex(1)->getField(3);
@@ -598,8 +575,7 @@ class MessageTest extends TestCase
         self::assertSame('1', $patientIdentifierList[1][1]);
     }
 
-    /** @test */
-    public function field_with_repetition_separator_can_be_split_into_array(): void
+    #[Test] public function field_with_repetition_separator_can_be_split_into_array(): void
     {
         $message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1", doNotSplitRepetition: false);
         $patientIdentifierList = $message->getSegmentByIndex(1)->getField(3);
@@ -610,8 +586,7 @@ class MessageTest extends TestCase
         self::assertSame('1', $patientIdentifierList[1][1]);
     }
 
-    /** @test */
-    public function repetition_separation_character_can_be_ignored(): void
+    #[Test] public function repetition_separation_character_can_be_ignored(): void
     {
         $message = new Message("MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1", doNotSplitRepetition: true);
         $pid = $message->getSegmentByIndex(1);
@@ -620,8 +595,7 @@ class MessageTest extends TestCase
         self::assertSame(['3', '0~4', '1'], $patientIdentifierList);
     }
 
-    /** @test */
-    public function a_message_can_be_saved_in_a_file(): void
+    #[Test] public function a_message_can_be_saved_in_a_file(): void
     {
         $hl7File = __DIR__ . DIRECTORY_SEPARATOR . 'hl7_test_' . random_int(100, 1000) . '.hl7';
         $message = new Message("MSH|^~\&|");
@@ -633,8 +607,7 @@ class MessageTest extends TestCase
         }
     }
 
-    /** @test */
-    public function segments_can_be_retrieved_by_class(): void
+    #[Test] public function segments_can_be_retrieved_by_class(): void
     {
         $message = new Message(
             "MSH|^~\&|||||||ADT^A01||P|2.3.1|\nPID|||3^0~4^1\nOBX|1|||\nOBX|2|||",
@@ -653,10 +626,9 @@ class MessageTest extends TestCase
         self::assertCount(0, $OBRs);
     }
 
-    /** @test */
-    public function reindex_message_segments(): void
+    #[Test] public function reindex_message_segments(): void
     {
-        $message = new Message(autoIncrementIndices: false);
+        $message = new Message('MSH|^~\&|||||||', autoIncrementIndices: false);
         $pid = new PID();
         $pid->setId(2);
         $message->addSegment($pid);

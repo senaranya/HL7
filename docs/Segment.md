@@ -11,6 +11,7 @@
 | Name | Description |
 |------|-------------|
 |[__construct](#segment__construct)|Create a segment.|
+|[clearField](#segmentclearfield)|Remove any existing value from the field|
 |[getField](#segmentgetfield)|Get the field at index.|
 |[getFields](#segmentgetfields)|Get fields from a segment|
 |[getName](#segmentgetname)|Get the name of the segment. This is basically the value at index 0|
@@ -30,11 +31,11 @@ public __construct (string $name, array|null $fields)
 
 Create a segment. 
 
-A segment may be created with just a name or a name and an array of field  
-values. The segment name should be a standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and  
-upper case. If an array is given, all fields will be filled from that array. Note that for composed fields and  
-sub-components, the array may hold sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same  
-way, since we can't distinguish between composed fields and repeated fields.  
+A segment may be created with just a name or a name and an array of field values. The segment name should be a  
+standard HL7 segment (e.g. MSH / PID etc.) that is three characters long, and upper case. If an array is given,  
+all fields will be filled from that array. Note that for composed fields and sub-components, the array may hold  
+sub-arrays and sub-sub-arrays. Repeated fields can not be supported the same way, since we can't distinguish  
+between composed fields and repeated fields.  
   
 Example:  
 ```php  
@@ -46,14 +47,43 @@ echo $seg->getField(1);
 
 **Parameters**
 
-* `(string) $name`
-: Name of the segment  
-* `(array|null) $fields`
-: Fields for segment  
+* `(string) $name`: Name of the segment  
+* `(array|null) $fields`: Fields for segment  
 
 **Return Values**
 
 `void`
+
+
+**Throws Exceptions**
+
+
+`\InvalidArgumentException`
+
+
+<hr />
+
+
+### Segment::clearField  
+
+**Description**
+
+```php
+public clearField (int $index)
+```
+
+Remove any existing value from the field 
+
+ 
+
+**Parameters**
+
+* `(int) $index`: Field index  
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -63,7 +93,7 @@ echo $seg->getField(1);
 **Description**
 
 ```php
-public getField (int $index)
+public getField (void)
 ```
 
 Get the field at index. 
@@ -76,14 +106,12 @@ $field = $seg->getField(9); // Returns a string/null/array depending on what the
 
 **Parameters**
 
-* `(int) $index`
-: Index of field  
+`This function has no parameters.`
 
 **Return Values**
 
-`null|string|array`
+`void`
 
-> The value of the field
 
 <hr />
 
@@ -103,16 +131,15 @@ fields from this index till the end of the segment will be returned.
 
 **Parameters**
 
-* `(int) $from`
-: Start range at this index  
-* `(int|null) $to`
-: Stop range at this index  
+* `(int) $from`: Start range at this index  
+* `(int|null) $to`: Stop range at this index  
 
 **Return Values**
 
 `array`
 
 > List of fields
+
 
 <hr />
 
@@ -135,9 +162,10 @@ Get the name of the segment. This is basically the value at index 0
 
 **Return Values**
 
-`mixed`
+`string`
 
 > Name of segment
+
 
 <hr />
 
@@ -147,7 +175,7 @@ Get the name of the segment. This is basically the value at index 0
 **Description**
 
 ```php
-public setField (int $index, string|array $value)
+public setField (int $index)
 ```
 
 Set the field specified by index to value. 
@@ -168,15 +196,11 @@ If values are not provided at all, the method will just return.
 
 **Parameters**
 
-* `(int) $index`
-: Index to set  
-* `(string|array) $value`
-: Value for field  
+* `(int) $index`: Index to set  
 
 **Return Values**
 
-`boolean`
-
+`void`
 
 
 <hr />
@@ -203,6 +227,7 @@ Get the number of fields for this segment, not including the name
 `int`
 
 > number of fields
+
 
 <hr />
 

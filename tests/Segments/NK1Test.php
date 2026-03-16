@@ -7,11 +7,11 @@ namespace Aranyasen\HL7\Tests\Segments;
 use Aranyasen\HL7\Message;
 use Aranyasen\HL7\Segments\NK1;
 use Aranyasen\HL7\Tests\TestCase;
+use PHPUnit\Framework\Attributes\Test;
 
 class NK1Test extends TestCase
 {
-    /** @test */
-    public function NK1_segment_can_be_parsed_from_a_HL7_message(): void
+    #[Test] public function NK1_segment_can_be_parsed_from_a_HL7_message(): void
     {
         $msg = new Message("MSH|^~\\&|1|\nNK1|1|John^Doe|\n");
         $nk1Segments = $msg->getSegmentsByName('NK1');
@@ -20,8 +20,7 @@ class NK1Test extends TestCase
         self::assertSame(['John', 'Doe'], $nk1Segments[0]->getNKName());
     }
 
-    /** @test */
-    public function next_of_kin_name_can_be_set_and_get(): void
+    #[Test] public function next_of_kin_name_can_be_set_and_get(): void
     {
         $nk1Segment = new NK1();
         $nk1Segment->setNKName("John Doe");

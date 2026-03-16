@@ -13,6 +13,7 @@ Aranyasen\HL7\Segment
 
 | Name | Description |
 |------|-------------|
+|[__destruct](#dg1__destruct)||
 |[getAttestationDateTime](#dg1getattestationdatetime)||
 |[getConfidentialIndicator](#dg1getconfidentialindicator)||
 |[getDRGApprovalIndicator](#dg1getdrgapprovalindicator)||
@@ -32,6 +33,7 @@ Aranyasen\HL7\Segment
 |[getOutlierCost](#dg1getoutliercost)||
 |[getOutlierDays](#dg1getoutlierdays)||
 |[getOutlierType](#dg1getoutliertype)||
+|[resetIndex](#dg1resetindex)|Reset index of this segment|
 |[setAttestationDateTime](#dg1setattestationdatetime)||
 |[setConfidentialIndicator](#dg1setconfidentialindicator)||
 |[setDRGApprovalIndicator](#dg1setdrgapprovalindicator)||
@@ -57,6 +59,7 @@ Aranyasen\HL7\Segment
 | Name | Description |
 |------|-------------|
 |__construct|Create a segment.|
+|clearField|Remove any existing value from the field|
 |getField|Get the field at index.|
 |getFields|Get fields from a segment|
 |getName|Get the name of the segment. This is basically the value at index 0|
@@ -65,12 +68,12 @@ Aranyasen\HL7\Segment
 
 
 
-### DG1::getAttestationDateTime  
+### DG1::__destruct  
 
 **Description**
 
 ```php
-public getAttestationDateTime (void)
+ __destruct (void)
 ```
 
  
@@ -84,6 +87,31 @@ public getAttestationDateTime (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### DG1::getAttestationDateTime  
+
+**Description**
+
+```php
+ getAttestationDateTime (void)
+```
+
+ 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -93,7 +121,7 @@ public getAttestationDateTime (void)
 **Description**
 
 ```php
-public getConfidentialIndicator (void)
+ getConfidentialIndicator (void)
 ```
 
  
@@ -107,6 +135,7 @@ public getConfidentialIndicator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -116,7 +145,7 @@ public getConfidentialIndicator (void)
 **Description**
 
 ```php
-public getDRGApprovalIndicator (void)
+ getDRGApprovalIndicator (void)
 ```
 
  
@@ -130,6 +159,7 @@ public getDRGApprovalIndicator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -139,7 +169,7 @@ public getDRGApprovalIndicator (void)
 **Description**
 
 ```php
-public getDRGGrouperReviewCode (void)
+ getDRGGrouperReviewCode (void)
 ```
 
  
@@ -153,6 +183,7 @@ public getDRGGrouperReviewCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -162,7 +193,7 @@ public getDRGGrouperReviewCode (void)
 **Description**
 
 ```php
-public getDiagnosingClinician (void)
+ getDiagnosingClinician (void)
 ```
 
  
@@ -176,6 +207,7 @@ public getDiagnosingClinician (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -185,7 +217,7 @@ public getDiagnosingClinician (void)
 **Description**
 
 ```php
-public getDiagnosisClassification (void)
+ getDiagnosisClassification (void)
 ```
 
  
@@ -199,6 +231,7 @@ public getDiagnosisClassification (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -208,7 +241,7 @@ public getDiagnosisClassification (void)
 **Description**
 
 ```php
-public getDiagnosisCodeDG1 (void)
+ getDiagnosisCodeDG1 (void)
 ```
 
  
@@ -222,6 +255,7 @@ public getDiagnosisCodeDG1 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -231,7 +265,7 @@ public getDiagnosisCodeDG1 (void)
 **Description**
 
 ```php
-public getDiagnosisCodingMethod (void)
+ getDiagnosisCodingMethod (void)
 ```
 
  
@@ -245,6 +279,7 @@ public getDiagnosisCodingMethod (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -254,7 +289,7 @@ public getDiagnosisCodingMethod (void)
 **Description**
 
 ```php
-public getDiagnosisDateTime (void)
+ getDiagnosisDateTime (void)
 ```
 
  
@@ -268,6 +303,7 @@ public getDiagnosisDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -277,7 +313,7 @@ public getDiagnosisDateTime (void)
 **Description**
 
 ```php
-public getDiagnosisDescription (void)
+ getDiagnosisDescription (void)
 ```
 
  
@@ -291,6 +327,7 @@ public getDiagnosisDescription (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -300,7 +337,7 @@ public getDiagnosisDescription (void)
 **Description**
 
 ```php
-public getDiagnosisPriority (void)
+ getDiagnosisPriority (void)
 ```
 
  
@@ -314,6 +351,7 @@ public getDiagnosisPriority (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -323,7 +361,7 @@ public getDiagnosisPriority (void)
 **Description**
 
 ```php
-public getDiagnosisType (void)
+ getDiagnosisType (void)
 ```
 
  
@@ -337,6 +375,7 @@ public getDiagnosisType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -346,7 +385,7 @@ public getDiagnosisType (void)
 **Description**
 
 ```php
-public getDiagnosticRelatedGroup (void)
+ getDiagnosticRelatedGroup (void)
 ```
 
  
@@ -360,6 +399,7 @@ public getDiagnosticRelatedGroup (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -369,7 +409,7 @@ public getDiagnosticRelatedGroup (void)
 **Description**
 
 ```php
-public getGrouperVersionAndType (void)
+ getGrouperVersionAndType (void)
 ```
 
  
@@ -383,6 +423,7 @@ public getGrouperVersionAndType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -392,7 +433,7 @@ public getGrouperVersionAndType (void)
 **Description**
 
 ```php
-public getID (void)
+ getID (void)
 ```
 
  
@@ -406,6 +447,7 @@ public getID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -415,7 +457,7 @@ public getID (void)
 **Description**
 
 ```php
-public getMajorDiagnosticCategory (void)
+ getMajorDiagnosticCategory (void)
 ```
 
  
@@ -429,6 +471,7 @@ public getMajorDiagnosticCategory (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -438,7 +481,7 @@ public getMajorDiagnosticCategory (void)
 **Description**
 
 ```php
-public getOutlierCost (void)
+ getOutlierCost (void)
 ```
 
  
@@ -452,6 +495,7 @@ public getOutlierCost (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -461,7 +505,7 @@ public getOutlierCost (void)
 **Description**
 
 ```php
-public getOutlierDays (void)
+ getOutlierDays (void)
 ```
 
  
@@ -475,6 +519,7 @@ public getOutlierDays (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -484,7 +529,7 @@ public getOutlierDays (void)
 **Description**
 
 ```php
-public getOutlierType (void)
+ getOutlierType (void)
 ```
 
  
@@ -498,6 +543,31 @@ public getOutlierType (void)
 **Return Values**
 
 `void`
+
+
+<hr />
+
+
+### DG1::resetIndex  
+
+**Description**
+
+```php
+public static resetIndex (void)
+```
+
+Reset index of this segment 
+
+ 
+
+**Parameters**
+
+`This function has no parameters.`
+
+**Return Values**
+
+`void`
+
 
 <hr />
 
@@ -507,7 +577,7 @@ public getOutlierType (void)
 **Description**
 
 ```php
-public setAttestationDateTime (void)
+ setAttestationDateTime (void)
 ```
 
  
@@ -521,6 +591,7 @@ public setAttestationDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -530,7 +601,7 @@ public setAttestationDateTime (void)
 **Description**
 
 ```php
-public setConfidentialIndicator (void)
+ setConfidentialIndicator (void)
 ```
 
  
@@ -544,6 +615,7 @@ public setConfidentialIndicator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -553,7 +625,7 @@ public setConfidentialIndicator (void)
 **Description**
 
 ```php
-public setDRGApprovalIndicator (void)
+ setDRGApprovalIndicator (void)
 ```
 
  
@@ -567,6 +639,7 @@ public setDRGApprovalIndicator (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -576,7 +649,7 @@ public setDRGApprovalIndicator (void)
 **Description**
 
 ```php
-public setDRGGrouperReviewCode (void)
+ setDRGGrouperReviewCode (void)
 ```
 
  
@@ -590,6 +663,7 @@ public setDRGGrouperReviewCode (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -599,7 +673,7 @@ public setDRGGrouperReviewCode (void)
 **Description**
 
 ```php
-public setDiagnosingClinician (void)
+ setDiagnosingClinician (void)
 ```
 
  
@@ -613,6 +687,7 @@ public setDiagnosingClinician (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -622,7 +697,7 @@ public setDiagnosingClinician (void)
 **Description**
 
 ```php
-public setDiagnosisClassification (void)
+ setDiagnosisClassification (void)
 ```
 
  
@@ -636,6 +711,7 @@ public setDiagnosisClassification (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -645,7 +721,7 @@ public setDiagnosisClassification (void)
 **Description**
 
 ```php
-public setDiagnosisCodeDG1 (void)
+ setDiagnosisCodeDG1 (void)
 ```
 
  
@@ -659,6 +735,7 @@ public setDiagnosisCodeDG1 (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -668,7 +745,7 @@ public setDiagnosisCodeDG1 (void)
 **Description**
 
 ```php
-public setDiagnosisCodingMethod (void)
+ setDiagnosisCodingMethod (void)
 ```
 
  
@@ -682,6 +759,7 @@ public setDiagnosisCodingMethod (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -691,7 +769,7 @@ public setDiagnosisCodingMethod (void)
 **Description**
 
 ```php
-public setDiagnosisDateTime (void)
+ setDiagnosisDateTime (void)
 ```
 
  
@@ -705,6 +783,7 @@ public setDiagnosisDateTime (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -714,7 +793,7 @@ public setDiagnosisDateTime (void)
 **Description**
 
 ```php
-public setDiagnosisDescription (void)
+ setDiagnosisDescription (void)
 ```
 
  
@@ -728,6 +807,7 @@ public setDiagnosisDescription (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -737,7 +817,7 @@ public setDiagnosisDescription (void)
 **Description**
 
 ```php
-public setDiagnosisPriority (void)
+ setDiagnosisPriority (void)
 ```
 
  
@@ -751,6 +831,7 @@ public setDiagnosisPriority (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -760,7 +841,7 @@ public setDiagnosisPriority (void)
 **Description**
 
 ```php
-public setDiagnosisType (void)
+ setDiagnosisType (void)
 ```
 
  
@@ -774,6 +855,7 @@ public setDiagnosisType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -783,7 +865,7 @@ public setDiagnosisType (void)
 **Description**
 
 ```php
-public setDiagnosticRelatedGroup (void)
+ setDiagnosticRelatedGroup (void)
 ```
 
  
@@ -797,6 +879,7 @@ public setDiagnosticRelatedGroup (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -806,7 +889,7 @@ public setDiagnosticRelatedGroup (void)
 **Description**
 
 ```php
-public setGrouperVersionAndType (void)
+ setGrouperVersionAndType (void)
 ```
 
  
@@ -820,6 +903,7 @@ public setGrouperVersionAndType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -829,7 +913,7 @@ public setGrouperVersionAndType (void)
 **Description**
 
 ```php
-public setID (void)
+ setID (void)
 ```
 
  
@@ -843,6 +927,7 @@ public setID (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -852,7 +937,7 @@ public setID (void)
 **Description**
 
 ```php
-public setMajorDiagnosticCategory (void)
+ setMajorDiagnosticCategory (void)
 ```
 
  
@@ -866,6 +951,7 @@ public setMajorDiagnosticCategory (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -875,7 +961,7 @@ public setMajorDiagnosticCategory (void)
 **Description**
 
 ```php
-public setOutlierCost (void)
+ setOutlierCost (void)
 ```
 
  
@@ -889,6 +975,7 @@ public setOutlierCost (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -898,7 +985,7 @@ public setOutlierCost (void)
 **Description**
 
 ```php
-public setOutlierDays (void)
+ setOutlierDays (void)
 ```
 
  
@@ -912,6 +999,7 @@ public setOutlierDays (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 
@@ -921,7 +1009,7 @@ public setOutlierDays (void)
 **Description**
 
 ```php
-public setOutlierType (void)
+ setOutlierType (void)
 ```
 
  
@@ -935,6 +1023,7 @@ public setOutlierType (void)
 **Return Values**
 
 `void`
+
 
 <hr />
 

@@ -7,11 +7,11 @@ namespace Aranyasen\HL7\Tests\Segments;
 use Aranyasen\HL7\Segments\MSH;
 use Aranyasen\HL7\Tests\TestCase;
 use Exception;
+use PHPUnit\Framework\Attributes\Test;
 
 class MSHTest extends TestCase
 {
-    /** @test */
-    public function MSH_formed_without_any_arguments_should_have_mandatory_fields_set_automatically(): void
+    #[Test] public function MSH_formed_without_any_arguments_should_have_mandatory_fields_set_automatically(): void
     {
         $msh = new MSH();
         self::assertSame('|', $msh->getField(1));
@@ -22,10 +22,10 @@ class MSHTest extends TestCase
         self::assertNotEmpty($msh->getMessageControlId());
     }
 
-    /** @test
+    /**
      * @throws Exception
      */
-    public function an_array_of_fields_can_be_passed_to_constructor_to_construct_MSH(): void
+    #[Test] public function an_array_of_fields_can_be_passed_to_constructor_to_construct_MSH(): void
     {
         $msh = new MSH(
             [
@@ -42,24 +42,21 @@ class MSHTest extends TestCase
         );
     }
 
-    /** @test */
-    public function field_separator_can_be_set(): void
+    #[Test] public function field_separator_can_be_set(): void
     {
         $msh = new MSH();
         $msh->setField(1, '*');
         self::assertSame('*', $msh->getField(1), 'MSH Field sep field (MSH(1))');
     }
 
-    /** @test */
-    public function more_than_one_character_as_field_separator_is_not_accepted(): void
+    #[Test] public function more_than_one_character_as_field_separator_is_not_accepted(): void
     {
         $msh = new MSH();
         $msh->setField(1, 'xx');
         self::assertSame('|', $msh->getField(1), 'MSH Field sep field (MSH(1))');
     }
 
-    /** @test */
-    public function version_id_can_be_string_or_array_for_v2_7_onwards(): void
+    #[Test] public function version_id_can_be_string_or_array_for_v2_7_onwards(): void
     {
         $msh = new MSH();
         $msh->setVersionId('2.3');
@@ -69,8 +66,7 @@ class MSHTest extends TestCase
         self::assertSame(['2.7', 'NZL', '1.0'], $msh->getVersionId());
     }
 
-    /** @test */
-    public function index_2_in_MSH_accepts_only_4_character_strings(): void
+    #[Test] public function index_2_in_MSH_accepts_only_4_character_strings(): void
     {
         $msh = new MSH();
         $msh->setField(2, 'xxxx');
