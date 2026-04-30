@@ -129,7 +129,14 @@ class Message
 
         if ($segment->getField(12)) {
             $field = $segment->getField(12);
-            $this->hl7Version = is_array($field) ? implode($this->componentSeparator, $field) : (string) $field;
+            if (is_array($field)) {
+                $this->hl7Version = implode($this->componentSeparator, array_map(
+                    fn($v) => is_array($v) ? implode($this->subcomponentSeparator, $v) : (string) $v,
+                    $field
+                ));
+            } else {
+                $this->hl7Version = (string) $field;
+            }
         }
 
         return true;
