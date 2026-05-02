@@ -668,8 +668,6 @@ class MessageTest extends TestCase
     #[Test] public function version_field_with_subcomponents_in_MSH_12_is_parsed_to_correct_string(): void
     {
         $msg = new Message("MSH|^~\\&||||||||||2.7^NZL&1.0\r");
-
-        $reflection = new \ReflectionProperty(Message::class, 'hl7Version');
-        self::assertSame('2.7^NZL&1.0', $reflection->getValue($msg));
+        self::assertSame("MSH|^~\&||||||||||2.7^NZL&1.0|\n", $msg->toString(true));
     }
 }
