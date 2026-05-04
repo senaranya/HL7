@@ -664,4 +664,10 @@ class MessageTest extends TestCase
 
         self::assertSame([0, 1, 2], array_keys($msgObj->getSegments()));
     }
+
+    #[Test] public function version_field_with_subcomponents_in_MSH_12_is_parsed_to_correct_string(): void
+    {
+        $msg = new Message("MSH|^~\\&||||||||||2.7^NZL&1.0\r");
+        self::assertSame("MSH|^~\&||||||||||2.7^NZL&1.0|\n", $msg->toString(true));
+    }
 }
