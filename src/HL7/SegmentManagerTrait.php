@@ -359,8 +359,9 @@ trait SegmentManagerTrait
     /**
      * Return an array of all segments with the given subclass of Segment
      *
-     * @param  string  $segmentClass  Segment class
-     * @return array List of segments identified by class
+     * @template T of Segment
+     * @param  class-string<T>  $segmentClass  Segment class
+     * @return array<T> List of segments identified by class
      * @throws HL7Exception
      */
     public function getSegmentsByClass(string $segmentClass): array
@@ -426,10 +427,12 @@ trait SegmentManagerTrait
     /**
      * Return the first segment of the given class in the message
      *
-     * @return mixed|null
+     * @template T of Segment
+     * @param class-string<T> $segmentClass
+     * @return ?T
      * @throws HL7Exception
      */
-    public function getFirstSegmentInstanceByClass(string $segmentClass): Segment|null
+    public function getFirstSegmentInstanceByClass(string $segmentClass): ?Segment
     {
         if (!$this->hasSegmentOfClass($segmentClass)) {
             return null;
