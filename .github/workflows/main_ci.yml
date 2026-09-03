@@ -27,7 +27,8 @@ jobs:
           php-version: ${{ matrix.php-versions }}
           tools: phpcs
           extensions: pcntl, mbstring, sockets, pcov
-          coverage: ${{ matrix.php-versions == env.COVERAGE_PHP_VERSION && 'pcov' || 'none' }}
+          coverage: pcov
+          ini-values: pcov.enabled=1
 
       - name: Check PHP Version
         run: php -v
@@ -53,7 +54,7 @@ jobs:
 
       - name: Run test suite (with coverage)
         if: matrix.php-versions == env.COVERAGE_PHP_VERSION
-        run: composer run-script test -- --coverage-clover coverage.clover
+        run: vendor/bin/phpunit tests/ --testdox --colors=always --coverage-clover coverage.clover --coverage-text
 
       - name: Run test suite (without coverage)
         if: matrix.php-versions != env.COVERAGE_PHP_VERSION
