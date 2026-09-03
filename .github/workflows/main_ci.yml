@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  COVERAGE_PHP_VERSION: '8.3' # The primary PHP version used for code coverage uploads
+
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -13,18 +16,26 @@ jobs:
       matrix:
         php-versions: [ '8.2', '8.3', '8.4', '8.5' ]
     name: PHP ${{ matrix.php-versions }} Test on ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-      - name: Install PHP
+
+      - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-versions }}
-          extensions: pcntl, mbstring, sockets
+          tools: phpcs
+          extensions: pcntl, mbstring, sockets, pcov
+          coverage: pcov
+          ini-values: pcov.enabled=1
+
       - name: Check PHP Version
         run: php -v
+
       - name: Validate composer.json
         run: composer validate --strict
+
       - name: Cache Composer packages
         id: composer-cache
         uses: actions/cache@v5
@@ -32,11 +43,26 @@ jobs:
           path: vendor
           key: ${{ runner.os }}-php-${{ matrix.php-versions }}-${{ hashFiles('**/composer.lock') }}
           restore-keys: |
+            ${{ runner.os }}-php-${{ matrix.php-versions }}-
             ${{ runner.os }}-php-
 
       - name: Install dependencies
         run: composer install --dev --prefer-dist --no-progress
-      - name: Run linter
-        run: composer run-script lint
-      - name: Run test suite
+
+      - name: Run phpcs
+        run: phpcs
+
+      - name: Run test suite (with coverage)
+        if: matrix.php-versions == env.COVERAGE_PHP_VERSION
+        run: vendor/bin/phpunit tests/ --testdox --colors=always --coverage-clover coverage.clover --coverage-text
+
+      - name: Run test suite (without coverage)
+        if: matrix.php-versions != env.COVERAGE_PHP_VERSION
         run: composer run-script test
+
+      - name: Upload coverage reports to Codecov
+        if: matrix.php-versions == env.COVERAGE_PHP_VERSION
+        uses: codecov/codecov-action@v5
+        with:
+          files: ./coverage.clover
+          token: ${{ secrets.CODECOV_TOKEN }}

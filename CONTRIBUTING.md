@@ -2,6 +2,12 @@
 * Please review [issues](https://github.com/senaranya/HL7/issues) if you want to pick up from existing tickets. New tickets/features/CRs/PRs are welcome!
 * The goal of this library is to keep it generic and minimal. The focus should only be on basic HL7-related operations like creation/parsing/sending/receiving etc. No project-specific business logic should be included.
 * This library follows PSR-12 standards for coding style. You may use [phpcs](https://github.com/PHPCSStandards/PHP_CodeSniffer#getting-started) to verify your code.
+  * Since composer.json doesn't install it, you can download it manually:
+    * Download: `php -r "file_exists('phpcs.phar')?'':copy('https://phars.phpcodesniffer.com/phpcs.phar', 'phpcs.phar');"`
+    * Run: `composer run-script lint`
+    * To fix automatically, you may use `phpcbf`:
+      * Download: `php -r "file_exists('phpcbf.phar')?'':copy('https://phars.phpcodesniffer.com/phpcbf.phar', 'phpcbf.phar');"`
+      * Run: `php phpcbf.phar`
 * Add unit tests for code changes/updates. There are a number of existing tests, follow those as reference
 * For a PR on bug, please include test(s) that reproduces the bug
 * Contributors are requested to add or update phpdoc for any new or existing methods being worked on. After updating/adding, please update the API documentation as well (details below)

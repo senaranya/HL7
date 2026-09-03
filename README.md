@@ -1,8 +1,10 @@
 <p align="center">
-<a href="https://github.com/senaranya/HL7/actions"><img src="https://github.com/senaranya/hl7/actions/workflows/main_ci.yml/badge.svg?branch=master" alt="CI Status"></a>
-<a href="https://packagist.org/packages/aranyasen/hl7"><img src="https://poser.pugx.org/aranyasen/hl7/downloads" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/aranyasen/hl7"><img src="https://poser.pugx.org/aranyasen/hl7/v/stable" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/aranyasen/hl7"><img src="https://poser.pugx.org/aranyasen/hl7/license" alt="License"></a>
+    <a href="https://github.com/senaranya/HL7/actions"><img src="https://github.com/senaranya/hl7/actions/workflows/main_ci.yml/badge.svg?branch=master" alt="CI Status"></a>
+    <a href="https://packagist.org/packages/aranyasen/hl7"><img src="https://poser.pugx.org/aranyasen/hl7/downloads" alt="Total Downloads"></a>
+    <a href="https://packagist.org/packages/aranyasen/hl7"><img src="https://poser.pugx.org/aranyasen/hl7/v/stable" alt="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/aranyasen/hl7"><img src="https://poser.pugx.org/aranyasen/hl7/license" alt="License"></a>
+
+[//]: # (    <a href="https://codecov.io/gh/senaranya/hl7"><img src="https://img.shields.io/codecov/c/github/senaranya/hl7/master" alt="Codecov Coverage"></a>)
 </p>
 
 ## Release announcement: 

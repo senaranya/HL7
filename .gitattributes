@@ -1,0 +1,15 @@
+# Auto detect text files and perform LF normalization on checkout/commit
+* text=auto eol=lf
+
+# Explicitly ensure PHP files and test files always use LF line endings
+*.php text eol=lf
+*.phpt text eol=lf
+
+# Keep binary files untouched
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.phar binary
