@@ -49,7 +49,7 @@ jobs:
         run: composer install --dev --prefer-dist --no-progress
 
       - name: Run phpcs
-        run: composer run-script lint
+        run: phpcs
 
       - name: Run test suite (with coverage)
         if: matrix.php-versions == env.COVERAGE_PHP_VERSION
