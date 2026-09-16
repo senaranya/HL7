@@ -1,39 +1,19 @@
+This document defines repo-level guidelines for AI coding agents and automated tools working on this project. Human
+contributors should follow the branch naming, testing, and PR conventions outlined below.
+
 # How to work with git (for all changes)
 
-## Branching & Git Flow Requirements
-All branch creation, merging, and cleanup MUST be performed using `git flow` commands. Do NOT run standard `git checkout -b`, `git switch -c`, `git merge`, or `git branch -d`.
-
 ### Branch Mapping & Naming
-- **Features / Bug fixes / Docs / Refactor**: 
-  - Base: `develop`
-  - Command: `git flow <feature|bugfix|docs> start <short_description>`
-  - Note: Pass only `<short_description>` (use underscores, e.g., `add_button_recent_events`). Do NOT manually prefix with `feature/`—`git flow` appends this automatically.
-
-## Workflow
-1. **Start Branch**: Run `git flow <type> start <short_description>` (where `type` is one of `feature`/`bugfix`/`hotfix`). If `git flow` is not installed or available, report the error to the user and abort immediately.
-2. **Make Changes**: Make changes for the current task at hand. Do not commit yet. Wait for the user to review your changes
-3. Once user approves, commit the files. Keep commits small and focused.
-4. **Check Remote & Push**: 
-   - First, run `git remote` to check if a remote repository is configured.
-   - **If no remote exists (empty output)**: Skip pushing and PR creation. Notify the user that local changes are ready and waiting for local review/testing.
-   - **If a remote is configured** (e.g., `origin` is listed): Push the branch to the remote using `git push -u <remote_name> <branch_name>`.
-5. **PR / MR Creation**:
-   - **Only if a remote exists**: Open a PR/MR targeting `develop`.
-   - **If operating in a local-only repository**: Skip PR/MR creation and ask the user to review local commits directly.
-6. **Review**: Wait for user review and testing approval.
-7. **Finish Branch**: Once approved, run `git flow <type> finish <short_description>` to handle merging and branch cleanup automatically.
-
-### Strictly Forbidden Operations
-- Never commit directly to `master`/`main` or `develop`.
-- Never use raw Git commands (`git checkout -b`, `git switch -c`, `git merge`, `git branch -d`) for flow operations.
-
-### Mandatory git-flow enforcement
-- All feature, bugfix, and release branch creation MUST use `git flow`.
-- Completion, merge, and branch deletion MUST use the matching `git flow <type> finish` command.
-- If `git flow` fails or encounters an edge case, stop and report the blocker to the user rather than falling back to standard Git commands.
-
-## When you might not need a new branch
-- If you are **already** on the correct branch that will contain the change (e.g., a feature branch already created for this ongoing task), you may reuse it.
+- **Base Branch**: `master`
+- **Branch Naming**: Use clear, descriptive names prefixed by change type:
+    - `feature/<short_description>` (e.g., `feature/add_button_recent_events`)
+    - `bugfix/<short_description>`
+    - `docs/<short_description>`
+    - `refactor/<short_description>`
+    - `hotfix/<short_description>`
+    - Use underscores in `<short_description>`.
+- Never commit directly to `master`.
+- Never force push (`git push --force`) to shared primary branches like `master`.
 
 ## PR description checklist
 - What changed and why.
@@ -87,22 +67,13 @@ For **every code change** that affects behavior:
 ## Communication with User
 - Keep explanations brief and focused on architectural or functional decisions.
 - When presenting completed work, list:
-  1. Files changed.
-  2. Brief summary of the implementation.
-  3. Commands run to verify/test the change.
-
----
-
-# Initialization & Spec Generation
-- **On-Demand Only**: Do NOT automatically create, initialize, or overwrite `spec.md` when opening a repository or starting a task.
-- **Trigger Condition**: Only generate or scaffold `spec.md` (using `spec-template.md` as your structural blueprint) when the user issues an **explicit instruction** to do so (e.g., *"Generate our spec.md file"*). If `spec-template.md` file is not present in the project root, abort with a message to the user.
-- **Execution**: When explicitly triggered, inspect the existing codebase or project description to fill out all sections cleanly with realistic, project-specific details.
+    1. Files changed.
+    2. Brief summary of the implementation.
+    3. Commands run to verify/test the change.
 
 ---
 
 ## Skill Maintenance Protocol
 
-If `SKILL.md` exists in the repository root:
 - Whenever you make changes to public APIs, core architecture, factory methods, configuration options, or breaking changes, you MUST update `SKILL.md` to reflect those changes.
 - Ensure all code snippets, edge cases, and "DO NOT" rules in `SKILL.md` remain strictly accurate and synchronized with the codebase.
-- If `SKILL.md` does not exist in the repository root, ignore this requirement.
