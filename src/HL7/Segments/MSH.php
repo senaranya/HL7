@@ -79,12 +79,24 @@ class MSH extends Segment
      */
     public function setField(int $index, string|int|array|null $value = ''): bool
     {
-        if (($index === 1) && strlen($value) !== 1) {
-            return false;
+        if ($index === 1) {
+            if (!is_string($value)) {
+                throw new HL7Exception('MSH.1 must be a string');
+            }
+
+            if (strlen($value) !== 1) {
+                return false;
+            }
         }
 
-        if (($index === 2) && strlen($value) !== 4) {
-            return false;
+        if ($index === 2) {
+            if (!is_string($value)) {
+                throw new HL7Exception('MSH.2 must be a string');
+            }
+
+            if (strlen($value) !== 4) {
+                return false;
+            }
         }
 
         return parent::setField($index, $value);
