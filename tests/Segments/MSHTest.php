@@ -4,9 +4,11 @@ declare(strict_types=1);
 
 namespace Aranyasen\HL7\Tests\Segments;
 
+use Aranyasen\Exceptions\HL7Exception;
 use Aranyasen\HL7\Segments\MSH;
 use Aranyasen\HL7\Tests\TestCase;
 use Exception;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\Attributes\Test;
 
 class MSHTest extends TestCase
@@ -54,6 +56,47 @@ class MSHTest extends TestCase
         $msh = new MSH();
         $msh->setField(1, 'xx');
         self::assertSame('|', $msh->getField(1), 'MSH Field sep field (MSH(1))');
+    }
+
+    #[Test, DataProvider('nonStringValueProvider')]
+    public function msh_rejects_non_string_values(int $index, mixed $value, string $expectedMessage): void
+    {
+        $msh = new MSH();
+        $this->expectException(HL7Exception::class);
+        $this->expectExceptionMessage($expectedMessage);
+        $msh->setField($index, $value);
+    }
+
+    /**
+     * @return iterable<string, array{0: int, 1: mixed, 2: string}>
+     */
+    public static function nonStringValueProvider(): iterable
+    {
+        yield 'field 1 with int' => [1, 0, 'MSH.1 must be a string'];
+        yield 'field 1 with null' => [1, null, 'MSH.1 must be a string'];
+        yield 'field 1 with array' => [1, ['|'], 'MSH.1 must be a string'];
+        yield 'field 2 with int' => [2, 0, 'MSH.2 must be a string'];
+        yield 'field 2 with null' => [2, null, 'MSH.2 must be a string'];
+        yield 'field 2 with array' => [2, ['^', '~', '\\', '&'], 'MSH.2 must be a string'];
+    }
+
+    #[Test, DataProvider('invalidStringLengthProvider')]
+    public function msh_rejects_invalid_string_length(int $index, string $value, string $expectedField): void
+    {
+        $msh = new MSH();
+        self::assertFalse($msh->setField($index, $value));
+        self::assertSame($expectedField, $msh->getField($index));
+    }
+
+    /**
+     * @return iterable<string, array{0: int, 1: string, 2: string}>
+     */
+    public static function invalidStringLengthProvider(): iterable
+    {
+        yield 'field 1 empty string' => [1, '', '|'];
+        yield 'field 2 empty string' => [2, '', '^~\\&'];
+        yield 'field 2 too short (3 chars)' => [2, '^~\\', '^~\\&'];
+        yield 'field 2 too long (5 chars)' => [2, '^~\\&x', '^~\\&'];
     }
 
     #[Test] public function version_id_can_be_string_or_array_for_v2_7_onwards(): void
